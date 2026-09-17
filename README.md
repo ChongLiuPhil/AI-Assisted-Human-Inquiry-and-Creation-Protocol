@@ -119,11 +119,33 @@ The human reviews and accepts the work's core intellectual architecture: main th
 
 This is the project's primary **substantive intellectual checkpoint**.
 
+HARC also distinguishes a defect already present in this approved intellectual architecture from a local defect introduced only during later AI expansion. The former is a framework-level defect; the latter remains a derived-expression defect unless it reveals a deeper structural problem.
+
 ### Gate B — Final Artifact Approval
 
 Before formal submission, publication, or public release under human authorship, the human approves the concrete release version to the degree required by the relevant venue, institution, discipline, or authorship standard.
 
 Framework approval concentrates human attention on the intellectual architecture; it does not automatically waive final publication accountability.
+
+## Reusable form profiles
+
+HARC supports form inheritance across projects instead of forcing every project to recreate presentation decisions from scratch.
+
+The model distinguishes:
+
+- reusable author-level preferences;
+- artifact-type profiles;
+- project-specific form rules;
+- external publication constraints;
+- temporary AI/tool defaults.
+
+See:
+
+- `protocol/FORM_PROFILE_INHERITANCE.md`
+- `templates/form-profiles/AUTHOR_PROFILE.md`
+- `templates/form-profiles/BOOK.md`
+- `templates/form-profiles/ACADEMIC_PAPER.md`
+- `templates/form-profiles/ARTICLE.md`
 
 ## Persistent memory principle
 
@@ -146,7 +168,9 @@ This repository is the standalone development home of HARC Protocol. It contains
 - the normative specification;
 - implementation guidance;
 - reusable project templates;
+- reusable form-profile templates;
 - a conceptual white paper;
+- a three-pass audit of the founding ideas;
 - a roadmap for future development.
 
 The protocol currently targets **GitHub + human author + AI agent** workflows. Broader platform support may be considered later.
@@ -155,15 +179,19 @@ The protocol currently targets **GitHub + human author + AI agent** workflows. B
 
 For humans:
 
-1. Read [`paper/WHITEPAPER.md`](paper/WHITEPAPER.md) for the rationale and conceptual model.
+1. Read [`paper/WHITEPAPER.md`](paper/WHITEPAPER.md) or [`paper/WHITEPAPER.zh-CN.md`](paper/WHITEPAPER.zh-CN.md) for the rationale and conceptual model.
 2. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md) for the normative workflow.
-3. Use [`templates/research-project/`](templates/research-project/) to bootstrap a new project.
+3. Read [`docs/FOUNDING_IDEA_AUDIT.md`](docs/FOUNDING_IDEA_AUDIT.md) for the three-pass traceability audit from the founding discussions to the current implementation.
+4. Use [`templates/research-project/`](templates/research-project/) to bootstrap a new project.
+5. Use [`templates/form-profiles/`](templates/form-profiles/) when reusable author or artifact-type presentation rules are relevant.
 
 For AI agents:
 
 1. Read [`AGENTS.md`](AGENTS.md).
 2. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md).
-3. Apply the template without inventing human commitments that have not been stated.
+3. Read the applicable persistence, framework-approval, routing, and form-inheritance documents.
+4. Apply the template without inventing human commitments that have not been stated.
+5. Record the HARC version/tag/commit adopted by a new project so later upstream changes are not silently treated as already accepted governance.
 
 ## Design principle
 
