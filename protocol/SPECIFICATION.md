@@ -2,51 +2,48 @@
 
 **Human–AI Research Collaboration Protocol**
 
-**Version:** 0.1.0-draft  
+**Version:** 0.2.0-draft  
 **Scope:** GitHub-centered research and long-form intellectual collaboration between a human author and one or more AI agents.
 
 ---
 
 ## 1. Purpose
 
-HARC defines a persistent, auditable collaboration architecture for projects in which human intellectual direction and AI-assisted research, structuring, drafting, revision, and formatting develop over time.
+HARC defines a persistent, auditable collaboration architecture for projects in which human intellectual direction and AI-assisted research, structuring, drafting, revision, verification, and formatting develop over time.
 
 The protocol is designed to preserve:
 
 - human intellectual agency;
 - semantic continuity;
 - explicit provenance of important decisions;
-- distinction between author intention and AI proposal;
+- distinction between human intention and AI proposal;
 - distinction between content and form;
 - inspectable argument structure;
-- cross-agent continuity;
 - evidence-based corrigibility;
 - scalable project memory;
-- clear approval states.
+- cross-agent continuity;
+- explicit approval states;
+- meaningful human cognitive and epistemic responsibility.
 
-The protocol does **not** require one specific AI platform. Version 0.1 assumes GitHub as the persistent repository substrate.
+HARC v0.2 assumes GitHub as the persistent repository substrate. Future implementations may map the same logical roles to other systems.
 
 ---
 
 ## 2. Normative terms
 
-Within this specification:
-
-- **MUST** means required for HARC compliance.
-- **SHOULD** means strongly recommended unless the project records a reason to deviate.
-- **MAY** means optional.
+- **MUST** — required for HARC compliance.
+- **SHOULD** — strongly recommended unless a project records a reason to deviate.
+- **MAY** — optional.
 
 ---
 
-## 3. Core principle
+## 3. Core maxim
 
 A long-running research project MUST NOT treat a transient AI conversation as its sole durable state.
 
-Important project state MUST be externalized into explicit, version-controlled repository artifacts.
-
-The central operational maxim is:
-
 > **Chat is an interaction surface; the repository is durable shared research memory.**
+
+Important project state MUST be externalized into explicit, version-controlled repository artifacts.
 
 ---
 
@@ -54,35 +51,36 @@ The central operational maxim is:
 
 ### 4.1 Human Author
 
-The Human Author supplies or confirms the project's substantive intellectual commitments and final public accountability decisions.
+The Human Author supplies, revises, or confirms substantive intellectual commitments and presentation intentions.
 
-The Human Author MAY delegate extensive research assistance, structuring, drafting, editing, formalization, and formatting to AI agents.
+The Human Author MAY delegate extensive search, synthesis, structuring, drafting, editing, formalization, checking, and formatting to AI agents.
+
+Delegation of cognitive labor MUST NOT be treated as automatic delegation of epistemic responsibility.
 
 ### 4.2 AI Agent
 
-The AI Agent may:
+The AI Agent MAY:
 
 - extract and normalize human decisions;
-- maintain project state;
+- maintain repository state;
 - propose arguments, objections, distinctions, examples, terminology, and structure;
 - conduct research and evidence checks when tools permit;
-- maintain the operational argument representation;
+- maintain operational argument representations;
 - expand approved structures into prose or other artifacts;
-- detect inconsistencies, evidence conflicts, and synchronization defects.
+- detect inconsistencies, evidence conflicts, and synchronization defects;
+- maintain formatting and rendering systems.
 
 The AI Agent MUST distinguish its proposals from human-approved commitments.
 
 ### 4.3 Repository
 
-The Repository is the durable shared state between Human Author and AI Agents.
+The Repository is the durable shared state among the Human Author and AI Agents.
 
 It MUST preserve enough current and historical state that a new competent AI agent can reconstruct the project without access to the original chat history.
 
 ---
 
 ## 5. Canonical state model
-
-A HARC research project SHOULD implement the following canonical state.
 
 ### 5.1 Content Core — `core/CONTENT_CORE.md`
 
@@ -100,8 +98,6 @@ It SHOULD record:
 
 It MUST NOT silently contain unaccepted AI proposals.
 
-It SHOULD remain compact enough for routine onboarding.
-
 ### 5.2 Form Core — `core/FORM_CORE.md`
 
 The Form Core contains active human decisions about the artifact as an expressed object.
@@ -109,16 +105,15 @@ The Form Core contains active human decisions about the artifact as an expressed
 It MAY include:
 
 - artifact type;
-- language;
-- prose/register preferences;
+- language and prose register;
 - typography;
 - page layout;
 - heading hierarchy;
 - footnotes;
 - citation presentation;
-- tables/figures;
+- tables and figures;
 - visual system;
-- reusable author style preferences;
+- reusable author preferences;
 - external venue constraints.
 
 Unknown form decisions MUST remain explicit unknowns rather than being inferred from AI defaults.
@@ -127,16 +122,7 @@ Unknown form decisions MUST remain explicit unknowns rather than being inferred 
 
 The Decision Log is the historical audit trail of important human decisions.
 
-Each entry SHOULD include:
-
-- identifier;
-- date;
-- source;
-- classification (`CONTENT`, `FORM`, `PROTOCOL`, or multi-label);
-- decision/instruction;
-- affected files or layers;
-- superseded decision, if any;
-- implementation status.
+Each entry SHOULD include identifier, date, source, classification, decision, affected files/layers, superseded decision if any, and implementation status.
 
 Current cores may be rewritten to represent active state; the Decision Log preserves historical continuity.
 
@@ -169,13 +155,13 @@ An Approved Framework Snapshot is created only after explicit human review and c
 
 A snapshot MUST NOT be silently modified after approval.
 
-Material changes to the intellectual architecture MUST create a new framework version.
+Material intellectual change MUST create a new framework version.
 
 ### 5.6 Framework Status — `docs/framework-status.md`
 
 This file SHOULD state:
 
-- current working framework status;
+- current Working Framework status;
 - latest approved framework identifier;
 - current artifact status;
 - unresolved synchronization defects;
@@ -183,15 +169,7 @@ This file SHOULD state:
 
 ### 5.7 Evidence Layer — `evidence/`
 
-Evidence files MAY include:
-
-- literature notes;
-- source checks;
-- datasets;
-- calculations;
-- formal derivations;
-- empirical notebooks;
-- source inventories.
+Evidence files MAY include literature notes, source checks, datasets, calculations, formal derivations, empirical notebooks, and source inventories.
 
 Evidence constrains what can responsibly be claimed but MUST NOT silently rewrite human intention.
 
@@ -210,101 +188,73 @@ It MUST remain compatible with:
 
 ## 6. Feedback routing
 
-Before persisting substantive human feedback, the AI Agent MUST classify it.
+Before persisting substantive human feedback, the AI Agent MUST classify it as one or more of:
 
-### 6.1 CONTENT
+### `CONTENT`
 
-Use when the instruction changes:
-
-- claims;
-- arguments;
-- definitions;
-- distinctions;
-- scope;
-- interpretation;
-- examples that carry substantive meaning;
-- questions or conclusions.
+Changes what the work argues, means, assumes, distinguishes, questions, or concludes.
 
 Propagation path:
 
 `Human decision -> Decision Log -> Content Core -> Working Argument Map -> Derived Artifact`
 
-### 6.2 FORM
+### `FORM`
 
-Use when the instruction changes:
-
-- artifact type;
-- writing/presentation style;
-- typography;
-- page layout;
-- visual system;
-- citation presentation;
-- structural presentation conventions that do not themselves change the intellectual claim.
+Changes how the artifact is expressed or rendered: artifact type, typography, layout, visual system, citation presentation, prose presentation, etc.
 
 Propagation path:
 
-`Human decision -> Decision Log -> Form Core -> Implementation/Rendering -> Artifact`
+`Human decision -> Decision Log -> Form Core -> Rendering/Implementation -> Artifact`
 
-### 6.3 PROTOCOL
+### `PROTOCOL`
 
-Use when the instruction changes:
-
-- collaboration workflow;
-- persistence rules;
-- agent behavior;
-- approval mechanics;
-- repository organization;
-- handoff;
-- synchronization or versioning.
+Changes how collaboration, persistence, handoff, synchronization, approval, or versioning operates.
 
 Propagation path:
 
 `Human decision -> Decision Log -> Protocol/Governance -> Agent Behavior`
 
-### 6.4 Multi-label feedback
-
-The Agent MUST support multi-label classification when a human instruction genuinely affects more than one domain.
+Multi-label feedback MUST be supported.
 
 ---
 
-## 7. Upstream-first rule
+## 7. Upstream-first update rule
 
-A lower layer MUST NOT be treated as authoritative evidence that the human endorsed a higher-level change.
+A lower layer MUST NOT be treated as evidence that the human endorsed a higher-level change.
 
-Therefore substantive changes flow from authoritative state downward.
-
-### 7.1 Content update
+### 7.1 Content update cycle
 
 1. identify the human decision;
-2. log it;
-3. update Content Core;
-4. update Working Argument Map;
-5. determine whether approved framework remains valid;
-6. inspect evidence conflicts;
-7. propagate into derived artifact;
+2. record it in the Decision Log;
+3. reconcile the Content Core;
+4. reconcile the Working Argument Map;
+5. determine whether an existing Approved Framework remains valid;
+6. inspect evidence/logical conflicts;
+7. propagate into the derived artifact;
 8. verify synchronization.
 
-### 7.2 Form update
+### 7.2 Form update cycle
 
 1. identify the human form decision;
-2. log it;
-3. update Form Core;
+2. record it;
+3. reconcile the Form Core;
 4. update reusable style profile only if explicitly cross-project;
 5. propagate into implementation;
 6. verify rendering.
 
-### 7.3 Protocol update
+### 7.3 Protocol update cycle
 
-1. log the workflow decision;
+1. record the workflow decision;
 2. update protocol/governance documents;
-3. update templates if reusable;
-4. avoid changing substantive content merely because the workflow changed.
+3. update reusable templates where applicable;
+4. verify that new rules are discoverable by future agents;
+5. do not alter research content merely because governance changed.
 
 ---
 
-## 8. Proposal status
+## 8. Proposal and provenance status
 
-A HARC project MUST distinguish at least the following statuses where ambiguity would matter:
+Where ambiguity would matter, projects SHOULD distinguish:
 
 ### Content statuses
 
@@ -351,20 +301,20 @@ Upon explicit approval, the Agent MUST:
 
 ---
 
-## 10. Framework fidelity
+## 10. Framework fidelity and responsibility
 
 After framework approval, AI Agents MAY expand the work substantially.
 
 The derived artifact MUST NOT materially depart from the approved framework without returning upstream for new human review.
 
-Material deviation includes:
+Material deviation includes changing the central thesis, adding a new major conclusion, removing an essential premise, changing relations among major claims, altering scope in a way that changes the argument, or restructuring the work so the approved reasoning is no longer accurately represented.
 
-- changing the central thesis;
-- adding a new major conclusion;
-- removing an essential premise;
-- altering the relation among major claims;
-- changing scope in a way that changes the argument;
-- restructuring the work so the approved reasoning is no longer accurately represented.
+HARC distinguishes:
+
+- **framework-level defect** — a defect already present in the human-approved intellectual architecture;
+- **derived-expansion defect** — a local problem introduced only during later AI expansion or implementation.
+
+The distinction improves traceability but does not remove final-release accountability requirements.
 
 ---
 
@@ -377,7 +327,7 @@ Default mappings:
 - `ACADEMIC_PAPER`: abstract + introduction;
 - `ARTICLE`: opening/introductory overview;
 - `BOOK`: introduction/overview chapter + chapter roadmap;
-- `REPORT`: executive summary + methodology/structure overview;
+- `REPORT`: executive summary + structure/method overview;
 - other types: analogous high-level overview specified in Form Core.
 
 The overview need not reproduce the framework verbatim, but MUST represent it faithfully.
@@ -390,9 +340,9 @@ Framework approval and final artifact approval are distinct.
 
 The artifact MAY remain `DERIVED-PROVISIONAL` while AI Agents continue expansion, editing, research integration, and formatting.
 
-Before formal submission, publication, or public release under human authorship, a Human Author SHOULD perform the final review required by the relevant discipline, venue, institution, or authorship standard.
+Before formal submission, publication, or public release under human authorship, the Human Author SHOULD perform the final review required by the relevant discipline, venue, institution, or authorship standard.
 
-The repository SHOULD record whether the release version is:
+Recommended artifact states:
 
 - `DERIVED-PROVISIONAL`;
 - `FINAL-REVIEW`;
@@ -409,12 +359,32 @@ If reliable evidence or formal reasoning conflicts with active human content:
 3. distinguish evidence, inference, uncertainty, and interpretation;
 4. do not conceal the conflict;
 5. do not knowingly propagate a misleading claim downstream;
-6. request or await human resolution when necessary;
+6. request or await human resolution where necessary;
 7. record the resulting decision.
 
 ---
 
-## 14. Persistent memory and context limits
+## 14. Cognitive delegation and epistemic responsibility
+
+HARC distinguishes **delegation of cognitive labor** from **delegation of epistemic responsibility**.
+
+AI MAY perform extensive search, synthesis, structuring, drafting, formalization, consistency checking, revision, and formatting.
+
+Human attention SHOULD be concentrated on high-leverage decisions, including:
+
+- research aims and questions;
+- core commitments;
+- major inferential architecture;
+- acceptance/rejection of material AI proposals;
+- treatment of decisive evidence conflicts;
+- Framework Approval;
+- Final Artifact Approval where required.
+
+HARC does not claim that file structure alone guarantees good judgment. Approval mechanisms are governance scaffolds, not substitutes for human competence and understanding.
+
+---
+
+## 15. Persistent memory and context limits
 
 HARC provides persistent project memory, not literal infinite model context.
 
@@ -427,11 +397,11 @@ Projects SHOULD scale through:
 - archived historical detail;
 - selective retrieval.
 
-The success criterion is **recoverability and traceability**, not simultaneous loading of all history.
+The objective is **recoverability and traceability**, not simultaneous loading of all history.
 
 ---
 
-## 15. Agent handoff
+## 16. Agent handoff
 
 A new AI Agent SHOULD be able to continue normal project work by reading, at minimum:
 
@@ -440,31 +410,80 @@ A new AI Agent SHOULD be able to continue normal project work by reading, at min
 3. Form Core;
 4. recent Decision Log entries;
 5. Working Argument Map;
-6. Framework Status and latest approved framework;
+6. Framework Status and latest Approved Framework;
 7. relevant current artifact and evidence.
+
+A project SHOULD record the HARC version/tag/commit it adopted so later upstream protocol changes are not silently treated as already accepted governance.
 
 If essential constraints exist only in an unavailable chat or hidden memory, the project is non-compliant until they are externalized.
 
 ---
 
-## 16. Synchronization invariant
+## 17. Form-profile inheritance
+
+Reusable presentation state SHOULD be able to distinguish:
+
+1. reusable author-level preferences;
+2. artifact-type profiles such as `BOOK`, `ACADEMIC_PAPER`, and `ARTICLE`;
+3. project-specific Form Core decisions;
+4. external venue constraints;
+5. temporary AI/tool defaults.
+
+Inheritance MUST NOT transform an unstated preference into an author preference.
+
+---
+
+## 18. Synchronization invariant
 
 At a stable checkpoint, all of the following SHOULD be true:
 
 1. major artifact claims are compatible with Content Core;
 2. current intellectual architecture is represented by the Working Argument Map;
-3. where an approved framework exists, derived content remains faithful to it or is marked out of sync;
-4. important form decisions are compatible with Form Core;
+3. where an Approved Framework exists, derived content remains faithful to it or is marked out of sync;
+4. important presentation choices are compatible with Form Core or explicitly marked temporary/external;
 5. important human decisions appear in the Decision Log;
-6. unaccepted AI proposals are visibly unaccepted;
+6. unaccepted AI proposals remain visibly unaccepted;
 7. known evidence conflicts are visible;
-8. important decisions are not stranded only in chat history.
+8. important decisions are not stranded only in chat history;
+9. onboarding documents point to current canonical files.
 
 Failure of any condition creates an explicit synchronization defect.
 
 ---
 
-## 17. Recommended commit semantics
+## 19. Multi-pass audit and repair discipline
+
+A requested multi-pass audit MUST be interpreted as repeated review-and-repair cycles.
+
+Each cycle SHOULD execute:
+
+`review -> identify defect -> repair/implement -> verify repair`.
+
+If three passes are requested, perform three such cycles. If a post-repair audit is requested, perform a further independent audit after all three cycles rather than counting one of the three cycles as the final audit.
+
+Audit records SHOULD state what defect was found, what repository change repaired it, and how the repair was verified.
+
+---
+
+## 20. Methodology article as a governed HARC artifact
+
+The HARC project itself SHOULD maintain two mutually supporting outputs:
+
+1. an executable open protocol;
+2. a methodology article explaining and critically developing the protocol.
+
+The methodology article SHOULD address the conceptual implications of AI-assisted research, including human cognitive/epistemic responsibility, delegable and non-delegable intellectual work, persistent research state, semantic version control, framework-level authorship, and publication accountability.
+
+The article MUST itself follow HARC discipline:
+
+- maintain a Working Framework;
+- separate AI proposals from human-approved claims;
+- maintain evidence/source notes for time-sensitive policy claims;
+- remain `DERIVED-PROVISIONAL` until human approval gates are completed.
+
+---
+
+## 21. Recommended commit semantics
 
 Suggested prefixes:
 
@@ -472,13 +491,14 @@ Suggested prefixes:
 - `structure:` argument architecture;
 - `draft:` derived artifact;
 - `form:` presentation/rendering;
-- `evidence:` source/data/formal verification;
+- `evidence:` sources/data/formal verification;
 - `protocol:` workflow/governance;
+- `audit:` review/repair records;
 - `release:` approved protocol or artifact release.
 
 ---
 
-## 18. Minimal HARC profile
+## 22. Minimal HARC profile
 
 A lightweight compliant project SHOULD contain at least:
 
@@ -491,33 +511,28 @@ docs/argument-map.md
 docs/framework-status.md
 ```
 
-For long or high-stakes projects, evidence directories, approved framework snapshots, and detailed protocol files are strongly recommended.
+For long or high-stakes projects, evidence directories, Approved Framework snapshots, detailed protocol files, and audit records are strongly recommended.
 
 ---
 
-## 19. Portability
+## 23. Portability
 
-HARC v0.1 targets GitHub but separates logical functions from exact filenames.
+HARC v0.2 targets GitHub but separates logical functions from exact filenames.
 
-Future implementations MAY map the same canonical roles to other versioned collaboration systems while preserving:
-
-- explicit state;
-- human/AI provenance distinctions;
-- approval gates;
-- inspectable history;
-- cross-agent handoff.
+Future implementations MAY map the same canonical roles to other versioned collaboration systems while preserving explicit state, human/AI provenance distinctions, approval gates, inspectable history, and cross-agent handoff.
 
 ---
 
-## 20. Design thesis
+## 24. Design thesis
 
-HARC separates four things often collapsed in AI-assisted research:
+HARC separates things that AI-assisted research often collapses:
 
-1. **human intellectual intention**;
-2. **human presentation intention**;
-3. **AI operational representation**;
-4. **derived expression**.
+1. human intellectual intention;
+2. human presentation intention;
+3. AI operational representation;
+4. evidence constraints;
+5. approval state;
+6. derived expression;
+7. historical decisions.
 
-Evidence and history constrain these layers without erasing their different roles.
-
-The protocol treats this separation as the foundation for durable, auditable, human-governed AI-assisted research.
+The protocol treats this separation as the basis for durable, auditable, human-governed AI-assisted research.
