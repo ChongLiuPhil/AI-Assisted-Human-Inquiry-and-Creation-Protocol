@@ -4,7 +4,11 @@
 
 **状态：** `DERIVED-PROVISIONAL`  
 **框架状态：** `WORKING-FRAMEWORK — 尚未经人类作者正式确认`  
-**协议：** Human–AI Research Collaboration Protocol (HARC) v0.1 working draft
+**协议：** Human–AI Research Collaboration Protocol (HARC) v0.2.0-draft  
+**上游内容核心：** `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.md`  
+**形式核心：** `paper/METHODOLOGY_ARTICLE_FORM_CORE.md`  
+**框架状态：** `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md`  
+**证据核验：** `evidence/METHODOLOGY_SOURCES.md`
 
 ## 摘要
 
@@ -188,7 +192,7 @@ HARC 的回答是“责任集中”：把有限的人类注意力集中到高杠
 
 第二，它帮助组织审查资源。框架层问题必须回到上游重新确认；扩写层问题则可以在下游修复，只要修复没有改变核心结构。
 
-但是，这一区分不能被误解为“人类只需看框架，从此无需关心终稿”。正式学术出版通常仍要求作者批准最终发表版本并承担相应责任。ICMJE 的现行作者标准把“最终批准待发表版本”和对工作的准确性、完整性承担责任列为作者要求；Nature/Springer Nature 的 AI 政策也明确强调学术判断与问责不能委托给 AI 系统。HARC 因此区分两个确认门：Framework Approval 与 Final Artifact Approval。
+但是，这一区分不能被误解为“人类只需看框架，从此无需关心终稿”。以 ICMJE 和 Nature Portfolio 等有影响力的现行学术规范为例，最终发表仍与人类批准、判断和问责相联系。ICMJE 的现行作者标准明确包含“最终批准待发表版本”，并要求作者同意对工作各方面承担问责；Nature Portfolio 的当前 AI 政策则强调作者仍对原创性、准确性和完整性负责，相关判断不能简单委托给 AI。HARC 因此区分两个确认门：Framework Approval 与 Final Artifact Approval。
 
 ---
 
@@ -211,7 +215,7 @@ HARC 的回答是“责任集中”：把有限的人类注意力集中到高杠
 
 这里确认的是具体的发布版本。其审查程度必须服从实际学科、出版社、期刊、学校或机构的要求。
 
-现行出版规范普遍没有把 AI 视为可以承担作者问责的主体。ICMJE 强调最终版本批准与问责，Springer Nature 的政策强调 human accountability is non-transferable；Nature Portfolio 也把 AI 工具与作者身份分开处理。HARC 不试图绕开这些规则，而是提供一种过程结构，使“人类最终负责”不只是抽象口号。
+以 ICMJE 与 Nature Portfolio 当前规则为例，AI 工具不能替代人类作者所承担的批准、判断和问责角色。HARC 不试图把这些具体规则普遍化为所有领域统一的 authorship law，也不试图绕开任何目标期刊、出版社或机构的要求。它所提供的是一种过程结构，使“人类最终负责”可以对应到明确的版本、确认节点和审计轨迹。
 
 在 HARC 中，框架确认负责建立真正被人理解和接受的思想基线，最终确认负责把具体公开版本与这个基线及外部规则重新连接起来。
 
@@ -253,11 +257,11 @@ HARC 的另一个设计原则可以概括为：
 
 ## 十一、HARC 与现有作者规范：从抽象责任到可操作责任
 
-现有学术规范已经提供了重要边界。
+现有学术规范为 HARC 提供了若干重要边界案例，而不是一套可以直接等同于 HARC 的统一规则。
 
-ICMJE 把作者身份与贡献、最终批准和问责联系起来。Nature Portfolio 和 Springer Nature 的 AI 政策明确认为 LLM 不能承担作者身份所要求的问责，且人类仍应负责最终内容。CRediT 则从另一个方向提供了启发：它通过 14 类贡献角色提高研究贡献透明度，同时明确 contribution taxonomy 并不自动决定谁满足作者标准。
+ICMJE 把作者身份与实质贡献、重要内容的起草或批判性审阅、最终批准和问责联系起来。Nature Portfolio 当前 AI 政策强调作者仍对原创性、准确性和完整性负责，并要求相关 AI 使用按适用规则透明披露。CRediT 则从另一个方向提供了启发：它通过 14 类贡献角色提高研究贡献透明度，但贡献角色分类与某一具体期刊或制度下的作者资格判断不是同一个问题。
 
-这些规则说明，AI 时代需要同时处理至少两个问题：
+这些例子说明，AI 时代至少需要同时处理两个不同问题：
 
 1. 谁做了什么？
 2. 谁理解、确认并对什么负责？
@@ -272,7 +276,7 @@ HARC 更关注第二个问题的过程基础设施，同时也允许贡献记录
 
 框架确认本身并不能保证责任真实存在。一个人完全可以不认真阅读就点击“确认”。因此 HARC 的最大风险之一，是把真正的认识判断变成新的形式主义。
 
-这与经典自动化研究中所讨论的 over-reliance 有联系。Parasuraman 与 Riley（1997）把自动化误用的一类风险描述为对自动化的过度依赖，从而降低监控和独立判断。
+这与经典自动化研究中所讨论的 over-reliance 有联系。Parasuraman 与 Riley（1997）把自动化误用（misuse）的一类风险描述为对自动化的过度依赖，并指出这可能与监控失败或决策偏差有关。
 
 HARC 因此不能仅靠文件存在来证明良好协作。未来的 conformance test 应当进一步研究：
 
@@ -355,12 +359,14 @@ HARC 将这一问题转化为一个可以被实现、审计、测试和持续改
 - Clark, A., & Chalmers, D. (1998). The Extended Mind. *Analysis*, 58(1), 7–19. https://doi.org/10.1093/analys/58.1.7
 - Hardwig, J. (1985). Epistemic Dependence. *The Journal of Philosophy*, 82(7), 335–349. https://doi.org/10.2307/2026523
 - Hutchins, E. (1995). *Cognition in the Wild*. MIT Press. https://doi.org/10.7551/mitpress/1881.001.0001
-- Parasuraman, R., & Riley, V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. *Human Factors*, 39(2). https://doi.org/10.1518/001872097778543886
+- Parasuraman, R., & Riley, V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. *Human Factors*, 39(2), 230–253. https://doi.org/10.1518/001872097778543886
 - International Committee of Medical Journal Editors (ICMJE). Defining the Role of Authors and Contributors. https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html
-- Springer Nature. Artificial Intelligence (AI) editorial policies / risk-assessment framework. https://www.nature.com/natcatal/editorial-policies/ai
-- Nature Portfolio. Authorship policy. https://www.nature.com/npjai/editorial-policies/authorship
-- NISO. CRediT — Contributor Role Taxonomy. https://credit.niso.org/
-- UNESCO. Guidance for Generative AI in Education and Research. https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research
+- Nature Portfolio. Editorial Policies, including Artificial Intelligence (AI) policies. https://www.nature.com/nature-portfolio/editorial-policies
+- *Nature Methods*. (2026). Using AI responsibly in scientific publishing. *Nature Methods*, 23, 271. https://doi.org/10.1038/s41592-026-03020-1
+- NISO. CRediT — Contributor Role Taxonomy; ANSI/NISO Z39.104-2022. https://credit.niso.org/ ; https://doi.org/10.3789/ansi.niso.z39.104-2022
+- UNESCO. (2023). Guidance for Generative AI in Education and Research. https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research
+
+完整的来源核验说明见 `evidence/METHODOLOGY_SOURCES.md`，BibTeX 元数据见 `paper/methodology-references.bib`。
 
 ## 当前文章开发说明
 
