@@ -141,3 +141,29 @@ This file is the chronological audit trail of substantive human decisions about 
 **Affected components:** memory scaling
 
 **Status:** implemented.
+
+---
+
+## 2026-09-17 — HARC-D011
+
+**Source:** Human project founder  
+**Classification:** CONTENT, PROTOCOL
+
+**Decision:** For long works, the human-approved operational framework should function as the primary substantive intellectual responsibility anchor. The human author should explicitly understand and approve the core theses, inferential relations, major distinctions, and section/chapter roles. Defects in that approved architecture should be distinguishable from local defects introduced only during later AI expansion. This does not replace any separate final-release review required before publication or submission.
+
+**Affected components:** Protocol Core, Framework Approval model, responsibility model
+
+**Status:** implemented after three-pass founding-idea audit.
+
+---
+
+## 2026-09-17 — HARC-D012
+
+**Source:** Human project founder  
+**Classification:** FORM, PROTOCOL
+
+**Decision:** Form and presentation preferences should be reusable across projects and should support artifact-type differentiation. A new project should identify whether it is a book, academic paper, article, report, or another artifact type, and then combine reusable author preferences with artifact-type and project-specific form rules rather than rebuilding presentation decisions from scratch.
+
+**Affected components:** Form Core model, form-profile inheritance, templates
+
+**Status:** implemented after three-pass founding-idea audit.
