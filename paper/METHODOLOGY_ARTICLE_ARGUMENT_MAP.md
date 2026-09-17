@@ -1,6 +1,6 @@
 # Methodology Article — Working Argument Map
 
-**Status:** `WORKING-FRAMEWORK`  
+**Status:** `WORKING-FRAMEWORK — REVIEW READY`  
 **Artifact:** methodology article  
 **Human approval:** not yet completed  
 **Derived draft status:** `DERIVED-PROVISIONAL`
@@ -13,129 +13,364 @@
 - `core/DECISION_LOG.md`
 - `evidence/METHODOLOGY_SOURCES.md`
 
+## Provenance legend
+
+- `HUMAN-ORIGINATED` — the substantive commitment was explicitly stated or clearly confirmed by the human founder.
+- `HUMAN-ORIGINATED / AI-FORMULATED` — the substantive idea is human-originated, but the present wording or conceptual compression was produced by the AI.
+- `AI-PROPOSED` — not yet part of the human-approved intellectual architecture.
+- `EVIDENCE-CONSTRAINT` — an external source constrains how a claim may responsibly be stated; it does not itself become a human commitment.
+
+The purpose of these labels is to prevent polished AI terminology from being mistaken for founder-authored doctrine.
+
+---
+
 ## Working title
 
 **从对话到持久研究状态：AI时代的人机研究协作、认知责任与可审计作者性**  
 *From Conversation to Persistent Research State: Human–AI Research Collaboration, Epistemic Responsibility, and Auditable Authorship in the AI Era*
 
-## 1. Central problem
+`AI-PROPOSED TITLE` — the article topic is human-required, but the current title has not been explicitly approved.
 
-Generative AI dramatically increases the speed of searching, structuring, drafting, revising, and formatting research. Human reading, understanding, and judgment do not scale at the same rate. This creates a methodological problem: how can long-running AI-assisted research remain genuinely human-governed when the volume of AI-mediated work exceeds what a human can continuously reread line by line?
+---
 
-## 2. Working thesis set
+# 1. Central problem
 
-### T1 — The durable unit of collaboration should be explicit research state, not chat context
+`HUMAN-ORIGINATED / AI-FORMULATED`
 
-A long-running project should externalize important intellectual state into version-controlled repository documents rather than treating one AI conversation or model memory as the project itself.
+AI agents can perform increasingly large amounts of searching, structuring, drafting, revising, formalizing, checking, and formatting. Human reading, understanding, judgment, and responsibility do not automatically scale at the same rate. The methodology article therefore asks:
 
-### T2 — AI-assisted research requires semantic version control in addition to textual version control
+> **How can a long-running AI-assisted research project expand human cognitive capacity while preserving durable human control over meaning, judgment, approval, evidence, and responsibility?**
 
-Git can show that text changed. A human–AI workflow also needs to show whether a change represents a human decision, an AI proposal, an evidence constraint, or a provisional implementation choice.
+The phrase **generation–verification asymmetry** is `AI-PROPOSED` shorthand for one part of this problem, not yet an approved central term.
 
-### T3 — Human cognitive responsibility should be concentrated on high-leverage epistemic decisions
+---
 
-The fact that AI can perform substantial cognitive labor does not imply that epistemic responsibility can be delegated wholesale. Human attention should be concentrated on research aims, core commitments, major inferential architecture, decisive evidence conflicts, framework approval, and final release decisions.
+# 2. Review-ready thesis set
 
-### T4 — A compact human-approved framework can serve as the main substantive responsibility anchor
+## T1 — Persistent Research State Thesis
 
-For long works, a human can realistically inspect and approve a compressed intellectual architecture even when continuous line-by-line review of every intermediate AI expansion is impractical.
+**Provenance:** `HUMAN-ORIGINATED`
 
-### T5 — Framework approval and final artifact approval are different responsibility gates
+A long-running human–AI research project should not depend for its intellectual continuity on one chat window, one model, one account memory, or one agent's private context. Durable project-relevant state should be externalized into explicit, version-controlled repository documents.
 
-Framework approval anchors substantive intellectual architecture. Final artifact approval remains the release/accountability threshold required by the relevant scholarly or publishing context.
+**Founder basis:** Article Content Core C3 and C8; HARC Protocol Core P1, P9, P10.
 
-### T6 — The framework must remain visible in the public-facing overview of the work
+---
 
-If the approved framework governs the work, readers should be able to recover it from the abstract/introduction, opening overview, book introduction, or analogous reader-facing structure.
+## T2 — Layered Semantic Governance Thesis
 
-### T7 — AI agents should be replaceable without destroying project continuity
+**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-A project's durable identity should reside primarily in the human-governed repository state, not in one AI agent's hidden context.
+The project should distinguish and separately preserve at least:
 
-## 3. Core distinctions
+1. human substantive commitments;
+2. human form/presentation intentions;
+3. historical human decisions;
+4. AI-maintained operational representations;
+5. evidence constraints;
+6. approval states;
+7. derived prose/artifacts.
 
-- cognitive labor vs epistemic responsibility;
-- human-originated commitments vs AI proposals;
-- Content Core vs Form Core;
+Changes should propagate upstream-first so that downstream AI expression does not silently redefine upstream human intention.
+
+The expression **semantic version control** is `AI-PROPOSED` terminology for this architecture. The underlying separation and propagation rule are human-originated.
+
+**Founder basis:** Article Content Core C4; HARC Protocol Core P2–P5, P12.
+
+---
+
+## T3 — Cognitive Delegation / Human Governance Thesis
+
+**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+
+Large amounts of cognitive labor may be delegated to AI, but this does not imply wholesale delegation of human understanding, judgment, confirmation, or responsibility. A human-governed research process must identify which high-level intellectual decisions remain meaningfully human-controlled.
+
+Candidate high-leverage responsibility nodes include:
+
+- research purpose and question selection;
+- acceptance/rejection of core claims;
+- major inferential relations;
+- treatment of decisive evidence conflicts;
+- acceptance of material AI proposals;
+- Framework Approval;
+- Final Artifact Approval where applicable.
+
+The expression **responsibility concentration** is `AI-PROPOSED`; the underlying concern about the human responsibility/ability boundary is human-originated.
+
+**Founder basis:** Article Content Core C2; HARC Protocol Core P17.
+
+---
+
+## T4 — Framework Responsibility Thesis
+
+**Provenance:** `HUMAN-ORIGINATED`, with **scope still unresolved**.
+
+For long works, a compact human-reviewed and human-approved representation of the intellectual architecture should function as a primary substantive responsibility anchor. It should expose the core theses, inferential relations, crucial distinctions, scope conditions, and section/chapter roles that the human actually understands and accepts.
+
+**Unresolved strength:**
+
+- **Strong version:** framework approval is generally the center of substantive intellectual authorship in AI-assisted long-form work.
+- **Moderate version:** framework approval is HARC's proposed governance architecture for concentrating substantive human review, without claiming a universal theory of authorship.
+
+No stronger version should be attributed to the human author until explicitly chosen.
+
+**Founder basis:** Article Content Core C5; HARC Protocol Core P6, P13.
+
+---
+
+## T5 — Dual Approval Gate Thesis
+
+**Provenance:** `HUMAN-ORIGINATED` + `EVIDENCE-CONSTRAINT`
+
+Framework Approval and Final Artifact Approval are distinct.
+
+- **Framework Approval** confirms the intellectual architecture.
+- **Final Artifact Approval** concerns the concrete release/submission version and must satisfy the applicable scholarly, institutional, publisher, or venue requirements.
+
+This distinction permits extensive provisional AI expansion without pretending that framework approval alone automatically satisfies public authorship/accountability standards.
+
+**Founder basis:** Article Content Core C6.
+
+**Evidence constraint:** current ICMJE and selected Nature Portfolio policies connect human authorship with final approval/accountability; these policies constrain the article's claims but are not universal laws of authorship.
+
+---
+
+## T6 — Framework Projection Thesis
+
+**Provenance:** `HUMAN-ORIGINATED`
+
+The human-approved framework should be recoverable in the reader-facing overview of the final work. In a paper this normally means abstract/introduction; in a book, the introduction/overview and chapter roadmap; in other artifacts, an analogous high-level overview.
+
+This creates a practical fidelity check between the framework the human approved and the structure readers are actually told the work contains.
+
+**Founder basis:** Article Content Core C7; HARC Protocol Core P7.
+
+---
+
+## T7 — Replaceable Agent / Durable Project Thesis
+
+**Provenance:** `HUMAN-ORIGINATED`
+
+AI agents should be replaceable without destroying project continuity. The durable identity of the project should reside in human-governed repository state rather than in one particular model's hidden context.
+
+This does not imply infinite context. Long-term memory should scale through compact active state, historical logs/archives, indexes, and selective retrieval.
+
+**Founder basis:** Article Content Core C3 and C8; HARC Protocol Core P9–P10.
+
+---
+
+## T8 — Practical Reusability Thesis
+
+**Provenance:** `HUMAN-ORIGINATED`
+
+HARC should be practically implementable and reusable across future papers, books, articles, reports, and sustained intellectual projects. Its architecture must therefore be concrete enough to instantiate through repository files, templates, update rules, and approval states.
+
+**Founder basis:** Article Content Core C9; HARC Protocol Core P11.
+
+### Empirical validation extension
+
+`AI-PROPOSED`
+
+HARC could additionally become an empirical methodology program using handoff tests, semantic-drift tests, framework-fidelity tests, review-effort studies, and cross-model portability tests.
+
+This is currently a research-agenda proposal, not part of the human-approved core thesis.
+
+---
+
+# 3. Core distinctions that the article should preserve
+
+### Human-originated distinctions
+
+- human research-content intention vs human form/presentation intention;
+- human intention vs AI operational representation;
 - Working Framework vs Approved Framework;
 - framework defect vs derived-expansion defect;
-- persistent external state vs single-run model context;
-- authorship credit vs contribution description;
-- internal framework approval vs public release approval.
+- Framework Approval vs Final Artifact Approval;
+- persistent repository state vs transient agent/chat context;
+- current canonical state vs historical state.
 
-## 4. Proposed argument structure
+### AI-formulated distinctions requiring confirmation if elevated to central terminology
 
-1. **Introduction: the asymmetry of generation and review**  
-   AI output scales faster than human verification. The main problem is therefore governance of cognition, not merely text generation.
+- cognitive labor vs epistemic responsibility;
+- contribution transparency vs authorship/accountability;
+- semantic version control vs ordinary textual version control;
+- responsibility concentration vs continuous line-by-line human production.
 
-2. **Why chat-centered collaboration is structurally fragile**  
-   Semantic drift, context-window dependence, hidden provenance, agent handoff failure, and presentation drift.
+---
 
-3. **Repository-centered research memory**  
-   GitHub as explicit persistent state; relation to external/distributed cognition without claiming the repository itself is an autonomous knower.
+# 4. Revised article architecture
 
-4. **Semantic version control**  
-   Content Core, Form Core, Decision Log, provenance statuses, upstream-first propagation.
+The earlier 12-part structure contained overlap between persistent-state claims, agent replacement, and approval/responsibility sections. The following 10-part structure is proposed as a more compact architecture.
 
-5. **Operational framework and human approval**  
-   Working Argument Map, Approved Framework snapshots, framework fidelity, overview projection.
+## I. Introduction — AI expands production faster than human review
 
-6. **A theory of cognitive delegation and epistemic responsibility**  
-   What AI may do; what humans must still understand and authorize; why delegation of labor differs from delegation of responsibility.
+**Function:** define the methodological problem and explain why the issue is governance of research state and judgment, not merely whether AI can generate prose.
 
-7. **Two kinds of defect and two approval gates**  
-   Framework defect vs expansion defect; Framework Approval vs Final Artifact Approval.
+`AI-PROPOSED TERM`: generation–verification asymmetry.
 
-8. **Replaceable agents and durable projects**  
-   Context scaling, selective retrieval, protocol version pinning, handoff.
+## II. Why chat-centered research collaboration is structurally fragile
 
-9. **Relation to existing authorship and research-integrity norms**  
-   Selected current publishing norms keep accountability human and require final approval; HARC supplies a process architecture for making that accountability operational rather than merely declarative.
+**Function:** establish the problem cases: semantic drift, context dependence, authorship ambiguity, presentation drift, and failed agent handoff.
 
-10. **Objections and limitations**  
-   Rubber-stamp approval; framework compression may omit subtle errors; repository overhead; confidentiality; model heterogeneity; dependence on good human judgment; external venue rules.
+Supports T1 and T7.
 
-11. **Open-source protocol as an empirical methodology project**  
-   Conformance tests, handoff tests, semantic-drift tests, review-effort studies, multi-agent/multi-human extensions.
+## III. Repository-centered persistent research state
 
-12. **Conclusion**  
-   AI can expand human cognitive reach only if the project makes authority, memory, evidence, and responsibility inspectable.
+**Function:** explain GitHub as the current implementation substrate; distinguish persistent memory from infinite context; introduce current-state vs historical-state compression.
 
-## 5. Evidence/literature anchors for the draft
+Supports T1 and T7.
 
-- Clark & Chalmers (1998), *The Extended Mind* — external cognitive scaffolding.
-- Hutchins (1995), *Cognition in the Wild* — distributed cognition and socially/materially organized cognitive systems.
-- Hardwig (1985), “Epistemic Dependence” — intellectual dependence and expert authority.
-- Parasuraman & Riley (1997), “Humans and Automation: Use, Misuse, Disuse, Abuse” — risks of over-reliance and automation misuse.
-- ICMJE authorship recommendations — final approval and accountability for published work.
-- Nature Portfolio AI policies — human accountability and transparency in AI-assisted scholarly work.
-- CRediT taxonomy — contribution transparency distinct from authorship determination.
-- UNESCO guidance on generative AI in education and research — human-centred governance framing.
+## IV. Layered semantic governance
+
+**Function:** introduce Content Core, Form Core, Decision Log, evidence, provenance statuses, upstream-first propagation, and the distinction between human commitments and AI proposals.
+
+Supports T2 and T8.
+
+`AI-PROPOSED TERM`: semantic version control.
+
+## V. Operational Framework and human confirmation
+
+**Function:** explain Working Argument Map, Approved Framework snapshots, immutability/versioning, and why the compact framework is the main structural discussion interface.
+
+Supports T4.
+
+## VI. Cognitive delegation and human epistemic responsibility
+
+**Function:** address the philosophical center of the article: what AI may do, what humans must still understand/authorize, and why the delegation of work does not automatically settle the delegation of responsibility.
+
+Supports T3.
+
+`HUMAN DECISION REQUIRED`: central terminology and strength of the normative claim.
+
+## VII. Two defects, two approval gates, one public-facing structure
+
+**Function:** integrate framework defect vs expansion defect, Framework Approval vs Final Artifact Approval, and framework projection into abstract/introduction/overview.
+
+Supports T5 and T6.
+
+## VIII. Existing intellectual and institutional context
+
+**Function:** compare HARC cautiously with extended/distributed cognition, epistemic dependence, automation reliance, contribution taxonomies, and selected current authorship/AI policies.
+
+The literature should contextualize and constrain HARC; it should not be used to imply that HARC's own concepts are already established by those sources.
+
+## IX. Limits, objections, and possible validation
+
+**Function:** address rubber-stamp approval, compression loss, evidence/detail errors, competence limits, repository overhead, privacy/confidentiality, domain variation, and changing AI capabilities.
+
+A possible empirical test suite belongs here as `AI-PROPOSED FUTURE RESEARCH`, unless the human explicitly promotes it into the core article thesis.
+
+## X. Conclusion — from AI text generation to governance of expanded cognition
+
+**Function:** restate the central proposal: AI can expand the scale of research activity only if meaning, authority, evidence, approval, and responsibility remain explicit and auditable.
+
+---
+
+# 5. Dependency structure
+
+```text
+T1 Persistent research state
+├── enables T7 replaceable agents / durable project
+└── supplies infrastructure for T2 layered semantic governance
+
+T2 Layered semantic governance
+├── protects human intention from silent AI drift
+└── enables an inspectable Working Framework
+
+T3 Cognitive delegation / human governance
+└── motivates T4 Framework Responsibility
+
+T4 Framework Responsibility
+├── requires T5 Dual Approval Gates
+└── requires T6 Framework Projection for public-facing fidelity
+
+T1 + T2 + T4 + T5 + T6 + T7
+└── jointly support T8 Practical Reusability as an executable collaboration protocol
+```
+
+This dependency graph is `AI-FORMULATED` and requires human review before approval.
+
+---
+
+# 6. Evidence/literature role
+
+The article currently uses:
+
+- Clark & Chalmers (1998) — possible external-cognition comparison;
+- Hutchins (1995) — distributed cognition background;
+- Hardwig (1985) — epistemic dependence;
+- Parasuraman & Riley (1997) — automation reliance;
+- ICMJE — selected current authorship/final-approval/accountability requirements;
+- Nature Portfolio — selected current AI/authorship policy constraints;
+- CRediT — contribution-role transparency distinct from authorship determination;
+- UNESCO — human-centred generative-AI governance background.
 
 Verified source notes are maintained in `evidence/METHODOLOGY_SOURCES.md`; bibliographic metadata is maintained in `paper/methodology-references.bib`.
 
-## 6. Human decisions needed before framework approval
+**Evidence rule:** none of these sources by itself establishes HARC's proposed framework architecture, `semantic version control`, `responsibility concentration`, or empirical effectiveness.
 
-- Is “epistemic responsibility” the preferred central philosophical term, or should the article use “cognitive responsibility” more broadly?
-- Should HARC defend a strong normative claim that framework approval is the *center* of substantive intellectual authorship, or present this as a proposed governance model rather than a general theory of authorship?
-- How strongly should the article connect HARC to extended/distributed cognition literature?
-- Should the target venue be philosophy of technology, research methodology, scholarly communication, or an interdisciplinary venue?
-- How much of the article should be normative argument versus protocol description and empirical testing agenda?
+---
 
-## 7. AI-proposed claims awaiting explicit human approval
+# 7. Human decisions required before `MA-FW-001`
 
-- `AI-PROPOSED`: call the central practical problem the **generation–verification asymmetry**.
-- `AI-PROPOSED`: describe HARC as a form of **semantic version control for research intentions**.
-- `AI-PROPOSED`: use **responsibility concentration** to describe shifting human effort from continuous prose production toward high-leverage judgment.
-- `AI-PROPOSED`: interpret the repository as a cognitive scaffold while avoiding the stronger claim that it literally constitutes a collective epistemic agent.
+## D1 — Central responsibility concept
 
-## 8. Synchronization status
+Choose or revise the article's central language:
 
-- Founder commitments -> Article Content Core: `SYNC`.
-- Article Content Core -> this map: `SYNC`, with AI-proposed terminology clearly marked.
-- This map -> methodology article draft: `SYNC WITH PROVISIONAL AI FORMULATIONS`.
-- Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17`; target-venue policies must be rechecked before submission.
+- `epistemic responsibility` / 认识责任;
+- `cognitive responsibility` / 认知责任;
+- a layered distinction using both;
+- another formulation.
+
+## D2 — Strength of Framework Responsibility Thesis
+
+Choose between the **strong** and **moderate** versions in T4, or formulate a third version.
+
+## D3 — Status of AI terminology
+
+Decide whether to accept, reject, or replace:
+
+- `generation–verification asymmetry`;
+- `semantic version control`;
+- `responsibility concentration`.
+
+Acceptance of the underlying claims does not require acceptance of these terms.
+
+## D4 — Extended/distributed cognition connection
+
+Choose whether this literature is:
+
+- central theoretical grounding;
+- secondary conceptual comparison;
+- minimal background only.
+
+## D5 — Empirical validation program
+
+Decide whether the test suite is:
+
+- part of the article's core methodological contribution;
+- a future research agenda;
+- omitted from the main article.
+
+## D6 — Disciplinary positioning
+
+Choose a provisional target orientation:
+
+- philosophy of technology / epistemology;
+- research methodology;
+- scholarly communication / research integrity;
+- interdisciplinary AI governance;
+- other.
+
+---
+
+# 8. Current synchronization status
+
+- Founder commitments -> Article Content Core: `SYNC AFTER PROVENANCE CORRECTION`.
+- Article Content Core -> this map: `SYNC`, with AI-developed terminology and research extensions explicitly marked.
+- This map -> methodology article draft: `PARTIALLY SYNC`; the existing draft still reflects the earlier 12-part organization and some stronger AI terminology, so it should not be structurally revised until the human reviews this framework.
+- Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17`; venue-specific policies must be rechecked before submission.
 - Framework approval: `NOT YET COMPLETED`.
 - Final artifact approval: `NOT YET COMPLETED`.
 
-See `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` for the current approval state.
+See `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` for the approval state.
