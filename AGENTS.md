@@ -1,0 +1,125 @@
+# AGENTS.md — HARC Agent Contract
+
+This repository defines the **Human–AI Research Collaboration Protocol (HARC)**. AI agents working in this repository or using it as a template must treat repository state as the durable collaboration substrate.
+
+## 1. Do not depend on chat memory
+
+A particular chat, model, vendor, account memory, hidden scratchpad, or local context is not the canonical project memory.
+
+If a human instruction should constrain future work, persist it explicitly in the appropriate repository file.
+
+## 2. Preserve three distinct domains
+
+Before acting on substantive human feedback, classify it as one or more of:
+
+- `CONTENT` — research meaning, claims, distinctions, assumptions, questions, conclusions;
+- `FORM` — artifact type, prose presentation, typography, layout, citation style, visual system, rendering;
+- `PROTOCOL` — collaboration rules, persistence, versioning, approval, handoff, synchronization.
+
+Do not merge these domains merely for convenience.
+
+## 3. Canonical precedence in a research project
+
+### Content chain
+
+`Human content decision > CONTENT_CORE > approved framework > working argument map > derived prose`
+
+### Form chain
+
+`Human form decision > FORM_CORE > external venue constraints / reusable profile > implementation default > rendered artifact`
+
+### Protocol chain
+
+`Human workflow decision > project protocol files > agent default behavior`
+
+Lower layers must not silently contradict higher layers.
+
+## 4. Upstream-first updates
+
+### CONTENT
+
+1. Record the human decision in `DECISION_LOG.md`.
+2. Reconcile `CONTENT_CORE.md`.
+3. Reconcile the working argument map.
+4. If the change materially alters an already approved framework, mark the project out of sync and request/create a new framework version.
+5. Only then propagate the change into derived prose.
+
+### FORM
+
+1. Record the decision.
+2. Reconcile `FORM_CORE.md`.
+3. Propagate into typesetting/rendering implementation.
+4. Do not turn temporary AI defaults into human preferences.
+
+### PROTOCOL
+
+1. Record the decision.
+2. Reconcile protocol/governance files.
+3. Update reusable templates if the rule is intended to generalize.
+
+## 5. AI proposals are proposals
+
+An AI-generated thesis, distinction, reorganization, term, layout, or aesthetic choice is not a human commitment merely because the AI has written it.
+
+Until accepted by the human:
+
+- content proposals remain visibly `AI-PROPOSED` in the operational layer;
+- form proposals remain outside `FORM_CORE.md`;
+- protocol proposals remain proposals rather than silently becoming mandatory rules.
+
+## 6. Working framework vs approved framework
+
+The current argument map is mutable and AI-maintained.
+
+Human endorsement occurs only through an explicit **Framework Approval Gate**. Once approved, create a versioned immutable snapshot such as `FW-001.md`.
+
+Material intellectual changes require a new framework version.
+
+## 7. Evidence conflicts
+
+Human authorial authority concerns intended claims; it does not authorize suppression of evidence.
+
+If evidence, formal reasoning, or source verification conflicts with an active human commitment:
+
+1. preserve the authorial commitment as the current intention;
+2. surface the conflict explicitly;
+3. do not knowingly write a misleading downstream claim;
+4. present the issue for human decision;
+5. record the resulting decision.
+
+## 8. Final artifact status
+
+AI may produce extensive derived text after framework approval, but it remains `DERIVED-PROVISIONAL` until final human review.
+
+Do not represent an artifact as submission-ready or human-approved unless the relevant final approval gate has actually been completed.
+
+## 9. Memory scaling
+
+Canonical files should remain compact enough for routine onboarding. Detailed history can grow in logs, evidence files, and archives.
+
+When history becomes large:
+
+- preserve originals;
+- create indexes/summaries;
+- keep current-state cores concise;
+- retrieve historical detail selectively.
+
+The goal is recoverable project memory, not forcing every agent to ingest the entire archive.
+
+## 10. Handoff criterion
+
+A new competent AI agent should be able to reconstruct the project's active state without access to the original conversation history.
+
+If this is not possible, the project has a persistence defect.
+
+## 11. When using this repository as a template
+
+Read, in order:
+
+1. `protocol/SPECIFICATION.md`
+2. `protocol/PERSISTENT_MEMORY.md`
+3. `protocol/FRAMEWORK_APPROVAL.md`
+4. `protocol/FORM_CONTENT_ROUTING.md`
+5. `templates/research-project/README.md`
+
+Then instantiate only the human decisions actually supplied for the new project. Unknowns should remain explicit rather than being filled with AI assumptions.
