@@ -112,7 +112,34 @@ A new competent AI agent should be able to reconstruct the project's active stat
 
 If this is not possible, the project has a persistence defect.
 
-## 11. When using this repository as a template
+## 11. Multi-pass audits are review-and-repair loops
+
+If the human requests a multi-pass audit, each pass MUST include:
+
+1. review;
+2. identification of defects/omissions;
+3. repair or implementation;
+4. verification of the repair.
+
+Do not interpret “review three times” as three passive readings followed by a single repair. After the requested cycles, perform a separate post-repair audit when requested.
+
+## 12. Maintain the methodology article as a governed research artifact
+
+This repository has two major outputs:
+
+1. the executable HARC open protocol;
+2. a methodology article explaining and critically developing the protocol.
+
+For the methodology article, read:
+
+- `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`
+- `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+
+The article's argument map is a `WORKING-FRAMEWORK` until the human explicitly approves it. The prose draft is `DERIVED-PROVISIONAL` until the appropriate approval gates are completed.
+
+When research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, record the evidence and keep normative HARC proposals distinct from external publication rules.
+
+## 13. When using this repository as a template
 
 Read, in order:
 
@@ -120,6 +147,7 @@ Read, in order:
 2. `protocol/PERSISTENT_MEMORY.md`
 3. `protocol/FRAMEWORK_APPROVAL.md`
 4. `protocol/FORM_CONTENT_ROUTING.md`
-5. `templates/research-project/README.md`
+5. `protocol/FORM_PROFILE_INHERITANCE.md`
+6. `templates/research-project/README.md`
 
 Then instantiate only the human decisions actually supplied for the new project. Unknowns should remain explicit rather than being filled with AI assumptions.
