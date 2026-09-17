@@ -92,7 +92,37 @@ Material deviation includes:
 
 When material deviation occurs, return upstream and create a new Working Framework for human review.
 
-## 6. Overview projection
+## 6. Framework defect versus expansion defect
+
+HARC should keep two kinds of defect analytically separate.
+
+### Framework-level defect
+
+A problem belongs to the framework level when it is already present in the human-approved intellectual architecture, for example:
+
+- a central thesis is mistaken or inadequately formulated;
+- a major inference does not follow;
+- an essential distinction is missing;
+- a chapter or section is assigned the wrong argumentative role;
+- a scope limitation is absent in a way that changes the claim.
+
+Because the approved framework is the human-confirmed substantive baseline, such a defect is a defect in the confirmed intellectual architecture.
+
+### Derived-expansion defect
+
+A problem belongs only to the expansion level when the approved framework remains sound but later AI-generated implementation introduces a local flaw, for example:
+
+- weak or ambiguous wording;
+- an unnecessary or poor example;
+- a clumsy transition;
+- a formatting mistake;
+- a local explanatory omission that does not alter the approved structure.
+
+Before final artifact approval, such a defect should not be retroactively attributed to the approved framework. It should be corrected downstream unless it reveals a deeper framework problem.
+
+This distinction allows long-form projects to concentrate high-intensity human review on core intellectual architecture while still preserving a separate final-release review requirement.
+
+## 7. Overview projection
 
 The final artifact should make the approved framework visible to readers through its overview sections.
 
@@ -105,7 +135,7 @@ Recommended mapping:
 
 The wording may differ, but the intellectual structure should remain recoverable.
 
-## 7. Final Artifact Approval Gate
+## 8. Final Artifact Approval Gate
 
 Framework approval is not identical to release approval.
 
@@ -119,7 +149,7 @@ Recommended states:
 - `FINAL-REVIEW`
 - `FINAL-APPROVED`
 
-## 8. Responsibility distinction
+## 9. Responsibility distinction
 
 HARC distinguishes:
 
