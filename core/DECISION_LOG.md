@@ -190,6 +190,6 @@ This file is the chronological audit trail of substantive human decisions about 
 
 **Decision:** HARC should simultaneously be a high-quality open project and produce a standalone methodology article. The article should explain HARC's conceptual architecture and examine human cognitive responsibility, the scope and limits of delegating intellectual work to AI, framework-level authorship, persistent research memory, and related questions of human–AI collaboration in the AI era.
 
-**Affected components:** project purpose, README, methodology article, article framework, roadmap
+**Affected components:** project purpose, README, methodology article, article framework, evidence layer, roadmap
 
-**Status:** implementation in progress.
+**Status:** first governed methodology-article framework and complete Chinese provisional draft implemented; human Framework Approval and later Final Artifact Approval remain pending.
