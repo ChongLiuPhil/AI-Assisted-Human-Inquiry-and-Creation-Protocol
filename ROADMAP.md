@@ -1,6 +1,6 @@
 # HARC Protocol Roadmap
 
-## v0.1 — Conceptual protocol and manual templates
+## v0.1 — Foundational architecture
 
 - [x] Define repository-centered persistent memory.
 - [x] Separate Content Core and Form Core.
@@ -14,16 +14,34 @@
 - [x] Publish reusable manual project templates.
 - [x] Publish conceptual white paper.
 
-## v0.2 — Validation and schemas
+## v0.2 — Responsibility model, repair discipline, and methodology article
+
+- [x] Distinguish framework-level defects from derived-expansion defects.
+- [x] Define reusable form-profile inheritance across author / artifact type / project.
+- [x] Define multi-pass audits as review-and-repair cycles.
+- [x] Add independent post-repair audit requirement.
+- [x] Make cognitive-labor delegation vs epistemic responsibility explicit.
+- [x] Create a governed methodology-article Working Framework.
+- [x] Create a first complete Chinese methodology-article draft.
+- [x] Add methodology-article evidence/source notes.
+- [x] Add methodology-article BibTeX source file.
+- [ ] Human review and approval of the methodology article Working Framework.
+- [ ] Create first Approved Framework snapshot for the methodology article.
+- [ ] Decide target publication venue / disciplinary positioning.
+- [ ] Decide open-source/open-content licensing.
+
+## v0.3 — Validation and schemas
 
 - [ ] Define machine-readable metadata for canonical files.
 - [ ] Add optional YAML front matter conventions.
 - [ ] Define a project-state manifest.
 - [ ] Create consistency checklist for Content Core / Framework / Artifact.
-- [ ] Add examples for paper, book, and report projects.
+- [ ] Add examples for paper, book, article, and report projects.
 - [ ] Define framework diff conventions.
+- [ ] Define a HARC conformance-test suite.
+- [ ] Define a cross-agent handoff benchmark.
 
-## v0.3 — Automation
+## v0.4 — Automation
 
 - [ ] Repository bootstrap script or GitHub template repository.
 - [ ] Linter for missing canonical files.
@@ -31,13 +49,15 @@
 - [ ] Agent onboarding command/checklist.
 - [ ] Automatic archive/index support for large decision logs.
 - [ ] Optional claim-to-framework traceability annotations.
+- [ ] Automated check for broken references among canonical files.
 
-## v0.4 — Multi-agent / multi-human governance
+## v0.5 — Multi-agent / multi-human governance
 
 - [ ] Define multiple human author roles.
 - [ ] Define conflicting human decisions and resolution states.
-- [ ] Define specialized agent roles (research, statistics, editing, typesetting).
+- [ ] Define specialized agent roles (research, statistics, editing, typesetting, verification).
 - [ ] Define approval quorum or reviewer roles where needed.
+- [ ] Distinguish responsibility allocation in co-authored human–AI-assisted projects.
 
 ## Research agenda
 
@@ -45,5 +65,7 @@
 - [ ] Measure onboarding cost for a new agent with and without repository state.
 - [ ] Study how much compression an approved framework can tolerate before nuance is lost.
 - [ ] Study interfaces for meaningful rather than ceremonial framework approval.
+- [ ] Measure whether responsibility concentration reduces review burden without increasing serious errors.
 - [ ] Compare GitHub-centered implementation with local-first or other versioned backends.
-- [ ] Examine relationships among HARC, scholarly authorship norms, provenance systems, and human intellectual agency.
+- [ ] Examine relationships among HARC, scholarly authorship norms, provenance systems, extended/distributed cognition, automation reliance, and human intellectual agency.
+- [ ] Develop operational measures for framework fidelity and semantic drift.
