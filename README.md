@@ -1,12 +1,26 @@
 # Human–AI Research Collaboration Protocol
 
-**HARC Protocol** is a GitHub-centered, platform-independent workflow for sustained research and intellectual collaboration between a human author and interchangeable AI agents.
+**HARC Protocol** is a GitHub-centered workflow for sustained research and intellectual collaboration between a human author and interchangeable AI agents.
 
 The central idea is simple:
 
 > **AI agents may be replaceable; the research state must not be.**
 
 A chat window is an interaction surface, not the durable memory of a long research project. Important human decisions, argument structures, presentation requirements, evidence constraints, and approval states should be externalized into explicit, version-controlled repository files so that a new competent AI agent can continue the work without needing the original conversation history.
+
+## Two project outputs
+
+HARC is intentionally a dual-output project:
+
+1. **Executable open protocol** — specifications, governance rules, templates, approval states, form profiles, memory architecture, and future conformance tooling.
+2. **Methodology article** — a scholarly argument explaining the protocol and examining human cognitive/epistemic responsibility, delegation to AI, auditable authorship, persistent research memory, and the limits of AI-mediated research collaboration.
+
+Current methodology-article files:
+
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md) — `WORKING-FRAMEWORK`, not yet human-approved.
+- [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — first complete Chinese `DERIVED-PROVISIONAL` draft.
+
+The earlier white papers remain conceptual introductions; the methodology article is intended to become a standalone scholarly research output.
 
 ## What problem does this solve?
 
@@ -17,9 +31,10 @@ Long AI-assisted projects face several recurring failures:
 - **context-window dependence** — important decisions remain trapped in one conversation or one platform's memory;
 - **structural opacity** — the human must reread a long manuscript to understand what the project currently argues;
 - **presentation drift** — temporary AI formatting choices become mistaken for the author's enduring preferences;
-- **handoff failure** — a new model or agent cannot reliably reconstruct the project's current state.
+- **handoff failure** — a new model or agent cannot reliably reconstruct the project's current state;
+- **generation–verification asymmetry** — AI can generate and restructure work faster than humans can continuously verify it.
 
-HARC addresses these problems by separating **human intention**, **operational representation**, **evidence**, **form**, and **derived expression**.
+HARC addresses these problems by separating **human intention**, **operational representation**, **evidence**, **form**, **approval**, and **derived expression**.
 
 ## Canonical architecture
 
@@ -41,48 +56,37 @@ project/
 └── paper/ | book/ | article/ | report/ | ...
 ```
 
-### 1. Content Core
+### Content Core
 
 `CONTENT_CORE.md` records the human author's current substantive commitments: what the work means to claim, distinguish, question, preserve, or leave open.
 
 AI proposals do **not** enter this file merely because they are useful or polished. They enter only after human acceptance or modification.
 
-### 2. Form Core
+### Form Core
 
 `FORM_CORE.md` records how the human wants the artifact expressed: artifact type, typography, layout, citation presentation, visual system, language presentation, and reusable style preferences.
 
 Research content and presentation preferences are deliberately kept separate.
 
-### 3. Decision Log
+### Decision Log
 
 `DECISION_LOG.md` is the chronological audit trail of substantive human decisions across content, form, and collaboration protocol.
 
-### 4. Operational Argument Map
+### Operational Argument Map
 
 `docs/argument-map.md` is a compact, AI-maintained representation of the current intellectual structure. It is the preferred human–AI discussion interface for long-form research.
 
-It should be much shorter than the manuscript and should expose:
+It should expose central questions and theses, conceptual distinctions, argument dependencies, section/chapter roles, evidence dependencies, objections, unresolved human decisions, and AI proposals awaiting human acceptance.
 
-- central questions and theses;
-- conceptual distinctions;
-- argument dependencies;
-- section or chapter architecture;
-- evidence dependencies;
-- open objections;
-- unresolved human decisions;
-- AI proposals awaiting human acceptance.
+### Approved Framework Snapshots
 
-### 5. Approved Framework Snapshots
-
-The working argument map is not automatically human-endorsed. When the human explicitly reviews and approves a framework, it is frozen as a versioned snapshot such as:
-
-`docs/frameworks/FW-001.md`
+The working argument map is not automatically human-endorsed. When the human explicitly reviews and approves a framework, it is frozen as a versioned snapshot such as `docs/frameworks/FW-001.md`.
 
 Material changes require a new approved framework version rather than silent rewriting.
 
-### 6. Derived Artifact
+### Derived Artifact
 
-The paper, book, report, or other final output is a **derived expression** constrained by the content core, approved framework, form core, and evidence.
+The paper, book, report, or other final output is a **derived expression** constrained by the Content Core, approved framework, Form Core, and evidence.
 
 AI may perform substantial drafting and expansion, but downstream prose must not silently redefine upstream human-approved meaning.
 
@@ -95,8 +99,6 @@ Every substantive instruction is classified before persistence:
 - **PROTOCOL** — changes how the collaboration itself operates.
 
 A message may carry more than one label.
-
-The normal propagation paths are:
 
 ```text
 CONTENT:
@@ -111,33 +113,33 @@ Human decision -> Decision Log -> Protocol Documents -> Agent Behavior
 
 ## Two human approval gates
 
-HARC distinguishes two different forms of human review.
-
 ### Gate A — Framework Approval
 
 The human reviews and accepts the work's core intellectual architecture: main theses, argument relations, distinctions, section roles, limitations, and intentionally unresolved questions.
 
 This is the project's primary **substantive intellectual checkpoint**.
 
-HARC also distinguishes a defect already present in this approved intellectual architecture from a local defect introduced only during later AI expansion. The former is a framework-level defect; the latter remains a derived-expression defect unless it reveals a deeper structural problem.
+HARC distinguishes a defect already present in this approved architecture from a local defect introduced only during later AI expansion. The former is a framework-level defect; the latter is a derived-expression defect unless it reveals a deeper structural problem.
 
 ### Gate B — Final Artifact Approval
 
 Before formal submission, publication, or public release under human authorship, the human approves the concrete release version to the degree required by the relevant venue, institution, discipline, or authorship standard.
 
-Framework approval concentrates human attention on the intellectual architecture; it does not automatically waive final publication accountability.
+Framework approval concentrates human attention on intellectual architecture; it does not waive final publication accountability.
+
+## Cognitive delegation vs epistemic responsibility
+
+HARC does not assume that human value lies in manually producing every sentence. AI may perform substantial search, synthesis, drafting, restructuring, consistency checking, and formatting.
+
+But delegation of cognitive labor is not automatically delegation of epistemic responsibility. HARC concentrates human attention on high-leverage decisions: research aims, core commitments, major inferential architecture, decisive evidence conflicts, framework approval, and final release approval where required.
+
+This responsibility model is developed in the methodology article.
 
 ## Reusable form profiles
 
-HARC supports form inheritance across projects instead of forcing every project to recreate presentation decisions from scratch.
+HARC supports form inheritance across projects:
 
-The model distinguishes:
-
-- reusable author-level preferences;
-- artifact-type profiles;
-- project-specific form rules;
-- external publication constraints;
-- temporary AI/tool defaults.
+`reusable author profile -> artifact-type profile -> project Form Core -> external constraints -> implementation`
 
 See:
 
@@ -151,15 +153,43 @@ See:
 
 > **Chat is temporary interaction context. The repository is durable shared research memory.**
 
-Not every chat sentence must be stored. But if losing a human instruction would change how a new agent should continue the project, that instruction should be **promoted** into an appropriate canonical repository file.
+Not every chat sentence must be stored. But if losing a human instruction would change how a new agent should continue the project, that instruction should be promoted into an appropriate canonical repository file.
 
-This does not create infinite model context. Instead it supports scalable memory through:
+This does not create infinite model context. It supports scalable memory through compact current-state cores, chronological logs, structural maps, detailed evidence/archives, indexes, and selective retrieval.
 
-- compact current-state cores;
-- chronological logs;
-- structural maps;
-- detailed evidence and archives;
-- selective retrieval when historical detail becomes relevant.
+## Audit discipline
+
+When HARC performs a multi-pass integration audit, each pass is a **review-and-repair cycle**:
+
+`review -> identify defect -> repair/implement -> verify repair`
+
+A three-pass audit is therefore three such cycles, followed—when requested—by a separate post-repair audit.
+
+Audit records:
+
+- [`docs/FOUNDING_IDEA_AUDIT.md`](docs/FOUNDING_IDEA_AUDIT.md) — founding-idea traceability.
+- [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) — explicit three-cycle review/repair record.
+- [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md) — final independent audit after repairs.
+
+## Start here
+
+For humans:
+
+1. Read [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) for the emerging scholarly argument.
+2. Read [`paper/WHITEPAPER.md`](paper/WHITEPAPER.md) or [`paper/WHITEPAPER.zh-CN.md`](paper/WHITEPAPER.zh-CN.md) for a shorter conceptual introduction.
+3. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md) for the normative workflow.
+4. Read [`docs/FOUNDING_IDEA_AUDIT.md`](docs/FOUNDING_IDEA_AUDIT.md) for traceability from founding ideas to implementation.
+5. Use [`templates/research-project/`](templates/research-project/) to bootstrap a new project.
+6. Use [`templates/form-profiles/`](templates/form-profiles/) for reusable author/artifact presentation rules.
+
+For AI agents:
+
+1. Read [`AGENTS.md`](AGENTS.md).
+2. Read [`core/PROTOCOL_CORE.md`](core/PROTOCOL_CORE.md) and recent [`core/DECISION_LOG.md`](core/DECISION_LOG.md).
+3. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md).
+4. Apply the relevant persistence, framework-approval, routing, and form-inheritance rules.
+5. Do not invent human commitments that have not been stated.
+6. Record the HARC version/tag/commit adopted by a new project so later upstream changes are not silently treated as already accepted governance.
 
 ## Repository status
 
@@ -167,35 +197,18 @@ This repository is the standalone development home of HARC Protocol. It contains
 
 - the normative specification;
 - implementation guidance;
-- reusable project templates;
+- reusable research-project templates;
 - reusable form-profile templates;
 - a conceptual white paper;
-- a three-pass audit of the founding ideas;
+- a methodology article under HARC framework control;
+- founding-idea and repair audits;
 - a roadmap for future development.
 
-The protocol currently targets **GitHub + human author + AI agent** workflows. Broader platform support may be considered later.
-
-## Start here
-
-For humans:
-
-1. Read [`paper/WHITEPAPER.md`](paper/WHITEPAPER.md) or [`paper/WHITEPAPER.zh-CN.md`](paper/WHITEPAPER.zh-CN.md) for the rationale and conceptual model.
-2. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md) for the normative workflow.
-3. Read [`docs/FOUNDING_IDEA_AUDIT.md`](docs/FOUNDING_IDEA_AUDIT.md) for the three-pass traceability audit from the founding discussions to the current implementation.
-4. Use [`templates/research-project/`](templates/research-project/) to bootstrap a new project.
-5. Use [`templates/form-profiles/`](templates/form-profiles/) when reusable author or artifact-type presentation rules are relevant.
-
-For AI agents:
-
-1. Read [`AGENTS.md`](AGENTS.md).
-2. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md).
-3. Read the applicable persistence, framework-approval, routing, and form-inheritance documents.
-4. Apply the template without inventing human commitments that have not been stated.
-5. Record the HARC version/tag/commit adopted by a new project so later upstream changes are not silently treated as already accepted governance.
+The protocol currently targets **GitHub + human author + AI agent(s)**. Broader platform support may be considered later.
 
 ## Design principle
 
-HARC is not a system for making AI the hidden author of a human-labelled work. It is a system for making the relationship among **human intention, AI transformation, evidence, approval, and final expression explicit and auditable**.
+HARC is not a system for making AI the hidden author of a human-labelled work. It is a system for making the relationship among **human intention, AI transformation, evidence, approval, responsibility, and final expression explicit and auditable**.
 
 ## Version
 
