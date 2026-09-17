@@ -2,16 +2,28 @@
 
 Use this directory as the conceptual bootstrap for a new HARC-governed project.
 
+## Protocol source
+
+At initialization, record which HARC version/tag/commit the project adopts. A project should not silently change governance merely because the upstream HARC repository later evolves.
+
+Default upstream reference:
+
+`ChongLiuPhil/Human-AI-Research-Collaboration-Protocol`
+
+See `AGENTS.md` for the protocol-source fields.
+
 ## Initialization sequence
 
 1. Identify the artifact type: paper, book, article, report, thesis, etc.
 2. Extract only the human's actual substantive commitments into `core/CONTENT_CORE.md`.
-3. Extract only explicit human presentation decisions into `core/FORM_CORE.md`.
-4. Record initialization decisions in `core/DECISION_LOG.md`.
-5. Build `docs/argument-map.md` as an AI-maintained working representation.
-6. Initialize `docs/framework-status.md` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
-7. Create the artifact directory appropriate to the project.
-8. Keep unknowns explicit. Do not fill them with AI assumptions.
+3. Identify any explicitly reusable author form profile and the applicable artifact-type profile.
+4. Extract only explicit human presentation decisions into `core/FORM_CORE.md`; keep inherited, external, project-specific, and temporary-default rules distinguishable.
+5. Record initialization decisions in `core/DECISION_LOG.md`.
+6. Build `docs/argument-map.md` as an AI-maintained working representation.
+7. Initialize `docs/framework-status.md` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
+8. Create the artifact directory appropriate to the project.
+9. Create `evidence/` when research verification, data, calculations, or sources are relevant.
+10. Keep unknowns explicit. Do not fill them with AI assumptions.
 
 ## Minimum template tree
 
@@ -30,9 +42,20 @@ project/
 └── paper/ | book/ | article/ | report/
 ```
 
+## Form-profile inheritance
+
+The upstream HARC repository provides:
+
+- `templates/form-profiles/AUTHOR_PROFILE.md`
+- `templates/form-profiles/BOOK.md`
+- `templates/form-profiles/ACADEMIC_PAPER.md`
+- `templates/form-profiles/ARTICLE.md`
+
+Use only profiles applicable to the new project. Do not populate unresolved fields by guessing the author's tastes.
+
 ## Suggested instruction to an AI agent
 
-> Initialize this project using HARC Protocol. Treat GitHub as the durable project memory. Separate CONTENT, FORM, and PROTOCOL decisions. Seed canonical files only with human-provided commitments. Maintain the argument map as AI-generated working structure until I explicitly approve a framework snapshot. Propagate substantive changes upstream-first.
+> Initialize this project using HARC Protocol. Treat GitHub as the durable project memory. Separate CONTENT, FORM, and PROTOCOL decisions. Seed canonical files only with human-provided commitments. Identify the artifact type and applicable form profiles without inventing preferences. Maintain the argument map as AI-generated working structure until I explicitly approve a framework snapshot. Propagate substantive changes upstream-first. Record which HARC version/commit this project adopts.
 
 ## Unknowns are valid state
 
