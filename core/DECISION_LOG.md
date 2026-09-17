@@ -153,7 +153,7 @@ This file is the chronological audit trail of substantive human decisions about 
 
 **Affected components:** Protocol Core, Framework Approval model, responsibility model
 
-**Status:** implemented after three-pass founding-idea audit.
+**Status:** implemented after founding-idea repair audit.
 
 ---
 
@@ -166,4 +166,30 @@ This file is the chronological audit trail of substantive human decisions about 
 
 **Affected components:** Form Core model, form-profile inheritance, templates
 
-**Status:** implemented after three-pass founding-idea audit.
+**Status:** implemented after founding-idea repair audit.
+
+---
+
+## 2026-09-17 — HARC-D013
+
+**Source:** Human project founder  
+**Classification:** PROTOCOL
+
+**Decision:** A requested three-pass review must be interpreted as three complete review-and-repair cycles. In each cycle the agent should inspect the project, identify omissions or defects, repair and implement the required changes, and then verify the repair before moving to the next cycle. After all three cycles, perform a further independent post-repair audit.
+
+**Affected components:** Protocol Core, audit procedure, audit documentation
+
+**Status:** implemented.
+
+---
+
+## 2026-09-17 — HARC-D014
+
+**Source:** Human project founder  
+**Classification:** CONTENT, FORM, PROTOCOL
+
+**Decision:** HARC should simultaneously be a high-quality open project and produce a standalone methodology article. The article should explain HARC's conceptual architecture and examine human cognitive responsibility, the scope and limits of delegating intellectual work to AI, framework-level authorship, persistent research memory, and related questions of human–AI collaboration in the AI era.
+
+**Affected components:** project purpose, README, methodology article, article framework, roadmap
+
+**Status:** implementation in progress.
