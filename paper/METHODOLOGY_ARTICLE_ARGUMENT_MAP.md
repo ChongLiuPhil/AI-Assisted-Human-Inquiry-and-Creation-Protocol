@@ -5,6 +5,14 @@
 **Human approval:** not yet completed  
 **Derived draft status:** `DERIVED-PROVISIONAL`
 
+## Canonical upstream files
+
+- `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.md`
+- `paper/METHODOLOGY_ARTICLE_FORM_CORE.md`
+- `core/PROTOCOL_CORE.md`
+- `core/DECISION_LOG.md`
+- `evidence/METHODOLOGY_SOURCES.md`
+
 ## Working title
 
 **从对话到持久研究状态：AI时代的人机研究协作、认知责任与可审计作者性**  
@@ -82,7 +90,7 @@ A project's durable identity should reside primarily in the human-governed repos
    Context scaling, selective retrieval, protocol version pinning, handoff.
 
 9. **Relation to existing authorship and research-integrity norms**  
-   Current publishing norms keep accountability human and require final approval; HARC supplies a process architecture for making that accountability operational rather than merely declarative.
+   Selected current publishing norms keep accountability human and require final approval; HARC supplies a process architecture for making that accountability operational rather than merely declarative.
 
 10. **Objections and limitations**  
    Rubber-stamp approval; framework compression may omit subtle errors; repository overhead; confidentiality; model heterogeneity; dependence on good human judgment; external venue rules.
@@ -100,9 +108,11 @@ A project's durable identity should reside primarily in the human-governed repos
 - Hardwig (1985), “Epistemic Dependence” — intellectual dependence and expert authority.
 - Parasuraman & Riley (1997), “Humans and Automation: Use, Misuse, Disuse, Abuse” — risks of over-reliance and automation misuse.
 - ICMJE authorship recommendations — final approval and accountability for published work.
-- Nature/Springer Nature AI policies — human accountability and transparency in AI-assisted scholarly work.
+- Nature Portfolio AI policies — human accountability and transparency in AI-assisted scholarly work.
 - CRediT taxonomy — contribution transparency distinct from authorship determination.
 - UNESCO guidance on generative AI in education and research — human-centred governance framing.
+
+Verified source notes are maintained in `evidence/METHODOLOGY_SOURCES.md`; bibliographic metadata is maintained in `paper/methodology-references.bib`.
 
 ## 6. Human decisions needed before framework approval
 
@@ -121,6 +131,11 @@ A project's durable identity should reside primarily in the human-governed repos
 
 ## 8. Synchronization status
 
-- Founder commitments vs this map: `SYNC`, with AI-proposed terminology clearly marked.
-- Methodology article draft vs this map: to be checked after drafting.
+- Founder commitments -> Article Content Core: `SYNC`.
+- Article Content Core -> this map: `SYNC`, with AI-proposed terminology clearly marked.
+- This map -> methodology article draft: `SYNC WITH PROVISIONAL AI FORMULATIONS`.
+- Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17`; target-venue policies must be rechecked before submission.
 - Framework approval: `NOT YET COMPLETED`.
+- Final artifact approval: `NOT YET COMPLETED`.
+
+See `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` for the current approval state.
