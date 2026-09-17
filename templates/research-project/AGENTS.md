@@ -2,6 +2,16 @@
 
 This project follows the Human–AI Research Collaboration Protocol.
 
+## Protocol source
+
+Record the protocol source used to initialize this project:
+
+- Upstream repository: `ChongLiuPhil/Human-AI-Research-Collaboration-Protocol`
+- HARC version: `0.1.0-draft` (replace with the actual adopted version/tag/commit)
+- Adopted commit/tag: `UNRESOLVED — record when initializing`
+
+A future agent should not silently assume that the latest upstream HARC rules were already adopted by this project. Protocol upgrades should be explicit project decisions.
+
 ## Required reading order
 
 Before substantive work, read:
@@ -37,11 +47,15 @@ Human content decisions outrank AI drafting. AI proposals remain visibly pending
 
 Human form decisions outrank rendering defaults. Do not infer enduring preferences from provisional tool choices.
 
+Where applicable, distinguish reusable author preferences, artifact-type profiles, project-specific rules, external constraints, and temporary defaults.
+
 ## Framework rule
 
 `docs/argument-map.md` is a working AI-maintained structure, not automatic human endorsement.
 
 Create `docs/frameworks/FW-xxx.md` only after explicit human framework approval. Do not silently rewrite approved snapshots.
+
+The approved framework is the primary substantive intellectual baseline. Distinguish framework-level defects from local defects introduced only during later AI expansion.
 
 ## Evidence rule
 
