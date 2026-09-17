@@ -124,6 +124,35 @@ It should be possible to distinguish and combine:
 
 A new project should identify its artifact type at initialization and inherit only preferences that are explicitly applicable. Unknown form decisions must remain unresolved rather than being invented by an AI agent.
 
+## P15. Audits must be repair cycles, not passive reviews
+
+When the project performs a multi-pass integration audit, each pass should be a complete cycle:
+
+`review -> identify defects -> repair/implement -> verify the repair`.
+
+A stated three-pass audit therefore means three successive review-and-repair cycles, not three readings followed by one repair stage.
+
+After those cycles, the project should perform an additional independent post-repair audit to detect residual omissions, regressions, or inconsistencies.
+
+## P16. HARC should produce both an executable open project and a methodology article
+
+HARC is intended to have two mutually supporting outputs:
+
+1. an executable, reusable open collaboration protocol with specifications, templates, states, and governance rules;
+2. a methodology article that explains the conceptual rationale of the protocol and develops its implications for research practice in the AI era.
+
+The article should address, among other themes, human cognitive responsibility, the scope of delegable and non-delegable intellectual work, framework-level authorship, AI-assisted expansion, epistemic dependence, persistent external research memory, and the conditions under which human accountability remains meaningful.
+
+The article is a scholarly derivative of the protocol and should itself be developed under HARC-style framework control rather than treated as an ungoverned explanatory essay.
+
+## P17. Human cognitive responsibility should be concentrated, not erased
+
+HARC should not treat AI capability as a reason to eliminate human judgment. Instead it should make the allocation of cognitive labor explicit.
+
+AI agents may perform extensive search, synthesis, drafting, restructuring, checking, formatting, and other assistive work. Human responsibility should remain concentrated on the high-leverage judgments that define and authorize the project: research aims, core commitments, major inferential architecture, treatment of decisive evidence conflicts, framework approval, and release approval as required by the relevant context.
+
+The protocol should therefore distinguish delegation of cognitive labor from delegation of epistemic responsibility.
+
 ---
 
 ## Current scope
