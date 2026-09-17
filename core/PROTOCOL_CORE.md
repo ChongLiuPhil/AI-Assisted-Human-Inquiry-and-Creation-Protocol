@@ -100,6 +100,30 @@ The system should distinguish at least:
 
 The purpose is not to hide AI assistance, but to make the collaboration auditable and intellectually governable.
 
+## P13. Framework-level responsibility and expansion-level defects should be distinguished
+
+The human-approved framework is intended to be the primary substantive intellectual responsibility anchor in long-form collaboration.
+
+A defect in a thesis, inferential relation, central distinction, scope condition, or section/chapter role that is present in an explicitly approved framework is a framework-level defect in the human-confirmed intellectual architecture.
+
+A defect introduced only during later AI expansion—such as weak wording, a poor transition, an unnecessary example, or another local implementation problem—should be distinguishable from a defect in the approved framework itself.
+
+This distinction does not eliminate the separate final-artifact approval and public accountability requirements that may apply before publication or submission.
+
+## P14. Form preferences should support inheritance across author, artifact type, and project
+
+The form system should be reusable rather than recreated from scratch in every project.
+
+It should be possible to distinguish and combine:
+
+- reusable author-level presentation preferences;
+- artifact-type profiles, such as `BOOK`, `ACADEMIC_PAPER`, and `ARTICLE`;
+- project-specific presentation decisions;
+- external venue constraints;
+- temporary AI/tool defaults.
+
+A new project should identify its artifact type at initialization and inherit only preferences that are explicitly applicable. Unknown form decisions must remain unresolved rather than being invented by an AI agent.
+
 ---
 
 ## Current scope
