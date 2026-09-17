@@ -130,16 +130,31 @@ This repository has two major outputs:
 1. the executable HARC open protocol;
 2. a methodology article explaining and critically developing the protocol.
 
-For the methodology article, read:
+For the methodology article, read in this order:
 
-- `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`
-- `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+1. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.md`
+2. `paper/METHODOLOGY_ARTICLE_FORM_CORE.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md`
+4. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`
+5. `evidence/METHODOLOGY_SOURCES.md`
+6. `paper/methodology-references.bib`
+7. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
 
 The article's argument map is a `WORKING-FRAMEWORK` until the human explicitly approves it. The prose draft is `DERIVED-PROVISIONAL` until the appropriate approval gates are completed.
 
-When research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, record the evidence and keep normative HARC proposals distinct from external publication rules.
+The methodology article must obey the same HARC principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative HARC proposals distinct from external publication rules.
 
-## 13. When using this repository as a template
+## 13. Audit records
+
+Use the audit documents according to their roles:
+
+- `docs/FOUNDING_IDEA_AUDIT.md` — founding-idea coverage inventory and traceability record;
+- `docs/THREE_CYCLE_REPAIR_AUDIT.md` — the corrected three-cycle `review -> repair -> verify` execution record;
+- `docs/FINAL_POST_REPAIR_AUDIT.md` — independent audit performed after all three repair cycles.
+
+If these documents conflict about process status, the later repair/final-audit records govern the interpretation of the audit procedure; founder decisions in `core/DECISION_LOG.md` remain canonical.
+
+## 14. When using this repository as a template
 
 Read, in order:
 
