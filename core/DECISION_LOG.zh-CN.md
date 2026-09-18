@@ -208,3 +208,16 @@
 **受影响组件：** Protocol Core、Specification、AGENTS 契约、README、方法论文章、证据笔记、审计、模板、未来文件
 
 **状态：** 已实现初始仓库级双语迁移；后续每次实质性编辑仍必须持续执行同步。详见 `docs/BILINGUAL_PARITY_AUDIT.zh-CN.md`。
+
+---
+
+## 2026-09-18 — HARC-D016
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, FORM, PROTOCOL
+
+**决定：** 中文 canonical / 英文 synchronized mirror 规则建立时，不能机械地用当时较旧的中文版覆盖规则建立前已经在英文版中形成的较新实质内容。对于这种 legacy divergence，应先把英文较新内容吸收到中文版，使中文达到切换时真正的最新状态；完成中英 parity 后，再正式切换为“中文发展、英文同步”的长期方向。切换完成后，英文不得再独立发展实质内容。
+
+**受影响组件：** Bilingual Sync Policy、Protocol Core、AGENTS、Whitepaper、Parity Audit、未来 legacy migration
+
+**状态：** 已实现。白皮书已完成 English -> Chinese catch-up，再恢复为 Chinese -> English 同步关系。
