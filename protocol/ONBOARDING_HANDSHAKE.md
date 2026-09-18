@@ -77,6 +77,24 @@ Recommended format:
 
 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
 
+## 5.5 Session Context Injection
+
+The Onboarding Report alone does not complete the second layer of protection.
+
+The Agent MUST read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and end the report with:
+
+`HARC ACTIVE SESSION CONTRACT — LOADED`
+
+This block compresses key repository invariants and current state back into the Agent's own active reply.
+
+Onboarding may be marked `PASS` only when:
+
+- the Onboarding Report is complete;
+- the Session Contract has been echoed;
+- Blocking Clarifications and current gates are correctly identified.
+
+The Session Contract is a project-level session operating contract, not the platform's true system prompt.
+
 ## 6. PASS / PARTIAL / FAIL
 
 ### PASS
