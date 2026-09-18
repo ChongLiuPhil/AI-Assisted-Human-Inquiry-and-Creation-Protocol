@@ -13,7 +13,7 @@
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
-- `docs/clarification-register.zh-CN.md`
+- `docs/working-memory.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
 ## 来源状态图例
@@ -64,15 +64,18 @@ AI Agent 可以承担越来越多的检索、结构化、起草、修订、形�
 
 **来源：** `HUMAN-CONFIRMED / AI-FORMULATED`
 
-项目至少应区分并分别保存：
+项目至少应区分：
 
-1. 人类实质性承诺；
-2. 人类形式/呈现意图；
-3. 人类历史决定；
-4. AI 维护的操作性表示；
-5. 证据约束；
-6. 批准状态；
-7. 派生文本/成果。
+1. Layer 1 — 人类作者核心基础；
+2. Layer 2 — 当前论述框架；
+3. Layer 3 — 派生成果；
+4. 与三层并行的 Working Memory；
+5. 人类形式/呈现意图；
+6. 历史决定；
+7. 证据约束；
+8. 批准状态。
+
+前三层构成长时研究记忆；Working Memory 保存当前阶段、目标、任务、阻塞、clarification、TODO 与 handoff。
 
 修改应当上游优先传播，使下游 AI 表达不能静默重新定义上游人类意图。
 
@@ -180,15 +183,23 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 ---
 
-## T9 — Critical Clarification Governance Thesis
+## T9 — Working Memory / Clarification Governance Thesis
 
-**来源：** `HUMAN-ORIGINATED`
+**来源：** `HUMAN-CONFIRMED / AI-FORMULATED`
 
-当 AI 对作者意图、核心命题、关键概念、范围、主要推论关系、章节功能或关键术语/翻译存在可能重大影响作品结构的非微不足道不确定性时，AI 不应自行选择一种解释，而应把问题提升到 Critical Clarification Register，由人类确认或纠正。
+当 AI 对作者意图、核心命题、关键概念、范围、主要推论关系、章节功能或关键术语/翻译存在高影响不确定性时，不应自行选择一种解释，而应把它作为 Working Memory 中的 Clarification item 提交人类确认。
 
-未解决 clarification 不是人类承诺。解决结果必须进入 Decision Log 与适当 Core，再传播到 Working Framework 与派生文本。
+Clarification 不是 Layer 1.5。未解决 item 不是人类长期承诺。
 
-**创始依据：** Article Content Core C11；HARC Protocol Core P19。
+人类解决后，应执行 Promotion：
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+如果涉及人类核心内容，则继续：
+
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+
+**创始依据：** Article Content Core C11、C14；HARC Protocol Core P19、P23；HARC-D021。
 
 ---
 
@@ -198,7 +209,7 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 持久仓库状态只有在新的 AI Agent 能够可靠发现并按正确顺序读取它时，才能真正支持跨 Agent 连续性。因此，HARC 应提供显式零上下文入口、mandatory read order、机器可读 manifest 与 Onboarding Handshake。
 
-成功接管不应被假定，而应通过 Agent 向人类报告当前规范状态、Blocking Clarifications、Framework/Artifact 状态和同步缺陷来验证。
+成功接管不应被假定。Agent 应先从 Working Memory 报告当前阶段、目标、active tasks、最近完成、next actions、blockers 与 pending human decisions，再按任务读取 Framework/Artifact 等长期状态。
 
 **创始依据：** Article Content Core C12；HARC Protocol Core P20。
 
@@ -218,10 +229,28 @@ HARC 应把 GitHub 作为权威外部记忆与工作状态接口：
 
 Agent 根据当前任务按需读取最新 canonical 文件；高影响判断和写入前重新确认 revision；更新直接 write-through 到 GitHub；写入后旧上下文缓存立即失效。
 
-会话中只保留最小 Repository Resolver，而不是 Blocking Clarifications、Framework、Artifact 或 Core 的长期副本。
+会话中只保留最小 Repository Resolver。Working Memory 与三层长期记忆都留在 GitHub，并按需读取，而不是复制成聊天内长期副本。
 
 **创始依据：** Article Content Core C13；HARC Protocol Core P21–P22；HARC-D020。
 
+
+---
+
+## T12 — Long-Term / Working Memory Separation Thesis
+
+**来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
+
+HARC 的三个内容层都是 Long-Term Research Memory：
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+其中 Layer 2 虽然更可修改，却仍属于长期项目记忆，因为它保存当前稳定的论述结构、核心命题与关键概念。
+
+与三层并行的 Working Memory 保存当前阶段、目标、任务、完成状态、下一步、TODO、blockers、pending human decisions、clarifications 与 handoff。
+
+Working Memory 中形成稳定人类确认的内容必须 Promotion 到相应长期层。
+
+**创始依据：** Article Content Core C14；HARC Protocol Core P23；HARC-D021。
 
 ---
 
@@ -234,6 +263,7 @@ Agent 根据当前任务按需读取最新 canonical 文件；高影响判断和
 - Working Framework vs Approved Framework；
 - framework defect vs derived-expansion defect；
 - Framework Approval vs Final Artifact Approval；
+- 三层 Long-Term Research Memory vs 并行 Working Memory；
 - 权威仓库状态 vs 临时 Agent 检索缓存；
 - 当前规范状态 vs 历史状态。
 
@@ -264,13 +294,13 @@ Agent 根据当前任务按需读取最新 canonical 文件；高影响判断和
 
 ## III. 以仓库为中心的持久研究状态
 
-**功能：** 说明 GitHub 作为当前实现基础；区分 persistent memory 与 infinite context；引入当前状态与历史状态的压缩结构；进一步说明新的 Agent 必须通过 zero-context bootstrap、manifest 和 Onboarding Handshake 才能可靠接管。
+**功能：** 说明 GitHub 作为当前实现基础；区分三层 Long-Term Research Memory、并行 Working Memory 与 infinite context；说明新 Agent 先从 Working Memory 找到续接点，再通过 repository-backed selective retrieval 读取长期状态。
 
-支持 T1、T7、T10 与 T11，并解释 repository-backed selective retrieval。
+支持 T1、T7、T10、T11 与 T12。
 
 ## IV. 分层语义治理
 
-**功能：** 引入 Content Core、Form Core、Decision Log、Critical Clarification Register、evidence、provenance status、upstream-first propagation，以及人类承诺与 AI 提议的区分；说明高影响不确定性为何必须先由人类解决再进入 framework。
+**功能：** 引入 Layer 1 Core、Layer 2 Framework、Layer 3 Artifact、Working Memory、Decision Log、evidence、provenance status 与 upstream-first propagation；说明 Clarification 为什么属于 Working Memory，以及稳定结果怎样 Promotion 到长期记忆。
 
 支持 T2、T8 与 T9。
 
@@ -323,7 +353,8 @@ T1 持久研究状态
 
 T2 分层语义治理
 ├── 防止 AI 静默漂移替代人类意图
-├── 通过 T9 把高影响不确定性送入人类澄清
+├── 通过 T9 把高影响不确定性放入 Working Memory
+├── 通过 T12 区分长期记忆与当前工作状态
 └── 使可检查 Working Framework 成为可能
 
 T3 认知劳动委托 / 人类治理
@@ -362,7 +393,7 @@ T1 + T2 + T4 + T5 + T6 + T7
 
 # 7. 创建 `MA-FW-001` 之前需要的人类澄清
 
-高影响未决问题现在统一维护在 `docs/clarification-register.zh-CN.md`。
+高影响未决问题现在统一维护在 `docs/working-memory.zh-CN.md`。
 
 ### 当前 Blocking Clarifications
 
