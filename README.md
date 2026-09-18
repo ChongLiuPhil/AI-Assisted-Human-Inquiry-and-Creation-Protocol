@@ -2,6 +2,8 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
+**Language governance: Chinese is the canonical source; English is the synchronized mirror. Every substantive edit must update both languages in the same work cycle. If they conflict, Chinese governs.**
+
 
 **HARC Protocol** is a GitHub-centered workflow for sustained research and intellectual collaboration between a human author and interchangeable AI agents.
 
@@ -18,12 +20,24 @@ HARC is intentionally a dual-output project:
 
 Current methodology-article files:
 
-- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md) — `WORKING-FRAMEWORK`, not yet human-approved.
-- [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — first complete Chinese `DERIVED-PROVISIONAL` draft.
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — canonical Chinese `WORKING-FRAMEWORK`, not yet human-approved; [`English mirror`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md).
+- [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — canonical Chinese `DERIVED-PROVISIONAL` draft; [`English mirror`](paper/METHODOLOGY_ARTICLE.en.md).
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — bibliography source file.
-- [`evidence/METHODOLOGY_SOURCES.md`](evidence/METHODOLOGY_SOURCES.md) — source verification and evidence constraints.
+- [`evidence/METHODOLOGY_SOURCES.zh-CN.md`](evidence/METHODOLOGY_SOURCES.zh-CN.md) — canonical source verification and evidence constraints; [`English mirror`](evidence/METHODOLOGY_SOURCES.md).
 
 The earlier white papers remain conceptual introductions; the methodology article is intended to become a standalone scholarly research output.
+
+## Bilingual governance
+
+All substantive human-readable HARC documentation is maintained in Chinese and English:
+
+- Chinese `*.zh-CN.md` is the semantic, editing, and human-review baseline;
+- English `*.md` / `*.en.md` is the synchronized translation mirror;
+- new substantive files should be bilingual from creation;
+- an edit is incomplete if only one language is updated;
+- language-neutral BibTeX, code, schemas, and raw data may remain single-copy, while their human-facing documentation remains bilingual.
+
+See [`protocol/BILINGUAL_SYNC.md`](protocol/BILINGUAL_SYNC.md) and the canonical Chinese [`protocol/BILINGUAL_SYNC.zh-CN.md`](protocol/BILINGUAL_SYNC.zh-CN.md).
 
 ## What problem does HARC address?
 
@@ -173,17 +187,17 @@ Audit records:
 
 ### For humans
 
-1. Read [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) for the emerging scholarly argument.
-2. Read [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md) to inspect the article's current Working Framework and unresolved decisions.
-3. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md) for the normative workflow.
+1. Read the canonical Chinese [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) for the emerging scholarly argument.
+2. Read the canonical Chinese [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) to inspect the article's current Working Framework and unresolved decisions.
+3. Read the canonical Chinese [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md) for the normative workflow.
 4. Read [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) and [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md) for the current integration audit state.
 5. Use [`templates/research-project/`](templates/research-project/) to bootstrap a new project.
 
 ### For AI agents
 
-1. Read [`AGENTS.md`](AGENTS.md).
-2. Read [`core/PROTOCOL_CORE.md`](core/PROTOCOL_CORE.md) and recent [`core/DECISION_LOG.md`](core/DECISION_LOG.md).
-3. Read [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md).
+1. Read canonical [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md), then use [`AGENTS.md`](AGENTS.md) as the English mirror.
+2. Read canonical [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) and recent [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md).
+3. Read canonical [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md).
 4. Apply the relevant persistence, framework-approval, routing, evidence, and form-inheritance rules.
 5. Do not invent human commitments that have not been stated.
 6. Record the HARC version/tag/commit adopted by a new project so later upstream changes are not silently treated as already accepted governance.
