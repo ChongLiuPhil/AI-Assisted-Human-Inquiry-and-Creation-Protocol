@@ -26,8 +26,8 @@
 ## 初始化顺序
 
 1. 创建/确认 `START_HERE.zh-CN.md`、英文 mirror 与 `HARC_MANIFEST.yaml`，记录采用的 HARC version/commit 和 mandatory read order。
-3. 确定成果类型：paper、book、article、report、thesis 等.
-2. 仅把人类实际表达的实质性承诺提取到 `core/CONTENT_CORE.zh-CN.md`，并同步英文 mirror。
+2. 确定成果类型：paper、book、article、report、thesis 等。
+3. 仅把人类实际表达的实质性承诺提取到 `core/CONTENT_CORE.zh-CN.md`，并同步英文 mirror。
 4. 确定明确适用的 reusable author form profile 与 artifact-type profile。
 5. 仅把人类明确的呈现决定提取到 `core/FORM_CORE.zh-CN.md`；保持 inherited、external、project-specific 与 temporary-default 可区分，并同步英文 mirror。
 6. 把初始化决定记录到 `core/DECISION_LOG.zh-CN.md` 与英文 mirror。
