@@ -72,8 +72,9 @@
 - 协议版本与 canonical language；
 - 人类已确认内容；
 - Form 状态；
-- Blocking Clarifications；
-- task-relevant Non-blocking Clarifications；
+- Working Memory 的 CURRENT_STAGE / CURRENT_OBJECTIVE；
+- ACTIVE_TASKS / NEXT_ACTIONS / RECENTLY_COMPLETED；
+- BLOCKERS / PENDING_HUMAN_DECISIONS / Clarifications；
 - Working / Approved Framework；
 - Artifact 状态；
 - Evidence conflict；
