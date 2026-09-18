@@ -291,3 +291,26 @@
 **实现：** 新增 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md`、英文 mirror 与机器可读 `HARC_CONTEXT_INTERFACE.yaml`，并接入启动链、manifest、Agent contract 和项目模板。
 
 **状态：** 已确认并实施。
+
+---
+
+## 2026-09-18 — HARC-D021
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL, CONTENT
+
+**决定：** 原来的 “Layer 1.5 / Critical Clarification Layer” 模型不再使用。HARC 应明确区分三层**长期研究记忆**与一个并行的 **Working Memory（工作记忆区）**。
+
+三层长期记忆为：
+
+1. Layer 1 — 人类作者核心基础：持续沉淀、纠正、净化的人类核心观点与长期承诺；
+2. Layer 2 — 当前论述框架：以 Layer 1 为基础的核心命题、关键概念、论述结构和推论关系；持久但更可修改，并可包含 Layer 1 未逐项表达的结构性内容；
+3. Layer 3 — 派生成果：主要基于 Layer 2 展开的完整成果。
+
+Working Memory 与三层并行，记录当前阶段、工作目标、总体规划、active tasks、已完成/未完成、next actions、TODO、blockers、待人类确认事项、clarifications、同步缺陷与 handoff 信息。
+
+Clarification 是 Working Memory 中的一种 item，而不是独立层。问题获得人类确认后，规范结果应 Promotion 到相应长期记忆；Working Memory 中该项退出 active 状态，只保留 resolved/promoted 指针与审计痕迹。
+
+**受影响组件：** Protocol Core、Persistent Memory、Architecture、Clarification workflow、Working Memory、Onboarding/Handoff、Manifest、Context Interface、Specification、AGENTS、项目模板、方法论文章
+
+**状态：** 已确认，实施中。
