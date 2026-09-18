@@ -382,3 +382,22 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Article Form Core、Article Content Core、Working Argument Map、methodology article、Protocol Core、Framework Approval、Specification、README、Agent contracts/templates、Framework Status、Working Memory
 
 **状态：** 已确认；本轮执行双语 Promotion 与传播。
+
+
+---
+
+## 2026-09-18 — HARC-D025
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, PROTOCOL
+
+**决定：**
+
+1. 批准对方法论文章 Working Framework 的依赖图作结构性修复，使 T9–T13 正确进入 T1/T2/T7/T8 的治理、续接与可执行性支持关系，并将 T3 的节点名称同步为“AI 工具工作分担 / 人类责任主体”。
+2. Framework Approval 可以包含明确标记为 `AI-PROPOSED`、`UNRESOLVED`、`NON-BLOCKING` 或类似状态的项目，但**整体批准只批准这些项目以“未决/提议状态”存在于 framework 中的位置、范围与处理方式，不自动批准这些项目的实质内容**。
+3. 因此，对一个含有显式未决项的 framework 作整体 `APPROVE`，不应把其中的 provisional terminology、经验计划、理论定位或其他 AI 提议 Promotion 为人类原创/确认观点；只有后续单独的人类决定才能改变这些项目的来源/批准状态。
+4. 本决定本身不是对当前完整 Working Framework 的整体 Framework Approval，也不得据此创建 `MA-FW-001`。
+
+**受影响组件：** Working Argument Map dependency structure；Framework Approval protocol；Framework Status；Working Memory。
+
+**状态：** 已确认；双语传播执行。
