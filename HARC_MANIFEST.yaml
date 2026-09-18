@@ -51,8 +51,8 @@ harc:
 
   methodology_article:
     required_read_order:
-      - "paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md"
       - "docs/working-memory.zh-CN.md"
+      - "paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md"
       - "paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md"
       - "paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md"
       - "LATEST_APPROVED_FRAMEWORK_IF_ANY"
