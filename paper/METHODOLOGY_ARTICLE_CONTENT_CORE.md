@@ -64,6 +64,19 @@ The article should explain that storing state in a repository is not by itself s
 
 The mechanism does not assume every AI platform automatically reads the same filename. Instead, root-level entry files, an agent contract, a machine-readable manifest, and a human-copyable bootstrap prompt maximize cross-platform discoverability and make successful handoff observable and verifiable.
 
+## C13. Durable repository state and an active session contract should form two-layer memory
+
+The article should explain that repository persistence solves cross-session recoverability but does not guarantee that key rules remain sufficiently salient in the active generation context of a long conversation.
+
+HARC therefore uses two layers:
+
+1. **Durable Repository State** — auditable, recoverable, cross-agent long-term state;
+2. **Active Session Contract** — a compressed operating contract regenerated from current repository state after onboarding and echoed into the Agent's own current reply.
+
+The Session Contract is not the platform's true system prompt. It cannot override platform system/developer/safety instructions or permanently modify model memory. Its role is to reinject key HARC invariants, Blocking Clarifications, Framework/Artifact state, and the current task propagation path into the visible active conversation context.
+
+After major state changes or suspected context loss, the Agent should regenerate a `HARC CONTEXT REFRESH` from repository state.
+
 ## Current unresolved authorial decisions
 
 Operational state for high-impact unresolved issues is maintained in `docs/clarification-register.md`. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
