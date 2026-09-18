@@ -44,15 +44,21 @@ Claim A
 
 - `...`
 
-## 9. 需要人类决定
+## 9. 相关 Critical Clarification
+
+高影响未决问题不要在这里重复完整维护；引用 `docs/clarification-register.zh-CN.md` 中的条目。
+
+- `CLR-001 — ...`
+
+## 10. 需要人类决定但尚未达到 Critical Clarification 阈值
 
 - `UNRESOLVED — ...`
 
-## 10. 等待人类决定的 AI 提议
+## 11. 等待人类决定的 AI 提议
 
 - `AI-PROPOSED — ...`
 
-## 11. 同步状态
+## 12. 同步状态
 
 - Content Core vs map：`SYNC / OUT-OF-SYNC`
 - Approved Framework vs map：`N/A / SYNC / MATERIAL CHANGE PENDING`
