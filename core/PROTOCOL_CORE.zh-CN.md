@@ -173,6 +173,21 @@ HARC 项目的所有实质性文档应提供中文与英文版本。
 
 canonical cutover 完成之后，正常实质性发展方向固定为：`人类决定 -> 中文 canonical -> 英文 synchronized mirror`。英文不得再作为独立的实质性发展分支。
 
+
+## P19. 高影响不确定性必须进入关键澄清层
+
+在人类已确认的规范状态与 AI 维护的 Working Framework 之间，HARC 应维护一个 **Critical Clarification Register（关键澄清登记册）**。
+
+当 AI Agent 对作者意图、核心命题、关键概念、范围、推论关系、章节功能、关键术语或母语/英文对应存在**非微不足道且高影响**的不确定性时，不得静默选择一种解释并向下游传播。
+
+Agent 应主动把这种不确定性提升为显式澄清条目，说明候选解释、影响范围、严重度以及需要人类确认的问题。
+
+未解决条目不属于人类已批准观点。人类确认或纠正后，结果必须通过 Decision Log 进入相应 Content Core / Form Core / Protocol Core，再传播到 Working Argument Map 与派生成果。
+
+对于可能造成重大语义漂移或大规模返工的问题，可以标记为 `BLOCKING`，在解决前暂停相关结构性传播。对于不阻塞其他工作的条目，可以标记为 `NON-BLOCKING`，但不得把任何候选答案写成人类立场。
+
+HARC 应在重大阶段转换、Framework Approval、关键术语全篇传播、正式翻译、大规模章节扩写及 Final Artifact Review 前主动执行 Clarification Scan。
+
 ---
 
 ## 当前范围
