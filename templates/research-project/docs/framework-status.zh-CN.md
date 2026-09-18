@@ -13,13 +13,14 @@
 
 下一个标识符：`FW-001`
 
-## Clarification Gate
+## Working Memory / Clarification Gate
 
-- Blocking clarifications：`None / CLR-...`
-- Non-blocking clarifications：`None / CLR-...`
-- Framework Approval 是否被 blocking clarification 阻塞：`YES / NO`
+- 当前 Working Memory objective：`...`
+- Blocking items：`None / CLR-... / WM-...`
+- Pending human decisions：`None / ...`
+- Framework Approval 是否被 blocking item 阻塞：`YES / NO`
 
-来源：`docs/clarification-register.zh-CN.md`
+来源：`docs/working-memory.zh-CN.md`
 
 ## 当前成果状态
 
