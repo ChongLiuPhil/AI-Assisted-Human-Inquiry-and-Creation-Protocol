@@ -13,8 +13,11 @@
 3. 读取 `BOOTSTRAP_PROMPT.zh-CN.md`；
 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
 5. 读取 `AGENTS.zh-CN.md`；
-6. 读取 `docs/working-memory.zh-CN.md`，确认当前阶段、目标、任务、阻塞、待确认事项与下一步；
-7. 按 manifest / context interface 的 task route 从三层长期记忆按需读取当前状态；
+6. 读取 `docs/working-memory.zh-CN.md`（Index）；
+7. 读取 `docs/working-memory/current-focus.zh-CN.md`；
+8. 读取 `docs/working-memory/task-plan.zh-CN.md`；
+9. 默认跳过 Work Log；
+10. 按 manifest / context interface 的 task route 从三层长期记忆按需读取当前状态；
 8. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`；
 9. 只有在报告通过、Repository Context 已激活后，才开始实质工作；完成较大工作循环后更新 Working Memory。
 
