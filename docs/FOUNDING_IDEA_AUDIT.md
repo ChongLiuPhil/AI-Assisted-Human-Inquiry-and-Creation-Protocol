@@ -481,6 +481,35 @@ Clarification is a Working Memory item. Stable human-resolved content must be pr
 
 ---
 
+## E03 — Modular Working Memory: Current Focus / Task Plan / Work Log
+
+**Later human decision:** Working Memory is a functional area rather than one mandatory document. A project may use one or multiple files according to engineering needs, AI capability, and workflow convenience, but should provide at least three logical roles:
+
+- Current Focus — the highest-priority immediate objective;
+- Task Plan — dynamic tasks, plans, TODOs, blockers, pending decisions / Clarifications;
+- Work Log — broad progress, milestones, and changes in intellectual/work direction primarily for later human review.
+
+Completed tasks leave active Task Plan and receive appropriately granular summaries in Work Log; stable normative results still require Promotion into Long-Term Memory.
+
+Work Log should be maintained periodically but is outside default AI onboarding context. It does not store hidden AI chain-of-thought or scratchpads.
+
+**Implemented in:**
+
+- Protocol Core P24
+- HARC-D022
+- `protocol/WORKING_MEMORY.zh-CN.md`
+- `docs/working-memory.zh-CN.md` (Index)
+- `docs/working-memory/current-focus.zh-CN.md`
+- `docs/working-memory/task-plan.zh-CN.md`
+- `docs/working-memory/work-log.zh-CN.md`
+- Manifest / Context Interface / Onboarding / AGENTS
+- project templates
+- methodology article C15 / T13 / draft
+
+**Status:** IMPLEMENTED.
+
+---
+
 # Remaining unresolved item
 
 ## Open-source licensing
