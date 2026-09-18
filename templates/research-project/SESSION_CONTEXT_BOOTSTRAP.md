@@ -17,7 +17,10 @@ Control:
 - HARC_CONTEXT_INTERFACE.yaml
 
 Working Memory:
-- resume index: docs/working-memory.zh-CN.md
+- index: docs/working-memory.zh-CN.md
+- current focus: docs/working-memory/current-focus.zh-CN.md
+- task plan: docs/working-memory/task-plan.zh-CN.md
+- work log: docs/working-memory/work-log.zh-CN.md (human-retrospective; not default read)
 - operational state only; not long-term semantic authority
 
 Policy:
