@@ -44,19 +44,15 @@ The root manifest determines exact paths. At minimum:
 
 1. START_HERE;
 2. HARC_MANIFEST;
-3. AGENTS;
-4. Repository Context Interface / Session Context Bootstrap;
-5. Protocol/Core governance;
-6. recent Decision Log;
-7. Content Core;
-8. Form Core;
-9. Critical Clarification Register;
-10. Framework Status;
-11. latest Approved Framework if any;
-12. Working Argument Map;
-13. task-relevant Evidence;
-14. task-relevant Artifact;
-15. English-mirror parity.
+3. HARC_CONTEXT_INTERFACE;
+4. AGENTS / Session Context Bootstrap;
+5. Working Memory;
+6. Onboarding Handshake / Protocol governance;
+7. task-relevant Layer 1 Core / Decision Log;
+8. task-relevant Layer 2 Framework Status / Working or Approved Framework;
+9. task-relevant Layer 3 Artifact;
+10. task-relevant Evidence;
+11. English-mirror parity.
 
 ## 4.5 Working Memory resume check
 
@@ -98,13 +94,13 @@ This loads only the minimal Repository Resolver:
 - task route;
 - latest-revision / write-through / cache-invalidation rules.
 
-It must not maintain long-lived copies of Blocking Clarifications, Framework, Artifact, Core, or other dynamic project state.
+It must not maintain long-lived copies of Working Memory, Framework, Artifact, Core, or other dynamic project state.
 
 Onboarding may be marked `PASS` only when:
 
 - the Onboarding Report is complete;
 - Repository Context is active;
-- the Agent can correctly retrieve current Blocking Clarifications and gates from the latest canonical GitHub revisions;
+- the Agent can retrieve current blockers / pending decisions from latest Working Memory and verify related gates against the relevant long-term canonical files;
 - the Agent understands that report summaries and session excerpts are non-authoritative cache.
 
 ## 6. PASS / PARTIAL / FAIL
