@@ -28,6 +28,12 @@ harc:
     - "core/DECISION_LOG.zh-CN.md"
     - "docs/clarification-register.zh-CN.md"
 
+  onboarding_required_roles:
+    - "protocol_core"
+    - "decision_log"
+    - "clarification_register"
+    - "methodology_article.framework_status"
+
   protocol_state:
     protocol_core: "core/PROTOCOL_CORE.zh-CN.md"
     decision_log: "core/DECISION_LOG.zh-CN.md"
@@ -76,7 +82,6 @@ harc:
       - "artifact_status"
       - "synchronization_defects"
       - "permitted_next_action"
-      - "session_contract_loaded"
       - "repository_context_active"
 
   invariants:
