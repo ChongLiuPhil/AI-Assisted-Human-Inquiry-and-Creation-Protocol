@@ -463,7 +463,8 @@ At a stable checkpoint, all of the following SHOULD be true:
 6. unaccepted AI proposals remain visibly unaccepted;
 7. known evidence conflicts are visible;
 8. important decisions are not stranded only in chat history;
-9. onboarding documents point to current canonical files.
+9. onboarding documents point to current canonical files;
+10. all Critical Clarifications that block Framework Approval are explicitly visible in the Clarification Register rather than existing only in chat or private AI judgment.
 
 Failure of any condition creates an explicit synchronization defect.
 
