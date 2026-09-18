@@ -14,14 +14,16 @@ Any new AI Agent must first read:
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `docs/working-memory.zh-CN.md`
+7. `docs/working-memory/current-focus.zh-CN.md`
+8. `docs/working-memory/task-plan.zh-CN.md`
 
-Use Working Memory first to determine the resume point, then reconstruct task-relevant state from the three long-term layers using the manifest/context interface and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report; the report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`. Dynamic state must thereafter be retrieved on demand from latest canonical GitHub revisions.
+Use Working Memory Index -> Current Focus -> Task Plan first to determine the resume point, then reconstruct task-relevant state from the three long-term layers using the manifest/context interface and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report; the report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`. Dynamic state must thereafter be retrieved on demand from latest canonical GitHub revisions.
 
 Before the onboarding handshake is complete, do not perform large-scale structural changes, Framework Approval, or promote AI proposals into human commitments.
 
 ## Working Memory
 
-`docs/working-memory.zh-CN.md` maintains current stage, objective, active tasks, recently completed work, next actions, TODOs, blockers, pending human decisions, clarifications, sync defects, and handoff note.
+Working Memory Area consists of Index, Current Focus, Task Plan, and Work Log. Current Focus stores what matters most now; Task Plan stores dynamic tasks, TODOs, blockers, pending human decisions, Clarifications, and sync defects; Work Log stores stage history primarily for later human review.
 
 Clarification is a Working Memory item, not Layer 1.5. After human resolution, promote the result into appropriate Long-Term Memory and mark the item `RESOLVED / PROMOTED`.
 
