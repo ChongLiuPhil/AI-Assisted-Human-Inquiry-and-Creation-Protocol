@@ -8,7 +8,8 @@
 >
 > 1. read `START_HERE.zh-CN.md`;
 > 2. read `HARC_MANIFEST.yaml`;
-> 3. read `AGENTS.zh-CN.md`;
+> 3. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
+> 4. read `AGENTS.zh-CN.md`;
 > 5. reconstruct project state using the manifest `required_read_order`;
 > 6. output a HARC Onboarding Report using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` and echo `HARC ACTIVE SESSION CONTRACT — LOADED`.
 >
