@@ -16,6 +16,8 @@
 
 在完成这一接管握手前，不得进行大规模结构修改、正文重写、Framework Approval、关键术语传播或把 AI 提议提升为人类承诺。
 
+当前协议仓库的 onboarding 自测记录见 `docs/ONBOARDING_SELF_TEST.zh-CN.md`；它是审计证据，不是规范真值源。
+
 ## 1. 不依赖聊天记忆
 
 任何特定聊天、模型、厂商、账号记忆、隐藏 scratchpad 或本地上下文，都不是项目的规范性记忆。
