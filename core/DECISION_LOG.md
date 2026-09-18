@@ -219,3 +219,18 @@ This file is the chronological audit trail of substantive human decisions about 
 **Affected components:** Bilingual Sync Policy, Protocol Core, AGENTS, Whitepaper, Parity Audit, future legacy migrations
 
 **Status:** implemented. The white paper completed an English -> Chinese catch-up and then returned to a Chinese -> English synchronization relationship.
+
+---
+
+## 2026-09-18 — HARC-D017
+
+**Source:** Human project founder  
+**Classification:** CONTENT, FORM, PROTOCOL
+
+**Decision:** HARC should add a dedicated document layer for governing high-impact uncertainty. When an AI Agent has important uncertainty about authorial intent, core positions, key claims, concepts, terminology, primary-language/English correspondence, scope, or argument structure, it should proactively register the issue and ask the human author for confirmation rather than silently selecting an interpretation and implementing it. Human confirmations or corrections should be promoted into the relevant foundational Core / Decision Log and then propagated into argument structure and final artifacts. This layer should especially protect issues whose misinterpretation would materially alter the second-layer framework or central expression.
+
+**Architectural decision:** use a `Critical Clarification Register` positioned as a **Layer 1.5 bridge** between Layer 1 and Layer 2. Open entries are not human commitments; resolved entries require Resolution Promotion.
+
+**Affected components:** Protocol Core, Specification, AGENTS, Architecture, project template, methodology article governance, framework review workflow
+
+**Status:** implemented.
