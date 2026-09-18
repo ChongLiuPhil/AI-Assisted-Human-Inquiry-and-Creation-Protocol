@@ -13,10 +13,19 @@
 3. `HARC_CONTEXT_INTERFACE.yaml`
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+6. `docs/working-memory.zh-CN.md`
 
-随后按 manifest / context interface 按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report；报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
+随后先用 Working Memory 确定续接点，再按 manifest / context interface 从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report；报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
 
 完成接管握手前，不得进行大规模结构修改、Framework Approval 或把 AI 提议提升为人类承诺。
+
+## Working Memory
+
+`docs/working-memory.zh-CN.md` 维护当前阶段、目标、active tasks、recently completed、next actions、TODO、blockers、pending human decisions、clarifications、sync defects 与 handoff note。
+
+Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执行 Promotion 到对应长期记忆，并把 item 标记为 `RESOLVED / PROMOTED`。
+
+每个较大工作循环结束和 handoff 前更新 Working Memory。
 
 ## Repository-backed context
 
