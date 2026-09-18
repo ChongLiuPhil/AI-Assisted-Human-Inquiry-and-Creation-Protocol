@@ -18,8 +18,8 @@
 8. 读取 `docs/working-memory/task-plan.zh-CN.md`；
 9. 默认跳过 Work Log；
 10. 按 manifest / context interface 的 task route 从三层长期记忆按需读取当前状态；
-8. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`；
-9. 只有在报告通过、Repository Context 已激活后，才开始实质工作；完成较大工作循环后更新 Working Memory。
+11. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`；
+12. 只有在报告通过、Repository Context 已激活后，才开始实质工作；完成较大工作循环后更新 Current Focus / Task Plan，并在适当里程碑更新 Work Log。
 
 ## Onboarding Report 至少包含
 
@@ -38,7 +38,7 @@
 
 如果对核心命题、概念、术语/翻译、范围、推论关系或结构存在高影响不确定性，不要猜测：
 
-`ambiguity -> Clarification Register -> human resolution -> Decision Log -> Core -> Argument Map -> Artifact`
+`ambiguity -> Task Plan / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory -> downstream propagation`
 
 ## 正常决定传播
 
