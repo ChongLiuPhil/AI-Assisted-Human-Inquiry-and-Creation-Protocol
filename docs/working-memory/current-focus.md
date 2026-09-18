@@ -7,38 +7,57 @@
 
 ## CURRENT_STAGE
 
-The methodology article is in **human clarification / Framework Approval preparation for the Working Framework**.
+The methodology article is in the **overall human review / Framework Approval decision stage for the Working Framework**.
 
-The modular Working Memory architecture (Current Focus / Task Plan / Work Log) is now part of the protocol.
+`CLR-001 / CLR-002 / CLR-005` were resolved and promoted through `HARC-D023`. The Clarification gate that previously blocked `MA-FW-001` has been cleared.
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-002 — Make the methodology article ready for renewed Framework Approval review
+### WM-OBJ-003 — Complete overall human review of the current Working Framework and decide `MA-FW-001`
 
-The most important immediate work is human resolution of three items blocking `MA-FW-001`:
+The current Chinese Working Framework:
 
-- `CLR-001` — central responsibility concept;
-- `CLR-002` — strength of the Framework Responsibility Thesis;
-- `CLR-005` — whether to retain or replace `responsibility concentration`.
+`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
-Full questions and candidates:
+is now `REVIEW READY`, but it has **not received overall human approval**.
 
-`docs/working-memory/task-plan.zh-CN.md`
+The highest-priority work is not further structural rewriting of the draft. It is an explicit human decision on the framework as a whole:
+
+- `APPROVE`
+- `REVISE`
+- `REJECT`
+
+Acceptance of local terminology, claims, or wording does not automatically constitute overall Framework Approval.
 
 ## IMMEDIATE_NEXT_ACTION
 
-Present `CLR-001 / CLR-002 / CLR-005` together to the human author and await resolution.
+The human author reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole, especially:
 
-After resolution:
+- the current thesis set;
+- major inferential / dependency relations;
+- core distinctions;
+- the function of each section / subsection;
+- the T3 / T4 human-responsibility model revised after HARC-D023;
+- whether content still marked `AI-PROPOSED` or `NON-BLOCKING` may remain in the framework under review.
 
-`Human resolution -> Decision Log -> appropriate Long-Term Memory -> Article Content Core / Framework / Artifact synchronization`
+Then explicitly decide `APPROVE / REVISE / REJECT`.
 
-Then rerun the `MA-FW-001` Framework Approval readiness review.
+If `APPROVE`:
+
+`Human Framework Approval -> create MA-FW-001 -> Framework Status update -> structural Artifact synchronization`
+
+If `REVISE`:
+
+`Human revision -> Decision Log / appropriate upstream state -> Working Framework revision -> renewed overall review`
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: CLR-001 / CLR-002 / CLR-005`
+`WAITING-HUMAN: overall Framework Approval decision`
+
+This is not a new Clarification. There is currently no active Clarification blocking Framework Approval review.
 
 ## HANDOFF
 
-A replacement AI Agent does not need to read Work Log first. Read this file, then Task Plan; retrieve Layer 1 / Layer 2 / Layer 3 only as needed by the task.
+A replacement AI Agent does not need to read Work Log first. Read this file, then Task Plan; if the current task is methodology-article Framework Approval, fresh-fetch the Chinese Working Argument Map and Framework Status.
+
+Do not interpret `REVIEW READY` as `APPROVED`, and do not create `MA-FW-001` without explicit overall human approval.
