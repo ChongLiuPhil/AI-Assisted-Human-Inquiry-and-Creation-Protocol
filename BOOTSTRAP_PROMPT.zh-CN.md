@@ -14,8 +14,9 @@
 >
 > 1. 读取 `START_HERE.zh-CN.md`；
 > 2. 读取 `HARC_MANIFEST.yaml`；
-> 3. 读取 `AGENTS.zh-CN.md`；
-> 4. 严格按照 manifest 的 `required_read_order` 读取当前规范状态；
+> 3. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
+> 4. 读取 `AGENTS.zh-CN.md`；
+> 5. 严格按照 manifest 的 `required_read_order` 读取当前规范状态；
 > 6. 中文是 canonical；英文只作为 synchronized mirror；
 > 7. 读取并汇总当前 `BLOCKING` 和与任务相关的 `NON-BLOCKING` Clarifications；
 > 8. 确认 Working Framework、最新 Approved Framework（如有）、Artifact 状态和同步缺陷；
