@@ -45,11 +45,18 @@ For each major part, state what intellectual work it performs.
 
 - `...`
 
-## 9. Human decisions needed
+## 9. Relevant Working Memory items
+
+Do not duplicate current blockers, pending human decisions, or high-impact Clarifications here. Reference `docs/working-memory.zh-CN.md`.
+
+- `CLR-001 — ...`
+- `WM-Txxx — ...`
+
+## 10. Human decisions needed below the Clarification threshold
 
 - `UNRESOLVED — ...`
 
-## 10. AI proposals awaiting human decision
+## 11. AI proposals awaiting human decision
 
 - `AI-PROPOSED — ...`
 
