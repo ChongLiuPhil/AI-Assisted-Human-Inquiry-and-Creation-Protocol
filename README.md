@@ -1,10 +1,7 @@
 # Human–AI Research Collaboration Protocol
 
-<!-- bilingual-home-intro -->
-> **English:** A GitHub-centered protocol for sustained human–AI research collaboration that externalizes research state, decisions, argument structure, evidence constraints, and review status into durable version-controlled files.
->
-> **中文：** 一个以 GitHub 为中心的持续性人机研究协作协议，将研究状态、作者决策、论证结构、证据约束与审阅状态外化到可持久、可版本控制的文件中。
-<!-- /bilingual-home-intro -->
+[English](README.md) | [中文](README.zh-CN.md)
+
 
 **HARC Protocol** is a GitHub-centered workflow for sustained research and intellectual collaboration between a human author and interchangeable AI agents.
 
