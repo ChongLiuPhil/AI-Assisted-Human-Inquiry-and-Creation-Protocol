@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **96**
-- Chinese canonical files (`*.zh-CN.md`): **48**
-- English mirrors: **48**
+- total Markdown files: **100**
+- Chinese canonical files (`*.zh-CN.md`): **50**
+- English mirrors: **50**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
@@ -157,6 +157,17 @@ After P20 / HARC-D018 received explicit human confirmation, the following were a
 - `docs/ONBOARDING_SELF_TEST.zh-CN.md` / English mirror.
 
 The current recursive tree scan reports **96 Markdown files = 48 Chinese canonical + 48 English mirrors, with 0 missing counterparts**.
+
+### 3.9 Session Context Bootstrap
+
+Added and bilingualized:
+
+- `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror;
+- `templates/research-project/SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror.
+
+The mechanism requires a replacement Agent to echo `HARC ACTIVE SESSION CONTRACT — LOADED` after repository onboarding, reinjecting key project invariants and current state into the active conversation context. It explicitly does not impersonate the platform's true system prompt.
+
+The latest recursive scan reports **100 Markdown files = 50 Chinese canonical + 50 English mirrors, with 0 missing counterparts**.
 
 ## 4. High-risk semantic mismatches repaired
 
