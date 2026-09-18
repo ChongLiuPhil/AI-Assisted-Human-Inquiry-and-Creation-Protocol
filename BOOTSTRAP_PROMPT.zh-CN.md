@@ -17,11 +17,12 @@
 > 3. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
 > 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
 > 5. 读取 `AGENTS.zh-CN.md`；
-> 6. 严格按照 manifest / context interface 的 task route 按需读取当前规范状态；
-> 7. 中文是 canonical；英文只作为 synchronized mirror；
-> 8. 仅在当前任务需要时读取并汇总 `BLOCKING` / `NON-BLOCKING` Clarifications；
-> 9. 仅在当前任务需要时读取 Framework / Artifact / Evidence 的最新 canonical revision；
-> 10. 在做任何实质性修改前，先按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态不得依赖该报告副本，必须从 GitHub 按需 fresh-fetch。
+> 6. 读取 `docs/working-memory.zh-CN.md`，先确定当前阶段、目标、active tasks、blockers、pending human decisions 与 next actions；
+> 7. 严格按照 manifest / context interface 的 task route 从三层长期记忆按需读取当前规范状态；
+> 8. 中文是 canonical；英文只作为 synchronized mirror；
+> 9. 从 Working Memory 读取与当前任务相关的 blockers / clarifications，并在需要时核验其长期目标文件；
+> 10. 仅在当前任务需要时读取 Layer 1 / Layer 2 / Layer 3 / Evidence 的最新 canonical revision；
+> 11. 在做任何实质性修改前，输出 HARC Onboarding Report，包含 Working Memory 当前续接状态，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。
 >
 > 你不得：
 >
@@ -35,7 +36,7 @@
 >
 > 如果某个不确定性可能显著影响核心命题、关键概念、术语/翻译、范围、主要推论关系、章节功能或整体论证结构，则先进入 Clarification Register：
 >
-> `ambiguity -> Clarification Register -> human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+> `ambiguity -> Working Memory / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory destination`
 >
 > 如果人类给出明确决定，则执行：
 >
