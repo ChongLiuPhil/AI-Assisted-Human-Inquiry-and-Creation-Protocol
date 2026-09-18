@@ -16,6 +16,10 @@ Control:
 - HARC_MANIFEST.yaml
 - HARC_CONTEXT_INTERFACE.yaml
 
+Working Memory:
+- resume index: docs/working-memory.zh-CN.md
+- operational state only; not long-term semantic authority
+
 Policy:
 - repository-backed
 - selective retrieval
@@ -30,11 +34,11 @@ Current task:
 - authoritative refs: [paths only]
 ```
 
-Dynamic Blocking Clarifications, Framework, Artifact, and Core state are fetched from latest canonical GitHub revisions when needed.
+Fresh-fetch Working Memory first when needed to determine the current stage and resume point; then selectively retrieve authoritative Layer 1 / Layer 2 / Layer 3 / Evidence state from latest canonical GitHub revisions.
 
 ## Context Refresh
 
-`HARC CONTEXT REFRESH` means reread manifest/context-interface, resolve current task dependencies, fresh-fetch them, discard stale cache, and continue. It does not copy the whole project state into chat.
+`HARC CONTEXT REFRESH` means reread manifest/context-interface, fresh-fetch Working Memory, resolve long-term-memory dependencies for the current task, fresh-fetch those canonical files, discard stale cache, and continue. It does not copy the whole project state into chat.
 
 ## Write rule
 
