@@ -51,7 +51,12 @@ These describe how to access state, not the substantive state itself.
 
 ### 3.2 Data Plane — remains in GitHub
 
-Authoritative versions of the following remain only in GitHub:
+GitHub stores both:
+
+- **Working Memory** — operational state for current stage, objectives, tasks, blockers, clarifications, and handoff;
+- **Long-Term Memory** — the three durable research-memory layers.
+
+Authoritative long-term versions of the following remain only in GitHub:
 
 - Content Core;
 - Form Core;
@@ -71,29 +76,40 @@ Read them transiently when needed. Their presence in an earlier conversation doe
 
 For substantive tasks:
 
-1. **Resolve** the normative roles required by the task;
-2. **Fetch** latest canonical files from GitHub;
-3. **Reason** using only task-relevant content;
-4. **Act** under HARC upstream-first rules;
-5. **Write-through** authoritative updates directly to GitHub;
-6. **Invalidate** cached copies of touched files;
-7. **Refresh** touched dependencies if later reasoning still depends on them.
+1. **Resume** by reading latest Working Memory to determine current stage, objective, tasks, blockers, and next actions;
+2. **Resolve** the long-term-memory roles required by the task;
+3. **Fetch** latest canonical files from GitHub;
+4. **Reason** using only task-relevant content;
+5. **Act** under HARC upstream-first rules;
+6. **Write-through** authoritative updates directly to GitHub;
+7. **Invalidate** cached copies of touched files;
+8. **Refresh** touched dependencies if later reasoning still depends on them.
 
 ## 5. Task-based Selective Retrieval
 
 ### PROTOCOL
 
-Prefer Protocol Core, recent relevant Decision Log entries, Clarification Register, relevant protocol files, and Specification/AGENTS/templates only when affected.
+Read Working Memory first, then prefer Protocol Core, recent relevant Decision Log entries, Clarification Register, relevant protocol files, and Specification/AGENTS/templates only when affected.
 
 ### CONTENT
 
-Prefer Content Core, recent relevant Decision Log entries, Clarification Register, Framework Status, Working/Approved Framework, directly relevant evidence, and the Artifact only when needed.
+Read Working Memory first, then prefer Content Core, recent relevant Decision Log entries, Clarification Register, Framework Status, Working/Approved Framework, directly relevant evidence, and the Artifact only when needed.
 
 ### FORM
 
-Prefer Form Core, recent relevant Decision Log entries, Clarification Register where expression uncertainty is high-impact, applicable form profiles, and relevant Artifact/rendering state.
+Read Working Memory first, then prefer Form Core, recent relevant Decision Log entries, Clarification Register where expression uncertainty is high-impact, applicable form profiles, and relevant Artifact/rendering state.
 
 Avoid reading the entire repository every turn merely “to be safe.”
+
+## 5.5 Working Memory authority
+
+Working Memory is repository-backed operational state, not long-term substantive authority.
+
+- current work status, TODOs, blockers, and handoff use Working Memory;
+- durable human commitments use Layer 1 canonical Core / Decision Log;
+- argument structure uses Layer 2 current framework;
+- artifact content uses Layer 3;
+- if Working Memory conflicts with durable state, repair Working Memory.
 
 ## 6. Freshness / Revision Rule
 
