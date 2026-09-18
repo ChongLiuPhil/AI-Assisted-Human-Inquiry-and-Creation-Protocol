@@ -1,6 +1,6 @@
 # 方法论文章 — Working Argument Map
 
-**状态：** `WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`  
+**状态：** `WORKING-FRAMEWORK — REVIEW READY / BLOCKING CLARIFICATIONS RESOLVED; HUMAN APPROVAL PENDING`  
 **成果类型：** 方法论文章  
 **人类批准：** 尚未完成  
 **派生草稿状态：** `DERIVED-PROVISIONAL`
@@ -85,15 +85,17 @@ AI Agent 可以承担越来越多的检索、结构化、起草、修订、形�
 
 ---
 
-## T3 — 认知劳动委托 / 人类治理命题
+## T3 — AI 工具工作分担 / 人类目的与治理命题
 
 **来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-大量认知劳动可以委托给 AI，但这并不意味着人类理解、判断、确认或责任可以整体委托。一个由人类治理的研究过程必须识别：哪些高层思想决定仍然需要有意义地处于人类控制中。
+研究或创作项目的目的、核心问题与方向应由人类给予、发起并持续导航或批准。AI Agent 在 HARC 中作为工具，可以执行或辅助大量检索、综合、结构化、起草、重组、核查、格式处理和其他工作，但不应被描述为具有认知性的主体，也不应使用“AI 承担认知劳动 / 认知任务”作为中心表述。
 
-候选高杠杆责任节点包括：
+AI 能够执行大量工作，并不意味着项目目的、核心判断或最终核心责任可以转移给 AI。人类必须对作品所追求的目标与方向保持实际理解、导航和授权。
 
-- 研究目的与问题选择；
+当前高杠杆人类责任节点至少包括：
+
+- 研究目的、问题与方向；
 - 核心主张的接受/拒绝；
 - 主要推论关系；
 - 关键证据冲突的处理；
@@ -101,28 +103,30 @@ AI Agent 可以承担越来越多的检索、结构化、起草、修订、形�
 - Framework Approval；
 - 适用时的 Final Artifact Approval。
 
-表达 **responsibility concentration（责任集中）** 是 `AI-PROPOSED`；关于“人类责任与能力边界”的底层问题来自人类。
+`responsibility concentration` 不再作为当前中心术语。底层责任模型以描述性语言表达：人类提供目的与方向，AI 工具执行或辅助部分工作，Layer 2 Framework 承载核心思想责任。
 
-**创始依据：** Article Content Core C2；HARC Protocol Core P17。
-
----
+**创始依据：** Article Content Core C2；HARC Protocol Core P17；HARC-D023。
 
 ## T4 — Framework Responsibility Thesis
 
-**来源：** `HUMAN-ORIGINATED`，但**适用强度仍未解决**。
+**来源：** `HUMAN-ORIGINATED`；原有强/中等二选一已由 HARC-D023 的人类第三种表述取代。
 
-对于长篇成果，一份经过人类审阅并批准的紧凑思想架构表示，应作为主要实质性责任锚点。它应暴露人类实际理解并接受的核心命题、推论关系、关键区分、范围条件及章节/小节功能。
+对于 AI 辅助的长篇研究或创作成果，Layer 2 Current / Approved Framework 应作为人类核心思想责任的主要结构性承载点。它不是仅供 AI 使用的摘要，而是人类作者必须真正理解、审核并明确确认的思想结构。
 
-**尚未决定的强度：**
+Framework Approval 前，人类作者必须对其中实际呈现的全部实质内容形成清晰、完整的理解，并逐项审核和确认，包括：
 
-- **强版本：** Framework Approval 一般性地构成 AI 辅助长篇成果中实质性思想作者身份的中心。
-- **中等版本：** Framework Approval 是 HARC 提出的、用于集中实质性人类审阅的治理架构，而不声称自己已经给出作者身份的一般理论。
+- 核心命题；
+- 推论关系及其逻辑依赖；
+- 关键区分；
+- 范围条件；
+- 章节/小节功能；
+- 被纳入 framework 的具体措辞。
 
-在人类明确选择之前，不得把更强版本归于人类作者。
+Framework 可以由 AI 辅助提出、组织和表达，但获批版本必须真实体现人类作者的核心思想与认同。人类对该 framework 所承载的原创性、理解、判断和思想责任负责。
 
-**创始依据：** Article Content Core C5；HARC Protocol Core P6、P13。
+这一命题是 HARC 的责任架构，并不声称 Framework Approval 自动构成所有领域的一般作者身份理论，也不取消 Final Artifact Approval、事实准确性、研究诚信或目标渠道规则。
 
----
+**创始依据：** Article Content Core C5；HARC Protocol Core P6、P13、P17；HARC-D023。
 
 ## T5 — 双批准门命题
 
@@ -280,6 +284,8 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 - 人类研究内容意图 vs 人类形式/呈现意图；
 - 人类意图 vs AI 操作性表示；
+- AI 工具可以执行/辅助的工作 vs 人类对目的、方向、理解、判断与责任的承担；
+- AI 作为协作工具 vs 人类作为项目目的与方向的发起/授权主体；
 - Working Framework vs Approved Framework；
 - framework defect vs derived-expansion defect；
 - Framework Approval vs Final Artifact Approval；
@@ -290,12 +296,11 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 ### 若提升为中心术语则仍需确认的 AI 表述
 
-- cognitive labor vs epistemic responsibility；
 - contribution transparency vs authorship/accountability；
 - semantic version control vs 普通文本版本控制；
-- responsibility concentration vs 持续逐行人类生产。
+- generation–verification asymmetry 作为 heuristic label 的地位。
 
----
+`responsibility concentration` 已由人类决定不作为当前中心术语；“cognitive labor / 认知劳动”也不应用来描述 AI 所承担的工作。
 
 # 4. 修订后的文章架构
 
@@ -333,13 +338,13 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 支持 T4。
 
-## VI. 认知劳动委托与人类认识责任
+## VI. AI 工具工作分担与人类目的 / Framework 责任
 
-**功能：** 处理文章的哲学中心：AI 可以做什么、人类必须理解/授权什么，以及为什么“工作委托”不能自动解决“责任委托”。
+**功能：** 处理文章的哲学中心：AI 工具可以执行或辅助哪些研究工作；为什么项目目的、问题与方向必须由人类给予、导航和批准；以及为什么人类核心思想责任主要通过其真正理解并确认的 Layer 2 Framework 落实。
 
-支持 T3。
+本节不得把 AI 描述为具有认知性的主体，也不得以“AI 承担认知劳动 / 认知任务”为中心概念。
 
-`HUMAN DECISION REQUIRED`：中心术语与规范命题强度。
+支持 T3 与 T4。
 
 ## VII. 两类缺陷、两个批准门与一个公开结构
 
@@ -359,11 +364,9 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 可能的经验测试套件在此属于 `AI-PROPOSED FUTURE RESEARCH`，除非人类明确把它提升为文章核心命题。
 
-## X. 结论 — 从 AI 文本生成走向扩展认知的治理
+## X. 结论 — 从 AI 文本生成走向 AI 扩展研究能力的治理
 
-**功能：** 重申中心提议：AI 可以扩展研究活动规模，但只有在意义、权威、证据、批准与责任保持显式可审计时，这种扩展才具有可治理性。
-
----
+**功能：** 重申中心提议：AI 工具可以扩展研究活动的执行规模与表达能力，但项目目的、方向、意义、证据约束、framework 批准与最终责任必须保持在人类治理下，并以显式、可审计的仓库状态呈现。
 
 # 5. 依赖结构
 
@@ -378,20 +381,18 @@ T2 分层语义治理
 ├── 通过 T12 区分长期记忆与当前工作状态
 └── 使可检查 Working Framework 成为可能
 
-T3 认知劳动委托 / 人类治理
-└── 为 T4 Framework Responsibility 提供动机
+T3 AI 工具工作分担 / 人类目的与治理
+└── 为 T4 Framework Responsibility 提供人类主体与责任基础
 
 T4 Framework Responsibility
 ├── 需要 T5 双批准门
 └── 需要 T6 Framework Projection 以保证公开成果忠实性
 
-T1 + T2 + T4 + T5 + T6 + T7
+T1 + T2 + T3 + T4 + T5 + T6 + T7
 └── 共同支持 T8 作为可执行协作协议的实际可复用性
 ```
 
-该依赖图由 AI 组织，属于 `AI-FORMULATED`，在人类批准前仍需审阅。
-
----
+该依赖图由 AI 组织，属于 `AI-FORMULATED`，在人类批准前仍需整体审阅。
 
 # 6. 证据/文献角色
 
@@ -408,35 +409,43 @@ T1 + T2 + T4 + T5 + T6 + T7
 
 核验过的来源笔记维护在 `evidence/METHODOLOGY_SOURCES.zh-CN.md`；参考文献元数据维护在 `paper/methodology-references.bib`。
 
-**证据规则：** 上述任何来源都不能单独证明 HARC 所提出的 framework 架构、`semantic version control`、`responsibility concentration` 或其经验有效性。
+**证据规则：** 上述任何来源都不能单独证明 HARC 所提出的 framework 架构、`semantic version control` 或其经验有效性。HARC-D023 关于 AI 工具地位与人类 Framework 责任的规范主张属于人类作者的协议/方法论立场，而不是由这些文献直接证明的经验结论。
 
 ---
 
-# 7. 创建 `MA-FW-001` 之前需要的人类澄清
+# 7. Framework Approval 前的 Clarification 状态
 
-高影响未决问题现在统一维护在 `docs/working-memory.zh-CN.md`。
+### 已解决并 Promotion
 
-### 当前 Blocking Clarifications
-
-- `CLR-001` — 中心责任概念；
-- `CLR-002` — Framework Responsibility Thesis 强度；
-- `CLR-005` — `responsibility concentration` 是否保留/替换。
-
-这些问题必须在 `MA-FW-001` 前由人类明确解决，或明确标为 `DEFERRED` 并在 framework 中保留其未决状态。
+- `CLR-001` — 中心责任概念：不再以“AI 认知劳动 vs 人类认识责任”为中心二分；采用人类目的/方向、AI 工具工作分担与人类责任的描述性模型。
+- `CLR-002` — Framework Responsibility Thesis：采用 HARC-D023 的第三种人类表述；Layer 2 Framework 是人类核心思想责任的主要结构性承载点，人类必须理解、审核并确认其中全部实质内容。
+- `CLR-005` — `responsibility concentration`：不作为当前中心术语继续使用。
 
 ### 当前 Non-blocking Clarifications
 
 - `CLR-003` — `semantic version control`；
 - `CLR-004` — `generation–verification asymmetry`；
-- `CLR-006` — extended/distributed cognition 的理论地位；
+- `CLR-006` — extended/distributed cognition 的理论地位；任何比较都不得被写成 AI 本身具有认知性的前提；
 - `CLR-007` — 经验验证计划；
-- `CLR-008` — 学科/投稿方向。
+- `CLR-008` — 学科/投稿方向；
+- `CLR-010` — 最终发布渠道与渠道特定形式约束（对 Framework Approval 非阻塞）。
 
-完整候选解释、AI 建议、影响范围和人类答复字段见 Task Plan；Argument Map 不再重复维护同一澄清的全部细节。
-
----
+完整 active state 见 Task Plan。当前已无 `CLR-001 / CLR-002 / CLR-005` 造成的 Framework Approval blocker；但整体 Working Framework 仍需人类明确批准、修订或拒绝，才能创建 `MA-FW-001`。
 
 # 8. 当前同步状态
+
+- Founder commitments -> Article Content Core：`SYNC — HARC-D023 PROMOTED`。
+- Article Content Core -> 本 map：`SYNC — responsibility model updated`。
+- 本 map -> 方法论文章草稿：`PARTIALLY SYNC — responsibility terminology/model corrected in this work cycle; full structural rewrite remains deferred pending human Framework Approval`。
+- Evidence layer -> policy/literature claims：`RECHECKED 2026-09-17`；投稿前必须重新核验目标渠道的时效性政策。
+- Clarification Gate：`BLOCKING CLARIFICATIONS CLEARED — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`。
+- Framework Approval：`NOT YET COMPLETED — overall human review pending`。
+- Final Artifact Approval：`NOT YET COMPLETED`。
+- 中文与英文：`BILINGUAL SYNC REQUIRED`；中文是规范基准。
+
+批准状态另见 `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`.
+
+
 
 - Founder commitments -> Article Content Core：`SYNC AFTER PROVENANCE CORRECTION`。
 - Article Content Core -> 本 map：`SYNC`，并已加入 T9 Working Memory / Clarification Governance。
