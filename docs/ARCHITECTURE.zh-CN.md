@@ -6,52 +6,27 @@
 
 ```text
         Zero-context Bootstrap / Onboarding Handshake
-      START_HERE + HARC_MANIFEST + CONTEXT_INTERFACE
-                      |
-             Repository Resolver
-                      |
-                   人类作者
-                      |
-        +-------------+-------------+
-        |             |             |
-     CONTENT         FORM        PROTOCOL
-        |             |             |
-        v             v             v
-  CONTENT_CORE    FORM_CORE     AGENTS / spec
-        \             /             |
-         \           /              |
-          +--- DECISION_LOG <---------+
-                    ^
-                    |
-             human resolution
-                    |
-          Critical Clarification
-              Register (1.5)
-                    ^
-                    |
-          AI detects ambiguity
-                    |
-                    v
-           Working Argument Map
-                    |
-          人类 Framework Approval
-                    |
-                    v
-             Approved FW-xxx
-                    |
-        +-----------+------------+
-        |                        |
-        v                        v
-      Evidence               AI Expansion
-        \                        /
-         \                      /
-          +----- Derived Artifact
-                    |
-              Final Review
-                    |
-                    v
-             Final Approved
+      START_HERE + MANIFEST + CONTEXT_INTERFACE
+                       |
+               Repository Resolver
+                       |
+                 Working Memory
+        stage / goals / tasks / blockers
+      clarifications / TODO / handoff / status
+              /           |           \
+             v            v            v
+     +-----------+   +-----------+   +-----------+
+     |  Layer 1  |-->|  Layer 2  |-->|  Layer 3  |
+     | Authorial |   |  Current  |   |  Derived  |
+     |   Core    |   | Framework |   | Artifact  |
+     +-----------+   +-----------+   +-----------+
+          ^               ^               ^
+          |               |               |
+          +------ Promotion from ----------+
+                 resolved Working Memory
 ```
+
+三层都是长期研究记忆。Working Memory 与三层并行，负责当前工作的可续接状态。
 
 采用双语配置时，上述所有人类可读规范状态同时具有中文 canonical 与英文 mirror。
 
@@ -73,14 +48,17 @@ Agent 会话只保留最小 Repository Resolver。Blocking Clarifications、Fram
 
 一个经人类批准的 framework 也不能覆盖之后明确的人类内容决定；相反，旧 framework 会变成不同步状态，需要修订并重新批准。
 
-## 当前状态与历史
+## 长期记忆、工作记忆与历史
 
 HARC 区分：
 
-- **当前状态** — 紧凑的规范文件，治理当前工作；
-- **历史** — 决策、旧 framework、证据、归档草稿。
+- **长期记忆 Layer 1** — 人类作者核心基础；
+- **长期记忆 Layer 2** — 当前论述框架；
+- **长期记忆 Layer 3** — 派生成果；
+- **Working Memory** — 当前阶段、目标、任务、阻塞、clarification、TODO 与 handoff；
+- **历史** — 决策、旧 framework、证据、归档草稿与 Git 历史。
 
-这样既可以保存长期记忆，又不用让每个 Agent 一次性加载所有历史细节。
+Working Memory 用于续接，不取代长期层。稳定结果通过 Promotion 进入相应长期层。
 
 ## 三个路由平面
 
@@ -88,9 +66,9 @@ HARC 区分：
 
 ```text
 人类内容反馈
-  -> 如存在高影响歧义：Clarification Register
+  -> 如存在高影响歧义：Working Memory / Clarification
   -> 人类解决
-  -> Decision Log
+  -> Promotion -> Decision Log
   -> Content Core
   -> Working Argument Map
   -> 如属实质变化则进行 Framework Approval
@@ -137,7 +115,7 @@ Working intellectual structure
 3. 哪个论证 framework 实际已经得到人类批准？
 4. 哪些内容由 AI 提议但人类尚未接受？
 5. 哪些证据约束当前主张？
-6. 哪些高影响不确定性正在 Clarification Register 中等待人类决定？
+6. Working Memory 中有哪些 blocker、pending human decision 与 clarification？
 7. 哪些问题仍未解决？
 8. 当前成果是否与已批准状态同步？
 9. 中英文规范文件是否保持语义同步？
