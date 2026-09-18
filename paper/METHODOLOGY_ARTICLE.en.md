@@ -267,6 +267,10 @@ Merely having these files in the repository does not guarantee that a replacemen
 
 This handshake turns “the agent understood the project” from an assumption into an observable check. The Agent should first report the human commitments, Blocking Clarifications, Working/Approved Framework, artifact status, and synchronization defects it reconstructed. If these cannot be recovered from repository state, the project has a persistence/onboarding defect that should be repaired before large-scale expansion continues.
 
+After this repository-level takeover, HARC adds a second safeguard: the Agent generates a compressed **Active Session Contract** from repository state and explicitly echoes it into its own current reply. GitHub therefore provides long-term recoverability, while the current conversation again carries a high-salience operating contract containing the authority hierarchy, Blocking Clarifications, Framework/Artifact state, and the propagation path for the current task.
+
+This mechanism cannot promote repository text into the platform's true system prompt. Platform system, developer, and safety instructions remain higher priority. What HARC can require is that the Agent rewrite the project-level contract into the visible active context, where the human can inspect it. After major state changes or suspected context loss in a long conversation, the Agent should regenerate a `HARC CONTEXT REFRESH` from repository state.
+
 This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. HARC therefore layers active state and historical state: Cores, the latest Framework, and the Argument Map remain compressed; detailed logs, old versions, evidence, and archives may continue growing and be retrieved selectively through indexes.
 
 The project thereby shifts from “depending on one enormous conversation” to “depending on recoverable explicit state.”
