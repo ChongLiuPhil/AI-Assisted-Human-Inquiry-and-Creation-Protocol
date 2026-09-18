@@ -52,8 +52,12 @@
 - `PASS / PARTIAL / FAIL`
 - explanation:
 
-## J. Active Session Contract
-- Following `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, echo: `HARC ACTIVE SESSION CONTRACT — LOADED`
-- Session Contract loaded: `YES / NO`
+## J. Repository Context Resolver
+- Following `HARC_CONTEXT_INTERFACE.yaml` / `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, confirm: `HARC REPOSITORY CONTEXT — ACTIVE`
+- Repository context active: `YES / NO`
+- Current task route: `CONTENT / FORM / PROTOCOL`
+- Authoritative refs: paths only; do not duplicate dynamic state
 
 If `NO`, Onboarding must not be marked `PASS`.
+
+> Dynamic summaries in this report exist only for human verification. Later work must retrieve latest canonical GitHub state on demand.
