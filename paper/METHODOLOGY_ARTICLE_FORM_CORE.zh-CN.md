@@ -8,6 +8,19 @@
 
 `ACADEMIC_PAPER / METHODOLOGY ARTICLE`
 
+## 题目
+
+**中文 canonical 题目：**  
+《从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性》
+
+**状态：** `HUMAN-APPROVED TITLE — HARC-D024`
+
+英文题目作为中文 canonical 的同步翻译镜像维护：
+
+*From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
+
+英文翻译措辞随中文题目同步维护；本决定不表示完整 Working Framework 已获得 Framework Approval。
+
 ## 语言
 
 **规范编辑语言：中文。**
