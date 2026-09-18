@@ -13,6 +13,7 @@
 - `WM-T011` — promote and propagate those resolutions through Layers 1 / 2 / 3: `TODO`
 - `WM-T012` — rerun Framework Approval readiness review: `TODO`
 - `WM-T013` — CLR-009 licensing decision before formal release: `WAITING-HUMAN`
+- `WM-T014` — CLR-010 target venue and venue-specific form constraints: `WAITING-HUMAN`
 
 ## 2. NEXT ACTIONS
 
@@ -21,7 +22,8 @@
 3. synchronize Article Content Core, Working Argument Map, Framework Status, and methodology draft;
 4. rerun `MA-FW-001` readiness review;
 5. create an Approved Framework Snapshot only after explicit human approval of a concrete version;
-6. resolve `CLR-009` before formal release.
+6. resolve `CLR-009` before formal release;
+7. resolve `CLR-010` before freezing final submission/publication form.
 
 ## 3. BLOCKERS / GATES
 
@@ -36,6 +38,10 @@
 ### Formal release
 
 - `CLR-009` — license unresolved.
+
+### Final submission / publication form
+
+- `CLR-010` — target venue and venue-specific citation, length, layout, AI-disclosure, and related constraints are unresolved.
 
 ## 4. PENDING HUMAN DECISIONS / CLARIFICATIONS
 
@@ -131,6 +137,31 @@ Candidates: philosophy of technology / epistemology; research methodology; schol
 Candidates: documentation CC BY 4.0 + code MIT / Apache-2.0 / MIT / other.
 
 Related: `LICENSE-DECISION.zh-CN.md`
+
+### CLR-010 — Target venue and venue-specific form constraints
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** Framework Approval = `NON-BLOCKING`; Final submission/publication form = `BLOCKING`
+
+Question: what publication venue will the methodology article target, and what concrete form constraints follow from that venue?
+
+Pending items include:
+
+- target journal / conference / preprint / other venue;
+- citation and bibliography style;
+- word/length limits;
+- typography, layout, and page constraints where applicable;
+- venue-specific AI disclosure / authorship / research-integrity requirements;
+- whether the venue accepts only one language and what output is required from the internally bilingual project.
+
+Distinction from `CLR-008`:
+
+- `CLR-008` concerns **disciplinary / intellectual positioning**;
+- `CLR-010` concerns **specific venue / external form constraints**.
+
+**AI-PROPOSED:** select the concrete venue after the Working Framework stabilizes; until then, do not promote current citation/layout defaults into human Form commitments.
+
+**Promotion target:** Article Form Core -> external constraints / final rendering / submission checklist.
 
 ## 5. BACKLOG
 
