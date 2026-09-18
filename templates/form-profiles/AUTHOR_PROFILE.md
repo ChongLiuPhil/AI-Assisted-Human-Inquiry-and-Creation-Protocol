@@ -1,5 +1,7 @@
 # Reusable Author Form Profile
 
+> **Language:** Chinese canonical: `AUTHOR_PROFILE.zh-CN.md`; this English file is the synchronized mirror.
+
 **Status:** template — do not populate with inferred preferences.
 
 Use this file only for presentation preferences the human explicitly intends to reuse across projects.
