@@ -9,10 +9,11 @@
 在实质性工作前：
 
 1. 读取 `HARC_MANIFEST.yaml`；
-2. 读取 `AGENTS.zh-CN.md`；
-3. 按 manifest 中的 required read order 读取当前状态；
-4. 向人类输出 HARC Onboarding Report；
-5. 只有在报告中明确说明当前 blocking clarification、framework 状态和允许的下一步后，才开始实质工作。
+2. 读取 `BOOTSTRAP_PROMPT.zh-CN.md`；
+3. 读取 `AGENTS.zh-CN.md`；
+4. 按 manifest 中的 required read order 读取当前状态；
+5. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 HARC Onboarding Report；
+6. 只有在报告中明确说明当前 blocking clarification、framework 状态和允许的下一步后，才开始实质工作。
 
 ## Onboarding Report 至少包含
 
@@ -45,4 +46,4 @@
 
 ## 可复制给 AI Agent 的启动提示词
 
-> 你正在接手一个 HARC-governed research repository。请先读取 `START_HERE.zh-CN.md`、`HARC_MANIFEST.yaml` 与 `AGENTS.zh-CN.md`，然后按照 manifest 的 required read order 重建项目状态。在进行任何实质性修改前，先输出 HARC Onboarding Report，列出当前人类承诺、Form 状态、Blocking/Non-blocking Clarifications、Working/Approved Framework、Artifact 状态、同步缺陷与当前允许的下一步。高影响不确定性不得猜测，必须进入 Clarification Register 并由人类确认。
+> 完整可复制启动提示词见 `BOOTSTRAP_PROMPT.zh-CN.md`。
