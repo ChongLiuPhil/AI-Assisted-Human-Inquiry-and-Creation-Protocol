@@ -411,6 +411,49 @@
 
 ---
 
+# 后续人类确认的发展
+
+本节不把后来的设计演化追溯性地伪装成 2026-09-17 最初创始讨论的一部分，而是记录之后由人类项目发起人明确提出并确认的新协议承诺。
+
+## E01 — GitHub 作为权威外部记忆与工作状态接口
+
+**后续人类决定：** 不在聊天上下文中长期维护第二份项目状态，而把 GitHub 直接作为权威 external memory + working state；模型上下文只保留 Repository Resolver 与当前任务所需的临时检索缓存。
+
+**实现位置：**
+
+- Protocol Core P21–P22
+- HARC-D020
+- `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md`
+- `HARC_CONTEXT_INTERFACE.yaml`
+- project template context interface
+- methodology article C13 / T11
+
+**状态：** IMPLEMENTED。
+
+## E02 — 三层长期研究记忆 + 并行 Working Memory
+
+**后续人类决定：** 原 “Layer 1.5” 模型被取消。三个内容层都属于 Long-Term Research Memory：
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+另设与三层并行的 Working Memory，记录当前阶段、目标、active tasks、完成状态、next actions、TODO、blockers、pending human decisions、Clarifications、sync defects 与 handoff。
+
+Clarification 是 Working Memory item。人类解决后的稳定内容必须 Promotion 到相应长期记忆；Working Memory 退出 active 状态后只保留状态、Decision ID 与目标指针。
+
+**实现位置：**
+
+- Protocol Core P19、P23
+- HARC-D021
+- `protocol/WORKING_MEMORY.zh-CN.md`
+- `docs/working-memory.zh-CN.md`
+- Manifest / Context Interface / Onboarding / AGENTS
+- project templates
+- methodology article C11、C14 / T9、T12 / draft
+
+**状态：** IMPLEMENTED。
+
+---
+
 # 仍未解决的项目
 
 ## Open-source licensing
