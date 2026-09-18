@@ -25,9 +25,11 @@
 
 Working Memory Area 由 Index、Current Focus、Task Plan 与 Work Log 组成。Current Focus 保存“现在最重要的事”；Task Plan 保存动态任务、TODO、blockers、pending human decisions、clarifications 与 sync defects；Work Log 保存主要供人类回顾的阶段历史。
 
+**Work Log 默认不属于新 Agent 的 onboarding 必读上下文。** 只有人类要求历史回顾、专门审计、方向变化重建或 current/history conflict 时才按需读取。
+
 Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执行 Promotion 到对应长期记忆，并把 item 标记为 `RESOLVED / PROMOTED`。
 
-每个较大工作循环结束和 handoff 前更新 Working Memory。
+每个较大工作循环结束和 handoff 前更新 Current Focus / Task Plan；在阶段转换、重要决定或任务批次完成时，以适当粒度更新 Work Log。
 
 ## Repository-backed context
 
