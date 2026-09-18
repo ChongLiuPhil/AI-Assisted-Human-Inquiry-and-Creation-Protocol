@@ -62,6 +62,8 @@ This permits long-lived memory without forcing every agent to ingest all histori
 
 ```text
 Human content feedback
+  -> if high-impact ambiguity exists: Clarification Register
+  -> human resolution
   -> Decision Log
   -> Content Core
   -> Working Argument Map
@@ -109,8 +111,9 @@ A stable HARC project should allow a new competent agent to answer, from reposit
 3. What argument framework has the human actually approved?
 4. What has the AI proposed but the human not yet accepted?
 5. What evidence constrains the current claims?
-6. What remains unresolved?
-7. Is the current artifact synchronized with the approved state?
-8. Are the Chinese canonical and English mirror files semantically synchronized?
+6. Which high-impact uncertainties are waiting for human resolution in the Clarification Register?
+7. What remains unresolved?
+8. Is the current artifact synchronized with the approved state?
+9. Are the Chinese canonical and English mirror files semantically synchronized?
 
 If these questions cannot be answered without the previous chat history, the project has a persistence defect.
