@@ -53,9 +53,11 @@ Important project state MUST be externalized into explicit, version-controlled r
 
 The Human Author supplies, revises, or confirms substantive intellectual commitments and presentation intentions.
 
-The purpose, central problem, and direction of a research or creative project MUST originate with the Human Author or be explicitly authorized by the Human Author; the human retains core responsibility for the resulting work.
+The purpose, central problem, and direction of a research or creative project MUST originate with the Human Author or be explicitly authorized by the Human Author.
 
-The Human Author MAY use AI Agents as tools to perform or assist with extensive search, synthesis, structuring, drafting, editing, formalization, checking, and formatting. This division of work MUST NOT be treated as a transfer of project purpose, core judgment, framework authorization, or ultimate core responsibility.
+Within HARC, the Human Author is not only a source of content authorization but must also remain a **bearer of responsibility**. This applies throughout research and inquiry and becomes especially important when research results, arguments, or knowledge claims enter public circulation.
+
+The Human Author MAY use AI Agents as tools to perform or assist with extensive search, synthesis, structuring, drafting, editing, formalization, checking, and formatting. This division of work MUST NOT be treated as a transfer of project purpose, core judgment, framework authorization, responsibility for public knowledge dissemination, or the position of ultimate responsibility.
 
 ### 4.2 AI Agent
 
@@ -72,7 +74,7 @@ The AI Agent MAY:
 - detect inconsistencies, evidence conflicts, and synchronization defects;
 - maintain formatting and rendering systems.
 
-The AI Agent MUST distinguish its proposals from human-approved commitments.
+The AI Agent MUST distinguish its proposals from human-approved commitments and MUST NOT be treated as the ultimate bearer of responsibility for research purpose, framework authorization, or public dissemination of knowledge.
 
 ### 4.3 Repository
 
@@ -218,6 +220,10 @@ It MUST remain compatible with:
 - the latest applicable Approved Framework;
 - the Form Core;
 - known evidence constraints.
+
+If a derived artifact enters public circulation, the project MUST retain identifiable human bearers of responsibility. AI generation, expansion, or editing MUST NOT eliminate or replace this responsibility-bearing requirement.
+
+---
 
 ---
 
