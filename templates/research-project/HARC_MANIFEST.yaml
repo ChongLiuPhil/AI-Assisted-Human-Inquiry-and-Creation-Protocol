@@ -10,6 +10,7 @@ harc:
     mirror: "START_HERE.md"
     bootstrap_prompt: "BOOTSTRAP_PROMPT.zh-CN.md"
     onboarding_report_template: "ONBOARDING_REPORT_TEMPLATE.zh-CN.md"
+    session_context_bootstrap: "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
     agent_contract:
       canonical: "AGENTS.zh-CN.md"
       mirror: "AGENTS.md"
@@ -18,6 +19,7 @@ harc:
     - "HARC_MANIFEST.yaml"
     - "START_HERE.zh-CN.md"
     - "BOOTSTRAP_PROMPT.zh-CN.md"
+    - "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
     - "AGENTS.zh-CN.md"
     - "core/CONTENT_CORE.zh-CN.md"
     - "core/FORM_CORE.zh-CN.md"
@@ -51,6 +53,7 @@ harc:
       - "artifact_status"
       - "synchronization_defects"
       - "permitted_next_action"
+      - "session_contract_loaded"
 
   invariants:
     - "Repository state outranks chat memory."
