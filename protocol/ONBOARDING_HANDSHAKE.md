@@ -45,17 +45,18 @@ The root manifest determines exact paths. At minimum:
 1. START_HERE;
 2. HARC_MANIFEST;
 3. AGENTS;
-4. Protocol/Core governance;
-5. recent Decision Log;
-6. Content Core;
-7. Form Core;
-8. Critical Clarification Register;
-9. Framework Status;
-10. latest Approved Framework if any;
-11. Working Argument Map;
-12. task-relevant Evidence;
-13. task-relevant Artifact;
-14. English-mirror parity.
+4. Session Context Bootstrap;
+5. Protocol/Core governance;
+6. recent Decision Log;
+7. Content Core;
+8. Form Core;
+9. Critical Clarification Register;
+10. Framework Status;
+11. latest Approved Framework if any;
+12. Working Argument Map;
+13. task-relevant Evidence;
+14. task-relevant Artifact;
+15. English-mirror parity.
 
 ## 5. Required Onboarding Report
 
