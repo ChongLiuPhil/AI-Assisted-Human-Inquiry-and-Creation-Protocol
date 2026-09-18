@@ -25,9 +25,9 @@
 
 扫描结果：
 
-- Markdown 文件总数：**96**
-- 中文 canonical（`*.zh-CN.md`）：**48**
-- 英文 mirror：**48**
+- Markdown 文件总数：**100**
+- 中文 canonical（`*.zh-CN.md`）：**50**
+- 英文 mirror：**50**
   - 绝大多数使用既有 `*.md`
   - 方法论文章完整正文使用 `METHODOLOGY_ARTICLE.en.md`
 - 缺少英文 mirror 的中文文件：**0**
@@ -154,6 +154,17 @@ YAML manifest 是路径、读取顺序和不变量索引，不需要仅为语言
 - `docs/ONBOARDING_SELF_TEST.zh-CN.md` / English mirror。
 
 当前递归文件树重新扫描为 **96 个 Markdown = 48 个中文 canonical + 48 个英文 mirror，缺失配对 0**。
+
+### 3.9 Session Context Bootstrap
+
+新增并双语化：
+
+- `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror；
+- `templates/research-project/SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror。
+
+该机制要求新 Agent 在完成 repository onboarding 后回显 `HARC ACTIVE SESSION CONTRACT — LOADED`，把关键项目不变量和当前状态重新注入当前会话上下文。它明确不冒充平台真正的 system prompt。
+
+最新递归扫描为 **100 个 Markdown = 50 个中文 canonical + 50 个英文 mirror，缺失配对 0**。
 
 ## 4. 已修复的高风险语义不同步
 
