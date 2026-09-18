@@ -551,6 +551,8 @@ For HARC's own repository, and for projects that adopt the bilingual profile:
 6. New substantive Markdown documents SHOULD be created as bilingual pairs at creation time.
 7. Language-neutral technical artifacts such as code, BibTeX, schemas, and raw data MAY remain single-copy, provided their human-facing instructions are bilingual.
 8. Agent handoff documentation MUST make the canonical-language rule discoverable.
+9. For legacy bilingual files predating the rule, if English contains newer substantive development not yet present in Chinese, an English -> Chinese catch-up MUST be completed so Chinese represents the genuinely latest semantic state at cutover.
+10. After canonical cutover, normal substantive development MUST follow `Human decision -> Chinese canonical -> English mirror`; English MUST NOT independently develop new substantive content.
 
 Recommended naming convention:
 
