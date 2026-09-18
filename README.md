@@ -18,8 +18,10 @@ A new AI Agent should **not begin substantive work directly from the README or m
 Read first:
 
 1. [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)
-2. `HARC_MANIFEST.yaml`
-3. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+2. [`BOOTSTRAP_PROMPT.zh-CN.md`](BOOTSTRAP_PROMPT.zh-CN.md)
+3. `HARC_MANIFEST.yaml`
+4. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+5. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
 
 Then follow the mandatory read order and submit a **HARC Onboarding Report** before making substantive changes.
 
@@ -76,6 +78,10 @@ A HARC project normally contains:
 project/
 ├── START_HERE.zh-CN.md
 ├── START_HERE.md
+├── BOOTSTRAP_PROMPT.zh-CN.md
+├── BOOTSTRAP_PROMPT.md
+├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
+├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
