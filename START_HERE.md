@@ -20,16 +20,16 @@ Read Chinese canonical files in this order; use English only for parity checking
 2. `BOOTSTRAP_PROMPT.zh-CN.md`
 3. `AGENTS.zh-CN.md`
 4. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-3. `core/PROTOCOL_CORE.zh-CN.md`
-4. recent `core/DECISION_LOG.zh-CN.md`
-5. current project Content Core / Form Core
-6. `docs/clarification-register.zh-CN.md`
-7. Framework Status
-8. latest Approved Framework, if any
-9. Working Argument Map
-10. evidence directly relevant to the task
-11. derived artifact directly relevant to the task
-12. corresponding English mirrors for bilingual parity
+5. `core/PROTOCOL_CORE.zh-CN.md`
+6. recent `core/DECISION_LOG.zh-CN.md`
+7. current project Content Core / Form Core
+8. `docs/clarification-register.zh-CN.md`
+9. Framework Status
+10. latest Approved Framework, if any
+11. Working Argument Map
+12. evidence directly relevant to the task
+13. derived artifact directly relevant to the task
+14. corresponding English mirrors for bilingual parity
 
 For the HARC methodology article, exact paths are listed in `HARC_MANIFEST.yaml`.
 
