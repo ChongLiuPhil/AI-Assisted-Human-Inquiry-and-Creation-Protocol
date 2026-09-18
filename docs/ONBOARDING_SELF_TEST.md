@@ -42,9 +42,9 @@ No unpersisted information from the current chat is treated as project state.
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- current protocol commitments: P1–P23
-- recent human protocol decisions: HARC-D015 through HARC-D021
-- D018–D021 are human-confirmed; D021 replaces the former Layer 1.5 model with parallel Working Memory.
+- current protocol commitments: P1–P24
+- recent human protocol decisions: HARC-D015 through HARC-D022
+- D018–D022 are human-confirmed; D021 replaces Layer 1.5 with parallel Working Memory and D022 modularizes Working Memory into Current Focus / Task Plan / Work Log.
 
 **Protocol conclusion:** discoverable and reconstructable from repository state.
 
@@ -69,8 +69,10 @@ Repository state supports at least:
 - AI expansion must preserve framework fidelity;
 - Chinese canonical / English synchronized mirror;
 - the three content layers are Long-Term Research Memory;
-- Working Memory runs in parallel for current stage, goals, tasks, blockers, pending decisions, Clarifications, and handoff;
-- Clarification is a Working Memory item, not Layer 1.5;
+- Working Memory runs in parallel with the three long-term layers;
+- Current Focus stores the highest-priority objective, Task Plan stores dynamic tasks/blockers/pending decisions, and Work Log primarily supports human retrospective review;
+- Work Log is outside default AI onboarding context;
+- Clarification is a Task Plan / Working Memory item, not Layer 1.5;
 - a replacement Agent must complete zero-context bootstrap + Onboarding Handshake before substantive work.
 
 ### B3. Methodology-article Form state
