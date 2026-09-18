@@ -36,6 +36,7 @@
 - [x] Narrow Session Context Bootstrap to a minimal Repository Resolver with no dynamic state copy.
 - [x] Establish Working Memory parallel to the three long-term memory layers, replacing the former Layer 1.5 model.
 - [x] Move Clarification into Working Memory and define Promotion into Long-Term Memory.
+- [x] Modularize Working Memory into Current Focus / Task Plan / Work Log; routine AI takeover reads Current Focus + Task Plan while Work Log primarily serves human retrospective review.
 - [ ] Human review and approval of the methodology article Working Framework.
 - [ ] Create first Approved Framework snapshot for the methodology article.
 - [ ] Decide target publication venue / disciplinary positioning.
@@ -82,7 +83,7 @@
 - [ ] Measure whether responsibility concentration reduces review burden without increasing serious errors.
 - [ ] Compare GitHub-centered implementation with local-first or other versioned backends.
 - [ ] Study the effect of repository-backed context on context usage, stale-state errors, and cross-agent onboarding cost.
-- [ ] Study Working Memory update granularity, compression, and handoff efficiency.
+- [ ] Study Current Focus / Task Plan update granularity and compression, plus Work Log partitioning, indexing, and value for human retrospective review.
 - [ ] Examine relationships among HARC, scholarly authorship norms, provenance systems, extended/distributed cognition, automation reliance, and human intellectual agency.
 - [ ] Develop operational measures for framework fidelity and semantic drift.
 - [ ] Study semantic drift introduced by bilingual canonical/mirror translation governance.
