@@ -13,7 +13,7 @@
 
 ## 2. NEXT ACTIONS
 
-1. Human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole, especially the current thesis set, dependency structure, section functions, and the HARC-D023 / HARC-D024 revisions to T3 / T4; the title itself is human-approved through HARC-D024, but this does not constitute overall Framework Approval;
+1. Human reviews the current revised `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`; HARC-D025 has repaired the T1–T13 dependency structure and clarified overall-approval semantics for unresolved / AI-PROPOSED items; the title itself is human-approved through HARC-D024, but this does not constitute overall Framework Approval;
 2. human explicitly decides `APPROVE / REVISE / REJECT`;
 3. only after explicit `APPROVE`, the Agent creates the `MA-FW-001` Approved Framework Snapshot and updates Framework Status;
 4. after Framework Approval, perform the major structural synchronization/rewrite of the current draft while retaining a separate Final Artifact Approval gate;
@@ -54,6 +54,8 @@ The current Working Framework requires an overall:
 - `REJECT`
 
 Acceptance of local wording does not automatically constitute overall approval.
+
+If an overall `APPROVE` decision is given while the framework still contains `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` items, approval confirms only their place, scope, and treatment as unresolved/provisional items within the framework. It does not approve their still-unconfirmed substantive content or change their provenance.
 
 ### CLR-003 — `semantic version control`
 
@@ -137,6 +139,7 @@ Distinction from `CLR-008`:
 - `CLR-005` — `RESOLVED / PROMOTED` via `HARC-D023`: `responsibility concentration` is not retained as the current central term.
 
 - `HARC-D024` — `RESOLVED / PROMOTED`: the current Chinese title is human-approved; English is the synchronized translation mirror; title approval is not overall Framework Approval.
+- `HARC-D025` — `RESOLVED / PROMOTED`: the T1–T13 dependency graph has been repaired; overall Framework Approval of explicit unresolved / AI-PROPOSED items approves only their unresolved status and architectural placement, not their content.
 
 ## 6. BACKLOG
 
