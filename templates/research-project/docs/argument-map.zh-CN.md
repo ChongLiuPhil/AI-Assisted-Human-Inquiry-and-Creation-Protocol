@@ -44,11 +44,12 @@ Claim A
 
 - `...`
 
-## 9. 相关 Critical Clarification
+## 9. 相关 Working Memory 项目
 
-高影响未决问题不要在这里重复完整维护；引用 `docs/clarification-register.zh-CN.md` 中的条目。
+当前 blocker、pending human decision 与高影响 clarification 不要在这里重复完整维护；引用 `docs/working-memory.zh-CN.md` 中的条目。
 
 - `CLR-001 — ...`
+- `WM-Txxx — ...`
 
 ## 10. 需要人类决定但尚未达到 Critical Clarification 阈值
 
