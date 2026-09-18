@@ -18,18 +18,19 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 
 1. `HARC_MANIFEST.yaml`
 2. `BOOTSTRAP_PROMPT.zh-CN.md`
-3. `AGENTS.zh-CN.md`
-4. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-5. `core/PROTOCOL_CORE.zh-CN.md`
-6. 最近的 `core/DECISION_LOG.zh-CN.md`
-7. 当前项目的 Content Core / Form Core
-8. `docs/clarification-register.zh-CN.md`
-9. Framework Status
-10. 最新 Approved Framework（如有）
-11. Working Argument Map
-12. 与当前任务直接相关的 evidence
-13. 与当前任务直接相关的派生成果
-14. 对应英文 mirror，检查双语 parity
+3. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+4. `AGENTS.zh-CN.md`
+5. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
+6. `core/PROTOCOL_CORE.zh-CN.md`
+7. 最近的 `core/DECISION_LOG.zh-CN.md`
+8. 当前项目的 Content Core / Form Core
+9. `docs/clarification-register.zh-CN.md`
+10. Framework Status
+11. 最新 Approved Framework（如有）
+12. Working Argument Map
+13. 与当前任务直接相关的 evidence
+14. 与当前任务直接相关的派生成果
+15. 对应英文 mirror，检查双语 parity
 
 对于 HARC 方法论文章，具体路径由 `HARC_MANIFEST.yaml` 给出。
 
@@ -49,7 +50,11 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 
 ## 3. 接管握手：必须先输出 Onboarding Report
 
-完成强制读取后，新 Agent 应先向人类输出一个简短但结构化的 **HARC Onboarding Report**。推荐直接使用：`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`。至少包含：
+完成强制读取后，新 Agent 应先向人类输出一个简短但结构化的 **HARC Onboarding Report**。推荐直接使用：`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`。报告中还必须根据 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 生成并回显：
+
+`HARC ACTIVE SESSION CONTRACT — LOADED`
+
+以便把关键规则重新注入当前会话上下文。至少包含：
 
 ### A. 协议状态
 
