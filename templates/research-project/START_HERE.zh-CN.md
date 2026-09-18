@@ -9,12 +9,13 @@
 在实质性工作前：
 
 1. 读取 `HARC_MANIFEST.yaml`；
-2. 读取 `BOOTSTRAP_PROMPT.zh-CN.md`；
-3. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
-4. 读取 `AGENTS.zh-CN.md`；
-5. 按 manifest 中的 required read order 读取当前状态；
-6. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 HARC Onboarding Report，并回显 `HARC ACTIVE SESSION CONTRACT — LOADED`；
-7. 只有在报告中明确说明当前 blocking clarification、framework 状态和允许的下一步，且 Session Contract 已加载后，才开始实质工作。
+2. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
+3. 读取 `BOOTSTRAP_PROMPT.zh-CN.md`；
+4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
+5. 读取 `AGENTS.zh-CN.md`；
+6. 按 manifest / context interface 的 task route 按需读取当前状态；
+7. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`；
+8. 只有在报告通过、Repository Context 已激活后，才开始实质工作；后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
 
 ## Onboarding Report 至少包含
 
