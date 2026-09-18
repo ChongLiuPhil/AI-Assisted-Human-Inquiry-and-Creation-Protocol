@@ -33,9 +33,9 @@ A different language-governance choice must be an explicit human/project decisio
 6. Record initialization decisions in `core/DECISION_LOG.zh-CN.md` and its English mirror.
 7. Create `docs/clarification-register.zh-CN.md` and its English mirror as the Layer 1.5 interface for high-impact uncertainty.
 8. Build `docs/argument-map.zh-CN.md` and its English mirror as an AI-maintained working representation.
-9. Initialize `docs/framework-status.zh-CN.md` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
+10. Initialize `docs/framework-status.zh-CN.md` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
 10. Create the artifact directory appropriate to the project.
-11. Create `evidence/` when research verification, data, calculations, or sources are relevant.
+12. Create `evidence/` when research verification, data, calculations, or sources are relevant.
 12. Keep unknowns explicit. Do not fill them with AI assumptions.
 
 ## Minimum template tree
@@ -62,6 +62,8 @@ project/
 │   ├── DECISION_LOG.zh-CN.md
 │   └── DECISION_LOG.md
 ├── docs/
+│   ├── working-memory.zh-CN.md
+│   ├── working-memory.md
 │   ├── clarification-register.zh-CN.md
 │   ├── clarification-register.md
 │   ├── argument-map.zh-CN.md
