@@ -10,7 +10,9 @@ Status: `WORKING-FRAMEWORK — REVIEW READY / BLOCKING CLARIFICATIONS CLEARED; H
 
 Human approval: **not completed**.
 
-The current map is aligned with the Article Content Core and HARC-D023 and continues to distinguish human-originated commitments, AI-formulated representations, AI-proposed content, and evidence constraints.
+The current map is aligned with the Article Content Core, HARC-D023, and HARC-D024 and continues to distinguish human-originated commitments, AI-formulated representations, AI-proposed content, and evidence constraints.
+
+**Title status:** the current Chinese title “从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性” is human-approved through `HARC-D024`; English is the synchronized translation mirror. Title approval does not constitute overall Framework Approval.
 
 ### Readiness review
 
@@ -46,7 +48,7 @@ English synchronized mirror: `paper/METHODOLOGY_ARTICLE.en.md`
 
 Status: `DERIVED-PROVISIONAL`
 
-HARC-D023 has been selectively propagated into the abstract, responsibility argument, and conclusion, replacing the old central “AI cognitive labor / responsibility concentration” model.
+HARC-D023 / HARC-D024 have been selectively propagated into the abstract, responsibility argument, and conclusion: the old central “AI cognitive labor / responsibility concentration” model has been replaced and further clarified as humans remaining the bearers of responsibility, especially in public dissemination of knowledge.
 
 However, the current draft retains the earlier 15-part structure while the latest Working Framework uses a reorganized 10-part structure. The draft therefore remains only **partially synchronized** with the framework.
 
@@ -65,7 +67,7 @@ Do not perform the major structural rewrite before overall Framework Approval.
 
 ## Synchronization state
 
-- Founder commitments -> Article Content Core: `SYNC — HARC-D023 PROMOTED`
+- Founder commitments -> Article Content Core: `SYNC — HARC-D023 + HARC-D024 PROMOTED`
 - Article Content Core -> Working Framework: `SYNC / REVIEW READY`
 - Working Framework -> current draft: `PARTIALLY SYNC — responsibility model synchronized; structural rewrite deferred pending human Framework Approval`
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17; further venue-specific verification required before submission`
@@ -82,7 +84,7 @@ Do not perform the major structural rewrite before overall Framework Approval.
 - `CLR-002` — Framework Responsibility Thesis;
 - `CLR-005` — status of `responsibility concentration`.
 
-All three were resolved and propagated through `HARC-D023`.
+`CLR-002 / CLR-005` were resolved and propagated through `HARC-D023`; `CLR-001` was further clarified by `HARC-D024` as humans remaining the bearers of responsibility. The current title was also human-approved through `HARC-D024`.
 
 ### Current Framework Approval blocker
 
