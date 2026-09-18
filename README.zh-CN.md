@@ -22,9 +22,10 @@
 4. `HARC_MANIFEST.yaml`
 5. `HARC_CONTEXT_INTERFACE.yaml`
 6. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
-7. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
+7. [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md)
+8. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
 
-然后按照启动文件的 mandatory read order 重建项目状态，并在做任何实质性修改前向人类提交一份 **HARC Onboarding Report**。
+然后先从 Working Memory 确定当前续接点，再按照启动文件的 mandatory read order 从三层长期记忆按需重建项目状态，并在做任何实质性修改前向人类提交一份 **HARC Onboarding Report**。
 
 当前仓库的自举验证见 [`docs/ONBOARDING_SELF_TEST.zh-CN.md`](docs/ONBOARDING_SELF_TEST.zh-CN.md)。
 
