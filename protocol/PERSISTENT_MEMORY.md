@@ -1,5 +1,7 @@
 # Persistent Research Memory
 
+> **Language:** Chinese canonical: `PERSISTENT_MEMORY.zh-CN.md`; this English file is the synchronized mirror.
+
 ## Principle
 
 > **Chat is temporary interaction context. The repository is durable shared research memory.**
