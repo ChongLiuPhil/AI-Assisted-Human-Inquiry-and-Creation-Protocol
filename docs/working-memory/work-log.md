@@ -134,7 +134,8 @@ Work Log is excluded from default AI context and retrieved only for historical r
 - active-state use of legacy clarification-register in project-template AGENTS;
 - English Onboarding Handshake;
 - a few older formulations in Bootstrap Prompt / Persistent Memory;
-- stale bilingual-migration status in Founding Idea Audit itself.
+- stale bilingual-migration status in Founding Idea Audit itself;
+- the target-venue / venue-specific form constraint already known to the final audit but not separately represented in Task Plan, now added as `CLR-010`.
 
 **Conclusion:** `PASS AFTER REPAIR`.
 
