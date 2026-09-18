@@ -105,7 +105,7 @@ HARC now uses:
 This means:
 
 - GitHub stores the sole authoritative project state;
-- the session does not maintain long-lived copies of Blocking Clarifications, Framework, Artifact, Core, or other dynamic state;
+- the session does not maintain long-lived copies of Current Focus, Task Plan, Framework, Artifact, Core, or other dynamic state;
 - the Agent selectively retrieves latest canonical files according to the current task;
 - file excerpts in active context are temporary non-authoritative cache;
 - relevant latest revisions are refetched before high-impact judgments and writes;
