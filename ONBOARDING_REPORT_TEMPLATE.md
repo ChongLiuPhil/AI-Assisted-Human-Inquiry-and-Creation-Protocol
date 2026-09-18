@@ -28,26 +28,26 @@ Before substantive work, a new AI Agent should report the state reconstructed fr
 
 ## C. Working Memory state
 
-### C1. Current stage and objective
+### C1. Current Focus
 - CURRENT_STAGE:
 - CURRENT_OBJECTIVE:
+- PRIMARY_BLOCKER:
+- IMMEDIATE_NEXT_ACTION:
 
-### C2. Current work
+### C2. Task Plan
 - ACTIVE_TASKS:
-- RECENTLY_COMPLETED:
 - NEXT_ACTIONS:
 - TODO / BACKLOG:
-
-### C3. Blockers and pending human decisions
 - BLOCKERS:
-- PENDING_HUMAN_DECISIONS:
-- Clarifications:
-- questions that must be put to the human:
-
-### C4. Working Memory health
+- PENDING_HUMAN_DECISIONS / Clarifications:
 - SYNC_DEFECTS:
-- HANDOFF_NOTE:
-- Working Memory obviously stale: `YES / NO`
+
+### C3. Work Log
+- skipped by default: `YES`
+- read for historical review/audit in this onboarding: `YES / NO`
+- if read, reason:
+
+> Work Log history need not be restated in an ordinary Onboarding Report.
 
 ## D. Framework state
 
