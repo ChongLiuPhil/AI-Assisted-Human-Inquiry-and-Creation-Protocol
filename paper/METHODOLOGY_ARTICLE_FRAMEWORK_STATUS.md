@@ -6,11 +6,19 @@
 
 Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` (canonical) / `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md` (English mirror)
 
-Status: `WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`
+Status: `WORKING-FRAMEWORK — REVIEW READY / BLOCKING CLARIFICATIONS CLEARED; HUMAN APPROVAL PENDING`
 
 Human approval: **not completed**.
 
-The current map has been reconciled against the human-originated Article Content Core and now explicitly distinguishes human-originated commitments, AI-formulated compressions, AI-proposed terminology, and evidence constraints.
+The current map is aligned with the Article Content Core and HARC-D023 and continues to distinguish human-originated commitments, AI-formulated representations, AI-proposed content, and evidence constraints.
+
+### Readiness review
+
+Result: `PASS FOR HUMAN FRAMEWORK REVIEW`
+
+The Clarifications that previously blocked Framework Approval — `CLR-001 / CLR-002 / CLR-005` — have been human-resolved and promoted. There is currently no active blocking Clarification preventing overall human review of the framework.
+
+This is not Framework Approval itself.
 
 ## Latest human-approved framework snapshot
 
@@ -22,18 +30,27 @@ No methodology-article framework has yet passed the HARC Framework Approval Gate
 
 `MA-FW-001`
 
-Create `MA-FW-001` only after the human author explicitly approves the methodology article's intellectual architecture. Do not infer approval from continued discussion or from acceptance of individual wording changes.
+Create `MA-FW-001` only after the human author explicitly gives an overall `APPROVE` decision on the complete current Working Framework.
+
+Do not infer overall approval merely because:
+
+- blocking Clarifications were resolved;
+- individual claims or wording were accepted;
+- the framework is `REVIEW READY`;
+- discussion continues.
 
 ## Current derived article
 
-Chinese canonical source: `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+Chinese canonical source: `paper/METHODOLOGY_ARTICLE.zh-CN.md`  
 English synchronized mirror: `paper/METHODOLOGY_ARTICLE.en.md`
 
 Status: `DERIVED-PROVISIONAL`
 
-The current article is an AI-assisted expansion of an earlier Working Framework and founder commitments. It is not a final human-approved scholarly article.
+HARC-D023 has been selectively propagated into the abstract, responsibility argument, and conclusion, replacing the old central “AI cognitive labor / responsibility concentration” model.
 
-Because the review-ready Working Framework has now been reorganized and provenance-corrected, the draft is currently only **partially synchronized** with the latest map. Major structural rewriting should wait until the human has reviewed the framework.
+However, the current draft retains the earlier 15-part structure while the latest Working Framework uses a reorganized 10-part structure. The draft therefore remains only **partially synchronized** with the framework.
+
+Do not perform the major structural rewrite before overall Framework Approval.
 
 ## Canonical upstream sources
 
@@ -48,34 +65,52 @@ Because the review-ready Working Framework has now been reorganized and provenan
 
 ## Synchronization state
 
-- Founder commitments -> Article Content Core: `SYNC AFTER PROVENANCE CORRECTION`
+- Founder commitments -> Article Content Core: `SYNC — HARC-D023 PROMOTED`
 - Article Content Core -> Working Framework: `SYNC / REVIEW READY`
-- Working Framework -> Current draft: `PARTIALLY SYNC — structural rewrite deferred pending human framework review`
+- Working Framework -> current draft: `PARTIALLY SYNC — responsibility model synchronized; structural rewrite deferred pending human Framework Approval`
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17; further venue-specific verification required before submission`
-- Working Memory / Clarification Gate: `OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`
-- Framework approval: `NOT COMPLETED`
-- Final artifact approval: `NOT COMPLETED`
+- Working Memory / Clarification Gate: `CLEARED FOR FRAMEWORK REVIEW — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`
+- Framework Approval: `NOT COMPLETED — overall human review pending`
+- Final Artifact Approval: `NOT COMPLETED`
 - Chinese/English article pair: `BILINGUAL MIRROR REQUIRED`
 
-## Working Memory / Clarification Gate before `MA-FW-001`
+## Framework Approval Gate
 
-Current Focus: `docs/working-memory/current-focus.zh-CN.md`
-Task Plan: `docs/working-memory/task-plan.zh-CN.md`
+### Resolved / promoted
 
-See `docs/working-memory/task-plan.zh-CN.md` for the full unresolved state.
+- `CLR-001` — central responsibility model;
+- `CLR-002` — Framework Responsibility Thesis;
+- `CLR-005` — status of `responsibility concentration`.
 
-Current `BLOCKING` entries:
+All three were resolved and propagated through `HARC-D023`.
 
-- `CLR-001` — central responsibility concept;
-- `CLR-002` — strength of the Framework Responsibility Thesis;
-- `CLR-005` — status/replacement of `responsibility concentration`.
+### Current Framework Approval blocker
 
-Current `NON-BLOCKING` entries:
+There is no active blocking Clarification.
 
-- `CLR-003`, `CLR-004`, `CLR-006`, `CLR-007`, `CLR-008`, `CLR-010`.
+The only remaining gate is:
 
-Do not create `MA-FW-001` until blocking clarifications are human-resolved or explicitly `DEFERRED`. The review-ready framework must still receive explicit overall approval, revision, or rejection afterward.
+`WAITING-HUMAN: overall Framework Approval decision`
+
+### Current non-blocking Clarifications
+
+- `CLR-003` — `semantic version control`;
+- `CLR-004` — `generation–verification asymmetry`;
+- `CLR-006` — theoretical role of extended/distributed cognition;
+- `CLR-007` — empirical validation program;
+- `CLR-008` — disciplinary positioning;
+- `CLR-010` — target venue and form constraints (non-blocking for Framework Approval).
+
+`CLR-009` is a license blocker for formal release, not for the current methodology-framework review.
 
 ## Current instruction to AI agents
 
-Do not treat the present Working Framework as human-approved. Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred. Use `docs/working-memory/task-plan.zh-CN.md` first to resolve high-impact uncertainty, then return to the Working Framework for overall human review.
+Do not treat the current Working Framework as human-approved.
+
+Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred.
+
+The current primary human–AI discussion interface is:
+
+`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+
+The next step is an explicit human `APPROVE / REVISE / REJECT` decision on that complete framework. Every substantive Chinese edit must be synchronized to the English mirror.
