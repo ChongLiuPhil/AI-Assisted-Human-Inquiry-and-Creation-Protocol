@@ -557,6 +557,8 @@ HARC 项目文档应以中文和英文双语维护。
 6. 新的实质性 Markdown 文档应在创建时就产生双语配对版本。
 7. 代码、BibTeX、schema 与原始数据等语言中立技术成果可以保持单份，但其人类可读说明必须双语。
 8. Agent 交接文档必须让语言优先级规则可发现。
+9. 对规则建立前的 legacy bilingual file，如果英文已经形成中文版尚未吸收的较新实质内容，必须先完成 English -> Chinese catch-up，使中文达到切换时真正的最新语义状态。
+10. canonical cutover 完成后，正常实质性发展必须固定为 `Human decision -> Chinese canonical -> English mirror`；英文不得独立形成新的实质内容。
 
 推荐命名：
 
