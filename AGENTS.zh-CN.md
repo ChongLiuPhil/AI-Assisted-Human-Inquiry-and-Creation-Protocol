@@ -128,11 +128,13 @@ AI 生成的论点、区分、重组、术语、版式或审美选择，不会�
 
 ## 7. Working Framework 与 Approved Framework
 
-当前 Argument Map 是可变的、由 AI 维护的工作框架。
+当前 Argument Map 是可变的、由 AI 维护的工作框架。AI 可以帮助提出、组织和表达 framework，但它是协作工具，不能替代人类对项目目的、方向和思想架构的授权。
 
-只有通过显式的 **Framework Approval Gate（框架批准门）** 才产生人类认可。批准后，创建诸如 `FW-001.md` 的版本化不可变快照。
+只有通过显式的 **Framework Approval Gate（框架批准门）** 才产生人类认可。Framework Approval 前，人类必须清楚理解、认真逐项审核并明确确认拟批准 framework 中实际呈现的全部实质内容，包括核心命题、推论关系、关键区分、范围条件、章节/小节功能以及被纳入 framework 的具体措辞。
 
-实质性思想变化要求产生新的框架版本。
+批准后，创建诸如 `FW-001.md` 的版本化不可变快照。
+
+实质性思想变化要求产生新的 framework 版本。Framework Approval 是 HARC 的治理检查点，不得自动扩张为跨学科的一般作者身份理论，也不取消 Final Artifact Approval。
 
 ## 8. 证据冲突
 
