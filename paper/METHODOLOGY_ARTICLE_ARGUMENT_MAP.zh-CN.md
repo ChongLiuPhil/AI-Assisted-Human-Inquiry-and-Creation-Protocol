@@ -1,6 +1,6 @@
 # 方法论文章 — Working Argument Map
 
-**状态：** `WORKING-FRAMEWORK — REVIEW READY`  
+**状态：** `WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`  
 **成果类型：** 方法论文章  
 **人类批准：** 尚未完成  
 **派生草稿状态：** `DERIVED-PROVISIONAL`
@@ -13,6 +13,7 @@
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
+- `docs/clarification-register.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
 ## 来源状态图例
@@ -179,6 +180,18 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 ---
 
+## T9 — Critical Clarification Governance Thesis
+
+**来源：** `HUMAN-ORIGINATED`
+
+当 AI 对作者意图、核心命题、关键概念、范围、主要推论关系、章节功能或关键术语/翻译存在可能重大影响作品结构的非微不足道不确定性时，AI 不应自行选择一种解释，而应把问题提升到 Critical Clarification Register，由人类确认或纠正。
+
+未解决 clarification 不是人类承诺。解决结果必须进入 Decision Log 与适当 Core，再传播到 Working Framework 与派生文本。
+
+**创始依据：** Article Content Core C11；HARC Protocol Core P19。
+
+---
+
 # 3. 文章必须保留的核心区分
 
 ### 人类原创区分
@@ -224,9 +237,9 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 ## IV. 分层语义治理
 
-**功能：** 引入 Content Core、Form Core、Decision Log、evidence、provenance status、upstream-first propagation，以及人类承诺与 AI 提议的区分。
+**功能：** 引入 Content Core、Form Core、Decision Log、Critical Clarification Register、evidence、provenance status、upstream-first propagation，以及人类承诺与 AI 提议的区分；说明高影响不确定性为何必须先由人类解决再进入 framework。
 
-支持 T2 与 T8。
+支持 T2、T8 与 T9。
 
 `AI-PROPOSED TERM`：semantic version control。
 
@@ -277,6 +290,7 @@ T1 持久研究状态
 
 T2 分层语义治理
 ├── 防止 AI 静默漂移替代人类意图
+├── 通过 T9 把高影响不确定性送入人类澄清
 └── 使可检查 Working Framework 成为可能
 
 T3 认知劳动委托 / 人类治理
@@ -313,65 +327,37 @@ T1 + T2 + T4 + T5 + T6 + T7
 
 ---
 
-# 7. 创建 `MA-FW-001` 之前需要的人类决定
+# 7. 创建 `MA-FW-001` 之前需要的人类澄清
 
-## D1 — 中心责任概念
+高影响未决问题现在统一维护在 `docs/clarification-register.zh-CN.md`。
 
-选择或修订文章的中心语言：
+### 当前 Blocking Clarifications
 
-- `epistemic responsibility` / 认识责任；
-- `cognitive responsibility` / 认知责任；
-- 分层使用二者；
-- 其他表述。
+- `CLR-001` — 中心责任概念；
+- `CLR-002` — Framework Responsibility Thesis 强度；
+- `CLR-005` — `responsibility concentration` 是否保留/替换。
 
-## D2 — Framework Responsibility Thesis 强度
+这些问题必须在 `MA-FW-001` 前由人类明确解决，或明确标为 `DEFERRED` 并在 framework 中保留其未决状态。
 
-在 T4 的**强版本**和**中等版本**之间选择，或提出第三种版本。
+### 当前 Non-blocking Clarifications
 
-## D3 — AI 术语的地位
+- `CLR-003` — `semantic version control`；
+- `CLR-004` — `generation–verification asymmetry`；
+- `CLR-006` — extended/distributed cognition 的理论地位；
+- `CLR-007` — 经验验证计划；
+- `CLR-008` — 学科/投稿方向。
 
-决定接受、拒绝或替换：
-
-- `generation–verification asymmetry`；
-- `semantic version control`；
-- `responsibility concentration`。
-
-接受底层思想并不要求接受这些术语。
-
-## D4 — 与 extended/distributed cognition 的关系
-
-选择该文献是：
-
-- 中心理论基础；
-- 次级概念比较；
-- 最少背景说明。
-
-## D5 — 经验验证计划
-
-决定测试套件是：
-
-- 文章核心方法论贡献的一部分；
-- 未来研究议程；
-- 从主文中省略。
-
-## D6 — 学科定位
-
-选择暂定目标方向：
-
-- philosophy of technology / epistemology；
-- research methodology；
-- scholarly communication / research integrity；
-- interdisciplinary AI governance；
-- 其他。
+完整候选解释、AI 建议、影响范围和人类答复字段见 Clarification Register；Argument Map 不再重复维护同一澄清的全部细节。
 
 ---
 
 # 8. 当前同步状态
 
 - Founder commitments -> Article Content Core：`SYNC AFTER PROVENANCE CORRECTION`。
-- Article Content Core -> 本 map：`SYNC`，AI 发展的术语与研究扩展已显式标记。
+- Article Content Core -> 本 map：`SYNC`，并已加入 T9 Critical Clarification Governance。
 - 本 map -> 方法论文章草稿：`PARTIALLY SYNC`；当前草稿仍反映较早 12 部分组织与部分更强 AI 术语，因此在人类审阅 framework 之前不应进行结构性重写。
 - Evidence layer -> policy/literature claims：`RECHECKED 2026-09-17`；投稿前必须重新核验目标渠道的时效性政策。
+- Clarification Gate：`OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`。
 - Framework Approval：`NOT YET COMPLETED`。
 - Final Artifact Approval：`NOT YET COMPLETED`。
 - 中文与英文：`BILINGUAL SYNC REQUIRED`；中文是规范基准。
