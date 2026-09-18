@@ -311,4 +311,4 @@ Clarification is an item type inside Working Memory, not an independent layer. A
 
 **Affected components:** Protocol Core, Persistent Memory, Architecture, clarification workflow, Working Memory, Onboarding/Handoff, Manifest, Context Interface, Specification, AGENTS, project templates, methodology article
 
-**Status:** human-confirmed; implementation in progress.
+**Status:** implemented.
