@@ -161,7 +161,7 @@ Work Log is excluded from default AI context and retrieved only for historical r
 **Promotion / propagation in this work cycle:**
 
 - added `HARC-D023` to Decision Log;
-- synchronized Protocol Core / Specification / README / research-project templates in Chinese and English;
+- synchronized Protocol Core / Framework Approval / Specification / root Agent Contract / README / research-project templates in Chinese and English;
 - promoted the decision into the Article Content Core at Layer 1;
 - updated T3 / T4, core distinctions, dependencies, and Clarification state in the Working Argument Map at Layer 2;
 - selectively synchronized the methodology draft's abstract, Section 6, and conclusion at Layer 3; the full article remains `DERIVED-PROVISIONAL` and no major structural rewrite was performed early;
