@@ -8,6 +8,19 @@
 
 ---
 
+## Clarification Register mapping
+
+This memo is now only an **analytical attachment**. Formal operational state for high-impact unresolved issues has moved to `docs/clarification-register.md`:
+
+- former D1 -> `CLR-001`
+- former D2 -> `CLR-002`
+- former D3 -> `CLR-003`, `CLR-004`, `CLR-005`
+- former D4 -> `CLR-006`
+- former D5 -> `CLR-007`
+- former D6 -> `CLR-008`
+
+If this memo conflicts with the Clarification Register about status, severity, or human resolution, the Clarification Register governs the current operational interface. Final human decisions must still be promoted into the Decision Log and appropriate Core.
+
 # 1. Overall assessment
 
 The current framework is coherent enough for human review, but it should not yet be approved without explicit decisions on six points. The largest conceptual risk is not internal inconsistency; it is **overclaiming**—turning a practical governance architecture developed for HARC into a universal theory of authorship or epistemic responsibility before the argument and evidence justify that move.
