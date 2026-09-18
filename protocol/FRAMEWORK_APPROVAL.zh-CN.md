@@ -52,15 +52,24 @@ Framework Approval 之前必须检查 `docs/working-memory/task-plan.zh-CN.md` �
 
 原则上，不应在 Working Memory 中仍存在会改变中心命题、关键概念、主要推论关系、范围或章节功能的 `BLOCKING` item 时批准 framework。
 
+Framework 可以保留明确标记为 `AI-PROPOSED`、`UNRESOLVED`、`NON-BLOCKING`、`DEFERRED` 或类似状态的项目，但必须满足两个条件：
+
+1. 它们的未决/提议状态在 framework 中明确可见；
+2. 它们不是批准当前核心思想架构所必需的、尚未解决的 blocking 前提。
+
+当人类对包含这类项目的完整 framework 作整体 `APPROVE` 时，批准的是这些项目**作为未决/提议项目存在于 framework 中的位置、范围与处理方式**，而不是批准其尚未确认的实质内容。Framework Approval 不得自动改变这些项目的 provenance，也不得把 provisional terminology、经验计划、理论定位或其他 AI 提议 Promotion 为人类原创/确认观点。
+
+只有后续独立的人类决定，才能改变这些项目的来源、批准或 Promotion 状态。
+
 如果人类明确选择暂缓某个问题，则应把它标记为 `DEFERRED`，并在 framework 中显式保留该未决状态，而不是假装问题已经解决。
 
-Framework Approval 不应建立在 AI 私下猜测的关键解释上。
+Framework Approval 不应建立在 AI 私下猜测的关键解释上.
 
 ## 3. Framework Approval 意味着什么
 
-Framework Approval 是项目主要的实质性思想检查点和人类核心思想责任的结构性锚点。
+Framework Approval 是项目主要的实质性思想检查点，也是人类作为责任主体时，其核心思想责任的结构性锚点。
 
-它表示人类已经理解、审核并接受 framework 中实际呈现的全部实质内容，包括：
+它表示人类已经理解、审核并接受 framework 中**作为当前承诺实际呈现的全部实质内容**，包括：
 
 - 中心命题；
 - 主要推论关系及其逻辑依赖；
@@ -68,12 +77,16 @@ Framework Approval 是项目主要的实质性思想检查点和人类核心思�
 - 推理组织方式；
 - 主要章节/小节的预期角色；
 - 范围条件；
-- 已声明限制和未决问题；
-- 被纳入 framework 的具体措辞。
+- 已声明限制；
+- 被纳入 framework 并作为当前承诺的具体措辞。
 
-它使开发阶段不需要人类逐行批准每一份 provisional AI 扩写，但不意味着人类可以只批准一个高层概要而忽略 framework 自身的实质细节。
+对于 framework 中明确标记为未决、provisional 或 AI-proposed 的项目，Framework Approval 表示人类理解并接受**其未决状态及其在当前架构中的位置和处理方式**，而不表示接受其尚未批准的实质内容。
 
-Framework Approval 是 HARC 的治理架构，不应自动被表述成所有学科、机构或出版制度下的一般 authorship theory。
+因此，一个 Approved Framework 可以包含显式的 unresolved items；但这些 items 必须继续保留原 provenance / approval status，直至另一个明确的人类决定改变它们。
+
+Framework Approval 使开发阶段不需要人类逐行批准每一份 provisional AI 扩写，但不意味着人类可以只批准一个高层概要而忽略 framework 自身的实质细节。
+
+Framework Approval 是 HARC 的治理架构，不应自动被表述成所有学科、机构或出版制度下的一般 authorship theory.
 
 ## 4. 派生扩写
 
