@@ -1,5 +1,7 @@
 # AGENTS.md — Project HARC Contract
 
+> **Language:** Chinese canonical: `AGENTS.zh-CN.md`; this English file is the synchronized mirror.
+
 This project follows the Human–AI Research Collaboration Protocol.
 
 ## Protocol source
@@ -7,22 +9,27 @@ This project follows the Human–AI Research Collaboration Protocol.
 Record the protocol source used to initialize this project:
 
 - Upstream repository: `ChongLiuPhil/Human-AI-Research-Collaboration-Protocol`
-- HARC version: `0.1.0-draft` (replace with the actual adopted version/tag/commit)
+- HARC version: `0.2.0-draft` (replace with the actual adopted version/tag/commit)
 - Adopted commit/tag: `UNRESOLVED — record when initializing`
 
 A future agent should not silently assume that the latest upstream HARC rules were already adopted by this project. Protocol upgrades should be explicit project decisions.
+
+## Chinese canonical / English mirror
+
+This template defaults to Chinese as the canonical editing/review language and English as the synchronized mirror. Substantive changes must update both in the same work cycle. If the versions conflict, Chinese governs until English is repaired.
 
 ## Required reading order
 
 Before substantive work, read:
 
-1. `core/CONTENT_CORE.md`
-2. `core/FORM_CORE.md`
-3. recent `core/DECISION_LOG.md`
-4. `docs/framework-status.md`
+1. `core/CONTENT_CORE.zh-CN.md`
+2. `core/FORM_CORE.zh-CN.md`
+3. recent `core/DECISION_LOG.zh-CN.md`
+4. `docs/framework-status.zh-CN.md`
 5. latest approved framework, if any
-6. `docs/argument-map.md`
+6. `docs/argument-map.zh-CN.md`
 7. relevant artifact and evidence files
+8. corresponding English mirrors for bilingual parity
 
 ## Repository state outranks chat memory
 
@@ -51,9 +58,9 @@ Where applicable, distinguish reusable author preferences, artifact-type profile
 
 ## Framework rule
 
-`docs/argument-map.md` is a working AI-maintained structure, not automatic human endorsement.
+`docs/argument-map.zh-CN.md` is a working AI-maintained structure, not automatic human endorsement.
 
-Create `docs/frameworks/FW-xxx.md` only after explicit human framework approval. Do not silently rewrite approved snapshots.
+Create `docs/frameworks/FW-xxx.zh-CN.md` plus its English mirror only after explicit human framework approval. Do not silently rewrite approved snapshots.
 
 The approved framework is the primary substantive intellectual baseline. Distinguish framework-level defects from local defects introduced only during later AI expansion.
 
@@ -68,3 +75,8 @@ AI-expanded prose remains `DERIVED-PROVISIONAL` until the relevant final human a
 ## Handoff criterion
 
 A new competent agent should be able to continue the project from repository state without the original chat transcript.
+
+
+## Bilingual synchronization rule
+
+Chinese is canonical. Every substantive change must update the English mirror in the same work cycle. A bilingual mismatch is a synchronization defect.
