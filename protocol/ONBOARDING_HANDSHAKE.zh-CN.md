@@ -52,17 +52,18 @@
 1. START_HERE；
 2. HARC_MANIFEST；
 3. AGENTS；
-4. Protocol/Core governance；
-5. recent Decision Log；
-6. Content Core；
-7. Form Core；
-8. Critical Clarification Register；
-9. Framework Status；
-10. latest Approved Framework（如有）；
-11. Working Argument Map；
-12. 与任务相关的 Evidence；
-13. 与任务相关的 Artifact；
-14. 英文 mirror parity。
+4. Session Context Bootstrap；
+5. Protocol/Core governance；
+6. recent Decision Log；
+7. Content Core；
+8. Form Core；
+9. Critical Clarification Register；
+10. Framework Status；
+11. latest Approved Framework（如有）；
+12. Working Argument Map；
+13. 与任务相关的 Evidence；
+14. 与任务相关的 Artifact；
+15. 英文 mirror parity。
 
 ## 5. 必须输出的 Onboarding Report
 
