@@ -41,9 +41,9 @@ The snapshot should record:
 
 An approved snapshot is immutable. Material change requires a new version.
 
-## 2.5 Clarification Gate
+## 2.5 Working Memory / Clarification Gate
 
-Before Framework Approval, inspect `docs/clarification-register.md`.
+Before Framework Approval, inspect BLOCKERS, PENDING_HUMAN_DECISIONS, and Clarifications in `docs/working-memory.zh-CN.md`.
 
 As a rule, a framework should not be approved while a `BLOCKING` clarification remains unresolved if it could alter a central thesis, key concept, major inferential relation, scope, or section function.
 
