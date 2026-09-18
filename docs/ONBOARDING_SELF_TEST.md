@@ -15,7 +15,8 @@ Simulate a new AI Agent with no old chat or account memory, reconstructing curre
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `AGENTS.zh-CN.md`
-7. Protocol / Decision / Clarification / Article state resolved by the manifest/context interface for the current task.
+7. `docs/working-memory.zh-CN.md`;
+8. task-relevant state from the three Long-Term Memory layers / Evidence resolved by the manifest/context interface.
 
 No unpersisted information from the current chat is treated as project state.
 
@@ -37,9 +38,9 @@ No unpersisted information from the current chat is treated as project state.
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- current protocol commitments: P1–P22
-- recent human protocol decisions: HARC-D015 through HARC-D020
-- D018, D019, and D020 were human-confirmed and implemented; D020 narrows D019's dynamic Session Contract into a minimal Repository Resolver.
+- current protocol commitments: P1–P23
+- recent human protocol decisions: HARC-D015 through HARC-D021
+- D018–D021 are human-confirmed; D021 replaces the former Layer 1.5 model with parallel Working Memory.
 
 **Protocol conclusion:** discoverable and reconstructable from repository state.
 
@@ -63,7 +64,9 @@ Repository state supports at least:
 - Framework Approval is distinct from Final Artifact Approval;
 - AI expansion must preserve framework fidelity;
 - Chinese canonical / English synchronized mirror;
-- high-impact uncertainty enters the Layer 1.5 Critical Clarification Register;
+- the three content layers are Long-Term Research Memory;
+- Working Memory runs in parallel for current stage, goals, tasks, blockers, pending decisions, Clarifications, and handoff;
+- Clarification is a Working Memory item, not Layer 1.5;
 - a replacement Agent must complete zero-context bootstrap + Onboarding Handshake before substantive work.
 
 ### B3. Methodology-article Form state
@@ -74,27 +77,39 @@ Repository state supports at least:
 - detailed typography, layout, citation style, target venue: `UNRESOLVED`
 - current Markdown / author–year presentation: working defaults, not permanent author preferences.
 
-## C. Critical Clarification state
+## C. Working Memory state
 
-### C1. Blocking
+### C1. Current stage and resume point
 
-- `CLR-001` — central responsibility concept;
-- `CLR-002` — strength of the Framework Responsibility Thesis;
-- `CLR-005` — whether to retain/replace `responsibility concentration`.
+- CURRENT_STAGE: HARC v0.2 protocol architecture + methodology Working Framework;
+- CURRENT_OBJECTIVE: complete the D021 Working Memory architecture migration;
+- current work: protocol/template/article propagation and regression verification.
 
-These block `MA-FW-001`.
+### C2. Blockers / Pending Human Decisions
 
-Also:
+Framework Approval blockers:
 
-- `CLR-009` is `BLOCKING` for formal open licensing/release but does not block current methodology-framework discussion.
+- `CLR-001`
+- `CLR-002`
+- `CLR-005`
 
-### C2. Non-blocking
+Formal release blocker:
 
-- `CLR-003` — `semantic version control`;
-- `CLR-004` — `generation–verification asymmetry`;
-- `CLR-006` — theoretical status of extended/distributed cognition;
-- `CLR-007` — empirical-validation plan;
-- `CLR-008` — disciplinary/venue positioning.
+- `CLR-009`
+
+Non-blocking pending items:
+
+- `CLR-003`
+- `CLR-004`
+- `CLR-006`
+- `CLR-007`
+- `CLR-008`
+
+### C3. Handoff / next actions
+
+- finish the Working Memory migration;
+- then prioritize `CLR-001 / CLR-002 / CLR-005`;
+- do not treat Working Memory summaries as durable substantive authority; substantive judgments still use latest canonical Layer 1/2/3 state.
 
 ## D. Framework state
 
@@ -180,7 +195,7 @@ Current task:
 
 **Repository context active: `YES`**
 
-Dynamic Blocking Clarifications, Framework, and Artifact state remain fresh-fetched from their canonical GitHub files rather than copied into the resolver.
+Working Memory is fresh-fetched for resumption; substantive Layer 1 / Layer 2 / Layer 3 state is still retrieved from its canonical files rather than copied into the resolver.
 
 ## I. Onboarding conclusion
 
@@ -189,7 +204,8 @@ Dynamic Blocking Clarifications, Framework, and Artifact state remain fresh-fetc
 Because a new Agent can reconstruct from repository state:
 
 - the human/AI authority boundary;
-- Blocking Clarifications;
+- current stage / objective / tasks / blockers / next actions from Working Memory;
+- blocking Clarifications and their long-term impact;
 - the absence of an Approved Framework;
 - the `DERIVED-PROVISIONAL` artifact state;
 - Chinese-canonical / English-mirror governance;
@@ -206,7 +222,7 @@ Read-order numbering and standalone prompt/report discoverability defects found 
 
 The current repository supports a working zero-context onboarding path:
 
-`Repository access -> Manifest / Context Interface -> Selective Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
+`Repository access -> Manifest / Context Interface -> Working Memory -> Selective Long-Term Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
 
 This test shows that **the current repository can support one successful self-hosted takeover**. It does not prove every external AI platform will automatically discover the entry files.
 
