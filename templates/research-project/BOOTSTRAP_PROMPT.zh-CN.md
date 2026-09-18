@@ -11,8 +11,9 @@
 > 3. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
 > 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
 > 5. 读取 `AGENTS.zh-CN.md`；
-> 6. 按 manifest / context-interface 的 task route 按需读取项目状态；
-> 7. 按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。
+> 6. 读取 `docs/working-memory.zh-CN.md`，先确定项目从哪里继续；
+> 7. 按 manifest / context-interface 的 task route 从三层长期记忆按需读取项目状态；
+> 8. 按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。
 >
 > 中文是 canonical；英文是 synchronized mirror。
 >
@@ -20,7 +21,7 @@
 >
 > 高影响不确定性执行：
 >
-> `ambiguity -> Clarification Register -> human resolution -> Decision Log -> Core -> Argument Map -> Artifact`
+> `ambiguity -> Working Memory / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory destination`
 >
 > 人类明确决定执行：
 >
