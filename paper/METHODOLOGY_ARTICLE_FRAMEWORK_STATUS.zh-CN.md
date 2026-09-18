@@ -18,7 +18,7 @@
 
 结果：`PASS FOR HUMAN FRAMEWORK REVIEW`
 
-说明：此前阻塞 Framework Approval 的 `CLR-001 / CLR-002 / CLR-005` 已经由人类解决并 Promotion。当前没有 active blocking clarification 阻止对整体 framework 进行人类审阅。
+说明：此前阻塞 Framework Approval 的 `CLR-001 / CLR-002 / CLR-005` 已经由人类解决并 Promotion。`HARC-D025` 已完成依赖图结构修复，并明确了含 unresolved / AI-PROPOSED 项目的整体批准语义。当前没有 active blocking clarification 或已知结构性表示缺陷阻止对整体 framework 进行人类审阅。
 
 这不是 Framework Approval 本身。
 
@@ -39,9 +39,12 @@
 - 人类解决了 blocking clarifications；
 - 人类接受了局部命题或措辞；
 - framework 已经 `REVIEW READY`；
+- 人类批准了依赖图修复或批准语义；
 - 讨论继续推进；
 
 而推断整体 framework 已经获得批准。
+
+如果后续人类明确对当前完整 framework 作整体 `APPROVE`，其中仍标记为 `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` 的项目只以其“未决/提议状态”被纳入 Approved Framework；其尚未确认的实质内容不会因此 Promotion。
 
 ## 当前派生文章
 
@@ -70,7 +73,7 @@ HARC-D023 / HARC-D024 已经定向传播到摘要、责任论证和结论：旧�
 ## 同步状态
 
 - Founder commitments -> Article Content Core：`SYNC — HARC-D023 + HARC-D024 PROMOTED`
-- Article Content Core -> Working Framework：`SYNC / REVIEW READY`
+- Article Content Core -> Working Framework：`SYNC / REVIEW READY — HARC-D025 DEPENDENCY REPAIR APPLIED`
 - Working Framework -> 当前正文：`PARTIALLY SYNC — responsibility model synchronized; structural rewrite deferred pending human Framework Approval`
 - 证据层 -> 政策/文献主张：`RECHECKED 2026-09-17; further venue-specific verification required before submission`
 - Working Memory / Clarification Gate：`CLEARED FOR FRAMEWORK REVIEW — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`
