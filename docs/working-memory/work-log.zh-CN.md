@@ -143,6 +143,20 @@ Working Memory 被进一步拆分为三个逻辑功能：
 
 ---
 
+## 2026-09-18 — 全讨论覆盖复核与残留修复
+
+**进展摘要：**
+
+- 对目前可恢复的全部 HARC 讨论要求执行一轮 review -> repair -> verify；
+- 核对三层长期记忆、Working Memory、Clarification/Promotion、Repository-Backed Context、zero-context onboarding、双语治理、模板继承、方法论文章与审计机制；
+- 修复根 START_HERE / AGENTS、Onboarding Handshake、Persistent Memory、Bootstrap Prompt 和 project templates 中残留的旧 Clarification Register / 单 Working Memory 表述；
+- 重新同步发现滞后的英文 mirrors；
+- 确认剩余项目均属于显式 human-decision boundaries，而不是已讨论但未落实的工程缺口。
+
+**复核状态：** `REVIEWED / REPAIRED / VERIFIED`。
+
+---
+
 ## 当前日志边界
 
 本日志目前包含根据 Decision Log 和规范文件回填的高层历史摘要。后续应在阶段性里程碑形成时持续追加，而不是把聊天逐字转录进来。
