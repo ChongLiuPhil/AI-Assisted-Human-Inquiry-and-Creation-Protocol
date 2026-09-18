@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **74**
-- Chinese canonical files (`*.zh-CN.md`): **37**
-- English mirrors: **37**
+- total Markdown files: **80**
+- Chinese canonical files (`*.zh-CN.md`): **40**
+- English mirrors: **40**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
@@ -120,6 +120,16 @@ Bilingualized:
 - Argument Map / Framework Status.
 
 New-project templates now initialize Chinese canonical + English mirror instead of requiring later translation.
+
+### 3.6 Critical Clarification Layer
+
+A later human-originated governance requirement added three new bilingual file pairs:
+
+- `protocol/CLARIFICATION_REGISTER.zh-CN.md` / English mirror;
+- `docs/clarification-register.zh-CN.md` / English mirror;
+- `templates/research-project/docs/clarification-register.zh-CN.md` / English mirror.
+
+A fresh repository-tree scan still reports **0** missing language counterparts.
 
 ## 4. High-risk semantic mismatches repaired
 
