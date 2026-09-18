@@ -30,23 +30,17 @@ HARC 的研究记忆不是单一平面。
 - **Layer 2**：当前论述框架，持久但更可修改，以 Layer 1 为上游约束；
 - **Layer 3**：完整派生成果，主要从 Layer 2 展开。
 
-### Working Memory
+### Working Memory Area
 
-与三层长期记忆并行，维护：
+与三层长期记忆并行，但内部至少区分三种逻辑功能：
 
-- 当前阶段；
-- 当前目标；
-- active tasks；
-- completed / uncompleted；
-- next actions；
-- TODO / backlog；
-- blockers；
-- pending human decisions；
-- clarifications；
-- sync defects；
-- handoff note。
+- **Current Focus** — 当前阶段、最高优先级目标、primary blocker、immediate next action；
+- **Task Plan** — active tasks、next actions、TODO/backlog、blockers、pending human decisions、clarifications、sync defects；
+- **Work Log** — 主要供人类以后回顾的阶段性历史纪要、里程碑和方向变化。
 
 Working Memory 是“从哪里继续”的操作接口，不是长期实质性真值源。
+
+其中 Current Focus + Task Plan 构成 AI 日常接管需要的 operational resume state；Work Log 主要是 human-retrospective history，默认不进入 AI onboarding 上下文。
 
 Clarification 是 Working Memory item，不再是 Layer 1.5。
 
@@ -63,7 +57,10 @@ Promotion 后，Working Memory 只保留状态与指针。
 | 研究意义、命题、区分 | `core/CONTENT_CORE.zh-CN.md` |
 | 形式、版式、风格、成果类型 | `core/FORM_CORE.zh-CN.md` |
 | 人类历史决定 | `core/DECISION_LOG.zh-CN.md` |
-| 当前目标、任务、阻塞、待澄清与 handoff | `docs/working-memory.zh-CN.md` |
+| Working Memory 索引 | `docs/working-memory.zh-CN.md` |
+| 当前最重要目标 | `docs/working-memory/current-focus.zh-CN.md` |
+| 动态任务/计划/待确认事项 | `docs/working-memory/task-plan.zh-CN.md` |
+| 人类历史回顾日志 | `docs/working-memory/work-log.zh-CN.md`（默认不进入 AI context） |
 | 旧 Clarification 路径 | `docs/clarification-register.zh-CN.md`（兼容指针，不再承载 active state） |
 | 当前论证结构 | `docs/argument-map.zh-CN.md` |
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
@@ -95,7 +92,7 @@ HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 
 ### 当前活动状态
 
-日常接管时首先读取 Working Memory，了解“现在做到哪里”。
+日常接管时首先读取 Working Memory Index -> Current Focus -> Task Plan，了解“现在最重要的事是什么、接下来怎么推进”。Work Log 默认跳过。
 
 随后只根据当前任务选择性读取：
 
