@@ -52,7 +52,7 @@
 1. START_HERE；
 2. HARC_MANIFEST；
 3. AGENTS；
-4. Session Context Bootstrap；
+4. Repository Context Interface / Session Context Bootstrap；
 5. Protocol/Core governance；
 6. recent Decision Log；
 7. Content Core；
@@ -85,25 +85,27 @@
 
 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
 
-## 5.5 Session Context Injection
+## 5.5 Repository Context Activation
 
-Onboarding Report 本身还不足以完成双层保险。
+Onboarding Report 完成后，Agent MUST 读取 `HARC_CONTEXT_INTERFACE.yaml` 与 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，并确认：
 
-Agent MUST 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，并在报告末尾生成：
+`HARC REPOSITORY CONTEXT — ACTIVE`
 
-`HARC ACTIVE SESSION CONTRACT — LOADED`
+该确认只加载最小 Repository Resolver：
 
-该区块把仓库中的关键不变量和当前状态压缩后重新写入 Agent 自己的当前回复。
+- GitHub source-of-truth；
+- manifest / context-interface 路径；
+- task route；
+- latest-revision / write-through / cache-invalidation 规则。
 
-只有当：
+它不得长期复制 Blocking Clarifications、Framework、Artifact、Core 等动态项目状态。
+
+Onboarding 可判定为 `PASS` 的条件是：
 
 - Onboarding Report 完成；
-- Session Contract 已回显；
-- Blocking Clarification 与当前 gate 被正确识别；
-
-才允许 Onboarding 判定为 `PASS`。
-
-此 Session Contract 是项目级会话契约，不是平台真正的 system prompt。
+- Repository Context 已激活；
+- Agent 能从 GitHub 最新 canonical revision 正确读取当前 Blocking Clarifications 与 gates；
+- Agent 明确知道报告摘要与会话摘录都是非权威缓存。
 
 ## 6. PASS / PARTIAL / FAIL
 
