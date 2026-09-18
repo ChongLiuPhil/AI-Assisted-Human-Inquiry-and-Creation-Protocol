@@ -9,6 +9,19 @@
 
 ---
 
+## Clarification Register 映射
+
+本 memo 现在只作为**分析附件**。高影响未决问题的正式操作状态已经迁移到 `docs/clarification-register.zh-CN.md`：
+
+- 原 D1 -> `CLR-001`
+- 原 D2 -> `CLR-002`
+- 原 D3 -> `CLR-003`、`CLR-004`、`CLR-005`
+- 原 D4 -> `CLR-006`
+- 原 D5 -> `CLR-007`
+- 原 D6 -> `CLR-008`
+
+如果本 memo 与 Clarification Register 在状态、严重度或人类答复上冲突，以 Clarification Register 为当前操作界面；最终人类决定仍必须提升到 Decision Log 与相应 Core。
+
 # 1. 总体评估
 
 当前 framework 已经足够连贯，可以进入人类审阅，但在六个问题得到明确决定之前，不宜整体批准。
