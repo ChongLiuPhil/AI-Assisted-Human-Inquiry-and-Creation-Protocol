@@ -168,6 +168,26 @@ Issues likely to cause major semantic drift or expensive rework may be marked `B
 
 A Clarification Scan should occur before major phase transitions, Framework Approval, broad propagation of key terminology, formal translation, large-scale chapter expansion, and Final Artifact Review.
 
+
+## P20. Zero-context onboarding requires an explicit entry point and handshake
+
+A HARC project should provide a **discoverable zero-context bootstrap entry** so that a new AI Agent with no old chat, platform memory, or prior project knowledge can reconstruct current research state in a deterministic order.
+
+The entry should include at least:
+
+- a root human/agent-readable `START_HERE` file;
+- a root `AGENTS` contract;
+- a machine-readable HARC manifest or equivalent index;
+- an explicit mandatory read order;
+- entry points for the Clarification Register, Framework Status, Working/Approved Framework, and Artifact status;
+- a copyable bootstrap prompt for arbitrary AI agents.
+
+Before substantive modification, a new AI Agent should complete an **Onboarding Handshake**: report protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and the permitted next action.
+
+If the Agent cannot produce that report from repository state alone, the project has an onboarding/persistence defect that should be repaired before large-scale research or writing continues.
+
+No protocol file can guarantee that every external platform automatically reads a particular filename. HARC therefore aims for **maximal discoverability plus verifiable onboarding** through root-level entry files, a general agent contract, a machine manifest, README navigation, and a copyable prompt, so that any repository-capable agent that follows project instructions can reconstruct the same workflow.
+
 ---
 
 ## Current scope
