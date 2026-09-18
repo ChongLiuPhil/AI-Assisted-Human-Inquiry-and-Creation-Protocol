@@ -64,15 +64,18 @@ A long-running human–AI research project should not depend for its intellectua
 
 **Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
 
-The project should distinguish and separately preserve at least:
+The project should distinguish at least:
 
-1. human substantive commitments;
-2. human form/presentation intentions;
-3. historical human decisions;
-4. AI-maintained operational representations;
-5. evidence constraints;
-6. approval states;
-7. derived prose/artifacts.
+1. Layer 1 — Human Authorial Core;
+2. Layer 2 — Current Framework;
+3. Layer 3 — Derived Artifact;
+4. Working Memory in parallel with all three;
+5. human form/presentation intentions;
+6. historical decisions;
+7. evidence constraints;
+8. approval states.
+
+The three layers are Long-Term Research Memory; Working Memory stores current stage, goals, tasks, blockers, clarifications, TODOs, and handoff.
 
 Changes should propagate upstream-first so that downstream AI expression does not silently redefine upstream human intention.
 
@@ -180,15 +183,23 @@ This is currently a research-agenda proposal, not part of the human-approved cor
 
 ---
 
-## T9 — Critical Clarification Governance Thesis
+## T9 — Working Memory / Clarification Governance Thesis
 
-**Provenance:** `HUMAN-ORIGINATED`
+**Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
 
-When AI has non-trivial uncertainty about authorial intent, core claims, key concepts, scope, major inferential relations, section functions, or key terminology/translation that could materially affect the work's structure, it should not silently choose an interpretation. It should promote the issue into the Critical Clarification Register for human confirmation or correction.
+When AI encounters high-impact uncertainty about authorial intent, core claims, key concepts, scope, major inferential relations, section functions, or key terminology/translation, it should not silently choose an interpretation. It should create a Clarification item inside Working Memory for human resolution.
 
-Open clarifications are not human commitments. Resolutions must be promoted into the Decision Log and appropriate Core, then propagated to the Working Framework and derived text.
+Clarification is not Layer 1.5. Open items are not durable human commitments.
 
-**Founder basis:** Article Content Core C11; HARC Protocol Core P19.
+After human resolution:
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+For human core content:
+
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+
+**Founder basis:** Article Content Core C11, C14; HARC Protocol Core P19, P23; HARC-D021.
 
 ---
 
@@ -198,7 +209,7 @@ Open clarifications are not human commitments. Resolutions must be promoted into
 
 Durable repository state can support cross-agent continuity only if a new AI Agent can reliably discover it and read it in the correct order. HARC should therefore provide an explicit zero-context entry, mandatory read order, machine-readable manifest, and Onboarding Handshake.
 
-Successful handoff should not be assumed; it should be verified by requiring the Agent to report current normative state, Blocking Clarifications, Framework/Artifact state, and synchronization defects to the human.
+Successful handoff should not be assumed. The Agent should first report current stage, objective, active tasks, recently completed work, next actions, blockers, and pending human decisions from Working Memory, then retrieve task-relevant long-term Framework/Artifact state.
 
 **Founder basis:** Article Content Core C12; HARC Protocol Core P20.
 
@@ -218,10 +229,28 @@ HARC should treat GitHub as the authoritative external-memory and working-state 
 
 The Agent retrieves latest canonical files on demand for the current task, reconfirms revisions before high-impact judgments and writes, writes through directly to GitHub, and invalidates old context cache after writes.
 
-The session retains only a minimal Repository Resolver rather than long-lived copies of Blocking Clarifications, Framework, Artifact, or Core state.
+The session retains only a minimal Repository Resolver. Working Memory and the three long-term layers remain in GitHub and are retrieved on demand rather than copied into chat as long-lived state.
 
 **Founder basis:** Article Content Core C13; HARC Protocol Core P21–P22; HARC-D020.
 
+
+---
+
+## T12 — Long-Term / Working Memory Separation Thesis
+
+**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+
+HARC's three content layers are Long-Term Research Memory:
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+Layer 2 remains long-term project memory even though it is more revisable, because it preserves the current argument structure, core propositions, and key concepts.
+
+Parallel Working Memory stores current stage, objectives, tasks, completion state, next actions, TODOs, blockers, pending human decisions, clarifications, and handoff.
+
+Stable human-resolved Working Memory content must be promoted into the appropriate long-term layer.
+
+**Founder basis:** Article Content Core C14; HARC Protocol Core P23; HARC-D021.
 
 ---
 
@@ -234,7 +263,8 @@ The session retains only a minimal Repository Resolver rather than long-lived co
 - Working Framework vs Approved Framework;
 - framework defect vs derived-expansion defect;
 - Framework Approval vs Final Artifact Approval;
-- persistent repository state vs transient agent/chat context;
+- the three Long-Term Research Memory layers vs parallel Working Memory;
+- authoritative repository state vs transient agent retrieval cache;
 - current canonical state vs historical state.
 
 ### AI-formulated distinctions requiring confirmation if elevated to central terminology
@@ -264,13 +294,13 @@ Supports T1 and T7.
 
 ## III. Repository-centered persistent research state
 
-**Function:** explain GitHub as the current implementation substrate; distinguish persistent memory from infinite context; introduce current-state vs historical-state compression; and explain why reliable takeover requires zero-context bootstrap, a manifest, and an Onboarding Handshake.
+**Function:** explain GitHub as the current implementation substrate; distinguish three-layer Long-Term Research Memory, parallel Working Memory, and infinite context; explain how a new Agent finds the resume point in Working Memory and then selectively retrieves durable state.
 
-Supports T1, T7, T10, and T11, including repository-backed selective retrieval.
+Supports T1, T7, T10, T11, and T12.
 
 ## IV. Layered semantic governance
 
-**Function:** introduce Content Core, Form Core, Decision Log, the Critical Clarification Register, evidence, provenance statuses, upstream-first propagation, and the distinction between human commitments and AI proposals; explain why high-impact uncertainty must be resolved by the human before entering the framework.
+**Function:** introduce Layer 1 Core, Layer 2 Framework, Layer 3 Artifact, Working Memory, Decision Log, evidence, provenance statuses, and upstream-first propagation; explain why Clarification belongs in Working Memory and how stable results are promoted into long-term memory.
 
 Supports T2, T8, and T9.
 
@@ -323,7 +353,8 @@ T1 Persistent research state
 
 T2 Layered semantic governance
 ├── protects human intention from silent AI drift
-├── routes high-impact uncertainty through T9 human clarification
+├── routes high-impact uncertainty through T9 Working Memory
+├── uses T12 to separate durable memory from current work state
 └── enables an inspectable Working Framework
 
 T3 Cognitive delegation / human governance
