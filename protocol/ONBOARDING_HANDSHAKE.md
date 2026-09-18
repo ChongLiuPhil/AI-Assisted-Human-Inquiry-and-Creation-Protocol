@@ -45,7 +45,7 @@ The root manifest determines exact paths. At minimum:
 1. START_HERE;
 2. HARC_MANIFEST;
 3. AGENTS;
-4. Session Context Bootstrap;
+4. Repository Context Interface / Session Context Bootstrap;
 5. Protocol/Core governance;
 6. recent Decision Log;
 7. Content Core;
@@ -78,23 +78,27 @@ Recommended format:
 
 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
 
-## 5.5 Session Context Injection
+## 5.5 Repository Context Activation
 
-The Onboarding Report alone does not complete the second layer of protection.
+After the Onboarding Report, the Agent MUST read `HARC_CONTEXT_INTERFACE.yaml` and `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, then confirm:
 
-The Agent MUST read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and end the report with:
+`HARC REPOSITORY CONTEXT — ACTIVE`
 
-`HARC ACTIVE SESSION CONTRACT — LOADED`
+This loads only the minimal Repository Resolver:
 
-This block compresses key repository invariants and current state back into the Agent's own active reply.
+- GitHub source of truth;
+- manifest / context-interface paths;
+- task route;
+- latest-revision / write-through / cache-invalidation rules.
+
+It must not maintain long-lived copies of Blocking Clarifications, Framework, Artifact, Core, or other dynamic project state.
 
 Onboarding may be marked `PASS` only when:
 
 - the Onboarding Report is complete;
-- the Session Contract has been echoed;
-- Blocking Clarifications and current gates are correctly identified.
-
-The Session Contract is a project-level session operating contract, not the platform's true system prompt.
+- Repository Context is active;
+- the Agent can correctly retrieve current Blocking Clarifications and gates from the latest canonical GitHub revisions;
+- the Agent understands that report summaries and session excerpts are non-authoritative cache.
 
 ## 6. PASS / PARTIAL / FAIL
 
