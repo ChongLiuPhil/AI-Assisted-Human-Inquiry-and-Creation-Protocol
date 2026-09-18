@@ -331,7 +331,7 @@
 - AGENTS bilingual contract
 - 全仓库双语迁移
 
-**状态：** MIGRATION / PARITY AUDIT IN PROGRESS（在最终双语审计通过后更新为 FULLY INTEGRATED）。
+**状态：** FULLY INTEGRATED AFTER BILINGUAL PARITY AUDIT。
 
 ---
 
