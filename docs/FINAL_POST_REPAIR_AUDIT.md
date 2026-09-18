@@ -356,3 +356,13 @@ After the final repairs, no further repository-architecture defect was identifie
 The remaining open items are human decisions or future empirical work, not omitted implementation of already stated founder requirements.
 
 **Final post-repair audit status:** `PASS WITH EXPLICIT HUMAN DECISIONS PENDING`.
+
+---
+
+## Bilingual governance supplement (2026-09-18)
+
+After this audit, the human founder added a new project-level requirement: all substantive HARC content must be maintained in Chinese and English, with Chinese as the canonical editing/review source and English as the synchronized mirror.
+
+This audit now has a canonical Chinese counterpart at `docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md`. Subsequent changes to this audit must update both language versions in the same work cycle.
+
+The implementation and repository-wide parity verification of this new requirement are tracked separately through HARC-D015 and the bilingual parity audit.
