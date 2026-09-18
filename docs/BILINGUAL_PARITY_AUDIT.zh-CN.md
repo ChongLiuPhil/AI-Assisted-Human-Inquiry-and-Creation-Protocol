@@ -25,9 +25,9 @@
 
 扫描结果：
 
-- Markdown 文件总数：**74**
-- 中文 canonical（`*.zh-CN.md`）：**37**
-- 英文 mirror：**37**
+- Markdown 文件总数：**80**
+- 中文 canonical（`*.zh-CN.md`）：**40**
+- 英文 mirror：**40**
   - 绝大多数使用既有 `*.md`
   - 方法论文章完整正文使用 `METHODOLOGY_ARTICLE.en.md`
 - 缺少英文 mirror 的中文文件：**0**
@@ -117,6 +117,16 @@
 - Argument Map / Framework Status。
 
 新项目模板现在默认创建中文 canonical + 英文 mirror，而不是事后补翻译。
+
+### 3.6 Critical Clarification Layer
+
+2026-09-18 后续新增的人类原创治理要求已经形成三组新的双语文件对：
+
+- `protocol/CLARIFICATION_REGISTER.zh-CN.md` / English mirror；
+- `docs/clarification-register.zh-CN.md` / English mirror；
+- `templates/research-project/docs/clarification-register.zh-CN.md` / English mirror。
+
+当前全树重新扫描仍为缺失配对 **0**。
 
 ## 4. 已修复的高风险语义不同步
 
