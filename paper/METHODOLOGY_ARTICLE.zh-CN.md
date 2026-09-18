@@ -1,6 +1,6 @@
-# 从对话到持久研究状态：AI时代的人机研究协作、认知责任与可审计作者性
+# 从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性
 
-**英文题目：** *From Conversation to Persistent Research State: Human–AI Research Collaboration, Epistemic Responsibility, and Auditable Authorship in the AI Era*
+**英文题目：** *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
 **状态：** `DERIVED-PROVISIONAL`  
 **框架状态：** `WORKING-FRAMEWORK — 尚未经人类作者正式确认`  
@@ -18,7 +18,7 @@
 
 本文进一步提出：研究或创作项目的目的、核心问题与方向必须由人类给予、发起并持续导航或批准；AI Agent 在 HARC 中是协作工具，可以执行或辅助大量工作，但不被作为认知主体来描述。对于长篇成果，人类核心思想责任主要通过 Layer 2 Framework 落实：Framework 可以由 AI 辅助提出、组织和表达，但人类作者在 Framework Approval 前必须清楚理解、认真审核并明确确认其中实际呈现的全部实质内容。本文据此区分 framework-level defect 与 derived-expansion defect、Framework Approval 与 Final Artifact Approval，并讨论这种架构与扩展心灵、分布式认知、认识依赖、自动化依赖以及现有学术作者规范之间的关系。
 
-**关键词：** 人机协作；生成式人工智能；研究方法论；认识责任；作者身份；分布式认知；版本控制；GitHub；AI Agent；学术诚信
+**关键词：** 人机协作；生成式人工智能；研究方法论；人类责任；作者身份；分布式认知；版本控制；GitHub；AI Agent；学术诚信
 
 ---
 
