@@ -6,7 +6,7 @@
 
 Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` (canonical) / `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md` (English mirror)
 
-Status: `WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`
+Status: `WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`
 
 Human approval: **not completed**.
 
@@ -41,7 +41,7 @@ Because the review-ready Working Framework has now been reorganized and provenan
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
-- `docs/clarification-register.zh-CN.md`
+- `docs/working-memory.zh-CN.md`
 - `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
