@@ -84,23 +84,26 @@ Before substantive work, a new AI Agent should report the state reconstructed fr
 
 **Conclusion:**
 
-## J. Active Session Contract
+## J. Repository Context Resolver
 
-Following `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, the Agent must end this report by echoing:
+Following `HARC_CONTEXT_INTERFACE.yaml` and `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, the Agent must confirm:
 
-`HARC ACTIVE SESSION CONTRACT — LOADED`
+`HARC REPOSITORY CONTEXT — ACTIVE`
 
 including at least:
 
-- authority hierarchy;
+- source of truth = GitHub;
+- manifest / context-interface paths;
 - canonical language;
-- Blocking Clarifications;
-- Working / Approved Framework;
-- Artifact status;
-- current task classification;
-- upstream-first propagation path;
-- blocked actions.
+- `repository-backed / selective retrieval / no authoritative session copy`;
+- `read latest before high-impact action`;
+- `read latest before write`;
+- `invalidate touched cache after write`;
+- current CONTENT / FORM / PROTOCOL route;
+- authoritative refs as paths only, without duplicating dynamic state.
 
-**Session Contract loaded:** `YES / NO`
+**Repository context active:** `YES / NO`
 
 If `NO`, Onboarding must not be marked `PASS`.
+
+> Blocking Clarifications, Framework, Artifact, and other summaries in this report exist only so the human can verify reconstruction. Later work must retrieve latest canonical GitHub state on demand rather than treating this report as authority.
