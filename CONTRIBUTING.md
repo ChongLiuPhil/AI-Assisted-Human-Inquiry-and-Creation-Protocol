@@ -1,5 +1,7 @@
 # Contributing to HARC Protocol
 
+> **Language:** Chinese canonical: `CONTRIBUTING.zh-CN.md`; this English file is the synchronized mirror.
+
 HARC is intended to be an open, inspectable protocol for durable human–AI research collaboration.
 
 ## What contributions are welcome?
