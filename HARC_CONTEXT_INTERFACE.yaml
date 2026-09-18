@@ -1,0 +1,74 @@
+harc_context_interface:
+  version: "0.1-draft"
+  mode: "repository-backed"
+  authoritative_store: "github"
+  canonical_language: "zh-CN"
+
+  control_plane:
+    manifest: "HARC_MANIFEST.yaml"
+    protocol: "protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md"
+    session_resolver_only: true
+    authoritative_session_copy: false
+
+  context_policy:
+    retrieval: "selective-on-demand"
+    cache_authority: "none"
+    cache_scope: "current-task-only"
+    read_latest_before_high_impact_action: true
+    read_latest_before_write: true
+    invalidate_touched_cache_after_write: true
+    write_through_repository: true
+    refresh_after_repository_change: "affected-dependencies-only"
+
+  revision_policy:
+    preferred_tokens:
+      - "git_commit_sha"
+      - "git_blob_sha"
+      - "etag_or_equivalent_revision"
+    stale_after_write: true
+    conflict_state: "REVISION-CONFLICT"
+
+  task_routes:
+    PROTOCOL:
+      required_roles:
+        - "protocol_core"
+        - "decision_log"
+        - "clarification_register"
+      optional_roles:
+        - "specification"
+        - "agent_contract"
+        - "templates"
+    CONTENT:
+      required_roles:
+        - "content_core"
+        - "decision_log"
+        - "clarification_register"
+        - "framework_status"
+        - "working_or_approved_framework"
+      optional_roles:
+        - "evidence"
+        - "artifact"
+    FORM:
+      required_roles:
+        - "form_core"
+        - "decision_log"
+      optional_roles:
+        - "clarification_register"
+        - "form_profile"
+        - "artifact"
+
+  trust_boundary:
+    normative_sources:
+      - "manifest-declared canonical version-controlled files"
+    non_authoritative_by_default:
+      - "issues"
+      - "pull_request_comments"
+      - "discussions"
+      - "external_web"
+      - "third_party_generated_content"
+
+  failure_states:
+    - "CONTEXT-STALE"
+    - "REPOSITORY-UNAVAILABLE"
+    - "REVISION-CONFLICT"
+    - "MANIFEST-MISMATCH"
