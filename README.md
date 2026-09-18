@@ -202,11 +202,13 @@ Before formal submission, publication, or public release under human authorship,
 
 Framework approval concentrates human attention on intellectual architecture; it does not waive final publication accountability.
 
-## Cognitive delegation vs epistemic responsibility
+## AI-supported work and human responsibility
 
-HARC does not assume that human value lies in manually producing every sentence. AI may perform substantial search, synthesis, drafting, restructuring, consistency checking, and formatting.
+HARC does not assume that human value lies in manually producing every sentence. An AI Agent, used as a tool, may perform or assist with substantial search, synthesis, drafting, restructuring, consistency checking, and formatting.
 
-But delegation of cognitive labor is not automatically delegation of epistemic responsibility. HARC concentrates human attention on high-leverage decisions: research aims, core commitments, major inferential architecture, decisive evidence conflicts, framework approval, and final release approval where required.
+HARC does not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as normative language. The purpose, central problem, and direction of research or creative work originate with humans and remain under human navigation and approval; humans retain core responsibility for the resulting work.
+
+For long-form work, this responsibility is operationalized primarily through the Layer 2 Framework: before Framework Approval, the human must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in the framework. AI may help propose and organize the framework, but it cannot replace human authorization of the project’s direction and intellectual architecture. Final Artifact Approval remains a separate requirement.
 
 This responsibility model is developed in the methodology article.
 
