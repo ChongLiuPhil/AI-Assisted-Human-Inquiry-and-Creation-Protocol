@@ -182,6 +182,7 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 - [`docs/FOUNDING_IDEA_AUDIT.zh-CN.md`](docs/FOUNDING_IDEA_AUDIT.zh-CN.md) — 初始思想可追溯性。
 - [`docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md`](docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md) — 明确的三轮审阅／修复记录。
 - [`docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md`](docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md) — 独立修复后审计。
+- [`docs/BILINGUAL_PARITY_AUDIT.zh-CN.md`](docs/BILINGUAL_PARITY_AUDIT.zh-CN.md) — 中文 canonical / 英文 mirror 的仓库级一致性审计。
 
 ## 从这里开始
 
