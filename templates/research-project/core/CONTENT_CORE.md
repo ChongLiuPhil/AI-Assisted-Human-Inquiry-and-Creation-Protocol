@@ -1,5 +1,7 @@
 # Content Core
 
+> **Language:** Chinese canonical: `CONTENT_CORE.zh-CN.md`; this English file is the synchronized mirror. Substantive edits must update both versions.
+
 **Role:** canonical current source of truth for human substantive research commitments.
 
 ## Project purpose
