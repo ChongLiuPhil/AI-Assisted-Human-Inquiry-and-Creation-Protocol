@@ -43,7 +43,10 @@ HARC is intentionally a dual-output project:
 
 Current methodology-article files:
 
-- [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) — current stage, goals, tasks, blockers, pending decisions, Clarifications, and handoff; [`English mirror`](docs/working-memory.md).
+- [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) — Working Memory Index / Resolver; [`English mirror`](docs/working-memory.md).
+- [`docs/working-memory/current-focus.zh-CN.md`](docs/working-memory/current-focus.zh-CN.md) — highest-priority immediate objective.
+- [`docs/working-memory/task-plan.zh-CN.md`](docs/working-memory/task-plan.zh-CN.md) — dynamic tasks, TODOs, blockers, and pending decisions.
+- [`docs/working-memory/work-log.zh-CN.md`](docs/working-memory/work-log.zh-CN.md) — human-retrospective work history, outside default AI onboarding.
 - [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — legacy compatibility pointer; no active state.
 - [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — canonical Chinese `WORKING-FRAMEWORK`; the Working Memory / Clarification Gate remains open; [`English mirror`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md).
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — canonical Chinese `DERIVED-PROVISIONAL` draft; [`English mirror`](paper/METHODOLOGY_ARTICLE.en.md).
@@ -132,15 +135,15 @@ Research content and presentation preferences are deliberately kept separate.
 
 `DECISION_LOG.md` is the chronological audit trail of substantive human decisions across content, form, and collaboration protocol.
 
-### Working Memory
+### Working Memory Area
 
-`docs/working-memory.zh-CN.md` is Working Memory parallel to the three Long-Term Research Memory layers.
+Working Memory is a functional area rather than one fixed file. The current HARC reference implementation splits it into Index, Current Focus, Task Plan, and Work Log.
 
 The long-term layers are:
 
 `Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
 
-Working Memory is not Layer 1.5. It maintains current stage, objective, active tasks, recently completed work, next actions, TODOs, blockers, pending human decisions, Clarifications, sync defects, and handoff.
+Working Memory is not Layer 1.5. Current Focus stores “what matters most now”; Task Plan stores “how work proceeds next”; Work Log stores “how we got here” primarily for later human review.
 
 Clarification is an item type inside Working Memory. After human resolution:
 
