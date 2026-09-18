@@ -11,12 +11,14 @@ harc:
     bootstrap_prompt: "BOOTSTRAP_PROMPT.zh-CN.md"
     onboarding_report_template: "ONBOARDING_REPORT_TEMPLATE.zh-CN.md"
     session_context_bootstrap: "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
+    context_interface: "HARC_CONTEXT_INTERFACE.yaml"
     agent_contract:
       canonical: "AGENTS.zh-CN.md"
       mirror: "AGENTS.md"
 
   required_read_order:
     - "HARC_MANIFEST.yaml"
+    - "HARC_CONTEXT_INTERFACE.yaml"
     - "START_HERE.zh-CN.md"
     - "BOOTSTRAP_PROMPT.zh-CN.md"
     - "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
@@ -54,6 +56,7 @@ harc:
       - "synchronization_defects"
       - "permitted_next_action"
       - "session_contract_loaded"
+      - "repository_context_active"
 
   invariants:
     - "Repository state outranks chat memory."
@@ -64,3 +67,7 @@ harc:
     - "Working Framework is not Approved Framework."
     - "Derived artifacts remain provisional until approval."
     - "Chinese canonical and English mirror must remain synchronized."
+    - "GitHub is the sole authoritative project-state source."
+    - "Session copies are non-authoritative transient cache."
+    - "Read latest canonical state before high-impact actions and writes."
+    - "Invalidate touched cache after repository writes."
