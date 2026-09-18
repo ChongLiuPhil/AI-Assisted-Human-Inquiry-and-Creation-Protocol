@@ -254,6 +254,26 @@ Working Memory 中形成稳定人类确认的内容必须 Promotion 到相应长
 
 ---
 
+## T13 — Operational / Retrospective Working Memory Separation Thesis
+
+**来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
+
+Working Memory 不应被固定成一个不断膨胀的单体状态文档。它至少应区分：
+
+`Current Focus + Task Plan = operational resume state`
+
+与：
+
+`Work Log = human retrospective history`
+
+Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Agent 知道如何继续推进；Work Log 让人类作者以后回顾项目与思想路径如何变化。
+
+因此 Work Log 默认不属于 AI onboarding 必读上下文。它应定期生成阶段性纪要，但不保存 AI 隐藏推理，也不替代长期规范状态。
+
+**创始依据：** Article Content Core C15；HARC Protocol Core P24；HARC-D022。
+
+---
+
 # 3. 文章必须保留的核心区分
 
 ### 人类原创区分
@@ -264,6 +284,7 @@ Working Memory 中形成稳定人类确认的内容必须 Promotion 到相应长
 - framework defect vs derived-expansion defect；
 - Framework Approval vs Final Artifact Approval；
 - 三层 Long-Term Research Memory vs 并行 Working Memory；
+- Current Focus / Task Plan 的 operational resume state vs Work Log 的 human retrospective history；
 - 权威仓库状态 vs 临时 Agent 检索缓存；
 - 当前规范状态 vs 历史状态。
 
@@ -296,7 +317,7 @@ Working Memory 中形成稳定人类确认的内容必须 Promotion 到相应长
 
 **功能：** 说明 GitHub 作为当前实现基础；区分三层 Long-Term Research Memory、并行 Working Memory 与 infinite context；说明新 Agent 先从 Working Memory 找到续接点，再通过 repository-backed selective retrieval 读取长期状态。
 
-支持 T1、T7、T10、T11 与 T12。
+支持 T1、T7、T10、T11、T12 与 T13。
 
 ## IV. 分层语义治理
 
@@ -411,7 +432,7 @@ T1 + T2 + T4 + T5 + T6 + T7
 - `CLR-007` — 经验验证计划；
 - `CLR-008` — 学科/投稿方向。
 
-完整候选解释、AI 建议、影响范围和人类答复字段见 Working Memory；Argument Map 不再重复维护同一澄清的全部细节。
+完整候选解释、AI 建议、影响范围和人类答复字段见 Task Plan；Argument Map 不再重复维护同一澄清的全部细节。
 
 ---
 
