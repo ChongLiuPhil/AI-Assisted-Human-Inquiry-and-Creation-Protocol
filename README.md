@@ -39,7 +39,7 @@ After the handshake, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` loads only a minimal R
 HARC is intentionally a dual-output project:
 
 1. **Executable open protocol** — specifications, governance rules, templates, approval states, form profiles, memory architecture, and future conformance tooling.
-2. **Methodology article** — a scholarly argument explaining the protocol and examining human cognitive/epistemic responsibility, delegation to AI, auditable authorship, persistent research memory, and the limits of AI-mediated research collaboration.
+2. **Methodology article** — a scholarly argument explaining the protocol and examining human responsibility for research purpose, direction, and intellectual architecture, the division of work with AI tools, auditable authorship, persistent research memory, and the limits of AI-mediated research collaboration.
 
 Current methodology-article files:
 
