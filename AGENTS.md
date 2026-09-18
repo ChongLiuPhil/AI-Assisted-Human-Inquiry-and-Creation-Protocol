@@ -132,13 +132,14 @@ This repository has two major outputs:
 
 For the methodology article, read in this order:
 
-1. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.md`
-2. `paper/METHODOLOGY_ARTICLE_FORM_CORE.md`
-3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md`
-4. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`
-5. `evidence/METHODOLOGY_SOURCES.md`
+1. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
+2. `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+5. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 6. `paper/methodology-references.bib`
 7. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+8. corresponding English mirrors for bilingual parity
 
 The article's argument map is a `WORKING-FRAMEWORK` until the human explicitly approves it. The prose draft is `DERIVED-PROVISIONAL` until the appropriate approval gates are completed.
 
