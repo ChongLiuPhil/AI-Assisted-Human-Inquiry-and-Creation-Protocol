@@ -31,12 +31,13 @@ A different language-governance choice must be an explicit human/project decisio
 4. Identify any explicitly reusable author form profile and the applicable artifact-type profile.
 5. Extract only explicit human presentation decisions into `core/FORM_CORE.zh-CN.md`; keep inherited, external, project-specific, and temporary-default rules distinguishable and synchronize English.
 6. Record initialization decisions in `core/DECISION_LOG.zh-CN.md` and its English mirror.
-7. Create `docs/clarification-register.zh-CN.md` and its English mirror as the Layer 1.5 interface for high-impact uncertainty.
-8. Build `docs/argument-map.zh-CN.md` and its English mirror as an AI-maintained working representation.
+7. Create `docs/working-memory.zh-CN.md` and its English mirror as the parallel Working Memory for current stage, objective, tasks, blockers, pending decisions, Clarifications, TODOs, and handoff.
+8. Keep `docs/clarification-register.zh-CN.md` only as a compatibility pointer; manage new Clarifications as Working Memory items.
+9. Build `docs/argument-map.zh-CN.md` and its English mirror as an AI-maintained Layer 2 working representation.
 10. Initialize `docs/framework-status.zh-CN.md` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
-10. Create the artifact directory appropriate to the project.
+11. Create the artifact directory appropriate to the project.
 12. Create `evidence/` when research verification, data, calculations, or sources are relevant.
-12. Keep unknowns explicit. Do not fill them with AI assumptions.
+13. Keep unknowns explicit. Do not fill them with AI assumptions.
 
 ## Minimum template tree
 
@@ -88,7 +89,7 @@ Use only profiles applicable to the new project. Do not populate unresolved fiel
 
 ## Suggested instruction to an AI agent
 
-> Initialize this project using HARC Protocol. Treat GitHub directly as the authoritative external-memory and working-state store; model context should retain only the Repository Resolver and task-relevant transient cache. Separate CONTENT, FORM, and PROTOCOL decisions. Seed canonical files only with human-provided commitments. For any high-impact uncertainty that could materially affect a core claim, key concept, terminology/translation, or argument structure, record it in the Clarification Register and ask me rather than guessing. Maintain the argument map as AI-generated working structure until I explicitly approve a framework snapshot. Propagate substantive changes upstream-first. Record the adopted HARC version/commit. Chinese is canonical and English must remain synchronized.
+> Initialize this project using HARC Protocol. Treat GitHub directly as the authoritative external-memory and working-state store; model context should retain only the Repository Resolver and task-relevant transient cache. Maintain `docs/working-memory.zh-CN.md` as the resume index for current stage, objectives, tasks, completion state, next actions, blockers, pending human decisions, Clarifications, TODOs, synchronization defects, and handoff. Treat the three content layers as Long-Term Research Memory: Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact. For high-impact uncertainty, create a Working Memory Clarification item and ask me rather than guessing. After human resolution, promote the stable result into the appropriate long-term destination. Separate CONTENT, FORM, and PROTOCOL decisions. Record the adopted HARC version/commit. Chinese is canonical and English must remain synchronized.
 
 ## Unknowns are valid state
 
