@@ -256,7 +256,8 @@ The migration specifically repaired:
 5. Chinese and English white papers having structurally diverged;
 6. Roadmap / Contributing not yet containing bilingual-governance requirements;
 7. a stale version-scope line in the English Protocol Core;
-8. agent onboarding not consistently prioritizing Chinese canonical files.
+8. agent onboarding not consistently prioritizing Chinese canonical files;
+9. the full-discussion coverage review found semantic lag in root `START_HERE.md`, root `AGENTS.md`, the English Onboarding Handshake, and project-template `AGENTS.md` regarding modular Working Memory and Task Plan Clarification rules; these were resynchronized from Chinese canonical.
 
 ## 5. Limits of the audit
 
