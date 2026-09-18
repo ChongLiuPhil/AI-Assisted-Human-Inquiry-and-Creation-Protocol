@@ -52,7 +52,12 @@ Agent 可以在当前会话中保持一个非常小的 Repository Resolver，包
 
 ### 3.2 Data Plane — 保留在 GitHub
 
-以下内容的权威版本始终只在 GitHub：
+GitHub 中同时保存：
+
+- **Working Memory** — 当前阶段、目标、任务、阻塞、澄清和 handoff 的操作状态；
+- **Long-Term Memory** — 三层长期研究记忆。
+
+以下长期内容的权威版本始终只在 GitHub：
 
 - Content Core；
 - Form Core；
@@ -72,19 +77,20 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 
 每个实质性任务应执行：
 
-1. **Resolve** — 根据任务确定需要哪些规范角色；
-2. **Fetch** — 从 GitHub 读取这些角色的最新 canonical 文件；
-3. **Reason** — 仅使用当前任务所需内容进行推理；
-4. **Act** — 按 HARC upstream-first 规则执行；
-5. **Write-through** — 权威更新直接写回 GitHub；
-6. **Invalidate** — 标记所有被修改文件的旧会话缓存为失效；
-7. **Refresh** — 如后续推理仍依赖这些文件，重新读取最新版本。
+1. **Resume** — 先读取最新 Working Memory，确定当前阶段、目标、任务、阻塞与 next actions；
+2. **Resolve** — 根据任务确定需要哪些长期记忆角色；
+3. **Fetch** — 从 GitHub 读取这些角色的最新 canonical 文件；
+4. **Reason** — 仅使用当前任务所需内容进行推理；
+5. **Act** — 按 HARC upstream-first 规则执行；
+6. **Write-through** — 权威更新直接写回 GitHub；
+7. **Invalidate** — 标记所有被修改文件的旧会话缓存为失效；
+8. **Refresh** — 如后续推理仍依赖这些文件，重新读取最新版本。
 
 ## 5. Task-based Selective Retrieval
 
 ### PROTOCOL
 
-优先读取：
+先读 Working Memory，再优先读取：
 
 - Protocol Core；
 - Decision Log 最近相关部分；
@@ -94,7 +100,7 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 
 ### CONTENT
 
-优先读取：
+先读 Working Memory，再优先读取：
 
 - Content Core；
 - Decision Log 最近相关部分；
@@ -106,7 +112,7 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 
 ### FORM
 
-优先读取：
+先读 Working Memory，再优先读取：
 
 - Form Core；
 - Decision Log 最近相关部分；
@@ -115,6 +121,16 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 - 相关 Artifact / rendering state。
 
 Agent SHOULD 避免为了“保险”每轮读取整个仓库。
+
+## 5.5 Working Memory authority
+
+Working Memory 是 repository-backed operational state，但不是长期实质性权威。
+
+- 当前工作状态、TODO、blocker、handoff 以 Working Memory 为准；
+- 人类长期承诺以 Layer 1 canonical Core / Decision Log 为准；
+- 论述结构以 Layer 2 current framework 为准；
+- 成果内容以 Layer 3 artifact 为准；
+- Working Memory 与长期状态冲突时，应修复 Working Memory。
 
 ## 6. Freshness / Revision Rule
 
