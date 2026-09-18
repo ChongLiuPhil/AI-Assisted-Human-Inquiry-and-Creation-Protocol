@@ -8,7 +8,7 @@
 
 ---
 
-## Clarification Register mapping
+## Working Memory / Clarification mapping
 
 This memo is now only an **analytical attachment**. Formal operational state for high-impact unresolved issues has moved to `docs/clarification-register.md`:
 
