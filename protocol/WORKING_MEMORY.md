@@ -50,23 +50,76 @@ Principle:
 
 > **Long-term memory stores what the project is; Working Memory stores where the project currently is in its work.**
 
-## 2. Typical contents
+## 2. Working Memory is a functional area, not a fixed file
 
-Working Memory SHOULD contain:
+Working Memory specifies **logical roles**. A physical implementation may use one file or multiple files.
+
+A compliant implementation should cover at least:
+
+### 2.1 Working Memory Index / Resolver
+
+A stable entry point mapping where Current Focus, Task Plan, and Work Log live; what is mandatory for onboarding; and what is retrieved only on demand.
+
+The Index SHOULD avoid duplicating dynamic state.
+
+### 2.2 Current Focus
+
+The shortest, highest-salience operational state.
+
+It should state at least:
 
 - `CURRENT_STAGE`;
 - `CURRENT_OBJECTIVE`;
+- immediate/current-conversation work focus;
+- `PRIMARY_BLOCKER`;
+- `IMMEDIATE_NEXT_ACTION`;
+- minimal handoff pointers.
+
+It should let a replacement Agent recover direction quickly after an interruption.
+
+### 2.3 Task Plan
+
+Dynamic planning and TODO state.
+
+It may contain:
+
 - `ACTIVE_TASKS`;
 - `NEXT_ACTIONS`;
-- `RECENTLY_COMPLETED`;
-- `BACKLOG / TODO`;
+- `TODO / BACKLOG`;
 - `BLOCKERS`;
+- `WAITING-HUMAN`;
 - `PENDING_HUMAN_DECISIONS`;
 - `CLARIFICATIONS`;
-- `SYNC_DEFECTS`;
-- `HANDOFF_NOTE`.
+- `SYNC_DEFECTS`.
 
-Temporary analysis may appear only when clearly marked non-authoritative and disposable.
+Completed tasks should leave the active list rather than accumulating indefinitely.
+
+### 2.4 Work Log
+
+A historical chronicle primarily for later human review.
+
+It may record stage-level progress, milestones, completed task batches, direction changes, changes in intellectual/work path, expressed high-level reasons, and important phase transitions.
+
+Work Log:
+
+- SHOULD be updated periodically;
+- SHOULD use high-level stage summaries;
+- MUST NOT store hidden AI chain-of-thought, scratchpads, or unverifiable internal reasoning;
+- MUST NOT serve as current normative state;
+- SHOULD NOT be default required reading for AI onboarding;
+- MAY be retrieved for human historical review, audit, change reconstruction, or investigation of historical/current-state conflicts.
+
+### 2.5 Adaptable physical layout
+
+A lightweight project may map:
+
+`Index = Current Focus = Task Plan = Work Log = one file`
+
+A complex project may use:
+
+`Index + Current Focus + Task Plan + Work Log (+ archives)`
+
+The manifest MUST explicitly map the actual roles.
 
 ## 3. Authority boundary
 
@@ -118,9 +171,11 @@ After Promotion, the Working Memory item should:
 - become `RESOLVED / PROMOTED`;
 - record its Decision ID;
 - record destination paths;
-- move to a compact Recently Resolved / Archive section.
+- leave the active Task Plan;
+- add a high-level historical completion summary to Work Log;
+- retain Decision ID and durable destination paths where useful for audit.
 
-The authoritative answer then lives in long-term memory, not in the Working Memory entry.
+The authoritative answer then lives in Long-Term Memory, not in the Working Memory item or Work Log.
 
 ## 7. Work-state lifecycle
 
@@ -137,43 +192,52 @@ Recommended statuses:
 
 Clarification severity may still use `BLOCKING` / `NON-BLOCKING`.
 
-## 8. Update points
+## 8. Update discipline
 
-Update Working Memory when:
+### Current Focus
 
-- a clear work objective begins;
-- a task completes;
-- the human gives an important decision;
-- a new clarification/blocker appears;
-- a clarification is resolved and promoted;
-- Framework status changes;
-- Artifact stage changes;
-- a substantial work cycle ends;
-- before Agent handoff;
-- onboarding detects stale Working Memory.
+Update when the highest-priority objective, blocker, immediate task/conversation focus, or project phase changes, and before handoff.
+
+### Task Plan
+
+Update when tasks are created or change state, new clarifications/blockers appear, important human decisions occur, tasks complete, or Framework/Artifact gates change.
+
+Completed items should leave the active list promptly.
+
+### Work Log
+
+Update periodically rather than after every micro-action.
+
+Recommended write points include completed task batches, major protocol/research milestones, major human decisions that change direction, Framework/Artifact phase transitions, longer work-cycle completion, and explicit human requests for a stage chronicle.
+
+Work Log is a **retrospective history**, not a real-time event stream.
 
 ## 9. Onboarding / Handoff
 
-Recommended order for a replacement Agent or human collaborator:
+Recommended order:
 
-1. read the control plane: `HARC_MANIFEST.yaml`, `HARC_CONTEXT_INTERFACE.yaml`, START_HERE / AGENTS;
-2. read `docs/working-memory.zh-CN.md`;
-3. learn current stage, objective, tasks, blockers, and pending decisions;
-4. selectively retrieve latest canonical state from the three long-term layers for the current task;
-5. never treat Working Memory as the long-term semantic truth source.
+1. control plane: Manifest / Context Interface / START_HERE / AGENTS;
+2. Working Memory Index;
+3. Current Focus;
+4. Task Plan;
+5. task-relevant three-layer Long-Term Memory;
+6. required Evidence / Artifact.
 
-Working Memory is the **resume index**; long-term memory is the **authoritative research state**.
+**Skip Work Log by default.**
+
+Read Work Log only when the human requests review, the reason for a direction change must be reconstructed, current state appears stale/inconsistent, or a dedicated audit/provenance reconstruction requires it.
+
+Thus:
+
+> **Current Focus tells the Agent what matters most now; Task Plan tells the Agent how to proceed; Work Log tells the human how the project got here.**
 
 ## 10. Scaling
 
-Keep Working Memory short, current, and scannable.
+Keep **Current Focus + Task Plan** short, current, and scannable.
 
-As history grows:
+Work Log may grow, but should use stage-level entries, split/archive by phase or year when necessary, retain an index, and remain outside default AI context.
 
-- keep only current work in Active;
-- compress resolved/promoted items into an index;
-- move detailed history to archives;
-- rely on Decision Log and Git history for durable audit.
+Work Log, Decision Log, and Git history have different roles: human narrative review, normative-decision audit, and exact version history respectively.
 
 ## 11. Principle
 
@@ -183,7 +247,13 @@ As history grows:
 
 Parallel:
 
-`Working Memory <-> current goals / tasks / clarifications / blockers / handoff`
+`Working Memory Area = Index + Current Focus + Task Plan + Work Log`
+
+where:
+
+`Current Focus + Task Plan = operational resume state`
+
+`Work Log = human retrospective history`
 
 Promotion:
 
