@@ -29,6 +29,8 @@ Working Memory Area consists of Index, Current Focus, Task Plan, and Work Log.
 - Task Plan stores dynamic tasks, TODOs, blockers, pending human decisions, Clarifications, and sync defects;
 - Work Log stores stage history primarily for later human review.
 
+**Work Log is outside default onboarding context for a replacement Agent.** Retrieve it only for human historical review, dedicated audit, reconstruction of direction changes, or current/history conflict.
+
 Clarification is a Working Memory item, not Layer 1.5. After human resolution, perform Promotion into the appropriate Long-Term Memory destination and mark the item `RESOLVED / PROMOTED`.
 
 Update Current Focus / Task Plan after substantial work cycles and before handoff. Update Work Log periodically at meaningful milestones rather than after every micro-action.
