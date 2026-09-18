@@ -209,10 +209,23 @@ HARC 项目应提供一个**从零上下文即可发现的启动入口**，使�
 - 根目录 `AGENTS` 契约；
 - 机器可读的 HARC manifest 或等价索引；
 - 明确的 mandatory read order；
-- Clarification Register、Framework Status、Working/Approved Framework 与 Artifact 状态入口；
+- Working Memory Index；
+- Current Focus；
+- Task Plan；
+- Framework Status、Working/Approved Framework 与 Artifact 状态入口；
 - 可直接复制给任意 AI Agent 的 bootstrap prompt。
 
-新的 AI Agent 在进行实质性修改前，应先完成一次 **Onboarding Handshake（接管握手）**：根据仓库状态向人类报告当前协议状态、人类已确认状态、Form 状态、Blocking Clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。
+新的 AI Agent 在进行实质性修改前，应完成一次 **Onboarding Handshake（接管握手）**。报告至少应说明：
+
+- 当前最高优先级目标；
+- primary blocker 与 immediate next action；
+- active tasks、TODO / backlog；
+- pending human decisions / Clarifications；
+- Framework / Artifact 状态；
+- 同步缺陷；
+- 当前允许与被阻塞的下一步。
+
+Work Log 默认不属于零上下文接管的必读材料；只有人类要求历史回顾、专门审计、方向变化重建或 current/history conflict 时才按需读取。
 
 如果 Agent 无法仅凭仓库完成这一报告，项目存在 onboarding/persistence defect，应先修复，而不是继续大规模研究或写作。
 
@@ -230,7 +243,7 @@ HARC 的持久状态保存在仓库中。新的 AI Agent 在接管后可以在�
 - 何时必须重新读取仓库；
 - 写入后如何使旧缓存失效。
 
-它**不应长期复制** Blocking Clarifications、Framework 状态、Artifact 状态、Core 内容或其他动态研究状态。
+它**不应长期复制** Current Focus、Task Plan、Framework 状态、Artifact 状态、Core 内容或其他动态研究状态。
 
 这些动态内容在需要时应从 GitHub 最新 canonical revision 按需读取。任何较早的 Onboarding Report、会话摘要、文件摘录或模型记忆都只是非权威缓存。
 
