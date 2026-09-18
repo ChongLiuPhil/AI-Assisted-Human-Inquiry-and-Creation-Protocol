@@ -1,5 +1,7 @@
 # Final Post-Repair Audit
 
+> **Language:** Chinese canonical: `FINAL_POST_REPAIR_AUDIT.zh-CN.md`; this English file is the synchronized mirror.
+
 **Date:** 2026-09-17  
 **Audit type:** independent post-repair audit performed after three complete review-and-repair cycles.  
 **Scope:** HARC open-project architecture, founder-intent preservation, protocol execution, methodology-article governance, evidence traceability, onboarding/handoff, and synchronization.
