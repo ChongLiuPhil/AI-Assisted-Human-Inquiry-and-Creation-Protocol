@@ -17,12 +17,15 @@
 > 3. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
 > 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
 > 5. 读取 `AGENTS.zh-CN.md`；
-> 6. 读取 `docs/working-memory.zh-CN.md`，先确定当前阶段、目标、active tasks、blockers、pending human decisions 与 next actions；
-> 7. 严格按照 manifest / context interface 的 task route 从三层长期记忆按需读取当前规范状态；
-> 8. 中文是 canonical；英文只作为 synchronized mirror；
-> 9. 从 Working Memory 读取与当前任务相关的 blockers / clarifications，并在需要时核验其长期目标文件；
-> 10. 仅在当前任务需要时读取 Layer 1 / Layer 2 / Layer 3 / Evidence 的最新 canonical revision；
-> 11. 在做任何实质性修改前，输出 HARC Onboarding Report，包含 Working Memory 当前续接状态，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。
+> 6. 读取 `docs/working-memory.zh-CN.md`（Index）；
+> 7. 读取 `docs/working-memory/current-focus.zh-CN.md`，确定当前最重要目标、primary blocker 与 immediate next action；
+> 8. 读取 `docs/working-memory/task-plan.zh-CN.md`，确定 active tasks、TODO、blockers、pending human decisions 与 next actions；
+> 9. 默认不要读取 Work Log；只有历史回顾、审计、变迁重建或 current/history conflict 时才按需读取；
+> 10. 严格按照 manifest / context interface 的 task route 从三层长期记忆按需读取当前规范状态；
+> 11. 中文是 canonical；英文只作为 synchronized mirror；
+> 12. 从 Task Plan 读取与当前任务相关的 blockers / clarifications，并在需要时核验其长期目标文件；
+> 13. 仅在当前任务需要时读取 Layer 1 / Layer 2 / Layer 3 / Evidence 的最新 canonical revision；
+> 14. 在做任何实质性修改前，输出 HARC Onboarding Report，报告 Current Focus + Task Plan 的当前续接状态，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。
 >
 > 你不得：
 >
