@@ -25,9 +25,9 @@
 
 扫描结果：
 
-- Markdown 文件总数：**108**
-- 中文 canonical（`*.zh-CN.md`）：**54**
-- 英文 mirror：**54**
+- Markdown 文件总数：**120**
+- 中文 canonical（`*.zh-CN.md`）：**60**
+- 英文 mirror：**60**
   - 绝大多数使用既有 `*.md`
   - 方法论文章完整正文使用 `METHODOLOGY_ARTICLE.en.md`
 - 缺少英文 mirror 的中文文件：**0**
@@ -206,6 +206,26 @@ HARC-D021 取消了 “Layer 1.5” 作为独立层的模型，并新增三组�
 Clarification 已成为 Working Memory item；人类解决后的稳定内容通过 Promotion 进入相应长期记忆。
 
 最新递归扫描为 **108 个 Markdown = 54 个中文 canonical + 54 个英文 mirror，缺失配对 0**。
+
+### 3.12 Modular Working Memory
+
+HARC-D022 进一步把 Working Memory 从“一个逻辑区通常由一个文件承载”发展为明确的可模块化功能区。
+
+当前 HARC 参考实现与项目模板都新增三组双语文件：
+
+- `working-memory/current-focus.zh-CN.md` / English mirror；
+- `working-memory/task-plan.zh-CN.md` / English mirror；
+- `working-memory/work-log.zh-CN.md` / English mirror。
+
+根 `working-memory.zh-CN.md` 现在是 Index / Resolver。
+
+默认 AI onboarding 读取：
+
+`Index -> Current Focus -> Task Plan`
+
+Work Log 主要供人类作者回顾，默认不进入 AI context。
+
+最新递归扫描为 **120 个 Markdown = 60 个中文 canonical + 60 个英文 mirror，缺失配对 0**。
 
 ## 4. 已修复的高风险语义不同步
 
