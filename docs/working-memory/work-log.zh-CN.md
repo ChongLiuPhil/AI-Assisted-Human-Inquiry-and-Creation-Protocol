@@ -106,6 +106,16 @@ Working Memory 被进一步拆分为三个逻辑功能：
 
 其中 Work Log 不再占据日常 Agent 上下文，只在需要历史回顾或审计时读取。
 
+**实现完成：**
+
+- Protocol Core / Decision Log / Working Memory Protocol 已同步；
+- Manifest / Context Interface 已映射四个逻辑角色；
+- START_HERE / AGENTS / Bootstrap / Session Resolver / Onboarding 已同步；
+- project templates 已采用相同拆分；
+- 方法论文章已加入 C15 / T13 并同步正文；
+- Framework Gate / Clarification workflow 已改为读取 Task Plan；
+- 双语回归：`120 Markdown = 60 Chinese canonical + 60 English mirror; missing pairs = 0`。
+
 ---
 
 ## 当前日志边界
