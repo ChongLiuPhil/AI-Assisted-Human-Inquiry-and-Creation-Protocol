@@ -236,3 +236,18 @@
 **受影响组件：** Protocol Core、Specification、AGENTS、Architecture、project template、methodology article governance、framework review workflow
 
 **状态：** 已实现。
+
+---
+
+## 2026-09-18 — HARC-D018
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL
+
+**决定：** HARC 应为任何从零开始接手项目的 AI Agent 提供显式的前置启动入口与提示机制，使 Agent 在最初阶段就能理解项目层级、读取顺序、Clarification 机制、Framework/Artifact 状态和强制传播流程。Agent 在进行实质性工作前应先完成接管握手，向人类报告其根据仓库重建出的当前状态。应同时提供人类可读启动文件、可复制 bootstrap prompt、Agent 契约与机器可读 manifest，以降低不同 AI 平台之间的发现差异。
+
+**限定：** 仓库文件无法技术上保证任意外部 AI 平台会自动读取某一文件；HARC 的合规目标是最大化入口可发现性，并通过 Onboarding Report 验证 Agent 是否真正理解和遵循工作流。
+
+**受影响组件：** START_HERE、HARC_MANIFEST、AGENTS、README、Specification、Persistent Memory、项目模板、Agent handoff
+
+**状态：** 已实现。
