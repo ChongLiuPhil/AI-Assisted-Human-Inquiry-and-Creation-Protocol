@@ -265,9 +265,11 @@ HARC 的另一个设计原则可以概括为：
 
 这个握手把“Agent 是否真正理解项目”从一个隐含假设变成可观察检查。Agent 应先报告它识别出的当前人类承诺、Blocking Clarifications、Working/Approved Framework、成果状态与同步缺陷；如果这些内容无法从仓库恢复，就说明存在 persistence/onboarding defect，应先修复而不是继续大规模扩写。
 
-在完成这种仓库级接管之后，HARC 还增加第二层保险：Agent 根据仓库状态生成一份压缩的 **Active Session Contract**，并把它明确回显到自己的当前回复中。这样，GitHub 负责长期可恢复性，而当前对话重新承载一份高显著度的操作契约，包括权威层级、Blocking Clarifications、Framework/Artifact 状态和本轮任务的传播路径。
+更进一步，HARC 不需要在聊天中再维护一份动态项目状态副本。更准确的机制是 **Repository-Backed Context Interface**：GitHub 同时承担权威外部记忆与工作状态库，而模型上下文只保存一个极小的 Repository Resolver，并按当前任务临时读取所需文件。
 
-这一机制不能把仓库文本真正提升成平台级 system prompt。平台 system、developer 与安全规则仍然具有更高优先级；HARC 能做的是要求 Agent 把项目级契约重新写入当前可见上下文，并在人类可以检查的情况下持续遵循。重大状态变化或长对话可能造成上下文丢失时，Agent 应重新从仓库生成 `HARC CONTEXT REFRESH`。
+因此，Blocking Clarifications、Framework、Artifact、Core 与 Decision Log 的真实当前状态都保留在 GitHub。Agent 在需要时从最新 canonical revision 获取相关内容；高影响判断或写入前重新确认 revision；更新直接写回仓库；写入后，之前进入模型上下文的旧摘录立即视为 stale。所谓 `HARC CONTEXT REFRESH` 也不再意味着把整个项目重新复制进聊天，而是重新解析当前任务依赖并 fresh-fetch 相关文件。
+
+这并不意味着模型能够“完全不使用上下文”。任何一次推理仍然需要相关信息临时进入模型可用上下文。HARC 所改变的是权威位置和生命周期：**GitHub 是真值源，模型上下文只是当前任务对仓库状态的一次短期投影。**
 
 这并不会创造“无限上下文”。随着项目变大，历史资料仍然可能远超任何一次模型上下文。因此 HARC 采用活动状态与历史状态分层：Core、最新 Framework 和 Argument Map 保持压缩；详细日志、旧版本、证据和档案可以持续增长，并通过索引与选择性检索按需读取。
 
