@@ -1,5 +1,7 @@
 # Framework Status
 
+> **Language:** Chinese canonical: `framework-status.zh-CN.md`; this English file is the synchronized mirror. Substantive edits must update both versions.
+
 ## Current working framework
 
 Source: `docs/argument-map.md`  
@@ -16,6 +18,8 @@ Next identifier: `FW-001`
 `DERIVED-PROVISIONAL` / `FINAL-REVIEW` / `FINAL-APPROVED`
 
 ## Known synchronization defects
+
+- Chinese/English synchronization: `SYNC / OUT-OF-SYNC`
 
 - `None recorded / ...`
 
