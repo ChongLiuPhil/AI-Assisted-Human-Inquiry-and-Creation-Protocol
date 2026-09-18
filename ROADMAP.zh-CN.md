@@ -36,6 +36,7 @@
 - [x] 将 Session Context Bootstrap 收缩为最小 Repository Resolver，不再维护动态状态副本。
 - [x] 建立与三层长期记忆并行的 Working Memory，取代旧 Layer 1.5 模型。
 - [x] 将 Clarification 迁移为 Working Memory item，并定义 Promotion 到长期记忆的工作流。
+- [x] 将 Working Memory 模块化为 Current Focus / Task Plan / Work Log；默认 AI 接管只读 Current Focus + Task Plan，Work Log 主要供人类回顾。
 - [ ] 人类审阅并批准方法论文章 Working Framework。
 - [ ] 创建方法论文章第一个 Approved Framework Snapshot。
 - [ ] 决定目标发布渠道 / 学科定位。
@@ -82,7 +83,7 @@
 - [ ] 测量责任锚定/高杠杆审阅是否能减少审阅负担而不增加严重错误。
 - [ ] 比较 GitHub-centered 实现与 local-first 或其他 versioned backend。
 - [ ] 研究 repository-backed context 对上下文使用量、stale-state 错误和跨 Agent 接管成本的影响。
-- [ ] 研究 Working Memory 的更新粒度、压缩策略与 handoff 效率。
+- [ ] 研究 Current Focus / Task Plan 的更新粒度与压缩策略，以及 Work Log 的分卷、索引和人类回顾价值。
 - [ ] 研究 HARC 与学术 authorship norm、provenance system、extended/distributed cognition、automation reliance 与 human intellectual agency 的关系。
 - [ ] 为 framework fidelity 与 semantic drift 发展可操作测量。
 - [ ] 研究双语 canonical/mirror 模型中的语义漂移与翻译治理。
