@@ -65,6 +65,7 @@ project/
 │   ├── FORM_CORE.md
 │   └── DECISION_LOG.md
 ├── docs/
+│   ├── clarification-register.md
 │   ├── argument-map.md
 │   ├── framework-status.md
 │   └── frameworks/
@@ -88,9 +89,15 @@ AI 提案不会仅因为有用或写得漂亮，就自动成为作者承诺。
 
 `DECISION_LOG.md` 是人类在内容、形式和协作协议方面作出实质性决定的时间顺序审计轨迹。
 
+### 关键澄清登记册
+
+`docs/clarification-register.md` 位于人类已确认的 Core 与 AI Working Argument Map 之间，是 **Layer 1.5**。当 AI 对核心命题、关键概念、范围、推论关系、章节功能或关键术语/翻译存在高影响不确定性时，必须先把问题显式登记并提交人类确认，而不是自行猜测。
+
+解决后执行：`Clarification Register -> Decision Log -> Core -> Argument Map -> Artifact`。
+
 ### 操作性论证图
 
-`docs/argument-map.md` 是一个由 AI 维护的紧凑表示，用于表达当前知识结构。对于长篇研究，它是人机讨论时的首选接口。
+`docs/argument-map.md` 是一个由 AI 维护的紧凑表示，用于表达当前知识结构。对于长篇研究，它是人机讨论时的首选接口。高影响未决问题应引用 Clarification Register，而不是在 Argument Map 中重复维护全部细节。
 
 ### 已批准框架快照
 
@@ -189,10 +196,11 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 ### 对人类
 
 1. 阅读 [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md)，了解正在形成的学术论证。
-2. 阅读 [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md)，检查论文当前的工作框架与未决问题。
-3. 阅读 [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md)，查看规范性工作流。
-4. 阅读 [`docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md`](docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md) 和 [`docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md`](docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md)，了解当前整合审计状态。
-5. 使用 [`templates/research-project/`](templates/research-project/) 启动新项目。
+2. 先阅读 [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md)，处理当前高影响未决问题。
+3. 再阅读 [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md)，检查论文当前 Working Framework。
+4. 阅读 [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md)，查看规范性工作流。
+5. 阅读 [`docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md`](docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md) 和 [`docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md`](docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md)，了解当前整合审计状态。
+6. 使用 [`templates/research-project/`](templates/research-project/) 启动新项目。
 
 ### 对 AI Agent
 
