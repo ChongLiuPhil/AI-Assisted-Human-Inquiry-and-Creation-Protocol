@@ -117,6 +117,31 @@ Work Log is excluded from default AI context and retrieved only for historical r
 
 ---
 
+## 2026-09-18 — Current full-discussion coverage review
+
+**Type:** one complete `review -> repair -> verify` pass.
+
+**Coverage result:**
+
+- the three Long-Term Research Memory layers, parallel Working Memory, and Current Focus / Task Plan / Work Log are implemented;
+- Clarification / Promotion, Repository-Backed Context, zero-context onboarding, bilingual canonical/mirror governance, Framework/Final Approval, form inheritance, and methodology-article self-hosting all have normative and executable entry points;
+- no new core architectural omission was found.
+
+**Repairs made in this pass:**
+
+- stale Clarification Register and read-order logic in root START_HERE / AGENTS English mirrors;
+- numbering regression and legacy Clarification routing in project-template START_HERE;
+- active-state use of legacy clarification-register in project-template AGENTS;
+- English Onboarding Handshake;
+- a few older formulations in Bootstrap Prompt / Persistent Memory;
+- stale bilingual-migration status in Founding Idea Audit itself.
+
+**Conclusion:** `PASS AFTER REPAIR`.
+
+**Still requiring human decision:** methodology article `CLR-001 / CLR-002 / CLR-005`; `CLR-009` licensing before formal release.
+
+---
+
 ## Current log boundary
 
 This log currently contains high-level historical summaries backfilled from Decision Log and canonical protocol files. Future entries should be appended at meaningful milestones rather than reproducing conversations verbatim.
