@@ -20,7 +20,7 @@ HARC 项目不能只是一套可执行的开放协议。它还应产出一篇方
 
 ## C4. 文章必须解释人类意图、AI 表示与派生文本的分离
 
-文章应解释 Content Core / Form Core / Decision Log / Working Framework / Approved Framework / Derived Artifact 的架构，以及为什么 AI 扩写必须服从经人类确认的上游状态。
+文章应解释三层长期研究记忆——Layer 1 Human Authorial Core、Layer 2 Current Framework、Layer 3 Derived Artifact——以及与三层并行的 Working Memory。AI 扩写必须服从经人类确认的上游长期状态；Working Memory 只负责当前阶段、目标、任务、阻塞、待确认事项和续接。
 
 ## C5. 文章必须解释 framework 层的人类责任
 
@@ -50,17 +50,19 @@ HARC 不是一个纯粹抽象的哲学提案。其文件层级、更新规则、
 
 诸如 `generation–verification asymmetry`、`semantic version control`、`responsibility concentration` 以及某一特定经验测试套件等术语和更强命题，可能是有用的 AI 表述，但在人类明确接受之前仍属于 provisional。
 
-## C11. 高影响不确定性必须显式提交人类澄清
+## C11. 高影响不确定性应作为 Working Memory 中的 Clarification 管理
 
-文章必须解释 HARC 的 Critical Clarification Layer：当 AI 对作者意图、核心命题、关键概念、范围、论证关系、章节功能或关键术语/翻译存在可能重大改变论证结构的非微不足道不确定性时，AI 不应自行猜测，而应主动把问题写入 Clarification Register，向人类作者请求确认。
+文章必须解释：Clarification 不是 Layer 1 与 Layer 2 之间的独立“1.5 层”，而是 Working Memory 中的一种 item。
 
-未解决 clarification 不是人类承诺。人类确认或纠正后，其结果应进入 Decision Log 与相应 Core，再传播到 Working Framework 和最终成果。
+当 AI 对作者意图、核心命题、关键概念、范围、论证关系、章节功能或关键术语/翻译存在可能重大改变论证结构的非微不足道不确定性时，AI 不应自行猜测，而应把问题放入 Working Memory 的 Clarification 队列，向人类作者请求确认。
 
-这一机制尤其适用于作者母语中的核心概念及其英文对应，防止翻译或 AI 解释把未经确认的意义固化进文章结构。
+未解决 clarification 不是人类长期承诺。人类确认或纠正后，其结果必须通过 Promotion 进入 Decision Log 与相应长期记忆，再传播到 Framework 和 Artifact。
+
+这一机制尤其适用于作者母语中的核心概念及其英文对应。
 
 ## C12. 跨 Agent 接管必须通过显式启动入口和可验证握手
 
-文章应解释：仅仅把状态写进仓库，并不足以保证新的 AI Agent 会正确接管。项目还需要一个显式、可发现的零上下文启动入口，规定 mandatory read order，并要求新 Agent 在实质工作前输出一份 Onboarding Report，以证明它已经正确重建人类承诺、Clarification 状态、Framework 状态、Artifact 状态和同步缺陷。
+文章应解释：仅仅把状态写进仓库，并不足以保证新的 AI Agent 会正确接管。项目还需要显式零上下文入口与 Onboarding Report。新 Agent 应先读取 Working Memory，确认当前阶段、目标、任务、阻塞、待确认事项和下一步，再从三层长期记忆按需读取权威状态。
 
 这一机制的目的不是假设所有 AI 平台都会自动读取同一文件名，而是通过根目录入口、Agent 契约、机器可读 manifest 与人类可复制 bootstrap prompt，最大化跨平台可发现性，并把“接管是否成功”变成可观察、可验证的步骤。
 
@@ -76,15 +78,31 @@ HARC 不是一个纯粹抽象的哲学提案。其文件层级、更新规则、
 
 模型在某一次回答中仍需要临时读取相关信息，但应根据当前任务从 GitHub 最新 canonical revision 按需获取最小必要内容。
 
-会话只保留一个极小的 Repository Resolver：仓库身份、manifest/context-interface 路径、task route、read-latest-before-write、write-through、cache invalidation 等规则。Blocking Clarifications、Framework、Artifact、Core 等动态项目状态不应作为第二份权威副本长期留在对话上下文中。
+会话只保留一个极小的 Repository Resolver。Working Memory 与三层长期记忆都保存在 GitHub：Working Memory 提供当前续接状态，Layer 1/2/3 提供长期研究状态。它们都不应被长期复制成第二份聊天权威副本。
 
 所有影响未来工作的状态改变直接写回 GitHub；写入后，先前读取到上下文中的旧版本立即视为 stale。高影响判断和写入前应重新确认相关最新 revision。
 
 这一机制使 GitHub 真正成为跨 Agent 的记忆库和工作库，而模型上下文只是当前任务对仓库状态的一次临时投影。
 
+## C14. 三层长期研究记忆应与并行 Working Memory 区分
+
+文章应明确区分：
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+与并行的：
+
+`Working Memory = current stage / goals / tasks / blockers / clarifications / TODO / handoff`
+
+前三层描述项目的长期思想与成果状态；Working Memory 描述当前工作过程的位置。
+
+Layer 2 虽然名称中含有 “Working”，但它仍属于长期项目记忆：它保存当前论述框架、核心命题、关键概念和结构，并比 Layer 1 更可修改。
+
+Working Memory 中获得人类确认的内容必须 Promotion 到相应长期层，随后 Working Memory 只保留状态和指针。
+
 ## 当前尚未解决的人类决定
 
-高影响未决问题的操作性状态统一维护在 `docs/clarification-register.zh-CN.md`。当前与文章直接相关的条目为 `CLR-001` 至 `CLR-008`，其中 `CLR-001`、`CLR-002`、`CLR-005` 当前为 Framework Approval 前的 `BLOCKING` clarification。
+当前工作状态与高影响未决问题统一维护在 `docs/working-memory.zh-CN.md`。当前与文章直接相关的条目为 `CLR-001` 至 `CLR-008`，其中 `CLR-001`、`CLR-002`、`CLR-005` 当前为 Framework Approval 前的 `BLOCKING` clarification。
 
 ## 来源纠正
 
