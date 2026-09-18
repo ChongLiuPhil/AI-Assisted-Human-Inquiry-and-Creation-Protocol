@@ -26,7 +26,13 @@
 
 ## Open authorial questions
 
-- `UNRESOLVED — ...`
+General open questions may be summarized here.
+
+High-impact questions requiring formal human clarification should reference `docs/clarification-register.md`:
+
+- `CLR-001 — ...`
+
+Other: `UNRESOLVED — ...`
 
 ## Governance
 
