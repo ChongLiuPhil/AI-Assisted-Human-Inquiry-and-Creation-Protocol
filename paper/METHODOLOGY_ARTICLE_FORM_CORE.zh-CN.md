@@ -57,7 +57,7 @@ HARC 项目现已明确要求中英双语维护：
 
 ## 目标发布渠道约束
 
-`UNRESOLVED`。
+`UNRESOLVED — tracked as CLR-010 in docs/working-memory/task-plan.zh-CN.md`。
 
 可能的学科定位包括哲学技术、研究方法论、学术传播，或跨学科 AI / research-governance；仍待人类决定。
 
