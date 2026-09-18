@@ -360,3 +360,25 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **解决的 Clarifications：** `CLR-001`、`CLR-002`、`CLR-005`
 
 **状态：** 已确认；本轮执行 Promotion 与双语传播。
+
+
+---
+
+## 2026-09-18 — HARC-D024
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, FORM, PROTOCOL
+
+**决定：**
+
+1. 方法论文章中文题目 **《从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性》** 得到人类明确认可。英文题目作为中文 canonical 的同步翻译镜像维护；该题目认可不等于对完整 Working Framework 的 Framework Approval。
+2. 对 HARC-D023 的责任表述作进一步精确化：`人类责任 / human responsibility` 不应被当作一个无需解释的独立中心概念。更准确的核心命题是：**人类是责任主体**。
+3. 在研究、探究活动中，尤其当研究结果、论证或知识主张以论文、书籍、报告或其他方式进入公开知识传播时，人类必须保持为责任承担主体。AI Agent 可以作为工具执行或辅助大量工作，但不能成为承担研究目的、核心判断、framework 授权或公开知识传播最终责任的主体。
+4. 后续文档可以在标题或一般叙述中使用“人类责任”作为简写，但在理论定义、协议规则与关键论证处应明确其含义是“人类作为责任主体 / 人类仍是责任承担者”。
+5. HARC-D023 的其他已确认内容继续有效。
+
+**关系：** 本决定精确化 HARC-D023，不撤销其其他内容。
+
+**受影响组件：** Article Form Core、Article Content Core、Working Argument Map、methodology article、Protocol Core、Framework Approval、Specification、README、Agent contracts/templates、Framework Status、Working Memory
+
+**状态：** 已确认；本轮执行双语 Promotion 与传播。
