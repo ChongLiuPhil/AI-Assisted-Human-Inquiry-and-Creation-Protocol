@@ -221,3 +221,18 @@
 **受影响组件：** Bilingual Sync Policy、Protocol Core、AGENTS、Whitepaper、Parity Audit、未来 legacy migration
 
 **状态：** 已实现。白皮书已完成 English -> Chinese catch-up，再恢复为 Chinese -> English 同步关系。
+
+---
+
+## 2026-09-18 — HARC-D017
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, FORM, PROTOCOL
+
+**决定：** HARC 应增加一个专门治理高影响不确定性的文档层。AI Agent 对作者意图、核心观点、关键命题、概念、术语、母语/英文对应、范围或论证结构存在重要不确定性时，应主动登记并向人类作者提出确认，而不是自行选择一种解释后继续落实。经人类确认或纠正的结果，应沉淀进相应的基础 Core / Decision Log，并进一步更新论证结构与最终成果。该层应特别保护那些一旦误解就会显著改变第二层论证结构或核心表达的内容。
+
+**架构决定：** 采用 `Critical Clarification Register`，定位为 Layer 1 与 Layer 2 之间的 **Layer 1.5 bridge**。未解决条目不是人类承诺；解决后必须执行 Resolution Promotion。
+
+**受影响组件：** Protocol Core、Specification、AGENTS、Architecture、project template、methodology article governance、framework review workflow
+
+**状态：** 已实现。
