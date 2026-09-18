@@ -2,6 +2,7 @@
 
 **Chinese title:** 从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性
 
+**Title status:** `HUMAN-APPROVED TITLE — HARC-D024` (English is the synchronized translation mirror; title approval is not Framework Approval)  
 **Status:** `DERIVED-PROVISIONAL`  
 **Framework status:** `WORKING-FRAMEWORK — not yet formally approved by the human author`  
 **Protocol:** Human–AI Research Collaboration Protocol (HARC) v0.2.0-draft  
@@ -14,13 +15,13 @@
 
 ## Abstract
 
-Generative artificial intelligence is substantially changing the division of work in research. Literature search, idea organization, argument reconstruction, draft generation, language editing, format conversion, and even some formalization can now be performed or assisted by AI Agents used as tools at speeds far beyond traditional manual workflows. Yet researchers' reading speed, capacity for understanding, judgment, and ability to bear responsibility do not increase at the same rate. This creates a methodological problem more fundamental than whether “AI can write a paper”: when more and more concrete research work can be assisted or automated by AI tools, what must human researchers still understand, confirm, judge, and take responsibility for?
+Generative artificial intelligence is substantially changing the division of work in research. Literature search, idea organization, argument reconstruction, draft generation, language editing, format conversion, and even some formalization can now be performed or assisted by AI Agents used as tools at speeds far beyond traditional manual workflows. Yet researchers' reading speed, capacity for understanding, judgment, and capacity to bear responsibility do not increase at the same rate. This creates a methodological problem more fundamental than whether “AI can write a paper”: when more and more concrete research work can be assisted or automated by AI tools, who must still understand, confirm, and judge the aims and conclusions of that work, and who remains the ultimate bearer of responsibility?
 
 This article presents the Human–AI Research Collaboration Protocol (HARC) as a persistent, explicit, and auditable architecture for human–AI research collaboration, currently implemented primarily through GitHub. HARC does not treat a chat window or the private context of a particular model as the long-term memory of a research project. Instead, it treats version-controlled repository documents as the persistent state of an evolving research process. The protocol separates the human author's substantive research intentions, presentation intentions, the operational argument framework maintained by AI, evidence constraints, historical decisions, and final derived text. It uses structures such as the Content Core, Form Core, Decision Log, Working Argument Map, and Approved Framework Snapshot to create a governable research state.
 
-The article further argues that the purpose, central problem, and direction of a research or creative project must originate with humans and remain under human navigation or approval; within HARC, an AI Agent is a collaboration tool that may perform or assist extensive work but is not characterized as a cognitive subject. For long-form work, human core intellectual responsibility is operationalized primarily through the Layer 2 Framework: AI may assist in proposing, organizing, and expressing the framework, but before Framework Approval the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in it. On this basis, the article distinguishes framework-level defects from derived-expansion defects and Framework Approval from Final Artifact Approval, while discussing the relation of this architecture to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
+The article further argues that the purpose, central problem, and direction of a research or creative project must originate with humans and remain under human navigation or approval; within HARC, an AI Agent is a collaboration tool that may perform or assist extensive work but is not characterized as a cognitive subject or the ultimate bearer of responsibility. “Human Responsibility” in the title is shorthand. The more precise claim is that **in human–AI collaborative research and inquiry, especially when research results, arguments, or knowledge claims enter public circulation, humans must remain the bearers of responsibility.** For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Framework: AI may assist in proposing, organizing, and expressing the framework, but before Framework Approval the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in it. On this basis, the article distinguishes framework-level defects from derived-expansion defects and Framework Approval from Final Artifact Approval, while discussing the relation of this architecture to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
 
-**Keywords:** human–AI collaboration; generative AI; research methodology; human responsibility; authorship; distributed cognition; version control; GitHub; AI agents; research integrity
+**Keywords:** human–AI collaboration; generative AI; research methodology; bearers of responsibility; authorship; distributed cognition; version control; GitHub; AI agents; research integrity
 
 ---
 
@@ -177,9 +178,9 @@ HARC therefore treats framework approval as a **primary substantive intellectual
 
 ---
 
-## 6. Human responsibility in the AI era: AI may perform work, while purpose and intellectual architecture remain human responsibilities
+## 6. Humans as the bearers of responsibility in the AI era: AI may perform work, but responsibility-bearing status cannot be transferred
 
-HARC first needs a clear description of the AI role. An AI Agent is a research-collaboration tool, not an actor that this article needs to treat as a cognitive subject. The article therefore does not use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language. More precisely, AI tools may perform or assist with extensive concrete work, including:
+HARC first needs a clear description of the AI role. An AI Agent is a research-collaboration tool, not an actor that this article needs to treat as a cognitive subject or as the ultimate bearer of responsibility. The article therefore does not use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language. More precisely, AI tools may perform or assist with extensive concrete work, including:
 
 - searching and preliminarily filtering literature;
 - summarizing debates;
@@ -192,13 +193,15 @@ HARC first needs a clear description of the AI role. An AI Agent is a research-c
 - building citations and bibliographies;
 - comparing versions.
 
-But the fact that AI can perform these kinds of work does not imply that the purpose, central problem, direction, and ultimate core responsibility of a research or creative project transfer to AI. What the project is trying to investigate, why it proceeds in a given direction, and which core claims are ultimately accepted must remain matters that the human author actually understands, navigates, and approves.
+But the fact that AI can perform these kinds of work does not imply that the purpose, central problem, direction, or position of ultimate responsibility in a research or creative project transfers to AI. What the project is trying to investigate, why it proceeds in a given direction, and which core claims are ultimately accepted must remain matters that the human author actually understands, navigates, and approves.
 
-For long-form work, HARC operationalizes this human responsibility primarily through the Layer 2 Framework. AI may assist in proposing, organizing, and expressing the framework, but the framework cannot be merely a summary that receives a blanket human sign-off. Framework Approval requires the human to form a clear and complete understanding of every substantive element actually represented in it and to review and confirm those elements item by item, including core theses, inferential relations and their logical dependencies, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
+Accordingly, “human responsibility” is not treated in this article as an unexplained abstract property. The more precise formulation is: **humans are the bearers of responsibility.** This matters throughout research and inquiry, and it becomes especially important when papers, books, reports, or other outputs place knowledge claims into public circulation. Extensive AI participation in the work cannot eliminate identifiable human bearers of responsibility for those public claims.
 
-Hardwig's discussion of epistemic dependence can help contextualize the fact that research practices already depend on external resources, other people's work, and mediated information (Hardwig, 1985). But HARC does not infer from this that AI should be treated as a cognitive subject structurally equivalent to a human expert. The more important question is how human understanding, judgment, authorization, and responsibility remain locatable, inspectable, and auditable when people use AI tools to generate, organize, or transform research material.
+For long-form work, HARC operationalizes this responsibility-bearing status primarily through the Layer 2 Framework. AI may assist in proposing, organizing, and expressing the framework, but the framework cannot be merely a summary that receives a blanket human sign-off. Framework Approval requires the human to form a clear and complete understanding of every substantive element actually represented in it and to review and confirm those elements item by item, including core theses, inferential relations and their logical dependencies, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
 
-HARC's responsibility model is therefore neither “humans must personally produce the whole text line by line” nor “sufficiently capable AI reduces human responsibility to a ceremonial approval.” Humans remain responsible for project purpose and direction, while the Approved Framework serves as the primary structural anchor of core intellectual responsibility. The concrete public version still requires Final Artifact Approval and remains subject to factual-accuracy, research-integrity, and venue requirements.
+Hardwig's discussion of epistemic dependence can help contextualize the fact that research practices already depend on external resources, other people's work, and mediated information (Hardwig, 1985). But HARC does not infer from this that AI should be treated as a cognitive subject structurally equivalent to a human expert, much less as the ultimate bearer of responsibility. The more important question is how human understanding, judgment, authorization, and responsibility-bearing status remain locatable, inspectable, and auditable when people use AI tools to generate, organize, or transform research material.
+
+HARC's responsibility model is therefore neither “humans must personally produce the whole text line by line” nor “sufficiently capable AI reduces human responsibility to a ceremonial approval.” Humans remain responsible for project purpose and direction and, as the bearers of responsibility, for the substantive content of the Approved Framework. The concrete public version still requires Final Artifact Approval and remains subject to factual-accuracy, research-integrity, and venue requirements.
 
 ---
 
@@ -370,17 +373,19 @@ Sixth, **AI capabilities continue to change**. The protocol must keep its logica
 
 ---
 
-## 15. Conclusion: from “AI writing for humans” to human governance of AI-expanded research capacity
+## 15. Conclusion: from “AI writing for humans” to humans governing AI-expanded research capacity as the bearers of responsibility
 
-Generative AI creates a new speed structure in research: AI tools can generate, combine, restate, organize, and explore far more material than humans can inspect line by line. If we continue to define a “real human author” as someone who personally typed every sentence, that concept no longer describes actual human–AI research practice. But if AI's ability to perform more work becomes a reason to transfer purpose, judgment, direction, and responsibility to the model as well, human authorship and research responsibility lose substantive content.
+Generative AI creates a new speed structure in research: AI tools can generate, combine, restate, organize, and explore far more material than humans can inspect line by line. If we continue to define a “real human author” as someone who personally typed every sentence, that concept no longer describes actual human–AI research practice. But if AI's ability to perform more work becomes a reason to transfer purpose, judgment, direction, and the position of ultimate responsibility to the model as well, human authorship and research responsibility lose substantive content.
 
-HARC proposes a different direction: **expand the executable and expressive capacity of research while making human purpose, authority, memory, evidence, framework confirmation, and ultimate responsibility explicit.**
+HARC proposes a different direction: **expand the executable and expressive capacity of research while making explicit that humans remain the bearers of responsibility, together with human purpose, authority, memory, evidence, framework confirmation, and final approval.**
 
 Under this model, an AI Agent used as a tool may perform or assist with extensive work, but the purpose, central problem, and direction of the research or creative project must be given and navigated by humans. A Working Framework may be developed with AI assistance, but it can become an Approved Framework only after the human has formed a clear understanding of every substantive element actually represented in it, reviewed those elements item by item, and explicitly confirmed them. Full text may then be extensively AI-expanded under that structure, but the expansion must remain faithful to the framework and pass the appropriate Final Artifact Approval before public release.
 
+Especially when research outputs enter the public knowledge space, the key question is not merely whether a human participated, but whether identifiable human bearers of responsibility remain answerable for the project's direction, core intellectual architecture, and concrete public version.
+
 The central methodological question in AI-era research therefore need not be framed as whether machines participated in thinking. It can be stated more directly:
 
-> **Can a research community clearly explain who supplied the project's purpose and direction, who understood and confirmed its core intellectual structure, which concrete work was performed or assisted by AI tools, which evidence constrained what, and whether intellectual continuity and human responsibility remain traceable after the Agent is replaced?**
+> **Can a research community clearly explain who supplied the project's purpose and direction, who understood and confirmed its core intellectual structure, which concrete work was performed or assisted by AI tools, which human subjects ultimately bear responsibility for the knowledge claims and public version, and whether those responsibility relations and the work's intellectual continuity remain traceable after the Agent is replaced?**
 
 HARC turns this question into an open-protocol problem that can be implemented, audited, tested, and iteratively improved.
 
