@@ -28,26 +28,26 @@
 
 ## C. Working Memory 状态
 
-### C1. 当前阶段与目标
+### C1. Current Focus
 - CURRENT_STAGE：
 - CURRENT_OBJECTIVE：
+- PRIMARY_BLOCKER：
+- IMMEDIATE_NEXT_ACTION：
 
-### C2. 当前工作
+### C2. Task Plan
 - ACTIVE_TASKS：
-- RECENTLY_COMPLETED：
 - NEXT_ACTIONS：
 - TODO / BACKLOG：
-
-### C3. 阻塞与待人类确认
 - BLOCKERS：
-- PENDING_HUMAN_DECISIONS：
-- Clarifications：
-- 当前必须询问人类的问题：
-
-### C4. Working Memory 健康
+- PENDING_HUMAN_DECISIONS / Clarifications：
 - SYNC_DEFECTS：
-- HANDOFF_NOTE：
-- Working Memory 是否明显过期：`YES / NO`
+
+### C3. Work Log
+- 默认是否跳过：`YES`
+- 本次是否因历史回顾/审计而读取：`YES / NO`
+- 如果读取，原因：
+
+> Work Log 不需要在普通 Onboarding Report 中复述其历史内容。
 
 ## D. Framework 状态
 
