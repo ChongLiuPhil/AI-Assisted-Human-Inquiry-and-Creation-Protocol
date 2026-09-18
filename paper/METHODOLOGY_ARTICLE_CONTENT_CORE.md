@@ -50,17 +50,19 @@ The HARC project is not intended as a purely abstract philosophical proposal. It
 
 Terms and stronger claims such as `generation–verification asymmetry`, `semantic version control`, `responsibility concentration`, and a specific empirical test suite may be useful AI-generated formulations, but they remain provisional unless explicitly accepted by the human author.
 
-## C11. High-impact uncertainty must be explicitly submitted for human clarification
+## C11. High-impact uncertainty should be managed as Clarification items inside Working Memory
 
-The article must explain HARC's Critical Clarification Layer: when AI has non-trivial uncertainty about authorial intent, core claims, key concepts, scope, inferential relations, section functions, or key terminology/translation that could materially change the argument structure, the AI should not guess. It should proactively register the issue in the Clarification Register and request human confirmation.
+The article must explain that Clarification is not an independent “Layer 1.5” between Layers 1 and 2. It is an item type inside Working Memory.
 
-Open clarifications are not human commitments. After human confirmation or correction, the result should be promoted into the Decision Log and appropriate Core, then propagated into the Working Framework and final artifact.
+When AI encounters non-trivial uncertainty about authorial intent, core claims, key concepts, scope, argument relations, section functions, or important terminology/translation that could materially change the argument structure, it should not guess. It should place the issue in the Working Memory Clarification queue and request human confirmation.
 
-This mechanism is especially important for core concepts in the author's primary language and their English correspondence, preventing translation or AI interpretation from hardening unconfirmed meaning into the article structure.
+Open clarifications are not durable human commitments. After human confirmation or correction, the result must be promoted through the Decision Log into the appropriate Long-Term Memory destination and then propagated through Framework and Artifact as applicable.
+
+This mechanism is especially important for key concepts in the author's primary language and their English correspondence.
 
 ## C12. Cross-agent handoff requires an explicit bootstrap entry and verifiable handshake
 
-The article should explain that storing state in a repository is not by itself sufficient to ensure correct takeover by a new AI Agent. A project also needs an explicit and discoverable zero-context bootstrap entry, a mandatory read order, and an Onboarding Report produced before substantive work to demonstrate that the Agent has correctly reconstructed human commitments, Clarification state, Framework state, Artifact state, and synchronization defects.
+The article should explain that repository storage alone does not guarantee correct takeover. A new Agent should first read Working Memory to identify current stage, objective, tasks, blockers, pending decisions, and next actions, then selectively retrieve authoritative state from the three Long-Term Memory layers.
 
 The mechanism does not assume every AI platform automatically reads the same filename. Instead, root-level entry files, an agent contract, a machine-readable manifest, and a human-copyable bootstrap prompt maximize cross-platform discoverability and make successful handoff observable and verifiable.
 
@@ -76,15 +78,31 @@ A more accurate architecture is:
 
 A model still needs relevant information temporarily available for an individual response, but it should retrieve the minimum necessary state on demand from latest canonical GitHub revisions according to the current task.
 
-The session retains only a minimal Repository Resolver: repository identity, manifest/context-interface paths, task route, read-latest-before-write, write-through, and cache-invalidation rules. Dynamic Blocking Clarifications, Framework, Artifact, and Core state should not remain as a second authoritative session copy.
+The session retains only a minimal Repository Resolver. Working Memory and all three Long-Term Memory layers remain in GitHub: Working Memory supplies resumable operational state, while Layers 1/2/3 supply durable research state. None should be maintained as a second authoritative chat copy.
 
 All state changes that should constrain future work write directly back to GitHub; after a write, older context copies become stale. Relevant latest revisions should be reconfirmed before high-impact judgments and writes.
 
 This makes GitHub the cross-agent memory and working store, while model context is only a temporary projection of repository state for the current task.
 
+## C14. The three Long-Term Research Memory layers should be distinguished from parallel Working Memory
+
+The article should explicitly distinguish:
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+from parallel:
+
+`Working Memory = current stage / goals / tasks / blockers / clarifications / TODO / handoff`
+
+The three layers describe durable intellectual and artifact state; Working Memory describes the current position in the work process.
+
+Layer 2 remains Long-Term Memory even though it is more revisable: it stores the current framework, core propositions, key concepts, and structure.
+
+Human-resolved Working Memory content must be promoted into the appropriate long-term layer, after which Working Memory retains only status and pointers.
+
 ## Current unresolved authorial decisions
 
-Operational state for high-impact unresolved issues is maintained in `docs/clarification-register.md`. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
+Current work state and high-impact unresolved issues are maintained in `docs/working-memory.zh-CN.md`. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
 
 ## Provenance correction
 
