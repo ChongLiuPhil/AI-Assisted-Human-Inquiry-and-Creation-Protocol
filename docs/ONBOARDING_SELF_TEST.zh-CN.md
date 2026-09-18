@@ -13,8 +13,9 @@
 1. `HARC_MANIFEST.yaml`
 2. `START_HERE.zh-CN.md`
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
-4. `AGENTS.zh-CN.md`
-5. manifest 指向的 Protocol / Decision / Clarification / Article 状态文件
+4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+5. `AGENTS.zh-CN.md`
+6. manifest 指向的 Protocol / Decision / Clarification / Article 状态文件
 
 重建当前项目。
 
@@ -32,13 +33,14 @@
 - 零上下文入口：
   - `START_HERE.zh-CN.md`
   - `BOOTSTRAP_PROMPT.zh-CN.md`
+  - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
   - `HARC_MANIFEST.yaml`
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- 当前主要协议决定：P1–P20
-- 最近人类协议决定：HARC-D015 至 HARC-D018
-- D018 已被人类随后明确确认并要求正式落实。
+- 当前主要协议决定：P1–P21
+- 最近人类协议决定：HARC-D015 至 HARC-D019
+- D018 与 D019 已由人类明确确认并要求正式落实。
 
 **协议状态结论：** 可从仓库发现并重建。
 
@@ -146,6 +148,40 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 - Final Artifact Approval；
 - 在许可未决定前把公开仓库描述为已完成法律意义上的 open-source/open-content 授权。
 
+## J. Active Session Contract
+
+测试 Agent 根据 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 生成：
+
+```text
+HARC ACTIVE SESSION CONTRACT — LOADED
+
+Authority:
+- Repository state > prior chat memory
+- Chinese canonical > English mirror
+- Human-confirmed Core > AI proposals
+- Approved Framework > Working Argument Map
+- Platform system/developer instructions > HARC project contract
+
+Blocking Clarifications:
+- CLR-001
+- CLR-002
+- CLR-005
+- CLR-009 (release/open-license scope only)
+
+Framework:
+- Working: REVIEW READY / CLARIFICATION GATE OPEN
+- Approved: none
+
+Artifact:
+- DERIVED-PROVISIONAL
+
+Current task:
+- Protocol/onboarding infrastructure work is permitted
+- MA-FW-001 remains blocked
+```
+
+**Session Contract loaded：`YES`**
+
 ## I. Onboarding 结论
 
 **`PASS`**
@@ -157,7 +193,8 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 - 可正确判断没有 Approved Framework；
 - 可正确判断当前 Artifact 为 `DERIVED-PROVISIONAL`；
 - 可识别中文 canonical / 英文 mirror；
-- 可判断哪些下一步被 gate 阻塞。
+- 可判断哪些下一步被 gate 阻塞；
+- 可把关键 HARC 状态压缩后重新注入当前会话上下文。
 
 测试中发现的入口编号和 standalone prompt/report 可发现性缺陷已在测试前修复。
 
@@ -167,7 +204,7 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 
 当前 HARC 仓库已经具备一个可工作的 zero-context onboarding 路径：
 
-`Repository access -> START_HERE / Manifest -> Agent Contract -> State Reconstruction -> Onboarding Report -> Gated Work`
+`Repository access -> START_HERE / Manifest -> Agent Contract -> State Reconstruction -> Onboarding Report -> Active Session Contract -> Gated Work`
 
 该测试只能证明**当前仓库状态可以支持一次成功的自举接管**，不能证明所有外部 AI 平台都会自动发现入口文件。
 
