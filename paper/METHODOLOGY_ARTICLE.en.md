@@ -131,7 +131,13 @@ For human core content:
 
 `Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-Working Memory is therefore not a fourth content layer. Resolved items leave active state; the authoritative answer is deposited into Long-Term Memory, while Working Memory retains only Decision IDs and destination pointers.
+Working Memory is therefore not a fourth content layer. It also need not be one monolithic document. HARC can separate it into three logical roles: **Current Focus** for the highest-priority immediate objective, **Task Plan** for dynamic tasks, TODOs, blockers, pending human decisions, and Clarifications, and **Work Log** for stage-level historical summaries primarily intended for later human review.
+
+This separation answers two different needs. Current Focus + Task Plan support seamless continuation after interruption; Work Log supports later human review of how the project and intellectual path changed. A replacement Agent therefore reads Current Focus and Task Plan by default rather than loading the entire Work Log. Completed tasks leave active Task Plan and receive high-level summaries in Work Log, while stable normative results are still promoted into the three Long-Term Memory layers.
+
+Work Log records auditable progress, expressed high-level reasons, and direction changes rather than hidden AI chain-of-thought or scratchpads. This preserves a readable long-term research history for the human while keeping AI operational context compact.
+
+Resolved Clarifications leave active state; the authoritative answer is deposited into Long-Term Memory, while Working Memory retains only necessary status and pointers.
 
 ### 4.5 Working Argument Map: the intermediate layer best suited to human–AI discussion
 
@@ -287,7 +293,7 @@ Working Memory and all three Long-Term Research Memory layers therefore remain i
 
 This does not mean that a model can reason with literally no context. Relevant information still has to become temporarily available during an inference. HARC changes the authority and lifecycle: **GitHub is the truth source; model context is a short-lived projection of repository state for the current task.**
 
-This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. HARC therefore keeps Working Memory short and current, keeps Layer 1 Cores and Layer 2 Frameworks compact, and lets detailed logs, older versions, evidence, and archives grow in historical storage for selective retrieval.
+This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. HARC therefore keeps Current Focus + Task Plan short and current and keeps Layer 1 Cores and Layer 2 Frameworks compact. Work Log may grow as a human-oriented historical chronicle while remaining outside default AI context; detailed older versions, evidence, and archives remain available through selective retrieval.
 
 The project thereby shifts from “depending on one enormous conversation” to “depending on recoverable explicit state.”
 
