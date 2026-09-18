@@ -220,3 +220,48 @@ Working Memory 被进一步拆分为三个逻辑功能：
 ## 当前日志边界
 
 本日志目前包含根据 Decision Log 和规范文件回填的高层历史摘要。后续应在阶段性里程碑形成时持续追加，而不是把聊天逐字转录进来。
+
+---
+
+## 2026-09-18 — 仓库级协作架构审计：从“规则完整”转向“复杂度治理”
+
+**性质：** PROTOCOL 路径下的 AI 维护审计；不产生新的 Human Protocol Decision。
+
+**本轮检查范围：**
+
+- 根目录 zero-context 启动入口；
+- Manifest / Context Interface 控制面；
+- AGENTS / README / Onboarding Handshake；
+- Working Memory；
+- 方法论文章治理入口；
+- 双语同步；
+- 历史 audit/self-test；
+- reusable project template；
+- open-source release readiness。
+
+**发现并直接修复的同步问题：**
+
+- README 复制了一套会漂移的 onboarding read order；已改为只指向 START_HERE / Manifest 的 authoritative routing；
+- README 复制了已经过时的 live Clarification Gate 状态；已改为只指向 Framework Status / Current Focus / Task Plan；
+- ONBOARDING_SELF_TEST 仍展示测试时的旧 blockers，容易被误读为 live state；已明确标记为 historical snapshot / live state superseded，并要求未来 self-test 记录 tested revision。
+
+**AI-PROPOSED、尚待人类决定的架构升级：**
+
+已写入 Task Plan 的 `WM-PROP-001..008`，包括：
+
+- 轻量化 onboarding；
+- Manifest / Context Interface 控制面职责分离与版本兼容；
+- 静态导航 / 动态状态彻底解耦；
+- Decision Log 可扩展索引；
+- 双语同步自动化；
+- 正式开放发布基础设施；
+- machine-verifiable conformance；
+- 模板去复制化。
+
+**总体判断：**
+
+HARC 当前主要问题不再是缺少治理规则，而是治理资产数量快速增长后产生的入口复杂度、重复状态、手工同步成本与 stale-state 风险。下一阶段应优先做 complexity governance，而不是继续增加平行说明文件。
+
+**规范状态：**
+
+上述架构升级仍为 `AI-PROPOSED`。除同步修复外，没有把任何新架构建议 Promotion 到 Protocol Core / Decision Log。
