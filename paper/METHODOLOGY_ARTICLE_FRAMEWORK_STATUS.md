@@ -18,7 +18,7 @@ The current map is aligned with the Article Content Core, HARC-D023, and HARC-D0
 
 Result: `PASS FOR HUMAN FRAMEWORK REVIEW`
 
-The Clarifications that previously blocked Framework Approval — `CLR-001 / CLR-002 / CLR-005` — have been human-resolved and promoted. There is currently no active blocking Clarification preventing overall human review of the framework.
+The Clarifications that previously blocked Framework Approval — `CLR-001 / CLR-002 / CLR-005` — have been human-resolved and promoted. `HARC-D025` repaired the dependency structure and clarified the semantics of overall approval when unresolved / AI-PROPOSED items remain. There is currently no active blocking Clarification or known structural-representation defect preventing overall human review of the framework.
 
 This is not Framework Approval itself.
 
@@ -39,7 +39,10 @@ Do not infer overall approval merely because:
 - blocking Clarifications were resolved;
 - individual claims or wording were accepted;
 - the framework is `REVIEW READY`;
+- the dependency repair or approval semantics were accepted;
 - discussion continues.
+
+If the human later gives an explicit overall `APPROVE` decision on the complete current framework, items still marked `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` are included in the Approved Framework only in their unresolved/provisional status; their still-unconfirmed substantive content is not thereby promoted.
 
 ## Current derived article
 
@@ -68,7 +71,7 @@ Do not perform the major structural rewrite before overall Framework Approval.
 ## Synchronization state
 
 - Founder commitments -> Article Content Core: `SYNC — HARC-D023 + HARC-D024 PROMOTED`
-- Article Content Core -> Working Framework: `SYNC / REVIEW READY`
+- Article Content Core -> Working Framework: `SYNC / REVIEW READY — HARC-D025 DEPENDENCY REPAIR APPLIED`
 - Working Framework -> current draft: `PARTIALLY SYNC — responsibility model synchronized; structural rewrite deferred pending human Framework Approval`
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17; further venue-specific verification required before submission`
 - Working Memory / Clarification Gate: `CLEARED FOR FRAMEWORK REVIEW — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`
