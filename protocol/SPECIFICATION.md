@@ -592,13 +592,14 @@ Future implementations MAY map the same canonical roles to other versioned colla
 
 HARC separates things that AI-assisted research often collapses:
 
-1. human intellectual intention;
-2. human presentation intention;
-3. AI operational representation;
-4. evidence constraints;
-5. approval state;
-6. derived expression;
-7. historical decisions.
+1. Layer 1 — Human Authorial Core;
+2. Layer 2 — Current Framework;
+3. Layer 3 — Derived Artifact;
+4. Working Memory in parallel with the three long-term layers;
+5. human presentation intention;
+6. evidence constraints;
+7. approval state;
+8. historical decisions.
 
 The protocol treats this separation as the basis for durable, auditable, human-governed AI-assisted research.
 
