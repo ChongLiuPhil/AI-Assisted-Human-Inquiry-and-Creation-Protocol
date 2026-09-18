@@ -8,6 +8,8 @@ harc:
   bootstrap:
     canonical: "START_HERE.zh-CN.md"
     mirror: "START_HERE.md"
+    bootstrap_prompt: "BOOTSTRAP_PROMPT.zh-CN.md"
+    onboarding_report_template: "ONBOARDING_REPORT_TEMPLATE.zh-CN.md"
     agent_contract:
       canonical: "AGENTS.zh-CN.md"
       mirror: "AGENTS.md"
@@ -15,6 +17,7 @@ harc:
   required_read_order:
     - "HARC_MANIFEST.yaml"
     - "START_HERE.zh-CN.md"
+    - "BOOTSTRAP_PROMPT.zh-CN.md"
     - "AGENTS.zh-CN.md"
     - "core/CONTENT_CORE.zh-CN.md"
     - "core/FORM_CORE.zh-CN.md"
