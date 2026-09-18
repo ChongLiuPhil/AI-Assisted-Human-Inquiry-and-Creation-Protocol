@@ -41,11 +41,11 @@ HARC 区分：
 
 已批准快照不可变。实质性修改必须产生新版本。
 
-## 2.5 Clarification Gate
+## 2.5 Working Memory / Clarification Gate
 
-Framework Approval 之前必须检查 `docs/clarification-register.zh-CN.md`。
+Framework Approval 之前必须检查 `docs/working-memory.zh-CN.md` 的 BLOCKERS、PENDING_HUMAN_DECISIONS 与 Clarifications。
 
-原则上，不应在仍存在会改变中心命题、关键概念、主要推论关系、范围或章节功能的 `BLOCKING` clarification 时批准 framework。
+原则上，不应在 Working Memory 中仍存在会改变中心命题、关键概念、主要推论关系、范围或章节功能的 `BLOCKING` item 时批准 framework。
 
 如果人类明确选择暂缓某个问题，则应把它标记为 `DEFERRED`，并在 framework 中显式保留该未决状态，而不是假装问题已经解决。
 
