@@ -4,55 +4,42 @@
 
 ## Purpose
 
-In addition to durable repository state, create a compressed **HARC Active Session Contract** in the current AI conversation.
+The current session loads only a minimal **Repository Resolver**, not a duplicate dynamic project state.
 
-This is not the platform's true system prompt. It is a project-level session operating contract.
+```text
+HARC REPOSITORY CONTEXT — ACTIVE
 
-Precedence:
+Source of truth:
+- GitHub repository
 
-`Platform system/developer rules > HARC Session Contract > ordinary task-level AI defaults`
+Control:
+- HARC_MANIFEST.yaml
+- HARC_CONTEXT_INTERFACE.yaml
 
-## Required action for a new Agent
+Policy:
+- repository-backed
+- selective retrieval
+- no authoritative session copy
+- read latest before high-impact action
+- read latest before write
+- invalidate touched cache after write
+- write-through to repository
 
-After repository onboarding, end the Onboarding Report with:
+Current task:
+- route: CONTENT / FORM / PROTOCOL
+- authoritative refs: [paths only]
+```
 
-`HARC ACTIVE SESSION CONTRACT — LOADED`
-
-including at least:
-
-- Repository state > prior chat memory;
-- Chinese canonical > English mirror;
-- Human-confirmed Core > AI proposals;
-- Approved Framework > Working Argument Map;
-- current Blocking Clarifications;
-- Working / Approved Framework state;
-- Artifact state;
-- current CONTENT / FORM / PROTOCOL task classification;
-- upstream-first propagation path;
-- currently blocked actions.
-
-Onboarding may be marked `PASS` only after this echo is complete.
+Dynamic Blocking Clarifications, Framework, Artifact, and Core state are fetched from latest canonical GitHub revisions when needed.
 
 ## Context Refresh
 
-Output a short `HARC CONTEXT REFRESH` after:
+`HARC CONTEXT REFRESH` means reread manifest/context-interface, resolve current task dependencies, fresh-fetch them, discard stale cache, and continue. It does not copy the whole project state into chat.
 
-- resolution of a Blocking Clarification;
-- substantive Core changes;
-- creation of a new Approved Framework;
-- start of large-scale Artifact expansion;
-- Final Artifact Review;
-- suspected loss of earlier HARC state from active context.
+## Write rule
 
-If context is lost, reread the manifest and canonical state rather than guessing from memory.
+After a canonical write, older context excerpts are immediately `STALE`. Refetch if later reasoning still depends on them.
 
-## Prohibited claims
+## Principle
 
-Do not claim that this file:
-
-- became the platform's true system prompt;
-- changed model weights;
-- permanently changed platform memory;
-- will automatically persist into a new conversation.
-
-HARC requires only that the compressed contract be explicitly written back into the visible active conversation context.
+> **The session retains how to find memory, not another copy of memory.**
