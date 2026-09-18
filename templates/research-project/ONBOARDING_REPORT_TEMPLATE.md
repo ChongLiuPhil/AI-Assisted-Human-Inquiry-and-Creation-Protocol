@@ -16,16 +16,23 @@
 - recent important decisions:
 
 ## C. Working Memory
+### C1. Current Focus
 - CURRENT_STAGE:
 - CURRENT_OBJECTIVE:
+- PRIMARY_BLOCKER:
+- IMMEDIATE_NEXT_ACTION:
+
+### C2. Task Plan
 - ACTIVE_TASKS:
-- RECENTLY_COMPLETED:
 - NEXT_ACTIONS:
+- TODO / BACKLOG:
 - BLOCKERS:
 - PENDING_HUMAN_DECISIONS / Clarifications:
-- TODO / BACKLOG:
 - SYNC_DEFECTS:
-- HANDOFF_NOTE:
+
+### C3. Work Log
+- skipped by default: `YES`
+- read for historical review/audit in this onboarding: `YES / NO`
 
 ## D. Framework
 - Working Framework:
