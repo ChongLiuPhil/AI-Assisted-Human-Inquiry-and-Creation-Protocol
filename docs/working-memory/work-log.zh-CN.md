@@ -217,6 +217,27 @@ Working Memory 被进一步拆分为三个逻辑功能：
 
 ---
 
+## 2026-09-18 — HARC-D025 — Framework 依赖修复与未决项批准语义
+
+**对应：** HARC-D025。
+
+**人类确认：**
+
+- 修复方法论 Working Framework 的 T1–T13 依赖图，使后加入的 Working Memory、zero-context onboarding、repository-backed context 等命题进入正确的治理/实现关系；
+- 将 T3 dependency label 同步为“AI 工具工作分担 / 人类责任主体”；
+- 明确整体 Framework Approval 可以包含显式 unresolved / AI-PROPOSED / NON-BLOCKING 项目，但批准的是它们作为未决项目的架构位置、范围和处理方式，不是其尚未确认的实质内容；
+- 未决 AI 提议不会因整体 Framework Approval 自动 Promotion 为人类观点；
+- 本次确认不等于整体 Framework Approval，不创建 `MA-FW-001`。
+
+**执行结果：**
+
+- Working Argument Map 中英文 dependency graph 已修复；
+- Framework Approval protocol 已加入未决项批准语义；
+- Framework Status、Current Focus、Task Plan 已同步；
+- 当前 gate 仍为 `WAITING-HUMAN: overall Framework Approval decision`。
+
+---
+
 ## 当前日志边界
 
 本日志目前包含根据 Decision Log 和规范文件回填的高层历史摘要。后续应在阶段性里程碑形成时持续追加，而不是把聊天逐字转录进来。
