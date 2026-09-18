@@ -1,5 +1,7 @@
 # Three-Cycle Review-and-Repair Audit
 
+> **Language:** Chinese canonical: `THREE_CYCLE_REPAIR_AUDIT.zh-CN.md`; this English file is the synchronized mirror.
+
 **Date:** 2026-09-17  
 **Scope:** integration of the founder's stated HARC ideas plus the requirement that HARC itself produce a methodology article.  
 **Interpretation:** each cycle is `review -> identify defects -> repair/implement -> verify repair`.
