@@ -126,17 +126,24 @@ Each entry SHOULD include identifier, date, source, classification, decision, af
 
 Current cores may be rewritten to represent active state; the Decision Log preserves historical continuity.
 
-### 5.4 Working Memory — `docs/working-memory.zh-CN.md`
+### 5.4 Working Memory Area
 
-Working Memory is current operational state parallel to the three Long-Term Research Memory layers. It is not Layer 1.5.
+Working Memory is parallel to the three Long-Term Research Memory layers and specifies **logical functions**, not one mandatory physical file.
 
-It MUST let a replacement human collaborator or AI Agent quickly identify CURRENT_STAGE, CURRENT_OBJECTIVE, ACTIVE_TASKS, RECENTLY_COMPLETED, NEXT_ACTIONS, TODO/BACKLOG, BLOCKERS, PENDING_HUMAN_DECISIONS, Clarifications, SYNC_DEFECTS, and HANDOFF_NOTE.
+A project MUST provide or equivalently implement:
 
-Clarification is an item type inside Working Memory. High-impact uncertainty that could materially alter core claims, key concepts, scope, major inferential relations, section functions, important terminology/translation, or Framework Approval MUST become a Clarification item rather than being silently guessed.
+- **Working Memory Index / Resolver** — maps the components;
+- **Current Focus** — highest-priority immediate objective, current stage, primary blocker, and immediate next action;
+- **Task Plan** — active tasks, next actions, TODO/backlog, blockers, pending human decisions, Clarifications, and sync defects;
+- **Work Log** — a stage-level historical chronicle primarily for human retrospective review.
+
+A project MAY map several roles to one file or split them across multiple files. The Manifest MUST state the actual mapping.
+
+Clarification is an item type inside Task Plan / Working Memory. High-impact uncertainty that could alter core claims, key concepts, scope, major inferential relations, section functions, important terminology/translation, or Framework Approval MUST become a Clarification item rather than being silently guessed.
 
 Open Clarifications MUST NOT be treated as human commitments.
 
-After human resolution, perform Promotion:
+After human resolution:
 
 `Working Memory -> human resolution -> Decision Log -> appropriate Long-Term Memory destination`
 
@@ -144,9 +151,11 @@ For human core content:
 
 `Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-After Promotion, mark the Working Memory item `RESOLVED / PROMOTED`, record Decision ID and destination paths, and remove it from the active queue.
+Completed tasks leave the active Task Plan and receive a high-level historical summary in Work Log; if they create durable normative results, Promotion also occurs.
 
-See `protocol/WORKING_MEMORY.md` and the clarification-specific workflow in `protocol/CLARIFICATION_REGISTER.md`.
+Work Log MUST NOT store hidden AI chain-of-thought/scratchpads, MUST NOT replace current state, and SHOULD NOT be default required context for new-Agent onboarding.
+
+See `protocol/WORKING_MEMORY.md`.
 
 ### 5.5 Working Argument Map — `docs/argument-map.md`
 
@@ -438,7 +447,7 @@ A project SHOULD provide at repository root:
 - root `AGENTS.zh-CN.md` / English mirror;
 - a discoverable Onboarding Handshake specification.
 
-Before substantive work, a new AI Agent MUST read the control plane and Working Memory, then SHOULD output a HARC Onboarding Report covering current stage, objective, active tasks, recently completed work, next actions, blockers, pending human decisions/clarifications, Framework/Artifact state, synchronization defects, and permitted next action. The Onboarding Report MUST confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the access kernel; dynamic Blocking Clarifications, Framework, Artifact, and Core state must still be retrieved on demand from latest canonical GitHub revisions.
+Before substantive work, a new AI Agent MUST read the control plane, Working Memory Index, Current Focus, and Task Plan, then SHOULD output a HARC Onboarding Report covering the highest-priority objective, primary blocker, immediate next action, active tasks, next actions, blockers, pending human decisions/Clarifications, Framework/Artifact state, synchronization defects, and permitted next action. Work Log is skipped by default. The Onboarding Report MUST confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the access kernel; dynamic Blocking Clarifications, Framework, Artifact, and Core state must still be retrieved on demand from latest canonical GitHub revisions.
 
 If the Agent cannot produce this report from repository state, the project has an onboarding/persistence defect.
 
@@ -446,13 +455,17 @@ If the Agent cannot produce this report from repository state, the project has a
 
 A new AI Agent SHOULD be able to continue normal project work by reading, at minimum:
 
-1. project `AGENTS.md`;
-2. Content Core;
-3. Form Core;
-4. recent Decision Log entries;
-5. Working Argument Map;
-6. Framework Status and latest Approved Framework;
-7. relevant current artifact and evidence.
+1. `START_HERE.zh-CN.md`, `HARC_MANIFEST.yaml`, and `HARC_CONTEXT_INTERFACE.yaml`;
+2. project `AGENTS.zh-CN.md`;
+3. Working Memory Index;
+4. Current Focus;
+5. Task Plan;
+6. task-relevant Layer 1 Core / Decision Log;
+7. task-relevant Layer 2 Framework Status / Working or Approved Framework;
+8. task-relevant Layer 3 Artifact;
+9. relevant Evidence.
+
+Work Log is read only when the human requests historical review, during dedicated audit/change reconstruction, or when current state conflicts with history.
 
 A project SHOULD record the HARC version/tag/commit it adopted so later upstream protocol changes are not silently treated as already accepted governance.
 
@@ -487,8 +500,10 @@ At a stable checkpoint, all of the following SHOULD be true:
 7. known evidence conflicts are visible;
 8. important decisions are not stranded only in chat history;
 9. onboarding documents point to current canonical files;
-10. all current blockers, pending human decisions, and Clarifications are explicitly visible in Working Memory rather than existing only in chat or private AI judgment;
-11. resolved Working Memory items have been promoted into appropriate long-term memory and no longer serve as the normative answer.
+10. Current Focus explicitly states the highest-priority objective and immediate next action;
+11. all current blockers, pending human decisions, and Clarifications are explicitly visible in Task Plan rather than existing only in chat or private AI judgment;
+12. completed tasks leave active Task Plan and are summarized into Work Log at an appropriate granularity;
+13. stable resolved Working Memory results have been promoted into appropriate Long-Term Memory, and Work Log does not serve as the normative answer.
 
 Failure of any condition creates an explicit synchronization defect.
 
@@ -566,6 +581,12 @@ core/DECISION_LOG.zh-CN.md
 core/DECISION_LOG.md
 docs/working-memory.zh-CN.md
 docs/working-memory.md
+docs/working-memory/current-focus.zh-CN.md
+docs/working-memory/current-focus.md
+docs/working-memory/task-plan.zh-CN.md
+docs/working-memory/task-plan.md
+docs/working-memory/work-log.zh-CN.md
+docs/working-memory/work-log.md
 docs/argument-map.zh-CN.md
 docs/argument-map.md
 docs/framework-status.zh-CN.md
@@ -573,6 +594,8 @@ docs/framework-status.md
 ```
 
 The Chinese files are canonical and the English files are synchronized mirrors.
+
+A single-file implementation may map multiple Working Memory roles to the same path; the default template uses the split layout.
 
 The legacy clarification-register path may be retained as a compatibility pointer but is not required as an active state file.
 
