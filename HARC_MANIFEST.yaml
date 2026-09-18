@@ -36,6 +36,17 @@ harc:
     bilingual_sync: "protocol/BILINGUAL_SYNC.zh-CN.md"
 
   methodology_article:
+    required_read_order:
+      - "paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md"
+      - "paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md"
+      - "docs/clarification-register.zh-CN.md"
+      - "paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md"
+      - "LATEST_APPROVED_FRAMEWORK_IF_ANY"
+      - "paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md"
+      - "evidence/METHODOLOGY_SOURCES.zh-CN.md"
+      - "paper/methodology-references.bib"
+      - "paper/METHODOLOGY_ARTICLE.zh-CN.md"
+      - "paper/METHODOLOGY_ARTICLE.en.md"
     content_core: "paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md"
     form_core: "paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md"
     clarification_register: "docs/clarification-register.zh-CN.md"
