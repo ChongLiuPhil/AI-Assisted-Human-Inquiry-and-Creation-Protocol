@@ -100,9 +100,25 @@ Layer 2 remains Long-Term Memory even though it is more revisable: it stores the
 
 Human-resolved Working Memory content must be promoted into the appropriate long-term layer, after which Working Memory retains only status and pointers.
 
+## C15. Working Memory should separate operational resume state from human retrospective history
+
+The article should explain that Working Memory need not be one fixed document. It may be split into logical roles according to engineering needs.
+
+At minimum distinguish:
+
+- **Current Focus** — the highest-priority immediate objective and next action;
+- **Task Plan** — dynamic tasks, TODOs, blockers, pending human decisions, Clarifications, and next actions;
+- **Work Log** — a stage-level historical chronicle primarily for later human review.
+
+Current Focus + Task Plan form the operational resume state required for cross-Agent takeover. Work Log instead preserves how the project reached its current position, how important directions changed, and which task batches were completed.
+
+Work Log should not be default required context for ordinary AI onboarding and should not store hidden model chain-of-thought. Completed tasks should leave active Task Plan and receive appropriately granular historical summaries in Work Log; stable normative results still require Promotion into the appropriate Long-Term Memory destination.
+
+This design separates “seamless continuation of work” from “later human review of the development of the project and the author's thought”.
+
 ## Current unresolved authorial decisions
 
-Current work state and high-impact unresolved issues are maintained in `docs/working-memory.zh-CN.md`. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
+Current resume state is maintained through Working Memory Index, Current Focus, and Task Plan; active high-impact unresolved issues live in `docs/working-memory/task-plan.zh-CN.md`. Work Log primarily serves human retrospective review. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
 
 ## Provenance correction
 
