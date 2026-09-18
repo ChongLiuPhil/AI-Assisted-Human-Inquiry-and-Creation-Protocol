@@ -1,8 +1,10 @@
 # Methodology Article — Framework Status
 
+> Chinese `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md` is canonical; this English file is its synchronized mirror.
+
 ## Current working framework
 
-Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`
+Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` (canonical) / `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md` (English mirror)
 
 Status: `WORKING-FRAMEWORK — REVIEW READY`
 
@@ -24,7 +26,8 @@ Create `MA-FW-001` only after the human author explicitly approves the methodolo
 
 ## Current derived article
 
-Source: `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+Chinese canonical source: `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+English synchronized mirror: `paper/METHODOLOGY_ARTICLE.en.md`
 
 Status: `DERIVED-PROVISIONAL`
 
@@ -34,12 +37,12 @@ Because the review-ready Working Framework has now been reorganized and provenan
 
 ## Canonical upstream sources
 
-- `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.md`
-- `paper/METHODOLOGY_ARTICLE_FORM_CORE.md`
-- `core/PROTOCOL_CORE.md`
-- `core/DECISION_LOG.md`
-- `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`
-- `evidence/METHODOLOGY_SOURCES.md`
+- `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
+- `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
+- `core/PROTOCOL_CORE.zh-CN.md`
+- `core/DECISION_LOG.zh-CN.md`
+- `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+- `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
 ## Synchronization state
 
@@ -49,6 +52,7 @@ Because the review-ready Working Framework has now been reorganized and provenan
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17; further venue-specific verification required before submission`
 - Framework approval: `NOT COMPLETED`
 - Final artifact approval: `NOT COMPLETED`
+- Chinese/English article pair: `BILINGUAL MIRROR REQUIRED`
 
 ## Human decisions still required before `MA-FW-001`
 
