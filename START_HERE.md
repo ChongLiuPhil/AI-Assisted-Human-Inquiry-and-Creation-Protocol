@@ -17,20 +17,18 @@ The durable truth source is the repository, not a previous agent's memory.
 Read Chinese canonical files in this order; use English only for parity checking:
 
 1. `HARC_MANIFEST.yaml`
-2. `BOOTSTRAP_PROMPT.zh-CN.md`
-3. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
-4. `AGENTS.zh-CN.md`
-5. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-6. `core/PROTOCOL_CORE.zh-CN.md`
-7. recent `core/DECISION_LOG.zh-CN.md`
-8. current project Content Core / Form Core
-9. `docs/clarification-register.zh-CN.md`
-10. Framework Status
-11. latest Approved Framework, if any
-12. Working Argument Map
-13. evidence directly relevant to the task
-14. derived artifact directly relevant to the task
-15. corresponding English mirrors for bilingual parity
+2. `HARC_CONTEXT_INTERFACE.yaml`
+3. `BOOTSTRAP_PROMPT.zh-CN.md`
+4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+5. `AGENTS.zh-CN.md`
+6. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
+7. `core/PROTOCOL_CORE.zh-CN.md`
+8. recent `core/DECISION_LOG.zh-CN.md`
+9. task-relevant Content/Form/Protocol Core on demand
+10. `docs/clarification-register.zh-CN.md` when relevant
+11. Framework Status / Approved Framework / Working Argument Map when relevant
+12. task-relevant evidence / artifact
+13. corresponding English mirrors only for parity checking
 
 For the HARC methodology article, exact paths are listed in `HARC_MANIFEST.yaml`.
 
@@ -50,7 +48,7 @@ Before the onboarding handshake is complete, do not:
 
 ## 3. Onboarding handshake: output a HARC Onboarding Report first
 
-After the required reading, output the HARC Onboarding Report. Recommended template: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must also follow `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and echo a `HARC ACTIVE SESSION CONTRACT — LOADED` block so the key rules re-enter the active conversation context.
+After the required reading, output the HARC Onboarding Report. Recommended template: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must also follow `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the repository-access kernel, not a duplicate dynamic project state. The report summary is for human verification only; later work must refetch latest canonical repository state on demand.
 
 ### A. Protocol state
 
