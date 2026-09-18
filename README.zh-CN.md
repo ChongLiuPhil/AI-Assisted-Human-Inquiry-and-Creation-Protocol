@@ -20,8 +20,9 @@
 2. [`BOOTSTRAP_PROMPT.zh-CN.md`](BOOTSTRAP_PROMPT.zh-CN.md)
 3. [`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`](SESSION_CONTEXT_BOOTSTRAP.zh-CN.md)
 4. `HARC_MANIFEST.yaml`
-5. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
-6. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
+5. `HARC_CONTEXT_INTERFACE.yaml`
+6. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+7. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
 
 然后按照启动文件的 mandatory read order 重建项目状态，并在做任何实质性修改前向人类提交一份 **HARC Onboarding Report**。
 
@@ -29,7 +30,7 @@
 
 这使“Agent 是否真正理解当前项目状态”变成一个可观察、可检查的握手步骤，而不是假定。
 
-在握手之后，`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 要求 Agent 把压缩后的 HARC Active Session Contract 回显到自己的当前回复中。仓库持久层负责保存，当前会话层负责重新提高规则显著性。
+在握手之后，`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 只加载一个最小 Repository Resolver；`HARC_CONTEXT_INTERFACE.yaml` 则规定按需读取、revision freshness、write-through 与 cache invalidation。动态项目状态不复制成第二份聊天真值源。
 
 ## 两类项目输出
 
@@ -90,6 +91,7 @@ project/
 ├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 ├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
+├── HARC_CONTEXT_INTERFACE.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
