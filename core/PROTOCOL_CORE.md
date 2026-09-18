@@ -164,3 +164,17 @@ HARC v0.1 focuses on:
 for sustained research and intellectual development.
 
 Broader platform support is outside the initial scope.
+
+## P18. Chinese is the canonical language; English is a synchronized mirror
+
+All substantive HARC project documents should exist in Chinese and English.
+
+The Chinese version is the **canonical source of meaning and editing authority**. Human review, correction, confirmation, and substantive editing are based on the Chinese version unless the human explicitly decides otherwise for a specific artifact.
+
+The English version is a **synchronized translation mirror**. Any substantive edit to the Chinese canonical version must be propagated to the English counterpart in the same work cycle. An edit is not complete while the two language versions are materially out of sync.
+
+If the Chinese and English versions conflict, the Chinese version governs and the English version must be repaired.
+
+New substantive Markdown documents should be created as bilingual pairs from the beginning. Machine-neutral files such as BibTeX, schemas, source data, or code need not be duplicated merely for language, but their human-readable documentation should be bilingual.
+
+The repository should make language status and canonical precedence discoverable to new AI agents.
