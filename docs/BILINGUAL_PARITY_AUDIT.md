@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **100**
-- Chinese canonical files (`*.zh-CN.md`): **50**
-- English mirrors: **50**
+- total Markdown files: **102**
+- Chinese canonical files (`*.zh-CN.md`): **51**
+- English mirrors: **51**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
@@ -165,9 +165,28 @@ Added and bilingualized:
 - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror;
 - `templates/research-project/SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror.
 
-The mechanism requires a replacement Agent to echo `HARC ACTIVE SESSION CONTRACT — LOADED` after repository onboarding, reinjecting key project invariants and current state into the active conversation context. It explicitly does not impersonate the platform's true system prompt.
+The mechanism was later narrowed by HARC-D020 into a minimal Repository Resolver: the session keeps only the control kernel for accessing GitHub and no longer duplicates dynamic project state.
 
-The latest recursive scan reports **100 Markdown files = 50 Chinese canonical + 50 English mirrors, with 0 missing counterparts**.
+### 3.10 Repository-Backed Context Interface
+
+Added and bilingualized:
+
+- `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` / English mirror.
+
+Added language-neutral machine interfaces:
+
+- `HARC_CONTEXT_INTERFACE.yaml`;
+- `templates/research-project/HARC_CONTEXT_INTERFACE.yaml`.
+
+HARC-D020 formalizes:
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+Session Context Bootstrap is now a Repository Resolver; dynamic Blocking Clarifications, Framework, Artifact, and Core state must be retrieved on demand from latest canonical GitHub revisions.
+
+The latest recursive scan reports **102 Markdown files = 51 Chinese canonical + 51 English mirrors, with 0 missing counterparts**.
 
 ## 4. High-risk semantic mismatches repaired
 
