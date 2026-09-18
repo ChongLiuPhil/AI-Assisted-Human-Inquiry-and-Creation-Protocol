@@ -143,19 +143,21 @@ HARC has two mutually supporting outputs:
 1. an executable and reusable open collaboration protocol, including specifications, templates, states, and governance rules;
 2. a methodology article explaining the conceptual basis of the protocol and developing its significance for research practice in the AI era.
 
-The article should address, among other themes, human responsibility for research purpose and direction, the scope of work that AI tools may perform or assist, human intellectual responsibility at the framework layer, AI-assisted expansion, epistemic dependence, persistent external research memory, and the conditions under which human accountability remains meaningful.
+The article should address, among other themes, humans as the bearers of responsibility in research and inquiry, human authorization of research purpose and direction, the scope of work that AI tools may perform or assist, human intellectual responsibility at the framework layer, responsibility for public dissemination of knowledge, AI-assisted expansion, epistemic dependence, persistent external research memory, and the conditions under which human accountability remains meaningful.
 
 The article is a scholarly derivative of the protocol and should itself be developed under HARC-style framework control rather than treated as an ungoverned explanatory essay.
 
-## P17. AI is a collaboration tool; project purpose, direction, and core intellectual responsibility remain human
+## P17. AI is a collaboration tool; humans remain the bearers of responsibility for project purpose and direction
 
-HARC treats an AI Agent as a research-collaboration tool, not as a participant that must be granted human-like cognitive-subject status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
+HARC treats an AI Agent as a research-collaboration tool, not as a participant that must be granted human-like cognitive-subject status or ultimate responsibility-bearing status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
 
-The purpose, central problem, and direction of a research or creative project should originate with humans and remain under human initiation, navigation, or approval. AI capability to perform substantial work does not transfer the project’s purpose, core judgments, or ultimate core responsibility to AI.
+The purpose, central problem, and direction of a research or creative project should originate with humans and remain under human initiation, navigation, or approval. AI capability to perform substantial work does not transfer the project's purpose, core judgments, or the position of ultimate responsibility to AI.
 
-For long-form work, this human responsibility is operationalized primarily through the Layer 2 Current / Approved Framework: the human author must clearly understand, carefully review, and explicitly confirm the core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and specific formulations actually represented there. AI may help propose, organize, or express the framework, but it cannot replace human authorization of the project’s direction and intellectual architecture.
+Accordingly, HARC's shorthand “human responsibility” should be understood more precisely as follows: **in human–AI collaborative research and inquiry, humans remain the bearers of responsibility.** Especially when research results, arguments, or knowledge claims enter public circulation through papers, books, reports, websites, or other forms, the ultimate bearers of responsibility must remain human.
 
-Framework Approval does not remove Final Artifact Approval; the concrete public version must still satisfy applicable scholarly, institutional, publisher, venue, and research-integrity requirements.
+For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Current / Approved Framework: the human author must clearly understand, carefully review, and explicitly confirm the core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and specific formulations actually represented there. AI may help propose, organize, or express the framework, but it cannot replace human authorization of the project's direction and intellectual architecture or become the ultimate bearer of responsibility for it.
+
+Framework Approval does not remove Final Artifact Approval; the concrete public version must still receive final human review and approval by human bearers of responsibility under applicable scholarly, institutional, publisher, venue, and research-integrity requirements.
 
 ## P18. Chinese is the canonical language; English is a synchronized mirror
 
