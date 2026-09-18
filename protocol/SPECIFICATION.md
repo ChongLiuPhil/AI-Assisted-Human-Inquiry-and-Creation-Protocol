@@ -23,7 +23,7 @@ The protocol is designed to preserve:
 - scalable project memory;
 - cross-agent continuity;
 - explicit approval states;
-- meaningful human cognitive and epistemic responsibility.
+- meaningful human purpose-setting, understanding, judgment, confirmation, and responsibility.
 
 HARC v0.2 assumes GitHub as the persistent repository substrate. Future implementations may map the same logical roles to other systems.
 
@@ -53,11 +53,13 @@ Important project state MUST be externalized into explicit, version-controlled r
 
 The Human Author supplies, revises, or confirms substantive intellectual commitments and presentation intentions.
 
-The Human Author MAY delegate extensive search, synthesis, structuring, drafting, editing, formalization, checking, and formatting to AI agents.
+The purpose, central problem, and direction of a research or creative project MUST originate with the Human Author or be explicitly authorized by the Human Author; the human retains core responsibility for the resulting work.
 
-Delegation of cognitive labor MUST NOT be treated as automatic delegation of epistemic responsibility.
+The Human Author MAY use AI Agents as tools to perform or assist with extensive search, synthesis, structuring, drafting, editing, formalization, checking, and formatting. This division of work MUST NOT be treated as a transfer of project purpose, core judgment, framework authorization, or ultimate core responsibility.
 
 ### 4.2 AI Agent
+
+The AI Agent is a collaboration tool. Normative HARC language SHOULD NOT characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as protocol terminology; it should identify the concrete work AI performs or assists.
 
 The AI Agent MAY:
 
@@ -183,6 +185,8 @@ It SHOULD remain substantially shorter than the full artifact.
 ### 5.6 Approved Framework Snapshots — `docs/frameworks/FW-xxx.md`
 
 An Approved Framework Snapshot is created only after explicit human review and confirmation.
+
+Framework Approval requires the Human Author to clearly understand, review item by item, and explicitly confirm every substantive element actually represented in the proposed framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework. AI may assist in creating the representation, but it cannot replace human authorization of the project’s direction and intellectual architecture.
 
 A snapshot MUST NOT be silently modified after approval.
 
