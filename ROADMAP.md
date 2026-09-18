@@ -16,7 +16,7 @@
 - [x] Publish reusable manual project templates.
 - [x] Publish conceptual white paper.
 
-## v0.2 — Responsibility model, repair discipline, and methodology article
+## v0.2 — Responsibility model, repair discipline, methodology article, and bilingual governance
 
 - [x] Distinguish framework-level defects from derived-expansion defects.
 - [x] Define reusable form-profile inheritance across author / artifact type / project.
@@ -27,6 +27,9 @@
 - [x] Create a first complete Chinese methodology-article draft.
 - [x] Add methodology-article evidence/source notes.
 - [x] Add methodology-article BibTeX source file.
+- [x] Define Chinese-canonical / English-mirror bilingual governance.
+- [x] Create a synchronized English mirror of the methodology article.
+- [ ] Complete bilingual migration and parity audit of legacy documentation and all templates.
 - [ ] Human review and approval of the methodology article Working Framework.
 - [ ] Create first Approved Framework snapshot for the methodology article.
 - [ ] Decide target publication venue / disciplinary positioning.
@@ -42,6 +45,7 @@
 - [ ] Define framework diff conventions.
 - [ ] Define a HARC conformance-test suite.
 - [ ] Define a cross-agent handoff benchmark.
+- [ ] Define an automated bilingual parity check.
 
 ## v0.4 — Automation
 
@@ -52,6 +56,7 @@
 - [ ] Automatic archive/index support for large decision logs.
 - [ ] Optional claim-to-framework traceability annotations.
 - [ ] Automated check for broken references among canonical files.
+- [ ] Automated detection of Chinese-canonical / English-mirror drift.
 
 ## v0.5 — Multi-agent / multi-human governance
 
@@ -71,3 +76,4 @@
 - [ ] Compare GitHub-centered implementation with local-first or other versioned backends.
 - [ ] Examine relationships among HARC, scholarly authorship norms, provenance systems, extended/distributed cognition, automation reliance, and human intellectual agency.
 - [ ] Develop operational measures for framework fidelity and semantic drift.
+- [ ] Study semantic drift introduced by bilingual canonical/mirror translation governance.
