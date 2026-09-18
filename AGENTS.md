@@ -8,8 +8,9 @@ Any AI Agent taking over this repository from zero context must, before substant
 
 1. `START_HERE.zh-CN.md`
 2. `HARC_MANIFEST.yaml`
+3. `BOOTSTRAP_PROMPT.zh-CN.md`
 
-Then follow the mandatory read order and output a **HARC Onboarding Report** before large-scale structural edits, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
+Then follow the mandatory read order and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a **HARC Onboarding Report** before large-scale structural edits, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
 
 ## 1. Do not depend on chat memory
 
