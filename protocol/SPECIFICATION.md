@@ -126,7 +126,25 @@ Each entry SHOULD include identifier, date, source, classification, decision, af
 
 Current cores may be rewritten to represent active state; the Decision Log preserves historical continuity.
 
-### 5.4 Working Argument Map — `docs/argument-map.md`
+### 5.4 Critical Clarification Register — `docs/clarification-register.md`
+
+The Critical Clarification Register is Layer 1.5 bridge state for **high-impact uncertainty not yet resolved by the human**.
+
+It MUST capture uncertainties that, if guessed by the AI, could materially alter core claims, key concepts, scope, major inferential relations, section functions, important terminology/translation, Framework Approval, or long-term project continuity.
+
+Important entries SHOULD include identifier, status, `BLOCKING / NON-BLOCKING` severity, category, uncertain point, candidate interpretations, impact, affected files/claims/sections, any explicitly `AI-PROPOSED` recommendation, the question for the human, human resolution, and propagation targets.
+
+Open clarifications MUST NOT be treated as human commitments.
+
+After human resolution, the Agent MUST perform Resolution Promotion:
+
+`Human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+
+Resolved entries may remain as audit traces, but the normative answer must be promoted into the appropriate Core.
+
+See `protocol/CLARIFICATION_REGISTER.md`.
+
+### 5.5 Working Argument Map — `docs/argument-map.md`
 
 The Working Argument Map is the primary operational discussion interface for long-form intellectual structure.
 
@@ -149,7 +167,7 @@ It SHOULD expose:
 
 It SHOULD remain substantially shorter than the full artifact.
 
-### 5.5 Approved Framework Snapshots — `docs/frameworks/FW-xxx.md`
+### 5.6 Approved Framework Snapshots — `docs/frameworks/FW-xxx.md`
 
 An Approved Framework Snapshot is created only after explicit human review and confirmation.
 
@@ -157,7 +175,7 @@ A snapshot MUST NOT be silently modified after approval.
 
 Material intellectual change MUST create a new framework version.
 
-### 5.6 Framework Status — `docs/framework-status.md`
+### 5.7 Framework Status — `docs/framework-status.md`
 
 This file SHOULD state:
 
@@ -167,13 +185,13 @@ This file SHOULD state:
 - unresolved synchronization defects;
 - final artifact approval status.
 
-### 5.7 Evidence Layer — `evidence/`
+### 5.8 Evidence Layer — `evidence/`
 
 Evidence files MAY include literature notes, source checks, datasets, calculations, formal derivations, empirical notebooks, and source inventories.
 
 Evidence constrains what can responsibly be claimed but MUST NOT silently rewrite human intention.
 
-### 5.8 Derived Artifact
+### 5.9 Derived Artifact
 
 The paper, book, article, report, presentation, or other output is a derived expression.
 
