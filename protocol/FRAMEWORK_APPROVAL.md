@@ -50,7 +50,16 @@ An approved snapshot is immutable. Material change requires a new version.
 
 Before Framework Approval, inspect BLOCKERS, PENDING_HUMAN_DECISIONS, and Clarifications in `docs/working-memory/task-plan.zh-CN.md`, and verify that Current Focus still points to the same gate.
 
-As a rule, a framework should not be approved while a `BLOCKING` clarification remains unresolved if it could alter a central thesis, key concept, major inferential relation, scope, or section function.
+As a rule, a framework should not be approved while a `BLOCKING` item remains unresolved if it could alter a central thesis, key concept, major inferential relation, scope, or section function.
+
+A framework may retain items explicitly marked `AI-PROPOSED`, `UNRESOLVED`, `NON-BLOCKING`, `DEFERRED`, or equivalent, provided that:
+
+1. their unresolved/provisional status is explicit in the framework; and
+2. they are not unresolved blocking premises required in order to approve the current core intellectual architecture.
+
+When the human gives an overall `APPROVE` decision on a complete framework containing such items, the approval covers **their place, scope, and treatment as unresolved/provisional items within the framework**, not their unconfirmed substantive content. Framework Approval MUST NOT automatically change their provenance or promote provisional terminology, empirical plans, theoretical positioning, or other AI proposals into human-originated or human-confirmed commitments.
+
+Only a later independent human decision may change their provenance, approval, or Promotion status.
 
 If the human explicitly chooses to defer an issue, mark it `DEFERRED` and preserve that unresolved status explicitly in the framework rather than pretending it is resolved.
 
@@ -58,9 +67,9 @@ Framework Approval must not rest on key interpretations that the AI privately gu
 
 ## 3. What framework approval means
 
-Framework Approval is the project's main substantive intellectual checkpoint and the structural anchor of human core intellectual responsibility.
+Framework Approval is the project's main substantive intellectual checkpoint and the structural anchor of core intellectual responsibility borne by humans.
 
-It indicates that the human has understood, reviewed, and accepted every substantive element actually represented in the framework, including:
+It indicates that the human has understood, reviewed, and accepted every substantive element **actually represented as a current commitment** in the framework, including:
 
 - central theses;
 - major inferential relations and their logical dependencies;
@@ -68,10 +77,14 @@ It indicates that the human has understood, reviewed, and accepted every substan
 - organization of the reasoning;
 - intended role of major sections/chapters;
 - scope conditions;
-- declared limitations and unresolved issues;
-- specific wording included in the framework.
+- declared limitations;
+- specific wording included in the framework as a current commitment.
 
-It allows development to proceed without requiring human line-by-line approval of every provisional AI expansion, but it does not permit the human to approve only a high-level summary while ignoring substantive details inside the framework itself.
+For items explicitly marked unresolved, provisional, or AI-proposed, Framework Approval indicates that the human understands and accepts **their unresolved status and their place and treatment within the current architecture**; it does not indicate acceptance of their still-unapproved substantive content.
+
+An Approved Framework may therefore contain explicit unresolved items, but those items MUST retain their existing provenance / approval status until another explicit human decision changes them.
+
+Framework Approval allows development to proceed without requiring human line-by-line approval of every provisional AI expansion, but it does not permit the human to approve only a high-level summary while ignoring substantive details inside the framework itself.
 
 Framework Approval is a HARC governance architecture; it should not automatically be presented as a universal theory of authorship across all disciplines, institutions, or publication regimes.
 
