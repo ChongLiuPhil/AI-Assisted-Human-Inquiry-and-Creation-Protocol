@@ -30,7 +30,8 @@ If yes, persist it.
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
 | Evidence and verification | `evidence/` |
-| Collaboration rules | `AGENTS.md`, `protocol/` |
+| Zero-context bootstrap entry | `START_HERE.zh-CN.md`, `HARC_MANIFEST.yaml` |
+| Collaboration rules | `AGENTS.zh-CN.md`, `protocol/` |
 | Expanded output | `paper/`, `book/`, `article/`, etc. |
 
 ## No hidden dependency rule
@@ -87,6 +88,8 @@ When historical files become large:
 The objective is **recoverability**, not universal simultaneous ingestion.
 
 ## New-agent reconstruction target
+
+Before answering these questions, a new Agent should complete the Onboarding Handshake defined in `START_HERE.zh-CN.md` and reconstruct current state using the read order in `HARC_MANIFEST.yaml`.
 
 A new competent agent should be able to answer:
 
