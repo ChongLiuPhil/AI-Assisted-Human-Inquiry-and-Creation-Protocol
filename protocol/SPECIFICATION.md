@@ -421,6 +421,20 @@ The objective is **recoverability and traceability**, not simultaneous loading o
 
 ## 16. Agent handoff
 
+### 16.1 Zero-context Bootstrap
+
+A project SHOULD provide at repository root:
+
+- `START_HERE.zh-CN.md` / English mirror;
+- `HARC_MANIFEST.yaml` or equivalent machine-readable state index;
+- root `AGENTS.zh-CN.md` / English mirror.
+
+Before substantive work, a new AI Agent MUST follow the startup read order and SHOULD first output a HARC Onboarding Report covering protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and permitted next action.
+
+If the Agent cannot produce this report from repository state, the project has an onboarding/persistence defect.
+
+### 16.2 Normal handoff reading
+
 A new AI Agent SHOULD be able to continue normal project work by reading, at minimum:
 
 1. project `AGENTS.md`;
@@ -522,10 +536,15 @@ Suggested prefixes:
 A lightweight compliant project SHOULD contain at least:
 
 ```text
+START_HERE.zh-CN.md
+START_HERE.md
+AGENTS.zh-CN.md
 AGENTS.md
+HARC_MANIFEST.yaml
 core/CONTENT_CORE.md
 core/FORM_CORE.md
 core/DECISION_LOG.md
+docs/clarification-register.md
 docs/argument-map.md
 docs/framework-status.md
 ```
