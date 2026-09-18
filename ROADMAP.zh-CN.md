@@ -30,6 +30,8 @@
 - [x] 规定中文 canonical / 英文 synchronized mirror 的双语治理。
 - [x] 为方法论文章建立英文同步镜像。
 - [x] 完成仓库历史文件与全部模板的双语迁移与 parity audit。
+- [x] 建立 zero-context bootstrap：START_HERE、独立 Bootstrap Prompt、HARC_MANIFEST、Onboarding Handshake 与 Onboarding Report Template。
+- [x] 完成一次 HARC 自举 onboarding self-test。
 - [ ] 人类审阅并批准方法论文章 Working Framework。
 - [ ] 创建方法论文章第一个 Approved Framework Snapshot。
 - [ ] 决定目标发布渠道 / 学科定位。
@@ -39,7 +41,7 @@
 
 - [ ] 为规范文件定义机器可读 metadata。
 - [ ] 增加可选 YAML front matter 约定。
-- [ ] 定义 project-state manifest。
+- [x] 建立初始 project-state manifest；正式 schema/validation 仍属于后续工作。
 - [ ] 为 Content Core / Framework / Artifact 建立一致性 checklist。
 - [ ] 增加 paper、book、article、report 项目示例。
 - [ ] 定义 framework diff 约定。
