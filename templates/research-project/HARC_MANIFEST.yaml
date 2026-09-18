@@ -24,9 +24,13 @@ harc:
     - "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
     - "AGENTS.zh-CN.md"
     - "docs/working-memory.zh-CN.md"
+    - "docs/working-memory/current-focus.zh-CN.md"
+    - "docs/working-memory/task-plan.zh-CN.md"
 
   onboarding_required_roles:
-    - "working_memory"
+    - "working_memory_index"
+    - "working_memory_current_focus"
+    - "working_memory_task_plan"
     - "content_core"
     - "form_core"
     - "decision_log"
@@ -37,6 +41,10 @@ harc:
 
   state:
     working_memory: "docs/working-memory.zh-CN.md"
+    working_memory_index: "docs/working-memory.zh-CN.md"
+    working_memory_current_focus: "docs/working-memory/current-focus.zh-CN.md"
+    working_memory_task_plan: "docs/working-memory/task-plan.zh-CN.md"
+    working_memory_work_log: "docs/working-memory/work-log.zh-CN.md"
     legacy_clarification_pointer: "docs/clarification-register.zh-CN.md"
     content_core: "core/CONTENT_CORE.zh-CN.md"
     form_core: "core/FORM_CORE.zh-CN.md"
@@ -52,6 +60,7 @@ harc:
       - "human_confirmed_state"
       - "form_state"
       - "working_memory_status"
+      - "current_focus"
       - "current_objective"
       - "active_tasks"
       - "blockers"
@@ -67,6 +76,9 @@ harc:
     - "Repository state outranks chat memory."
     - "AI proposals are not human commitments."
     - "Working Memory is parallel operational state, not Layer 1.5."
+    - "Working Memory logical roles may map to one or multiple files."
+    - "Current Focus and Task Plan are default operational resume state."
+    - "Work Log is human-retrospective and not default AI onboarding context."
     - "Working Memory must be updated after substantial work cycles and before handoff."
     - "High-impact uncertainty enters Working Memory as a Clarification item."
     - "Resolved Working Memory items are promoted into the appropriate long-term memory destination."
