@@ -44,7 +44,7 @@ HARC 有意设计为一个双重输出项目：
 
 - [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) — 当前阶段、目标、任务、阻塞、待确认事项、clarification 与 handoff 的工作记忆区。
 - [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — 旧路径兼容指针，不再承载 active state。
-- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，Clarification Gate 仍打开，尚未由人类批准。
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，Working Memory / Clarification Gate 仍打开，尚未由人类批准。
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — 中文 canonical、`DERIVED-PROVISIONAL` 草稿。
 - [`paper/METHODOLOGY_ARTICLE.en.md`](paper/METHODOLOGY_ARTICLE.en.md) — 英文完整镜像。
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — 参考文献源文件。
