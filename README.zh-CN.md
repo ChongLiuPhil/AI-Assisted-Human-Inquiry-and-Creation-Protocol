@@ -24,6 +24,8 @@
 
 然后按照启动文件的 mandatory read order 重建项目状态，并在做任何实质性修改前向人类提交一份 **HARC Onboarding Report**。
 
+当前仓库的自举验证见 [`docs/ONBOARDING_SELF_TEST.zh-CN.md`](docs/ONBOARDING_SELF_TEST.zh-CN.md)。
+
 这使“Agent 是否真正理解当前项目状态”变成一个可观察、可检查的握手步骤，而不是假定。
 
 ## 两类项目输出
