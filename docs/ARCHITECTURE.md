@@ -10,9 +10,12 @@
                        |
                Repository Resolver
                        |
-                 Working Memory
-        stage / goals / tasks / blockers
-      clarifications / TODO / handoff / status
+              Working Memory Area
+       +-----------------------------+
+       | Current Focus               |
+       | Task Plan                   |
+       | Work Log (human history)    |
+       +-----------------------------+
               /           |           \
              v            v            v
      +-----------+   +-----------+   +-----------+
@@ -26,7 +29,7 @@
                  resolved Working Memory
 ```
 
-All three layers are Long-Term Research Memory. Working Memory is parallel operational state for resumable work.
+All three layers are Long-Term Research Memory. Working Memory Area is parallel: Current Focus + Task Plan provide resumable operational state, while Work Log preserves human-oriented stage history outside default AI takeover context.
 
 ## Repository-backed context
 
@@ -53,7 +56,9 @@ HARC separates:
 - **Long-Term Memory Layer 1** — Human Authorial Core;
 - **Long-Term Memory Layer 2** — Current Framework;
 - **Long-Term Memory Layer 3** — Derived Artifact;
-- **Working Memory** — current stage, goals, tasks, blockers, clarifications, TODOs, and handoff;
+- **Working Memory / Current Focus** — highest-priority current objective and immediate next action;
+- **Working Memory / Task Plan** — current tasks, blockers, Clarifications, TODOs, and plan;
+- **Working Memory / Work Log** — human-retrospective stage history and direction changes;
 - **history** — decisions, older frameworks, evidence, archived drafts, and Git history.
 
 Working Memory supports resumption but does not replace the long-term layers. Stable results are promoted into the appropriate long-term destination.
@@ -113,7 +118,7 @@ A stable HARC project should allow a new competent agent to answer, from reposit
 3. What argument framework has the human actually approved?
 4. What has the AI proposed but the human not yet accepted?
 5. What evidence constrains the current claims?
-6. Which blockers, pending human decisions, and clarifications are active in Working Memory?
+6. What is the highest-priority Current Focus, and which blockers, pending human decisions, and Clarifications are active in Task Plan?
 7. What remains unresolved?
 8. Is the current artifact synchronized with the approved state?
 9. Are the Chinese canonical and English mirror files semantically synchronized?
