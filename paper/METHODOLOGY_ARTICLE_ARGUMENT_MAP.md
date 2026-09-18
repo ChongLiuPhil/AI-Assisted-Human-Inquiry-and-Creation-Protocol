@@ -204,19 +204,24 @@ Successful handoff should not be assumed; it should be verified by requiring the
 
 ---
 
-## T11 — Two-Layer Memory Thesis
+## T11 — Repository-Backed Context Thesis
 
 **Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
 
-Cross-agent continuity requires not only durable repository state but also reinjection of key rules and current state into the active conversation context after a replacement Agent takes over.
+Cross-agent continuity does not require a second dynamic project-state copy inside chat context.
 
-HARC therefore distinguishes:
+HARC should treat GitHub as the authoritative external-memory and working-state interface:
 
-`Durable Repository State + Active Session Contract`
+`GitHub Repository = authoritative external memory + working state`
 
-The former provides persistence; the latter provides salience and verifiable execution. The Session Contract is not a platform system prompt but a project-level session operating contract subordinate to higher-priority platform instructions.
+`Model Context = transient retrieval cache + control plane`
 
-**Founder basis:** Article Content Core C13; HARC Protocol Core P21.
+The Agent retrieves latest canonical files on demand for the current task, reconfirms revisions before high-impact judgments and writes, writes through directly to GitHub, and invalidates old context cache after writes.
+
+The session retains only a minimal Repository Resolver rather than long-lived copies of Blocking Clarifications, Framework, Artifact, or Core state.
+
+**Founder basis:** Article Content Core C13; HARC Protocol Core P21–P22; HARC-D020.
+
 
 ---
 
@@ -261,7 +266,7 @@ Supports T1 and T7.
 
 **Function:** explain GitHub as the current implementation substrate; distinguish persistent memory from infinite context; introduce current-state vs historical-state compression; and explain why reliable takeover requires zero-context bootstrap, a manifest, and an Onboarding Handshake.
 
-Supports T1, T7, T10, and T11.
+Supports T1, T7, T10, and T11, including repository-backed selective retrieval.
 
 ## IV. Layered semantic governance
 
