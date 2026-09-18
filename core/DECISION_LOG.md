@@ -289,3 +289,26 @@ After a write, old context copies become stale; before high-impact judgments or 
 **Implementation:** add `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md`, its English mirror, and machine-readable `HARC_CONTEXT_INTERFACE.yaml`, and connect them to startup, manifests, agent contracts, and project templates.
 
 **Status:** human-confirmed and implemented.
+
+---
+
+## 2026-09-18 — HARC-D021
+
+**Source:** Human project founder  
+**Classification:** PROTOCOL, CONTENT
+
+**Decision:** Retire the former “Layer 1.5 / Critical Clarification Layer” model. HARC should distinguish three layers of **Long-Term Research Memory** from a parallel **Working Memory**.
+
+The three long-term layers are:
+
+1. Layer 1 — Human Authorial Core: progressively accumulated, corrected, and refined human core commitments;
+2. Layer 2 — Current Framework: core propositions, key concepts, argument structure, and inferential relations based on Layer 1; durable but more revisable and able to contain structural material not stated item-by-item in Layer 1;
+3. Layer 3 — Derived Artifact: the complete artifact expanded primarily from Layer 2.
+
+Working Memory is parallel to all three and records current stage, work objective, overall plan, active tasks, completed/uncompleted work, next actions, TODOs, blockers, pending human decisions, clarifications, synchronization defects, and handoff information.
+
+Clarification is an item type inside Working Memory, not an independent layer. After human resolution, the normative result is promoted into the appropriate long-term memory destination; the Working Memory item leaves active state and retains only resolved/promoted pointers and audit trace.
+
+**Affected components:** Protocol Core, Persistent Memory, Architecture, clarification workflow, Working Memory, Onboarding/Handoff, Manifest, Context Interface, Specification, AGENTS, project templates, methodology article
+
+**Status:** human-confirmed; implementation in progress.
