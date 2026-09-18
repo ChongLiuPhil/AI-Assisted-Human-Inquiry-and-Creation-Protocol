@@ -29,8 +29,8 @@
 
 ## 工作标题
 
-**从对话到持久研究状态：AI时代的人机研究协作、认识责任与可审计作者性**  
-*From Conversation to Persistent Research State: Human–AI Research Collaboration, Epistemic Responsibility, and Auditable Authorship in the AI Era*
+**从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性**  
+*From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
 `AI-PROPOSED TITLE` — 文章主题由人类要求，但当前标题尚未被明确批准。
 
@@ -42,7 +42,7 @@
 
 AI Agent 可以承担越来越多的检索、结构化、起草、修订、形式化、检查与格式处理工作；人的阅读、理解、判断和责任并不会自动按同样速度扩展。因此，方法论文章提出：
 
-> **一个长期 AI 辅助研究项目，怎样既扩展人的认知能力，又保持人类对意义、判断、批准、证据与责任的持久控制？**
+> **一个长期 AI 辅助研究项目，怎样在扩展研究工作的执行与表达能力时，仍保持人类对项目目的、方向、意义、判断、批准、证据与责任的持久控制？**
 
 短语 **generation–verification asymmetry（生成—验证不对称）** 是 `AI-PROPOSED` 的问题标签，尚不是经批准的中心术语。
 
