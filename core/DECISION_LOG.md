@@ -380,3 +380,22 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Article Form Core, Article Content Core, Working Argument Map, methodology article, Protocol Core, Framework Approval, Specification, README, Agent contracts/templates, Framework Status, Working Memory
 
 **Status:** confirmed; bilingual Promotion and propagation implemented in this work cycle.
+
+
+---
+
+## 2026-09-18 — HARC-D025
+
+**Source:** human project founder  
+**Classification:** CONTENT, PROTOCOL
+
+**Decision:**
+
+1. Approve a structural repair to the methodology article Working Framework dependency graph so that T9–T13 are properly represented as supporting the governance, continuity, and executability relations around T1/T2/T7/T8, and so that the T3 node name is synchronized to “AI Tool Work / Humans as Bearers of Responsibility.”
+2. Framework Approval may include items explicitly marked `AI-PROPOSED`, `UNRESOLVED`, `NON-BLOCKING`, or equivalent, but **overall approval approves only their place, scope, and treatment as unresolved/provisional items within the framework; it does not automatically approve their substantive content**.
+3. Therefore, an overall `APPROVE` decision on a framework containing explicit unresolved items MUST NOT promote provisional terminology, empirical plans, theoretical positioning, or other AI proposals into human-originated or human-confirmed commitments. Only a later separate human decision may change their provenance/approval status.
+4. This decision is not overall Framework Approval of the current complete Working Framework and MUST NOT by itself trigger creation of `MA-FW-001`.
+
+**Affected components:** Working Argument Map dependency structure; Framework Approval protocol; Framework Status; Working Memory.
+
+**Status:** confirmed; bilingual propagation implemented.
