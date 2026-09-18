@@ -251,3 +251,18 @@ This file is the chronological audit trail of substantive human decisions about 
 **Subsequent human confirmation:** the human project founder explicitly confirmed that the above understanding was substantially accurate and instructed that it be formally implemented. This ratifies the zero-context bootstrap, standalone startup prompt, manifest, Onboarding Handshake, and Onboarding Report as formal HARC protocol components.
 
 **Status:** human-confirmed and implemented.
+
+---
+
+## 2026-09-18 — HARC-D019
+
+**Source:** Human project founder  
+**Classification:** PROTOCOL
+
+**Decision:** After a replacement AI Agent reads the GitHub repository and completes onboarding, it should further compress key HARC rules and current project state into a session-level operating contract and explicitly write that contract into its own current reply, so the rules re-enter the active conversation context. This creates a two-layer safeguard: durable repository state plus an active session contract. The mechanism should refresh after major state changes or suspected context loss.
+
+**Qualification:** this must not be represented as promoting repository content into the platform's true system prompt or as modifying model weights, hidden memory, or platform-level memory. Platform system/developer/safety instructions remain higher priority than the HARC Session Contract.
+
+**Implementation:** add `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror and connect it to START_HERE, Bootstrap Prompt, Manifest, Onboarding Report, Agent contract, and project templates.
+
+**Status:** human-confirmed and implemented.
