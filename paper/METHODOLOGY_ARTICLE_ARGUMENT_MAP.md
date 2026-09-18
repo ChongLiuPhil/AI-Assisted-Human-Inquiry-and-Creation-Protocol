@@ -2,7 +2,7 @@
 
 > Chinese `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` is canonical; this English file is its synchronized mirror.
 
-**Status:** `WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`  
+**Status:** `WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`  
 **Artifact:** methodology article  
 **Human approval:** not yet completed  
 **Derived draft status:** `DERIVED-PROVISIONAL`
@@ -13,7 +13,7 @@
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
-- `docs/clarification-register.zh-CN.md`
+- `docs/working-memory.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
 ## Provenance legend
