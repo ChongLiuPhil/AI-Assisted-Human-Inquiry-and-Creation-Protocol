@@ -8,11 +8,13 @@
 
 HARC 项目不能只是一套可执行的开放协议。它还应产出一篇方法论文章，解释该项目的思想、架构以及它对人机研究协作的意义。
 
-## C2. 文章必须讨论 AI 时代的人类认知/认识责任
+## C2. 文章必须讨论 AI 工具参与下的人类目的、方向与责任
 
-文章应研究：当 AI Agent 能够进行大量检索、结构化、起草、修订及其他认知劳动时，人类研究者仍然需要对什么负责。
+文章应以人类作为研究或创作项目的目的来源、发起与导航主体。项目要解决什么问题、朝什么方向推进，以及最终核心成果是否得到认可，必须由人类给予、理解并批准；最终成果的核心责任由人类承担。
 
-它应区分哪些认知工作可以委托给 AI，以及哪些理解、判断、确认和责任仍必须有意义地处于人类治理之下。
+AI Agent 在 HARC 中被视为协作工具，可以执行或辅助检索、综合、结构化、起草、修订、重组、核查、格式处理等大量工作。但文章不应把 AI 描述为具有认知性的主体，也不应使用“AI 承担认知劳动”或“AI 承担认知任务”作为核心概念。
+
+真正需要讨论的是：哪些具体工作可以由 AI 工具执行或辅助，以及哪些目的设定、理解、判断、确认和责任必须保持在人类治理之下。
 
 ## C3. 文章必须解释基于仓库的持久协作
 
@@ -24,9 +26,13 @@ HARC 项目不能只是一套可执行的开放协议。它还应产出一篇方
 
 ## C5. 文章必须解释 framework 层的人类责任
 
-对于长篇成果，经人类批准的紧凑 framework 应当作为主要实质性思想责任锚点：人类作者应理解并确认核心命题、推论关系、关键区分与章节/小节功能。
+对于长篇成果，Layer 2 Current / Approved Framework 是人类核心思想责任的主要结构性承载点。
 
-文章应区分：已经存在于被批准架构中的缺陷，与后续 AI 扩写中才局部引入的缺陷。
+人类作者在 Framework Approval 前必须对 framework 中实际呈现的全部实质内容形成清晰、完整的理解，并逐项认真审核和明确确认。这至少包括核心命题、推论关系、关键区分、范围条件、章节/小节功能，以及被纳入 framework 的具体措辞。
+
+Framework 可以由 AI 辅助提出、组织和表达，但获批版本必须真实体现人类作者的核心思想与认同。人类对该 framework 所承载的原创性、理解、判断和思想责任负责。
+
+文章仍应区分已经存在于被批准架构中的 framework-level defect，与后续 AI 扩写中才局部引入的 derived-expansion defect。Framework 作为主要思想责任锚点并不取消 Final Artifact Approval，也不取消事实准确性、研究诚信及适用发布渠道规则对最终成果的要求。
 
 ## C6. 文章必须解释两个不同的批准门
 
@@ -48,7 +54,9 @@ HARC 不是一个纯粹抽象的哲学提案。其文件层级、更新规则、
 
 ## C10. 文章不得夸大尚未确认的 AI 提议
 
-诸如 `generation–verification asymmetry`、`semantic version control`、`responsibility concentration` 以及某一特定经验测试套件等术语和更强命题，可能是有用的 AI 表述，但在人类明确接受之前仍属于 provisional。
+`generation–verification asymmetry`、`semantic version control` 以及某一特定经验测试套件等术语和更强命题，可能是有用的 AI 表述，但在人类明确接受之前仍属于 provisional。
+
+`responsibility concentration` 已被人类明确决定不作为当前中心术语继续使用。后续应使用“人类目的与方向”“framework 责任锚点”等描述性表达来说明责任模型，除非人类以后重新决定采用新的中心术语。
 
 ## C11. 高影响不确定性应作为 Working Memory 中的 Clarification 管理
 
@@ -118,7 +126,9 @@ Work Log 不应成为普通 AI onboarding 的必读上下文，也不应保存�
 
 ## 当前尚未解决的人类决定
 
-当前续接状态由 Working Memory Index、Current Focus 与 Task Plan 维护；高影响未决问题的 active state 位于 `docs/working-memory/task-plan.zh-CN.md`。Work Log 主要供人类回顾。当前与文章直接相关的条目为 `CLR-001` 至 `CLR-008`，其中 `CLR-001`、`CLR-002`、`CLR-005` 当前为 Framework Approval 前的 `BLOCKING` clarification。
+当前续接状态由 Working Memory Index、Current Focus 与 Task Plan 维护；高影响未决问题的 active state 位于 `docs/working-memory/task-plan.zh-CN.md`。Work Log 主要供人类回顾。
+
+`CLR-001`、`CLR-002`、`CLR-005` 已通过 HARC-D023 解决并 Promotion。与文章直接相关、仍处于 pending 的主要 clarification 为 `CLR-003`、`CLR-004`、`CLR-006`、`CLR-007`、`CLR-008`；`CLR-010` 仍影响最终投稿/发布形式，而不是当前 Framework Approval readiness。
 
 ## 来源纠正
 
