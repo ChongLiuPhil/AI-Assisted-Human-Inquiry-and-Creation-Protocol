@@ -25,11 +25,12 @@ Before substantive work, read:
 1. `core/CONTENT_CORE.zh-CN.md`
 2. `core/FORM_CORE.zh-CN.md`
 3. recent `core/DECISION_LOG.zh-CN.md`
-4. `docs/framework-status.zh-CN.md`
-5. latest approved framework, if any
-6. `docs/argument-map.zh-CN.md`
-7. relevant artifact and evidence files
-8. corresponding English mirrors for bilingual parity
+4. `docs/clarification-register.zh-CN.md`
+5. `docs/framework-status.zh-CN.md`
+6. latest approved framework, if any
+7. `docs/argument-map.zh-CN.md`
+8. relevant artifact and evidence files
+9. corresponding English mirrors for bilingual parity
 
 ## Repository state outranks chat memory
 
@@ -55,6 +56,14 @@ Human content decisions outrank AI drafting. AI proposals remain visibly pending
 Human form decisions outrank rendering defaults. Do not infer enduring preferences from provisional tool choices.
 
 Where applicable, distinguish reusable author preferences, artifact-type profiles, project-specific rules, external constraints, and temporary defaults.
+
+## Clarification Register rule
+
+If high-impact uncertainty concerns a core position, key concept, terminology/translation, scope, major inference, or section function, record it first in `docs/clarification-register.zh-CN.md`; do not silently select an interpretation.
+
+Mark entries `BLOCKING / NON-BLOCKING`. After human resolution, promote the result into the Decision Log and appropriate Core, then update the Argument Map and artifact.
+
+Run a Clarification Scan before Framework Approval, formal translation, large-scale expansion, and Final Review.
 
 ## Framework rule
 
