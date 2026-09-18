@@ -169,11 +169,12 @@ Framework Approval 后，AI 可以生成大量派生文本，但在最终人类�
 
 1. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
 2. `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
-3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
-4. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
-5. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
-6. `paper/methodology-references.bib`
-7. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+3. `docs/clarification-register.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+5. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+6. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
+7. `paper/methodology-references.bib`
+8. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
 
 在中文 framework 未被人类明确批准之前，文章 Argument Map 仍是 `WORKING-FRAMEWORK`。在相关批准门完成之前，正文仍是 `DERIVED-PROVISIONAL`。
 
