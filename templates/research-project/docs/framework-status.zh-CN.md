@@ -13,6 +13,14 @@
 
 下一个标识符：`FW-001`
 
+## Clarification Gate
+
+- Blocking clarifications：`None / CLR-...`
+- Non-blocking clarifications：`None / CLR-...`
+- Framework Approval 是否被 blocking clarification 阻塞：`YES / NO`
+
+来源：`docs/clarification-register.zh-CN.md`
+
 ## 当前成果状态
 
 `DERIVED-PROVISIONAL` / `FINAL-REVIEW` / `FINAL-APPROVED`
