@@ -77,9 +77,9 @@ Do not force single-label classification when it obscures the actual change.
 
 ## Pre-routing for high-impact uncertainty
 
-Before writing human feedback directly into a Core, if the AI has high-impact uncertainty about its meaning, route it through the Clarification Register rather than choosing one classified interpretation.
+Before writing human feedback directly into a durable Core, if the AI has high-impact uncertainty about its meaning, create a Clarification item in Working Memory rather than choosing one classified interpretation.
 
-`Ambiguous high-impact feedback -> Clarification Register -> Human resolution -> CONTENT / FORM / PROTOCOL routing`
+`Ambiguous high-impact feedback -> Working Memory / Clarification -> Human resolution -> Promotion -> CONTENT / FORM / PROTOCOL routing`
 
 The resolved clarification may itself carry one or multiple labels.
 
