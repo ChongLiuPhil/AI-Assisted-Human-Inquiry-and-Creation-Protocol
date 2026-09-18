@@ -530,6 +530,25 @@ Work Log 需要定期维护，但默认不进入 AI onboarding 上下文。它�
 
 上述项目均已在本轮修复并同步中英文。
 
+### 当前显式人类待决边界
+
+这些项目已经被正确持久化为“等待人类决定”，因此不是实现缺口：
+
+- `CLR-001` — 方法论文章中心责任概念；
+- `CLR-002` — Framework Responsibility Thesis 强度；
+- `CLR-003` — semantic version control 是否正式作为 HARC working term；
+- `CLR-004` — generation–verification asymmetry 的地位；
+- `CLR-005` — responsibility concentration 是否保留或替换；
+- `CLR-006` — extended / distributed cognition 的理论关系；
+- `CLR-007` — 经验验证计划在文章中的地位；
+- `CLR-008` — 学科 / intellectual positioning；
+- `CLR-009` — 正式开放许可；
+- `CLR-010` — 目标发布渠道与渠道特定形式约束；
+- 方法论文章整体 Framework Approval（尚无 `MA-FW-001`）；
+- Final Artifact Approval（尚未进行）。
+
+其中 `CLR-001 / CLR-002 / CLR-005` 当前阻塞方法论文章 Framework Approval；`CLR-009` 阻塞 formal release；`CLR-010` 不阻塞思想 framework，但阻塞最终投稿/发布形式冻结。
+
 ### 结论边界
 
 本节能确认的是：**当前可恢复讨论中已明确形成的人机协作设计要求，都已在仓库中找到实现或明确的人类待决状态。**
