@@ -206,3 +206,16 @@ This file is the chronological audit trail of substantive human decisions about 
 **Affected components:** Protocol Core, Specification, AGENTS contract, README, methodology article, evidence notes, audits, templates, future files
 
 **Status:** initial repository-wide bilingual migration implemented; every future substantive edit remains subject to ongoing synchronization. See `docs/BILINGUAL_PARITY_AUDIT.md`.
+
+---
+
+## 2026-09-18 — HARC-D016
+
+**Source:** Human project founder  
+**Classification:** CONTENT, FORM, PROTOCOL
+
+**Decision:** When the Chinese-canonical / English-synchronized-mirror rule is introduced, an older Chinese version must not mechanically overwrite substantive developments that had already been made in English before the rule existed. For any such legacy divergence, first absorb the newer English content into Chinese so that Chinese represents the genuinely latest semantic state at cutover; after bilingual parity is restored, switch permanently to Chinese-first development with English synchronization. After cutover, English must not develop substantive content independently.
+
+**Affected components:** Bilingual Sync Policy, Protocol Core, AGENTS, Whitepaper, Parity Audit, future legacy migrations
+
+**Status:** implemented. The white paper completed an English -> Chinese catch-up and then returned to a Chinese -> English synchronization relationship.
