@@ -1,67 +1,29 @@
-# HARC Project Working Memory
+# HARC Project Working Memory Index
 
-**Status:** `ACTIVE WORKING MEMORY`  
-**Role:** current stage, objectives, tasks, blockers, pending decisions, and handoff state.  
-**Language:** Chinese canonical: `working-memory.zh-CN.md`; this English file is the synchronized mirror.
+> **Language:** Chinese canonical: `working-memory.zh-CN.md`; this English file is the synchronized mirror.
 
-> Working Memory is operational state parallel to the three long-term memory layers. It is not Layer 1.5 and not the final truth source for long-term claims.
+Working Memory is a functional area and does not have to be a single file.
 
-## CURRENT_STAGE
-`...`
+The default template uses:
 
-## CURRENT_OBJECTIVE
-`...`
+- Current Focus: `docs/working-memory/current-focus.zh-CN.md`
+- Task Plan: `docs/working-memory/task-plan.zh-CN.md`
+- Work Log: `docs/working-memory/work-log.zh-CN.md`
 
-## ACTIVE_TASKS
-- `WM-T001 — ... — TODO / IN-PROGRESS / BLOCKED / WAITING-HUMAN`
+## Default takeover
 
-## RECENTLY_COMPLETED
-- `...`
+1. read this Index;
+2. read Current Focus;
+3. read Task Plan;
+4. retrieve the three Long-Term Memory layers as required by the current task;
+5. skip Work Log by default.
 
-## NEXT_ACTIONS
-1. `...`
+## Roles
 
-## BLOCKERS
-- `...`
+- **Current Focus:** what matters most now;
+- **Task Plan:** how work proceeds next;
+- **Work Log:** helps the human later review how the project got here.
 
-## PENDING_HUMAN_DECISIONS / CLARIFICATIONS
+Work Log is not a substantive truth source and does not record hidden AI chain-of-thought.
 
-### CLR-001 — `...`
-
-- Status: `WAITING-HUMAN`
-- Severity: `BLOCKING / NON-BLOCKING`
-- Uncertain point: `...`
-- Candidate interpretations: `...`
-- AI recommendation: `AI-PROPOSED — ...`
-- Promotion destination: `Layer 1 / Layer 2 / Layer 3 / Form Core / Protocol Core`
-
-## TODO / BACKLOG
-- `...`
-
-## SYNC_DEFECTS
-- `None / ...`
-
-## RECENTLY_RESOLVED / PROMOTED
-- `Item -> Decision ID -> destination paths`
-
-## HANDOFF_NOTE
-
-1. read manifest / context interface;
-2. read this Working Memory;
-3. selectively retrieve authoritative Long-Term Memory for the current task;
-4. update this file after completing work.
-
-## Long-Term Memory Pointers
-
-### Layer 1 — Human Authorial Core
-- `core/CONTENT_CORE.zh-CN.md`
-- `core/FORM_CORE.zh-CN.md`
-- `core/DECISION_LOG.zh-CN.md`
-
-### Layer 2 — Current Framework
-- `docs/argument-map.zh-CN.md`
-- `docs/framework-status.zh-CN.md`
-- `docs/frameworks/FW-xxx.zh-CN.md`
-
-### Layer 3 — Derived Artifact
-- `paper/ / book/ / article/ / report/`
+A lightweight project may merge multiple roles into one file, but the mapping must be explicit in `HARC_MANIFEST.yaml`.
