@@ -313,4 +313,4 @@ Clarification 是 Working Memory 中的一种 item，而不是独立层。问题
 
 **受影响组件：** Protocol Core、Persistent Memory、Architecture、Clarification workflow、Working Memory、Onboarding/Handoff、Manifest、Context Interface、Specification、AGENTS、项目模板、方法论文章
 
-**状态：** 已确认，实施中。
+**状态：** 已实现。
