@@ -32,6 +32,7 @@
 - [x] 完成仓库历史文件与全部模板的双语迁移与 parity audit。
 - [x] 建立 zero-context bootstrap：START_HERE、独立 Bootstrap Prompt、HARC_MANIFEST、Onboarding Handshake 与 Onboarding Report Template。
 - [x] 完成一次 HARC 自举 onboarding self-test。
+- [x] 建立 Active Session Contract / Session Context Bootstrap 双层保险：repository persistence + current-session salience。
 - [ ] 人类审阅并批准方法论文章 Working Framework。
 - [ ] 创建方法论文章第一个 Approved Framework Snapshot。
 - [ ] 决定目标发布渠道 / 学科定位。
@@ -48,7 +49,7 @@
 - [ ] 定义 HARC conformance-test suite。
 - [ ] 定义 cross-agent handoff benchmark。
 - [ ] 定义自动 bilingual parity check。
-- [ ] 定义自动 onboarding/conformance 检查：验证 START_HERE、manifest、required read order、Blocking Clarification 与 Framework Status 是否可由新 Agent 正确重建。
+- [ ] 定义自动 onboarding/conformance 检查：验证 START_HERE、manifest、required read order、Blocking Clarification、Framework Status 与 Active Session Contract 是否可由新 Agent正确重建和回显。
 
 ## v0.4 — 自动化
 
