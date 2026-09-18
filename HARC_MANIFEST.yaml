@@ -10,6 +10,7 @@ harc:
     bootstrap_prompt: "BOOTSTRAP_PROMPT.zh-CN.md"
     onboarding_report_template: "ONBOARDING_REPORT_TEMPLATE.zh-CN.md"
     onboarding_handshake_protocol: "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
+    session_context_bootstrap: "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
     agent_contract:
       canonical: "AGENTS.zh-CN.md"
       mirror: "AGENTS.md"
@@ -18,6 +19,7 @@ harc:
     - "HARC_MANIFEST.yaml"
     - "START_HERE.zh-CN.md"
     - "BOOTSTRAP_PROMPT.zh-CN.md"
+    - "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
     - "AGENTS.zh-CN.md"
     - "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
     - "core/PROTOCOL_CORE.zh-CN.md"
@@ -71,6 +73,7 @@ harc:
       - "artifact_status"
       - "synchronization_defects"
       - "permitted_next_action"
+      - "session_contract_loaded"
 
   invariants:
     - "Repository state outranks chat memory."
@@ -82,3 +85,4 @@ harc:
     - "Working Framework is not Approved Framework."
     - "Derived artifacts remain provisional until the applicable approval gate is complete."
     - "Every substantive Chinese edit must synchronize the English mirror in the same work cycle."
+    - "Active Session Contract must be refreshed after major state changes or suspected context loss."
