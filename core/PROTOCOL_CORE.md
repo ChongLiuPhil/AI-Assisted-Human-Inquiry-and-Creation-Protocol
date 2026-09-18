@@ -153,6 +153,21 @@ AI agents may perform extensive search, synthesis, drafting, restructuring, chec
 
 The protocol should therefore distinguish delegation of cognitive labor from delegation of epistemic responsibility.
 
+
+## P19. High-impact uncertainty must enter a Critical Clarification Layer
+
+Between human-approved normative state and the AI-maintained Working Framework, HARC should maintain a **Critical Clarification Register**.
+
+When an AI Agent has **non-trivial, high-impact** uncertainty about authorial intent, core claims, key concepts, scope, inferential relations, section functions, important terminology, or primary-language/English correspondence, it must not silently select one interpretation and propagate it downstream.
+
+The Agent should proactively promote the uncertainty into an explicit clarification entry describing candidate interpretations, impact, severity, and the question requiring human confirmation.
+
+Open entries are not human-approved claims. After human confirmation or correction, the resolution must be recorded in the Decision Log, promoted into the appropriate Content Core / Form Core / Protocol Core, and then propagated to the Working Argument Map and derived artifacts.
+
+Issues likely to cause major semantic drift or expensive rework may be marked `BLOCKING`; `NON-BLOCKING` issues may allow unrelated work to continue, but no candidate answer may be represented as the human's position.
+
+A Clarification Scan should occur before major phase transitions, Framework Approval, broad propagation of key terminology, formal translation, large-scale chapter expansion, and Final Artifact Review.
+
 ---
 
 ## Current scope
