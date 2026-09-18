@@ -25,7 +25,10 @@ If yes, persist it.
 | Research meaning, theses, distinctions | `core/CONTENT_CORE.md` |
 | Form, layout, style, artifact type | `core/FORM_CORE.md` |
 | Historical human decisions | `core/DECISION_LOG.md` |
-| High-impact unresolved clarifications | `docs/clarification-register.md` |
+| Working Memory index | `docs/working-memory.zh-CN.md` |
+| Highest-priority current objective | `docs/working-memory/current-focus.zh-CN.md` |
+| Dynamic tasks/plans/pending decisions | `docs/working-memory/task-plan.zh-CN.md` |
+| Human retrospective work log | `docs/working-memory/work-log.zh-CN.md` (not default AI context) |
 | Current argument structure | `docs/argument-map.md` |
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
@@ -54,20 +57,24 @@ Instead use **layered compression**.
 
 ### Active state
 
-Keep routinely readable:
+For routine takeover, keep the operational resume path concise:
 
-- Content Core;
-- Form Core;
-- recent decision entries;
-- current Critical Clarification Register;
+- Working Memory Index;
+- Current Focus;
+- Task Plan;
+- task-relevant Content/Form/Protocol Core;
+- relevant recent decision entries;
 - Working Argument Map;
 - Framework Status;
 - latest approved framework.
+
+Work Log is historical state primarily for human retrospective review and is skipped by default during AI onboarding.
 
 ### Historical state
 
 Allow to grow:
 
+- Work Log and archived Work Log partitions;
 - full logs;
 - evidence notes;
 - source inventories;
@@ -111,7 +118,7 @@ See `protocol/REPOSITORY_CONTEXT_INTERFACE.md` and `HARC_CONTEXT_INTERFACE.yaml`
 
 ## New-agent reconstruction target
 
-Before answering these questions, a new Agent should complete the Onboarding Handshake, activate `HARC REPOSITORY CONTEXT — ACTIVE`, read `docs/working-memory.zh-CN.md` for the current stage and resume point, then selectively retrieve authoritative state from the three long-term layers.
+Before answering these questions, a new Agent should complete the Onboarding Handshake, activate `HARC REPOSITORY CONTEXT — ACTIVE`, read Working Memory Index -> Current Focus -> Task Plan for the operational resume point, then selectively retrieve authoritative state from the three long-term layers. Work Log is skipped unless historical reconstruction is required.
 
 A new competent agent should be able to answer:
 
