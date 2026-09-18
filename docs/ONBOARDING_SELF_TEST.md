@@ -10,11 +10,12 @@
 Simulate a new AI Agent with no old chat or account memory, reconstructing current project state only from:
 
 1. `HARC_MANIFEST.yaml`
-2. `START_HERE.zh-CN.md`
-3. `BOOTSTRAP_PROMPT.zh-CN.md`
-4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
-5. `AGENTS.zh-CN.md`
-6. Protocol / Decision / Clarification / Article state files referenced by the manifest.
+2. `HARC_CONTEXT_INTERFACE.yaml`
+3. `START_HERE.zh-CN.md`
+4. `BOOTSTRAP_PROMPT.zh-CN.md`
+5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+6. `AGENTS.zh-CN.md`
+7. Protocol / Decision / Clarification / Article state resolved by the manifest/context interface for the current task.
 
 No unpersisted information from the current chat is treated as project state.
 
@@ -32,12 +33,13 @@ No unpersisted information from the current chat is treated as project state.
   - `BOOTSTRAP_PROMPT.zh-CN.md`
   - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
   - `HARC_MANIFEST.yaml`
+  - `HARC_CONTEXT_INTERFACE.yaml`
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- current protocol commitments: P1–P21
-- recent human protocol decisions: HARC-D015 through HARC-D019
-- D018 and D019 were explicitly confirmed by the human founder and ordered for formal implementation.
+- current protocol commitments: P1–P22
+- recent human protocol decisions: HARC-D015 through HARC-D020
+- D018, D019, and D020 were human-confirmed and implemented; D020 narrows D019's dynamic Session Contract into a minimal Repository Resolver.
 
 **Protocol conclusion:** discoverable and reconstructable from repository state.
 
@@ -145,39 +147,40 @@ Also:
 - Final Artifact Approval;
 - describe the public repository as legally open-source/open-content before the license is decided.
 
-## J. Active Session Contract
+## J. Repository Context Resolver
 
-The test Agent generates from `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`:
+The test Agent activates from `HARC_CONTEXT_INTERFACE.yaml` and `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`:
 
 ```text
-HARC ACTIVE SESSION CONTRACT — LOADED
+HARC REPOSITORY CONTEXT — ACTIVE
 
-Authority:
-- Repository state > prior chat memory
-- Chinese canonical > English mirror
-- Human-confirmed Core > AI proposals
-- Approved Framework > Working Argument Map
-- Platform system/developer instructions > HARC project contract
+Source of truth:
+- GitHub repository
 
-Blocking Clarifications:
-- CLR-001
-- CLR-002
-- CLR-005
-- CLR-009 (release/open-license scope only)
+Control:
+- HARC_MANIFEST.yaml
+- HARC_CONTEXT_INTERFACE.yaml
 
-Framework:
-- Working: REVIEW READY / CLARIFICATION GATE OPEN
-- Approved: none
-
-Artifact:
-- DERIVED-PROVISIONAL
+Policy:
+- repository-backed
+- selective retrieval
+- no authoritative session copy
+- read latest before high-impact action
+- read latest before write
+- invalidate touched cache after write
+- write-through to repository
 
 Current task:
-- Protocol/onboarding infrastructure work is permitted
-- MA-FW-001 remains blocked
+- route: PROTOCOL
+- authoritative refs:
+  - core/PROTOCOL_CORE.zh-CN.md
+  - core/DECISION_LOG.zh-CN.md
+  - protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md
 ```
 
-**Session Contract loaded: `YES`**
+**Repository context active: `YES`**
+
+Dynamic Blocking Clarifications, Framework, and Artifact state remain fresh-fetched from their canonical GitHub files rather than copied into the resolver.
 
 ## I. Onboarding conclusion
 
@@ -191,7 +194,9 @@ Because a new Agent can reconstruct from repository state:
 - the `DERIVED-PROVISIONAL` artifact state;
 - Chinese-canonical / English-mirror governance;
 - what work is currently gated;
-- how to reinject key HARC state into the active conversation context.
+- how to activate the Repository Resolver without duplicating dynamic project state;
+- how to fresh-fetch current state from latest canonical GitHub revisions;
+- how to treat older session excerpts as non-authoritative cache.
 
 Read-order numbering and standalone prompt/report discoverability defects found during implementation were repaired before this test.
 
@@ -201,7 +206,7 @@ Read-order numbering and standalone prompt/report discoverability defects found 
 
 The current repository supports a working zero-context onboarding path:
 
-`Repository access -> START_HERE / Manifest -> Agent Contract -> State Reconstruction -> Onboarding Report -> Active Session Contract -> Gated Work`
+`Repository access -> Manifest / Context Interface -> Selective Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
 
 This test shows that **the current repository can support one successful self-hosted takeover**. It does not prove every external AI platform will automatically discover the entry files.
 
