@@ -9,7 +9,7 @@
 
 The methodology article is in the **overall human review / Framework Approval decision stage for the Working Framework**.
 
-`CLR-001 / CLR-002 / CLR-005` were resolved and promoted through `HARC-D023`; `HARC-D024` further clarifies the responsibility model as humans remaining the bearers of responsibility and confirms the current Chinese title. The Clarification gate that previously blocked `MA-FW-001` has been cleared.
+`CLR-001 / CLR-002 / CLR-005` were resolved and promoted through `HARC-D023`; `HARC-D024` further clarifies the responsibility model as humans remaining the bearers of responsibility and confirms the current Chinese title; `HARC-D025` repaired the T1–T13 dependency representation and clarified overall-approval semantics for unresolved / AI-PROPOSED items. The Clarification gate that previously blocked `MA-FW-001` has been cleared.
 
 ## CURRENT_OBJECTIVE
 
@@ -40,6 +40,8 @@ The human author reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a 
 - the T3 / T4 model of humans as the bearers of responsibility after HARC-D023 / HARC-D024;
 - the status distinction between the human-approved title and the still-unapproved overall framework;
 - whether content still marked `AI-PROPOSED` or `NON-BLOCKING` may remain in the framework under review.
+
+For items still marked `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING`, the human only needs to confirm their place and treatment as unresolved items within the framework; overall approval does not automatically approve their content.
 
 Then explicitly decide `APPROVE / REVISE / REJECT`.
 
