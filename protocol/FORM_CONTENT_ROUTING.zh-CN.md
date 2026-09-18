@@ -78,9 +78,9 @@ HARC 只有在人类反馈被分类并写入适当规范层后，才把它当作
 
 ## 高影响不确定性的预路由
 
-在把人类反馈直接写入某个 Core 之前，如果 AI 对其含义存在高影响不确定性，应先进入 Clarification Register，而不是先选一个分类后的具体解释。
+在把人类反馈直接写入某个长期 Core 之前，如果 AI 对其含义存在高影响不确定性，应先在 Working Memory 创建 Clarification item，而不是先选一个分类后的具体解释。
 
-`Ambiguous high-impact feedback -> Clarification Register -> Human resolution -> CONTENT / FORM / PROTOCOL routing`
+`Ambiguous high-impact feedback -> Working Memory / Clarification -> Human resolution -> Promotion -> CONTENT / FORM / PROTOCOL routing`
 
 澄清结果本身可以是单标签或多标签。
 
