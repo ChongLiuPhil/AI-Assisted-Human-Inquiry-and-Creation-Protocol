@@ -536,3 +536,25 @@ HARC separates things that AI-assisted research often collapses:
 7. historical decisions.
 
 The protocol treats this separation as the basis for durable, auditable, human-governed AI-assisted research.
+
+## 24. Bilingual canonical synchronization
+
+HARC project documentation SHOULD be maintained bilingually in Chinese and English.
+
+For HARC's own repository, and for projects that adopt the bilingual profile:
+
+1. Chinese is the canonical semantic source and primary human editing/review baseline.
+2. English is a synchronized translation mirror.
+3. A substantive edit MUST update both language versions within the same work cycle.
+4. A language pair MUST NOT be treated as synchronized when they differ materially in claims, requirements, approval state, scope, or unresolved issues.
+5. If the two versions conflict, the Chinese version governs until the English mirror is corrected.
+6. New substantive Markdown documents SHOULD be created as bilingual pairs at creation time.
+7. Language-neutral technical artifacts such as code, BibTeX, schemas, and raw data MAY remain single-copy, provided their human-facing instructions are bilingual.
+8. Agent handoff documentation MUST make the canonical-language rule discoverable.
+
+Recommended naming convention:
+
+- Chinese canonical: `NAME.zh-CN.md`
+- English mirror: `NAME.md` where backward compatibility or GitHub default rendering matters; otherwise `NAME.en.md`.
+
+A stable synchronization checkpoint SHOULD include a bilingual parity check.
