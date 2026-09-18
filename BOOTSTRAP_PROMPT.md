@@ -14,8 +14,9 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 >
 > 1. read `START_HERE.zh-CN.md`;
 > 2. read `HARC_MANIFEST.yaml`;
-> 3. read `AGENTS.zh-CN.md`;
-> 4. follow the manifest `required_read_order`;
+> 3. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
+> 4. read `AGENTS.zh-CN.md`;
+> 5. follow the manifest `required_read_order`;
 > 6. treat Chinese as canonical and English only as the synchronized mirror;
 > 7. identify all current `BLOCKING` and task-relevant `NON-BLOCKING` Clarifications;
 > 8. determine Working Framework, latest Approved Framework if any, Artifact status, and synchronization defects;
