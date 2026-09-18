@@ -204,19 +204,24 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 ---
 
-## T11 — Two-Layer Memory Thesis
+## T11 — Repository-Backed Context Thesis
 
 **来源：** `HUMAN-CONFIRMED / AI-FORMULATED`
 
-跨 Agent 连续性不仅需要持久仓库状态，还需要在新 Agent 接管后把关键规则与当前状态重新注入当前会话上下文。
+跨 Agent 连续性不要求在聊天上下文中维护第二份动态项目状态。
 
-因此 HARC 区分：
+HARC 应把 GitHub 作为权威外部记忆与工作状态接口：
 
-`Durable Repository State + Active Session Contract`
+`GitHub Repository = authoritative external memory + working state`
 
-前者提供 persistence，后者提供 salience 与可验证执行。Session Contract 不是平台 system prompt，而是服从平台更高优先级指令的项目级会话操作契约。
+`Model Context = transient retrieval cache + control plane`
 
-**创始依据：** Article Content Core C13；HARC Protocol Core P21。
+Agent 根据当前任务按需读取最新 canonical 文件；高影响判断和写入前重新确认 revision；更新直接 write-through 到 GitHub；写入后旧上下文缓存立即失效。
+
+会话中只保留最小 Repository Resolver，而不是 Blocking Clarifications、Framework、Artifact 或 Core 的长期副本。
+
+**创始依据：** Article Content Core C13；HARC Protocol Core P21–P22；HARC-D020。
+
 
 ---
 
@@ -229,7 +234,7 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 - Working Framework vs Approved Framework；
 - framework defect vs derived-expansion defect；
 - Framework Approval vs Final Artifact Approval；
-- 持久仓库状态 vs 临时 Agent/聊天上下文；
+- 权威仓库状态 vs 临时 Agent 检索缓存；
 - 当前规范状态 vs 历史状态。
 
 ### 若提升为中心术语则仍需确认的 AI 表述
@@ -261,7 +266,7 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 **功能：** 说明 GitHub 作为当前实现基础；区分 persistent memory 与 infinite context；引入当前状态与历史状态的压缩结构；进一步说明新的 Agent 必须通过 zero-context bootstrap、manifest 和 Onboarding Handshake 才能可靠接管。
 
-支持 T1、T7、T10 与 T11。
+支持 T1、T7、T10 与 T11，并解释 repository-backed selective retrieval。
 
 ## IV. 分层语义治理
 
