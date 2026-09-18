@@ -37,7 +37,7 @@
 > - 把临时工具默认值推断成人类偏好；
 > - 在接管握手完成前进行大规模结构修改或正文重写。
 >
-> 如果某个不确定性可能显著影响核心命题、关键概念、术语/翻译、范围、主要推论关系、章节功能或整体论证结构，则先进入 Clarification Register：
+> 如果某个不确定性可能显著影响核心命题、关键概念、术语/翻译、范围、主要推论关系、章节功能或整体论证结构，则先进入 Task Plan 中的 Clarification 队列：
 >
 > `ambiguity -> Working Memory / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory destination`
 >
