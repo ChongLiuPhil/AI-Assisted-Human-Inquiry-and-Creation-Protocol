@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **80**
-- Chinese canonical files (`*.zh-CN.md`): **40**
-- English mirrors: **40**
+- total Markdown files: **84**
+- Chinese canonical files (`*.zh-CN.md`): **42**
+- English mirrors: **42**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
@@ -130,6 +130,20 @@ A later human-originated governance requirement added three new bilingual file p
 - `templates/research-project/docs/clarification-register.zh-CN.md` / English mirror.
 
 A fresh repository-tree scan still reports **0** missing language counterparts.
+
+### 3.7 Zero-context Bootstrap
+
+Two bilingual startup pairs were added:
+
+- root `START_HERE.zh-CN.md` / `START_HERE.md`;
+- template `templates/research-project/START_HERE.zh-CN.md` / English mirror.
+
+Language-neutral machine-readable manifests were also added:
+
+- `HARC_MANIFEST.yaml`
+- `templates/research-project/HARC_MANIFEST.yaml`
+
+The YAML manifests are path/read-order/invariant indexes and need not be duplicated solely for language; their human-readable rules are expressed in bilingual START_HERE / AGENTS / Specification files.
 
 ## 4. High-risk semantic mismatches repaired
 
