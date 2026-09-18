@@ -6,7 +6,7 @@
 
 来源：`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
-状态：`WORKING-FRAMEWORK — REVIEW READY`
+状态：`WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`
 
 人类批准：**尚未完成**。
 
@@ -41,6 +41,7 @@
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
+- `docs/clarification-register.zh-CN.md`
 - `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
@@ -50,22 +51,29 @@
 - Article Content Core -> Working Framework：`SYNC / REVIEW READY`
 - Working Framework -> 当前正文：`PARTIALLY SYNC — structural rewrite deferred pending human framework review`
 - 证据层 -> 政策/文献主张：`RECHECKED 2026-09-17; further venue-specific verification required before submission`
+- Clarification Gate：`OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`
 - Framework Approval：`NOT COMPLETED`
 - Final Artifact Approval：`NOT COMPLETED`
 - 中英正文：`BILINGUAL MIRROR REQUIRED`
 
-## 在 `MA-FW-001` 之前仍需人类决定
+## 在 `MA-FW-001` 之前的 Clarification Gate
 
-1. 中心责任术语；
-2. Framework Responsibility Thesis 的强度；
-3. 对 AI 提议术语（`generation–verification asymmetry`、`semantic version control`、`responsibility concentration`）的接受/拒绝/替换；
-4. 与 extended/distributed cognition 关系的强度；
-5. 经验验证/测试计划的地位；
-6. 目标发布渠道/学科定位；
-7. 对 review-ready framework 整体明确批准、修订或拒绝。
+完整未决状态见 `docs/clarification-register.zh-CN.md`。
+
+当前 `BLOCKING`：
+
+- `CLR-001` — 中心责任概念；
+- `CLR-002` — Framework Responsibility Thesis 强度；
+- `CLR-005` — `responsibility concentration` 的地位/替代。
+
+当前 `NON-BLOCKING`：
+
+- `CLR-003`、`CLR-004`、`CLR-006`、`CLR-007`、`CLR-008`。
+
+在 Blocking clarification 被人类解决或明确 `DEFERRED` 之前，不得创建 `MA-FW-001`。之后仍需对整体 review-ready framework 作明确批准、修订或拒绝。
 
 ## 当前对 AI Agent 的指令
 
 不要把当前 Working Framework 当成人类已批准框架。不要创建 `MA-FW-001`，也不要假定批准已经发生而结构性重写全文。
 
-在中文 Working Framework 获得人类决定之前，以它作为主要讨论对象。任何中文修改都必须同步更新英文镜像。
+当前主要人机讨论界面分为两步：先以 `docs/clarification-register.zh-CN.md` 解决高影响不确定性，再回到中文 Working Framework 进行整体审阅。任何中文修改都必须同步更新英文镜像。
