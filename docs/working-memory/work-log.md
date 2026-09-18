@@ -216,6 +216,27 @@ The human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole a
 
 ---
 
+## 2026-09-18 — HARC-D025 — Framework dependency repair and unresolved-item approval semantics
+
+**Related:** HARC-D025.
+
+**Human confirmation:**
+
+- repair the methodology Working Framework's T1–T13 dependency graph so later Working Memory, zero-context onboarding, repository-backed context, and related theses enter the correct governance/implementation relations;
+- synchronize the T3 dependency label to “AI Tool Work / Humans as Bearers of Responsibility”;
+- clarify that overall Framework Approval may include explicit unresolved / AI-PROPOSED / NON-BLOCKING items, but approves their architectural place, scope, and treatment as unresolved items rather than their still-unconfirmed substantive content;
+- unresolved AI proposals are not automatically promoted into human commitments by overall Framework Approval;
+- this confirmation is not overall Framework Approval and does not create `MA-FW-001`.
+
+**Execution result:**
+
+- repaired the bilingual Working Argument Map dependency graph;
+- added unresolved-item approval semantics to the Framework Approval protocol;
+- synchronized Framework Status, Current Focus, and Task Plan;
+- the current gate remains `WAITING-HUMAN: overall Framework Approval decision`.
+
+---
+
 ## Current log boundary
 
 This log currently contains high-level historical summaries backfilled from Decision Log and canonical protocol files. Future entries should be appended at meaningful milestones rather than reproducing conversations verbatim.
