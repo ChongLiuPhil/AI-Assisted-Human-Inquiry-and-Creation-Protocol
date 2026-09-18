@@ -25,7 +25,8 @@ A different language-governance choice must be an explicit human/project decisio
 
 ## Initialization sequence
 
-1. Identify the artifact type: paper, book, article, report, thesis, etc.
+1. Create/confirm `START_HERE.zh-CN.md`, its English mirror, and `HARC_MANIFEST.yaml`; record the adopted HARC version/commit and mandatory read order.
+2. Identify the artifact type: paper, book, article, report, thesis, etc.
 2. Extract only the human's actual substantive commitments into `core/CONTENT_CORE.zh-CN.md plus English mirror`.
 3. Identify any explicitly reusable author form profile and the applicable artifact-type profile.
 4. Extract only explicit human presentation decisions into `core/FORM_CORE.zh-CN.md plus English mirror`; keep inherited, external, project-specific, and temporary-default rules distinguishable.
@@ -41,6 +42,10 @@ A different language-governance choice must be an explicit human/project decisio
 
 ```text
 project/
+├── START_HERE.zh-CN.md
+├── START_HERE.md
+├── HARC_MANIFEST.yaml
+├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
 │   ├── CONTENT_CORE.md
