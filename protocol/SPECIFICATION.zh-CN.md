@@ -128,36 +128,39 @@ Decision Log 是重要人类决定的历史审计轨迹。
 
 当前 Core 可以重写以反映当前有效状态；Decision Log 保存历史连续性。
 
-### 5.4 Critical Clarification Register — `docs/clarification-register.zh-CN.md`
+### 5.4 Working Memory — `docs/working-memory.zh-CN.md`
 
-Critical Clarification Register 是 Layer 1 与 Layer 2 之间的桥接状态，用于管理**高影响且尚未经人类解决的不确定性**。
+Working Memory 是与三层长期研究记忆并行的当前操作状态，不是 Layer 1.5。
 
-它 MUST 记录那些如果 AI 自行猜测，可能实质改变核心命题、关键概念、范围、主要推论关系、章节功能、关键术语/翻译、Framework Approval 或长期项目连续性的问题。
+它 MUST 让新的人类参与者或 AI Agent 快速知道：
 
-每个重要条目 SHOULD 包括：
+- CURRENT_STAGE；
+- CURRENT_OBJECTIVE；
+- ACTIVE_TASKS；
+- RECENTLY_COMPLETED；
+- NEXT_ACTIONS；
+- TODO / BACKLOG；
+- BLOCKERS；
+- PENDING_HUMAN_DECISIONS；
+- Clarifications；
+- SYNC_DEFECTS；
+- HANDOFF_NOTE。
 
-- ID；
-- 状态；
-- `BLOCKING / NON-BLOCKING` 严重度；
-- 类别；
-- 不确定点；
-- 候选解释；
-- 影响说明；
-- 受影响文件/命题/章节；
-- AI 建议（如有，必须标为 `AI-PROPOSED`）；
-- 需要人类回答的问题；
-- 人类解决结果；
-- 传播目标。
+Clarification 是 Working Memory 中的一种 item type。高影响不确定性如果由 AI 自行猜测可能改变核心命题、关键概念、范围、主要推论关系、章节功能、关键术语/翻译或 Framework Approval，则 MUST 创建 Clarification item。
 
-未解决 clarification MUST NOT 被视为人类承诺。
+未解决 Clarification MUST NOT 被视为人类承诺。
 
-人类解决后，Agent MUST 执行 Resolution Promotion：
+人类解决后，Agent MUST 执行 Promotion：
 
-`Human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+`Working Memory -> human resolution -> Decision Log -> appropriate Long-Term Memory destination`
 
-Resolved entry 可以保留为审计痕迹，但规范答案必须进入适当 Core。
+若涉及人类核心内容：
 
-完整规则见 `protocol/CLARIFICATION_REGISTER.zh-CN.md`。
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+
+Promotion 完成后，Working Memory item 应标记 `RESOLVED / PROMOTED`，记录 Decision ID 与目标路径，并退出 active queue。
+
+完整规则见 `protocol/WORKING_MEMORY.zh-CN.md`。Clarification 专项流程见 `protocol/CLARIFICATION_REGISTER.zh-CN.md`。
 
 ### 5.5 Working Argument Map — `docs/argument-map.zh-CN.md`
 
@@ -449,7 +452,7 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 - 根 `AGENTS.zh-CN.md` / English mirror；
 - 一个可发现的 Onboarding Handshake 规范。
 
-新的 AI Agent 在实质性工作前 MUST 按启动入口定义的顺序读取当前状态，并 SHOULD 先输出 HARC Onboarding Report，说明协议状态、人类已确认状态、Form 状态、Blocking Clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Onboarding Report MUST 确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载访问内核；Blocking Clarifications、Framework、Artifact 与 Core 等动态状态仍必须在后续任务中从 GitHub 最新 canonical revision 按需读取。
+新的 AI Agent 在实质性工作前 MUST 按启动入口读取 control plane 与 Working Memory，并 SHOULD 先输出 HARC Onboarding Report，说明当前阶段、目标、active tasks、最近完成、next actions、blockers、pending human decisions / clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Onboarding Report MUST 确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载访问内核；Blocking Clarifications、Framework、Artifact 与 Core 等动态状态仍必须在后续任务中从 GitHub 最新 canonical revision 按需读取。
 
 如果 Agent 无法从仓库完成该报告，项目存在 onboarding/persistence defect。
 
@@ -457,15 +460,13 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 
 新的 AI Agent 至少应通过阅读以下内容继续正常项目工作：
 
-1. `START_HERE.zh-CN.md` 与 `HARC_MANIFEST.yaml`；
+1. `START_HERE.zh-CN.md`、`HARC_MANIFEST.yaml` 与 `HARC_CONTEXT_INTERFACE.yaml`；
 2. 项目 `AGENTS.zh-CN.md`；
-3. Content Core；
-4. Form Core；
-5. 最近的 Decision Log；
-6. Critical Clarification Register；
-7. Framework Status 与最新 Approved Framework；
-8. Working Argument Map；
-9. 当前相关成果与证据。
+3. `docs/working-memory.zh-CN.md`；
+4. 当前任务相关的 Layer 1 Core / Decision Log；
+5. 当前任务相关的 Layer 2 Framework Status / Working or Approved Framework；
+6. 当前任务相关的 Layer 3 Artifact；
+7. 当前相关 Evidence。
 
 项目应记录所采用的 HARC version/tag/commit，避免把后续上游协议变化静默视为已经接受的治理规则。
 
@@ -515,7 +516,8 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 7. 已知证据冲突可见；
 8. 重要决定没有只滞留在聊天历史中；
 9. 接管文档指向当前规范文件。
-10. 所有会阻塞 Framework Approval 的 Critical Clarification 都在 Clarification Register 中显式可见，而不是只存在于聊天或 AI 私下判断。
+10. 所有当前 blocker、pending human decision 与 Clarification 都在 Working Memory 中显式可见，而不是只存在于聊天或 AI 私下判断。
+11. Working Memory 的已解决条目已经 Promotion 到对应长期记忆，且不继续充当规范答案。
 
 任一条件失败都构成显式同步缺陷。
 
@@ -583,7 +585,7 @@ HARC_CONTEXT_INTERFACE.yaml
 core/CONTENT_CORE.zh-CN.md
 core/FORM_CORE.zh-CN.md
 core/DECISION_LOG.zh-CN.md
-docs/clarification-register.zh-CN.md
+docs/working-memory.zh-CN.md
 docs/argument-map.zh-CN.md
 docs/framework-status.zh-CN.md
 ```
@@ -606,13 +608,14 @@ HARC v0.2 当前以 GitHub 为目标，但逻辑功能与精确文件名相分�
 
 HARC 把 AI 辅助研究中经常被混在一起的东西分开：
 
-1. 人类思想意图；
-2. 人类呈现意图；
-3. AI 操作性表示；
-4. 证据约束；
-5. 批准状态；
-6. 派生表达；
-7. 历史决定。
+1. Layer 1 人类作者核心基础；
+2. Layer 2 当前论述框架；
+3. Layer 3 派生成果；
+4. 与三层并行的 Working Memory；
+5. 人类呈现意图；
+6. 证据约束；
+7. 批准状态；
+8. 历史决定。
 
 协议把这种分离视为持久、可审计、人类治理的 AI 辅助研究之基础。
 
