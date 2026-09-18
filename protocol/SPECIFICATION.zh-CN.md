@@ -128,39 +128,36 @@ Decision Log 是重要人类决定的历史审计轨迹。
 
 当前 Core 可以重写以反映当前有效状态；Decision Log 保存历史连续性。
 
-### 5.4 Working Memory — `docs/working-memory.zh-CN.md`
+### 5.4 Working Memory Area
 
-Working Memory 是与三层长期研究记忆并行的当前操作状态，不是 Layer 1.5。
+Working Memory 与三层 Long-Term Research Memory 并行，并且规范的是**逻辑功能**而非固定单文件。
 
-它 MUST 让新的人类参与者或 AI Agent 快速知道：
+项目 MUST 提供或等价实现以下逻辑角色：
 
-- CURRENT_STAGE；
-- CURRENT_OBJECTIVE；
-- ACTIVE_TASKS；
-- RECENTLY_COMPLETED；
-- NEXT_ACTIONS；
-- TODO / BACKLOG；
-- BLOCKERS；
-- PENDING_HUMAN_DECISIONS；
-- Clarifications；
-- SYNC_DEFECTS；
-- HANDOFF_NOTE。
+- **Working Memory Index / Resolver** — 映射各组件；
+- **Current Focus** — 最近期最高优先级目标、当前阶段、primary blocker、immediate next action；
+- **Task Plan** — active tasks、next actions、TODO/backlog、blockers、pending human decisions、Clarifications、sync defects；
+- **Work Log** — 主要供人类回顾的阶段性历史纪要。
 
-Clarification 是 Working Memory 中的一种 item type。高影响不确定性如果由 AI 自行猜测可能改变核心命题、关键概念、范围、主要推论关系、章节功能、关键术语/翻译或 Framework Approval，则 MUST 创建 Clarification item。
+项目 MAY 把多个角色映射到同一文件，也 MAY 拆成多个文件。Manifest MUST 显式记录实际映射。
+
+Clarification 是 Task Plan / Working Memory 中的一种 item type。高影响不确定性如果可能改变核心命题、关键概念、范围、主要推论关系、章节功能、关键术语/翻译或 Framework Approval，则 MUST 创建 Clarification item，而不能由 AI 静默猜测。
 
 未解决 Clarification MUST NOT 被视为人类承诺。
 
-人类解决后，Agent MUST 执行 Promotion：
+人类解决后：
 
 `Working Memory -> human resolution -> Decision Log -> appropriate Long-Term Memory destination`
 
-若涉及人类核心内容：
+涉及人类核心内容时：
 
 `Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-Promotion 完成后，Working Memory item 应标记 `RESOLVED / PROMOTED`，记录 Decision ID 与目标路径，并退出 active queue。
+任务完成后应退出 Task Plan active list，并将高层历史摘要写入 Work Log；如果形成稳定规范结果，同时执行 Promotion。
 
-完整规则见 `protocol/WORKING_MEMORY.zh-CN.md`。Clarification 专项流程见 `protocol/CLARIFICATION_REGISTER.zh-CN.md`。
+Work Log MUST NOT 保存 AI 隐藏 chain-of-thought / scratchpad，MUST NOT 替代当前状态，并 SHOULD NOT 默认进入新 Agent onboarding 上下文。
+
+完整规则见 `protocol/WORKING_MEMORY.zh-CN.md`。
 
 ### 5.5 Working Argument Map — `docs/argument-map.zh-CN.md`
 
@@ -452,7 +449,7 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 - 根 `AGENTS.zh-CN.md` / English mirror；
 - 一个可发现的 Onboarding Handshake 规范。
 
-新的 AI Agent 在实质性工作前 MUST 按启动入口读取 control plane 与 Working Memory，并 SHOULD 先输出 HARC Onboarding Report，说明当前阶段、目标、active tasks、最近完成、next actions、blockers、pending human decisions / clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Onboarding Report MUST 确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载访问内核；Blocking Clarifications、Framework、Artifact 与 Core 等动态状态仍必须在后续任务中从 GitHub 最新 canonical revision 按需读取。
+新的 AI Agent 在实质性工作前 MUST 按启动入口读取 control plane、Working Memory Index、Current Focus 与 Task Plan，并 SHOULD 先输出 HARC Onboarding Report，说明当前最高优先级目标、primary blocker、immediate next action、active tasks、next actions、blockers、pending human decisions / clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Work Log 默认不读取。Onboarding Report MUST 确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载访问内核；Blocking Clarifications、Framework、Artifact 与 Core 等动态状态仍必须在后续任务中从 GitHub 最新 canonical revision 按需读取。
 
 如果 Agent 无法从仓库完成该报告，项目存在 onboarding/persistence defect。
 
@@ -462,11 +459,15 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 
 1. `START_HERE.zh-CN.md`、`HARC_MANIFEST.yaml` 与 `HARC_CONTEXT_INTERFACE.yaml`；
 2. 项目 `AGENTS.zh-CN.md`；
-3. `docs/working-memory.zh-CN.md`；
-4. 当前任务相关的 Layer 1 Core / Decision Log；
-5. 当前任务相关的 Layer 2 Framework Status / Working or Approved Framework；
-6. 当前任务相关的 Layer 3 Artifact；
-7. 当前相关 Evidence。
+3. Working Memory Index；
+4. Current Focus；
+5. Task Plan；
+6. 当前任务相关的 Layer 1 Core / Decision Log；
+7. 当前任务相关的 Layer 2 Framework Status / Working or Approved Framework；
+8. 当前任务相关的 Layer 3 Artifact；
+9. 当前相关 Evidence。
+
+Work Log 仅在人类要求历史回顾、专门审计、变迁重建或 current/history conflict 时按需读取。
 
 项目应记录所采用的 HARC version/tag/commit，避免把后续上游协议变化静默视为已经接受的治理规则。
 
@@ -516,8 +517,10 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 7. 已知证据冲突可见；
 8. 重要决定没有只滞留在聊天历史中；
 9. 接管文档指向当前规范文件。
-10. 所有当前 blocker、pending human decision 与 Clarification 都在 Working Memory 中显式可见，而不是只存在于聊天或 AI 私下判断。
-11. Working Memory 的已解决条目已经 Promotion 到对应长期记忆，且不继续充当规范答案。
+10. Current Focus 显式给出当前最高优先级目标与 immediate next action。
+11. 所有当前 blocker、pending human decision 与 Clarification 都在 Task Plan 中显式可见，而不是只存在于聊天或 AI 私下判断。
+12. 已完成任务退出 active Task Plan，并在适当粒度写入 Work Log。
+13. Working Memory 的已解决稳定结果已经 Promotion 到对应长期记忆，且 Work Log 不继续充当规范答案。
 
 任一条件失败都构成显式同步缺陷。
 
@@ -586,11 +589,16 @@ core/CONTENT_CORE.zh-CN.md
 core/FORM_CORE.zh-CN.md
 core/DECISION_LOG.zh-CN.md
 docs/working-memory.zh-CN.md
+docs/working-memory/current-focus.zh-CN.md
+docs/working-memory/task-plan.zh-CN.md
+docs/working-memory/work-log.zh-CN.md
 docs/argument-map.zh-CN.md
 docs/framework-status.zh-CN.md
 ```
 
 采用双语配置时，还应同时维护对应英文 mirror。
+
+一个单文件实现可以把上述多个 Working Memory 角色映射到同一路径；默认模板采用拆分实现。
 
 旧 clarification-register 路径可作为兼容指针保留，但不属于 active state 的最小必需文件。
 
