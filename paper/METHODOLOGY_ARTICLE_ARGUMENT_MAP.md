@@ -254,6 +254,26 @@ Stable human-resolved Working Memory content must be promoted into the appropria
 
 ---
 
+## T13 — Operational / Retrospective Working Memory Separation Thesis
+
+**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+
+Working Memory should not become one indefinitely growing monolithic state document. It should distinguish at least:
+
+`Current Focus + Task Plan = operational resume state`
+
+from:
+
+`Work Log = human retrospective history`
+
+Current Focus tells a replacement Agent what matters most now; Task Plan tells it how to continue; Work Log lets the human author later review how the project and intellectual path changed.
+
+Work Log is therefore outside default AI onboarding context. It should receive periodic stage-level summaries, but must not store hidden AI reasoning or replace durable normative state.
+
+**Founder basis:** Article Content Core C15; HARC Protocol Core P24; HARC-D022.
+
+---
+
 # 3. Core distinctions that the article should preserve
 
 ### Human-originated distinctions
@@ -264,6 +284,7 @@ Stable human-resolved Working Memory content must be promoted into the appropria
 - framework defect vs derived-expansion defect;
 - Framework Approval vs Final Artifact Approval;
 - the three Long-Term Research Memory layers vs parallel Working Memory;
+- Current Focus / Task Plan operational resume state vs Work Log human retrospective history;
 - authoritative repository state vs transient agent retrieval cache;
 - current canonical state vs historical state.
 
@@ -296,7 +317,7 @@ Supports T1 and T7.
 
 **Function:** explain GitHub as the current implementation substrate; distinguish three-layer Long-Term Research Memory, parallel Working Memory, and infinite context; explain how a new Agent finds the resume point in Working Memory and then selectively retrieves durable state.
 
-Supports T1, T7, T10, T11, and T12.
+Supports T1, T7, T10, T11, T12, and T13.
 
 ## IV. Layered semantic governance
 
