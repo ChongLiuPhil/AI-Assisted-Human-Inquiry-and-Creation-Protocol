@@ -11,11 +11,12 @@
 模拟一个没有旧聊天、没有账号记忆的新 AI Agent，仅按照：
 
 1. `HARC_MANIFEST.yaml`
-2. `START_HERE.zh-CN.md`
-3. `BOOTSTRAP_PROMPT.zh-CN.md`
-4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
-5. `AGENTS.zh-CN.md`
-6. manifest 指向的 Protocol / Decision / Clarification / Article 状态文件
+2. `HARC_CONTEXT_INTERFACE.yaml`
+3. `START_HERE.zh-CN.md`
+4. `BOOTSTRAP_PROMPT.zh-CN.md`
+5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+6. `AGENTS.zh-CN.md`
+7. manifest/context-interface 按当前任务解析出的 Protocol / Decision / Clarification / Article 状态文件
 
 重建当前项目。
 
@@ -35,12 +36,13 @@
   - `BOOTSTRAP_PROMPT.zh-CN.md`
   - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
   - `HARC_MANIFEST.yaml`
+  - `HARC_CONTEXT_INTERFACE.yaml`
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- 当前主要协议决定：P1–P21
-- 最近人类协议决定：HARC-D015 至 HARC-D019
-- D018 与 D019 已由人类明确确认并要求正式落实。
+- 当前主要协议决定：P1–P22
+- 最近人类协议决定：HARC-D015 至 HARC-D020
+- D018、D019 与 D020 已由人类明确确认并实施；D020 将 D019 的动态 Session Contract 收缩为最小 Repository Resolver。
 
 **协议状态结论：** 可从仓库发现并重建。
 
@@ -148,39 +150,40 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 - Final Artifact Approval；
 - 在许可未决定前把公开仓库描述为已完成法律意义上的 open-source/open-content 授权。
 
-## J. Active Session Contract
+## J. Repository Context Resolver
 
-测试 Agent 根据 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 生成：
+测试 Agent 根据 `HARC_CONTEXT_INTERFACE.yaml` 与 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 激活：
 
 ```text
-HARC ACTIVE SESSION CONTRACT — LOADED
+HARC REPOSITORY CONTEXT — ACTIVE
 
-Authority:
-- Repository state > prior chat memory
-- Chinese canonical > English mirror
-- Human-confirmed Core > AI proposals
-- Approved Framework > Working Argument Map
-- Platform system/developer instructions > HARC project contract
+Source of truth:
+- GitHub repository
 
-Blocking Clarifications:
-- CLR-001
-- CLR-002
-- CLR-005
-- CLR-009 (release/open-license scope only)
+Control:
+- HARC_MANIFEST.yaml
+- HARC_CONTEXT_INTERFACE.yaml
 
-Framework:
-- Working: REVIEW READY / CLARIFICATION GATE OPEN
-- Approved: none
-
-Artifact:
-- DERIVED-PROVISIONAL
+Policy:
+- repository-backed
+- selective retrieval
+- no authoritative session copy
+- read latest before high-impact action
+- read latest before write
+- invalidate touched cache after write
+- write-through to repository
 
 Current task:
-- Protocol/onboarding infrastructure work is permitted
-- MA-FW-001 remains blocked
+- route: PROTOCOL
+- authoritative refs:
+  - core/PROTOCOL_CORE.zh-CN.md
+  - core/DECISION_LOG.zh-CN.md
+  - protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md
 ```
 
-**Session Contract loaded：`YES`**
+**Repository context active：`YES`**
+
+动态 Blocking Clarifications、Framework 与 Artifact 状态仍由测试 Agent从相应 GitHub canonical 文件 fresh-fetch；没有复制进 resolver。
 
 ## I. Onboarding 结论
 
@@ -194,7 +197,9 @@ Current task:
 - 可正确判断当前 Artifact 为 `DERIVED-PROVISIONAL`；
 - 可识别中文 canonical / 英文 mirror；
 - 可判断哪些下一步被 gate 阻塞；
-- 可把关键 HARC 状态压缩后重新注入当前会话上下文。
+- 可激活 Repository Resolver，而不复制动态项目状态；
+- 可根据任务从 GitHub latest canonical revision fresh-fetch 当前状态；
+- 可把会话旧摘录正确视为非权威缓存。
 
 测试中发现的入口编号和 standalone prompt/report 可发现性缺陷已在测试前修复。
 
@@ -204,7 +209,7 @@ Current task:
 
 当前 HARC 仓库已经具备一个可工作的 zero-context onboarding 路径：
 
-`Repository access -> START_HERE / Manifest -> Agent Contract -> State Reconstruction -> Onboarding Report -> Active Session Contract -> Gated Work`
+`Repository access -> Manifest / Context Interface -> Selective Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
 
 该测试只能证明**当前仓库状态可以支持一次成功的自举接管**，不能证明所有外部 AI 平台都会自动发现入口文件。
 
