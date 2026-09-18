@@ -1,174 +1,131 @@
 # HARC Session Context Bootstrap
-## 会话上下文启动契约
+## 会话上下文启动内核
 
 > **本中文文件是规范性基准；英文 `SESSION_CONTEXT_BOOTSTRAP.md` 是同步镜像。**
 
-## 0. 作用
+## 0. 新定位
 
-本文件用于形成 HARC 的第二层保险：
+本文件不再要求 AI Agent 把动态项目状态复制进当前对话。
 
-1. **GitHub repository** 保存持久、可审计的项目状态；
-2. **当前 AI 会话上下文** 保存一份由仓库状态重新生成的压缩操作契约。
+它只负责在当前会话中加载一个极小的 **Repository Resolver / Context Kernel**，告诉 Agent：
 
-新的 AI Agent 在完成仓库 onboarding 后，应把本文件要求的 **HARC Active Session Contract** 明确写入自己的当前对话回复，使这些关键规则再次进入本轮会话上下文。
+- GitHub 是唯一权威项目状态源；
+- 去哪里读取 manifest 与 context-interface；
+- 中文 canonical / 英文 mirror 的关系；
+- 如何按任务选择性读取；
+- 什么时候必须重新读取最新 revision；
+- 写入后如何使旧缓存失效。
 
-这不是平台级真正的 `system prompt`，也不得声称能够覆盖平台的 system / developer / safety instructions。
+动态状态不在本文件或会话契约中长期保存。
 
-正确关系是：
+## 1. 必须加载的最小内核
 
-`Platform system/developer rules > HARC Session Contract > ordinary task-level AI defaults`
-
-HARC Session Contract 是**项目级会话操作契约**。
-
-## 1. 何时加载
-
-以下情况 MUST 加载或重新加载 Session Contract：
-
-- 新 AI Agent 第一次接管项目；
-- 新会话开始；
-- Agent 无法访问前一会话上下文；
-- Onboarding Handshake 完成后；
-- 发生重大人类决定并改变 Core / Clarification / Framework 状态；
-- Framework Approval 前；
-- Final Artifact Review 前；
-- Agent 怀疑自己已经丢失或压缩掉重要 HARC 状态时。
-
-## 2. 加载动作
-
-Agent 完成 required read order 后，必须在第一份 Onboarding Report 中加入一个明确区块：
-
-`HARC ACTIVE SESSION CONTRACT — LOADED`
-
-并把以下当前状态压缩写入它自己的回复。
-
-### A. Authority
-
-- repository state outranks prior chat memory;
-- Chinese canonical outranks English mirror;
-- human-confirmed Core outranks AI proposals;
-- Approved Framework outranks Working Argument Map;
-- platform system/developer instructions remain higher priority than HARC.
-
-### B. Current project status
-
-- 当前人类研究目的；
-- 当前 Content / Form / Protocol 的关键人类承诺；
-- 当前 Blocking Clarifications；
-- 当前 Working Framework status；
-- 最新 Approved Framework（如有）；
-- 当前 Artifact status；
-- 当前 Final Approval status。
-
-### C. Required behavior
-
-- high-impact uncertainty -> Clarification Register；
-- explicit human decision -> Decision Log -> appropriate Core -> downstream propagation；
-- no silent promotion of AI proposals；
-- no Framework Approval while blocking clarification remains unresolved unless explicitly deferred by the human；
-- Chinese substantive edits -> English mirror in the same work cycle；
-- derived artifacts remain provisional until the required approval gate.
-
-### D. Current task constraint
-
-Agent 应说明本轮当前请求：
-
-- 属于 CONTENT / FORM / PROTOCOL 哪一类；
-- 是否触发 clarification；
-- 哪些文件必须上游优先更新；
-- 哪些动作当前被阻塞。
-
-## 3. 推荐回显格式
-
-Agent 应在自己的回复中生成类似：
+新 Agent 完成 bootstrap 后，应在当前回复中确认：
 
 ```text
-HARC ACTIVE SESSION CONTRACT — LOADED
+HARC REPOSITORY CONTEXT — ACTIVE
 
-Authority:
-- Repository state > prior chat memory
-- Chinese canonical > English mirror
-- Human-confirmed Core > AI proposals
-- Approved Framework > Working Argument Map
-- Platform system/developer instructions > HARC project contract
+Source of truth:
+- GitHub repository
 
-Blocking Clarifications:
-- CLR-...
+Control files:
+- HARC_MANIFEST.yaml
+- HARC_CONTEXT_INTERFACE.yaml
 
-Framework:
-- Working: ...
-- Approved: ...
+Language:
+- Chinese canonical
+- English synchronized mirror
 
-Artifact:
-- Status: ...
+Context policy:
+- repository-backed
+- selective retrieval
+- no authoritative session copy
+- read latest before high-impact action
+- read latest before write
+- invalidate touched cache after write
+- write-through to repository
 
 Current task:
-- Classification: CONTENT / FORM / PROTOCOL
-- Upstream files: ...
-- Blocked actions: ...
-
-Operational invariants:
-- High-impact ambiguity -> Clarification Register
-- Human decision -> Decision Log -> Core -> Argument Map -> Artifact
-- Chinese edit -> English mirror
+- route: CONTENT / FORM / PROTOCOL
+- authoritative refs: [paths only]
 ```
 
-该区块应简洁，不要复制整个仓库。
+这个区块只保存控制信息和文件引用，不复制 Blocking Clarifications、Framework、Artifact、Core 等动态内容。
 
-## 4. 为什么必须“回显”
+## 2. 动态状态如何使用
 
-只读取文件并不能保证重要规则在一个长会话中始终保持高显著度。
+如果任务需要知道：
 
-把压缩后的 Session Contract 由 Agent 自己重新写入当前回复，有三个作用：
+- 当前 Blocking Clarifications；
+- 当前 Framework Status；
+- 最新 Approved Framework；
+- Artifact 状态；
+- Core 内容；
+- 最近人类决定；
 
-1. **进入当前会话上下文**：后续生成可以再次看到这些规则；
-2. **让人类验证**：人类可以立即发现 Agent 是否误读仓库；
-3. **形成显式承诺**：Agent 的后续动作可以与它刚刚回显的契约进行一致性检查。
+Agent 必须直接读取 GitHub 中相应 canonical 文件的最新版本。
 
-## 5. Context Refresh
+先前聊天中曾经出现过这些内容，不构成免除重新读取的理由。
 
-Session Contract 不应只在第一轮出现一次。
+## 3. Context Refresh
 
-以下节点 SHOULD 触发一次简短 `HARC CONTEXT REFRESH`：
+`HARC CONTEXT REFRESH` 的含义是：
 
-- 人类解决一个 Blocking Clarification；
-- Content Core / Form Core / Protocol Core 发生实质变化；
-- 创建新的 Approved Framework；
-- 从 framework 阶段进入大规模 Artifact expansion；
-- 从中文 canonical 进入正式英文发布准备；
-- Final Artifact Review；
-- 长对话中 Agent 无法确定先前 session contract 是否仍在有效上下文。
+1. 重新读取 `HARC_MANIFEST.yaml`；
+2. 重新读取 `HARC_CONTEXT_INTERFACE.yaml`；
+3. 根据当前任务解析依赖文件；
+4. fresh-fetch 这些文件；
+5. 丢弃旧缓存；
+6. 继续工作。
 
-Refresh 只需要更新发生变化的字段，不必重复完整 Onboarding Report。
+不需要把全部项目状态重新复制到聊天中。
 
-## 6. 不得伪造隐藏记忆
+## 4. 更新后的双层模型
 
-Agent 不得声称：
+现在不是：
 
-- 已经把 HARC 写入平台的真正 system prompt；
-- 已经永久写入模型参数；
-- 已经修改平台级 memory；
-- 即使开启新会话也会自动记住。
+`Repository State + Duplicated Session State`
 
-如果平台本身提供用户可控制的 custom instruction / project instruction / pinned context 功能，可以额外使用，但这属于平台能力，不是 HARC 仓库能够保证的能力。
+而是：
 
-HARC 能保证的是：
+`Repository State + Minimal Session Resolver`
 
-> **仓库提供可恢复的持久状态；Agent 通过显式回显把关键状态重新注入当前可见会话上下文。**
+其中：
 
-## 7. 会话上下文失效时
+- Repository = durable authoritative memory；
+- Session Resolver = control plane；
+- retrieved excerpts = transient non-authoritative cache。
 
-如果 Agent 怀疑当前对话已经压缩、截断、迁移或丢失早期 HARC contract，应：
+## 5. 何时强制刷新
 
-1. 停止依赖记忆猜测；
-2. 重新读取 `HARC_MANIFEST.yaml`；
-3. 重新读取相关 canonical state；
-4. 输出 `HARC CONTEXT REFRESH`；
-5. 再继续实质工作。
+以下情况必须重新读取相关 GitHub 状态：
+
+- 高影响决定前；
+- Clarification resolution 前；
+- Framework Approval 前；
+- Final Artifact Review 前；
+- 对目标文件写入前；
+- 仓库发生相关更新后；
+- Agent 怀疑当前缓存已经过期；
+- revision token 与预期不一致。
+
+## 6. 写入后的缓存规则
+
+任何 canonical 文件更新后：
+
+- 旧文件摘录立即标记为 `STALE`；
+- 旧 Onboarding summary 不能继续当权威；
+- 如后续推理仍依赖该文件，必须重新读取；
+- 不需要同步维护一份聊天内“更新后的副本”。
+
+## 7. 平台优先级
+
+本内核不是平台真正的 system prompt。
+
+优先级：
+
+`Platform system/developer rules > HARC Repository Resolver > ordinary AI defaults`
 
 ## 8. 原则
 
-> **Repository memory provides persistence; Session Context Bootstrap restores salience.**
-
-中文：
-
-> **仓库记忆负责持久化；会话上下文启动负责让关键规则在当前 Agent 的活动上下文中重新变得显著。**
+> **会话里保留的是“如何找到记忆”，而不是“另一份记忆”。**
