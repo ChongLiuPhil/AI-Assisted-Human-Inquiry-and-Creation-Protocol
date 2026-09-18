@@ -105,6 +105,16 @@ to:
 
 Work Log is excluded from default AI context and retrieved only for historical review or audit.
 
+**Implementation completed:**
+
+- Protocol Core / Decision Log / Working Memory Protocol synchronized;
+- Manifest / Context Interface map all four logical roles;
+- START_HERE / AGENTS / Bootstrap / Session Resolver / Onboarding synchronized;
+- project templates use the same split;
+- methodology article includes C15 / T13 and synchronized draft changes;
+- Framework Gate / Clarification workflow now read Task Plan;
+- bilingual regression: `120 Markdown = 60 Chinese canonical + 60 English mirrors; missing pairs = 0`.
+
 ---
 
 ## Current log boundary
