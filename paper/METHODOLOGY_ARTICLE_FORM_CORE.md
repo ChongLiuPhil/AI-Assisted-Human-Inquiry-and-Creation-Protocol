@@ -1,16 +1,25 @@
 # Methodology Article — Form Core
 
+> Chinese `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md` is canonical; this English file is its synchronized mirror.
+
 **Role:** canonical current source of truth for human-confirmed presentation decisions for the HARC methodology article.
 
 ## Artifact type
 
 `ACADEMIC_PAPER / METHODOLOGY ARTICLE`
 
-## Primary language
+## Language
 
-Current working language: Chinese.
+**Canonical editing language: Chinese.**
 
-An English version may be developed later, but no requirement for a bilingual final submission has yet been confirmed.
+HARC now requires bilingual Chinese–English maintenance:
+
+- Chinese is the canonical editing and human-review baseline;
+- English is the synchronized translation mirror;
+- every substantive Chinese edit must be synchronized to English in the same work cycle;
+- if the language versions conflict, Chinese governs and the English mirror must be repaired.
+
+The methodology article must therefore remain bilingual inside the project even if a future submission venue accepts only one language.
 
 ## Prose / register
 
@@ -58,4 +67,4 @@ None adopted yet.
 
 ## Status
 
-Artifact type and current working language are established. Detailed publication form remains unresolved.
+Artifact type and bilingual language governance are established. Detailed publication form remains unresolved.
