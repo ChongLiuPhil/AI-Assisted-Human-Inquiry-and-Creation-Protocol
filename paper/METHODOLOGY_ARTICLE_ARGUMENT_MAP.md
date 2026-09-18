@@ -192,6 +192,18 @@ Open clarifications are not human commitments. Resolutions must be promoted into
 
 ---
 
+## T10 — Zero-context Onboarding Thesis
+
+**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+
+Durable repository state can support cross-agent continuity only if a new AI Agent can reliably discover it and read it in the correct order. HARC should therefore provide an explicit zero-context entry, mandatory read order, machine-readable manifest, and Onboarding Handshake.
+
+Successful handoff should not be assumed; it should be verified by requiring the Agent to report current normative state, Blocking Clarifications, Framework/Artifact state, and synchronization defects to the human.
+
+**Founder basis:** Article Content Core C12; HARC Protocol Core P20.
+
+---
+
 # 3. Core distinctions that the article should preserve
 
 ### Human-originated distinctions
@@ -231,9 +243,9 @@ Supports T1 and T7.
 
 ## III. Repository-centered persistent research state
 
-**Function:** explain GitHub as the current implementation substrate; distinguish persistent memory from infinite context; introduce current-state vs historical-state compression.
+**Function:** explain GitHub as the current implementation substrate; distinguish persistent memory from infinite context; introduce current-state vs historical-state compression; and explain why reliable takeover requires zero-context bootstrap, a manifest, and an Onboarding Handshake.
 
-Supports T1 and T7.
+Supports T1, T7, and T10.
 
 ## IV. Layered semantic governance
 
