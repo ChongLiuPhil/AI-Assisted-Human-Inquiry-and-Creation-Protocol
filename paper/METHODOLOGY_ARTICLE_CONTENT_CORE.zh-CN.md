@@ -64,18 +64,23 @@ HARC 不是一个纯粹抽象的哲学提案。其文件层级、更新规则、
 
 这一机制的目的不是假设所有 AI 平台都会自动读取同一文件名，而是通过根目录入口、Agent 契约、机器可读 manifest 与人类可复制 bootstrap prompt，最大化跨平台可发现性，并把“接管是否成功”变成可观察、可验证的步骤。
 
-## C13. 持久仓库状态与活动会话契约应形成双层记忆
+## C13. GitHub 应作为权威外部记忆与工作状态接口
 
-文章应解释：仅把项目状态保存在仓库中，可以解决跨会话持久性，但不能保证关键规则在一个长对话的当前生成上下文中持续具有足够显著性。
+文章应解释：HARC 不需要在聊天上下文中长期维护一份与 GitHub 平行的项目状态副本。
 
-HARC 因此采用双层设计：
+更准确的架构是：
 
-1. **Durable Repository State** — 可审计、可恢复、跨 Agent 的长期状态；
-2. **Active Session Contract** — 新 Agent 完成 onboarding 后，根据当前仓库状态重新生成并回显到自己当前回复中的压缩操作契约。
+`GitHub Repository = authoritative external memory + working state`
 
-这份 Session Contract 不是平台真正的 system prompt。它不能覆盖平台 system/developer/safety 指令，也不能永久修改模型记忆。它的功能是把关键 HARC 不变量、Blocking Clarifications、Framework/Artifact 状态和当前任务传播路径重新注入当前可见会话上下文。
+`Model Context = transient retrieval cache + control plane`
 
-重大状态变化或上下文可能丢失时，应从仓库重新生成 `HARC CONTEXT REFRESH`。
+模型在某一次回答中仍需要临时读取相关信息，但应根据当前任务从 GitHub 最新 canonical revision 按需获取最小必要内容。
+
+会话只保留一个极小的 Repository Resolver：仓库身份、manifest/context-interface 路径、task route、read-latest-before-write、write-through、cache invalidation 等规则。Blocking Clarifications、Framework、Artifact、Core 等动态项目状态不应作为第二份权威副本长期留在对话上下文中。
+
+所有影响未来工作的状态改变直接写回 GitHub；写入后，先前读取到上下文中的旧版本立即视为 stale。高影响判断和写入前应重新确认相关最新 revision。
+
+这一机制使 GitHub 真正成为跨 Agent 的记忆库和工作库，而模型上下文只是当前任务对仓库状态的一次临时投影。
 
 ## 当前尚未解决的人类决定
 
