@@ -70,3 +70,34 @@ An Agent must not use a more polished English wording to silently change the Chi
 ## 7. New-project inheritance
 
 A new HARC project may explicitly adopt the bilingual profile. When it does, Chinese canonical and English mirror files should be created at initialization rather than added later.
+
+
+## 8. Pre-cutover legacy catch-up
+
+The Chinese-canonical / English-synchronized-mirror rule became formal HARC governance on 2026-09-18.
+
+For bilingual files that existed before that rule, if the **English version had in fact developed substantive content newer than the Chinese version**, that newer content must not be discarded merely to impose Chinese canonical status immediately.
+
+Perform a one-time legacy catch-up:
+
+`pre-cutover English development -> Chinese catch-up -> bilingual parity -> Chinese canonical cutover`
+
+Requirements:
+
+1. identify substantive pre-rule English developments not yet present in Chinese;
+2. incorporate them into Chinese so that Chinese represents the genuinely latest semantic state at cutover;
+3. then synchronize English to that updated Chinese version;
+4. complete a parity check before declaring canonical cutover complete;
+5. after cutover, English must no longer develop independently.
+
+This catch-up is a migration exception and does not alter the long-term direction of governance.
+
+## 9. Normal editing direction after cutover
+
+After canonical cutover, all normal substantive edits must follow:
+
+`Human decision -> Chinese canonical -> English synchronized mirror`
+
+English wording may be improved as translation, but the English mirror must not independently add, remove, strengthen, or weaken substantive content.
+
+If English drafting reveals that the Chinese content itself should change, revise the Chinese canonical source first and then resynchronize English. English must not become an independent substantive source after cutover.
