@@ -38,7 +38,7 @@ Before substantive work:
 
 For high-impact uncertainty about claims, concepts, terminology/translation, scope, inference, or structure, do not guess:
 
-`ambiguity -> Clarification Register -> human resolution -> Decision Log -> Core -> Argument Map -> Artifact`
+`ambiguity -> Task Plan / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory -> downstream propagation`
 
 ## Normal decision propagation
 
