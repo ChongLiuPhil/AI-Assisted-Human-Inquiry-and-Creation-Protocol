@@ -34,8 +34,8 @@
 7. 创建 Working Memory Area：Index、Current Focus、Task Plan、Work Log 及其英文 mirror。默认模板使用拆分文件；轻量项目可以在 manifest 中把多个角色映射到同一文件。
 8. Current Focus 保存当前最重要的目标；Task Plan 保存动态任务、TODO、blockers、pending decisions / Clarifications；Work Log 主要供人类日后回顾，默认不属于 AI onboarding 必读内容。
 9. 保留 `docs/clarification-register.zh-CN.md` 作为兼容指针；新的 clarification 作为 Task Plan / Working Memory item 管理。
-10. 建立 `docs/argument-map.zh-CN.md` 作为 AI 维护的工作表示，并同步英文 mirror。
-11. 初始化 `docs/framework-status.zh-CN.md` 为 `WORKING-FRAMEWORK`；除非人类明确批准，否则没有 Approved Snapshot。
+10. 建立 `docs/argument-map.zh-CN.md` 作为 AI 维护的工作表示，并同步英文 mirror。AI 可以帮助提出、组织和表达 framework，但不要把 AI 描述为认知主体或说它“承担认知劳动 / 认知任务”。
+11. 初始化 `docs/framework-status.zh-CN.md` 为 `WORKING-FRAMEWORK`；除非人类明确批准，否则没有 Approved Snapshot。Framework Approval 要求人类清楚理解、认真审核并确认拟批准 framework 中实际呈现的全部实质内容。
 12. 创建适合项目的成果目录。
 13. 研究核验、数据、计算或来源相关时创建 `evidence/`，其中人类可读说明双语化。
 14. 未知项保持明确未知，不要用 AI 假设填充。
@@ -97,7 +97,7 @@ project/
 
 ## 给 AI Agent 的建议指令
 
-> 使用 HARC Protocol 初始化本项目。把 GitHub 直接当作权威外部记忆库与工作状态库；模型上下文只保留 Repository Resolver 和当前任务所需的临时缓存。区分 CONTENT、FORM 和 PROTOCOL 决定。规范文件只写入人类实际提供的承诺。确定成果类型与适用形式 profile，但不要发明偏好。用 Working Memory Area 维护协作状态：Current Focus 只保留现在最重要的目标和 immediate next action；Task Plan 维护动态任务、TODO、blockers、pending human decisions 与 clarifications；完成任务退出 active list，并把阶段性摘要写入 Work Log；Work Log 主要供我日后回顾，不要默认加载到 AI 上下文。对任何可能重大影响核心命题、关键概念、术语/翻译或论证结构的高影响不确定性，创建 Working Memory Clarification item 并向我确认；不要自行猜测。Argument Map 在我明确批准 framework snapshot 前始终属于 AI 生成的工作结构。实质性变化上游优先传播。记录项目采用的 HARC version/commit。中文是 canonical；任何修改必须同步英文 mirror。
+> 使用 HARC Protocol 初始化本项目。把 GitHub 直接当作权威外部记忆库与工作状态库；模型上下文只保留 Repository Resolver 和当前任务所需的临时缓存。区分 CONTENT、FORM 和 PROTOCOL 决定。规范文件只写入人类实际提供的承诺。确定成果类型与适用形式 profile，但不要发明偏好。用 Working Memory Area 维护协作状态：Current Focus 只保留现在最重要的目标和 immediate next action；Task Plan 维护动态任务、TODO、blockers、pending human decisions 与 clarifications；完成任务退出 active list，并把阶段性摘要写入 Work Log；Work Log 主要供我日后回顾，不要默认加载到 AI 上下文。对任何可能重大影响核心命题、关键概念、术语/翻译或论证结构的高影响不确定性，创建 Working Memory Clarification item 并向我确认；不要自行猜测。把 AI Agent 作为协作工具描述：可以执行或辅助检索、综合、起草、重组、核查等工作，但不要把 AI 描述为认知主体，也不要使用“AI 承担认知劳动 / 认知任务”作为规范术语。研究或创作的目的、核心问题与方向必须由人类发起或明确批准。Argument Map 在我明确批准 framework snapshot 前始终属于 AI 生成的工作结构；Framework Approval 前，我必须清楚理解、认真审核并明确确认其中实际呈现的全部实质内容。实质性变化上游优先传播。记录项目采用的 HARC version/commit。中文是 canonical；任何修改必须同步英文 mirror。
 
 ## 未知项是合法状态
 
