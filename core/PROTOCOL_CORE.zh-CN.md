@@ -287,6 +287,41 @@ Working Memory 的功能是让任何新的人类参与者或 AI Agent 能迅速�
 
 Working Memory 中获得稳定确认的内容必须 Promotion 到相应长期记忆；Promotion 后 Working Memory 只保留状态、Decision ID 与目标文件指针。
 
+
+## P24. Working Memory 是功能区而不是固定单文件
+
+Working Memory 的规范对象是**一组功能角色**，而不是某一个固定文件。
+
+项目可以根据工程规模、AI Agent 性能、上下文成本与工作流便利性，把 Working Memory 实现为一个文件或多个文件。无论物理布局如何，至少应提供三种逻辑功能：
+
+1. **Current Focus / 当前焦点**
+   - 保存最近期、最高优先级的工作目标；
+   - 说明当前阶段、本轮/当前任务要解决什么、最关键 blocker 与立即 next action；
+   - 应保持极短，是新 Agent 接管时最高优先级的工作状态。
+
+2. **Task Plan / 任务计划**
+   - 保存动态计划、TODO、active tasks、blocked/waiting-human items、backlog 与 next actions；
+   - 任务完成后应退出 active list；
+   - 新任务随协作发展动态加入；
+   - 已完成事项应被压缩进入 Work Log；其中形成稳定规范结果的内容还必须 Promotion 到对应长期记忆。
+
+3. **Work Log / 工作日志**
+   - 保存供人类作者日后阅读的阶段性历史纪要；
+   - 记录大体进展、重要工作转折、思想/工作路径的变化、完成的任务批次与阶段里程碑；
+   - 主要服务于人类回顾，不是常规 AI onboarding 的必读上下文；
+   - Agent SHOULD 定期更新它，但默认不应为了正常继续当前工作而读取完整日志；
+   - 当人类要求历史回顾、需要追溯变迁、当前状态与历史明显冲突或进行专门审计时，Agent MAY 按需读取。
+
+Work Log 不应保存模型隐藏 chain-of-thought、scratchpad 或不可验证的内部推理；它只记录可审计的项目级变化、已表达的理由、决定、里程碑和高层总结。
+
+Working Memory 可以有一个稳定的 Index / Resolver 文件，把上述逻辑角色映射到当前物理文件。一个轻量项目可以把多个角色映射到同一文件；复杂项目可以分拆。
+
+推荐续接顺序：
+
+`Working Memory Index -> Current Focus -> Task Plan -> task-relevant Long-Term Memory`
+
+Work Log 默认不进入该必读链。
+
 ---
 
 ## 当前范围
