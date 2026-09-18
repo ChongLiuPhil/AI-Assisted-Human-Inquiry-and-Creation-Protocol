@@ -16,7 +16,8 @@
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `AGENTS.zh-CN.md`
-7. manifest/context-interface 按当前任务解析出的 Protocol / Decision / Clarification / Article 状态文件
+7. `docs/working-memory.zh-CN.md`
+8. manifest/context-interface 按当前任务解析出的三层长期记忆 / Evidence 状态文件
 
 重建当前项目。
 
@@ -40,9 +41,9 @@
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- 当前主要协议决定：P1–P22
-- 最近人类协议决定：HARC-D015 至 HARC-D020
-- D018、D019 与 D020 已由人类明确确认并实施；D020 将 D019 的动态 Session Contract 收缩为最小 Repository Resolver。
+- 当前主要协议决定：P1–P23
+- 最近人类协议决定：HARC-D015 至 HARC-D021
+- D018–D021 已由人类明确确认；D021 用并行 Working Memory 取代旧 Layer 1.5 模型。
 
 **协议状态结论：** 可从仓库发现并重建。
 
@@ -66,7 +67,9 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 - Framework Approval 与 Final Artifact Approval 分离；
 - AI 扩写必须保持 framework fidelity；
 - 中文 canonical / 英文 synchronized mirror；
-- 高影响不确定性进入 Layer 1.5 Critical Clarification Register；
+- 三个内容层属于 Long-Term Research Memory；
+- Working Memory 与三层并行，记录当前阶段、目标、任务、阻塞、待确认事项、Clarifications 与 handoff；
+- Clarification 是 Working Memory item，不是 Layer 1.5；
 - 新 Agent 必须经过 zero-context bootstrap + Onboarding Handshake 才进入实质工作。
 
 ### B3. 方法论文章 Form 状态
@@ -77,27 +80,39 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 - 详细字体、版式、引用样式、目标发布渠道：`UNRESOLVED`
 - 当前 Markdown / author–year 样式：工作默认值，不是永久作者偏好。
 
-## C. Critical Clarification 状态
+## C. Working Memory 状态
 
-### C1. 当前 Blocking
+### C1. 当前阶段与续接点
 
-- `CLR-001` — 方法论文章中心责任概念；
-- `CLR-002` — Framework Responsibility Thesis 强度；
-- `CLR-005` — `responsibility concentration` 是否保留/替换。
+- CURRENT_STAGE：HARC v0.2 protocol architecture + methodology Working Framework；
+- CURRENT_OBJECTIVE：完成 D021 Working Memory 架构迁移；
+- 当前主要工作：协议/模板/文章同步与回归验证。
 
-这些条目阻塞 `MA-FW-001`。
+### C2. Blockers / Pending Human Decisions
 
-此外：
+Framework Approval blockers：
 
-- `CLR-009` 对正式开放许可 / release 是 `BLOCKING`，但不阻塞当前方法论文章 framework 讨论。
+- `CLR-001`
+- `CLR-002`
+- `CLR-005`
 
-### C2. 当前 Non-blocking
+Formal release blocker：
 
-- `CLR-003` — `semantic version control`；
-- `CLR-004` — `generation–verification asymmetry`；
-- `CLR-006` — extended/distributed cognition 理论地位；
-- `CLR-007` — 经验验证计划；
-- `CLR-008` — 学科/投稿方向。
+- `CLR-009`
+
+Non-blocking pending items：
+
+- `CLR-003`
+- `CLR-004`
+- `CLR-006`
+- `CLR-007`
+- `CLR-008`
+
+### C3. Handoff / next actions
+
+- 完成本轮 Working Memory migration；
+- 然后优先解决 `CLR-001 / CLR-002 / CLR-005`；
+- 不把 Working Memory summary 当成长期实质性真值，相关判断仍读取 Layer 1/2/3 最新 canonical state。
 
 ## D. Framework 状态
 
@@ -192,7 +207,8 @@ Current task:
 理由：
 
 - 新 Agent 可仅凭仓库识别人类/AI 权威边界；
-- 可发现 Blocking Clarifications；
+- 可先从 Working Memory 恢复 current stage / objective / tasks / blockers / next actions；
+- 可发现其中的 blocking Clarifications，并从长期目标文件核验影响；
 - 可正确判断没有 Approved Framework；
 - 可正确判断当前 Artifact 为 `DERIVED-PROVISIONAL`；
 - 可识别中文 canonical / 英文 mirror；
@@ -209,7 +225,7 @@ Current task:
 
 当前 HARC 仓库已经具备一个可工作的 zero-context onboarding 路径：
 
-`Repository access -> Manifest / Context Interface -> Selective Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
+`Repository access -> Manifest / Context Interface -> Working Memory -> Selective Long-Term Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
 
 该测试只能证明**当前仓库状态可以支持一次成功的自举接管**，不能证明所有外部 AI 平台都会自动发现入口文件。
 
