@@ -4,6 +4,17 @@
 
 > **语言规则：本文件的中文版本是规范性基准；英文 `AGENTS.md` 是同步镜像。**
 
+## 0. 零上下文接管：先读 START_HERE
+
+任何从零开始接手本仓库的 AI Agent，在进行实质性工作前必须先读取：
+
+1. `START_HERE.zh-CN.md`
+2. `HARC_MANIFEST.yaml`
+
+然后按照其中的 mandatory read order 重建项目状态，并先向人类输出 **HARC Onboarding Report**。
+
+在完成这一接管握手前，不得进行大规模结构修改、正文重写、Framework Approval、关键术语传播或把 AI 提议提升为人类承诺。
+
 ## 1. 不依赖聊天记忆
 
 任何特定聊天、模型、厂商、账号记忆、隐藏 scratchpad 或本地上下文，都不是项目的规范性记忆。
