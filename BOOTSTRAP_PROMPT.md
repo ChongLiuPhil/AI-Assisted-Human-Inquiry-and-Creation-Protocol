@@ -37,7 +37,7 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 > - infer human preferences from temporary tool defaults;
 > - perform large-scale structural or manuscript changes before onboarding completes.
 >
-> If uncertainty could materially affect a core claim, key concept, terminology/translation, scope, major inference, section function, or the overall argument structure, use:
+> If uncertainty could materially affect a core claim, key concept, terminology/translation, scope, major inference, section function, or the overall argument structure, first create a Clarification item in Task Plan and use:
 >
 > `ambiguity -> Working Memory / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory destination`
 >
