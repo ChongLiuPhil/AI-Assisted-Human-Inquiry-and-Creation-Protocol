@@ -74,6 +74,10 @@ A HARC project normally contains:
 
 ```text
 project/
+├── START_HERE.zh-CN.md
+├── START_HERE.md
+├── HARC_MANIFEST.yaml
+├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
 │   ├── CONTENT_CORE.md
@@ -87,6 +91,10 @@ project/
 ├── evidence/
 └── paper/ | book/ | article/ | report/ | ...
 ```
+
+### Zero-context bootstrap entry
+
+`START_HERE.zh-CN.md` and `HARC_MANIFEST.yaml` define the first read order and Onboarding Handshake for a replacement Agent. They do not create new research claims; they route the Agent to authoritative state and make successful reconstruction observable.
 
 ### Content Core
 
