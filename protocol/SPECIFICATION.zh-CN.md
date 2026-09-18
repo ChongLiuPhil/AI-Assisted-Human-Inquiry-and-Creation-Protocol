@@ -444,11 +444,12 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 - `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror；
 - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror；
 - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror；
-- `HARC_MANIFEST.yaml` 或等价机器可读状态索引；
+- `HARC_MANIFEST.yaml`；
+- `HARC_CONTEXT_INTERFACE.yaml` 或等价机器可读 context policy；
 - 根 `AGENTS.zh-CN.md` / English mirror；
 - 一个可发现的 Onboarding Handshake 规范。
 
-新的 AI Agent 在实质性工作前 MUST 按启动入口定义的顺序读取当前状态，并 SHOULD 先输出 HARC Onboarding Report，说明协议状态、人类已确认状态、Form 状态、Blocking Clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Onboarding Report MUST 回显 `HARC ACTIVE SESSION CONTRACT — LOADED`，把压缩后的关键规则和当前状态重新写入当前会话上下文。
+新的 AI Agent 在实质性工作前 MUST 按启动入口定义的顺序读取当前状态，并 SHOULD 先输出 HARC Onboarding Report，说明协议状态、人类已确认状态、Form 状态、Blocking Clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Onboarding Report MUST 确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载访问内核；Blocking Clarifications、Framework、Artifact 与 Core 等动态状态仍必须在后续任务中从 GitHub 最新 canonical revision 按需读取。
 
 如果 Agent 无法从仓库完成该报告，项目存在 onboarding/persistence defect。
 
@@ -467,6 +468,21 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 9. 当前相关成果与证据。
 
 项目应记录所采用的 HARC version/tag/commit，避免把后续上游协议变化静默视为已经接受的治理规则。
+
+### 16.3 Repository-Backed Context
+
+项目 SHOULD 使用 `HARC_CONTEXT_INTERFACE.yaml` 或等价机制规定：
+
+- GitHub 是唯一权威项目状态源；
+- 模型上下文只是非权威临时缓存；
+- 根据 CONTENT / FORM / PROTOCOL 任务选择性读取；
+- 高影响判断前重新读取相关最新状态；
+- 写入前确认最新 revision；
+- 写入后使旧缓存失效；
+- 所有持久更新 write-through 到 repository；
+- Issue、PR comment、Discussion 等默认不属于规范权威状态。
+
+完整规则见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md`。
 
 如果关键约束只存在于不可访问聊天或隐藏记忆中，项目在这些约束被外部化前属于不合规。
 
@@ -563,6 +579,7 @@ SESSION_CONTEXT_BOOTSTRAP.zh-CN.md
 ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 AGENTS.zh-CN.md
 HARC_MANIFEST.yaml
+HARC_CONTEXT_INTERFACE.yaml
 core/CONTENT_CORE.zh-CN.md
 core/FORM_CORE.zh-CN.md
 core/DECISION_LOG.zh-CN.md
