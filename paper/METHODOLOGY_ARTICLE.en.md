@@ -107,17 +107,31 @@ The Decision Log therefore records how the project changed: when a claim changed
 
 The Core represents the current active state; the Log represents how the project arrived there.
 
-### 4.4 Critical Clarification Register: putting high-impact uncertainty under human governance
+### 4.4 Working Memory: a parallel operational layer for current work and high-impact uncertainty
 
-Between the Content/Form Core and the Working Argument Map, HARC adds a **Layer 1.5**: the Critical Clarification Register.
+HARC no longer treats Critical Clarification as a “Layer 1.5” between the Content/Form Core and the Working Argument Map.
 
-It is not intended for every minor question. It captures high-impact uncertainties whose misinterpretation could materially change a core claim, key concept, scope, major inferential relation, section function, or important terminology/translation.
+A more accurate architecture treats all three primary content layers as Long-Term Research Memory.
 
-When multiple reasonable interpretations exist, the AI's task is not to choose the interpretation it considers most likely and continue silently. It should promote the uncertainty explicitly, showing candidate interpretations, impact, severity, and the question requiring human resolution.
+Layer 1 is the **Human Authorial Core**: progressively expressed, corrected, confirmed, and refined human commitments.
 
-Open entries are not the human author's position. Only after explicit human confirmation or correction does the resolution pass through the Decision Log into the appropriate Core and then propagate into the Working Argument Map and manuscript.
+Layer 2 is the **Current Framework**: current argument structure, core propositions, key concepts, inferential relations, and section functions. It is constrained by Layer 1 but may contain structural material not stated item-by-item there. It is more revisable while still remaining durable project memory.
 
-This mechanism is especially important in primary-language writing and cross-language expression: if the meaning of a key Chinese concept and its English correspondence has not been confirmed, translation should not silently decide it.
+Layer 3 is the **Derived Artifact**: the paper, book, or report expanded primarily from Layer 2 while remaining compatible with Layer 1 and evidence constraints.
+
+Parallel to these three layers, HARC maintains **Working Memory**. Working Memory answers not “what does the project ultimately claim?” but “where is the project now, and where should work resume?” It records current stage, work objective, overall plan, active tasks, recently completed work, next actions, TODOs, blockers, pending human decisions, Clarifications, synchronization defects, and handoff notes.
+
+High-impact uncertainty is now simply a Clarification item inside Working Memory. When multiple reasonable interpretations of a core claim, concept, scope condition, inferential relation, section function, or key term exist, the AI should not choose privately. It should place the issue in Working Memory for human resolution.
+
+After human resolution, perform Promotion:
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+For human core content:
+
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+
+Working Memory is therefore not a fourth content layer. Resolved items leave active state; the authoritative answer is deposited into Long-Term Memory, while Working Memory retains only Decision IDs and destination pointers.
 
 ### 4.5 Working Argument Map: the intermediate layer best suited to human–AI discussion
 
@@ -265,15 +279,15 @@ A project should therefore not depend primarily on the fact that “a particular
 
 Merely having these files in the repository does not guarantee that a replacement agent will read them correctly. AI platforms differ in how they discover entry files, automatic context, and repository instructions. HARC therefore also requires a **zero-context bootstrap protocol**: a root `START_HERE`, a machine-readable manifest, an explicit mandatory read order, and an Onboarding Report produced before substantive work.
 
-This handshake turns “the agent understood the project” from an assumption into an observable check. The Agent should first report the human commitments, Blocking Clarifications, Working/Approved Framework, artifact status, and synchronization defects it reconstructed. If these cannot be recovered from repository state, the project has a persistence/onboarding defect that should be repaired before large-scale expansion continues.
+This handshake turns “the agent understood the project” from an assumption into an observable check. The Agent should first report current stage, objective, active tasks, recently completed work, next actions, blockers, and pending human decisions from Working Memory, then retrieve task-relevant long-term Core, Framework, and Artifact state. If these cannot be recovered from repository state, the project has a persistence/onboarding defect that should be repaired before large-scale expansion continues.
 
 HARC goes further by avoiding a second dynamic project-state copy in chat. The more precise mechanism is a **Repository-Backed Context Interface**: GitHub serves as both authoritative external memory and working-state store, while model context retains only a minimal Repository Resolver and temporarily retrieves files needed by the current task.
 
-Blocking Clarifications, Framework, Artifact, Core, and Decision Log state therefore remain authoritative only in GitHub. The Agent fetches relevant latest canonical revisions when needed, reconfirms revisions before high-impact judgments or writes, writes changes directly back to the repository, and treats older excerpts already present in model context as stale after a write. A `HARC CONTEXT REFRESH` no longer means copying the whole project back into chat; it means resolving current task dependencies and fresh-fetching those files.
+Working Memory and all three Long-Term Research Memory layers therefore remain in GitHub. Working Memory provides the resume point; Layers 1/2/3 provide durable intellectual and artifact state. The Agent fetches relevant latest canonical revisions when needed, reconfirms revisions before high-impact judgments or writes, writes changes directly back to the repository, and treats older excerpts already present in model context as stale after a write. A `HARC CONTEXT REFRESH` no longer means copying the whole project back into chat; it means resolving current task dependencies and fresh-fetching those files.
 
 This does not mean that a model can reason with literally no context. Relevant information still has to become temporarily available during an inference. HARC changes the authority and lifecycle: **GitHub is the truth source; model context is a short-lived projection of repository state for the current task.**
 
-This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. HARC therefore layers active state and historical state: Cores, the latest Framework, and the Argument Map remain compressed; detailed logs, old versions, evidence, and archives may continue growing and be retrieved selectively through indexes.
+This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. HARC therefore keeps Working Memory short and current, keeps Layer 1 Cores and Layer 2 Frameworks compact, and lets detailed logs, older versions, evidence, and archives grow in historical storage for selective retrieval.
 
 The project thereby shifts from “depending on one enormous conversation” to “depending on recoverable explicit state.”
 
