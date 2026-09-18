@@ -193,3 +193,14 @@ This file is the chronological audit trail of substantive human decisions about 
 **Affected components:** project purpose, README, methodology article, article framework, evidence layer, roadmap
 
 **Status:** first governed methodology-article framework and complete Chinese provisional draft implemented; human Framework Approval and later Final Artifact Approval remain pending.
+
+## 2026-09-18 — HARC-D015
+
+**Source:** Human project founder  
+**Classification:** FORM, PROTOCOL
+
+**Decision:** All substantive content in the Human–AI Research Collaboration Protocol project must be maintained in both Chinese and English. Chinese is the canonical editing and review baseline. Every substantive edit must be synchronized to the English version in the same work cycle. If the two versions diverge, Chinese governs and the English mirror must be repaired. New project documents should be created bilingually from the start.
+
+**Affected components:** Protocol Core, Specification, AGENTS contract, README, methodology article, evidence notes, audits, templates, future files
+
+**Status:** implementation in progress; repository-wide bilingual migration initiated.
