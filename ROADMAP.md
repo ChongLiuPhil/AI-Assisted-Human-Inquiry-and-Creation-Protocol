@@ -30,6 +30,8 @@
 - [x] Define Chinese-canonical / English-mirror bilingual governance.
 - [x] Create a synchronized English mirror of the methodology article.
 - [x] Complete bilingual migration and parity audit of legacy documentation and all templates.
+- [x] Establish zero-context bootstrap: START_HERE, standalone Bootstrap Prompt, HARC_MANIFEST, Onboarding Handshake, and Onboarding Report Template.
+- [x] Complete one self-hosted HARC onboarding self-test.
 - [ ] Human review and approval of the methodology article Working Framework.
 - [ ] Create first Approved Framework snapshot for the methodology article.
 - [ ] Decide target publication venue / disciplinary positioning.
@@ -39,7 +41,7 @@
 
 - [ ] Define machine-readable metadata for canonical files.
 - [ ] Add optional YAML front matter conventions.
-- [ ] Define a project-state manifest.
+- [x] Establish an initial project-state manifest; formal schema/validation remains future work.
 - [ ] Create consistency checklist for Content Core / Framework / Artifact.
 - [ ] Add examples for paper, book, article, and report projects.
 - [ ] Define framework diff conventions.
