@@ -114,7 +114,7 @@ Agent 应说明：
 
 ## 5. Clarification 优先规则
 
-如果 Agent 对以下任何内容存在非微不足道且高影响的不确定性，应先进入 Clarification Register：
+如果 Agent 对以下任何内容存在非微不足道且高影响的不确定性，应先进入 Task Plan 中的 Clarification 队列：
 
 - 核心观点；
 - 中心命题；
@@ -156,4 +156,4 @@ Agent 应说明：
 
 # 可直接复制给任意 AI Agent 的启动提示词
 
-> 你正在接手一个遵循 Human–AI Research Collaboration Protocol（HARC）的研究仓库。不要依赖旧聊天、账号记忆或你自己的先验推断来重建项目状态。首先读取仓库根目录的 `START_HERE.zh-CN.md` 和 `HARC_MANIFEST.yaml`，然后严格按照其中的 required read order 读取规范状态。中文是 canonical，英文是同步 mirror。完成读取后，在做任何实质性修改之前，先向我输出一份 HARC Onboarding Report：说明当前人类承诺、Form 状态、Blocking/Non-blocking Clarifications、Working/Approved Framework 状态、Artifact 状态、同步缺陷，以及当前请求允许的下一步。如果遇到可能显著影响核心命题、关键概念、术语/翻译、范围、推论关系或论证结构的不确定性，不要猜测；先写入 Clarification Register 并向我确认。任何人类明确决定都必须先进入 Decision Log 与相应 Core，再传播到 Argument Map 和派生成果。未经显式 Framework Approval，不得把 Working Framework 当作人类已批准结构。
+> 你正在接手一个遵循 Human–AI Research Collaboration Protocol（HARC）的研究仓库。不要依赖旧聊天、账号记忆或你自己的先验推断来重建项目状态。首先读取仓库根目录的 `START_HERE.zh-CN.md` 和 `HARC_MANIFEST.yaml`，然后严格按照其中的 required read order 读取规范状态。中文是 canonical，英文是同步 mirror。完成读取后，在做任何实质性修改之前，先向我输出一份 HARC Onboarding Report：说明当前人类承诺、Form 状态、Blocking/Non-blocking Clarifications、Working/Approved Framework 状态、Artifact 状态、同步缺陷，以及当前请求允许的下一步。如果遇到可能显著影响核心命题、关键概念、术语/翻译、范围、推论关系或论证结构的不确定性，不要猜测；先写入 `docs/working-memory/task-plan.zh-CN.md` 的 Clarification 队列并向我确认。任何人类明确决定都必须先进入 Decision Log 与相应 Core，再传播到 Argument Map 和派生成果。未经显式 Framework Approval，不得把 Working Framework 当作人类已批准结构。
