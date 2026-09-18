@@ -204,6 +204,22 @@ Successful handoff should not be assumed; it should be verified by requiring the
 
 ---
 
+## T11 — Two-Layer Memory Thesis
+
+**Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
+
+Cross-agent continuity requires not only durable repository state but also reinjection of key rules and current state into the active conversation context after a replacement Agent takes over.
+
+HARC therefore distinguishes:
+
+`Durable Repository State + Active Session Contract`
+
+The former provides persistence; the latter provides salience and verifiable execution. The Session Contract is not a platform system prompt but a project-level session operating contract subordinate to higher-priority platform instructions.
+
+**Founder basis:** Article Content Core C13; HARC Protocol Core P21.
+
+---
+
 # 3. Core distinctions that the article should preserve
 
 ### Human-originated distinctions
@@ -245,7 +261,7 @@ Supports T1 and T7.
 
 **Function:** explain GitHub as the current implementation substrate; distinguish persistent memory from infinite context; introduce current-state vs historical-state compression; and explain why reliable takeover requires zero-context bootstrap, a manifest, and an Onboarding Handshake.
 
-Supports T1, T7, and T10.
+Supports T1, T7, T10, and T11.
 
 ## IV. Layered semantic governance
 
