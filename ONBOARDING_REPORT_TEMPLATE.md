@@ -82,4 +82,25 @@ Before substantive work, a new AI Agent should report the state reconstructed fr
 - `FAIL` — onboarding/persistence defect; repair first;
 - `PARTIAL` — limited work may proceed, but some work is blocked by clarification or missing state.
 
-**Conclusion:** 
+**Conclusion:**
+
+## J. Active Session Contract
+
+Following `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, the Agent must end this report by echoing:
+
+`HARC ACTIVE SESSION CONTRACT — LOADED`
+
+including at least:
+
+- authority hierarchy;
+- canonical language;
+- Blocking Clarifications;
+- Working / Approved Framework;
+- Artifact status;
+- current task classification;
+- upstream-first propagation path;
+- blocked actions.
+
+**Session Contract loaded:** `YES / NO`
+
+If `NO`, Onboarding must not be marked `PASS`.
