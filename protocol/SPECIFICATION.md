@@ -126,23 +126,27 @@ Each entry SHOULD include identifier, date, source, classification, decision, af
 
 Current cores may be rewritten to represent active state; the Decision Log preserves historical continuity.
 
-### 5.4 Critical Clarification Register — `docs/clarification-register.md`
+### 5.4 Working Memory — `docs/working-memory.zh-CN.md`
 
-The Critical Clarification Register is Layer 1.5 bridge state for **high-impact uncertainty not yet resolved by the human**.
+Working Memory is current operational state parallel to the three Long-Term Research Memory layers. It is not Layer 1.5.
 
-It MUST capture uncertainties that, if guessed by the AI, could materially alter core claims, key concepts, scope, major inferential relations, section functions, important terminology/translation, Framework Approval, or long-term project continuity.
+It MUST let a replacement human collaborator or AI Agent quickly identify CURRENT_STAGE, CURRENT_OBJECTIVE, ACTIVE_TASKS, RECENTLY_COMPLETED, NEXT_ACTIONS, TODO/BACKLOG, BLOCKERS, PENDING_HUMAN_DECISIONS, Clarifications, SYNC_DEFECTS, and HANDOFF_NOTE.
 
-Important entries SHOULD include identifier, status, `BLOCKING / NON-BLOCKING` severity, category, uncertain point, candidate interpretations, impact, affected files/claims/sections, any explicitly `AI-PROPOSED` recommendation, the question for the human, human resolution, and propagation targets.
+Clarification is an item type inside Working Memory. High-impact uncertainty that could materially alter core claims, key concepts, scope, major inferential relations, section functions, important terminology/translation, or Framework Approval MUST become a Clarification item rather than being silently guessed.
 
-Open clarifications MUST NOT be treated as human commitments.
+Open Clarifications MUST NOT be treated as human commitments.
 
-After human resolution, the Agent MUST perform Resolution Promotion:
+After human resolution, perform Promotion:
 
-`Human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+`Working Memory -> human resolution -> Decision Log -> appropriate Long-Term Memory destination`
 
-Resolved entries may remain as audit traces, but the normative answer must be promoted into the appropriate Core.
+For human core content:
 
-See `protocol/CLARIFICATION_REGISTER.md`.
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+
+After Promotion, mark the Working Memory item `RESOLVED / PROMOTED`, record Decision ID and destination paths, and remove it from the active queue.
+
+See `protocol/WORKING_MEMORY.md` and the clarification-specific workflow in `protocol/CLARIFICATION_REGISTER.md`.
 
 ### 5.5 Working Argument Map — `docs/argument-map.md`
 
@@ -434,7 +438,7 @@ A project SHOULD provide at repository root:
 - root `AGENTS.zh-CN.md` / English mirror;
 - a discoverable Onboarding Handshake specification.
 
-Before substantive work, a new AI Agent MUST follow the startup read order and SHOULD first output a HARC Onboarding Report covering protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and permitted next action. The Onboarding Report MUST confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the access kernel; dynamic Blocking Clarifications, Framework, Artifact, and Core state must still be retrieved on demand from latest canonical GitHub revisions.
+Before substantive work, a new AI Agent MUST read the control plane and Working Memory, then SHOULD output a HARC Onboarding Report covering current stage, objective, active tasks, recently completed work, next actions, blockers, pending human decisions/clarifications, Framework/Artifact state, synchronization defects, and permitted next action. The Onboarding Report MUST confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the access kernel; dynamic Blocking Clarifications, Framework, Artifact, and Core state must still be retrieved on demand from latest canonical GitHub revisions.
 
 If the Agent cannot produce this report from repository state, the project has an onboarding/persistence defect.
 
@@ -483,7 +487,8 @@ At a stable checkpoint, all of the following SHOULD be true:
 7. known evidence conflicts are visible;
 8. important decisions are not stranded only in chat history;
 9. onboarding documents point to current canonical files;
-10. all Critical Clarifications that block Framework Approval are explicitly visible in the Clarification Register rather than existing only in chat or private AI judgment.
+10. all current blockers, pending human decisions, and Clarifications are explicitly visible in Working Memory rather than existing only in chat or private AI judgment;
+11. resolved Working Memory items have been promoted into appropriate long-term memory and no longer serve as the normative answer.
 
 Failure of any condition creates an explicit synchronization defect.
 
@@ -558,7 +563,7 @@ core/FORM_CORE.zh-CN.md
 core/FORM_CORE.md
 core/DECISION_LOG.zh-CN.md
 core/DECISION_LOG.md
-docs/clarification-register.zh-CN.md
+docs/working-memory.zh-CN.md
 docs/clarification-register.md
 docs/argument-map.zh-CN.md
 docs/argument-map.md
