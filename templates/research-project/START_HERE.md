@@ -13,8 +13,11 @@ Before substantive work:
 3. read `BOOTSTRAP_PROMPT.zh-CN.md`;
 4. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
 5. read `AGENTS.zh-CN.md`;
-6. read `docs/working-memory.zh-CN.md` and confirm current stage, objective, tasks, blockers, pending decisions, and next actions;
-7. selectively retrieve current state from the three long-term layers using manifest/context-interface task routing;
+6. read `docs/working-memory.zh-CN.md` (Index);
+7. read `docs/working-memory/current-focus.zh-CN.md`;
+8. read `docs/working-memory/task-plan.zh-CN.md`;
+9. skip Work Log by default;
+10. selectively retrieve current state from the three long-term layers using manifest/context-interface task routing;
 8. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report and confirm `HARC REPOSITORY CONTEXT — ACTIVE`;
 9. begin substantive work only after the report passes and Repository Context is active; update Working Memory after substantial work cycles.
 
