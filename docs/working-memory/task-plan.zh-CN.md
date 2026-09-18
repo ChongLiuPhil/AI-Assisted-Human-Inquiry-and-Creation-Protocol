@@ -8,33 +8,30 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T008` — 人类决定 CLR-001：`WAITING-HUMAN`
-- `WM-T009` — 人类决定 CLR-002：`WAITING-HUMAN`
-- `WM-T010` — 人类决定 CLR-005：`WAITING-HUMAN`
-- `WM-T011` — 将上述决定 Promotion 并传播到 Layer 1 / Layer 2 / Layer 3：`TODO`
-- `WM-T012` — 重新执行 Framework Approval readiness review：`TODO`
+- `WM-T015` — 人类整体审阅当前方法论文章 Working Framework，并对 `MA-FW-001` 作 APPROVE / REVISE / REJECT 决定：`WAITING-HUMAN`
 - `WM-T013` — CLR-009 licensing 决定（formal release 前）：`WAITING-HUMAN`
 - `WM-T014` — CLR-010 目标发布渠道与渠道特定形式约束：`WAITING-HUMAN`
 
 ## 2. NEXT ACTIONS
 
-1. 人类确认 `CLR-001 / CLR-002 / CLR-005`；
-2. Agent 记录 Decision Log 并 Promotion；
-3. 同步 Article Content Core、Working Argument Map、Framework Status 与方法论正文；
-4. 重新执行 `MA-FW-001` readiness review；
-5. 如人类明确批准具体版本，才创建 Approved Framework Snapshot；
-6. 正式 release 前解决 `CLR-009`；
-7. 正式投稿/发布形式冻结前解决 `CLR-010`。
+1. 人类整体审阅 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`，重点确认当前命题集合、依赖关系、章节功能与 HARC-D023 后更新的 T3 / T4；
+2. 人类明确作出 `APPROVE / REVISE / REJECT` 决定；
+3. 只有在明确 `APPROVE` 后，Agent 才创建 `MA-FW-001` Approved Framework Snapshot，并更新 Framework Status；
+4. Framework Approval 后再执行当前正文的大规模结构性同步/重写，并继续保留 Final Artifact Approval；
+5. 正式 release 前解决 `CLR-009`；
+6. 正式投稿/发布形式冻结前解决 `CLR-010`。
 
 ## 3. BLOCKERS / GATES
 
 ### Framework Approval
 
-`MA-FW-001` 被以下 item 阻塞：
+`CLR-001 / CLR-002 / CLR-005` 已经通过 HARC-D023 解决并 Promotion。
 
-- `CLR-001`
-- `CLR-002`
-- `CLR-005`
+当前 **没有 blocking clarification** 阻止整体 Framework Approval 审阅。
+
+但 `MA-FW-001` 仍未创建，因为还缺少人类对整个 Working Framework 的明确整体批准。当前 gate：
+
+`WAITING-HUMAN: overall Framework Approval decision`
 
 ### Formal release
 
@@ -46,36 +43,18 @@
 
 ## 4. PENDING HUMAN DECISIONS / CLARIFICATIONS
 
-### CLR-001 — 方法论文章的中心责任概念
+### Framework Approval overall decision
 
 **状态：** `WAITING-HUMAN`  
-**严重度：** `BLOCKING`
+**类型：** human approval decision，不是新的 Clarification。
 
-问题：如何区分和命名“AI 可以承担的认知工作”与“人类必须保留的责任”？
+需要对当前 Working Framework 整体作：
 
-候选：
+- `APPROVE`
+- `REVISE`
+- `REJECT`
 
-- `cognitive labor / 认知劳动`
-- `epistemic responsibility / 认识责任`
-- `cognitive responsibility / 认知责任`
-- 人类提出的其他术语体系
-
-**AI-PROPOSED：** 使用“认知劳动 vs 认识责任”的分层区分。
-
-**Promotion 目标：** Article Content Core -> Framework -> Artifact。
-
-### CLR-002 — Framework Responsibility Thesis 的强度
-
-**状态：** `WAITING-HUMAN`  
-**严重度：** `BLOCKING`
-
-候选：
-
-1. 强版本：Framework Approval 一般性地构成 AI 辅助长篇成果中实质性思想作者身份的中心；
-2. 中等版本：Framework Approval 是 HARC 内集中高杠杆人类审阅的主要责任锚点，不主张一般 authorship theory；
-3. 人类修订的第三种版本。
-
-**AI-PROPOSED：** 暂偏向中等版本。
+局部措辞的接受不自动等于整体批准。
 
 ### CLR-003 — `semantic version control`
 
@@ -91,20 +70,6 @@
 
 **AI-PROPOSED：** 仅作为 heuristic label，不表述成已证实的经验定律。
 
-### CLR-005 — `responsibility concentration` 是否保留
-
-**状态：** `WAITING-HUMAN`  
-**严重度：** `BLOCKING`
-
-候选：
-
-- `epistemic responsibility anchoring / 认识责任锚定`
-- `responsibility architecture / 责任架构`
-- `high-leverage human review / 高杠杆人类审阅`
-- 保留 `responsibility concentration` 但严格限定
-
-**AI-PROPOSED：** 降级或替换。
-
 ### CLR-006 — extended / distributed cognition 的理论关系
 
 **状态：** `WAITING-HUMAN`  
@@ -112,6 +77,8 @@
 
 候选：中心理论基础 / 次级比较 / 最少背景。  
 **AI-PROPOSED：** 次级概念比较。
+
+**HARC-D023 约束：** 无论采用何种比较强度，都不得把该比较写成 AI 本身具有认知性的前提。
 
 ### CLR-007 — 经验验证计划的地位
 
@@ -164,18 +131,24 @@
 
 **Promotion 目标：** Article Form Core -> external constraints / final rendering / submission checklist。
 
-## 5. BACKLOG
+## 5. RESOLVED / PROMOTED POINTERS
+
+- `CLR-001` — `RESOLVED / PROMOTED` via `HARC-D023`：不用“AI 认知劳动 / 认知任务”作为中心表述；采用人类目的/方向、AI 工具工作分担与人类责任模型。
+- `CLR-002` — `RESOLVED / PROMOTED` via `HARC-D023`：采用人类第三种 Framework Responsibility Thesis；Layer 2 Framework 是核心思想责任的主要结构性承载点，人类必须理解、审核并确认其中全部实质内容。
+- `CLR-005` — `RESOLVED / PROMOTED` via `HARC-D023`：`responsibility concentration` 不作为当前中心术语。
+
+## 6. BACKLOG
 
 - 自动化 onboarding / conformance check；
 - repository-backed context 的上下文成本与 stale-state 研究；
 - Working Memory 更新粒度、压缩策略与 handoff 效率研究；
 - 跨 Agent / 跨平台接管测试。
 
-## 6. SYNC DEFECTS
+## 7. SYNC DEFECTS
 
 `NONE RECORDED`
 
-## 7. COMPLETION RULE
+## 8. COMPLETION RULE
 
 任务完成时：
 
