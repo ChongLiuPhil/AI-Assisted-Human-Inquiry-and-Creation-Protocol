@@ -15,18 +15,9 @@ A chat window is an interaction surface, not the durable memory of a long resear
 
 A new AI Agent should **not begin substantive work directly from the README or manuscript**.
 
-Read first:
+Treat this README as a project overview only. For zero-context takeover, open [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md) first, then follow the current read order and task routing declared by `START_HERE.zh-CN.md` and `HARC_MANIFEST.yaml`. The README no longer duplicates a second mandatory read order, reducing drift between entry points.
 
-1. [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)
-2. [`BOOTSTRAP_PROMPT.zh-CN.md`](BOOTSTRAP_PROMPT.zh-CN.md)
-3. [`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`](SESSION_CONTEXT_BOOTSTRAP.zh-CN.md)
-4. `HARC_MANIFEST.yaml`
-5. `HARC_CONTEXT_INTERFACE.yaml`
-6. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
-7. [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md)
-8. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
-
-Then use Working Memory to identify the resume point, selectively reconstruct task-relevant long-term state, and submit a **HARC Onboarding Report** before making substantive changes.
+Use Working Memory to identify the resume point, selectively reconstruct only task-relevant long-term state, and complete a **HARC Onboarding Report** before substantive changes.
 
 See [`docs/ONBOARDING_SELF_TEST.md`](docs/ONBOARDING_SELF_TEST.md) for the repository's current self-hosted onboarding validation.
 
@@ -48,7 +39,7 @@ Current methodology-article files:
 - [`docs/working-memory/task-plan.zh-CN.md`](docs/working-memory/task-plan.zh-CN.md) — dynamic tasks, TODOs, blockers, and pending decisions.
 - [`docs/working-memory/work-log.zh-CN.md`](docs/working-memory/work-log.zh-CN.md) — human-retrospective work history, outside default AI onboarding.
 - [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — legacy compatibility pointer; no active state.
-- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — canonical Chinese `WORKING-FRAMEWORK`; the Working Memory / Clarification Gate remains open; [`English mirror`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md).
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — canonical Chinese `WORKING-FRAMEWORK`; its live approval state, blockers, and gates are **not duplicated in README**. Read the latest canonical Framework Status, Current Focus, and Task Plan instead; [`English mirror`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md).
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — canonical Chinese `DERIVED-PROVISIONAL` draft; [`English mirror`](paper/METHODOLOGY_ARTICLE.en.md).
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — bibliography source file.
 - [`evidence/METHODOLOGY_SOURCES.zh-CN.md`](evidence/METHODOLOGY_SOURCES.zh-CN.md) — canonical source verification and evidence constraints; [`English mirror`](evidence/METHODOLOGY_SOURCES.md).
@@ -264,13 +255,11 @@ Audit records:
 
 ### For AI agents
 
-1. Read canonical [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md), then use [`AGENTS.md`](AGENTS.md) as the English mirror.
-2. Read [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) to determine the resume point.
-3. Read canonical [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) and recent [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md).
-3. Read canonical [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md).
-4. Apply the relevant persistence, framework-approval, routing, evidence, and form-inheritance rules.
-5. Do not invent human commitments that have not been stated.
-6. Record the HARC version/tag/commit adopted by a new project so later upstream changes are not silently treated as already accepted governance.
+1. Start from [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md).
+2. Use the latest task routing in `HARC_MANIFEST.yaml` / `HARC_CONTEXT_INTERFACE.yaml`; do not treat explanatory README text as a second bootstrap specification.
+3. Restore the Working Memory resume point first, then read only the Core / Decision / Framework / Evidence / Artifact state required by the current task.
+4. Do not invent unstated human commitments; refetch relevant canonical revisions before writes.
+5. Record the adopted HARC version/tag/commit in downstream projects so later upstream changes are not silently treated as accepted governance.
 
 ## Repository status
 
