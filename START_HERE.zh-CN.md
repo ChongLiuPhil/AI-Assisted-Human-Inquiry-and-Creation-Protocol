@@ -21,14 +21,14 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
 4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 5. `AGENTS.zh-CN.md`
-6. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-7. `core/PROTOCOL_CORE.zh-CN.md`
-8. 最近的 `core/DECISION_LOG.zh-CN.md`
-9. 根据当前任务按需读取 Content/Form/Protocol Core
-10. `docs/clarification-register.zh-CN.md`（如任务相关）
-11. Framework Status / Approved Framework / Working Argument Map（如任务相关）
-12. 与当前任务直接相关的 evidence / artifact
-13. 对应英文 mirror，仅用于 parity 核验
+6. `docs/working-memory.zh-CN.md` — 先确定当前阶段、目标、任务、阻塞、待确认事项与下一步
+7. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
+8. 与当前任务相关的 Layer 1 canonical Core / Decision Log
+9. 与当前任务相关的 Layer 2 Framework state
+10. 与当前任务相关的 Layer 3 Artifact / Evidence
+11. 对应英文 mirror，仅用于 parity 核验
+
+旧 `docs/clarification-register.zh-CN.md` 只是兼容指针，不再承载 active state。
 
 对于 HARC 方法论文章，具体路径由 `HARC_MANIFEST.yaml` 给出。
 
@@ -68,10 +68,13 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 - 当前形式/呈现决定；
 - 最近的重要人类决定。
 
-### C. Critical Clarification 状态
+### C. Working Memory 状态
 
-- 当前所有 `BLOCKING` clarification；
-- 与当前任务有关的 `NON-BLOCKING` clarification；
+- 当前阶段与 CURRENT_OBJECTIVE；
+- ACTIVE_TASKS / RECENTLY_COMPLETED / NEXT_ACTIONS；
+- BLOCKERS；
+- PENDING_HUMAN_DECISIONS / Clarifications；
+- TODO / SYNC_DEFECTS；
 - 哪些问题必须先问人类才能继续。
 
 ### D. Framework / Artifact 状态
@@ -97,7 +100,7 @@ Agent 应说明：
 
 ### 如果人类表达存在高影响歧义
 
-`Ambiguous high-impact input -> Clarification Register -> human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+`Ambiguous high-impact input -> Working Memory / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory destination`
 
 ### 如果只是 AI 提议
 
