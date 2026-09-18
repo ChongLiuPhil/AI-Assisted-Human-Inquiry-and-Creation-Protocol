@@ -142,6 +142,20 @@ Work Log is excluded from default AI context and retrieved only for historical r
 
 ---
 
+## 2026-09-18 — Full-discussion coverage review and residual repair
+
+**Progress summary:**
+
+- ran one review -> repair -> verify cycle against all currently recoverable HARC discussion requirements;
+- checked the three Long-Term Memory layers, Working Memory, Clarification/Promotion, Repository-Backed Context, zero-context onboarding, bilingual governance, template inheritance, methodology article, and audit mechanisms;
+- repaired residual old Clarification Register / single-Working-Memory wording in root START_HERE / AGENTS, Onboarding Handshake, Persistent Memory, Bootstrap Prompt, and project templates;
+- resynchronized English mirrors found to be lagging;
+- confirmed that remaining open items are explicit human-decision boundaries rather than discussed-but-unimplemented engineering defects.
+
+**Review status:** `REVIEWED / REPAIRED / VERIFIED`.
+
+---
+
 ## Current log boundary
 
 This log currently contains high-level historical summaries backfilled from Decision Log and canonical protocol files. Future entries should be appended at meaningful milestones rather than reproducing conversations verbatim.
