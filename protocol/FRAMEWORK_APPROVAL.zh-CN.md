@@ -43,7 +43,7 @@ HARC 区分：
 
 ## 2.5 Working Memory / Clarification Gate
 
-Framework Approval 之前必须检查 `docs/working-memory.zh-CN.md` 的 BLOCKERS、PENDING_HUMAN_DECISIONS 与 Clarifications。
+Framework Approval 之前必须检查 `docs/working-memory/task-plan.zh-CN.md` 的 BLOCKERS、PENDING_HUMAN_DECISIONS 与 Clarifications，并检查 Current Focus 是否仍指向同一 gate。
 
 原则上，不应在 Working Memory 中仍存在会改变中心命题、关键概念、主要推论关系、范围或章节功能的 `BLOCKING` item 时批准 framework。
 
