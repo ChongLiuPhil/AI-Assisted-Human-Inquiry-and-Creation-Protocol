@@ -41,7 +41,8 @@
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
-- `docs/working-memory.zh-CN.md`
+- `docs/working-memory/current-focus.zh-CN.md`
+- `docs/working-memory/task-plan.zh-CN.md`
 - `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
@@ -58,7 +59,7 @@
 
 ## 在 `MA-FW-001` 之前的 Working Memory / Clarification Gate
 
-完整未决状态见 `docs/working-memory.zh-CN.md`。
+当前 gate 的完整未决状态见 `docs/working-memory/task-plan.zh-CN.md`；最高优先级目标见 `docs/working-memory/current-focus.zh-CN.md`。
 
 当前 `BLOCKING`：
 
