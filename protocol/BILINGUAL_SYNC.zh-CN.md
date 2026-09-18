@@ -70,3 +70,34 @@ Agent 不得因为英文版本文字更成熟而反向改变中文含义；如�
 ## 7. 新项目继承
 
 使用 HARC 创建新项目时，可以显式选择双语配置。若选择本项目的默认双语配置，则初始化时就应同时创建中文 canonical 与英文 mirror，而不是在项目后期补翻译。
+
+
+## 8. 规则切换前的历史追赶
+
+中文 canonical / 英文 synchronized mirror 规则自 2026-09-18 起成为 HARC 的正式治理规则。
+
+对于该规则建立之前已经存在的双语文件，若历史上**英文版本实际上包含比中文版更新的实质性发展**，不得为了形式上立即“以中文为准”而删除这些较新内容。
+
+应执行一次性的历史追赶：
+
+`pre-cutover English development -> Chinese catch-up -> bilingual parity -> Chinese canonical cutover`
+
+具体要求：
+
+1. 识别规则建立前英文版中、中文版尚未吸收的实质性内容；
+2. 将这些内容纳入中文版，使中文达到切换时真正的最新语义状态；
+3. 再把英文整理成该最新中文版的同步镜像；
+4. 完成 parity check 后，才视为 canonical cutover 完成；
+5. 切换完成后，不再允许英文独立发展。
+
+这一历史追赶是迁移例外，不改变长期治理方向。
+
+## 9. 切换后的正常编辑方向
+
+canonical cutover 完成后，所有正常实质性修改必须遵循：
+
+`Human decision -> Chinese canonical -> English synchronized mirror`
+
+英文版本可以在翻译层面改善表达，但不得独立新增、删除、强化或弱化实质内容。
+
+如果英文表达暴露出中文内容需要修改，应先回到中文 canonical 完成内容修改，再同步英文，而不能直接让英文成为新的实质性来源。
