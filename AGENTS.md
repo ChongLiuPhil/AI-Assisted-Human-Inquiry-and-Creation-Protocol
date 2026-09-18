@@ -166,3 +166,25 @@ Read, in order:
 6. `templates/research-project/README.md`
 
 Then instantiate only the human decisions actually supplied for the new project. Unknowns should remain explicit rather than being filled with AI assumptions.
+
+## 15. Chinese canonical / English synchronized mirror
+
+HARC is a bilingual project.
+
+For substantive Markdown content:
+
+- the Chinese version is the canonical semantic and editing baseline;
+- the English version is a synchronized translation mirror;
+- every substantive edit to Chinese MUST be reflected in English in the same work cycle;
+- an edit is not complete while the language pair is materially inconsistent;
+- if Chinese and English conflict, Chinese governs and the English version MUST be repaired;
+- new substantive documents SHOULD be created as bilingual pairs from the beginning.
+
+Preferred naming:
+
+- Chinese canonical: `NAME.zh-CN.md`
+- English mirror: `NAME.md` when an existing GitHub-default path is useful, otherwise `NAME.en.md`.
+
+Language-neutral technical files (for example BibTeX, schemas, code, raw data) need not be duplicated solely for translation, but human-readable guidance around them must remain bilingual.
+
+When editing a bilingual pair, treat the two-file synchronization as one atomic task. Do not mark the work complete after updating only one language.
