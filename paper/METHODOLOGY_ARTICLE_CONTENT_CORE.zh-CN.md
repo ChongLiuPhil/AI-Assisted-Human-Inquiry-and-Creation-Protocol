@@ -58,6 +58,12 @@ HARC 不是一个纯粹抽象的哲学提案。其文件层级、更新规则、
 
 这一机制尤其适用于作者母语中的核心概念及其英文对应，防止翻译或 AI 解释把未经确认的意义固化进文章结构。
 
+## C12. 跨 Agent 接管必须通过显式启动入口和可验证握手
+
+文章应解释：仅仅把状态写进仓库，并不足以保证新的 AI Agent 会正确接管。项目还需要一个显式、可发现的零上下文启动入口，规定 mandatory read order，并要求新 Agent 在实质工作前输出一份 Onboarding Report，以证明它已经正确重建人类承诺、Clarification 状态、Framework 状态、Artifact 状态和同步缺陷。
+
+这一机制的目的不是假设所有 AI 平台都会自动读取同一文件名，而是通过根目录入口、Agent 契约、机器可读 manifest 与人类可复制 bootstrap prompt，最大化跨平台可发现性，并把“接管是否成功”变成可观察、可验证的步骤。
+
 ## 当前尚未解决的人类决定
 
 高影响未决问题的操作性状态统一维护在 `docs/clarification-register.zh-CN.md`。当前与文章直接相关的条目为 `CLR-001` 至 `CLR-008`，其中 `CLR-001`、`CLR-002`、`CLR-005` 当前为 Framework Approval 前的 `BLOCKING` clarification。
