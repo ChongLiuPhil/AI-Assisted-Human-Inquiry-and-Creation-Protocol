@@ -20,16 +20,16 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 2. `BOOTSTRAP_PROMPT.zh-CN.md`
 3. `AGENTS.zh-CN.md`
 4. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-3. `core/PROTOCOL_CORE.zh-CN.md`
-4. 最近的 `core/DECISION_LOG.zh-CN.md`
-5. 当前项目的 Content Core / Form Core
-6. `docs/clarification-register.zh-CN.md`
-7. Framework Status
-8. 最新 Approved Framework（如有）
-9. Working Argument Map
-10. 与当前任务直接相关的 evidence
-11. 与当前任务直接相关的派生成果
-12. 对应英文 mirror，检查双语 parity
+5. `core/PROTOCOL_CORE.zh-CN.md`
+6. 最近的 `core/DECISION_LOG.zh-CN.md`
+7. 当前项目的 Content Core / Form Core
+8. `docs/clarification-register.zh-CN.md`
+9. Framework Status
+10. 最新 Approved Framework（如有）
+11. Working Argument Map
+12. 与当前任务直接相关的 evidence
+13. 与当前任务直接相关的派生成果
+14. 对应英文 mirror，检查双语 parity
 
 对于 HARC 方法论文章，具体路径由 `HARC_MANIFEST.yaml` 给出。
 
