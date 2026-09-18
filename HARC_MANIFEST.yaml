@@ -1,0 +1,67 @@
+harc:
+  protocol_name: "Human–AI Research Collaboration Protocol"
+  protocol_version: "0.2.0-draft"
+  repository_role: "HARC protocol development repository"
+  canonical_language: "zh-CN"
+  mirror_language: "en"
+  bootstrap:
+    canonical: "START_HERE.zh-CN.md"
+    mirror: "START_HERE.md"
+    agent_contract:
+      canonical: "AGENTS.zh-CN.md"
+      mirror: "AGENTS.md"
+
+  required_read_order:
+    - "HARC_MANIFEST.yaml"
+    - "START_HERE.zh-CN.md"
+    - "AGENTS.zh-CN.md"
+    - "core/PROTOCOL_CORE.zh-CN.md"
+    - "core/DECISION_LOG.zh-CN.md"
+    - "docs/clarification-register.zh-CN.md"
+
+  protocol_state:
+    protocol_core: "core/PROTOCOL_CORE.zh-CN.md"
+    decision_log: "core/DECISION_LOG.zh-CN.md"
+    specification: "protocol/SPECIFICATION.zh-CN.md"
+    persistent_memory: "protocol/PERSISTENT_MEMORY.zh-CN.md"
+    clarification_protocol: "protocol/CLARIFICATION_REGISTER.zh-CN.md"
+    framework_approval: "protocol/FRAMEWORK_APPROVAL.zh-CN.md"
+    routing: "protocol/FORM_CONTENT_ROUTING.zh-CN.md"
+    bilingual_sync: "protocol/BILINGUAL_SYNC.zh-CN.md"
+
+  methodology_article:
+    content_core: "paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md"
+    form_core: "paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md"
+    clarification_register: "docs/clarification-register.zh-CN.md"
+    framework_status: "paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md"
+    working_argument_map: "paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md"
+    evidence: "evidence/METHODOLOGY_SOURCES.zh-CN.md"
+    artifact:
+      canonical: "paper/METHODOLOGY_ARTICLE.zh-CN.md"
+      mirror: "paper/METHODOLOGY_ARTICLE.en.md"
+    bibliography: "paper/methodology-references.bib"
+
+  onboarding_handshake:
+    required_before_substantive_work: true
+    report_fields:
+      - "protocol_state"
+      - "human_confirmed_state"
+      - "form_state"
+      - "blocking_clarifications"
+      - "task_relevant_nonblocking_clarifications"
+      - "working_framework_status"
+      - "approved_framework_status"
+      - "artifact_status"
+      - "synchronization_defects"
+      - "permitted_next_action"
+
+  invariants:
+    - "Repository state outranks chat memory."
+    - "Chinese canonical outranks English mirror."
+    - "AI proposals are not human commitments."
+    - "High-impact uncertainty must enter the Clarification Register."
+    - "Blocking clarifications must be resolved or explicitly deferred before Framework Approval."
+    - "Human decisions propagate upstream-first."
+    - "Working Framework is not Approved Framework."
+    - "Derived artifacts remain provisional until the applicable approval gate is complete."
+    - "Every substantive Chinese edit must synchronize the English mirror in the same work cycle."
