@@ -540,31 +540,6 @@ Work Log 需要定期维护，但默认不进入 AI onboarding 上下文。它�
 
 ---
 
-## E04 — 2026-09-18 全讨论覆盖复核与残留修复
-
-**复核目标：** 检查目前可恢复的全部 HARC 讨论要求是否已经落实为规范承诺、执行机制、零上下文接管入口、模板继承与方法论文章表达，而不是只确认文件存在。
-
-**本轮发现并修复的残留：**
-
-- 根 `START_HERE` 中仍有旧 “Clarification Register” 活跃入口表述，已改为 Task Plan / Clarification queue；
-- 根 `AGENTS` 的方法论文章读取顺序仍按旧单 Working Memory 入口，已改为 Index -> Current Focus -> Task Plan；
-- 英文 `START_HERE.md` 与 `AGENTS.md` 曾落后于中文 canonical，已重新同步；
-- Onboarding Handshake 的英文 mirror 与中文新 Working Memory 架构存在残留漂移，已重新同步；
-- project template `START_HERE` 的步骤编号因模块化插入出现重复，已修复；
-- project template `AGENTS` 仍把 legacy clarification-register 当作 active state，已改为 Task Plan / Clarification；
-- Persistent Memory 的若干旧 “Blocking Clarifications” / 单 Working Memory 重建表述已改为 Current Focus + Task Plan；
-- Bootstrap Prompt 中旧 “进入 Clarification Register” 表述已改为进入 Task Plan 的 Clarification 队列。
-
-**覆盖结论：**
-
-目前可恢复的人类已确认设计均存在对应的：
-
-`Human decision / Protocol Core -> executable protocol -> onboarding/control-plane -> reusable template -> methodology article where applicable`
-
-未自动解决的项目仍然属于显式人类决定边界，而非实现遗漏，包括方法论文章若干中心术语/命题强度、Framework Approval、目标渠道以及正式开放许可。
-
-**状态：** `REVIEWED / REPAIRED / VERIFIED`。
-
 ---
 
 # 仍未解决的项目
