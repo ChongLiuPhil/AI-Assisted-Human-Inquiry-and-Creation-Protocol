@@ -1,5 +1,7 @@
 # Working Argument Map
 
+> **Language:** Chinese canonical: `argument-map.zh-CN.md`; this English file is the synchronized mirror. Substantive edits must update both versions.
+
 **Status:** `WORKING-FRAMEWORK`  
 **Role:** AI-maintained operational representation for human–AI discussion.
 
@@ -56,6 +58,7 @@ For each major part, state what intellectual work it performs.
 - Content Core vs map: `SYNC / OUT-OF-SYNC`
 - Approved framework vs map: `N/A / SYNC / MATERIAL CHANGE PENDING`
 - Map vs artifact: `SYNC / OUT-OF-SYNC`
+- Chinese vs English mirror: `SYNC / OUT-OF-SYNC`
 
 ## Governance
 
