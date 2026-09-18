@@ -58,6 +58,12 @@ The root manifest determines exact paths. At minimum:
 14. task-relevant Artifact;
 15. English-mirror parity.
 
+## 4.5 Working Memory resume check
+
+Before broad long-term-state retrieval, the Agent should read `docs/working-memory.zh-CN.md` and confirm current stage, objective, active tasks, recently completed work, next actions, blockers, pending human decisions/clarifications, and handoff note.
+
+If Working Memory clearly conflicts with durable repository state, report `WORKING-MEMORY-STALE` and repair Working Memory rather than treating its old summary as authoritative.
+
 ## 5. Required Onboarding Report
 
 The report covers at least:
@@ -65,8 +71,9 @@ The report covers at least:
 - protocol version and canonical language;
 - human-confirmed content;
 - Form state;
-- Blocking Clarifications;
-- task-relevant Non-blocking Clarifications;
+- Working Memory CURRENT_STAGE / CURRENT_OBJECTIVE;
+- ACTIVE_TASKS / NEXT_ACTIONS / RECENTLY_COMPLETED;
+- BLOCKERS / PENDING_HUMAN_DECISIONS / Clarifications;
 - Working / Approved Framework;
 - Artifact state;
 - Evidence conflicts;
