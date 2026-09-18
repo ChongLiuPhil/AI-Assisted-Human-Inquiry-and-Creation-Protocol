@@ -21,14 +21,18 @@ Read Chinese canonical files in this order; use English only for parity checking
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
 4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 5. `AGENTS.zh-CN.md`
-6. `docs/working-memory.zh-CN.md` — first determine current stage, objective, tasks, blockers, pending decisions, and next actions
-7. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-8. task-relevant Layer 1 canonical Core / Decision Log
-9. task-relevant Layer 2 Framework state
-10. task-relevant Layer 3 Artifact / Evidence
-11. corresponding English mirrors only for parity checking
+6. `docs/working-memory.zh-CN.md` — Working Memory Index
+7. `docs/working-memory/current-focus.zh-CN.md` — determine the highest-priority objective, blocker, and immediate next action
+8. `docs/working-memory/task-plan.zh-CN.md` — retrieve dynamic tasks, TODOs, pending decisions, and plan
+9. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
+10. task-relevant Layer 1 canonical Core / Decision Log
+11. task-relevant Layer 2 Framework state
+12. task-relevant Layer 3 Artifact / Evidence
+13. corresponding English mirrors only for parity checking
 
 The old `docs/clarification-register.zh-CN.md` is a compatibility pointer and no longer carries active state.
+
+`docs/working-memory/work-log.zh-CN.md` is primarily for human retrospective review and is outside the mandatory read order by default. Retrieve it only for historical review, audit, change reconstruction, or current/history conflict.
 
 For the HARC methodology article, exact paths are listed in `HARC_MANIFEST.yaml`.
 
