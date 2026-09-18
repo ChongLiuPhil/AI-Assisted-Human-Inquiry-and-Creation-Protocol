@@ -1,5 +1,7 @@
 # HARC Protocol Roadmap
 
+> **Language:** Chinese canonical: `ROADMAP.zh-CN.md`; this English file is the synchronized mirror.
+
 ## v0.1 — Foundational architecture
 
 - [x] Define repository-centered persistent memory.
