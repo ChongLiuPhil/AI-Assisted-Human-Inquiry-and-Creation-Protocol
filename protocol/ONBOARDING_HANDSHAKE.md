@@ -46,17 +46,21 @@ The root manifest determines exact paths. At minimum:
 2. HARC_MANIFEST;
 3. HARC_CONTEXT_INTERFACE;
 4. AGENTS / Session Context Bootstrap;
-5. Working Memory;
-6. Onboarding Handshake / Protocol governance;
-7. task-relevant Layer 1 Core / Decision Log;
-8. task-relevant Layer 2 Framework Status / Working or Approved Framework;
-9. task-relevant Layer 3 Artifact;
-10. task-relevant Evidence;
-11. English-mirror parity.
+5. Working Memory Index;
+6. Current Focus;
+7. Task Plan;
+8. Onboarding Handshake / Protocol governance;
+9. task-relevant Layer 1 Core / Decision Log;
+10. task-relevant Layer 2 Framework Status / Working or Approved Framework;
+11. task-relevant Layer 3 Artifact;
+12. task-relevant Evidence;
+13. English-mirror parity.
 
 ## 4.5 Working Memory resume check
 
-Before broad long-term-state retrieval, the Agent should read `docs/working-memory.zh-CN.md` and confirm current stage, objective, active tasks, recently completed work, next actions, blockers, pending human decisions/clarifications, and handoff note.
+Before broad long-term-state retrieval, the Agent should read Working Memory Index, Current Focus, and Task Plan and confirm current stage, objective, primary blocker, immediate next action, active tasks, next actions, TODO/backlog, blockers, and pending human decisions/clarifications.
+
+Work Log is skipped by default and retrieved only for historical review, audit, change reconstruction, or current/history conflict.
 
 If Working Memory clearly conflicts with durable repository state, report `WORKING-MEMORY-STALE` and repair Working Memory rather than treating its old summary as authoritative.
 
@@ -67,8 +71,8 @@ The report covers at least:
 - protocol version and canonical language;
 - human-confirmed content;
 - Form state;
-- Working Memory CURRENT_STAGE / CURRENT_OBJECTIVE;
-- ACTIVE_TASKS / NEXT_ACTIONS / RECENTLY_COMPLETED;
+- Current Focus CURRENT_STAGE / CURRENT_OBJECTIVE / PRIMARY_BLOCKER / IMMEDIATE_NEXT_ACTION;
+- Task Plan ACTIVE_TASKS / NEXT_ACTIONS / TODO / BACKLOG;
 - BLOCKERS / PENDING_HUMAN_DECISIONS / Clarifications;
 - Working / Approved Framework;
 - Artifact state;
