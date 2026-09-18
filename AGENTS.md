@@ -11,8 +11,9 @@ Any AI Agent taking over this repository from zero context must, before substant
 3. `HARC_CONTEXT_INTERFACE.yaml`
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+6. `docs/working-memory.zh-CN.md`
 
-Then reconstruct only task-relevant state according to the manifest/context interface and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a **HARC Onboarding Report**. The report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only a minimal Repository Resolver; dynamic project state must still be retrieved on demand from the latest canonical GitHub revision before large-scale structural edits, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
+Use Working Memory first to determine where the project stands and what comes next, then reconstruct task-relevant state from the three long-term layers according to the manifest/context interface and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a **HARC Onboarding Report**. The report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only a minimal Repository Resolver; dynamic project state must still be retrieved on demand from the latest canonical GitHub revision before large-scale structural edits, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
 
 The current protocol-repository onboarding self-test is recorded in `docs/ONBOARDING_SELF_TEST.md`; it is audit evidence, not normative state.
 
