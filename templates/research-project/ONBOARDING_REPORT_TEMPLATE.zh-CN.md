@@ -16,16 +16,23 @@
 - 最近重要决定：
 
 ## C. Working Memory
+### C1. Current Focus
 - CURRENT_STAGE：
 - CURRENT_OBJECTIVE：
+- PRIMARY_BLOCKER：
+- IMMEDIATE_NEXT_ACTION：
+
+### C2. Task Plan
 - ACTIVE_TASKS：
-- RECENTLY_COMPLETED：
 - NEXT_ACTIONS：
+- TODO / BACKLOG：
 - BLOCKERS：
 - PENDING_HUMAN_DECISIONS / Clarifications：
-- TODO / BACKLOG：
 - SYNC_DEFECTS：
-- HANDOFF_NOTE：
+
+### C3. Work Log
+- 默认跳过：`YES`
+- 本次是否因历史回顾/审计而读取：`YES / NO`
 
 ## D. Framework
 - Working Framework：
