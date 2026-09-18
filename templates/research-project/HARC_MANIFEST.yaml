@@ -23,15 +23,16 @@ harc:
     - "BOOTSTRAP_PROMPT.zh-CN.md"
     - "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
     - "AGENTS.zh-CN.md"
-    - "core/CONTENT_CORE.zh-CN.md"
-    - "core/FORM_CORE.zh-CN.md"
-    - "core/DECISION_LOG.zh-CN.md"
-    - "docs/clarification-register.zh-CN.md"
-    - "docs/framework-status.zh-CN.md"
-    - "LATEST_APPROVED_FRAMEWORK_IF_ANY"
-    - "docs/argument-map.zh-CN.md"
-    - "TASK_RELEVANT_EVIDENCE"
-    - "TASK_RELEVANT_ARTIFACT"
+
+  onboarding_required_roles:
+    - "content_core"
+    - "form_core"
+    - "decision_log"
+    - "clarification_register"
+    - "framework_status"
+    - "latest_approved_framework_if_any"
+    - "working_argument_map"
+
 
   state:
     content_core: "core/CONTENT_CORE.zh-CN.md"
@@ -55,7 +56,6 @@ harc:
       - "artifact_status"
       - "synchronization_defects"
       - "permitted_next_action"
-      - "session_contract_loaded"
       - "repository_context_active"
 
   invariants:
