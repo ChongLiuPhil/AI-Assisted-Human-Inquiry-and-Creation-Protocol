@@ -81,9 +81,9 @@ Repository state supports at least:
 
 ### C1. Current stage and resume point
 
-- CURRENT_STAGE: HARC v0.2 protocol architecture + methodology Working Framework;
-- CURRENT_OBJECTIVE: complete the D021 Working Memory architecture migration;
-- current work: protocol/template/article propagation and regression verification.
+- CURRENT_STAGE: HARC v0.2 Working Memory architecture completed; methodology article is in human clarification / Framework Approval preparation;
+- CURRENT_OBJECTIVE: resolve `CLR-001 / CLR-002 / CLR-005` so `MA-FW-001` can be reassessed;
+- current work state: `WAITING-HUMAN`.
 
 ### C2. Blockers / Pending Human Decisions
 
@@ -107,8 +107,8 @@ Non-blocking pending items:
 
 ### C3. Handoff / next actions
 
-- finish the Working Memory migration;
-- then prioritize `CLR-001 / CLR-002 / CLR-005`;
+- prioritize `CLR-001 / CLR-002 / CLR-005`;
+- after resolution, perform Promotion and synchronize Article Content Core / Argument Map / Draft;
 - do not treat Working Memory summaries as durable substantive authority; substantive judgments still use latest canonical Layer 1/2/3 state.
 
 ## D. Framework state
