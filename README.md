@@ -23,9 +23,10 @@ Read first:
 4. `HARC_MANIFEST.yaml`
 5. `HARC_CONTEXT_INTERFACE.yaml`
 6. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
-7. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
+7. [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md)
+8. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
 
-Then follow the mandatory read order and submit a **HARC Onboarding Report** before making substantive changes.
+Then use Working Memory to identify the resume point, selectively reconstruct task-relevant long-term state, and submit a **HARC Onboarding Report** before making substantive changes.
 
 See [`docs/ONBOARDING_SELF_TEST.md`](docs/ONBOARDING_SELF_TEST.md) for the repository's current self-hosted onboarding validation.
 
