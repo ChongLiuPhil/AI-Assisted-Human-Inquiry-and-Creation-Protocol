@@ -153,6 +153,7 @@ Framework Approval 后，AI 可以生成大量派生文本，但在最终人类�
 - `docs/FOUNDING_IDEA_AUDIT.zh-CN.md` — 创始思想覆盖清单与可追溯记录；
 - `docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md` — 三轮 `审查 -> 修复 -> 验证` 的执行记录；
 - `docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md` — 三轮修复完成后的独立终审。
+- `docs/BILINGUAL_PARITY_AUDIT.zh-CN.md` — 双语文件配对与高风险语义同步审计。
 
 若这些文件在流程状态上冲突，以较后的修复/终审记录解释流程；`core/DECISION_LOG.zh-CN.md` 中的人类决定仍然具有规范权威。
 
