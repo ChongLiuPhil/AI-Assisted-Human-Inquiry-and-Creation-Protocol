@@ -18,18 +18,19 @@ Read Chinese canonical files in this order; use English only for parity checking
 
 1. `HARC_MANIFEST.yaml`
 2. `BOOTSTRAP_PROMPT.zh-CN.md`
-3. `AGENTS.zh-CN.md`
-4. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-5. `core/PROTOCOL_CORE.zh-CN.md`
-6. recent `core/DECISION_LOG.zh-CN.md`
-7. current project Content Core / Form Core
-8. `docs/clarification-register.zh-CN.md`
-9. Framework Status
-10. latest Approved Framework, if any
-11. Working Argument Map
-12. evidence directly relevant to the task
-13. derived artifact directly relevant to the task
-14. corresponding English mirrors for bilingual parity
+3. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+4. `AGENTS.zh-CN.md`
+5. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
+6. `core/PROTOCOL_CORE.zh-CN.md`
+7. recent `core/DECISION_LOG.zh-CN.md`
+8. current project Content Core / Form Core
+9. `docs/clarification-register.zh-CN.md`
+10. Framework Status
+11. latest Approved Framework, if any
+12. Working Argument Map
+13. evidence directly relevant to the task
+14. derived artifact directly relevant to the task
+15. corresponding English mirrors for bilingual parity
 
 For the HARC methodology article, exact paths are listed in `HARC_MANIFEST.yaml`.
 
@@ -49,7 +50,7 @@ Before the onboarding handshake is complete, do not:
 
 ## 3. Onboarding handshake: output a HARC Onboarding Report first
 
-After the required reading, output the HARC Onboarding Report. Recommended template: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`.
+After the required reading, output the HARC Onboarding Report. Recommended template: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must also follow `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and echo a `HARC ACTIVE SESSION CONTRACT — LOADED` block so the key rules re-enter the active conversation context.
 
 ### A. Protocol state
 
