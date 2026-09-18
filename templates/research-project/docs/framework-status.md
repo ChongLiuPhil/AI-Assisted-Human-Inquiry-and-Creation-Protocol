@@ -13,13 +13,14 @@ Status: `WORKING-FRAMEWORK`
 
 Next identifier: `FW-001`
 
-## Clarification Gate
+## Working Memory / Clarification Gate
 
-- Blocking clarifications: `None / CLR-...`
-- Non-blocking clarifications: `None / CLR-...`
-- Framework Approval blocked by clarification: `YES / NO`
+- current Working Memory objective: `...`
+- blocking items: `None / CLR-... / WM-...`
+- pending human decisions: `None / ...`
+- Framework Approval blocked by Working Memory item: `YES / NO`
 
-Source: `docs/clarification-register.md`
+Source: `docs/working-memory.zh-CN.md`
 
 ## Current artifact status
 
