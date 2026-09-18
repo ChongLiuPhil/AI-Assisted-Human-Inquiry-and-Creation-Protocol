@@ -20,7 +20,8 @@ HARC is intentionally a dual-output project:
 
 Current methodology-article files:
 
-- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — canonical Chinese `WORKING-FRAMEWORK`, not yet human-approved; [`English mirror`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md).
+- [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — canonical interface for current high-impact human clarifications; [`English mirror`](docs/clarification-register.md).
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — canonical Chinese `WORKING-FRAMEWORK`; the Clarification Gate remains open; [`English mirror`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md).
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — canonical Chinese `DERIVED-PROVISIONAL` draft; [`English mirror`](paper/METHODOLOGY_ARTICLE.en.md).
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — bibliography source file.
 - [`evidence/METHODOLOGY_SOURCES.zh-CN.md`](evidence/METHODOLOGY_SOURCES.zh-CN.md) — canonical source verification and evidence constraints; [`English mirror`](evidence/METHODOLOGY_SOURCES.md).
