@@ -16,8 +16,12 @@
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `AGENTS.zh-CN.md`
-7. `docs/working-memory.zh-CN.md`
-8. manifest/context-interface 按当前任务解析出的三层长期记忆 / Evidence 状态文件
+7. `docs/working-memory.zh-CN.md`（Index）
+8. `docs/working-memory/current-focus.zh-CN.md`
+9. `docs/working-memory/task-plan.zh-CN.md`
+10. manifest/context-interface 按当前任务解析出的三层长期记忆 / Evidence 状态文件
+
+`docs/working-memory/work-log.zh-CN.md` 默认不读取。
 
 重建当前项目。
 
@@ -82,13 +86,14 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 
 ## C. Working Memory 状态
 
-### C1. 当前阶段与续接点
+### C1. Current Focus
 
-- CURRENT_STAGE：HARC v0.2 Working Memory 架构已完成；方法论文章处于 Working Framework 的人类澄清 / Framework Approval 准备阶段；
+- CURRENT_STAGE：HARC v0.2 Working Memory Area 已模块化；方法论文章处于 Working Framework 的人类澄清 / Framework Approval 准备阶段；
 - CURRENT_OBJECTIVE：解决 `CLR-001 / CLR-002 / CLR-005`，使 `MA-FW-001` 具备重新审查条件；
-- 当前主要工作状态：`WAITING-HUMAN`。
+- PRIMARY_BLOCKER：`WAITING-HUMAN: CLR-001 / CLR-002 / CLR-005`；
+- IMMEDIATE_NEXT_ACTION：集中向人类呈现三个 blocker 并等待确认。
 
-### C2. Blockers / Pending Human Decisions
+### C2. Task Plan — Blockers / Pending Human Decisions
 
 Framework Approval blockers：
 
@@ -225,7 +230,7 @@ Current task:
 
 当前 HARC 仓库已经具备一个可工作的 zero-context onboarding 路径：
 
-`Repository access -> Manifest / Context Interface -> Working Memory -> Selective Long-Term Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
+`Repository access -> Manifest / Context Interface -> WM Index -> Current Focus -> Task Plan -> Selective Long-Term Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
 
 该测试只能证明**当前仓库状态可以支持一次成功的自举接管**，不能证明所有外部 AI 平台都会自动发现入口文件。
 
