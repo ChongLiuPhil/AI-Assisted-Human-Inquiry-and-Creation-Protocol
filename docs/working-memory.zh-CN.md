@@ -13,56 +13,57 @@
 
 ## 1. CURRENT_STAGE
 
-HARC v0.2 draft 正在进行协议架构完善与方法论文章 Working Framework 阶段。
+HARC v0.2 draft 的 Working Memory 架构迁移已完成。当前主要处于**方法论文章 Working Framework 的人类澄清 / Framework Approval 准备阶段**。
 
-当前最新协议发展：
+当前状态：
 
 - zero-context onboarding 已建立；
 - repository-backed context interface 已建立；
-- 原 “Layer 1.5 / Critical Clarification Layer” 正在迁移为与三层长期记忆并行的 Working Memory；
+- 三层 Long-Term Research Memory + 并行 Working Memory 已正式实施；
+- Clarification 已成为 Working Memory item，旧 clarification-register 仅为 compatibility pointer；
 - 方法论文章尚无 Approved Framework；
 - 方法论文章正文仍为 `DERIVED-PROVISIONAL`。
 
 ## 2. CURRENT_OBJECTIVE
 
-### WM-OBJ-001 — 完成 Working Memory 架构迁移
+### WM-OBJ-002 — 推进方法论文章进入 Framework Approval 准备状态
 
-**状态：** `IN-PROGRESS`
+**状态：** `WAITING-HUMAN`
 
-目标：
+当前需要人类解决三个阻塞 `MA-FW-001` 的核心问题：
 
-- 建立 Working Memory protocol 与项目状态文件；
-- 把 Clarification 从“1.5 层”改为 Working Memory item type；
-- 将现有 CLR-001 至 CLR-009 迁移到本文件；
-- 更新 manifest、context interface、onboarding、architecture、templates 与方法论文章；
-- 保留旧 clarification-register 路径作为兼容指针；
-- 完成中英文 parity 与自举验证。
+- `CLR-001` — 方法论文章中心责任概念；
+- `CLR-002` — Framework Responsibility Thesis 的强度；
+- `CLR-005` — `responsibility concentration` 是否保留或替换。
+
+这些决定完成并 Promotion 后，才能重新校准 Article Content Core / Argument Map / Draft，并进入 Framework Approval review。
 
 ## 3. ACTIVE_TASKS
 
-- `WM-T001` — 更新 Protocol Core / Decision Log：`IN-PROGRESS`
-- `WM-T002` — 建立 Working Memory protocol 与当前 Working Memory：`IN-PROGRESS`
-- `WM-T003` — 迁移 Clarification workflow：`TODO`
-- `WM-T004` — 更新 onboarding / manifest / context interface：`TODO`
-- `WM-T005` — 更新 project templates：`TODO`
-- `WM-T006` — 更新方法论文章上游状态与正文：`TODO`
-- `WM-T007` — 双语 / repository regression audit：`TODO`
+- `WM-T008` — 人类决定 CLR-001：`WAITING-HUMAN`
+- `WM-T009` — 人类决定 CLR-002：`WAITING-HUMAN`
+- `WM-T010` — 人类决定 CLR-005：`WAITING-HUMAN`
+- `WM-T011` — 将上述决定 Promotion 并传播到 Layer 1 / Layer 2 / Layer 3：`TODO`
+- `WM-T012` — 重新执行 Framework Approval readiness review：`TODO`
+- `WM-T013` — CLR-009 licensing 决定（formal release 前）：`WAITING-HUMAN`
 
 ## 4. RECENTLY_COMPLETED
 
 - `HARC-D018` — zero-context onboarding / handshake；
 - `HARC-D019` — session-context safeguard 的早期版本；
-- `HARC-D020` — 将其收缩为 Repository Resolver，并建立 Repository-Backed Context Interface；
-- 当前仓库已采用中文 canonical / 英文 synchronized mirror；
-- 当前 GitHub 已作为权威外部记忆和工作状态源。
+- `HARC-D020` — Repository Resolver / Repository-Backed Context Interface；
+- `HARC-D021` — 三层 Long-Term Research Memory + 并行 Working Memory；
+- `WM-T001–WM-T007` — Working Memory protocol、Clarification migration、onboarding、manifest/context interface、templates、方法论文章、双语与 repository regression audit 全部完成；
+- 最新递归双语检查：`108 Markdown = 54 Chinese canonical + 54 English mirror; missing pairs = 0`。
 
 ## 5. NEXT_ACTIONS
 
-1. 完成 D021 向全部协议与模板传播；
-2. 将本 Working Memory 设为 onboarding 的 resume index；
-3. 完成后重新检查方法论文章 Framework gate；
-4. 之后优先处理阻塞 `MA-FW-001` 的 CLR-001 / CLR-002 / CLR-005；
-5. 正式 release 前解决 CLR-009 licensing。
+1. 人类确认 `CLR-001 / CLR-002 / CLR-005`；
+2. Agent 将确认结果 Promotion 到 Decision Log 与相应长期记忆；
+3. 同步 Article Content Core、Working Argument Map 与方法论正文；
+4. 重新执行 `MA-FW-001` Framework Approval readiness review；
+5. 如人类明确批准具体 framework 版本，再创建 Approved Framework Snapshot；
+6. 正式 release 前解决 `CLR-009` licensing。
 
 ## 6. BLOCKERS / GATES
 
@@ -190,19 +191,20 @@ Clarification 是 Working Memory item，不是独立 Layer。
 
 ## 8. SYNC_DEFECTS
 
-当前 D021 Working Memory migration 尚未完全传播完成，在完成本轮前视为临时同步缺陷。
+**当前已知协议级同步缺陷：** `NONE RECORDED`
 
-完成条件：
+D021 已传播至：
 
 - Protocol Core / Decision Log；
-- Working Memory protocol；
+- Working Memory protocol / Clarification workflow；
 - Persistent Memory / Architecture / Specification；
 - START_HERE / AGENTS / Bootstrap / Onboarding；
 - Manifest / Context Interface；
-- templates；
-- methodology article；
-- bilingual parity；
-- onboarding self-test。
+- project templates；
+- methodology article Content Core / Argument Map / Framework Status / Draft；
+- bilingual parity audit / onboarding self-test。
+
+未决的人类决定属于 `PENDING_HUMAN_DECISIONS`，不等同于同步缺陷。
 
 ## 9. RECENTLY_RESOLVED / PROMOTED
 
