@@ -1,5 +1,7 @@
 # Methodology Article — Working Argument Map
 
+> Chinese `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` is canonical; this English file is its synchronized mirror.
+
 **Status:** `WORKING-FRAMEWORK — REVIEW READY`  
 **Artifact:** methodology article  
 **Human approval:** not yet completed  
@@ -7,11 +9,11 @@
 
 ## Canonical upstream files
 
-- `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.md`
-- `paper/METHODOLOGY_ARTICLE_FORM_CORE.md`
-- `core/PROTOCOL_CORE.md`
-- `core/DECISION_LOG.md`
-- `evidence/METHODOLOGY_SOURCES.md`
+- `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
+- `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
+- `core/PROTOCOL_CORE.zh-CN.md`
+- `core/DECISION_LOG.zh-CN.md`
+- `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
 ## Provenance legend
 
@@ -305,7 +307,7 @@ The article currently uses:
 - CRediT — contribution-role transparency distinct from authorship determination;
 - UNESCO — human-centred generative-AI governance background.
 
-Verified source notes are maintained in `evidence/METHODOLOGY_SOURCES.md`; bibliographic metadata is maintained in `paper/methodology-references.bib`.
+Verified source notes are maintained canonically in `evidence/METHODOLOGY_SOURCES.zh-CN.md`, with `evidence/METHODOLOGY_SOURCES.md` as the English mirror; bibliographic metadata is maintained in `paper/methodology-references.bib`.
 
 **Evidence rule:** none of these sources by itself establishes HARC's proposed framework architecture, `semantic version control`, `responsibility concentration`, or empirical effectiveness.
 
@@ -372,5 +374,6 @@ Choose a provisional target orientation:
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17`; venue-specific policies must be rechecked before submission.
 - Framework approval: `NOT YET COMPLETED`.
 - Final artifact approval: `NOT YET COMPLETED`.
+- Chinese/English synchronization: `REQUIRED`; Chinese is canonical.
 
 See `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` for the approval state.
