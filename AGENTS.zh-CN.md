@@ -11,8 +11,9 @@
 1. `START_HERE.zh-CN.md`
 2. `HARC_MANIFEST.yaml`
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
+4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 
-然后按照其中的 mandatory read order 重建项目状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 先向人类输出 **HARC Onboarding Report**。
+然后按照其中的 mandatory read order 重建项目状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 先向人类输出 **HARC Onboarding Report**。报告末尾必须回显 `HARC ACTIVE SESSION CONTRACT — LOADED`，把关键规则重新注入当前对话上下文。
 
 在完成这一接管握手前，不得进行大规模结构修改、正文重写、Framework Approval、关键术语传播或把 AI 提议提升为人类承诺。
 
