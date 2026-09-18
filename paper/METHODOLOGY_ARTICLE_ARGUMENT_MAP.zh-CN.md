@@ -62,7 +62,7 @@ AI Agent 可以承担越来越多的检索、结构化、起草、修订、形�
 
 ## T2 — 分层语义治理命题
 
-**来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
+**来源：** `HUMAN-CONFIRMED / AI-FORMULATED`
 
 项目至少应区分并分别保存：
 
