@@ -1,0 +1,154 @@
+# HARC Working Memory — Task Plan
+
+> **Language:** Chinese canonical: `task-plan.zh-CN.md`; this English file is the synchronized mirror.
+
+**Status:** `ACTIVE TASK PLAN`  
+**Principle:** maintain only current plans here. Completed items leave the active list and are summarized into Work Log; stable normative results are separately promoted.
+
+## 1. ACTIVE TASKS
+
+- `WM-T008` — human decision on CLR-001: `WAITING-HUMAN`
+- `WM-T009` — human decision on CLR-002: `WAITING-HUMAN`
+- `WM-T010` — human decision on CLR-005: `WAITING-HUMAN`
+- `WM-T011` — promote and propagate those resolutions through Layers 1 / 2 / 3: `TODO`
+- `WM-T012` — rerun Framework Approval readiness review: `TODO`
+- `WM-T013` — CLR-009 licensing decision before formal release: `WAITING-HUMAN`
+
+## 2. NEXT ACTIONS
+
+1. Human resolves `CLR-001 / CLR-002 / CLR-005`;
+2. Agent records the Decision Log and performs Promotion;
+3. synchronize Article Content Core, Working Argument Map, Framework Status, and methodology draft;
+4. rerun `MA-FW-001` readiness review;
+5. create an Approved Framework Snapshot only after explicit human approval of a concrete version;
+6. resolve `CLR-009` before formal release.
+
+## 3. BLOCKERS / GATES
+
+### Framework Approval
+
+`MA-FW-001` is blocked by:
+
+- `CLR-001`
+- `CLR-002`
+- `CLR-005`
+
+### Formal release
+
+- `CLR-009` — license unresolved.
+
+## 4. PENDING HUMAN DECISIONS / CLARIFICATIONS
+
+### CLR-001 — Central responsibility concept
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `BLOCKING`
+
+Question: how should the article distinguish and name cognitive work AI may perform versus responsibility humans must retain?
+
+Candidates:
+
+- `cognitive labor / 认知劳动`
+- `epistemic responsibility / 认识责任`
+- `cognitive responsibility / 认知责任`
+- another terminology system supplied by the human
+
+**AI-PROPOSED:** distinguish cognitive labor from epistemic responsibility.
+
+**Promotion target:** Article Content Core -> Framework -> Artifact.
+
+### CLR-002 — Strength of the Framework Responsibility Thesis
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `BLOCKING`
+
+Candidates:
+
+1. strong: Framework Approval generally constitutes the center of substantive intellectual authorship in AI-assisted long-form work;
+2. moderate: Framework Approval is HARC's main anchor for high-leverage human review without asserting a general authorship theory;
+3. a human-revised third version.
+
+**AI-PROPOSED:** currently prefer the moderate version.
+
+### CLR-003 — `semantic version control`
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `NON-BLOCKING`
+
+**AI-PROPOSED:** use as a clearly qualified HARC working term/coinage, not an established standard.
+
+### CLR-004 — `generation–verification asymmetry`
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `NON-BLOCKING`
+
+**AI-PROPOSED:** heuristic label only, not an established empirical law.
+
+### CLR-005 — Whether to retain `responsibility concentration`
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `BLOCKING`
+
+Candidates:
+
+- `epistemic responsibility anchoring / 认识责任锚定`
+- `responsibility architecture / 责任架构`
+- `high-leverage human review / 高杠杆人类审阅`
+- retain `responsibility concentration` with strict qualification
+
+**AI-PROPOSED:** demote or replace.
+
+### CLR-006 — Relation to extended / distributed cognition
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `NON-BLOCKING`
+
+Candidates: central foundation / secondary comparison / minimal background.  
+**AI-PROPOSED:** secondary conceptual comparison.
+
+### CLR-007 — Status of empirical validation plans
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `NON-BLOCKING`
+
+Candidates: core contribution / Future Research / omit.  
+**AI-PROPOSED:** Future Research Agenda.
+
+### CLR-008 — Primary disciplinary positioning
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** `NON-BLOCKING`
+
+Candidates: philosophy of technology / epistemology; research methodology; scholarly communication / research integrity; interdisciplinary AI governance.
+
+**AI-PROPOSED:** interdisciplinary research methodology with philosophy of technology / epistemology as the theoretical core.
+
+### CLR-009 — HARC open license
+
+**Status:** `WAITING-HUMAN`  
+**Severity:** formal release = `BLOCKING`; methodology framework = `NON-BLOCKING`
+
+Candidates: documentation CC BY 4.0 + code MIT / Apache-2.0 / MIT / other.
+
+Related: `LICENSE-DECISION.zh-CN.md`
+
+## 5. BACKLOG
+
+- automated onboarding / conformance checks;
+- study context cost and stale-state behavior under repository-backed context;
+- study Working Memory update granularity, compression, and handoff efficiency;
+- cross-Agent / cross-platform takeover tests.
+
+## 6. SYNC DEFECTS
+
+`NONE RECORDED`
+
+## 7. COMPLETION RULE
+
+When a task completes:
+
+1. remove/exit it from this active list;
+2. add a high-level completion summary to Work Log;
+3. perform Promotion if it created a durable normative result;
+4. update Current Focus when appropriate;
+5. do not accumulate long completed-history here.
