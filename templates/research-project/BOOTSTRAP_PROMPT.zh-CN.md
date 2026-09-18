@@ -8,7 +8,8 @@
 >
 > 1. 读取 `START_HERE.zh-CN.md`；
 > 2. 读取 `HARC_MANIFEST.yaml`；
-> 3. 读取 `AGENTS.zh-CN.md`；
+> 3. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
+> 4. 读取 `AGENTS.zh-CN.md`；
 > 5. 按 manifest 的 `required_read_order` 重建项目状态；
 > 6. 按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report，并回显 `HARC ACTIVE SESSION CONTRACT — LOADED`。
 >
