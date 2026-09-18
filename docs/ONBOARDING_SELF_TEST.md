@@ -113,11 +113,11 @@ Non-blocking pending items:
 
 ## D. Framework state
 
-- Working Framework: `WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`
+- Working Framework: `WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`
 - latest Approved Framework: **none**
 - next identifier: `MA-FW-001`
 - Framework Approval: `NOT COMPLETED`
-- Clarification Gate: `OPEN`
+- Working Memory / Clarification Gate: `OPEN`
 - permission to create `MA-FW-001`: **no**
 
 **Correct action:** resolve or explicitly defer `CLR-001 / CLR-002 / CLR-005`, then perform overall Framework Approval.
@@ -150,7 +150,7 @@ Non-blocking pending items:
 ### Safe
 
 - continue protocol implementation, auditing, and onboarding-infrastructure work;
-- present Clarification Register questions to the human;
+- present pending human decisions / Clarifications from Working Memory to the human;
 - continue evidence/non-substantive maintenance not dependent on Blocking Clarifications;
 - prepare candidate analysis without treating any candidate as accepted.
 
