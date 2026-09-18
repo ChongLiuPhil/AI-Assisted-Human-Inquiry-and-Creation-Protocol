@@ -205,4 +205,4 @@ This file is the chronological audit trail of substantive human decisions about 
 
 **Affected components:** Protocol Core, Specification, AGENTS contract, README, methodology article, evidence notes, audits, templates, future files
 
-**Status:** implementation in progress; repository-wide bilingual migration initiated.
+**Status:** initial repository-wide bilingual migration implemented; every future substantive edit remains subject to ongoing synchronization. See `docs/BILINGUAL_PARITY_AUDIT.md`.
