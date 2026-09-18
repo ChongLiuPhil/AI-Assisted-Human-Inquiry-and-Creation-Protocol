@@ -10,10 +10,11 @@ Before substantive work:
 
 1. read `HARC_MANIFEST.yaml`;
 2. read `BOOTSTRAP_PROMPT.zh-CN.md`;
-3. read `AGENTS.zh-CN.md`;
-4. follow the manifest required read order;
-5. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report;
-6. begin substantive work only after reporting blocking clarifications, framework state, and permitted next action.
+3. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
+4. read `AGENTS.zh-CN.md`;
+5. follow the manifest required read order;
+6. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report and echo `HARC ACTIVE SESSION CONTRACT — LOADED`;
+7. begin substantive work only after reporting blocking clarifications, framework state, permitted next action, and loading the Session Contract.
 
 ## Onboarding Report must include
 
