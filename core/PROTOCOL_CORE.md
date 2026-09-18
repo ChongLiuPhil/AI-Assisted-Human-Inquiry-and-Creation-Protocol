@@ -188,6 +188,37 @@ If the Agent cannot produce that report from repository state alone, the project
 
 No protocol file can guarantee that every external platform automatically reads a particular filename. HARC therefore aims for **maximal discoverability plus verifiable onboarding** through root-level entry files, a general agent contract, a machine manifest, README navigation, and a copyable prompt, so that any repository-capable agent that follows project instructions can reconstruct the same workflow.
 
+
+## P21. Durable repository state should be reinjected into active session context after onboarding
+
+HARC durable state lives in the repository, but merely existing in the repository does not guarantee that the rules remain highly salient in the active generation context throughout a long conversation.
+
+After the Zero-context Onboarding Handshake, a replacement AI Agent should generate a compressed **HARC Active Session Contract** from current repository state and explicitly write it into its own current reply so that key HARC invariants and current project status re-enter the active conversation context.
+
+The Session Contract should include at least:
+
+- authority hierarchy;
+- canonical language;
+- current Blocking Clarifications;
+- Working / Approved Framework state;
+- Artifact / approval state;
+- current task classification and upstream-first propagation path;
+- currently prohibited or blocked actions.
+
+This is not the platform's true system prompt. HARC must not claim to override or modify platform system/developer/safety instructions, model weights, or platform-level memory.
+
+Correct precedence is:
+
+`Platform system/developer rules > HARC Session Contract > ordinary task-level AI defaults`
+
+After major state changes, resolution of a Blocking Clarification, Framework Approval, Final Artifact Review, or suspected context loss, the Agent should perform a `HARC CONTEXT REFRESH` by rereading repository state and updating the active session contract.
+
+This creates two-layer memory:
+
+`Durable Repository State + Active Session Contract`
+
+The former provides recoverable persistence; the latter provides active-session salience and verifiable execution.
+
 ---
 
 ## Current scope
