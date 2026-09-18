@@ -173,7 +173,7 @@ For the methodology article, read in this order:
 
 1. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
 2. `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
-3. `docs/clarification-register.zh-CN.md`
+3. `docs/working-memory.zh-CN.md`
 4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
 5. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 6. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
