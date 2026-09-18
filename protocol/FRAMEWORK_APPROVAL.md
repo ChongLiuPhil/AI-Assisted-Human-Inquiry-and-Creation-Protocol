@@ -1,5 +1,7 @@
 # Framework Approval and Responsibility Model
 
+> **Language:** Chinese canonical: `FRAMEWORK_APPROVAL.zh-CN.md`; this English file is the synchronized mirror.
+
 ## 1. Two states of the operational framework
 
 HARC distinguishes:
