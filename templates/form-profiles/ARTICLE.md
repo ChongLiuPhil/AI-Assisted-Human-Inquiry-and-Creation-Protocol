@@ -1,5 +1,7 @@
 # ARTICLE Form Profile
 
+> **Language:** Chinese canonical: `ARTICLE.zh-CN.md`; this English file is the synchronized mirror.
+
 **Status:** template — artifact-type fields only. Do not invent author preferences.
 
 ## Opening
