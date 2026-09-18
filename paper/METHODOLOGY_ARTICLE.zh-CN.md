@@ -14,7 +14,7 @@
 
 生成式人工智能正在显著改变研究工作的劳动结构。文献检索、观点整理、论证重构、草稿生成、语言编辑、格式转换乃至部分形式化工作，都可以由 AI Agent 以远高于传统人工流程的速度完成。然而，研究者的阅读速度、理解能力、判断能力与责任承担能力并不会按同样比例增长。由此出现一个比“AI 是否可以写论文”更基础的方法论问题：当大量认知劳动可以被机器辅助甚至自动执行时，人类研究者究竟还必须理解什么、确认什么、判断什么，并对什么承担责任？
 
-本文提出 Human–AI Research Collaboration Protocol（HARC）作为一种以 GitHub 为当前主要实现平台的持久、显性、可审计的人机研究协作架构。HARC 不把聊天窗口或某个模型的私有上下文视为研究项目的长期记忆，而把经过版本控制的仓库文本视为持续发展的研究状态。协议区分人类作者的研究内容意图、形式表达意图、AI 所维护的操作性论证框架、证据约束、历史决策以及最终派生文本，并通过 Content Core、Form Core、Decision Log、Working Argument Map、Approved Framework Snapshot 等文件结构建立一种“语义版本控制”。
+本文提出 Human–AI Research Collaboration Protocol（HARC）作为一种以 GitHub 为当前主要实现平台的持久、显性、可审计的人机研究协作架构。HARC 不把聊天窗口或某个模型的私有上下文视为研究项目的长期记忆，而把经过版本控制的仓库文本视为持续发展的研究状态。协议区分人类作者的研究内容意图、形式表达意图、AI 所维护的操作性论证框架、证据约束、历史决策以及最终派生文本，并通过 Content Core、Form Core、Decision Log、Critical Clarification Register、Working Argument Map、Approved Framework Snapshot 等文件结构建立一种“语义版本控制”。
 
 本文进一步提出：AI 时代的人类责任不应被理解为“人类必须亲自完成每一句文字”，也不能被理解为“只要 AI 足够强，人类即可将认知责任整体委托出去”。更合理的方向是责任集中（responsibility concentration）：把有限的人类注意力集中到高杠杆的认识论节点，包括研究目标、核心命题、主要推论关系、决定性证据冲突、论证框架确认以及最终发布确认。本文据此区分认知劳动的委托与认识责任的委托、框架缺陷与扩写缺陷、Framework Approval 与 Final Artifact Approval，并讨论这种架构与扩展心灵、分布式认知、认识依赖、自动化依赖以及现有学术作者规范之间的关系。
 
@@ -105,7 +105,19 @@ Decision Log 因而保存决策轨迹：何时改变某个主张、何时接受�
 
 可以说：Core 表示当前有效状态，Log 表示我们如何走到这里。
 
-### 4. Working Argument Map：真正适合人机讨论的中间层
+### 4. Critical Clarification Register：把高影响不确定性提交人类治理
+
+在 Content/Form Core 与 Working Argument Map 之间，HARC 增加一个 **Layer 1.5**：Critical Clarification Register。
+
+它处理的不是所有小问题，而是那些一旦误解就可能显著改变核心命题、关键概念、范围、主要推论关系、章节功能或关键术语/翻译的高影响不确定性。
+
+当 AI 对这些内容存在多个合理解释时，其职责不是“选择自己认为最可能的版本然后继续”，而是把不确定性显式提升出来，说明候选解释、影响、严重度以及需要人类回答的问题。
+
+未解决条目不是人类作者的立场。只有在人类明确确认或纠正后，结果才通过 Decision Log 进入相应 Core，再传播到 Working Argument Map 与正文。
+
+这个机制尤其重要于母语写作和跨语言表达：关键概念的中文含义与英文对应关系如果尚未确认，就不应由翻译过程静默决定。
+
+### 5. Working Argument Map：真正适合人机讨论的中间层
 
 完整论文或书籍可能太长，不适合作为每次结构讨论的直接对象。因此 HARC 维护一个 AI 主导更新、但受 Content Core 约束的 Working Argument Map。
 
