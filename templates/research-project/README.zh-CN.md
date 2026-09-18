@@ -25,7 +25,7 @@
 
 ## 初始化顺序
 
-1. 创建/确认 `START_HERE.zh-CN.md`、英文 mirror 与 `HARC_MANIFEST.yaml`，记录采用的 HARC version/commit 和 mandatory read order。
+1. 创建/确认 `START_HERE.zh-CN.md`、英文 mirror、`HARC_MANIFEST.yaml` 与 `HARC_CONTEXT_INTERFACE.yaml`，记录采用的 HARC version/commit、mandatory read order 与 repository-backed context policy。
 2. 确定成果类型：paper、book、article、report、thesis 等。
 3. 仅把人类实际表达的实质性承诺提取到 `core/CONTENT_CORE.zh-CN.md`，并同步英文 mirror。
 4. 确定明确适用的 reusable author form profile 与 artifact-type profile。
@@ -51,6 +51,7 @@ project/
 ├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 ├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
+├── HARC_CONTEXT_INTERFACE.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
@@ -85,7 +86,7 @@ project/
 
 ## 给 AI Agent 的建议指令
 
-> 使用 HARC Protocol 初始化本项目。把 GitHub 当作持久项目记忆。区分 CONTENT、FORM 和 PROTOCOL 决定。规范文件只写入人类实际提供的承诺。确定成果类型与适用形式 profile，但不要发明偏好。对任何可能重大影响核心命题、关键概念、术语/翻译或论证结构的高影响不确定性，先写入 Clarification Register 并向我确认；不要自行猜测。Argument Map 在我明确批准 framework snapshot 前始终属于 AI 生成的工作结构。实质性变化上游优先传播。记录项目采用的 HARC version/commit。中文是 canonical；任何修改必须同步英文 mirror。
+> 使用 HARC Protocol 初始化本项目。把 GitHub 直接当作权威外部记忆库与工作状态库；模型上下文只保留 Repository Resolver 和当前任务所需的临时缓存。区分 CONTENT、FORM 和 PROTOCOL 决定。规范文件只写入人类实际提供的承诺。确定成果类型与适用形式 profile，但不要发明偏好。对任何可能重大影响核心命题、关键概念、术语/翻译或论证结构的高影响不确定性，先写入 Clarification Register 并向我确认；不要自行猜测。Argument Map 在我明确批准 framework snapshot 前始终属于 AI 生成的工作结构。实质性变化上游优先传播。记录项目采用的 HARC version/commit。中文是 canonical；任何修改必须同步英文 mirror。
 
 ## 未知项是合法状态
 
