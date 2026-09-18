@@ -23,10 +23,10 @@ harc:
     - "BOOTSTRAP_PROMPT.zh-CN.md"
     - "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
     - "AGENTS.zh-CN.md"
+    - "docs/working-memory.zh-CN.md"
     - "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
     - "core/PROTOCOL_CORE.zh-CN.md"
     - "core/DECISION_LOG.zh-CN.md"
-    - "docs/working-memory.zh-CN.md"
 
   onboarding_required_roles:
     - "working_memory"
