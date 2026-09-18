@@ -50,13 +50,17 @@ The HARC project is not intended as a purely abstract philosophical proposal. It
 
 Terms and stronger claims such as `generation–verification asymmetry`, `semantic version control`, `responsibility concentration`, and a specific empirical test suite may be useful AI-generated formulations, but they remain provisional unless explicitly accepted by the human author.
 
+## C11. High-impact uncertainty must be explicitly submitted for human clarification
+
+The article must explain HARC's Critical Clarification Layer: when AI has non-trivial uncertainty about authorial intent, core claims, key concepts, scope, inferential relations, section functions, or key terminology/translation that could materially change the argument structure, the AI should not guess. It should proactively register the issue in the Clarification Register and request human confirmation.
+
+Open clarifications are not human commitments. After human confirmation or correction, the result should be promoted into the Decision Log and appropriate Core, then propagated into the Working Framework and final artifact.
+
+This mechanism is especially important for core concepts in the author's primary language and their English correspondence, preventing translation or AI interpretation from hardening unconfirmed meaning into the article structure.
+
 ## Current unresolved authorial decisions
 
-- Preferred central term: `epistemic responsibility`, `cognitive responsibility`, or another formulation.
-- Whether framework approval should be defended as the general center of substantive authorship or only as HARC's proposed governance model.
-- Strength of the connection to extended/distributed cognition.
-- Target disciplinary venue and balance between normative philosophy, methodology, protocol description, and possible empirical evaluation.
-- Whether a formal empirical/conformance testing program should become part of the article's core thesis or remain a future research agenda.
+Operational state for high-impact unresolved issues is maintained in `docs/clarification-register.md`. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
 
 ## Provenance correction
 
