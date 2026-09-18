@@ -84,9 +84,9 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 
 ### C1. 当前阶段与续接点
 
-- CURRENT_STAGE：HARC v0.2 protocol architecture + methodology Working Framework；
-- CURRENT_OBJECTIVE：完成 D021 Working Memory 架构迁移；
-- 当前主要工作：协议/模板/文章同步与回归验证。
+- CURRENT_STAGE：HARC v0.2 Working Memory 架构已完成；方法论文章处于 Working Framework 的人类澄清 / Framework Approval 准备阶段；
+- CURRENT_OBJECTIVE：解决 `CLR-001 / CLR-002 / CLR-005`，使 `MA-FW-001` 具备重新审查条件；
+- 当前主要工作状态：`WAITING-HUMAN`。
 
 ### C2. Blockers / Pending Human Decisions
 
@@ -110,8 +110,8 @@ Non-blocking pending items：
 
 ### C3. Handoff / next actions
 
-- 完成本轮 Working Memory migration；
-- 然后优先解决 `CLR-001 / CLR-002 / CLR-005`；
+- 优先解决 `CLR-001 / CLR-002 / CLR-005`；
+- 解决后执行 Promotion，并同步 Article Content Core / Argument Map / Draft；
 - 不把 Working Memory summary 当成长期实质性真值，相关判断仍读取 Layer 1/2/3 最新 canonical state。
 
 ## D. Framework 状态
