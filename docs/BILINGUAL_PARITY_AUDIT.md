@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **84**
-- Chinese canonical files (`*.zh-CN.md`): **42**
-- English mirrors: **42**
+- total Markdown files: **96**
+- Chinese canonical files (`*.zh-CN.md`): **48**
+- English mirrors: **48**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
@@ -144,6 +144,19 @@ Language-neutral machine-readable manifests were also added:
 - `templates/research-project/HARC_MANIFEST.yaml`
 
 The YAML manifests are path/read-order/invariant indexes and need not be duplicated solely for language; their human-readable rules are expressed in bilingual START_HERE / AGENTS / Specification files.
+
+### 3.8 Onboarding Handshake and standalone startup assets
+
+After P20 / HARC-D018 received explicit human confirmation, the following were added and bilingualized:
+
+- `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror;
+- `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror;
+- `protocol/ONBOARDING_HANDSHAKE.zh-CN.md` / English mirror;
+- `templates/research-project/BOOTSTRAP_PROMPT.zh-CN.md` / English mirror;
+- `templates/research-project/ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror;
+- `docs/ONBOARDING_SELF_TEST.zh-CN.md` / English mirror.
+
+The current recursive tree scan reports **96 Markdown files = 48 Chinese canonical + 48 English mirrors, with 0 missing counterparts**.
 
 ## 4. High-risk semantic mismatches repaired
 
