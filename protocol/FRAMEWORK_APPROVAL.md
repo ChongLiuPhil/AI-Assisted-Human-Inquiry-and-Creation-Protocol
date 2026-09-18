@@ -158,9 +158,11 @@ The wording may differ, but the intellectual structure should remain recoverable
 
 ## 8. Final Artifact Approval Gate
 
-Framework approval is not identical to release approval.
+Framework Approval is not identical to release approval.
 
 Before formal submission, publication, or public release under human authorship, the concrete release version should undergo the human review required by the applicable discipline, institution, publisher, or venue.
+
+When an artifact enters public knowledge circulation, a core function of Final Artifact Approval is to ensure that **identifiable human bearers of responsibility remain answerable for its knowledge claims, accuracy, integrity, and release decision.** AI Agents may participate in generation, expansion, editing, and checking, but they cannot replace this responsibility-bearing position.
 
 Recommended states:
 
@@ -170,48 +172,30 @@ Recommended states:
 - `FINAL-REVIEW`
 - `FINAL-APPROVED`
 
-## 9. Responsibility distinction
+---
+
+## 9. Responsibility-bearing subjects and layers of responsibility
 
 HARC distinguishes:
 
-### Responsibility for project purpose and direction
+### Project purpose and direction
 
-The purpose, central problem, and direction of research or creative work originate with humans and remain under human initiation, navigation, or approval. An AI Agent is a collaboration tool that may perform or assist substantial concrete work, but it does not bear the project's purpose or ultimate core responsibility.
+The purpose, central problem, and direction of research or creative work originate with humans and remain under human initiation, navigation, or approval. AI Agents are collaboration tools that may perform or assist substantial concrete work, but they cannot become the ultimate bearers of responsibility for project purpose and direction.
 
-### Intellectual-architecture responsibility
+### Intellectual architecture
 
-Anchored primarily in the human-approved framework. The human is responsible for understanding, reviewing, judging, and confirming every substantive element actually represented there.
+Responsibility is anchored primarily in the human-approved framework. Humans, as the bearers of responsibility, are responsible for understanding, reviewing, judging, and confirming every substantive element actually represented there.
 
 ### Derived-expression quality control
 
-AI may perform or assist extensive expansion, restructuring, and expression work; concrete factual, evidential, expressive, and implementation defects in later derived text remain subject to checking and revision.
+AI may perform or assist extensive expansion, restructuring, and expression work; concrete factual, evidential, expressive, and implementation defects in later derived text remain subject to checking and revision. AI participation does not alter the human responsibility-bearing status.
 
-### Public scholarly accountability
+### Public knowledge dissemination and scholarly accountability
 
-The release/submission decision remains a human responsibility to the extent required by relevant external standards and is handled through the separate Final Artifact Approval Gate.
+When research results, arguments, or knowledge claims enter public circulation, identifiable human bearers of responsibility must remain. Release/submission decisions, together with accuracy, integrity, research-integrity obligations, and public accountability required by applicable standards, remain human responsibilities and are handled through the separate Final Artifact Approval Gate.
 
 A concise formulation is:
 
-> **HARC takes human-given project purpose and direction as upstream, uses a framework fully understood and approved by the human as the structural anchor of core intellectual responsibility, and uses Final Artifact Approval for accountability over the concrete public version.**
+> **HARC permits extensive AI participation in carrying out research work, while humans remain the bearers of responsibility: humans supply and authorize project purpose and direction, bear core intellectual responsibility through a framework they fully understand and approve, and bear final release responsibility for concrete public knowledge artifacts through Final Artifact Approval.**
 
 This is HARC's governance model. It does not claim that Framework Approval by itself supplies a universal cross-domain theory of authorship.
-
-
-
-HARC distinguishes:
-
-### Intellectual-architecture responsibility
-
-Anchored strongly in the human-approved framework.
-
-### Derived-expression quality control
-
-AI may produce much of the expansion; defects remain subject to checking and revision.
-
-### Public scholarly accountability
-
-The release/submission decision remains a human responsibility to the extent required by relevant external standards.
-
-A concise formulation is:
-
-> **Framework approval defines the center of substantive intellectual authorship; final artifact approval defines the threshold of public scholarly accountability.**
