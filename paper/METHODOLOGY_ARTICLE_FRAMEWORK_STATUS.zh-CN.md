@@ -10,7 +10,9 @@
 
 人类批准：**尚未完成**。
 
-当前 map 已与 Article Content Core 和 HARC-D023 对齐，并继续显式区分：人类原创承诺、AI 组织后的表述、AI 提议内容以及证据约束。
+当前 map 已与 Article Content Core、HARC-D023 与 HARC-D024 对齐，并继续显式区分：人类原创承诺、AI 组织后的表述、AI 提议内容以及证据约束。
+
+**题目状态：** 当前中文题目《从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性》已通过 `HARC-D024` 获得人类认可；英文为同步翻译镜像。题目获批不构成整体 Framework Approval。
 
 ### Readiness review
 
@@ -48,7 +50,7 @@
 
 状态：`DERIVED-PROVISIONAL`
 
-HARC-D023 已经定向传播到摘要、责任论证和结论，旧的 “AI cognitive labor / responsibility concentration” 中心模型已被修正。
+HARC-D023 / HARC-D024 已经定向传播到摘要、责任论证和结论：旧的 “AI cognitive labor / responsibility concentration” 中心模型已被修正，并进一步精确为“人类保持为责任主体／责任承担者”，特别适用于公开知识传播。
 
 但当前正文仍保留较早的 15 部分结构，而最新 Working Framework 是重新组织后的 10 部分结构，因此正文与 framework 仍然只是**部分同步**。
 
@@ -67,7 +69,7 @@ HARC-D023 已经定向传播到摘要、责任论证和结论，旧的 “AI cog
 
 ## 同步状态
 
-- Founder commitments -> Article Content Core：`SYNC — HARC-D023 PROMOTED`
+- Founder commitments -> Article Content Core：`SYNC — HARC-D023 + HARC-D024 PROMOTED`
 - Article Content Core -> Working Framework：`SYNC / REVIEW READY`
 - Working Framework -> 当前正文：`PARTIALLY SYNC — responsibility model synchronized; structural rewrite deferred pending human Framework Approval`
 - 证据层 -> 政策/文献主张：`RECHECKED 2026-09-17; further venue-specific verification required before submission`
@@ -84,7 +86,7 @@ HARC-D023 已经定向传播到摘要、责任论证和结论，旧的 “AI cog
 - `CLR-002` — Framework Responsibility Thesis；
 - `CLR-005` — `responsibility concentration` 的地位。
 
-三项均通过 `HARC-D023` 解决并传播。
+`CLR-002 / CLR-005` 通过 `HARC-D023` 解决并传播；`CLR-001` 经 `HARC-D024` 进一步精确化为“人类是责任主体／责任承担者”。当前题目也通过 `HARC-D024` 获得人类认可。
 
 ### 当前 Framework Approval blocker
 
