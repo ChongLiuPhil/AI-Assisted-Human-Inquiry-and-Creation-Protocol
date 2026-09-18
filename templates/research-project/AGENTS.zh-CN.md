@@ -10,8 +10,9 @@
 
 1. `START_HERE.zh-CN.md`
 2. `HARC_MANIFEST.yaml`
+3. `BOOTSTRAP_PROMPT.zh-CN.md`
 
-随后按 manifest 重建项目状态并输出 HARC Onboarding Report。
+随后按 manifest 重建项目状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report。
 
 完成接管握手前，不得进行大规模结构修改、Framework Approval 或把 AI 提议提升为人类承诺。
 
