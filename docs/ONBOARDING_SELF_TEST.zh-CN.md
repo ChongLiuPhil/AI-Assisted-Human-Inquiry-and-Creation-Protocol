@@ -2,9 +2,11 @@
 ## 零上下文接管自举测试
 
 **日期：** 2026-09-18  
-**状态：** `PASS WITH EXPECTED BLOCKING CLARIFICATIONS`  
-**性质：** AI 维护的 onboarding/conformance 审计，不是新的规范真值源。  
+**状态：** `PASS — HISTORICAL SNAPSHOT; LIVE STATE SUPERSEDED`  
+**性质：** AI 维护的 onboarding/conformance 历史快照，不是当前动态状态或新的规范真值源。  
 **语言：** 中文 canonical；英文 `ONBOARDING_SELF_TEST.md` 是同步 mirror。
+
+> **重要：** 本文件保留测试执行当时的模拟 Current Focus / blockers / Clarifications，用于证明该时点的 zero-context takeover 可以完成。测试之后项目状态已经继续发展，因此本文中的动态状态不得用于恢复“现在”。当前状态必须 fresh-fetch：`docs/working-memory/current-focus.zh-CN.md`、`docs/working-memory/task-plan.zh-CN.md` 与相关 Framework Status。未来 onboarding self-test 应记录被测试的 commit/revision，使快照边界可机器核验。
 
 ## 1. 测试方法
 
