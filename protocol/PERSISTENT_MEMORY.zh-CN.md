@@ -25,6 +25,7 @@ HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个
 | 研究意义、命题、区分 | `core/CONTENT_CORE.zh-CN.md` |
 | 形式、版式、风格、成果类型 | `core/FORM_CORE.zh-CN.md` |
 | 人类历史决定 | `core/DECISION_LOG.zh-CN.md` |
+| 高影响未决澄清 | `docs/clarification-register.zh-CN.md` |
 | 当前论证结构 | `docs/argument-map.zh-CN.md` |
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
 | 批准/同步状态 | `docs/framework-status.zh-CN.md` |
@@ -59,6 +60,7 @@ HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 - Content Core；
 - Form Core；
 - 最近 Decision Log；
+- 当前 Critical Clarification Register；
 - Working Argument Map；
 - Framework Status；
 - 最新 Approved Framework。
@@ -94,7 +96,8 @@ HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 - 人类当前希望成果呈现成什么样？
 - 哪个论证 framework 实际获得了人类批准？
 - 哪些 AI 建议仍未接受？
-- 哪些问题仍未解决？
+- 哪些高影响不确定性仍在等待人类澄清？
+- 哪些其他问题仍未解决？
 - 哪些证据冲突重要？
 - 下一步应修改什么？
 
