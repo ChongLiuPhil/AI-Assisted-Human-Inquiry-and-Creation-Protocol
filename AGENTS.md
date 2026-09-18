@@ -190,3 +190,11 @@ Preferred naming:
 Language-neutral technical files (for example BibTeX, schemas, code, raw data) need not be duplicated solely for translation, but human-readable guidance around them must remain bilingual.
 
 When editing a bilingual pair, treat the two-file synchronization as one atomic task. Do not mark the work complete after updating only one language.
+
+### Pre-cutover legacy exception
+
+For files that existed before the bilingual rule was established on 2026-09-18, if historical English actually contains newer substantive development not yet absorbed by Chinese, first merge that development into Chinese so Chinese represents the latest state at cutover, then synchronize English. After this one-time legacy catch-up, the normal direction is fixed as:
+
+`human decision -> Chinese canonical -> English synchronized mirror`
+
+English must not independently develop substantive content after cutover.
