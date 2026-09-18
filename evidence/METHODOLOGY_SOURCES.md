@@ -1,5 +1,7 @@
 # Methodology Article — Source Verification Notes
 
+> Chinese `evidence/METHODOLOGY_SOURCES.zh-CN.md` is canonical; this English file is the synchronized mirror.
+
 **Last checked:** 2026-09-17  
 **Purpose:** evidence layer for externally sourced and time-sensitive claims in `paper/METHODOLOGY_ARTICLE.zh-CN.md`.
 
