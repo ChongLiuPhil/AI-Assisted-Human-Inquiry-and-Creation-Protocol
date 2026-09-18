@@ -62,7 +62,7 @@ A long-running human–AI research project should not depend for its intellectua
 
 ## T2 — Layered Semantic Governance Thesis
 
-**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+**Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
 
 The project should distinguish and separately preserve at least:
 
