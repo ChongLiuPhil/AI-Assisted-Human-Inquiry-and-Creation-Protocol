@@ -227,6 +227,21 @@ Work Log 主要供人类作者回顾，默认不进入 AI context。
 
 最新递归扫描为 **120 个 Markdown = 60 个中文 canonical + 60 个英文 mirror，缺失配对 0**。
 
+### 3.13 当前复核中的语义镜像修复
+
+2026-09-18 当前全讨论覆盖复核进一步发现：文件配对完整并不意味着所有英文 mirror 已经吸收最近的 Working Memory 模块化变化。
+
+本轮修复：
+
+- 根 `START_HERE.md`；
+- 根 `AGENTS.md`；
+- `protocol/ONBOARDING_HANDSHAKE.md`；
+- project-template `START_HERE.md`；
+- project-template `AGENTS.md`；
+- Bootstrap / Persistent Memory 中少量旧术语。
+
+主要修复内容是：旧 Clarification Register 不再作为 active state；默认接管使用 `Index -> Current Focus -> Task Plan`；Work Log 默认不进入 AI context；方法论文章读取顺序同步新 Working Memory 模型。
+
 ## 4. 已修复的高风险语义不同步
 
 本轮特别修复了：
