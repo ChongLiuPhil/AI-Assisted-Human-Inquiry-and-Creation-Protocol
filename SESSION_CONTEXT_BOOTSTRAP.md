@@ -31,6 +31,10 @@ Control files:
 - HARC_MANIFEST.yaml
 - HARC_CONTEXT_INTERFACE.yaml
 
+Working Memory:
+- resume index: docs/working-memory.zh-CN.md
+- operational state only; not long-term semantic authority
+
 Language:
 - Chinese canonical
 - English synchronized mirror
@@ -63,10 +67,11 @@ Earlier appearance of those values in chat does not remove the need for fresh re
 
 1. reread `HARC_MANIFEST.yaml`;
 2. reread `HARC_CONTEXT_INTERFACE.yaml`;
-3. resolve current task dependencies;
-4. fresh-fetch those files;
-5. discard stale cache;
-6. continue work.
+3. fresh-fetch Working Memory and confirm the current resume point;
+4. resolve long-term-memory dependencies for the current task;
+5. fresh-fetch those files;
+6. discard stale cache;
+7. continue work.
 
 It does not mean copying the whole project state back into chat.
 
