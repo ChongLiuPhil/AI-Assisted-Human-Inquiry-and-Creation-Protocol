@@ -479,6 +479,7 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 7. 已知证据冲突可见；
 8. 重要决定没有只滞留在聊天历史中；
 9. 接管文档指向当前规范文件。
+10. 所有会阻塞 Framework Approval 的 Critical Clarification 都在 Clarification Register 中显式可见，而不是只存在于聊天或 AI 私下判断。
 
 任一条件失败都构成显式同步缺陷。
 
