@@ -7,33 +7,30 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T008` — human decision on CLR-001: `WAITING-HUMAN`
-- `WM-T009` — human decision on CLR-002: `WAITING-HUMAN`
-- `WM-T010` — human decision on CLR-005: `WAITING-HUMAN`
-- `WM-T011` — promote and propagate those resolutions through Layers 1 / 2 / 3: `TODO`
-- `WM-T012` — rerun Framework Approval readiness review: `TODO`
+- `WM-T015` — human overall review of the current methodology-article Working Framework and APPROVE / REVISE / REJECT decision for `MA-FW-001`: `WAITING-HUMAN`
 - `WM-T013` — CLR-009 licensing decision before formal release: `WAITING-HUMAN`
 - `WM-T014` — CLR-010 target venue and venue-specific form constraints: `WAITING-HUMAN`
 
 ## 2. NEXT ACTIONS
 
-1. Human resolves `CLR-001 / CLR-002 / CLR-005`;
-2. Agent records the Decision Log and performs Promotion;
-3. synchronize Article Content Core, Working Argument Map, Framework Status, and methodology draft;
-4. rerun `MA-FW-001` readiness review;
-5. create an Approved Framework Snapshot only after explicit human approval of a concrete version;
-6. resolve `CLR-009` before formal release;
-7. resolve `CLR-010` before freezing final submission/publication form.
+1. Human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole, especially the current thesis set, dependency structure, section functions, and the HARC-D023 revisions to T3 / T4;
+2. human explicitly decides `APPROVE / REVISE / REJECT`;
+3. only after explicit `APPROVE`, the Agent creates the `MA-FW-001` Approved Framework Snapshot and updates Framework Status;
+4. after Framework Approval, perform the major structural synchronization/rewrite of the current draft while retaining a separate Final Artifact Approval gate;
+5. resolve `CLR-009` before formal release;
+6. resolve `CLR-010` before freezing final submission/publication form.
 
 ## 3. BLOCKERS / GATES
 
 ### Framework Approval
 
-`MA-FW-001` is blocked by:
+`CLR-001 / CLR-002 / CLR-005` have been resolved and promoted through HARC-D023.
 
-- `CLR-001`
-- `CLR-002`
-- `CLR-005`
+There is currently **no blocking Clarification** preventing overall Framework Approval review.
+
+However, `MA-FW-001` has not been created because explicit overall human approval of the complete Working Framework is still missing. Current gate:
+
+`WAITING-HUMAN: overall Framework Approval decision`
 
 ### Formal release
 
@@ -45,36 +42,18 @@
 
 ## 4. PENDING HUMAN DECISIONS / CLARIFICATIONS
 
-### CLR-001 — Central responsibility concept
+### Framework Approval overall decision
 
 **Status:** `WAITING-HUMAN`  
-**Severity:** `BLOCKING`
+**Type:** human approval decision, not a new Clarification.
 
-Question: how should the article distinguish and name cognitive work AI may perform versus responsibility humans must retain?
+The current Working Framework requires an overall:
 
-Candidates:
+- `APPROVE`
+- `REVISE`
+- `REJECT`
 
-- `cognitive labor / 认知劳动`
-- `epistemic responsibility / 认识责任`
-- `cognitive responsibility / 认知责任`
-- another terminology system supplied by the human
-
-**AI-PROPOSED:** distinguish cognitive labor from epistemic responsibility.
-
-**Promotion target:** Article Content Core -> Framework -> Artifact.
-
-### CLR-002 — Strength of the Framework Responsibility Thesis
-
-**Status:** `WAITING-HUMAN`  
-**Severity:** `BLOCKING`
-
-Candidates:
-
-1. strong: Framework Approval generally constitutes the center of substantive intellectual authorship in AI-assisted long-form work;
-2. moderate: Framework Approval is HARC's main anchor for high-leverage human review without asserting a general authorship theory;
-3. a human-revised third version.
-
-**AI-PROPOSED:** currently prefer the moderate version.
+Acceptance of local wording does not automatically constitute overall approval.
 
 ### CLR-003 — `semantic version control`
 
@@ -90,20 +69,6 @@ Candidates:
 
 **AI-PROPOSED:** heuristic label only, not an established empirical law.
 
-### CLR-005 — Whether to retain `responsibility concentration`
-
-**Status:** `WAITING-HUMAN`  
-**Severity:** `BLOCKING`
-
-Candidates:
-
-- `epistemic responsibility anchoring / 认识责任锚定`
-- `responsibility architecture / 责任架构`
-- `high-leverage human review / 高杠杆人类审阅`
-- retain `responsibility concentration` with strict qualification
-
-**AI-PROPOSED:** demote or replace.
-
 ### CLR-006 — Relation to extended / distributed cognition
 
 **Status:** `WAITING-HUMAN`  
@@ -111,6 +76,8 @@ Candidates:
 
 Candidates: central foundation / secondary comparison / minimal background.  
 **AI-PROPOSED:** secondary conceptual comparison.
+
+**HARC-D023 constraint:** whatever comparison strength is chosen, it must not be written as presupposing that AI itself is a cognitive subject.
 
 ### CLR-007 — Status of empirical validation plans
 
@@ -163,18 +130,24 @@ Distinction from `CLR-008`:
 
 **Promotion target:** Article Form Core -> external constraints / final rendering / submission checklist.
 
-## 5. BACKLOG
+## 5. RESOLVED / PROMOTED POINTERS
+
+- `CLR-001` — `RESOLVED / PROMOTED` via `HARC-D023`: do not use “AI cognitive labor / cognitive tasks” as central language; use a descriptive model of human purpose/direction, AI tool work, and human responsibility.
+- `CLR-002` — `RESOLVED / PROMOTED` via `HARC-D023`: adopt the human's third Framework Responsibility Thesis; the Layer 2 Framework is the primary structural carrier of core intellectual responsibility, and the human must understand, review, and confirm all substantive content represented in it.
+- `CLR-005` — `RESOLVED / PROMOTED` via `HARC-D023`: `responsibility concentration` is not retained as the current central term.
+
+## 6. BACKLOG
 
 - automated onboarding / conformance checks;
 - study context cost and stale-state behavior under repository-backed context;
 - study Working Memory update granularity, compression, and handoff efficiency;
 - cross-Agent / cross-platform takeover tests.
 
-## 6. SYNC DEFECTS
+## 7. SYNC DEFECTS
 
 `NONE RECORDED`
 
-## 7. COMPLETION RULE
+## 8. COMPLETION RULE
 
 When a task completes:
 
