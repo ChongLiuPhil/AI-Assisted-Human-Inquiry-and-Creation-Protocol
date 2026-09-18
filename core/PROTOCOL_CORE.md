@@ -154,19 +154,27 @@ AI agents may perform extensive search, synthesis, drafting, restructuring, chec
 The protocol should therefore distinguish delegation of cognitive labor from delegation of epistemic responsibility.
 
 
-## P19. High-impact uncertainty must enter a Critical Clarification Layer
+## P19. High-impact uncertainty must enter the Clarification queue inside Working Memory
 
-Between human-approved normative state and the AI-maintained Working Framework, HARC should maintain a **Critical Clarification Register**.
+HARC no longer treats Critical Clarification as an independent “Layer 1.5” between Layers 1 and 2.
 
-When an AI Agent has **non-trivial, high-impact** uncertainty about authorial intent, core claims, key concepts, scope, inferential relations, section functions, important terminology, or primary-language/English correspondence, it must not silently select one interpretation and propagate it downstream.
+Clarification is a record type inside **Working Memory**.
 
-The Agent should proactively promote the uncertainty into an explicit clarification entry describing candidate interpretations, impact, severity, and the question requiring human confirmation.
+When an AI Agent encounters non-trivial, high-impact uncertainty about authorial intent, core claims, key concepts, scope, inferential relations, section functions, key terminology, or source-language/English correspondence, it must not silently choose an interpretation and propagate it downstream.
 
-Open entries are not human-approved claims. After human confirmation or correction, the resolution must be recorded in the Decision Log, promoted into the appropriate Content Core / Form Core / Protocol Core, and then propagated to the Working Argument Map and derived artifacts.
+The Agent should create a Clarification item in Working Memory with candidate interpretations, impact, severity, and the question requiring human resolution.
 
-Issues likely to cause major semantic drift or expensive rework may be marked `BLOCKING`; `NON-BLOCKING` issues may allow unrelated work to continue, but no candidate answer may be represented as the human's position.
+Open items are not long-term human commitments and may be marked `BLOCKING` or `NON-BLOCKING`.
 
-A Clarification Scan should occur before major phase transitions, Framework Approval, broad propagation of key terminology, formal translation, large-scale chapter expansion, and Final Artifact Review.
+After human resolution, perform Promotion:
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+Human core content goes into Layer 1 Content Core and then propagates to Layer 2 Framework and Layer 3 Artifact; Form / Protocol decisions go to their corresponding durable Core; purely structural Framework decisions go to Layer 2.
+
+After Promotion, the Working Memory entry leaves active state and retains only resolved/promoted pointers and audit information.
+
+HARC should run a Working Memory / Clarification Scan before major phase transitions, Framework Approval, broad terminology propagation, formal translation, large-scale expansion, and Final Artifact Review.
 
 
 ## P20. Zero-context onboarding requires an explicit entry point and handshake
@@ -231,6 +239,29 @@ Updates that must constrain future Agents are written only to GitHub; any sessio
 Before high-impact judgments or writes, the Agent should reconfirm the latest revision of relevant canonical files. It should prefer direct GitHub API, MCP, connector/plugin, or equivalent tool access rather than requiring humans to paste repository content into chat.
 
 HARC should provide a machine-readable context-interface manifest describing task routing, revision policy, cache invalidation, write-through behavior, and trust boundaries.
+
+
+## P23. The three long-term memory layers must be distinguished from parallel Working Memory
+
+HARC core research state uses three long-term memory layers:
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+- Layer 1 stores the human author's progressively expressed, corrected, confirmed, and refined foundations;
+- Layer 2 is based on Layer 1 and stores the current argument framework, core propositions, key concepts, and reasoning structure; it is durable but more revisable;
+- Layer 3 is primarily expanded from Layer 2 into the complete artifact while remaining constrained by Layer 1 and evidence.
+
+Parallel to these layers, a project must maintain **Working Memory**.
+
+Working Memory stores current stage, objective, plan, active tasks, completed work, next actions, TODOs, blockers, pending human decisions, clarifications, synchronization defects, and handoff notes.
+
+Its purpose is to let any replacement human collaborator or AI Agent answer quickly:
+
+> “Where is the project now, and where should work resume?”
+
+It is not a fourth long-term semantic layer and must not replace durable truth sources.
+
+Stable confirmed content in Working Memory must be promoted into the appropriate long-term memory destination. After Promotion, Working Memory retains only status, Decision ID, and destination pointers.
 
 ---
 
