@@ -13,7 +13,7 @@
 
 ## 2. NEXT ACTIONS
 
-1. Human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole, especially the current thesis set, dependency structure, section functions, and the HARC-D023 revisions to T3 / T4;
+1. Human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole, especially the current thesis set, dependency structure, section functions, and the HARC-D023 / HARC-D024 revisions to T3 / T4; the title itself is human-approved through HARC-D024, but this does not constitute overall Framework Approval;
 2. human explicitly decides `APPROVE / REVISE / REJECT`;
 3. only after explicit `APPROVE`, the Agent creates the `MA-FW-001` Approved Framework Snapshot and updates Framework Status;
 4. after Framework Approval, perform the major structural synchronization/rewrite of the current draft while retaining a separate Final Artifact Approval gate;
@@ -132,9 +132,11 @@ Distinction from `CLR-008`:
 
 ## 5. RESOLVED / PROMOTED POINTERS
 
-- `CLR-001` — `RESOLVED / PROMOTED` via `HARC-D023`: do not use “AI cognitive labor / cognitive tasks” as central language; use a descriptive model of human purpose/direction, AI tool work, and human responsibility.
+- `CLR-001` — `RESOLVED / PROMOTED` via `HARC-D023` + `HARC-D024`: do not use “AI cognitive labor / cognitive tasks” as central language; do not treat “human responsibility” as a self-sufficient concept. The core claim is that in human–AI collaborative research, inquiry, and especially public dissemination of knowledge, humans remain the bearers of responsibility.
 - `CLR-002` — `RESOLVED / PROMOTED` via `HARC-D023`: adopt the human's third Framework Responsibility Thesis; the Layer 2 Framework is the primary structural carrier of core intellectual responsibility, and the human must understand, review, and confirm all substantive content represented in it.
 - `CLR-005` — `RESOLVED / PROMOTED` via `HARC-D023`: `responsibility concentration` is not retained as the current central term.
+
+- `HARC-D024` — `RESOLVED / PROMOTED`: the current Chinese title is human-approved; English is the synchronized translation mirror; title approval is not overall Framework Approval.
 
 ## 6. BACKLOG
 
