@@ -129,7 +129,13 @@ HARC 不再把 Critical Clarification 理解为 Content/Form Core 与 Working Ar
 
 `Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-因此，Working Memory 的功能不是成为第四个内容层，而是提供一个可续接的操作界面。被解决的条目退出 active 状态；权威答案沉淀到长期记忆中，Working Memory 只保留 Decision ID 与目标文件指针。
+因此，Working Memory 的功能不是成为第四个内容层，而是提供一个可续接的操作界面。进一步说，Working Memory 也不必固定为一个单体文档。HARC 可以把它拆成三个逻辑角色：**Current Focus** 保存当前最近期最高优先级目标，**Task Plan** 保存动态任务、TODO、blockers、pending human decisions 与 clarifications，**Work Log** 则保存主要供人类作者日后回顾的阶段性历史纪要。
+
+这种拆分对应两种不同需求。Current Focus + Task Plan 服务于“被中断后如何无缝继续工作”；Work Log 服务于“以后如何回顾项目和思想路径是怎样变化的”。因此新 Agent 默认只读取 Current Focus 与 Task Plan，而不需要为了继续当前工作加载整个 Work Log。完成任务退出 active Task Plan，并以高层摘要进入 Work Log；真正形成稳定规范内容的结果仍然 Promotion 到三层长期记忆。
+
+Work Log 记录可审计的阶段进展、已表达的高层理由与方向变化，而不是 AI 的隐藏 chain-of-thought 或 scratchpad。这样，人类可以长期保留一条可阅读的研究历程，而 AI 的运行时上下文仍保持紧凑。
+
+被解决的 Clarification 退出 active 状态；权威答案沉淀到长期记忆中，Working Memory 只保留必要的状态和指针。
 
 ### 5. Working Argument Map：真正适合人机讨论的中间层
 
