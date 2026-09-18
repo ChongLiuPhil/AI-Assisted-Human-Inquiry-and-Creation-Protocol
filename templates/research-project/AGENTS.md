@@ -4,6 +4,17 @@
 
 This project follows the Human–AI Research Collaboration Protocol.
 
+## Zero-context onboarding
+
+Any new AI Agent must first read:
+
+1. `START_HERE.zh-CN.md`
+2. `HARC_MANIFEST.yaml`
+
+Then reconstruct project state according to the manifest and output a HARC Onboarding Report before substantive work.
+
+Before the onboarding handshake is complete, do not perform large-scale structural changes, Framework Approval, or promote AI proposals into human commitments.
+
 ## Protocol source
 
 Record the protocol source used to initialize this project:
