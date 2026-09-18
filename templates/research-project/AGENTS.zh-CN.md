@@ -4,6 +4,17 @@
 
 > **语言：** 中文文件为规范性基准；英文 `AGENTS.md` 为同步 mirror。采用本模板的新项目默认使用中文 canonical + 英文 synchronized mirror，除非人类明确选择其他语言治理方式。
 
+## 零上下文接管
+
+任何新 AI Agent 在实质性工作前必须先读取：
+
+1. `START_HERE.zh-CN.md`
+2. `HARC_MANIFEST.yaml`
+
+随后按 manifest 重建项目状态并输出 HARC Onboarding Report。
+
+完成接管握手前，不得进行大规模结构修改、Framework Approval 或把 AI 提议提升为人类承诺。
+
 ## 协议来源
 
 初始化项目时记录所采用的协议来源：
