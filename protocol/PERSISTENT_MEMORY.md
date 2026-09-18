@@ -30,7 +30,7 @@ If yes, persist it.
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
 | Evidence and verification | `evidence/` |
-| Zero-context bootstrap entry | `START_HERE.zh-CN.md`, `HARC_MANIFEST.yaml` |
+| Zero-context bootstrap and handshake | `START_HERE.zh-CN.md`, `BOOTSTRAP_PROMPT.zh-CN.md`, `HARC_MANIFEST.yaml`, `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | Collaboration rules | `AGENTS.zh-CN.md`, `protocol/` |
 | Expanded output | `paper/`, `book/`, `article/`, etc. |
 
