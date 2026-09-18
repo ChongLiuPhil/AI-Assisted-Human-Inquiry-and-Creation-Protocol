@@ -10,12 +10,22 @@
 
 1. `START_HERE.zh-CN.md`
 2. `HARC_MANIFEST.yaml`
-3. `BOOTSTRAP_PROMPT.zh-CN.md`
-4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+3. `HARC_CONTEXT_INTERFACE.yaml`
+4. `BOOTSTRAP_PROMPT.zh-CN.md`
+5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 
-随后按 manifest 重建项目状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report；报告必须回显 `HARC ACTIVE SESSION CONTRACT — LOADED`。
+随后按 manifest / context interface 按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report；报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
 
 完成接管握手前，不得进行大规模结构修改、Framework Approval 或把 AI 提议提升为人类承诺。
+
+## Repository-backed context
+
+- GitHub 是唯一权威项目状态源；
+- 会话中的摘要/摘录只是非权威缓存；
+- 根据当前 CONTENT / FORM / PROTOCOL route 选择性读取；
+- 高影响判断与写入前 fresh-fetch；
+- 写入后使相关缓存失效；
+- 不维护聊天内第二份动态真值源。
 
 ## 协议来源
 
