@@ -41,7 +41,8 @@ HARC 有意设计为一个双重输出项目：
 
 当前方法论论文文件：
 
-- [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — 当前高影响不确定性的正式人类澄清界面。
+- [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) — 当前阶段、目标、任务、阻塞、待确认事项、clarification 与 handoff 的工作记忆区。
+- [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — 旧路径兼容指针，不再承载 active state。
 - [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，Clarification Gate 仍打开，尚未由人类批准。
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — 中文 canonical、`DERIVED-PROVISIONAL` 草稿。
 - [`paper/METHODOLOGY_ARTICLE.en.md`](paper/METHODOLOGY_ARTICLE.en.md) — 英文完整镜像。
@@ -99,6 +100,9 @@ project/
 │   ├── FORM_CORE.md
 │   └── DECISION_LOG.md
 ├── docs/
+│   ├── working-memory.zh-CN.md
+│   ├── working-memory.md
+│   ├── clarification-register.zh-CN.md
 │   ├── clarification-register.md
 │   ├── argument-map.md
 │   ├── framework-status.md
@@ -127,15 +131,25 @@ AI 提案不会仅因为有用或写得漂亮，就自动成为作者承诺。
 
 `DECISION_LOG.md` 是人类在内容、形式和协作协议方面作出实质性决定的时间顺序审计轨迹。
 
-### 关键澄清登记册
+### Working Memory
 
-`docs/clarification-register.md` 位于人类已确认的 Core 与 AI Working Argument Map 之间，是 **Layer 1.5**。当 AI 对核心命题、关键概念、范围、推论关系、章节功能或关键术语/翻译存在高影响不确定性时，必须先把问题显式登记并提交人类确认，而不是自行猜测。
+`docs/working-memory.zh-CN.md` 是与三层长期研究记忆并行的工作记忆区。
 
-解决后执行：`Clarification Register -> Decision Log -> Core -> Argument Map -> Artifact`。
+三层长期记忆是：
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+Working Memory 不属于 Layer 1.5。它维护当前阶段、目标、active tasks、最近完成、next actions、TODO、blockers、pending human decisions、clarifications、sync defects 与 handoff。
+
+Clarification 是 Working Memory 中的一种 item。人类解决后执行 Promotion：
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+旧 `docs/clarification-register.zh-CN.md` 仅保留为兼容指针。
 
 ### 操作性论证图
 
-`docs/argument-map.md` 是一个由 AI 维护的紧凑表示，用于表达当前知识结构。对于长篇研究，它是人机讨论时的首选接口。高影响未决问题应引用 Clarification Register，而不是在 Argument Map 中重复维护全部细节。
+`docs/argument-map.md` 是一个由 AI 维护的紧凑表示，用于表达当前知识结构。对于长篇研究，它是人机讨论时的首选接口。当前 blocker、pending human decision 与高影响 clarification 应引用 Working Memory，而不是在 Argument Map 中重复维护全部细节。
 
 ### 已批准框架快照
 
@@ -234,7 +248,7 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 ### 对人类
 
 1. 阅读 [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md)，了解正在形成的学术论证。
-2. 先阅读 [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md)，处理当前高影响未决问题。
+2. 先阅读 [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md)，确认项目当前阶段、目标、任务、阻塞与下一步。
 3. 再阅读 [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md)，检查论文当前 Working Framework。
 4. 阅读 [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md)，查看规范性工作流。
 5. 阅读 [`docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md`](docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md) 和 [`docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md`](docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md)，了解当前整合审计状态。
@@ -243,7 +257,8 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 ### 对 AI Agent
 
 1. 阅读 [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)。
-2. 阅读 [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) 和最近的 [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md)。
+2. 阅读 [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md)，确定续接点。
+3. 阅读 [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) 和最近的 [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md)。
 3. 阅读 [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md)。
 4. 应用相关的持久化、框架批准、路由、证据与形式继承规则。
 5. 不要虚构人类从未表达过的承诺。
