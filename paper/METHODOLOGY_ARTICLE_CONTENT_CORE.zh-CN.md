@@ -100,9 +100,25 @@ Layer 2 虽然名称中含有 “Working”，但它仍属于长期项目记忆�
 
 Working Memory 中获得人类确认的内容必须 Promotion 到相应长期层，随后 Working Memory 只保留状态和指针。
 
+## C15. Working Memory 应区分运行时续接状态与人类回顾历史
+
+文章应说明，Working Memory 不必固定为一个文档，而可以根据工程需要拆成多个逻辑角色。
+
+至少应区分：
+
+- **Current Focus** — 当前最近期、最高优先级目标与 immediate next action；
+- **Task Plan** — 动态任务、TODO、blockers、pending human decisions、Clarifications 与 next actions；
+- **Work Log** — 主要供人类作者以后回顾的阶段性历史纪要。
+
+Current Focus + Task Plan 构成跨 Agent 接管时需要的 operational resume state；Work Log 则主要保存项目如何发展到当前位置、重要方向怎样变化、哪些任务批次已经完成。
+
+Work Log 不应成为普通 AI onboarding 的必读上下文，也不应保存模型隐藏 chain-of-thought。完成任务应退出 active Task Plan，并在 Work Log 中形成适当粒度的历史摘要；稳定规范结果仍必须 Promotion 到对应 Long-Term Memory。
+
+这一设计使“无缝继续工作”与“人类以后回顾自己的思想/项目变化”成为两个不同但相互关联的记忆功能。
+
 ## 当前尚未解决的人类决定
 
-当前工作状态与高影响未决问题统一维护在 `docs/working-memory.zh-CN.md`。当前与文章直接相关的条目为 `CLR-001` 至 `CLR-008`，其中 `CLR-001`、`CLR-002`、`CLR-005` 当前为 Framework Approval 前的 `BLOCKING` clarification。
+当前续接状态由 Working Memory Index、Current Focus 与 Task Plan 维护；高影响未决问题的 active state 位于 `docs/working-memory/task-plan.zh-CN.md`。Work Log 主要供人类回顾。当前与文章直接相关的条目为 `CLR-001` 至 `CLR-008`，其中 `CLR-001`、`CLR-002`、`CLR-005` 当前为 Framework Approval 前的 `BLOCKING` clarification。
 
 ## 来源纠正
 
