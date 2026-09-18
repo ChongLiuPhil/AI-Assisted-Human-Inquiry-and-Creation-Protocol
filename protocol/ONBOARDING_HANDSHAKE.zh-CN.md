@@ -84,6 +84,26 @@
 
 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
 
+## 5.5 Session Context Injection
+
+Onboarding Report 本身还不足以完成双层保险。
+
+Agent MUST 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，并在报告末尾生成：
+
+`HARC ACTIVE SESSION CONTRACT — LOADED`
+
+该区块把仓库中的关键不变量和当前状态压缩后重新写入 Agent 自己的当前回复。
+
+只有当：
+
+- Onboarding Report 完成；
+- Session Contract 已回显；
+- Blocking Clarification 与当前 gate 被正确识别；
+
+才允许 Onboarding 判定为 `PASS`。
+
+此 Session Contract 是项目级会话契约，不是平台真正的 system prompt。
+
 ## 6. PASS / PARTIAL / FAIL
 
 ### PASS
