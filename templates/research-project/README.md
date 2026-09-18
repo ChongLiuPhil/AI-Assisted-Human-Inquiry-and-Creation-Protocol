@@ -44,6 +44,10 @@ A different language-governance choice must be an explicit human/project decisio
 project/
 ├── START_HERE.zh-CN.md
 ├── START_HERE.md
+├── BOOTSTRAP_PROMPT.zh-CN.md
+├── BOOTSTRAP_PROMPT.md
+├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
+├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
