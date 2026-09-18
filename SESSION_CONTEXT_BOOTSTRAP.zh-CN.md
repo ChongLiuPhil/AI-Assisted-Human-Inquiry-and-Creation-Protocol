@@ -32,6 +32,10 @@ Control files:
 - HARC_MANIFEST.yaml
 - HARC_CONTEXT_INTERFACE.yaml
 
+Working Memory:
+- resume index: docs/working-memory.zh-CN.md
+- operational state only; not long-term semantic authority
+
 Language:
 - Chinese canonical
 - English synchronized mirror
@@ -73,10 +77,11 @@ Agent 必须直接读取 GitHub 中相应 canonical 文件的最新版本。
 
 1. 重新读取 `HARC_MANIFEST.yaml`；
 2. 重新读取 `HARC_CONTEXT_INTERFACE.yaml`；
-3. 根据当前任务解析依赖文件；
-4. fresh-fetch 这些文件；
-5. 丢弃旧缓存；
-6. 继续工作。
+3. fresh-fetch Working Memory，确认当前续接点；
+4. 根据当前任务解析长期记忆依赖文件；
+5. fresh-fetch 这些文件；
+6. 丢弃旧缓存；
+7. 继续工作。
 
 不需要把全部项目状态重新复制到聊天中。
 
