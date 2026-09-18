@@ -6,7 +6,9 @@
 
 ```text
         Zero-context Bootstrap / Onboarding Handshake
-             START_HERE + HARC_MANIFEST
+      START_HERE + HARC_MANIFEST + CONTEXT_INTERFACE
+                        |
+               Repository Resolver
                         |
                    Human Author
                         |
@@ -41,6 +43,16 @@
                      v
                Final Approved
 ```
+
+## Repository-backed context
+
+HARC defines GitHub as the sole authoritative project-state source:
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+The Agent session retains only a minimal Repository Resolver. Dynamic Blocking Clarifications, Framework, Artifact, Core, and Decision Log state are retrieved on demand from latest canonical GitHub revisions. After writes, older context cache becomes stale.
 
 ## Authority is not identical to chronology
 
