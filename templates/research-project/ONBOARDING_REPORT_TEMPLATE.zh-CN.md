@@ -15,10 +15,17 @@
 - Form 状态：
 - 最近重要决定：
 
-## C. Clarification
-- Blocking：
-- Task-relevant Non-blocking：
-- 当前必须询问人类的问题：
+## C. Working Memory
+- CURRENT_STAGE：
+- CURRENT_OBJECTIVE：
+- ACTIVE_TASKS：
+- RECENTLY_COMPLETED：
+- NEXT_ACTIONS：
+- BLOCKERS：
+- PENDING_HUMAN_DECISIONS / Clarifications：
+- TODO / BACKLOG：
+- SYNC_DEFECTS：
+- HANDOFF_NOTE：
 
 ## D. Framework
 - Working Framework：
