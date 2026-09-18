@@ -146,6 +146,21 @@
 - Working Memory 更新粒度、压缩策略与 handoff 效率研究；
 - 跨 Agent / 跨平台接管测试。
 
+### AI-PROPOSED — 仓库协作架构升级候选（2026-09-18 审计）
+
+以下项目来自本轮仓库级审计，**尚未成为人类协议决定**：
+
+- `WM-PROP-001` — **轻量化 zero-context onboarding**：保留 P20/D018 要求的多入口可发现性，但把默认必读链收缩为“START_HERE / Manifest / Context Interface -> Current Focus -> Task Plan -> task-routed canonical state”。Bootstrap Prompt、Session Context Bootstrap、Onboarding Report Template、完整 AGENTS / Specification / Protocol Core / Decision Log 等按角色或异常情况读取，而不是全部默认加载。
+- `WM-PROP-002` — **控制面职责分离与版本兼容**：让 `HARC_MANIFEST.yaml` 只承担项目拓扑/role resolution，让 `HARC_CONTEXT_INTERFACE.yaml` 只承担 retrieval / freshness / cache / write semantics；分别增加 schema/interface version 与 compatible HARC protocol version，避免两个机器控制文件权威边界含混。
+- `WM-PROP-003` — **静态导航与动态状态彻底解耦**：README、AGENTS、长期说明文档只保留动态状态指针；Current Focus / Task Plan / Framework Status 才保存 live state。Audit / self-test 文件一律视为不可变历史快照，并记录 tested commit/revision、snapshot time、live-state pointers 与 superseded 状态。
+- `WM-PROP-004` — **Decision Log 可扩展化**：避免新 Agent 默认读取不断增长的完整 Decision Log；增加 recent/relevant decision index 或分期归档，使 task routing 只加载相关决定，同时保留完整历史可追溯性。
+- `WM-PROP-005` — **双语同步自动化**：保留 D015–D016 的“中文 canonical / 英文 mirror”治理不变，但用 lint/CI、mirror metadata、parity checks 或生成流程降低 60+ 文件对的人工同步成本。
+- `WM-PROP-006` — **正式开放发布基础设施**：在 CLR-009 人类许可决定后补齐 LICENSE/LICENSES、CHANGELOG、版本 tag/release、CITATION.cff、Issue/PR 模板及必要的贡献/迁移说明，使 HARC 从公开开发仓库升级为可版本化引用和复用的正式开放项目。
+- `WM-PROP-007` — **机器可验证 conformance**：优先实现 manifest path existence、双语配对、版本一致性、broken reference、Framework/Artifact state、stale snapshot pointer 等自动检查；仓库复杂度已达到仅靠人工审计容易产生回归的阶段。
+- `WM-PROP-008` — **模板去复制化**：研究项目模板与主协议目前复制大量启动/治理文件。未来考虑 bootstrap generator / GitHub template release / versioned template bundle，以降低 upstream HARC 与 downstream template 的长期漂移成本。
+
+建议在不影响当前方法论文章 Framework Approval 的前提下，先由人类对 `WM-PROP-001 / 002 / 003 / 006 / 007` 作协议优先级判断；其余可进入后续版本。
+
 ## 7. SYNC DEFECTS
 
 `NONE RECORDED`
