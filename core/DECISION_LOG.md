@@ -312,3 +312,26 @@ Clarification is an item type inside Working Memory, not an independent layer. A
 **Affected components:** Protocol Core, Persistent Memory, Architecture, clarification workflow, Working Memory, Onboarding/Handoff, Manifest, Context Interface, Specification, AGENTS, project templates, methodology article
 
 **Status:** implemented.
+
+---
+
+## 2026-09-18 — HARC-D022
+
+**Source:** Human project founder  
+**Classification:** PROTOCOL, CONTENT
+
+**Decision:** Working Memory should not be fixed as a single document. It should be defined as a functional area that may use one or multiple files according to engineering needs. Its core logical functions include at least:
+
+1. `Current Focus` — the most immediate, highest-priority work objective;
+2. `Task Plan` — the dynamic task and planning list;
+3. `Work Log` — a stage-level historical record primarily for later human review.
+
+Completed Task Plan items leave the active list and are summarized into Work Log; if they create stable normative results, those results must also be promoted into appropriate Long-Term Memory.
+
+Work Log should be updated periodically to preserve broad progress, changes in intellectual/work direction, and milestones, but it is not default required reading for AI onboarding. It primarily serves the human author's later retrospective review. AI retrieves it on demand for historical review, audit, or conflict reconstruction.
+
+Current Focus should remain the shortest and highest-salience component so a replacement Agent can immediately determine what matters most after interruption.
+
+**Implementation principle:** logical roles are fixed; physical file layout is adaptable; the manifest maps roles explicitly.
+
+**Status:** confirmed and implemented.
