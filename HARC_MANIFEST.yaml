@@ -7,6 +7,9 @@ harc:
   bootstrap:
     canonical: "START_HERE.zh-CN.md"
     mirror: "START_HERE.md"
+    bootstrap_prompt: "BOOTSTRAP_PROMPT.zh-CN.md"
+    onboarding_report_template: "ONBOARDING_REPORT_TEMPLATE.zh-CN.md"
+    onboarding_handshake_protocol: "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
     agent_contract:
       canonical: "AGENTS.zh-CN.md"
       mirror: "AGENTS.md"
@@ -14,7 +17,9 @@ harc:
   required_read_order:
     - "HARC_MANIFEST.yaml"
     - "START_HERE.zh-CN.md"
+    - "BOOTSTRAP_PROMPT.zh-CN.md"
     - "AGENTS.zh-CN.md"
+    - "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
     - "core/PROTOCOL_CORE.zh-CN.md"
     - "core/DECISION_LOG.zh-CN.md"
     - "docs/clarification-register.zh-CN.md"
@@ -24,6 +29,7 @@ harc:
     decision_log: "core/DECISION_LOG.zh-CN.md"
     specification: "protocol/SPECIFICATION.zh-CN.md"
     persistent_memory: "protocol/PERSISTENT_MEMORY.zh-CN.md"
+    onboarding_handshake: "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
     clarification_protocol: "protocol/CLARIFICATION_REGISTER.zh-CN.md"
     framework_approval: "protocol/FRAMEWORK_APPROVAL.zh-CN.md"
     routing: "protocol/FORM_CONTENT_ROUTING.zh-CN.md"
