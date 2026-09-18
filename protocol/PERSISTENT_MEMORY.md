@@ -30,7 +30,7 @@ If yes, persist it.
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
 | Evidence and verification | `evidence/` |
-| Zero-context bootstrap and handshake | `START_HERE.zh-CN.md`, `BOOTSTRAP_PROMPT.zh-CN.md`, `HARC_MANIFEST.yaml`, `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
+| Zero-context bootstrap and handshake | `START_HERE.zh-CN.md`, `BOOTSTRAP_PROMPT.zh-CN.md`, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, `HARC_MANIFEST.yaml`, `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | Collaboration rules | `AGENTS.zh-CN.md`, `protocol/` |
 | Expanded output | `paper/`, `book/`, `article/`, etc. |
 
@@ -86,6 +86,15 @@ When historical files become large:
 5. retrieve historical detail only when relevant.
 
 The objective is **recoverability**, not universal simultaneous ingestion.
+
+## Two-layer memory model
+
+HARC now distinguishes:
+
+- **Durable Repository State** — recoverable, auditable long-term project state in GitHub;
+- **Active Session Contract** — a compressed operating contract regenerated from the repository and echoed into the current conversation context.
+
+The repository provides persistence; the session contract provides salience. If the session contract is lost, rebuild it from the repository rather than treating remembered conversation state as authoritative.
 
 ## New-agent reconstruction target
 
