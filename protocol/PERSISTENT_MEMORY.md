@@ -25,6 +25,7 @@ If yes, persist it.
 | Research meaning, theses, distinctions | `core/CONTENT_CORE.md` |
 | Form, layout, style, artifact type | `core/FORM_CORE.md` |
 | Historical human decisions | `core/DECISION_LOG.md` |
+| High-impact unresolved clarifications | `docs/clarification-register.md` |
 | Current argument structure | `docs/argument-map.md` |
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
@@ -57,6 +58,7 @@ Keep routinely readable:
 - Content Core;
 - Form Core;
 - recent decision entries;
+- current Critical Clarification Register;
 - Working Argument Map;
 - Framework Status;
 - latest approved framework.
@@ -92,7 +94,8 @@ A new competent agent should be able to answer:
 - What does the human currently want the artifact to look like?
 - Which argument framework has actually been human-approved?
 - Which AI suggestions remain unaccepted?
-- Which issues remain unresolved?
+- Which high-impact uncertainties are awaiting human clarification?
+- Which other issues remain unresolved?
 - Which evidence conflicts matter?
 - What should be changed next?
 
