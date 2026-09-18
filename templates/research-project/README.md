@@ -29,12 +29,13 @@ A different language-governance choice must be an explicit human/project decisio
 2. Extract only the human's actual substantive commitments into `core/CONTENT_CORE.zh-CN.md plus English mirror`.
 3. Identify any explicitly reusable author form profile and the applicable artifact-type profile.
 4. Extract only explicit human presentation decisions into `core/FORM_CORE.zh-CN.md plus English mirror`; keep inherited, external, project-specific, and temporary-default rules distinguishable.
-5. Record initialization decisions in `core/DECISION_LOG.zh-CN.md plus English mirror`.
-6. Build `docs/argument-map.zh-CN.md plus English mirror` as an AI-maintained working representation.
-7. Initialize `docs/framework-status.zh-CN.md plus English mirror` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
-8. Create the artifact directory appropriate to the project.
-9. Create `evidence/` when research verification, data, calculations, or sources are relevant.
-10. Keep unknowns explicit. Do not fill them with AI assumptions.
+5. Record initialization decisions in the Chinese canonical Decision Log plus its English mirror.
+6. Create `docs/clarification-register.zh-CN.md` plus `docs/clarification-register.md` as the Layer 1.5 interface for high-impact uncertainty.
+7. Build the Chinese canonical argument map plus its English mirror as an AI-maintained working representation.
+8. Initialize framework status as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
+9. Create the artifact directory appropriate to the project.
+10. Create `evidence/` when research verification, data, calculations, or sources are relevant.
+11. Keep unknowns explicit. Do not fill them with AI assumptions.
 
 ## Minimum template tree
 
@@ -46,7 +47,11 @@ project/
 │   ├── FORM_CORE.md
 │   └── DECISION_LOG.md
 ├── docs/
+│   ├── clarification-register.zh-CN.md
+│   ├── clarification-register.md
+│   ├── argument-map.zh-CN.md
 │   ├── argument-map.md
+│   ├── framework-status.zh-CN.md
 │   ├── framework-status.md
 │   └── frameworks/
 ├── evidence/
@@ -66,7 +71,7 @@ Use only profiles applicable to the new project. Do not populate unresolved fiel
 
 ## Suggested instruction to an AI agent
 
-> Initialize this project using HARC Protocol. Treat GitHub as the durable project memory. Separate CONTENT, FORM, and PROTOCOL decisions. Seed canonical files only with human-provided commitments. Identify the artifact type and applicable form profiles without inventing preferences. Maintain the argument map as AI-generated working structure until I explicitly approve a framework snapshot. Propagate substantive changes upstream-first. Record which HARC version/commit this project adopts.
+> Initialize this project using HARC Protocol. Treat GitHub as durable project memory. Separate CONTENT, FORM, and PROTOCOL decisions. Seed canonical files only with human-provided commitments. For any high-impact uncertainty that could materially affect a core claim, key concept, terminology/translation, or argument structure, record it in the Clarification Register and ask me rather than guessing. Maintain the argument map as AI-generated working structure until I explicitly approve a framework snapshot. Propagate substantive changes upstream-first. Record the adopted HARC version/commit. Chinese is canonical and English must remain synchronized.
 
 ## Unknowns are valid state
 
