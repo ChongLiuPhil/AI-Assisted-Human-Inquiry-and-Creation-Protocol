@@ -69,7 +69,7 @@
 
 当前 `NON-BLOCKING`：
 
-- `CLR-003`、`CLR-004`、`CLR-006`、`CLR-007`、`CLR-008`。
+- `CLR-003`、`CLR-004`、`CLR-006`、`CLR-007`、`CLR-008`、`CLR-010`。
 
 在 Blocking clarification 被人类解决或明确 `DEFERRED` 之前，不得创建 `MA-FW-001`。之后仍需对整体 review-ready framework 作明确批准、修订或拒绝。
 
@@ -77,4 +77,4 @@
 
 不要把当前 Working Framework 当成人类已批准框架。不要创建 `MA-FW-001`，也不要假定批准已经发生而结构性重写全文。
 
-当前主要人机讨论界面分为两步：先以 `docs/working-memory.zh-CN.md` 解决高影响不确定性，再回到中文 Working Framework 进行整体审阅。任何中文修改都必须同步更新英文镜像。
+当前主要人机讨论界面分为两步：先以 `docs/working-memory/task-plan.zh-CN.md` 解决高影响不确定性，再回到中文 Working Framework 进行整体审阅。任何中文修改都必须同步更新英文镜像。
