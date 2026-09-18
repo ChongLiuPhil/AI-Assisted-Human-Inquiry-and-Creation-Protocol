@@ -29,7 +29,7 @@
 - [x] Add methodology-article BibTeX source file.
 - [x] Define Chinese-canonical / English-mirror bilingual governance.
 - [x] Create a synchronized English mirror of the methodology article.
-- [ ] Complete bilingual migration and parity audit of legacy documentation and all templates.
+- [x] Complete bilingual migration and parity audit of legacy documentation and all templates.
 - [ ] Human review and approval of the methodology article Working Framework.
 - [ ] Create first Approved Framework snapshot for the methodology article.
 - [ ] Decide target publication venue / disciplinary positioning.
