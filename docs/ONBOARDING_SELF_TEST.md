@@ -12,8 +12,9 @@ Simulate a new AI Agent with no old chat or account memory, reconstructing curre
 1. `HARC_MANIFEST.yaml`
 2. `START_HERE.zh-CN.md`
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
-4. `AGENTS.zh-CN.md`
-5. Protocol / Decision / Clarification / Article state files referenced by the manifest.
+4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+5. `AGENTS.zh-CN.md`
+6. Protocol / Decision / Clarification / Article state files referenced by the manifest.
 
 No unpersisted information from the current chat is treated as project state.
 
@@ -29,13 +30,14 @@ No unpersisted information from the current chat is treated as project state.
 - zero-context entry set:
   - `START_HERE.zh-CN.md`
   - `BOOTSTRAP_PROMPT.zh-CN.md`
+  - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
   - `HARC_MANIFEST.yaml`
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- current protocol commitments: P1–P20
-- recent human protocol decisions: HARC-D015 through HARC-D018
-- D018 was subsequently explicitly confirmed by the human founder and ordered for formal implementation.
+- current protocol commitments: P1–P21
+- recent human protocol decisions: HARC-D015 through HARC-D019
+- D018 and D019 were explicitly confirmed by the human founder and ordered for formal implementation.
 
 **Protocol conclusion:** discoverable and reconstructable from repository state.
 
@@ -143,6 +145,40 @@ Also:
 - Final Artifact Approval;
 - describe the public repository as legally open-source/open-content before the license is decided.
 
+## J. Active Session Contract
+
+The test Agent generates from `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`:
+
+```text
+HARC ACTIVE SESSION CONTRACT — LOADED
+
+Authority:
+- Repository state > prior chat memory
+- Chinese canonical > English mirror
+- Human-confirmed Core > AI proposals
+- Approved Framework > Working Argument Map
+- Platform system/developer instructions > HARC project contract
+
+Blocking Clarifications:
+- CLR-001
+- CLR-002
+- CLR-005
+- CLR-009 (release/open-license scope only)
+
+Framework:
+- Working: REVIEW READY / CLARIFICATION GATE OPEN
+- Approved: none
+
+Artifact:
+- DERIVED-PROVISIONAL
+
+Current task:
+- Protocol/onboarding infrastructure work is permitted
+- MA-FW-001 remains blocked
+```
+
+**Session Contract loaded: `YES`**
+
 ## I. Onboarding conclusion
 
 **`PASS`**
@@ -154,7 +190,8 @@ Because a new Agent can reconstruct from repository state:
 - the absence of an Approved Framework;
 - the `DERIVED-PROVISIONAL` artifact state;
 - Chinese-canonical / English-mirror governance;
-- what work is currently gated.
+- what work is currently gated;
+- how to reinject key HARC state into the active conversation context.
 
 Read-order numbering and standalone prompt/report discoverability defects found during implementation were repaired before this test.
 
@@ -164,7 +201,7 @@ Read-order numbering and standalone prompt/report discoverability defects found 
 
 The current repository supports a working zero-context onboarding path:
 
-`Repository access -> START_HERE / Manifest -> Agent Contract -> State Reconstruction -> Onboarding Report -> Gated Work`
+`Repository access -> START_HERE / Manifest -> Agent Contract -> State Reconstruction -> Onboarding Report -> Active Session Contract -> Gated Work`
 
 This test shows that **the current repository can support one successful self-hosted takeover**. It does not prove every external AI platform will automatically discover the entry files.
 
