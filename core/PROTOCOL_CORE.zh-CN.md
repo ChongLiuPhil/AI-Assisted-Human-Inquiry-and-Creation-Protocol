@@ -209,35 +209,48 @@ HARC 项目应提供一个**从零上下文即可发现的启动入口**，使�
 协议不能保证任意外部平台会自动读取某个特定文件；因此 HARC 的目标是**最大化可发现性与可验证接管**：通过根目录显眼入口、通用 Agent 契约、机器 manifest、README 导航和可复制 prompt，使任何具有仓库读取能力且愿意遵循项目指令的 Agent 都能重建同一工作流。
 
 
-## P21. 持久仓库状态应在接管后重新注入当前会话上下文
+## P21. 会话上下文只保留仓库访问内核，不维护第二份权威项目状态
 
-HARC 的持久状态保存在仓库中，但仅仅“存在于仓库”并不保证这些规则在长对话中的当前生成上下文里持续保持高显著度。
+HARC 的持久状态保存在仓库中。新的 AI Agent 在接管后可以在当前对话上下文中保留一个极小的 **Repository Resolver / Active Session Kernel**，但该内核只负责说明：
 
-因此，在 Zero-context Onboarding Handshake 完成后，新 AI Agent 应根据当前仓库状态生成一份压缩的 **HARC Active Session Contract**，并明确写入自己的当前对话回复，使关键 HARC 不变量与当前项目状态重新进入本轮会话上下文。
+- GitHub 是唯一权威项目状态源；
+- manifest 与 context-interface 在哪里；
+- 中文 canonical / 英文 mirror 的优先级；
+- 当前任务属于 CONTENT / FORM / PROTOCOL 哪一路；
+- 何时必须重新读取仓库；
+- 写入后如何使旧缓存失效。
 
-该 Session Contract 至少应包含：
+它**不应长期复制** Blocking Clarifications、Framework 状态、Artifact 状态、Core 内容或其他动态研究状态。
 
-- 权威层级；
-- canonical language；
-- 当前 Blocking Clarifications；
-- Working / Approved Framework 状态；
-- Artifact / approval 状态；
-- 当前任务分类与 upstream-first propagation path；
-- 当前被禁止或阻塞的动作。
-
-这不是平台真正的 system prompt。HARC 不得声称能够覆盖或修改平台 system / developer / safety instructions、模型参数或平台级 memory。
+这些动态内容在需要时应从 GitHub 最新 canonical revision 按需读取。任何较早的 Onboarding Report、会话摘要、文件摘录或模型记忆都只是非权威缓存。
 
 正确优先级为：
 
-`Platform system/developer rules > HARC Session Contract > ordinary task-level AI defaults`
+`Platform system/developer rules > HARC repository access kernel > ordinary task-level AI defaults`
 
-重大状态变化、Blocking Clarification 解决、Framework Approval、Final Artifact Review 或 Agent 怀疑早期上下文已丢失时，应进行 `HARC CONTEXT REFRESH`，重新读取仓库并更新当前会话契约。
+该机制不把仓库文件提升为平台真正的 system prompt，也不声称能够修改模型参数或平台 memory。
 
-这一机制形成双层记忆：
 
-`Durable Repository State + Active Session Contract`
 
-前者负责可恢复持久性，后者负责当前会话中的显著性与可验证执行。
+## P22. GitHub 应作为权威外部上下文与工作状态接口
+
+HARC 应支持一种 **Repository-Backed Context Interface（仓库支撑的上下文接口）**：
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+模型在某次推理中仍需临时获取相关信息，但不得维护与 GitHub 平行的长期权威副本。
+
+每个实质性任务应按需：
+
+`Resolve -> Fetch latest -> Reason -> Act -> Write-through -> Invalidate stale cache -> Refresh if needed`
+
+对未来 Agent 有约束力的更新只写入 GitHub；会话内旧副本在仓库更新后立即视为 stale。
+
+高影响判断与写入前必须重新确认相关 canonical 文件的最新 revision。Agent 应尽量通过 GitHub API、MCP、connector/plugin 或等价工具直接读取/写入，而不是要求人类把文件内容复制进聊天。
+
+HARC 应提供机器可读的 context-interface manifest，描述 task routing、revision policy、cache invalidation、write-through 和 trust boundary。
 
 ---
 
