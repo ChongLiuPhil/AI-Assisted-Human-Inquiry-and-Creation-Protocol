@@ -157,7 +157,7 @@ The protocol should therefore distinguish delegation of cognitive labor from del
 
 ## Current scope
 
-HARC v0.1 focuses on:
+HARC v0.2 focuses on:
 
 `Human Author + GitHub Repository + AI Agent(s)`
 
