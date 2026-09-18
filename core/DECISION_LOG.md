@@ -234,3 +234,18 @@ This file is the chronological audit trail of substantive human decisions about 
 **Affected components:** Protocol Core, Specification, AGENTS, Architecture, project template, methodology article governance, framework review workflow
 
 **Status:** implemented.
+
+---
+
+## 2026-09-18 — HARC-D018
+
+**Source:** Human project founder  
+**Classification:** PROTOCOL
+
+**Decision:** HARC should provide an explicit pre-work bootstrap entry and prompt mechanism for any AI Agent taking over from zero context, so the Agent can immediately understand project layers, read order, clarification governance, Framework/Artifact state, and required propagation workflow. Before substantive work, the Agent should complete an onboarding handshake and report the current state reconstructed from the repository. The project should provide a human-readable start file, copyable bootstrap prompt, agent contract, and machine-readable manifest to reduce discovery differences across AI platforms.
+
+**Qualification:** repository files cannot technically guarantee that every external AI platform automatically reads a particular filename. HARC's conformance target is maximal entry-point discoverability plus an Onboarding Report that verifies the Agent actually reconstructed and follows the workflow.
+
+**Affected components:** START_HERE, HARC_MANIFEST, AGENTS, README, Specification, Persistent Memory, project templates, agent handoff
+
+**Status:** implemented.
