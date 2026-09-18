@@ -14,11 +14,11 @@
 
 ## Abstract
 
-Generative artificial intelligence is substantially changing the division of labor in research. Literature search, idea organization, argument reconstruction, draft generation, language editing, format conversion, and even some formalization can now be performed by AI agents at speeds far beyond traditional manual workflows. Yet researchers' reading speed, capacity for understanding, judgment, and ability to bear responsibility do not increase at the same rate. This creates a methodological problem more fundamental than whether “AI can write a paper”: when large amounts of cognitive labor can be machine-assisted or even automated, what must human researchers still understand, confirm, judge, and take responsibility for?
+Generative artificial intelligence is substantially changing the division of work in research. Literature search, idea organization, argument reconstruction, draft generation, language editing, format conversion, and even some formalization can now be performed or assisted by AI Agents used as tools at speeds far beyond traditional manual workflows. Yet researchers' reading speed, capacity for understanding, judgment, and ability to bear responsibility do not increase at the same rate. This creates a methodological problem more fundamental than whether “AI can write a paper”: when more and more concrete research work can be assisted or automated by AI tools, what must human researchers still understand, confirm, judge, and take responsibility for?
 
-This article presents the Human–AI Research Collaboration Protocol (HARC) as a persistent, explicit, and auditable architecture for human–AI research collaboration, currently implemented primarily through GitHub. HARC does not treat a chat window or the private context of a particular model as the long-term memory of a research project. Instead, it treats version-controlled repository documents as the persistent state of an evolving research process. The protocol separates the human author's substantive research intentions, presentation intentions, the operational argument framework maintained by AI, evidence constraints, historical decisions, and final derived text. It uses structures such as the Content Core, Form Core, Decision Log, Working Argument Map, and Approved Framework Snapshot to create a form of “semantic version control.”
+This article presents the Human–AI Research Collaboration Protocol (HARC) as a persistent, explicit, and auditable architecture for human–AI research collaboration, currently implemented primarily through GitHub. HARC does not treat a chat window or the private context of a particular model as the long-term memory of a research project. Instead, it treats version-controlled repository documents as the persistent state of an evolving research process. The protocol separates the human author's substantive research intentions, presentation intentions, the operational argument framework maintained by AI, evidence constraints, historical decisions, and final derived text. It uses structures such as the Content Core, Form Core, Decision Log, Working Argument Map, and Approved Framework Snapshot to create a governable research state.
 
-The article further argues that human responsibility in the AI era should not be understood as requiring humans to manually produce every sentence, nor as permitting humans to outsource cognitive responsibility wholesale merely because AI systems become more capable. A more plausible direction is responsibility concentration: directing limited human attention toward high-leverage epistemic nodes, including research aims, core theses, major inferential relations, decisive evidence conflicts, framework approval, and final release approval. On this basis, the article distinguishes delegation of cognitive labor from delegation of epistemic responsibility, framework defects from expansion defects, and Framework Approval from Final Artifact Approval. It also discusses how this architecture relates to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
+The article further argues that the purpose, central problem, and direction of a research or creative project must originate with humans and remain under human navigation or approval; within HARC, an AI Agent is a collaboration tool that may perform or assist extensive work but is not characterized as a cognitive subject. For long-form work, human core intellectual responsibility is operationalized primarily through the Layer 2 Framework: AI may assist in proposing, organizing, and expressing the framework, but before Framework Approval the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in it. On this basis, the article distinguishes framework-level defects from derived-expansion defects and Framework Approval from Final Artifact Approval, while discussing the relation of this architecture to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
 
 **Keywords:** human–AI collaboration; generative AI; research methodology; epistemic responsibility; authorship; distributed cognition; version control; GitHub; AI agents; research integrity
 
@@ -177,11 +177,9 @@ HARC therefore treats framework approval as a **primary substantive intellectual
 
 ---
 
-## 6. Human cognitive responsibility in the AI era: labor can be delegated, responsibility cannot be outsourced at the same rate
+## 6. Human responsibility in the AI era: AI may perform work, while purpose and intellectual architecture remain human responsibilities
 
-Two things that are often conflated must be distinguished: **delegation of cognitive labor** and **delegation of epistemic responsibility**.
-
-AI can perform large amounts of cognitive labor, including:
+HARC first needs a clear description of the AI role. An AI Agent is a research-collaboration tool, not an actor that this article needs to treat as a cognitive subject. The article therefore does not use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language. More precisely, AI tools may perform or assist with extensive concrete work, including:
 
 - searching and preliminarily filtering literature;
 - summarizing debates;
@@ -194,23 +192,13 @@ AI can perform large amounts of cognitive labor, including:
 - building citations and bibliographies;
 - comparing versions.
 
-But the fact that AI can perform these tasks does not imply that humans can cease judging the conclusions those tasks support.
+But the fact that AI can perform these kinds of work does not imply that the purpose, central problem, direction, and ultimate core responsibility of a research or creative project transfer to AI. What the project is trying to investigate, why it proceeds in a given direction, and which core claims are ultimately accepted must remain matters that the human author actually understands, navigates, and approves.
 
-Hardwig's discussion of epistemic dependence reminds us that knowledge practices already rely extensively on other experts; individuals do not independently verify every source of knowledge (Hardwig, 1985). AI expands both the scale and speed of such dependence. The real problem in the AI era is therefore not how to create a completely independent knower, but how to create **governable epistemic dependence**.
+For long-form work, HARC operationalizes this human responsibility primarily through the Layer 2 Framework. AI may assist in proposing, organizing, and expressing the framework, but the framework cannot be merely a summary that receives a blanket human sign-off. Framework Approval requires the human to form a clear and complete understanding of every substantive element actually represented in it and to review and confirm those elements item by item, including core theses, inferential relations and their logical dependencies, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
 
-HARC's answer is “responsibility concentration”: concentrate limited human attention on high-leverage nodes.
+Hardwig's discussion of epistemic dependence can help contextualize the fact that research practices already depend on external resources, other people's work, and mediated information (Hardwig, 1985). But HARC does not infer from this that AI should be treated as a cognitive subject structurally equivalent to a human expert. The more important question is how human understanding, judgment, authorization, and responsibility remain locatable, inspectable, and auditable when people use AI tools to generate, organize, or transform research material.
 
-At least within the HARC working model, humans should focus responsibility on:
-
-- the purpose of the research and formulation of the problem;
-- whether core theses genuinely represent their judgment;
-- whether major inferential relations are acceptable;
-- how decisive evidence conflicts are handled;
-- which AI proposals become authorial positions;
-- when a working framework may be promoted to an Approved Framework;
-- when a concrete version may be submitted or publicly released.
-
-This does not mean that humans can ignore details. It means that review intensity should be proportionate to epistemic risk and structural leverage.
+HARC's responsibility model is therefore neither “humans must personally produce the whole text line by line” nor “sufficiently capable AI reduces human responsibility to a ceremonial approval.” Humans remain responsible for project purpose and direction, while the Approved Framework serves as the primary structural anchor of core intellectual responsibility. The concrete public version still requires Final Artifact Approval and remains subject to factual-accuracy, research-integrity, and venue requirements.
 
 ---
 
@@ -382,17 +370,17 @@ Sixth, **AI capabilities continue to change**. The protocol must keep its logica
 
 ---
 
-## 15. Conclusion: from “AI writing for humans” to human governance of expanded cognitive capacity
+## 15. Conclusion: from “AI writing for humans” to human governance of AI-expanded research capacity
 
-Generative AI creates a new speed structure in research: machines can generate, combine, restate, and explore far more material than humans can inspect line by line. If we continue to define a “real human author” as someone who personally typed every sentence, that concept no longer describes actual human–AI research practice. But if stronger AI becomes a reason to delegate judgment and responsibility wholesale, authorship and epistemic responsibility risk losing substantive meaning.
+Generative AI creates a new speed structure in research: AI tools can generate, combine, restate, organize, and explore far more material than humans can inspect line by line. If we continue to define a “real human author” as someone who personally typed every sentence, that concept no longer describes actual human–AI research practice. But if AI's ability to perform more work becomes a reason to transfer purpose, judgment, direction, and responsibility to the model as well, human authorship and research responsibility lose substantive content.
 
-HARC proposes a third direction: **expand cognitive capacity while making authority, memory, evidence, approval, and responsibility explicit.**
+HARC proposes a different direction: **expand the executable and expressive capacity of research while making human purpose, authority, memory, evidence, framework confirmation, and ultimate responsibility explicit.**
 
-Under this model, AI may perform extensive cognitive labor, but humans must still understand and authorize high-leverage intellectual nodes. Chats may change, while the repository preserves persistent research state. A Working Framework may be constructed by AI, but it becomes an Approved Framework only through human confirmation. Full text may be extensively AI-expanded, but the expansion must remain faithful to the framework and pass an appropriate final approval gate before public release.
+Under this model, an AI Agent used as a tool may perform or assist with extensive work, but the purpose, central problem, and direction of the research or creative project must be given and navigated by humans. A Working Framework may be developed with AI assistance, but it can become an Approved Framework only after the human has formed a clear understanding of every substantive element actually represented in it, reviewed those elements item by item, and explicitly confirmed them. Full text may then be extensively AI-expanded under that structure, but the expansion must remain faithful to the framework and pass the appropriate Final Artifact Approval before public release.
 
-The central methodological question in AI-era research may therefore no longer be simply whether machines participated in thinking, but:
+The central methodological question in AI-era research therefore need not be framed as whether machines participated in thinking. It can be stated more directly:
 
-> **Can a research community clearly explain which judgments were made by whom, which material was confirmed by whom, which evidence constrained what, and whether intellectual continuity persists after the agent is replaced?**
+> **Can a research community clearly explain who supplied the project's purpose and direction, who understood and confirmed its core intellectual structure, which concrete work was performed or assisted by AI tools, which evidence constrained what, and whether intellectual continuity and human responsibility remain traceable after the Agent is replaced?**
 
 HARC turns this question into an open-protocol problem that can be implemented, audited, tested, and iteratively improved.
 
