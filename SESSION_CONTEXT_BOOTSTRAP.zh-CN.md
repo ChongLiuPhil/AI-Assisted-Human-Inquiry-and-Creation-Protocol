@@ -33,7 +33,10 @@ Control files:
 - HARC_CONTEXT_INTERFACE.yaml
 
 Working Memory:
-- resume index: docs/working-memory.zh-CN.md
+- index: docs/working-memory.zh-CN.md
+- current focus: docs/working-memory/current-focus.zh-CN.md
+- task plan: docs/working-memory/task-plan.zh-CN.md
+- work log: docs/working-memory/work-log.zh-CN.md (human-retrospective; not default read)
 - operational state only; not long-term semantic authority
 
 Language:
@@ -77,11 +80,12 @@ Agent 必须直接读取 GitHub 中相应 canonical 文件的最新版本。
 
 1. 重新读取 `HARC_MANIFEST.yaml`；
 2. 重新读取 `HARC_CONTEXT_INTERFACE.yaml`；
-3. fresh-fetch Working Memory，确认当前续接点；
-4. 根据当前任务解析长期记忆依赖文件；
-5. fresh-fetch 这些文件；
-6. 丢弃旧缓存；
-7. 继续工作。
+3. fresh-fetch Working Memory Index + Current Focus + Task Plan，确认当前续接点；
+4. 默认跳过 Work Log；
+5. 根据当前任务解析长期记忆依赖文件；
+6. fresh-fetch 这些文件；
+7. 丢弃旧缓存；
+8. 继续工作。
 
 不需要把全部项目状态重新复制到聊天中。
 
