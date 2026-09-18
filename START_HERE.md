@@ -21,14 +21,14 @@ Read Chinese canonical files in this order; use English only for parity checking
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
 4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 5. `AGENTS.zh-CN.md`
-6. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-7. `core/PROTOCOL_CORE.zh-CN.md`
-8. recent `core/DECISION_LOG.zh-CN.md`
-9. task-relevant Content/Form/Protocol Core on demand
-10. `docs/clarification-register.zh-CN.md` when relevant
-11. Framework Status / Approved Framework / Working Argument Map when relevant
-12. task-relevant evidence / artifact
-13. corresponding English mirrors only for parity checking
+6. `docs/working-memory.zh-CN.md` — first determine current stage, objective, tasks, blockers, pending decisions, and next actions
+7. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
+8. task-relevant Layer 1 canonical Core / Decision Log
+9. task-relevant Layer 2 Framework state
+10. task-relevant Layer 3 Artifact / Evidence
+11. corresponding English mirrors only for parity checking
+
+The old `docs/clarification-register.zh-CN.md` is a compatibility pointer and no longer carries active state.
 
 For the HARC methodology article, exact paths are listed in `HARC_MANIFEST.yaml`.
 
@@ -89,7 +89,7 @@ For an explicit human decision:
 
 For high-impact ambiguity:
 
-`Ambiguous high-impact input -> Clarification Register -> human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+`Ambiguous high-impact input -> Working Memory / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory destination`
 
 AI proposals remain `AI-PROPOSED` until accepted.
 
