@@ -71,7 +71,24 @@
 
 这违反新的 canonical/mirror 规则。
 
-**修复：** 保留中文作为历史白皮书 canonical，并把英文版本重置为中文的忠实镜像。英文独有但已经成为正式项目思想的内容并未丢失，因为它们已经进入 Protocol Core、Specification 或 Methodology Article。
+**初始处理存在方向性错误：** 曾先把英文版本重置为较旧中文版的镜像。人类随后明确了 cutover 原则：规则建立前已经在英文中发展的较新实质内容，应先进入中文，而不是被旧中文覆盖。
+
+**最终修复：** 从 Git 历史恢复规则建立前的英文 14 节最新白皮书，识别其中中文旧版没有的实质发展（包括 Presentation Drift、Agent Handoff Failure、Evidence Layer、Derived Artifact、Semantic Version Control 专节、Self-hosting / Protocol Evolution 以及更完整的 limitations/future development），将这些内容完整吸收到中文 canonical；随后再把英文恢复为该最新中文版本的同步镜像。
+
+因此白皮书现已完成正确的：
+
+`pre-cutover English development -> Chinese catch-up -> parity -> Chinese canonical cutover`。
+
+### 3.3.1 规则建立前既有双语文件核查
+
+对规则切换前已经同时存在中英文版本的主要入口文档进行了历史核对：
+
+- **README：** 完整英文版创建于 2026-09-18 01:28:50Z，完整中文版紧接着于 01:28:52Z 建立，章节结构对应，没有发现类似白皮书的独立内容分叉；
+- **WHITEPAPER：** 确认存在英文后续发展而中文未追上的真实分叉，已按上述 catch-up 程序修复；
+- **Methodology Article：** 规则建立前只有完整中文正文，不存在英文先行发展的风险；
+- 本次迁移中后来新建的其他中文 canonical 治理文件，均以当时最新英文治理文件为来源进行翻译，因此已吸收切换前英文状态。
+
+**legacy reconciliation 结果：`PASS`。**
 
 ### 3.4 审计、证据和项目治理
 
