@@ -128,13 +128,15 @@ Until accepted by the human:
 
 ## 7. Working Framework vs Approved Framework
 
-The current Argument Map is mutable and AI-maintained. AI may assist in proposing, organizing, and expressing a framework, but it is a collaboration tool and cannot replace human authorization of project purpose, direction, and intellectual architecture.
+The current Argument Map is mutable and AI-maintained. AI may assist in proposing, organizing, and expressing a framework, but it is a collaboration tool and cannot replace human authorization of project purpose, direction, and intellectual architecture or become the ultimate bearer of responsibility.
 
 Human endorsement occurs only through an explicit **Framework Approval Gate**. Before Framework Approval, the human must clearly understand, carefully review item by item, and explicitly confirm every substantive element actually represented in the proposed framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
 
 Once approved, create a versioned immutable snapshot such as `FW-001.md`.
 
 Material intellectual changes require a new framework version. Framework Approval is a HARC governance checkpoint; it must not automatically be expanded into a universal cross-disciplinary theory of authorship, and it does not remove Final Artifact Approval.
+
+HARC's responsibility principle is that AI may share work, but humans must remain the bearers of responsibility in human–AI collaborative research and inquiry, especially in public dissemination of knowledge.
 
 ## 8. Evidence conflicts
 
@@ -153,6 +155,8 @@ If evidence, formal reasoning, or source verification conflicts with an active h
 AI may produce extensive derived text after Framework Approval, but it remains `DERIVED-PROVISIONAL` until final human review.
 
 Do not represent an artifact as submission-ready or human-approved unless the relevant final approval gate has actually been completed.
+
+If the artifact will enter public circulation, Final Artifact Approval must retain identifiable human bearers of responsibility. AI generation, expansion, editing, or checking must not be interpreted as transferring the responsibility-bearing position to AI.
 
 ## 10. Memory scaling
 
