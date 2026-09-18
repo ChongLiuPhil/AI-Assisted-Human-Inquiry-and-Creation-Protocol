@@ -31,18 +31,18 @@ harc_context_interface:
   task_routes:
     PROTOCOL:
       required_roles:
+        - "working_memory"
         - "protocol_core"
         - "decision_log"
-        - "clarification_register"
       optional_roles:
         - "specification"
         - "agent_contract"
         - "templates"
     CONTENT:
       required_roles:
+        - "working_memory"
         - "content_core"
         - "decision_log"
-        - "clarification_register"
         - "framework_status"
         - "working_or_approved_framework"
       optional_roles:
@@ -50,10 +50,10 @@ harc_context_interface:
         - "artifact"
     FORM:
       required_roles:
+        - "working_memory"
         - "form_core"
         - "decision_log"
       optional_roles:
-        - "clarification_register"
         - "form_profile"
         - "artifact"
 
