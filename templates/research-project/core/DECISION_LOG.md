@@ -1,5 +1,7 @@
 # Decision Log
 
+> **Language:** Chinese canonical: `DECISION_LOG.zh-CN.md`; this English file is the synchronized mirror. Substantive edits must update both versions.
+
 Chronological audit trail of substantive human decisions.
 
 ## Entry schema
