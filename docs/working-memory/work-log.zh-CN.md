@@ -146,6 +146,46 @@ Working Memory 被进一步拆分为三个逻辑功能：
 
 ---
 
+## 2026-09-18 — HARC-D023 — 人类目的、AI 工具地位与 Framework 责任模型
+
+**对应：** HARC-D023；CLR-001 / CLR-002 / CLR-005。
+
+**人类决定摘要：**
+
+- 研究或创作项目的目的、核心问题与方向由人类发起、给予并持续导航/批准；最终成果的核心责任由人类承担；
+- AI Agent 在 HARC 中作为协作工具，可以执行或辅助大量具体工作，但不应被描述为具有认知性的主体，也不使用“AI 承担认知劳动 / 认知任务”作为规范性中心概念；
+- 对长篇成果，Layer 2 Current / Approved Framework 成为人类核心思想责任的主要结构性承载点；
+- Framework Approval 要求人类对 framework 中实际呈现的全部实质内容形成清晰理解、逐项认真审核并明确确认，包括核心命题、推论关系、关键区分、范围条件、章节/小节功能及被纳入 framework 的具体措辞；
+- `responsibility concentration` 不再作为当前中心术语；
+- “未来可把 Approved Framework 作为学术人机协作附件提交”仅保留为可能发展方向，不是当前强制协议要求。
+
+**本轮 Promotion / 传播：**
+
+- Decision Log 新增 `HARC-D023`；
+- Protocol Core / Specification / README / research-project templates 完成中英文同步；
+- Article Content Core 完成 Layer 1 Promotion；
+- Working Argument Map 的 T3 / T4、核心区分、依赖关系与 clarification 状态完成 Layer 2 更新；
+- 方法论正文摘要、第六节和结论完成定向 Layer 3 同步；全文仍保持 `DERIVED-PROVISIONAL`，未提前执行大规模结构重写；
+- Task Plan 将 `CLR-001 / CLR-002 / CLR-005` 退出 active blocking state，并保留 `RESOLVED / PROMOTED` 指针。
+
+**Framework readiness review：**
+
+`PASS FOR HUMAN FRAMEWORK REVIEW`
+
+此前 blocking clarification gate 已清除。当前没有 active blocking clarification 阻止整体 Framework Approval 审阅。
+
+**尚未发生：**
+
+- 尚未创建 `MA-FW-001`；
+- 尚未完成整体 Framework Approval；
+- 尚未执行全文 15 部分 -> 10 部分的结构性重写。
+
+**下一阶段：**
+
+人类整体审阅 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`，并明确作出 `APPROVE / REVISE / REJECT` 决定。
+
+---
+
 ## 当前日志边界
 
 本日志目前包含根据 Decision Log 和规范文件回填的高层历史摘要。后续应在阶段性里程碑形成时持续追加，而不是把聊天逐字转录进来。
