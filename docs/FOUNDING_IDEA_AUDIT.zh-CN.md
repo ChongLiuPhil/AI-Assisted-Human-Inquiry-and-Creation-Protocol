@@ -483,6 +483,63 @@ Work Log 需要定期维护，但默认不进入 AI onboarding 上下文。它�
 
 ---
 
+## E04 — 当前全讨论覆盖复核
+
+**复核日期：** 2026-09-18  
+**范围：** 基于当前可恢复的人类—AI 讨论与仓库状态，对迄今已明确讨论的 HARC 设计再次执行一轮“审查 -> 修复 -> 验证”。
+
+### 覆盖结果
+
+以下讨论内容均已找到规范承诺、执行机制与可发现入口：
+
+- GitHub 作为持久共享研究记忆与权威工作状态；
+- AI Agent 可替换、项目状态不可依赖单一聊天/模型；
+- CONTENT / FORM / PROTOCOL 分流与上游优先传播；
+- Layer 1 Human Authorial Core；
+- Layer 2 Current Framework；
+- Layer 3 Derived Artifact；
+- 三层 Long-Term Research Memory 与并行 Working Memory 的区分；
+- Working Memory 作为可单文件或多文件实现的功能区；
+- Current Focus / Task Plan / Work Log 三类逻辑角色；
+- Work Log 主要供人类历史回顾、定期维护、默认不进入 AI onboarding；
+- 高影响不确定性进入 Task Plan / Clarification；
+- 人类解决后 Promotion 到相应 Long-Term Memory；
+- 零上下文 START_HERE / Bootstrap Prompt / Onboarding Handshake；
+- GitHub 作为 Repository-Backed Context，模型上下文只保留 Resolver 与临时 cache；
+- 中文 canonical / 英文 synchronized mirror；
+- pre-cutover English-ahead 内容先回填中文，再完成 canonical cutover；
+- Framework Approval 与 Final Artifact Approval 两个批准门；
+- framework-level defect 与 derived-expansion defect；
+- Approved Framework -> reader-facing overview projection；
+- evidence 作为横向约束，不静默改写人类意图；
+- author / artifact-type / project form-profile inheritance；
+- HARC 同时产出可执行协议与受自身治理的方法论文章；
+- 方法论文章中的人类认知/认识责任、可委托认知劳动与不可静默委托的责任边界；
+- 三轮 review-repair-verify + 独立 post-repair audit；
+- HARC 自托管、自举接管与模板继承。
+
+### 本轮发现并修复的残留
+
+1. 根 `START_HERE` 的英文 mirror 仍把旧 Clarification Register 当活跃入口；
+2. 根 `AGENTS.md` 仍残留旧 Clarification Register、旧方法论文章读取顺序与缺失的 Repository-Backed Context 细节；
+3. project-template `START_HERE` 出现步骤编号回归，并仍使用旧 Clarification Register 路由；
+4. project-template `AGENTS` 仍把 legacy clarification-register 当 active read/write target；
+5. English Onboarding Handshake 尚未完全镜像 Current Focus / Task Plan 模型；
+6. Persistent Memory 与 Bootstrap Prompt 有少量旧单体 Working Memory / Clarification 表述；
+7. 本审计自身的双语迁移状态说明已经过时。
+
+上述项目均已在本轮修复并同步中英文。
+
+### 结论边界
+
+本节能确认的是：**当前可恢复讨论中已明确形成的人机协作设计要求，都已在仓库中找到实现或明确的人类待决状态。**
+
+它不能证明任何已删除、不可访问或从未持久化的历史对话内容也被覆盖。
+
+**状态：** `PASS AFTER REPAIR`。
+
+---
+
 # 仍未解决的项目
 
 ## Open-source licensing
@@ -507,6 +564,6 @@ Work Log 需要定期维护，但默认不进入 AI onboarding 上下文。它�
 - protocol version pinning 强化了新 Agent 交接；
 - HARC 不需要任何客观概率研究内容；
 - 开放许可仍是一个需要人类决定的法律/治理问题；
-- 2026-09-18 新增的双语治理已进入协议核心，目前正在通过仓库级 migration/parity audit 完成历史文件同步。
+- 2026-09-18 新增的双语治理已经完成初始仓库级 migration/parity audit；后续每次实质编辑仍必须把双语同步作为完成条件。
 
 未来审计应把新的人类创始决定与本清单比较；出现真正的新设计承诺时，应先更新 Protocol Core / Decision Log。
