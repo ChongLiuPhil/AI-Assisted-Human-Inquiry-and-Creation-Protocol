@@ -1,0 +1,60 @@
+harc:
+  protocol_name: "Human–AI Research Collaboration Protocol"
+  adopted_protocol_version: "UNRESOLVED"
+  adopted_protocol_commit: "UNRESOLVED"
+  canonical_language: "zh-CN"
+  mirror_language: "en"
+
+  bootstrap:
+    canonical: "START_HERE.zh-CN.md"
+    mirror: "START_HERE.md"
+    agent_contract:
+      canonical: "AGENTS.zh-CN.md"
+      mirror: "AGENTS.md"
+
+  required_read_order:
+    - "HARC_MANIFEST.yaml"
+    - "START_HERE.zh-CN.md"
+    - "AGENTS.zh-CN.md"
+    - "core/CONTENT_CORE.zh-CN.md"
+    - "core/FORM_CORE.zh-CN.md"
+    - "core/DECISION_LOG.zh-CN.md"
+    - "docs/clarification-register.zh-CN.md"
+    - "docs/framework-status.zh-CN.md"
+    - "LATEST_APPROVED_FRAMEWORK_IF_ANY"
+    - "docs/argument-map.zh-CN.md"
+    - "TASK_RELEVANT_EVIDENCE"
+    - "TASK_RELEVANT_ARTIFACT"
+
+  state:
+    content_core: "core/CONTENT_CORE.zh-CN.md"
+    form_core: "core/FORM_CORE.zh-CN.md"
+    decision_log: "core/DECISION_LOG.zh-CN.md"
+    clarification_register: "docs/clarification-register.zh-CN.md"
+    framework_status: "docs/framework-status.zh-CN.md"
+    working_argument_map: "docs/argument-map.zh-CN.md"
+    approved_framework_directory: "docs/frameworks/"
+
+  onboarding_handshake:
+    required_before_substantive_work: true
+    report_fields:
+      - "protocol_state"
+      - "human_confirmed_state"
+      - "form_state"
+      - "blocking_clarifications"
+      - "task_relevant_nonblocking_clarifications"
+      - "working_framework_status"
+      - "approved_framework_status"
+      - "artifact_status"
+      - "synchronization_defects"
+      - "permitted_next_action"
+
+  invariants:
+    - "Repository state outranks chat memory."
+    - "AI proposals are not human commitments."
+    - "High-impact uncertainty enters the Clarification Register."
+    - "Blocking clarifications must be resolved or explicitly deferred before Framework Approval."
+    - "Human decisions propagate upstream-first."
+    - "Working Framework is not Approved Framework."
+    - "Derived artifacts remain provisional until approval."
+    - "Chinese canonical and English mirror must remain synchronized."
