@@ -443,17 +443,4 @@ T1 + T2 + T3 + T4 + T5 + T6 + T7
 - Final Artifact Approval：`NOT YET COMPLETED`。
 - 中文与英文：`BILINGUAL SYNC REQUIRED`；中文是规范基准。
 
-批准状态另见 `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`.
-
-
-
-- Founder commitments -> Article Content Core：`SYNC AFTER PROVENANCE CORRECTION`。
-- Article Content Core -> 本 map：`SYNC`，并已加入 T9 Working Memory / Clarification Governance。
-- 本 map -> 方法论文章草稿：`PARTIALLY SYNC`；当前草稿仍反映较早 12 部分组织与部分更强 AI 术语，因此在人类审阅 framework 之前不应进行结构性重写。
-- Evidence layer -> policy/literature claims：`RECHECKED 2026-09-17`；投稿前必须重新核验目标渠道的时效性政策。
-- Clarification Gate：`OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`。
-- Framework Approval：`NOT YET COMPLETED`。
-- Final Artifact Approval：`NOT YET COMPLETED`。
-- 中文与英文：`BILINGUAL SYNC REQUIRED`；中文是规范基准。
-
 批准状态另见 `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`。
