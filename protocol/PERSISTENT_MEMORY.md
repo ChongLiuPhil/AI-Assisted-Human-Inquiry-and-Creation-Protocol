@@ -111,7 +111,7 @@ See `protocol/REPOSITORY_CONTEXT_INTERFACE.md` and `HARC_CONTEXT_INTERFACE.yaml`
 
 ## New-agent reconstruction target
 
-Before answering these questions, a new Agent should complete the Onboarding Handshake, activate `HARC REPOSITORY CONTEXT — ACTIVE`, and retrieve latest state on demand according to `HARC_MANIFEST.yaml` and `HARC_CONTEXT_INTERFACE.yaml`.
+Before answering these questions, a new Agent should complete the Onboarding Handshake, activate `HARC REPOSITORY CONTEXT — ACTIVE`, read `docs/working-memory.zh-CN.md` for the current stage and resume point, then selectively retrieve authoritative state from the three long-term layers.
 
 A new competent agent should be able to answer:
 
