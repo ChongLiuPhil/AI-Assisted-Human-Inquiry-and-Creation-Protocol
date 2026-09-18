@@ -19,15 +19,18 @@ Read first:
 
 1. [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)
 2. [`BOOTSTRAP_PROMPT.zh-CN.md`](BOOTSTRAP_PROMPT.zh-CN.md)
-3. `HARC_MANIFEST.yaml`
-4. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
-5. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
+3. [`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`](SESSION_CONTEXT_BOOTSTRAP.zh-CN.md)
+4. `HARC_MANIFEST.yaml`
+5. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+6. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
 
 Then follow the mandatory read order and submit a **HARC Onboarding Report** before making substantive changes.
 
 See [`docs/ONBOARDING_SELF_TEST.md`](docs/ONBOARDING_SELF_TEST.md) for the repository's current self-hosted onboarding validation.
 
 This makes correct project reconstruction an observable handshake rather than an assumption.
+
+After the handshake, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` requires the Agent to echo a compressed HARC Active Session Contract into its own current reply. Repository state provides persistence; the current session layer restores salience.
 
 ## Two project outputs
 
@@ -82,6 +85,8 @@ project/
 ├── START_HERE.md
 ├── BOOTSTRAP_PROMPT.zh-CN.md
 ├── BOOTSTRAP_PROMPT.md
+├── SESSION_CONTEXT_BOOTSTRAP.zh-CN.md
+├── SESSION_CONTEXT_BOOTSTRAP.md
 ├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 ├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
