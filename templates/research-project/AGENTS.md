@@ -11,8 +11,9 @@ Any new AI Agent must first read:
 1. `START_HERE.zh-CN.md`
 2. `HARC_MANIFEST.yaml`
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
+4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 
-Then reconstruct project state according to the manifest and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report before substantive work.
+Then reconstruct project state according to the manifest and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report; the report must echo `HARC ACTIVE SESSION CONTRACT — LOADED` before substantive work.
 
 Before the onboarding handshake is complete, do not perform large-scale structural changes, Framework Approval, or promote AI proposals into human commitments.
 
