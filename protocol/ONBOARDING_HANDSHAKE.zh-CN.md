@@ -61,6 +61,21 @@
 10. 与任务相关的 Evidence；
 11. 英文 mirror parity。
 
+## 4.5 Working Memory resume check
+
+在大范围读取长期记忆之前，Agent SHOULD 先读取 `docs/working-memory.zh-CN.md`，并确认：
+
+- CURRENT_STAGE；
+- CURRENT_OBJECTIVE；
+- ACTIVE_TASKS；
+- RECENTLY_COMPLETED；
+- NEXT_ACTIONS；
+- BLOCKERS；
+- PENDING_HUMAN_DECISIONS / Clarifications；
+- HANDOFF_NOTE。
+
+如果 Working Memory 与长期 canonical 状态明显冲突，Agent MUST 报告 `WORKING-MEMORY-STALE` 并先修复 Working Memory，不能把其旧摘要继续当成当前状态。
+
 ## 5. 必须输出的 Onboarding Report
 
 报告至少覆盖：
