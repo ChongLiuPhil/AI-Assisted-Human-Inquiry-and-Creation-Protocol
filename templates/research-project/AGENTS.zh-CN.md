@@ -14,14 +14,16 @@
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `docs/working-memory.zh-CN.md`
+7. `docs/working-memory/current-focus.zh-CN.md`
+8. `docs/working-memory/task-plan.zh-CN.md`
 
-随后先用 Working Memory 确定续接点，再按 manifest / context interface 从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report；报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
+随后先用 Working Memory Index -> Current Focus -> Task Plan 确定续接点，再按 manifest / context interface 从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report；报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
 
 完成接管握手前，不得进行大规模结构修改、Framework Approval 或把 AI 提议提升为人类承诺。
 
 ## Working Memory
 
-`docs/working-memory.zh-CN.md` 维护当前阶段、目标、active tasks、recently completed、next actions、TODO、blockers、pending human decisions、clarifications、sync defects 与 handoff note。
+Working Memory Area 由 Index、Current Focus、Task Plan 与 Work Log 组成。Current Focus 保存“现在最重要的事”；Task Plan 保存动态任务、TODO、blockers、pending human decisions、clarifications 与 sync defects；Work Log 保存主要供人类回顾的阶段历史。
 
 Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执行 Promotion 到对应长期记忆，并把 item 标记为 `RESOLVED / PROMOTED`。
 
