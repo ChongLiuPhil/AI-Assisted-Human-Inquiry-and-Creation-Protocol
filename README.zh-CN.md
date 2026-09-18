@@ -74,6 +74,10 @@ HARC 通过区分**人类意图、操作性表示、证据、形式、批准、�
 
 ```text
 project/
+├── START_HERE.zh-CN.md
+├── START_HERE.md
+├── HARC_MANIFEST.yaml
+├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
 │   ├── CONTENT_CORE.md
@@ -87,6 +91,10 @@ project/
 ├── evidence/
 └── paper/ | book/ | article/ | report/ | ...
 ```
+
+### 零上下文启动入口
+
+`START_HERE.zh-CN.md` 与 `HARC_MANIFEST.yaml` 定义一个新 Agent 的第一读取顺序和 Onboarding Handshake。它们不保存新的研究主张，而负责让新的 Agent 正确找到权威状态并证明自己已经重建项目。
 
 ### 内容核心
 
