@@ -57,7 +57,7 @@ The current Markdown author-date presentation and `paper/methodology-references.
 
 ## Target venue constraints
 
-`UNRESOLVED`.
+`UNRESOLVED — tracked as CLR-010 in docs/working-memory/task-plan.zh-CN.md`.
 
 Possible disciplinary positioning—philosophy of technology, research methodology, scholarly communication, or interdisciplinary AI/research-governance venue—remains a human decision.
 
