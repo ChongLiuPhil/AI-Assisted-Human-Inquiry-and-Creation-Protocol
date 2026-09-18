@@ -53,7 +53,7 @@ These describe how to access state, not the substantive state itself.
 
 GitHub stores both:
 
-- **Working Memory** — operational state for current stage, objectives, tasks, blockers, clarifications, and handoff;
+- **Working Memory Area** — Index, Current Focus, Task Plan, and Work Log; Current Focus + Task Plan form default operational resume state, while Work Log primarily serves human historical review;
 - **Long-Term Memory** — the three durable research-memory layers.
 
 Authoritative long-term versions of the following remain only in GitHub:
@@ -62,7 +62,7 @@ Authoritative long-term versions of the following remain only in GitHub:
 - Form Core;
 - Protocol Core;
 - Decision Log;
-- Critical Clarification Register;
+- Critical task-relevant Clarification / pending decision from Task Plan;
 - Framework Status;
 - Approved Framework;
 - Working Argument Map;
@@ -76,7 +76,7 @@ Read them transiently when needed. Their presence in an earlier conversation doe
 
 For substantive tasks:
 
-1. **Resume** by reading latest Working Memory to determine current stage, objective, tasks, blockers, and next actions;
+1. **Resume** by reading Working Memory Index -> Current Focus -> Task Plan to determine current stage, highest-priority objective, primary blocker, active tasks, and next actions;
 2. **Resolve** the long-term-memory roles required by the task;
 3. **Fetch** latest canonical files from GitHub;
 4. **Reason** using only task-relevant content;
@@ -89,15 +89,17 @@ For substantive tasks:
 
 ### PROTOCOL
 
-Read Working Memory first, then prefer Protocol Core, recent relevant Decision Log entries, Clarification Register, relevant protocol files, and Specification/AGENTS/templates only when affected.
+Read Working Memory Index -> Current Focus -> Task Plan first, then prefer Protocol Core, recent relevant Decision Log entries, task-relevant Clarification / pending decision from Task Plan, relevant protocol files, and Specification/AGENTS/templates only when affected.
 
 ### CONTENT
 
-Read Working Memory first, then prefer Content Core, recent relevant Decision Log entries, Clarification Register, Framework Status, Working/Approved Framework, directly relevant evidence, and the Artifact only when needed.
+Read Working Memory Index -> Current Focus -> Task Plan first, then prefer Content Core, recent relevant Decision Log entries, task-relevant Clarification / pending decision from Task Plan, Framework Status, Working/Approved Framework, directly relevant evidence, and the Artifact only when needed.
 
 ### FORM
 
-Read Working Memory first, then prefer Form Core, recent relevant Decision Log entries, Clarification Register where expression uncertainty is high-impact, applicable form profiles, and relevant Artifact/rendering state.
+Read Working Memory Index -> Current Focus -> Task Plan first, then prefer Form Core, recent relevant Decision Log entries, task-relevant Clarification / pending decision from Task Plan where expression uncertainty is high-impact, applicable form profiles, and relevant Artifact/rendering state.
+
+Work Log is excluded from task-based retrieval by default; read it only for human historical review, audit, change reconstruction, or current/history conflict.
 
 Avoid reading the entire repository every turn merely “to be safe.”
 
@@ -105,7 +107,9 @@ Avoid reading the entire repository every turn merely “to be safe.”
 
 Working Memory is repository-backed operational state, not long-term substantive authority.
 
-- current work status, TODOs, blockers, and handoff use Working Memory;
+- highest-priority objective and immediate next action use Current Focus;
+- current tasks, TODOs, blockers, and pending decisions / Clarifications use Task Plan;
+- stage-level historical chronicle uses Work Log, but Work Log does not override current state;
 - durable human commitments use Layer 1 canonical Core / Decision Log;
 - argument structure uses Layer 2 current framework;
 - artifact content uses Layer 3;
