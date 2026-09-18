@@ -9,7 +9,11 @@
 
 Clarification 现在是 `Working Memory` 中的一种 item type，不再构成独立层。
 
-当前活跃 Working Memory：
+当前活跃 Clarification / pending-decision 状态：
+
+`docs/working-memory/task-plan.zh-CN.md`
+
+Working Memory Index：
 
 `docs/working-memory.zh-CN.md`
 
@@ -69,4 +73,4 @@ Form / Protocol 决定进入相应长期 Core；纯结构性 framework 结果进
 
 旧路径 `docs/clarification-register.zh-CN.md` 保留为兼容指针，以避免旧 Agent、旧链接或历史引用失效。
 
-新的活跃状态只维护在 `docs/working-memory.zh-CN.md`，不得同时维护两份 Clarification 真值源。
+新的 active Clarification 状态只维护在 `docs/working-memory/task-plan.zh-CN.md`，不得同时维护两份 Clarification 真值源。
