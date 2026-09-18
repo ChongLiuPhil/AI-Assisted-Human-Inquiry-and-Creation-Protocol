@@ -53,26 +53,31 @@
 2. HARC_MANIFEST；
 3. HARC_CONTEXT_INTERFACE；
 4. AGENTS / Session Context Bootstrap；
-5. Working Memory；
-6. Onboarding Handshake / Protocol governance；
-7. 与当前任务相关的 Layer 1 Core / Decision Log；
-8. 与当前任务相关的 Layer 2 Framework Status / Working or Approved Framework；
-9. 与当前任务相关的 Layer 3 Artifact；
-10. 与任务相关的 Evidence；
-11. 英文 mirror parity。
+5. Working Memory Index；
+6. Current Focus；
+7. Task Plan；
+8. Onboarding Handshake / Protocol governance；
+9. 与当前任务相关的 Layer 1 Core / Decision Log；
+10. 与当前任务相关的 Layer 2 Framework Status / Working or Approved Framework；
+11. 与当前任务相关的 Layer 3 Artifact；
+12. 与任务相关的 Evidence；
+13. 英文 mirror parity。
 
 ## 4.5 Working Memory resume check
 
-在大范围读取长期记忆之前，Agent SHOULD 先读取 `docs/working-memory.zh-CN.md`，并确认：
+在大范围读取长期记忆之前，Agent SHOULD 依次读取 Working Memory Index、Current Focus 与 Task Plan，并确认：
 
 - CURRENT_STAGE；
 - CURRENT_OBJECTIVE；
+- PRIMARY_BLOCKER；
+- IMMEDIATE_NEXT_ACTION；
 - ACTIVE_TASKS；
-- RECENTLY_COMPLETED；
 - NEXT_ACTIONS；
+- TODO / BACKLOG；
 - BLOCKERS；
-- PENDING_HUMAN_DECISIONS / Clarifications；
-- HANDOFF_NOTE。
+- PENDING_HUMAN_DECISIONS / Clarifications。
+
+Work Log 默认不读取；只有历史回顾、审计、变迁重建或 current/history conflict 时才按需读取。
 
 如果 Working Memory 与长期 canonical 状态明显冲突，Agent MUST 报告 `WORKING-MEMORY-STALE` 并先修复 Working Memory，不能把其旧摘要继续当成当前状态。
 
@@ -83,8 +88,8 @@
 - 协议版本与 canonical language；
 - 人类已确认内容；
 - Form 状态；
-- Working Memory 的 CURRENT_STAGE / CURRENT_OBJECTIVE；
-- ACTIVE_TASKS / NEXT_ACTIONS / RECENTLY_COMPLETED；
+- Current Focus 的 CURRENT_STAGE / CURRENT_OBJECTIVE / PRIMARY_BLOCKER / IMMEDIATE_NEXT_ACTION；
+- Task Plan 的 ACTIVE_TASKS / NEXT_ACTIONS / TODO / BACKLOG；
 - BLOCKERS / PENDING_HUMAN_DECISIONS / Clarifications；
 - Working / Approved Framework；
 - Artifact 状态；
