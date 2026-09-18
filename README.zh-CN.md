@@ -2,6 +2,8 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
+**语言治理：中文是规范性基准（canonical source）；英文是同步镜像（synchronized mirror）。任何实质性修改都必须在同一工作轮次同步两种语言。冲突时以中文为准。**
+
 **HARC Protocol** 是一个以 GitHub 为中心的工作流，用于人类作者与可替换 AI Agent 之间持续进行研究与知识协作。
 
 > **AI Agent 可以被替换，但研究状态不能丢失。**
@@ -17,12 +19,25 @@ HARC 有意设计为一个双重输出项目：
 
 当前方法论论文文件：
 
-- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md) — `WORKING-FRAMEWORK`，尚未由人类批准。
-- [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — 第一份完整中文 `DERIVED-PROVISIONAL` 草稿。
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，尚未由人类批准。
+- [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — 中文 canonical、`DERIVED-PROVISIONAL` 草稿。
+- [`paper/METHODOLOGY_ARTICLE.en.md`](paper/METHODOLOGY_ARTICLE.en.md) — 英文完整镜像。
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — 参考文献源文件。
-- [`evidence/METHODOLOGY_SOURCES.md`](evidence/METHODOLOGY_SOURCES.md) — 来源核验与证据约束。
+- [`evidence/METHODOLOGY_SOURCES.zh-CN.md`](evidence/METHODOLOGY_SOURCES.zh-CN.md) — 来源核验与证据约束。
 
 较早的白皮书继续作为概念性导论保留；方法论论文的目标是发展为一项独立的学术研究成果。
+
+## 双语治理
+
+HARC 项目的所有实质性人类可读文档都采用中英双语维护：
+
+- 中文 `*.zh-CN.md` 是编辑、人类审阅和语义权威基准；
+- 英文 `*.md` / `*.en.md` 是同步翻译镜像；
+- 新文件从创建时起即应双语配对；
+- 只修改一种语言不算完成；
+- BibTeX、代码、schema、原始数据等语言中立技术文件可以保持单份，但其说明文档仍须双语。
+
+完整规则见 [`protocol/BILINGUAL_SYNC.zh-CN.md`](protocol/BILINGUAL_SYNC.zh-CN.md)。
 
 ## HARC 解决什么问题？
 
@@ -140,11 +155,11 @@ HARC 支持跨项目继承表达形式：
 
 详见：
 
-- `protocol/FORM_PROFILE_INHERITANCE.md`
-- `templates/form-profiles/AUTHOR_PROFILE.md`
-- `templates/form-profiles/BOOK.md`
-- `templates/form-profiles/ACADEMIC_PAPER.md`
-- `templates/form-profiles/ARTICLE.md`
+- `protocol/FORM_PROFILE_INHERITANCE.zh-CN.md`
+- `templates/form-profiles/AUTHOR_PROFILE.zh-CN.md`
+- `templates/form-profiles/BOOK.zh-CN.md`
+- `templates/form-profiles/ACADEMIC_PAPER.zh-CN.md`
+- `templates/form-profiles/ARTICLE.zh-CN.md`
 
 ## 持久记忆原则
 
@@ -164,25 +179,25 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 
 审计记录：
 
-- [`docs/FOUNDING_IDEA_AUDIT.md`](docs/FOUNDING_IDEA_AUDIT.md) — 初始思想可追溯性。
-- [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) — 明确的三轮审阅／修复记录。
-- [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md) — 独立修复后审计。
+- [`docs/FOUNDING_IDEA_AUDIT.zh-CN.md`](docs/FOUNDING_IDEA_AUDIT.zh-CN.md) — 初始思想可追溯性。
+- [`docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md`](docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md) — 明确的三轮审阅／修复记录。
+- [`docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md`](docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md) — 独立修复后审计。
 
 ## 从这里开始
 
 ### 对人类
 
 1. 阅读 [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md)，了解正在形成的学术论证。
-2. 阅读 [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md)，检查论文当前的工作框架与未决问题。
-3. 阅读 [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md)，查看规范性工作流。
-4. 阅读 [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) 和 [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md)，了解当前整合审计状态。
+2. 阅读 [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md)，检查论文当前的工作框架与未决问题。
+3. 阅读 [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md)，查看规范性工作流。
+4. 阅读 [`docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md`](docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md) 和 [`docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md`](docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md)，了解当前整合审计状态。
 5. 使用 [`templates/research-project/`](templates/research-project/) 启动新项目。
 
 ### 对 AI Agent
 
-1. 阅读 [`AGENTS.md`](AGENTS.md)。
-2. 阅读 [`core/PROTOCOL_CORE.md`](core/PROTOCOL_CORE.md) 和最近的 [`core/DECISION_LOG.md`](core/DECISION_LOG.md)。
-3. 阅读 [`protocol/SPECIFICATION.md`](protocol/SPECIFICATION.md)。
+1. 阅读 [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)。
+2. 阅读 [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) 和最近的 [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md)。
+3. 阅读 [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md)。
 4. 应用相关的持久化、框架批准、路由、证据与形式继承规则。
 5. 不要虚构人类从未表达过的承诺。
 6. 新项目应记录所采用的 HARC 版本／tag／commit，避免将后续上游变更静默视为已经接受的治理规则。
@@ -213,4 +228,4 @@ HARC 不是一个让 AI 成为“以人类署名作品的隐藏作者”的系�
 
 ## 许可
 
-项目目标是开放复用。具体许可条款记录在 `LICENSE-DECISION.md` 中，应通过明确决定最终确定，而不能根据仓库是否公开来推断。
+项目目标是开放复用。具体许可条款记录在 `LICENSE-DECISION.zh-CN.md` 中，应通过明确决定最终确定，而不能根据仓库是否公开来推断。
