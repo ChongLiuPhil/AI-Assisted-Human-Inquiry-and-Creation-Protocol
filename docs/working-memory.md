@@ -9,56 +9,57 @@
 
 ## 1. CURRENT_STAGE
 
-HARC v0.2 draft is in protocol-architecture development and methodology-article Working Framework stage.
+The HARC v0.2 draft Working Memory migration is complete. The current main stage is **human clarification / Framework Approval preparation for the methodology article Working Framework**.
 
-Recent protocol developments:
+Current state:
 
 - zero-context onboarding is established;
 - the repository-backed context interface is established;
-- the former “Layer 1.5 / Critical Clarification Layer” is being migrated into Working Memory parallel to the three long-term layers;
+- three-layer Long-Term Research Memory plus parallel Working Memory is implemented;
+- Clarification is a Working Memory item and the legacy clarification-register is only a compatibility pointer;
 - the methodology article has no Approved Framework;
 - the methodology manuscript remains `DERIVED-PROVISIONAL`.
 
 ## 2. CURRENT_OBJECTIVE
 
-### WM-OBJ-001 — Complete the Working Memory architecture migration
+### WM-OBJ-002 — Advance the methodology article toward Framework Approval readiness
 
-**Status:** `IN-PROGRESS`
+**Status:** `WAITING-HUMAN`
 
-Goals:
+Three human decisions currently block `MA-FW-001`:
 
-- establish the Working Memory protocol and project-state file;
-- convert Clarification from “Layer 1.5” into a Working Memory item type;
-- migrate CLR-001 through CLR-009 here;
-- update manifest, context interface, onboarding, architecture, templates, and methodology article;
-- retain the old clarification-register path as a compatibility pointer;
-- complete bilingual parity and self-hosted verification.
+- `CLR-001` — central responsibility concept;
+- `CLR-002` — strength of the Framework Responsibility Thesis;
+- `CLR-005` — whether to retain or replace `responsibility concentration`.
+
+After resolution and Promotion, the Article Content Core / Argument Map / Draft must be recalibrated before Framework Approval review.
 
 ## 3. ACTIVE_TASKS
 
-- `WM-T001` — update Protocol Core / Decision Log: `IN-PROGRESS`
-- `WM-T002` — create Working Memory protocol and current Working Memory: `IN-PROGRESS`
-- `WM-T003` — migrate Clarification workflow: `TODO`
-- `WM-T004` — update onboarding / manifest / context interface: `TODO`
-- `WM-T005` — update project templates: `TODO`
-- `WM-T006` — update methodology-article upstream state and manuscript: `TODO`
-- `WM-T007` — bilingual / repository regression audit: `TODO`
+- `WM-T008` — human decision on CLR-001: `WAITING-HUMAN`
+- `WM-T009` — human decision on CLR-002: `WAITING-HUMAN`
+- `WM-T010` — human decision on CLR-005: `WAITING-HUMAN`
+- `WM-T011` — promote and propagate those decisions through Layers 1 / 2 / 3: `TODO`
+- `WM-T012` — rerun Framework Approval readiness review: `TODO`
+- `WM-T013` — CLR-009 licensing decision before formal release: `WAITING-HUMAN`
 
 ## 4. RECENTLY_COMPLETED
 
 - `HARC-D018` — zero-context onboarding / handshake;
 - `HARC-D019` — early session-context safeguard;
-- `HARC-D020` — narrowed it into a Repository Resolver and established the Repository-Backed Context Interface;
-- repository governance uses Chinese canonical / English synchronized mirror;
-- GitHub is the authoritative external-memory and working-state source.
+- `HARC-D020` — Repository Resolver / Repository-Backed Context Interface;
+- `HARC-D021` — three-layer Long-Term Research Memory plus parallel Working Memory;
+- `WM-T001–WM-T007` — Working Memory protocol, Clarification migration, onboarding, manifest/context interface, templates, methodology article, bilingual and repository regression work completed;
+- latest recursive bilingual check: `108 Markdown = 54 Chinese canonical + 54 English mirrors; missing pairs = 0`.
 
 ## 5. NEXT_ACTIONS
 
-1. Complete D021 propagation across protocol and templates;
-2. make this Working Memory the onboarding resume index;
-3. recheck the methodology-article Framework gate;
-4. then prioritize CLR-001 / CLR-002 / CLR-005, which block `MA-FW-001`;
-5. resolve CLR-009 licensing before formal release.
+1. Human resolves `CLR-001 / CLR-002 / CLR-005`;
+2. Agent promotes the resolutions into Decision Log and appropriate Long-Term Memory;
+3. synchronize Article Content Core, Working Argument Map, and methodology draft;
+4. rerun `MA-FW-001` Framework Approval readiness review;
+5. if the human explicitly approves a concrete framework version, create an Approved Framework Snapshot;
+6. resolve `CLR-009` licensing before formal release.
 
 ## 6. BLOCKERS / GATES
 
@@ -175,9 +176,11 @@ Candidates include documentation CC BY 4.0 + code MIT, Apache-2.0, MIT, or anoth
 
 ## 8. SYNC_DEFECTS
 
-The D021 Working Memory migration is not yet fully propagated and remains a temporary synchronization defect until this work cycle completes.
+**Known protocol-level synchronization defects:** `NONE RECORDED`
 
-Completion requires Protocol Core / Decision Log, Working Memory protocol, Persistent Memory / Architecture / Specification, START_HERE / AGENTS / Bootstrap / Onboarding, Manifest / Context Interface, templates, methodology article, bilingual parity, and onboarding self-test.
+D021 has been propagated through Protocol Core / Decision Log, Working Memory protocol / Clarification workflow, Persistent Memory / Architecture / Specification, START_HERE / AGENTS / Bootstrap / Onboarding, Manifest / Context Interface, project templates, methodology-article Content Core / Argument Map / Framework Status / Draft, bilingual parity audit, and onboarding self-test.
+
+Unresolved human decisions belong under `PENDING_HUMAN_DECISIONS`; they are not synchronization defects.
 
 ## 9. RECENTLY_RESOLVED / PROMOTED
 
