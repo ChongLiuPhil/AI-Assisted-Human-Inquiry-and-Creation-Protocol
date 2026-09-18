@@ -14,8 +14,10 @@
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `docs/working-memory.zh-CN.md`
+7. `docs/working-memory/current-focus.zh-CN.md`
+8. `docs/working-memory/task-plan.zh-CN.md`
 
-先用 Working Memory 确定“项目做到哪里、下一步是什么”，然后按照 manifest 与 context interface 的规则从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 **HARC Onboarding Report**。报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载最小 Repository Resolver；动态项目状态仍必须从 GitHub 最新 canonical revision 按需读取。
+先用 Working Memory Index -> Current Focus -> Task Plan 确定“现在最重要的事是什么、接下来怎么推进”，然后按照 manifest 与 context interface 的规则从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 **HARC Onboarding Report**。报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载最小 Repository Resolver；动态项目状态仍必须从 GitHub 最新 canonical revision 按需读取。
 
 在完成这一接管握手前，不得进行大规模结构修改、正文重写、Framework Approval、关键术语传播或把 AI 提议提升为人类承诺。
 
@@ -94,16 +96,13 @@
 
 它应维护：
 
-- CURRENT_STAGE / CURRENT_OBJECTIVE；
-- ACTIVE_TASKS / RECENTLY_COMPLETED / NEXT_ACTIONS；
-- TODO / BACKLOG；
-- BLOCKERS；
-- PENDING_HUMAN_DECISIONS；
-- Clarifications；
-- SYNC_DEFECTS；
-- HANDOFF_NOTE。
+- Current Focus：CURRENT_STAGE / CURRENT_OBJECTIVE / PRIMARY_BLOCKER / IMMEDIATE_NEXT_ACTION；
+- Task Plan：ACTIVE_TASKS / NEXT_ACTIONS / TODO / BACKLOG / BLOCKERS / PENDING_HUMAN_DECISIONS / Clarifications / SYNC_DEFECTS；
+- Work Log：阶段性进展、方向变化、里程碑和完成任务的历史纪要。
 
 Clarification 是 Working Memory item，不是 Layer 1.5。
+
+Work Log 默认不属于新 Agent 的必读上下文；只有历史回顾、审计、变迁重建或 current/history conflict 时按需读取。
 
 当 AI 对作者意图或关键内容存在高影响、非微不足道的不确定性时，不得自行选择解释。应创建 Clarification item，并在人类解决后执行：
 
