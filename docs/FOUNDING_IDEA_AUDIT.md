@@ -510,6 +510,63 @@ Work Log should be maintained periodically but is outside default AI onboarding 
 
 ---
 
+## E04 — Current full-discussion coverage review
+
+**Review date:** 2026-09-18  
+**Scope:** one additional `review -> repair -> verify` pass over the HARC design commitments recoverable from the current human–AI discussion and repository state.
+
+### Coverage result
+
+The following discussed requirements all have a normative commitment, executable mechanism, and discoverable entry point:
+
+- GitHub as durable shared research memory and authoritative working state;
+- replaceable AI Agents with project continuity independent of one chat/model;
+- CONTENT / FORM / PROTOCOL routing and upstream-first propagation;
+- Layer 1 Human Authorial Core;
+- Layer 2 Current Framework;
+- Layer 3 Derived Artifact;
+- three-layer Long-Term Research Memory separated from parallel Working Memory;
+- Working Memory as a functional area implementable in one or multiple files;
+- Current Focus / Task Plan / Work Log logical roles;
+- Work Log primarily for human retrospective review, maintained periodically and outside default AI onboarding;
+- high-impact uncertainty routed into Task Plan / Clarification;
+- Promotion into appropriate Long-Term Memory after human resolution;
+- zero-context START_HERE / Bootstrap Prompt / Onboarding Handshake;
+- Repository-Backed Context with only a Resolver and transient cache in model context;
+- Chinese canonical / English synchronized mirror;
+- pre-cutover English-ahead content absorbed into Chinese before canonical cutover;
+- distinct Framework Approval and Final Artifact Approval gates;
+- framework-level vs derived-expansion defects;
+- Approved Framework projection into reader-facing overview;
+- evidence as a horizontal constraint that does not silently rewrite human intention;
+- author / artifact-type / project form-profile inheritance;
+- HARC as both an executable protocol and a methodology article governed by HARC itself;
+- human cognitive/epistemic responsibility and the boundary between delegable cognitive labor and non-silent delegation of responsibility;
+- three review-repair-verify cycles plus an independent post-repair audit;
+- HARC self-hosting, zero-context takeover, and template inheritance.
+
+### Residual defects found and repaired in this pass
+
+1. root `START_HERE` English mirror still treated the legacy Clarification Register as active;
+2. root `AGENTS.md` retained legacy Clarification Register logic, an older methodology-article read order, and incomplete Repository-Backed Context details;
+3. project-template `START_HERE` had numbering regression and legacy Clarification Register routing;
+4. project-template `AGENTS` still used legacy clarification-register as an active read/write target;
+5. English Onboarding Handshake did not fully mirror the Current Focus / Task Plan model;
+6. Persistent Memory and Bootstrap Prompt retained a few older monolithic Working Memory / Clarification formulations;
+7. this audit's own bilingual-migration status statement was stale.
+
+All were repaired and bilingual mirrors synchronized in this review.
+
+### Scope boundary
+
+This confirms that **all explicitly discussed HARC design requirements recoverable from the current conversation/repository context are represented as implemented mechanisms or explicit human-decision boundaries.**
+
+It cannot prove coverage of deleted, inaccessible, or never-persisted historical conversations.
+
+**Status:** `PASS AFTER REPAIR`.
+
+---
+
 # Remaining unresolved item
 
 ## Open-source licensing
@@ -535,6 +592,6 @@ After the three-pass review and the fixes made during it:
 - framework-vs-expansion responsibility has been made explicit in founder-level state;
 - new-agent handoff has been strengthened with protocol-version pinning;
 - no specific objective-probability research content is required by HARC;
-- open-source licensing remains an unresolved founder-level implementation decision; the bilingual migration added on 2026-09-18 is separately tracked until parity verification completes.
+- open-source licensing remains an unresolved founder-level implementation decision; the initial repository-wide bilingual migration/parity audit is complete, while bilingual synchronization remains mandatory for every future substantive edit.
 
 Future audits should compare new founder decisions against this document and update the Protocol Core/Decision Log first when a genuine new design commitment appears.
