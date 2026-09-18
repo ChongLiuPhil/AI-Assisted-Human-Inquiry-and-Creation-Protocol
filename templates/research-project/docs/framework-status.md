@@ -13,6 +13,14 @@ Status: `WORKING-FRAMEWORK`
 
 Next identifier: `FW-001`
 
+## Clarification Gate
+
+- Blocking clarifications: `None / CLR-...`
+- Non-blocking clarifications: `None / CLR-...`
+- Framework Approval blocked by clarification: `YES / NO`
+
+Source: `docs/clarification-register.md`
+
 ## Current artifact status
 
 `DERIVED-PROVISIONAL` / `FINAL-REVIEW` / `FINAL-APPROVED`
