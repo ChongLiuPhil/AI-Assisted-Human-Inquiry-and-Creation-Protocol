@@ -26,16 +26,28 @@ Before substantive work, a new AI Agent should report the state reconstructed fr
 ### B4. Recent important human decisions
 - 
 
-## C. Critical Clarification state
+## C. Working Memory state
 
-### C1. Blocking
-- `CLR-...` — 
+### C1. Current stage and objective
+- CURRENT_STAGE:
+- CURRENT_OBJECTIVE:
 
-### C2. Task-relevant non-blocking
-- `CLR-...` — 
+### C2. Current work
+- ACTIVE_TASKS:
+- RECENTLY_COMPLETED:
+- NEXT_ACTIONS:
+- TODO / BACKLOG:
 
-### C3. Questions that must currently be put to the human
-- 
+### C3. Blockers and pending human decisions
+- BLOCKERS:
+- PENDING_HUMAN_DECISIONS:
+- Clarifications:
+- questions that must be put to the human:
+
+### C4. Working Memory health
+- SYNC_DEFECTS:
+- HANDOFF_NOTE:
+- Working Memory obviously stale: `YES / NO`
 
 ## D. Framework state
 
