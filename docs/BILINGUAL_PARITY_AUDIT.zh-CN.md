@@ -25,9 +25,9 @@
 
 扫描结果：
 
-- Markdown 文件总数：**102**
-- 中文 canonical（`*.zh-CN.md`）：**51**
-- 英文 mirror：**51**
+- Markdown 文件总数：**108**
+- 中文 canonical（`*.zh-CN.md`）：**54**
+- 英文 mirror：**54**
   - 绝大多数使用既有 `*.md`
   - 方法论文章完整正文使用 `METHODOLOGY_ARTICLE.en.md`
 - 缺少英文 mirror 的中文文件：**0**
@@ -118,7 +118,7 @@
 
 新项目模板现在默认创建中文 canonical + 英文 mirror，而不是事后补翻译。
 
-### 3.6 Critical Clarification Layer
+### 3.6 Critical Clarification 机制（历史阶段，已由 Working Memory 模型取代）
 
 2026-09-18 后续新增的人类原创治理要求已经形成三组新的双语文件对：
 
@@ -184,6 +184,28 @@ HARC-D020 将上下文模型正式调整为：
 Session Context Bootstrap 已同步收缩为 Repository Resolver；动态 Blocking Clarifications、Framework、Artifact 与 Core 等状态必须从 GitHub 最新 canonical revision 按需读取。
 
 最新递归扫描为 **102 个 Markdown = 51 个中文 canonical + 51 个英文 mirror，缺失配对 0**。
+
+### 3.11 Working Memory
+
+HARC-D021 取消了 “Layer 1.5” 作为独立层的模型，并新增三组双语 Working Memory 文件：
+
+- `protocol/WORKING_MEMORY.zh-CN.md` / English mirror；
+- `docs/working-memory.zh-CN.md` / English mirror；
+- `templates/research-project/docs/working-memory.zh-CN.md` / English mirror。
+
+旧 `docs/clarification-register*` 路径保留为 compatibility pointer，但不再承载 active state。
+
+新的记忆模型为：
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+并行：
+
+`Working Memory = stage / goals / tasks / blockers / pending decisions / clarifications / TODO / handoff`
+
+Clarification 已成为 Working Memory item；人类解决后的稳定内容通过 Promotion 进入相应长期记忆。
+
+最新递归扫描为 **108 个 Markdown = 54 个中文 canonical + 54 个英文 mirror，缺失配对 0**。
 
 ## 4. 已修复的高风险语义不同步
 
