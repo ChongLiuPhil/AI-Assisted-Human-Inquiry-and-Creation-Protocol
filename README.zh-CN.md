@@ -14,18 +14,9 @@
 
 新的 AI Agent **不要直接从 README 或正文开始工作**。
 
-先读取：
+只把本 README 当作项目说明页。零上下文接管时，先打开 [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)，随后严格按照 `START_HERE.zh-CN.md` 与 `HARC_MANIFEST.yaml` 当前声明的读取顺序和 task routing 执行。README 不再复制另一份 mandatory read order，以避免多个入口之间发生状态漂移。
 
-1. [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)
-2. [`BOOTSTRAP_PROMPT.zh-CN.md`](BOOTSTRAP_PROMPT.zh-CN.md)
-3. [`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`](SESSION_CONTEXT_BOOTSTRAP.zh-CN.md)
-4. `HARC_MANIFEST.yaml`
-5. `HARC_CONTEXT_INTERFACE.yaml`
-6. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
-7. [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md)
-8. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
-
-然后先从 Working Memory 确定当前续接点，再按照启动文件的 mandatory read order 从三层长期记忆按需重建项目状态，并在做任何实质性修改前向人类提交一份 **HARC Onboarding Report**。
+先从 Working Memory 确定当前续接点，再按任务选择性重建三层长期记忆，并在做任何实质性修改前完成 **HARC Onboarding Report**。
 
 当前仓库的自举验证见 [`docs/ONBOARDING_SELF_TEST.zh-CN.md`](docs/ONBOARDING_SELF_TEST.zh-CN.md)。
 
@@ -47,7 +38,7 @@ HARC 有意设计为一个双重输出项目：
 - [`docs/working-memory/task-plan.zh-CN.md`](docs/working-memory/task-plan.zh-CN.md) — 动态任务、TODO、blockers 与 pending decisions。
 - [`docs/working-memory/work-log.zh-CN.md`](docs/working-memory/work-log.zh-CN.md) — 主要供人类回顾的工作历史纪要，默认不进入 AI onboarding。
 - [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — 旧路径兼容指针，不再承载 active state。
-- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，Working Memory / Clarification Gate 仍打开，尚未由人类批准。
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — 当前方法论文章的 `WORKING-FRAMEWORK`。其实时批准状态、blocker 与 gate **不在 README 中复制维护**；请以 `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`、Current Focus 与 Task Plan 的最新 canonical 状态为准。
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — 中文 canonical、`DERIVED-PROVISIONAL` 草稿。
 - [`paper/METHODOLOGY_ARTICLE.en.md`](paper/METHODOLOGY_ARTICLE.en.md) — 英文完整镜像。
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — 参考文献源文件。
@@ -264,13 +255,11 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 
 ### 对 AI Agent
 
-1. 阅读 [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)。
-2. 阅读 [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md)，确定续接点。
-3. 阅读 [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) 和最近的 [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md)。
-3. 阅读 [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md)。
-4. 应用相关的持久化、框架批准、路由、证据与形式继承规则。
-5. 不要虚构人类从未表达过的承诺。
-6. 新项目应记录所采用的 HARC 版本／tag／commit，避免将后续上游变更静默视为已经接受的治理规则。
+1. 从 [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md) 开始。
+2. 以 `HARC_MANIFEST.yaml` / `HARC_CONTEXT_INTERFACE.yaml` 的最新 task routing 为读取依据，不把 README 的说明性文字当作第二份启动规范。
+3. 先恢复 Working Memory 的当前续接点，再只读取当前任务所需的 Core / Decision / Framework / Evidence / Artifact 状态。
+4. 不要虚构人类从未表达过的承诺；写入前重新确认相关 canonical revision。
+5. 新项目应记录所采用的 HARC 版本／tag／commit，避免把后续上游变更静默视为已经接受的治理规则。
 
 ## 仓库状态
 
