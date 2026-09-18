@@ -14,7 +14,7 @@
 
 ## 2. NEXT ACTIONS
 
-1. 人类整体审阅 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`，重点确认当前命题集合、依赖关系、章节功能与 HARC-D023 后更新的 T3 / T4；
+1. 人类整体审阅 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`，重点确认当前命题集合、依赖关系、章节功能与 HARC-D023 / HARC-D024 后更新的 T3 / T4；题目本身已经通过 HARC-D024 获得人类认可，但这不等于整体 framework 已批准；
 2. 人类明确作出 `APPROVE / REVISE / REJECT` 决定；
 3. 只有在明确 `APPROVE` 后，Agent 才创建 `MA-FW-001` Approved Framework Snapshot，并更新 Framework Status；
 4. Framework Approval 后再执行当前正文的大规模结构性同步/重写，并继续保留 Final Artifact Approval；
@@ -133,9 +133,11 @@
 
 ## 5. RESOLVED / PROMOTED POINTERS
 
-- `CLR-001` — `RESOLVED / PROMOTED` via `HARC-D023`：不用“AI 认知劳动 / 认知任务”作为中心表述；采用人类目的/方向、AI 工具工作分担与人类责任模型。
+- `CLR-001` — `RESOLVED / PROMOTED` via `HARC-D023` + `HARC-D024`：不用“AI 认知劳动 / 认知任务”作为中心表述；不把“人类责任”当作自足概念，核心命题是在人机协作研究、探究与尤其公开知识传播中，人类保持为责任主体／责任承担者。
 - `CLR-002` — `RESOLVED / PROMOTED` via `HARC-D023`：采用人类第三种 Framework Responsibility Thesis；Layer 2 Framework 是核心思想责任的主要结构性承载点，人类必须理解、审核并确认其中全部实质内容。
 - `CLR-005` — `RESOLVED / PROMOTED` via `HARC-D023`：`responsibility concentration` 不作为当前中心术语。
+
+- `HARC-D024` — `RESOLVED / PROMOTED`：当前中文题目已获人类认可；英文为同步翻译镜像；title approval 不等于整体 Framework Approval。
 
 ## 6. BACKLOG
 
