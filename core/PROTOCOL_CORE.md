@@ -32,13 +32,15 @@ They should therefore be stored in a separate form/presentation source of truth.
 
 Reusable author preferences may be inherited by future projects where appropriate.
 
-## P4. AI should maintain a compact operational representation of the argument
+## P4. Layer 2 should preserve a durable but highly revisable current framework
 
-A second-level document should represent the actual structure of a paper, book, or other research work in a compressed, inspectable form.
+Layer 2 belongs to Long-Term Research Memory but is more revisable than Layer 1. It should represent the current intellectual structure of the paper, book, or other research artifact in a compact, inspectable form.
 
-This operational representation should contain the major claims, relationships, section/chapter functions, distinctions, and unresolved issues.
+This layer should contain core propositions, key concepts, inferential relations, section/chapter functions, conceptual distinctions, and current structural state.
 
-It should become the principal discussion interface between the human and AI for large projects, rather than requiring repeated rereading of the entire expanded artifact.
+Layer 2 must remain constrained by the Layer 1 Human Authorial Core while it may contain structural material not stated item-by-item in Layer 1 but necessary for developing the research.
+
+For large projects, it should be the primary human–AI interface for structural discussion. Working Argument Maps and Approved Framework snapshots are different approval states within this long-term layer.
 
 ## P5. Human feedback must propagate upstream first
 
