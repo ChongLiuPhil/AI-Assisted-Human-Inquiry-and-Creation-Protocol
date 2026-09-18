@@ -17,7 +17,9 @@ The durable truth source is the repository, not a previous agent's memory.
 Read Chinese canonical files in this order; use English only for parity checking:
 
 1. `HARC_MANIFEST.yaml`
-2. `AGENTS.zh-CN.md`
+2. `BOOTSTRAP_PROMPT.zh-CN.md`
+3. `AGENTS.zh-CN.md`
+4. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
 3. `core/PROTOCOL_CORE.zh-CN.md`
 4. recent `core/DECISION_LOG.zh-CN.md`
 5. current project Content Core / Form Core
@@ -47,7 +49,7 @@ Before the onboarding handshake is complete, do not:
 
 ## 3. Onboarding handshake: output a HARC Onboarding Report first
 
-After the required reading, report:
+After the required reading, output the HARC Onboarding Report. Recommended template: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`.
 
 ### A. Protocol state
 
