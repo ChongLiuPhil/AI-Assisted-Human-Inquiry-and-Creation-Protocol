@@ -58,6 +58,12 @@ Open clarifications are not human commitments. After human confirmation or corre
 
 This mechanism is especially important for core concepts in the author's primary language and their English correspondence, preventing translation or AI interpretation from hardening unconfirmed meaning into the article structure.
 
+## C12. Cross-agent handoff requires an explicit bootstrap entry and verifiable handshake
+
+The article should explain that storing state in a repository is not by itself sufficient to ensure correct takeover by a new AI Agent. A project also needs an explicit and discoverable zero-context bootstrap entry, a mandatory read order, and an Onboarding Report produced before substantive work to demonstrate that the Agent has correctly reconstructed human commitments, Clarification state, Framework state, Artifact state, and synchronization defects.
+
+The mechanism does not assume every AI platform automatically reads the same filename. Instead, root-level entry files, an agent contract, a machine-readable manifest, and a human-copyable bootstrap prompt maximize cross-platform discoverability and make successful handoff observable and verifiable.
+
 ## Current unresolved authorial decisions
 
 Operational state for high-impact unresolved issues is maintained in `docs/clarification-register.md`. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
