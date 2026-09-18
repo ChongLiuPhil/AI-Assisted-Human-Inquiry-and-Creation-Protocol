@@ -128,11 +128,13 @@ Until accepted by the human:
 
 ## 7. Working Framework vs Approved Framework
 
-The current Argument Map is mutable and AI-maintained.
+The current Argument Map is mutable and AI-maintained. AI may assist in proposing, organizing, and expressing a framework, but it is a collaboration tool and cannot replace human authorization of project purpose, direction, and intellectual architecture.
 
-Human endorsement occurs only through an explicit **Framework Approval Gate**. Once approved, create a versioned immutable snapshot such as `FW-001.md`.
+Human endorsement occurs only through an explicit **Framework Approval Gate**. Before Framework Approval, the human must clearly understand, carefully review item by item, and explicitly confirm every substantive element actually represented in the proposed framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
 
-Material intellectual changes require a new framework version.
+Once approved, create a versioned immutable snapshot such as `FW-001.md`.
+
+Material intellectual changes require a new framework version. Framework Approval is a HARC governance checkpoint; it must not automatically be expanded into a universal cross-disciplinary theory of authorship, and it does not remove Final Artifact Approval.
 
 ## 8. Evidence conflicts
 
