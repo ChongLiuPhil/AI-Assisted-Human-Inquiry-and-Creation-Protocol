@@ -51,3 +51,9 @@
 ## I. Onboarding conclusion
 - `PASS / PARTIAL / FAIL`
 - explanation:
+
+## J. Active Session Contract
+- Following `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, echo: `HARC ACTIVE SESSION CONTRACT — LOADED`
+- Session Contract loaded: `YES / NO`
+
+If `NO`, Onboarding must not be marked `PASS`.
