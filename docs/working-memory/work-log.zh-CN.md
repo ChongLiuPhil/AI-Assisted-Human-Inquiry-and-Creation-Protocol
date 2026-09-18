@@ -186,6 +186,37 @@ Working Memory 被进一步拆分为三个逻辑功能：
 
 ---
 
+## 2026-09-18 — HARC-D024 — 题目批准与“人类作为责任主体”的精确化
+
+**对应：** HARC-D024；进一步精确化 HARC-D023。
+
+**人类决定摘要：**
+
+- 中文题目《从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性》获得明确认可；
+- 题目认可只属于 title/form-content 决定，不等于完整 Working Framework 已获 Framework Approval；
+- “人类责任 / human responsibility” 不作为无需说明的独立中心概念；
+- 更精确的核心命题是：在人机协作的研究与探究中，人类保持为责任主体／责任承担者；
+- 当研究结果、论证或知识主张进入公开传播时，这一责任主体要求尤其重要；
+- AI 可以作为工具分担大量工作，但不能成为研究目的、核心判断、framework 授权或公开知识传播的最终责任主体；
+- HARC-D023 的其他决定继续有效。
+
+**传播结果：**
+
+- Decision Log 新增 HARC-D024；
+- Article Form Core 记录 human-approved title；
+- Article Content Core 新增/强化责任主体与公开知识传播要求；
+- Working Argument Map 的标题状态、中心问题、T3 / T4、核心区分与 Section VI 已同步；
+- 方法论正文摘要、第六节、结论与关键词已同步；
+- Protocol Core、Framework Approval、Specification、README、根/模板 Agent Contract 与 research-project template 已同步；
+- Framework Approval 文件尾部遗留的旧责任模型重复段落已删除；
+- Working Memory 与 Framework Status 已明确：title approved，但 overall Framework Approval 仍未完成。
+
+**当前状态：**
+
+`PASS FOR HUMAN FRAMEWORK REVIEW` 保持不变；`MA-FW-001` 尚未创建。
+
+---
+
 ## 当前日志边界
 
 本日志目前包含根据 Decision Log 和规范文件回填的高层历史摘要。后续应在阶段性里程碑形成时持续追加，而不是把聊天逐字转录进来。
