@@ -41,6 +41,16 @@ HARC 区分：
 
 已批准快照不可变。实质性修改必须产生新版本。
 
+## 2.5 Clarification Gate
+
+Framework Approval 之前必须检查 `docs/clarification-register.zh-CN.md`。
+
+原则上，不应在仍存在会改变中心命题、关键概念、主要推论关系、范围或章节功能的 `BLOCKING` clarification 时批准 framework。
+
+如果人类明确选择暂缓某个问题，则应把它标记为 `DEFERRED`，并在 framework 中显式保留该未决状态，而不是假装问题已经解决。
+
+Framework Approval 不应建立在 AI 私下猜测的关键解释上。
+
 ## 3. Framework Approval 意味着什么
 
 Framework Approval 是项目主要的实质性思想检查点。
