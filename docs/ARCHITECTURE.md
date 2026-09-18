@@ -5,6 +5,9 @@
 ## System model
 
 ```text
+        Zero-context Bootstrap / Onboarding Handshake
+             START_HERE + HARC_MANIFEST
+                        |
                    Human Author
                         |
         +---------------+---------------+
