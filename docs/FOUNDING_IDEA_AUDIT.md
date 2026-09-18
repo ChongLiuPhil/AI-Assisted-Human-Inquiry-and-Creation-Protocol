@@ -567,6 +567,33 @@ It cannot prove coverage of deleted, inaccessible, or never-persisted historical
 
 ---
 
+## E04 — 2026-09-18 full-discussion coverage review and residual repair
+
+**Review objective:** verify that all currently recoverable HARC discussion requirements are represented not merely as files, but as normative commitments, executable mechanisms, zero-context onboarding paths, reusable-template inheritance, and methodology-article expression where applicable.
+
+**Residual defects found and repaired:**
+
+- root `START_HERE` still used the old “Clarification Register” as an active entry point; changed to the Task Plan Clarification queue;
+- root `AGENTS` still used the older single-Working-Memory methodology-article read order; changed to Index -> Current Focus -> Task Plan;
+- English `START_HERE.md` and `AGENTS.md` had fallen behind Chinese canonical and were resynchronized;
+- English Onboarding Handshake retained drift from the new modular Working Memory model and was resynchronized;
+- project-template `START_HERE` had duplicate numbering after modular Working Memory insertion; repaired;
+- project-template `AGENTS` still treated legacy clarification-register as active state; changed to Task Plan / Clarification;
+- Persistent Memory retained older “Blocking Clarifications” / single-Working-Memory reconstruction wording; changed to Current Focus + Task Plan;
+- Bootstrap Prompt still contained an old “enter Clarification Register” phrase; changed to the Task Plan Clarification queue.
+
+**Coverage conclusion:**
+
+All currently recoverable human-confirmed design commitments now have corresponding:
+
+`Human decision / Protocol Core -> executable protocol -> onboarding/control plane -> reusable template -> methodology article where applicable`
+
+Items still open are explicit human-decision boundaries rather than implementation omissions, including methodology-article terminology/thesis strength, Framework Approval, target venue, and formal open licensing.
+
+**Status:** `REVIEWED / REPAIRED / VERIFIED`.
+
+---
+
 # Remaining unresolved item
 
 ## Open-source licensing
