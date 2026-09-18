@@ -337,3 +337,26 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **实现原则：** 功能角色固定，物理文件布局可变；manifest 应显式映射各角色。
 
 **状态：** 已确认并实施。
+
+
+---
+
+## 2026-09-18 — HARC-D023
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, PROTOCOL
+
+**决定：** HARC 对 AI 辅助研究与创作中的人类责任采用以下原则：
+
+1. 研究或创作项目的目的、核心问题与方向应由人类发起、给予并持续导航/批准；最终成果的核心责任由人类承担。
+2. AI Agent 在 HARC 中作为工具参与协作，可以执行或辅助检索、综合、结构化、起草、重组、核查、格式处理等大量工作，但协议与方法论文章不应把 AI 描述为具有认知性的主体，也不应把“AI 承担认知劳动 / 认知任务”作为规范性表述。
+3. 对长篇成果，Layer 2 Current / Approved Framework 是人类核心思想责任的主要结构性承载点。人类作者在 Framework Approval 前必须清楚理解、认真审核并明确确认 framework 中实际呈现的全部实质内容，包括核心命题、推论关系、关键区分、范围条件、章节/小节功能，以及被纳入 framework 的具体措辞。
+4. Framework 可以由 AI 辅助整理和表达，但其获批版本必须真实体现人类作者的核心思想与认同。人类对该 framework 所承载的原创性、理解、判断与思想责任负责；这不取消 Final Artifact Approval，也不取消具体发布渠道、学科、机构或研究诚信规则对最终成果的要求。
+5. `responsibility concentration` 不作为当前中心术语继续使用。责任模型应优先以“人类目的与方向 + framework 责任锚点”等描述性方式表达，而不强制建立新的单一术语。
+6. 将 Approved Framework 作为未来学术人机协作规范中的可提交附件，是一个可能的发展方向，但当前尚未被确立为 HARC 的强制协议要求。
+
+**受影响组件：** Protocol Core、Specification、research-project templates、README、方法论文章 Content Core / Working Argument Map / Derived Artifact、Framework Status、Working Memory
+
+**解决的 Clarifications：** `CLR-001`、`CLR-002`、`CLR-005`
+
+**状态：** 已确认；本轮执行 Promotion 与双语传播。
