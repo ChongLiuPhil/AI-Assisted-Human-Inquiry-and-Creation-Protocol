@@ -42,7 +42,8 @@ HARC is intentionally a dual-output project:
 
 Current methodology-article files:
 
-- [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — canonical interface for current high-impact human clarifications; [`English mirror`](docs/clarification-register.md).
+- [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) — current stage, goals, tasks, blockers, pending decisions, Clarifications, and handoff; [`English mirror`](docs/working-memory.md).
+- [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — legacy compatibility pointer; no active state.
 - [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — canonical Chinese `WORKING-FRAMEWORK`; the Clarification Gate remains open; [`English mirror`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md).
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — canonical Chinese `DERIVED-PROVISIONAL` draft; [`English mirror`](paper/METHODOLOGY_ARTICLE.en.md).
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — bibliography source file.
@@ -99,6 +100,9 @@ project/
 │   ├── FORM_CORE.md
 │   └── DECISION_LOG.md
 ├── docs/
+│   ├── working-memory.zh-CN.md
+│   ├── working-memory.md
+│   ├── clarification-register.zh-CN.md
 │   ├── clarification-register.md
 │   ├── argument-map.md
 │   ├── framework-status.md
@@ -127,15 +131,25 @@ Research content and presentation preferences are deliberately kept separate.
 
 `DECISION_LOG.md` is the chronological audit trail of substantive human decisions across content, form, and collaboration protocol.
 
-### Critical Clarification Register
+### Working Memory
 
-`docs/clarification-register.md` is **Layer 1.5** between human-confirmed Core state and the AI-maintained Working Argument Map. When AI has high-impact uncertainty about core claims, key concepts, scope, inferential relations, section functions, or important terminology/translation, it must register the issue for human confirmation rather than guess.
+`docs/working-memory.zh-CN.md` is Working Memory parallel to the three Long-Term Research Memory layers.
 
-After resolution: `Clarification Register -> Decision Log -> Core -> Argument Map -> Artifact`.
+The long-term layers are:
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+Working Memory is not Layer 1.5. It maintains current stage, objective, active tasks, recently completed work, next actions, TODOs, blockers, pending human decisions, Clarifications, sync defects, and handoff.
+
+Clarification is an item type inside Working Memory. After human resolution:
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+The old `docs/clarification-register.zh-CN.md` remains only as a compatibility pointer.
 
 ### Operational Argument Map
 
-`docs/argument-map.md` is a compact, AI-maintained representation of the current intellectual structure. It is the preferred human–AI discussion interface for long-form research. High-impact unresolved issues should reference the Clarification Register rather than duplicating the full clarification record.
+`docs/argument-map.md` is a compact, AI-maintained representation of the current intellectual structure. It is the preferred human–AI discussion interface for long-form research. Current blockers, pending human decisions, and high-impact Clarifications should reference Working Memory rather than being duplicated in the Argument Map.
 
 ### Approved Framework Snapshots
 
@@ -234,7 +248,7 @@ Audit records:
 ### For humans
 
 1. Read the canonical Chinese [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) for the emerging scholarly argument.
-2. Read the canonical Chinese [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) first for current high-impact unresolved issues.
+2. Read [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) first for current stage, objective, tasks, blockers, and next actions.
 3. Then read [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) to inspect the current Working Framework.
 4. Read the canonical Chinese [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md) for the normative workflow.
 5. Read [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) and [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md) for the current integration audit state.
@@ -243,7 +257,8 @@ Audit records:
 ### For AI agents
 
 1. Read canonical [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md), then use [`AGENTS.md`](AGENTS.md) as the English mirror.
-2. Read canonical [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) and recent [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md).
+2. Read [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) to determine the resume point.
+3. Read canonical [`core/PROTOCOL_CORE.zh-CN.md`](core/PROTOCOL_CORE.zh-CN.md) and recent [`core/DECISION_LOG.zh-CN.md`](core/DECISION_LOG.zh-CN.md).
 3. Read canonical [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md).
 4. Apply the relevant persistence, framework-approval, routing, evidence, and form-inheritance rules.
 5. Do not invent human commitments that have not been stated.
