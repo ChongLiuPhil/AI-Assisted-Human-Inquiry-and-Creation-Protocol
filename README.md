@@ -21,8 +21,9 @@ Read first:
 2. [`BOOTSTRAP_PROMPT.zh-CN.md`](BOOTSTRAP_PROMPT.zh-CN.md)
 3. [`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`](SESSION_CONTEXT_BOOTSTRAP.zh-CN.md)
 4. `HARC_MANIFEST.yaml`
-5. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
-6. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
+5. `HARC_CONTEXT_INTERFACE.yaml`
+6. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+7. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
 
 Then follow the mandatory read order and submit a **HARC Onboarding Report** before making substantive changes.
 
@@ -30,7 +31,7 @@ See [`docs/ONBOARDING_SELF_TEST.md`](docs/ONBOARDING_SELF_TEST.md) for the repos
 
 This makes correct project reconstruction an observable handshake rather than an assumption.
 
-After the handshake, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` requires the Agent to echo a compressed HARC Active Session Contract into its own current reply. Repository state provides persistence; the current session layer restores salience.
+After the handshake, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` loads only a minimal Repository Resolver, while `HARC_CONTEXT_INTERFACE.yaml` defines selective retrieval, revision freshness, write-through, and cache invalidation. Dynamic project state is not maintained as a second chat truth source.
 
 ## Two project outputs
 
@@ -90,6 +91,7 @@ project/
 ├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 ├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
+├── HARC_CONTEXT_INTERFACE.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
