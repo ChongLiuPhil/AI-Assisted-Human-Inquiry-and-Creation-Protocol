@@ -25,7 +25,7 @@ A different language-governance choice must be an explicit human/project decisio
 
 ## Initialization sequence
 
-1. Create/confirm `START_HERE.zh-CN.md`, its English mirror, and `HARC_MANIFEST.yaml`; record the adopted HARC version/commit and mandatory read order.
+1. Create/confirm `START_HERE.zh-CN.md`, its English mirror, `HARC_MANIFEST.yaml`, and `HARC_CONTEXT_INTERFACE.yaml`; record the adopted HARC version/commit, mandatory read order, and repository-backed context policy.
 2. Identify the artifact type: paper, book, article, report, thesis, etc.
 3. Extract only the human's actual substantive commitments into `core/CONTENT_CORE.zh-CN.md` and synchronize the English mirror.
 4. Identify any explicitly reusable author form profile and the applicable artifact-type profile.
@@ -51,6 +51,7 @@ project/
 ├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 ├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
+├── HARC_CONTEXT_INTERFACE.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
@@ -85,7 +86,7 @@ Use only profiles applicable to the new project. Do not populate unresolved fiel
 
 ## Suggested instruction to an AI agent
 
-> Initialize this project using HARC Protocol. Treat GitHub as durable project memory. Separate CONTENT, FORM, and PROTOCOL decisions. Seed canonical files only with human-provided commitments. For any high-impact uncertainty that could materially affect a core claim, key concept, terminology/translation, or argument structure, record it in the Clarification Register and ask me rather than guessing. Maintain the argument map as AI-generated working structure until I explicitly approve a framework snapshot. Propagate substantive changes upstream-first. Record the adopted HARC version/commit. Chinese is canonical and English must remain synchronized.
+> Initialize this project using HARC Protocol. Treat GitHub directly as the authoritative external-memory and working-state store; model context should retain only the Repository Resolver and task-relevant transient cache. Separate CONTENT, FORM, and PROTOCOL decisions. Seed canonical files only with human-provided commitments. For any high-impact uncertainty that could materially affect a core claim, key concept, terminology/translation, or argument structure, record it in the Clarification Register and ask me rather than guessing. Maintain the argument map as AI-generated working structure until I explicitly approve a framework snapshot. Propagate substantive changes upstream-first. Record the adopted HARC version/commit. Chinese is canonical and English must remain synchronized.
 
 ## Unknowns are valid state
 
