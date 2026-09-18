@@ -51,19 +51,15 @@
 
 1. START_HERE；
 2. HARC_MANIFEST；
-3. AGENTS；
-4. Repository Context Interface / Session Context Bootstrap；
-5. Protocol/Core governance；
-6. recent Decision Log；
-7. Content Core；
-8. Form Core；
-9. Critical Clarification Register；
-10. Framework Status；
-11. latest Approved Framework（如有）；
-12. Working Argument Map；
-13. 与任务相关的 Evidence；
-14. 与任务相关的 Artifact；
-15. 英文 mirror parity。
+3. HARC_CONTEXT_INTERFACE；
+4. AGENTS / Session Context Bootstrap；
+5. Working Memory；
+6. Onboarding Handshake / Protocol governance；
+7. 与当前任务相关的 Layer 1 Core / Decision Log；
+8. 与当前任务相关的 Layer 2 Framework Status / Working or Approved Framework；
+9. 与当前任务相关的 Layer 3 Artifact；
+10. 与任务相关的 Evidence；
+11. 英文 mirror parity。
 
 ## 5. 必须输出的 Onboarding Report
 
@@ -99,13 +95,13 @@ Onboarding Report 完成后，Agent MUST 读取 `HARC_CONTEXT_INTERFACE.yaml` �
 - task route；
 - latest-revision / write-through / cache-invalidation 规则。
 
-它不得长期复制 Blocking Clarifications、Framework、Artifact、Core 等动态项目状态。
+它不得长期复制 Working Memory、Framework、Artifact、Core 等动态项目状态。
 
 Onboarding 可判定为 `PASS` 的条件是：
 
 - Onboarding Report 完成；
 - Repository Context 已激活；
-- Agent 能从 GitHub 最新 canonical revision 正确读取当前 Blocking Clarifications 与 gates；
+- Agent 能从最新 Working Memory 读取当前 blockers / pending decisions，并从对应长期 canonical 文件核验相关 gates；
 - Agent 明确知道报告摘要与会话摘录都是非权威缓存。
 
 ## 6. PASS / PARTIAL / FAIL
