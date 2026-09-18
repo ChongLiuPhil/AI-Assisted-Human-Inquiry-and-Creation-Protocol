@@ -57,7 +57,31 @@ Lower layers must not silently contradict higher layers.
 2. Reconcile protocol/governance files.
 3. Update reusable templates if the rule is intended to generalize.
 
-## 5. AI proposals are proposals
+## 5. Critical Clarification Register
+
+When the AI has **high-impact, non-trivial uncertainty** about authorial intent or key content, it must not silently choose an interpretation and propagate it.
+
+Record the issue in `docs/clarification-register.md`, including at least:
+
+- the uncertain point;
+- candidate interpretations;
+- why it matters;
+- `BLOCKING / NON-BLOCKING` severity;
+- affected files / claims / sections;
+- any explicitly `AI-PROPOSED` recommendation;
+- the question requiring human resolution.
+
+Pay particular attention to strong/weak readings of core claims, key concepts, scope/qualification, major inferential relations, section functions, primary-language/English terminology, translation-induced semantic change, and tension between new feedback and older Core/Framework state.
+
+After human confirmation or correction, perform:
+
+`Clarification Register -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+
+Marking an item resolved without updating the Core is incomplete.
+
+Run a Clarification Scan before major phase transitions, Framework Approval, broad propagation of key terminology, formal translation, large-scale expansion, and Final Review.
+
+## 6. AI proposals are proposals
 
 An AI-generated thesis, distinction, reorganization, term, layout, or aesthetic choice is not a human commitment merely because the AI has written it.
 
@@ -67,7 +91,7 @@ Until accepted by the human:
 - form proposals remain outside `FORM_CORE.md`;
 - protocol proposals remain proposals rather than silently becoming mandatory rules.
 
-## 6. Working framework vs approved framework
+## 7. Working framework vs approved framework
 
 The current argument map is mutable and AI-maintained.
 
@@ -75,7 +99,7 @@ Human endorsement occurs only through an explicit **Framework Approval Gate**. O
 
 Material intellectual changes require a new framework version.
 
-## 7. Evidence conflicts
+## 8. Evidence conflicts
 
 Human authorial authority concerns intended claims; it does not authorize suppression of evidence.
 
@@ -87,13 +111,13 @@ If evidence, formal reasoning, or source verification conflicts with an active h
 4. present the issue for human decision;
 5. record the resulting decision.
 
-## 8. Final artifact status
+## 9. Final artifact status
 
 AI may produce extensive derived text after framework approval, but it remains `DERIVED-PROVISIONAL` until final human review.
 
 Do not represent an artifact as submission-ready or human-approved unless the relevant final approval gate has actually been completed.
 
-## 9. Memory scaling
+## 10. Memory scaling
 
 Canonical files should remain compact enough for routine onboarding. Detailed history can grow in logs, evidence files, and archives.
 
@@ -106,13 +130,13 @@ When history becomes large:
 
 The goal is recoverable project memory, not forcing every agent to ingest the entire archive.
 
-## 10. Handoff criterion
+## 11. Handoff criterion
 
 A new competent AI agent should be able to reconstruct the project's active state without access to the original conversation history.
 
 If this is not possible, the project has a persistence defect.
 
-## 11. Multi-pass audits are review-and-repair loops
+## 12. Multi-pass audits are review-and-repair loops
 
 If the human requests a multi-pass audit, each pass MUST include:
 
@@ -123,7 +147,7 @@ If the human requests a multi-pass audit, each pass MUST include:
 
 Do not interpret “review three times” as three passive readings followed by a single repair. After the requested cycles, perform a separate post-repair audit when requested.
 
-## 12. Maintain the methodology article as a governed research artifact
+## 13. Maintain the methodology article as a governed research artifact
 
 This repository has two major outputs:
 
@@ -145,7 +169,7 @@ The article's argument map is a `WORKING-FRAMEWORK` until the human explicitly a
 
 The methodology article must obey the same HARC principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative HARC proposals distinct from external publication rules.
 
-## 13. Audit records
+## 14. Audit records
 
 Use the audit documents according to their roles:
 
@@ -156,7 +180,7 @@ Use the audit documents according to their roles:
 
 If these documents conflict about process status, the later repair/final-audit records govern the interpretation of the audit procedure; founder decisions in `core/DECISION_LOG.md` remain canonical.
 
-## 14. When using this repository as a template
+## 15. When using this repository as a template
 
 Read, in order:
 
@@ -169,7 +193,7 @@ Read, in order:
 
 Then instantiate only the human decisions actually supplied for the new project. Unknowns should remain explicit rather than being filled with AI assumptions.
 
-## 15. Chinese canonical / English synchronized mirror
+## 16. Chinese canonical / English synchronized mirror
 
 HARC is a bilingual project.
 
