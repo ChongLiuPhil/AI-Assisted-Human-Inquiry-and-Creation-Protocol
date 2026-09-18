@@ -1,9 +1,11 @@
 # Zero-Context Onboarding Self-Test
 
 **Date:** 2026-09-18  
-**Status:** `PASS WITH EXPECTED BLOCKING CLARIFICATIONS`  
-**Role:** AI-maintained onboarding/conformance audit, not a new normative truth source.  
+**Status:** `PASS — HISTORICAL SNAPSHOT; LIVE STATE SUPERSEDED`  
+**Role:** AI-maintained historical onboarding/conformance snapshot, not current dynamic state and not a new normative truth source.  
 **Language:** Chinese canonical: `ONBOARDING_SELF_TEST.zh-CN.md`; this English file is the synchronized mirror.
+
+> **Important:** this file preserves the simulated Current Focus / blockers / Clarifications that existed when the test was run. Project state has continued to evolve, so these dynamic values MUST NOT be used to reconstruct the present. Fresh-fetch `docs/working-memory/current-focus.zh-CN.md`, `docs/working-memory/task-plan.zh-CN.md`, and the relevant Framework Status for live state. Future onboarding self-tests should record the tested commit/revision so the snapshot boundary is machine-verifiable.
 
 ## 1. Method
 
