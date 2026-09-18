@@ -30,6 +30,19 @@ Please distinguish among:
 
 Do not present a contributor proposal as an already accepted founder principle.
 
+## Bilingual contribution rule
+
+HARC substantive Markdown is governed by a Chinese-canonical / English-mirror model.
+
+A substantive contribution should therefore:
+
+1. edit or create the Chinese canonical version first;
+2. synchronize the English mirror in the same PR/work cycle;
+3. not leave one language materially stale;
+4. explicitly mark `translation incomplete` if a contributor can supply only one language; such a change should not be treated as a completed normative update until synchronization is finished.
+
+Language-neutral code, schemas, BibTeX, and raw data need not be duplicated solely for translation, but their human-facing documentation remains bilingual.
+
 ## Suggested workflow
 
 1. Open an issue describing the problem or proposal.
@@ -37,6 +50,7 @@ Do not present a contributor proposal as an already accepted founder principle.
 3. Keep normative changes separate from examples where practical.
 4. Use a focused branch and pull request.
 5. Update documentation and templates together when behavior changes.
+6. Run/check bilingual parity for affected human-readable files.
 
 ## Compatibility principle
 
