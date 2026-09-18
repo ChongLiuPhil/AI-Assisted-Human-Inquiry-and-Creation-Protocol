@@ -188,6 +188,26 @@ Agent 应主动把这种不确定性提升为显式澄清条目，说明候选�
 
 HARC 应在重大阶段转换、Framework Approval、关键术语全篇传播、正式翻译、大规模章节扩写及 Final Artifact Review 前主动执行 Clarification Scan。
 
+
+## P20. 零上下文接管必须有显式启动入口与接管握手
+
+HARC 项目应提供一个**从零上下文即可发现的启动入口**，使新的 AI Agent 在没有旧聊天、平台记忆或项目先验知识的情况下，能够按确定顺序重建当前研究状态。
+
+该入口至少应包括：
+
+- 根目录人类/Agent 可读的 `START_HERE` 文件；
+- 根目录 `AGENTS` 契约；
+- 机器可读的 HARC manifest 或等价索引；
+- 明确的 mandatory read order；
+- Clarification Register、Framework Status、Working/Approved Framework 与 Artifact 状态入口；
+- 可直接复制给任意 AI Agent 的 bootstrap prompt。
+
+新的 AI Agent 在进行实质性修改前，应先完成一次 **Onboarding Handshake（接管握手）**：根据仓库状态向人类报告当前协议状态、人类已确认状态、Form 状态、Blocking Clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。
+
+如果 Agent 无法仅凭仓库完成这一报告，项目存在 onboarding/persistence defect，应先修复，而不是继续大规模研究或写作。
+
+协议不能保证任意外部平台会自动读取某个特定文件；因此 HARC 的目标是**最大化可发现性与可验证接管**：通过根目录显眼入口、通用 Agent 契约、机器 manifest、README 导航和可复制 prompt，使任何具有仓库读取能力且愿意遵循项目指令的 Agent 都能重建同一工作流。
+
 ---
 
 ## 当前范围
