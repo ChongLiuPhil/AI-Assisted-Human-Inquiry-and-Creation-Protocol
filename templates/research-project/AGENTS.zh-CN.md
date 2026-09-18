@@ -48,19 +48,20 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 
 未来 Agent 不得静默假定上游 HARC 最新规则已经被本项目采用。协议升级必须成为明确项目决定。
 
-## 必读顺序
+## 任务相关长期状态读取
 
-进行实质性工作前读取：
+完成 Working Memory Index -> Current Focus -> Task Plan 后，再根据任务路由按需读取：
 
-1. `core/CONTENT_CORE.zh-CN.md`
-2. `core/FORM_CORE.zh-CN.md`
-3. 最近的 `core/DECISION_LOG.zh-CN.md`
-4. `docs/clarification-register.zh-CN.md`
-5. `docs/framework-status.zh-CN.md`
-6. 最新 Approved Framework（如有）
-7. `docs/argument-map.zh-CN.md`
-8. 相关成果与 evidence 文件
-9. 需要时再读取英文 mirror 以核验双语同步
+1. `core/CONTENT_CORE.zh-CN.md`（CONTENT 任务）；
+2. `core/FORM_CORE.zh-CN.md`（FORM 任务）；
+3. 最近相关的 `core/DECISION_LOG.zh-CN.md`；
+4. `docs/framework-status.zh-CN.md`；
+5. 最新 Approved Framework（如有）；
+6. `docs/argument-map.zh-CN.md`；
+7. 相关成果与 evidence 文件；
+8. 需要时读取英文 mirror 核验双语同步。
+
+旧 `docs/clarification-register.zh-CN.md` 仅为兼容指针，不属于 active-state 必读链。
 
 ## 仓库状态高于聊天记忆
 
@@ -87,13 +88,13 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 
 在适当情况下，区分 reusable author preference、artifact-type profile、project-specific rule、external constraint 与 temporary default。
 
-## Clarification Register 规则
+## Clarification 规则
 
-如果对核心观点、关键概念、术语/翻译、范围、主要推论关系或章节功能存在高影响不确定性，先写入 `docs/clarification-register.zh-CN.md`，不得自行选择一种解释后传播。
+如果对核心观点、关键概念、术语/翻译、范围、主要推论关系或章节功能存在高影响不确定性，先写入 `docs/working-memory/task-plan.zh-CN.md` 的 Clarification 区，不得自行选择一种解释后传播。
 
-条目应标明 `BLOCKING / NON-BLOCKING`。人类解决后，把结果写入 Decision Log 和相应 Core，再更新 Argument Map 与成果。
+条目应标明 `BLOCKING / NON-BLOCKING`。人类解决后执行 Promotion：`Task Plan / Clarification -> Decision Log -> appropriate Long-Term Memory`，再按需更新 Argument Map 与成果。
 
-Framework Approval、正式翻译、大规模扩写和 Final Review 前主动执行 Clarification Scan。
+Framework Approval、正式翻译、大规模扩写和 Final Review 前主动执行 Working Memory / Clarification Scan。
 
 ## Framework 规则
 
