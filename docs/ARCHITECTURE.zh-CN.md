@@ -16,6 +16,15 @@
         \             /             |
          \           /              |
           +--- DECISION_LOG <---------+
+                    ^
+                    |
+             human resolution
+                    |
+          Critical Clarification
+              Register (1.5)
+                    ^
+                    |
+          AI detects ambiguity
                     |
                     v
            Working Argument Map
@@ -64,6 +73,8 @@ HARC 区分：
 
 ```text
 人类内容反馈
+  -> 如存在高影响歧义：Clarification Register
+  -> 人类解决
   -> Decision Log
   -> Content Core
   -> Working Argument Map
@@ -111,8 +122,9 @@ Working intellectual structure
 3. 哪个论证 framework 实际已经得到人类批准？
 4. 哪些内容由 AI 提议但人类尚未接受？
 5. 哪些证据约束当前主张？
-6. 哪些问题仍未解决？
-7. 当前成果是否与已批准状态同步？
-8. 中英文规范文件是否保持语义同步？
+6. 哪些高影响不确定性正在 Clarification Register 中等待人类决定？
+7. 哪些问题仍未解决？
+8. 当前成果是否与已批准状态同步？
+9. 中英文规范文件是否保持语义同步？
 
 如果离开旧聊天就无法回答这些问题，项目存在持久化或双语同步缺陷。
