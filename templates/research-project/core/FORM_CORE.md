@@ -10,7 +10,8 @@
 
 ## Language and prose presentation
 
-- Primary language: `UNRESOLVED`
+- Canonical editing language: `Chinese (default HARC bilingual profile) / UNRESOLVED if explicitly changed`
+- English mirror: `SYNCHRONIZED`
 - Register/tone: `UNRESOLVED`
 
 ## Reusable author preferences
