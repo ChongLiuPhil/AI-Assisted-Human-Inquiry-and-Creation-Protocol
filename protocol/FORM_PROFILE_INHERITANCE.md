@@ -1,5 +1,7 @@
 # Form Profile Inheritance
 
+> **Language:** Chinese canonical: `FORM_PROFILE_INHERITANCE.zh-CN.md`; this English file is the synchronized mirror.
+
 ## Purpose
 
 HARC separates research content from presentation form. This document makes form reuse operational across multiple projects and artifact types.
