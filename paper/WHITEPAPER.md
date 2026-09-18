@@ -1,346 +1,442 @@
 # Human–AI Research Collaboration Protocol
-## A Human–AI Collaboration Architecture Using GitHub as Persistent Research State
+## A Repository-Centered Architecture for Persistent, Auditable, Human-Governed Research
 
-**Working White Paper v0.1 (English mirror)**
+**Working white paper — v0.1**
 
-**Language status:** Chinese `WHITEPAPER.zh-CN.md` is canonical; this English file is its synchronized mirror.  
-**Historical status:** this white paper is retained as an early conceptual introduction. Newer normative rules are governed by Protocol Core / Specification, and newer scholarly argument is governed by the Methodology Article.
+**Language status:** Chinese `WHITEPAPER.zh-CN.md` is canonical; this English file is the synchronized mirror.  
+**Historical migration note:** on 2026-09-18, the Chinese canonical version was brought forward to include substantive developments that had previously existed only in the English white paper. After that catch-up, future white-paper development proceeds Chinese first, then English synchronization.  
+**Document status:** this white paper remains an early conceptual introduction. Newer normative rules are governed by Protocol Core / Specification, and newer scholarly argument is governed by the Methodology Article.
 
 ## Abstract
 
-As AI begins to participate in long-term research, academic writing, book development, and sustained intellectual exploration, the difficult problem is no longer merely how to generate better prose. It is how a long-running project can preserve the human author's intellectual continuity, responsibility boundaries, and traceability across many conversations, multiple models, multiple agents, and long periods of time.
+AI systems can now participate in research processes that extend far beyond isolated question answering: they can search literature, reconstruct arguments, formalize ideas, draft sections, revise manuscripts, maintain bibliographies, and help develop books or research programs over long periods. Yet most human–AI collaboration still relies on a fragile substrate: the conversational context of a particular AI system. Important human decisions remain embedded in chat histories; AI-generated reformulations can gradually become indistinguishable from the author's own commitments; formatting defaults can become mistaken for stable preferences; and a new agent often cannot reconstruct what the project actually means without rereading an inaccessible conversation.
 
-The Human–AI Research Collaboration Protocol (HARC) proposes a GitHub-centered solution. It does not treat the AI chat window as the project's long-term memory. Instead, it treats versioned repository documents as a persistent, explicit, and auditable shared research state. The protocol distinguishes the human author's substantive research intentions, the human author's presentation intentions, the AI's operational representation of argument structure, an evidence layer, historical decisions, and the final expanded artifact.
+The **Human–AI Research Collaboration Protocol (HARC)** proposes a repository-centered alternative. HARC treats GitHub not merely as storage for finished text, but as the durable, version-controlled state of a human–AI research relationship. It separates the human author's substantive commitments, presentation intentions, AI-maintained operational representation of the argument, evidence, historical decisions, and derived manuscript. It introduces explicit routing rules for new human feedback, versioned human approval of argument frameworks, and a distinction between framework approval and final artifact approval. The aim is to make AI-assisted research persistent across context windows and interchangeable agents while preserving human intellectual agency, traceability, and corrigibility.
 
-HARC further introduces three key mechanisms. First, important human feedback is classified as `CONTENT / FORM / PROTOCOL` and written into the corresponding foundational documents before it enters the final text. Second, an argument framework maintained by AI becomes a versioned Approved Framework only after explicit human reading and confirmation. Third, Framework Approval is separated from Final Artifact Approval, allowing human attention to focus primarily on intellectual and argumentative structure while preserving a distinct responsibility checkpoint before formal publication.
-
-HARC's aim is not to make AI a hidden author. Its aim is to establish sustainable human–AI research infrastructure in which AI agents can be replaced without the research state disappearing with one agent or one chat window.
+HARC is not a theory that AI should replace authorship. It is a protocol for making the boundary between human intention and AI transformation explicit enough that long-running collaboration can remain intellectually governed by humans even when AI performs extensive downstream work.
 
 ---
 
-## 1. Why ordinary AI conversation is not adequate long-term research infrastructure
+## 1. The problem: collaboration without persistent intellectual state
 
-A short question can be answered in one conversation. A paper, a book, or a multi-year research project is different. It contains evolving theses, definitions, structures, evidence, objections, presentation preferences, and decision history.
+Contemporary AI interfaces are optimized around conversations. This is useful for local tasks, but a serious research project is not merely a sequence of prompts and replies. It is a changing system of claims, definitions, evidence, unresolved questions, stylistic decisions, and commitments that may evolve over months or years.
 
-If those elements primarily live inside AI-platform chat context, several structural problems arise.
+When such a project lives primarily inside chat history, several structural problems arise.
 
 ### 1.1 Semantic drift
 
-A human author may begin with a rough but important idea. The AI rewrites it to make the argument clearer or more defensible. The rewrite may be useful, but after many rounds, the AI's version can gradually be treated as though it were what the author meant all along.
+A human may express an initially rough but philosophically important thesis. An AI then produces a cleaner, more defensible formulation. That reformulation may be useful, but after several rounds of revision it can quietly become treated as if it were what the human originally intended.
 
-The prose becomes more polished while it becomes less clear who actually determined the core meaning.
+The text improves while authorship of the meaning becomes less clear.
 
-Traditional Git can show that a passage changed. It cannot by itself tell us whether the human changed position or the AI introduced an interpretation that the human has not yet confirmed.
+This is not simply a version-control problem. Git can show that sentence A changed into sentence B, but ordinary textual history does not by itself encode whether:
 
-Long-term human–AI research therefore requires not only textual version control, but a form of **semantic version control**.
+- the human changed position;
+- the AI proposed a reinterpretation;
+- the human accepted the proposal;
+- the change was merely stylistic;
+- or a temporary drafting choice accidentally became authoritative.
+
+HARC therefore treats semantic state as something that must be represented explicitly.
 
 ### 1.2 Context-window dependence
 
-No matter how large a context window becomes, a sustained research project can eventually exceed what one conversation can hold.
+A long project can outgrow any single AI conversation. Even when a platform provides memory features, those memories may be incomplete, opaque, account-specific, unavailable to another model, or unsuitable as a scholarly audit trail.
 
-Even if a platform provides account-level memory, that memory may be opaque, incomplete, non-portable to other models or vendors, and unsuitable as a formal research audit record.
+The result is a paradox: AI makes long projects easier to generate but can make them harder to maintain coherently.
 
-Long-term research should therefore not treat a particular AI platform as its only memory layer.
+HARC addresses this by externalizing durable state into the repository.
 
-### 1.3 Structural opacity in long-form work
+### 1.3 Structural opacity
 
-If a book contains hundreds of thousands of words, the human author should not need to reread the entire manuscript every time the argument structure is discussed.
+A long manuscript is not a good operational interface for every intellectual decision. If a book has 150,000 words, a human should not need to reread all 150,000 words every time they want to decide whether Chapter 6 still supports the central thesis.
 
-A better approach is to maintain an operational text that is much shorter than the full manuscript while still showing its core structure:
+Humans need a compressed representation of the intellectual architecture: what the work claims, why the parts are connected, what each chapter contributes, which objections remain open, and which claims are provisional.
 
-- what the work is actually trying to establish;
-- which chapter performs which argumentative step;
-- which theses depend on which others;
-- which problems remain unresolved;
-- which ideas are merely AI suggestions.
+HARC calls this the **Operational Argument Representation**.
 
-This is HARC's Operational Argument Representation.
+### 1.4 Presentation drift
 
----
+AI agents also make thousands of small presentational choices: heading levels, margins, citation styles, typography, tone, footnote conventions, visual density, and document structure.
 
-## 2. GitHub is not merely storage; it is externalized research memory
+Some are temporary implementation defaults. Some are venue requirements. Some reflect genuine author preferences. If these categories are not separated, accidental defaults become misremembered as intention.
 
-HARC treats GitHub as a form of **externalized research memory**.
+HARC therefore separates substantive content from form and presentation.
 
-Its central principle is:
+### 1.5 Agent handoff failure
 
-> **Chat is a temporary interaction surface; the repository is the persistent shared research state.**
+A durable research system should not require the same AI agent forever. Models change. Platforms change. Tools change. A project may also use different agents for research, statistics, editing, or typesetting.
 
-This does not mean that every sentence in a conversation should be saved.
+If the project's meaning exists only in one agent's conversational history, the agent is effectively part of the storage layer.
 
-The protocol uses a simple promotion rule:
+HARC instead aims for a stronger invariant:
 
-> If a completely new AI agent took over tomorrow and losing one human instruction from the current conversation would change how that agent should continue the project, that instruction should be promoted into persistent GitHub state.
-
-The repository is therefore not a warehouse of raw chat logs. It is a structured representation of project-relevant state.
+> **AI agents may be replaceable; the research state must not be.**
 
 ---
 
-## 3. HARC's foundational file layers
+## 2. Repository-centered research memory
 
-### 3.1 Content Core: what does the human actually intend to claim?
+HARC treats the repository as **externalized epistemic memory**: a durable representation of what the project currently means, how it got there, what remains unresolved, and how it should be expressed.
 
-`CONTENT_CORE.md` stores only the currently active substantive research intentions of the human author.
+This does not mean that every chat message belongs in GitHub. A repository full of raw conversation transcripts would simply recreate the context problem in another location.
 
-It answers questions such as:
+The protocol therefore uses a **promotion rule**:
 
-- What is the central problem?
-- What does the human currently actually claim?
-- Which theses are tentative?
-- Which distinctions must be preserved?
-- Which questions remain open?
+> If losing a human instruction would change how a new competent agent should continue the project, that instruction should be promoted into durable repository state.
 
-AI may propose new arguments, but until the human accepts them, those arguments must not automatically be written as the author's position.
+This transforms ephemeral conversation into structured project memory.
 
-### 3.2 Form Core: how does the human want the work presented?
-
-`FORM_CORE.md` is independent of research content.
-
-It stores:
-
-- artifact type;
-- language and prose register;
-- typeface and font size;
-- page and paragraph systems;
-- heading structure;
-- citation and bibliography presentation;
-- figure and table style;
-- reusable cross-project author presentation preferences.
-
-This prevents a common error: an AI chooses a font size or layout temporarily, and a later agent mistakenly infers that it is a stable personal preference of the author.
-
-### 3.3 Decision Log: preserve the development history of thought and rules
-
-Current state should remain concise, but research history must not disappear.
-
-`DECISION_LOG.md` therefore records important human decisions: when a thesis was added, when an interpretation was rejected, when an AI suggestion was accepted, and when form requirements were changed.
-
-The Content Core says “what governs now.” The Decision Log says “how we got here.”
-
-### 3.4 Working Argument Map: the main interface for structural human–AI discussion
-
-`argument-map.md` is an operational representation maintained primarily by AI.
-
-It is not merely a table of contents. It should display:
-
-- central theses;
-- major premises;
-- support and limitation relations among claims;
-- the argumentative function of each chapter or section;
-- strongest objections;
-- evidence dependencies;
-- questions awaiting human decision;
-- AI proposals not yet accepted by the human.
-
-For large projects, the main intellectual discussion between human and AI should occur as much as possible at this level, rather than requiring wholesale operations directly on a manuscript of tens or hundreds of thousands of words.
+The repository is therefore not merely an archive. It is the current coordination medium among human and AI participants.
 
 ---
 
-## 4. Three feedback routes: CONTENT, FORM, and PROTOCOL
+## 3. The canonical layers
 
-HARC requires the AI to classify important human feedback before persisting it.
+HARC separates several functions that ordinary AI-assisted writing often collapses.
+
+### 3.1 Content Core: what the human means
+
+The **Content Core** records the human author's active substantive commitments.
+
+It contains the current answer to questions such as:
+
+- What is the project trying to establish?
+- Which distinctions matter?
+- Which theses are active?
+- Which positions are tentative?
+- Which questions remain deliberately open?
+
+Only human-originated commitments, or AI proposals explicitly accepted or modified by the human, belong here.
+
+The Content Core is not supposed to become a full manuscript. Its value comes from compression and authority.
+
+### 3.2 Form Core: how the human wants the work expressed
+
+The **Form Core** records presentation intention independently of research content.
+
+A project can therefore distinguish:
+
+- a font chosen temporarily by an AI;
+- a citation style imposed by a journal;
+- a layout chosen specifically for one book;
+- a genuine cross-project author preference.
+
+This prevents technical defaults from becoming false memories of authorial taste.
+
+### 3.3 Decision Log: how current state was reached
+
+Current-state files should be concise. But concision creates another risk: rewriting the current state can erase the history of how a decision was reached.
+
+The **Decision Log** solves this by preserving a chronological audit trail.
+
+A current thesis may change; the old thesis can disappear from the active Content Core while remaining visible in the historical decision record.
+
+This yields two different forms of memory:
+
+- **active memory** — what governs work now;
+- **historical memory** — how the project arrived there.
+
+### 3.4 Operational Argument Representation: what the project structurally says
+
+The **Working Argument Map** is an AI-maintained structural model of the current work.
+
+It is not merely a table of contents. It should expose inferential structure:
+
+- thesis A depends on premises B and C;
+- Chapter 3 establishes B;
+- Chapter 4 addresses objection D;
+- Section 6 narrows the scope of A;
+- claim E remains an AI proposal and is not yet human-approved.
+
+This is the principal interface for structural human–AI discussion.
+
+The human does not need to inspect every expanded paragraph in order to reason about the architecture of the work.
+
+### 3.5 Evidence layer: what constrains responsible assertion
+
+Human authorial authority concerns intended meaning; it does not make evidence optional.
+
+Literature, data, formal derivations, calculations, and source checks belong in an **Evidence Layer**.
+
+When evidence conflicts with the Content Core, the correct response is neither:
+
+- silently rewriting the human's position; nor
+- hiding contrary evidence to preserve consistency.
+
+The conflict should become explicit project state and return to the human for decision.
+
+### 3.6 Derived artifact: the expanded work
+
+The manuscript, book, report, or article is the **Derived Artifact**.
+
+It can be much larger than the upstream state. AI can help produce explanations, examples, literature discussions, transitions, tables, and stylistic development.
+
+But the artifact is not independently authoritative over the human-governed layers that generated it.
+
+---
+
+## 4. Three kinds of human feedback
+
+A core operational rule of HARC is that human instructions should be classified before persistence.
 
 ### CONTENT
 
-Changes **what the work says**.
-
-Examples include revising a thesis, adding a distinction, rejecting an interpretation, or changing argumentative scope.
-
-Typical propagation:
-
-`Human decision -> Decision Log -> Content Core -> Argument Map -> Final text`
+Changes what the work means, argues, assumes, distinguishes, or concludes.
 
 ### FORM
 
-Changes **how the work is presented**.
-
-Examples include typography, layout, chapter style, citation format, whether the artifact is a book or a paper, and visual presentation.
-
-Typical propagation:
-
-`Human decision -> Decision Log -> Form Core -> Typesetting/rendering -> Final artifact`
+Changes how the artifact is expressed: typography, layout, genre, citations, visuals, presentation conventions.
 
 ### PROTOCOL
 
-Changes **how the human and AI collaborate**.
+Changes how collaboration operates: persistence, approval gates, handoff, versioning, agent responsibilities.
 
-Examples include whether GitHub must be updated first, how framework confirmation works, how agents are replaced, and how versions are approved.
+A single instruction may be multi-label.
 
-Typical propagation:
+The distinction matters because each class has a different propagation path. A change to a philosophical thesis should not be implemented only as a local edit in Chapter 8. A change to font size should not be recorded as if it were an intellectual commitment. A change to approval workflow should not rewrite the research argument.
 
-`Human decision -> Decision Log -> Protocol documents -> Agent behavior`
-
-One item of feedback may carry multiple labels.
+This is the protocol's **upstream-first principle**: update the authoritative state before propagating the change into derived artifacts.
 
 ---
 
-## 5. Why HARC needs a human-approved Framework Snapshot
+## 5. From AI-maintained structure to human-approved framework
 
-The AI-maintained Working Argument Map must remain flexible, but it cannot automatically represent the human author.
+The operational argument map is useful precisely because it is flexible. But flexibility creates an authorship problem: an AI can reorganize a paper in ways the human has never seen.
 
-HARC therefore distinguishes:
+HARC therefore distinguishes a **Working Framework** from an **Approved Framework Snapshot**.
 
-- **Working Framework** — AI-maintained, mutable, and used for discussion;
-- **Approved Framework Snapshot** — explicitly read and confirmed by the human.
+### 5.1 Working Framework
 
-Once confirmed, the framework is frozen as:
+Mutable, AI-maintained, open to experimentation.
+
+It may include proposed restructurings, unresolved tensions, and AI-generated suggestions.
+
+### 5.2 Approved Framework Snapshot
+
+A compact version of the intellectual architecture explicitly reviewed and confirmed by the human.
+
+Once approved, it is frozen under an identifier such as:
 
 `FW-001`
 
-If the core argumentative structure later changes materially, the project should create:
+A material change creates a new version instead of silently rewriting the old one.
 
-`FW-002`
+This creates a semantic audit trail not available from ordinary manuscript versioning alone.
 
-rather than silently overwriting the old version.
+A future reviewer of the repository can ask:
 
-This allows a new agent or a future researcher to know:
-
-- what the human author actually confirmed;
-- when it was confirmed;
-- what changed afterward;
-- whether the current manuscript is still faithful to the approved framework.
-
-This is what HARC calls a **semantic audit trail**.
+- Which framework did the human actually approve?
+- When?
+- What changed afterward?
+- Does the current manuscript still implement it?
 
 ---
 
-## 6. Concentrating human attention on what matters most
+## 6. A different allocation of human attention
 
-A major feature of AI is that it can rapidly generate large amounts of expanded text while human reading speed does not increase proportionally.
+One motivation for HARC is practical. AI can produce long text much faster than humans can inspect it line by line.
 
-If collaboration requires humans to reread hundreds of thousands of words line by line after every AI revision, then AI does not solve the structural problem of long-term research.
+If the only acceptable collaboration model requires the human to manually reread every provisional sentence after every AI revision, the human becomes the throughput bottleneck and many potential gains from AI disappear.
 
-HARC therefore proposes that the most intensive human review should focus on the **intellectual architecture**.
+HARC proposes that human attention be concentrated at a higher-value level: **intellectual architecture**.
 
-The human should understand and confirm:
+For a long work, the human should be able to review a compressed representation containing:
 
-- core theses;
-- the argument chain;
+- the main thesis;
+- argument dependencies;
 - major distinctions;
-- logical relations among chapters;
-- scope limitations;
-- intentionally unresolved questions.
+- chapter/section functions;
+- limitations;
+- unresolved questions.
 
-After confirmation, AI can perform extensive expansion within that framework.
+Once the human approves that framework, AI may perform extensive downstream elaboration subject to framework fidelity.
 
-HARC therefore distinguishes two gates.
+This does not imply that final publication responsibility disappears. It distinguishes two checkpoints.
 
 ### Gate A: Framework Approval
 
-Confirms the work's core intellectual and argumentative architecture.
+Confirms the intellectual architecture.
 
 ### Gate B: Final Artifact Approval
 
-Before formal submission, publication, or public release, confirms the concrete release version to the degree required by the relevant discipline, journal, publisher, or institution.
+Confirms the concrete version intended for submission, publication, or public release to the degree required by relevant external standards.
 
-In compressed form:
+Thus:
 
 > **Framework approval defines the center of substantive intellectual authorship; final artifact approval defines the threshold of public scholarly accountability.**
 
 ---
 
-## 7. The approved framework must be projected into the introduction or abstract
+## 7. Framework projection into the final work
 
-If the human-approved framework exists only inside GitHub while the reader cannot recover it from the final work, the framework is merely an internal management tool.
+A framework that exists only in repository metadata would be useful for collaboration but invisible to readers.
 
-HARC goes further: the human-approved core structure should be faithfully expressed in a reader-visible overview.
+HARC therefore requires a **projection relation** between the approved framework and the reader-facing overview of the final work.
 
-Examples:
+For an academic paper, the abstract and introduction should faithfully express the main problem, thesis, argumentative move, contribution, and roadmap.
 
-- academic paper: abstract + introduction;
-- ordinary article: opening statement of the problem and argument route;
-- book: introduction/general overview + chapter roadmap;
-- report: executive summary + structural overview.
+For a book, the introduction or overview chapter should explain the governing framework and the role of major chapters.
 
-This creates an important check. If the introduction can no longer accurately represent `FW-001`, then either the introduction is wrong, the body has drifted, or the framework needs updating.
+The overview does not need to reproduce repository language verbatim. The requirement is structural fidelity.
+
+This creates a useful validation test:
+
+- if the overview cannot accurately represent the approved framework, the overview or manuscript is out of sync;
+- if the manuscript contains a major conclusion absent from the approved framework, the manuscript may have drifted beyond human approval.
 
 ---
 
-## 8. Not infinite context, but indefinitely growing external state
+## 8. Semantic version control
 
-HARC does not claim that AI obtains an infinite context window.
+Git provides textual version control. HARC adds a layer of **semantic version control**.
 
-More precisely, it allows the project to stop being bound to any single conversation window.
+A commit can tell us which characters changed. HARC state attempts to tell us what kind of change occurred:
 
-The project can accumulate a growing historical state without requiring a new agent to load everything at once.
+- human changed thesis;
+- human accepted AI proposal;
+- AI proposed structure but human has not accepted it;
+- form changed while content did not;
+- evidence created a conflict;
+- approved framework became outdated.
 
-HARC divides information into:
+This distinction is central for research because a project is not merely a text file. It is a changing network of commitments.
 
-### Active state
+---
+
+## 9. Scaling beyond the context window
+
+HARC does not abolish context-window limits. It relocates long-term memory outside the model.
+
+A repository can grow indefinitely in ordinary storage terms, while each agent reads only the subset needed for current work.
+
+The protocol therefore separates:
+
+### Compact active state
 
 - Content Core;
 - Form Core;
-- latest Framework;
-- Argument Map;
+- latest framework;
+- current argument map;
 - recent decisions.
 
-### Growing historical state
+### Expanding historical state
 
 - full decision history;
 - evidence archives;
-- older Frameworks;
-- older drafts;
+- older frameworks;
+- historical drafts;
 - research notes.
 
-As history grows, the project can add indexes, summaries, and archives, retrieving detail selectively when needed.
+When historical state becomes large, the system should add indexes, summaries, and dated archives rather than bloating the active cores.
 
-The goal is therefore not infinite context, but **persistent and recoverable state**.
-
----
-
-## 9. AI agents should be replaceable
-
-HARC aims to transfer long-term continuity from the identity of an AI system to the research state itself.
-
-A conventional picture is:
-
-`Human <-> one persistent AI assistant`
-
-HARC is closer to:
-
-`Human <-> persistent research repository <-> interchangeable AI agents`
-
-New models, new vendors, or specialized agents can take over so long as they can read the explicit GitHub state and follow the protocol.
-
-The principle can be summarized as:
-
-> **AI agents may be replaceable; research state must not disappear with the agent.**
+The design goal is not infinite context. It is **persistent, selectively retrievable state**.
 
 ---
 
-## 10. Limitations and future work
+## 10. Agent replaceability and platform independence
 
-HARC v0.1 still has clear limitations.
+HARC initially uses GitHub because it provides version history, branching, review, structured files, and widespread tooling.
 
-First, it cannot guarantee that the research content is true. The protocol can improve structural transparency but cannot replace evidence, expertise, and critical judgment.
+But the conceptual architecture does not depend on a specific model.
 
-Second, framework compression can itself lose detail. How to build a high-quality compressed representation of argument structure is therefore an important research problem.
+A project following HARC should remain intelligible when moving from:
 
-Third, human confirmation can become ceremonial. If the author does not genuinely understand the Framework, the Approval Gate loses its meaning.
+- one AI model to another;
+- one specialized agent to another;
+- one vendor to another;
+- one conversation to another.
 
-Fourth, maintaining these files introduces overhead. Future automation should reduce synchronization costs.
+This changes the human–AI relationship from:
 
-Future development may include:
+`Human <-> One Persistent Assistant`
 
-- automatic repository initialization;
-- machine-readable schemas;
-- consistency checks between Framework and manuscript;
+into:
+
+`Human <-> Persistent Research State <-> Interchangeable Agents`
+
+The continuity belongs to the research state, not to the AI identity.
+
+---
+
+## 11. Self-hosting and protocol evolution
+
+HARC itself should be developed using HARC principles.
+
+The repository therefore contains a Protocol Core and Decision Log distinguishing:
+
+- human-originated design commitments;
+- AI elaborations;
+- later community proposals;
+- accepted protocol changes.
+
+This self-hosting property provides a practical test: if the protocol cannot manage its own evolution transparently, it is unlikely to manage more complex research projects well.
+
+---
+
+## 12. Limitations and open questions
+
+HARC v0.1 is deliberately modest.
+
+### 12.1 It does not guarantee truth
+
+Explicit provenance does not make an argument correct. Evidence review, expertise, and critical reasoning remain necessary.
+
+### 12.2 It does not solve every authorship question
+
+Different disciplines, institutions, and publishers may impose different rules for disclosure, final approval, or acceptable AI use. HARC provides internal provenance and responsibility checkpoints; it does not replace external policy.
+
+### 12.3 It introduces maintenance overhead
+
+Canonical state must be updated. If agents fail to promote important decisions, the repository becomes stale.
+
+The protocol therefore needs lightweight tooling and validation in future versions.
+
+### 12.4 Framework compression can omit nuance
+
+A compact framework is useful precisely because it compresses. But excessive compression may hide important qualifications.
+
+Framework design therefore becomes an intellectual skill, not a clerical task.
+
+### 12.5 Human confirmation can become ceremonial
+
+An approval gate only matters if the human actually understands what is being approved. Future work should explore interfaces that make framework review efficient without reducing it to a checkbox.
+
+---
+
+## 13. Future development
+
+Potential extensions include:
+
+- automated repository initialization;
+- schema validation for canonical files;
+- synchronization checks between approved framework and manuscript;
 - visual argument graphs;
-- claim-level provenance;
-- multi-human and multi-agent governance;
-- implementations beyond GitHub;
-- empirical evaluation of whether semantic drift is actually reduced.
+- provenance annotations at claim or section level;
+- integration with citation managers and research databases;
+- pull-request workflows for framework approval;
+- reusable author form profiles;
+- local-first and non-GitHub backends;
+- multi-human / multi-agent governance;
+- empirical evaluation of whether HARC reduces semantic drift and onboarding cost.
 
 ---
 
-## Conclusion
+## 14. Conclusion
 
-The future of AI-assisted research requires more than better generation. It requires persistent collaboration architecture.
+AI-assisted research needs more than better generation. It needs a durable collaboration architecture.
 
-HARC's core idea is not that AI should do less work. It is that AI work should always remain traceable to explicit human intention, explicit structural confirmation, explicit evidence constraints, and explicit release responsibility.
+The central proposal of HARC is that human intention, AI representation, evidence, presentation intention, historical decisions, and final expression should not be collapsed into one mutable manuscript or one disappearing chat history.
 
-It transforms long-term research from “an increasingly long chat transcript” into “an explicit research state that different agents can read, inspect, continue, and correct.”
+By externalizing those functions into explicit repository state, HARC attempts to make long-running human–AI research:
 
-In one sentence:
+- persistent;
+- auditable;
+- transferable across agents;
+- structurally inspectable;
+- corrigible by evidence;
+- and governed by human approval at the level that matters most: the intellectual architecture of the work.
 
-> **Externalize the research state, separate levels of authority, let humans confirm the core framework, and keep AI expansion traceable to what humans actually approved.**
+The protocol can be summarized in one line:
+
+> **Externalize the research state, separate its authorities, approve the framework, and let AI expansion remain traceable to what the human actually meant.**
