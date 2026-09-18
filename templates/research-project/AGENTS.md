@@ -10,12 +10,22 @@ Any new AI Agent must first read:
 
 1. `START_HERE.zh-CN.md`
 2. `HARC_MANIFEST.yaml`
-3. `BOOTSTRAP_PROMPT.zh-CN.md`
-4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+3. `HARC_CONTEXT_INTERFACE.yaml`
+4. `BOOTSTRAP_PROMPT.zh-CN.md`
+5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 
-Then reconstruct project state according to the manifest and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report; the report must echo `HARC ACTIVE SESSION CONTRACT — LOADED` before substantive work.
+Then reconstruct only task-relevant state using the manifest/context interface and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report; the report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`. Dynamic state must thereafter be retrieved on demand from latest canonical GitHub revisions.
 
 Before the onboarding handshake is complete, do not perform large-scale structural changes, Framework Approval, or promote AI proposals into human commitments.
+
+## Repository-backed context
+
+- GitHub is the sole authoritative project-state source;
+- session summaries/excerpts are non-authoritative cache;
+- retrieve selectively by current CONTENT / FORM / PROTOCOL route;
+- fresh-fetch before high-impact judgments and writes;
+- invalidate touched cache after writes;
+- do not maintain a second dynamic truth source in chat.
 
 ## Protocol source
 
