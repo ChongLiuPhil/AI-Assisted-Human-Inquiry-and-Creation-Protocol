@@ -6,7 +6,9 @@
 
 ```text
         Zero-context Bootstrap / Onboarding Handshake
-             START_HERE + HARC_MANIFEST
+      START_HERE + HARC_MANIFEST + CONTEXT_INTERFACE
+                      |
+             Repository Resolver
                       |
                    人类作者
                       |
@@ -52,6 +54,16 @@
 ```
 
 采用双语配置时，上述所有人类可读规范状态同时具有中文 canonical 与英文 mirror。
+
+## Repository-backed context
+
+HARC 把 GitHub 定义为唯一权威项目状态源：
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+Agent 会话只保留最小 Repository Resolver。Blocking Clarifications、Framework、Artifact、Core、Decision Log 等动态状态需要时从 GitHub 最新 canonical revision 按需读取。写入后，旧上下文缓存立即视为 stale。
 
 ## 权威性不等于时间先后
 
@@ -118,7 +130,7 @@ Working intellectual structure
 
 ## 核心不变量
 
-一个稳定 HARC 项目应先让新的、能力合格的 Agent 通过 START_HERE / HARC_MANIFEST 完成 Onboarding Handshake，然后仅通过仓库状态回答：
+一个稳定 HARC 项目应先让新的、能力合格的 Agent 通过 START_HERE / HARC_MANIFEST / HARC_CONTEXT_INTERFACE 完成 Onboarding Handshake，激活 Repository Resolver，然后仅通过 GitHub 最新 canonical 状态回答：
 
 1. 人类当前究竟想论证什么？
 2. 人类当前希望成果怎样呈现？
