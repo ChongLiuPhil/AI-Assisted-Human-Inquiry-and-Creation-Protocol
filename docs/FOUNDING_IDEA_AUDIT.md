@@ -557,6 +557,25 @@ The following discussed requirements all have a normative commitment, executable
 
 All were repaired and bilingual mirrors synchronized in this review.
 
+### Current explicit human-decision boundaries
+
+These items are correctly persisted as awaiting human decision and therefore are not implementation omissions:
+
+- `CLR-001` — central responsibility concept;
+- `CLR-002` — strength of the Framework Responsibility Thesis;
+- `CLR-003` — whether semantic version control becomes a formal HARC working term;
+- `CLR-004` — status of generation–verification asymmetry;
+- `CLR-005` — whether to retain or replace responsibility concentration;
+- `CLR-006` — relation to extended / distributed cognition;
+- `CLR-007` — role of empirical validation in the article;
+- `CLR-008` — disciplinary / intellectual positioning;
+- `CLR-009` — formal open license;
+- `CLR-010` — target venue and venue-specific form constraints;
+- overall methodology-article Framework Approval (no `MA-FW-001` yet);
+- Final Artifact Approval (not completed).
+
+`CLR-001 / CLR-002 / CLR-005` currently block methodology-article Framework Approval; `CLR-009` blocks formal release; `CLR-010` does not block the intellectual framework but blocks freezing final submission/publication form.
+
 ### Scope boundary
 
 This confirms that **all explicitly discussed HARC design requirements recoverable from the current conversation/repository context are represented as implemented mechanisms or explicit human-decision boundaries.**
