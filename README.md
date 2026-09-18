@@ -11,6 +11,20 @@
 
 A chat window is an interaction surface, not the durable memory of a long research project. Important human decisions, argument structures, presentation requirements, evidence constraints, and approval states should be externalized into explicit, version-controlled repository files so that a new competent AI agent can continue the work without needing the original conversation history.
 
+## AI Agent zero-context onboarding: start here
+
+A new AI Agent should **not begin substantive work directly from the README or manuscript**.
+
+Read first:
+
+1. [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)
+2. `HARC_MANIFEST.yaml`
+3. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+
+Then follow the mandatory read order and submit a **HARC Onboarding Report** before making substantive changes.
+
+This makes correct project reconstruction an observable handshake rather than an assumption.
+
 ## Two project outputs
 
 HARC is intentionally a dual-output project:
