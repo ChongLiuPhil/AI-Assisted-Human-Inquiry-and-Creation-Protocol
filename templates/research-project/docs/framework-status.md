@@ -38,4 +38,4 @@ Status: `NOT COMPLETED`
 
 ## Approval rule
 
-Do not create or update an approved framework snapshot without explicit human confirmation. Material changes after approval require a new framework identifier.
+Do not create or update an Approved Framework Snapshot without explicit human confirmation. Before Framework Approval, the human must clearly understand, carefully review, and confirm every substantive element actually represented in the proposed framework. Material changes after approval require a new framework identifier.
