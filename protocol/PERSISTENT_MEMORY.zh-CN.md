@@ -137,7 +137,7 @@ HARC 现在采用：
 这意味着：
 
 - GitHub 保存唯一权威项目状态；
-- 会话中不长期维护 Blocking Clarifications、Framework、Artifact、Core 等动态状态副本；
+- 会话中不长期维护 Current Focus、Task Plan、Framework、Artifact、Core 等动态状态副本；
 - Agent 根据当前任务选择性读取最新 canonical 文件；
 - 当前上下文中的文件摘录只是临时、非权威缓存；
 - 高影响判断与写入前重新读取相关最新 revision；
@@ -150,7 +150,7 @@ Session Context Bootstrap 只保存 Repository Resolver，也就是“如何找�
 
 ## 新 Agent 重建目标
 
-在回答这些问题之前，新 Agent 应先完成 Onboarding Handshake，激活 `HARC REPOSITORY CONTEXT — ACTIVE`，读取 `docs/working-memory.zh-CN.md` 了解当前阶段与续接点，再按照 manifest/context interface 从三层长期记忆中按需读取最新权威状态。
+在回答这些问题之前，新 Agent 应先完成 Onboarding Handshake，激活 `HARC REPOSITORY CONTEXT — ACTIVE`，依次读取 Working Memory Index、Current Focus 与 Task Plan 了解当前阶段、最高优先级目标和续接点，再按照 manifest/context interface 从三层长期记忆中按需读取最新权威状态。Work Log 默认跳过。
 
 一个新的、能力合格的 Agent 应能回答：
 
