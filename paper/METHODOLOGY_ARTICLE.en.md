@@ -263,6 +263,10 @@ A project should therefore not depend primarily on the fact that “a particular
 - which evidence conflicts remain unresolved;
 - the status of the current full artifact.
 
+Merely having these files in the repository does not guarantee that a replacement agent will read them correctly. AI platforms differ in how they discover entry files, automatic context, and repository instructions. HARC therefore also requires a **zero-context bootstrap protocol**: a root `START_HERE`, a machine-readable manifest, an explicit mandatory read order, and an Onboarding Report produced before substantive work.
+
+This handshake turns “the agent understood the project” from an assumption into an observable check. The Agent should first report the human commitments, Blocking Clarifications, Working/Approved Framework, artifact status, and synchronization defects it reconstructed. If these cannot be recovered from repository state, the project has a persistence/onboarding defect that should be repaired before large-scale expansion continues.
+
 This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. HARC therefore layers active state and historical state: Cores, the latest Framework, and the Argument Map remain compressed; detailed logs, old versions, evidence, and archives may continue growing and be retrieved selectively through indexes.
 
 The project thereby shifts from “depending on one enormous conversation” to “depending on recoverable explicit state.”
