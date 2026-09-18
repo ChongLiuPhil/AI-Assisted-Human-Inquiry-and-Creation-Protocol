@@ -10,11 +10,13 @@ This file contains only human-originated commitments that have been stated or cl
 
 The HARC project should not only be an executable open protocol. It should also produce a methodology article that explains the project's ideas, architecture, and implications for human–AI research collaboration.
 
-## C2. The article must address human cognitive responsibility in the AI era
+## C2. The article must address human purpose, direction, and responsibility when AI tools participate
 
-The article should examine what human researchers remain responsible for when AI agents can perform substantial searching, structuring, drafting, revising, and other cognitive work.
+The article should treat humans as the source, initiator, and navigator of the purpose of a research or creative project. What problem the project is trying to solve, what direction it takes, and whether its core outcome is ultimately endorsed must be given, understood, and approved by humans; humans bear the core responsibility for the resulting work.
 
-It should distinguish what kinds of cognitive work may be delegated from what kinds of understanding, judgment, confirmation, and responsibility must still remain meaningfully human-governed.
+Within HARC, an AI Agent is treated as a collaboration tool. It may perform or assist with extensive search, synthesis, structuring, drafting, revision, restructuring, checking, formatting, and related work. The article should not characterize AI as a cognitive subject or use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language.
+
+The relevant question is instead which concrete work AI tools may perform or assist, and which acts of purpose-setting, understanding, judgment, confirmation, and responsibility must remain under human governance.
 
 ## C3. The article must explain persistent repository-based collaboration
 
@@ -26,9 +28,13 @@ It should explain the Content Core / Form Core / Decision Log / Working Framewor
 
 ## C5. The article must explain framework-level human responsibility
 
-For long works, the human-approved compact framework should function as a primary substantive intellectual responsibility anchor: the human author should understand and confirm core theses, inferential relations, key distinctions, and section/chapter roles.
+For long-form work, the Layer 2 Current / Approved Framework is the primary structural carrier of human core intellectual responsibility.
 
-The article should distinguish defects already present in that approved architecture from local defects introduced only during later AI expansion.
+Before Framework Approval, the human author must form a clear and complete understanding of every substantive element actually represented in the framework, and must carefully review and explicitly confirm those elements item by item. This includes at least the core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
+
+AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. The human is responsible for the originality, understanding, judgment, and intellectual commitments carried by that framework.
+
+The article should still distinguish a framework-level defect already present in the approved architecture from a derived-expansion defect introduced only in later AI elaboration. Treating the framework as the primary intellectual responsibility anchor does not remove Final Artifact Approval or the factual-accuracy, research-integrity, and venue requirements that apply to the final work.
 
 ## C6. The article must explain two different approval gates
 
@@ -48,7 +54,9 @@ The HARC project is not intended as a purely abstract philosophical proposal. It
 
 ## C10. The article must not overstate unconfirmed AI proposals
 
-Terms and stronger claims such as `generation–verification asymmetry`, `semantic version control`, `responsibility concentration`, and a specific empirical test suite may be useful AI-generated formulations, but they remain provisional unless explicitly accepted by the human author.
+Terms and stronger claims such as `generation–verification asymmetry`, `semantic version control`, and a specific empirical test suite may be useful AI-generated formulations, but they remain provisional unless explicitly accepted by the human author.
+
+`responsibility concentration` has been explicitly rejected by the human as the current central term. Future drafts should use descriptive language such as human purpose and direction and the framework as a responsibility anchor, unless the human later adopts a new central term.
 
 ## C11. High-impact uncertainty should be managed as Clarification items inside Working Memory
 
@@ -118,7 +126,9 @@ This design separates “seamless continuation of work” from “later human re
 
 ## Current unresolved authorial decisions
 
-Current resume state is maintained through Working Memory Index, Current Focus, and Task Plan; active high-impact unresolved issues live in `docs/working-memory/task-plan.zh-CN.md`. Work Log primarily serves human retrospective review. Article-related entries are currently `CLR-001` through `CLR-008`; `CLR-001`, `CLR-002`, and `CLR-005` are currently `BLOCKING` clarifications before Framework Approval.
+Current resume state is maintained through Working Memory Index, Current Focus, and Task Plan; active high-impact unresolved issues live in `docs/working-memory/task-plan.zh-CN.md`. Work Log primarily serves human retrospective review.
+
+`CLR-001`, `CLR-002`, and `CLR-005` were resolved and promoted through HARC-D023. The main article-related Clarifications still pending are `CLR-003`, `CLR-004`, `CLR-006`, `CLR-007`, and `CLR-008`; `CLR-010` continues to constrain final submission/publication form rather than current Framework Approval readiness.
 
 ## Provenance correction
 
