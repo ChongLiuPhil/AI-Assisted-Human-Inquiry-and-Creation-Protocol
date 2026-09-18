@@ -230,6 +230,21 @@ Work Log primarily serves human retrospective review and is outside default AI c
 
 The latest recursive scan reports **120 Markdown files = 60 Chinese canonical + 60 English mirrors, with 0 missing counterparts**.
 
+### 3.13 Semantic-mirror repairs from the current review
+
+The 2026-09-18 full-discussion coverage review found that complete file pairing did not guarantee that every English mirror had absorbed the latest modular Working Memory changes.
+
+This pass repaired:
+
+- root `START_HERE.md`;
+- root `AGENTS.md`;
+- `protocol/ONBOARDING_HANDSHAKE.md`;
+- project-template `START_HERE.md`;
+- project-template `AGENTS.md`;
+- a few older Bootstrap / Persistent Memory formulations.
+
+The main repairs remove the legacy Clarification Register as active state, enforce `Index -> Current Focus -> Task Plan` for normal takeover, keep Work Log outside default AI context, and synchronize methodology-article reading order with the modular Working Memory model.
+
 ## 4. High-risk semantic mismatches repaired
 
 The migration specifically repaired:
