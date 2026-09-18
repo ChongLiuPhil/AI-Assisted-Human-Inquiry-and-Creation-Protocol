@@ -254,6 +254,7 @@ Work Log 主要供人类作者回顾，默认不进入 AI context。
 6. Roadmap / Contributing 尚未包含双语治理要求；
 7. English Protocol Core 残留旧版本范围说明；
 8. Agent onboarding 尚未统一优先读取中文 canonical。
+9. 本次全讨论覆盖复核发现根 `START_HERE.md`、根 `AGENTS.md`、英文 Onboarding Handshake 与 project-template `AGENTS.md` 对模块化 Working Memory / Task Plan Clarification 规则存在语义滞后；已以中文 canonical 为基准重新同步。
 
 ## 5. 一致性边界
 
