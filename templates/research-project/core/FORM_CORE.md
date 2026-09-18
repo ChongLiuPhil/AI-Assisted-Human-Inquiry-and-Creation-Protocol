@@ -1,5 +1,7 @@
 # Form Core
 
+> **Language:** Chinese canonical: `FORM_CORE.zh-CN.md`; this English file is the synchronized mirror. Substantive edits must update both versions.
+
 **Role:** canonical current source of truth for human presentation and artifact-form decisions.
 
 ## Artifact type
