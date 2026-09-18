@@ -1,5 +1,7 @@
 # BOOK Form Profile
 
+> **Language:** Chinese canonical: `BOOK.zh-CN.md`; this English file is the synchronized mirror.
+
 **Status:** template — artifact-type fields only. Do not invent author preferences.
 
 ## Structural presentation
