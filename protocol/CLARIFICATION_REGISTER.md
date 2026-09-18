@@ -8,7 +8,11 @@ The former model treating Critical Clarification Register as “Layer 1.5” has
 
 Clarification is now an item type inside `Working Memory`, not an independent layer.
 
-Current active Working Memory:
+Current active Clarification / pending-decision state:
+
+`docs/working-memory/task-plan.zh-CN.md`
+
+Working Memory Index:
 
 `docs/working-memory.zh-CN.md`
 
@@ -58,4 +62,4 @@ After Promotion:
 
 The old `docs/clarification-register.zh-CN.md` path remains as a compatibility pointer so old Agents, links, and historical references do not break.
 
-Active Clarification state must live only in `docs/working-memory.zh-CN.md`. Do not maintain two Clarification truth sources.
+Active Clarification state must live only in `docs/working-memory/task-plan.zh-CN.md`. Do not maintain two Clarification truth sources.
