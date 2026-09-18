@@ -182,6 +182,7 @@ Audit records:
 - [`docs/FOUNDING_IDEA_AUDIT.md`](docs/FOUNDING_IDEA_AUDIT.md) — founding-idea traceability.
 - [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) — explicit three-cycle review/repair record.
 - [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md) — independent post-repair audit.
+- [`docs/BILINGUAL_PARITY_AUDIT.md`](docs/BILINGUAL_PARITY_AUDIT.md) — repository-wide Chinese-canonical / English-mirror parity audit.
 
 ## Start here
 
