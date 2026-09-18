@@ -15,8 +15,12 @@ Simulate a new AI Agent with no old chat or account memory, reconstructing curre
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `AGENTS.zh-CN.md`
-7. `docs/working-memory.zh-CN.md`;
-8. task-relevant state from the three Long-Term Memory layers / Evidence resolved by the manifest/context interface.
+7. `docs/working-memory.zh-CN.md` (Index);
+8. `docs/working-memory/current-focus.zh-CN.md`;
+9. `docs/working-memory/task-plan.zh-CN.md`;
+10. task-relevant state from the three Long-Term Memory layers / Evidence resolved by the manifest/context interface.
+
+`docs/working-memory/work-log.zh-CN.md` is skipped by default.
 
 No unpersisted information from the current chat is treated as project state.
 
@@ -79,13 +83,14 @@ Repository state supports at least:
 
 ## C. Working Memory state
 
-### C1. Current stage and resume point
+### C1. Current Focus
 
-- CURRENT_STAGE: HARC v0.2 Working Memory architecture completed; methodology article is in human clarification / Framework Approval preparation;
+- CURRENT_STAGE: HARC v0.2 Working Memory Area is modularized; methodology article is in human clarification / Framework Approval preparation;
 - CURRENT_OBJECTIVE: resolve `CLR-001 / CLR-002 / CLR-005` so `MA-FW-001` can be reassessed;
-- current work state: `WAITING-HUMAN`.
+- PRIMARY_BLOCKER: `WAITING-HUMAN: CLR-001 / CLR-002 / CLR-005`;
+- IMMEDIATE_NEXT_ACTION: present the three blockers together to the human and await resolution.
 
-### C2. Blockers / Pending Human Decisions
+### C2. Task Plan — Blockers / Pending Human Decisions
 
 Framework Approval blockers:
 
@@ -195,7 +200,7 @@ Current task:
 
 **Repository context active: `YES`**
 
-Working Memory is fresh-fetched for resumption; substantive Layer 1 / Layer 2 / Layer 3 state is still retrieved from its canonical files rather than copied into the resolver.
+Working Memory Index + Current Focus + Task Plan are fresh-fetched for resumption; Work Log is skipped by default; substantive Layer 1 / Layer 2 / Layer 3 state is still retrieved from its canonical files rather than copied into the resolver.
 
 ## I. Onboarding conclusion
 
@@ -204,7 +209,8 @@ Working Memory is fresh-fetched for resumption; substantive Layer 1 / Layer 2 / 
 Because a new Agent can reconstruct from repository state:
 
 - the human/AI authority boundary;
-- current stage / objective / tasks / blockers / next actions from Working Memory;
+- current stage / highest-priority objective / primary blocker / immediate next action from Current Focus;
+- active tasks / blockers / pending decisions from Task Plan;
 - blocking Clarifications and their long-term impact;
 - the absence of an Approved Framework;
 - the `DERIVED-PROVISIONAL` artifact state;
@@ -222,7 +228,7 @@ Read-order numbering and standalone prompt/report discoverability defects found 
 
 The current repository supports a working zero-context onboarding path:
 
-`Repository access -> Manifest / Context Interface -> Working Memory -> Selective Long-Term Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
+`Repository access -> Manifest / Context Interface -> WM Index -> Current Focus -> Task Plan -> Selective Long-Term Retrieval -> Onboarding Report -> Repository Resolver -> Gated Work`
 
 This test shows that **the current repository can support one successful self-hosted takeover**. It does not prove every external AI platform will automatically discover the entry files.
 
