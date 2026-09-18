@@ -36,7 +36,7 @@ A different language-governance choice must be an explicit human/project decisio
 9. Build `docs/argument-map.zh-CN.md` and its English mirror as an AI-maintained Layer 2 working representation.
 10. Initialize `docs/framework-status.zh-CN.md` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
 11. Create the artifact directory appropriate to the project.
-12. Create `evidence/` when research verification, data, calculations, or sources are relevant.
+12. Create `evidence/` when research verification, data, calculations, or sources are relevant; keep human-readable evidence documentation bilingual.
 13. Keep unknowns explicit. Do not fill them with AI assumptions.
 
 ## Minimum template tree
