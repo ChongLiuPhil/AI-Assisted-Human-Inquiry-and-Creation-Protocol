@@ -14,13 +14,14 @@
 >
 > 1. 读取 `START_HERE.zh-CN.md`；
 > 2. 读取 `HARC_MANIFEST.yaml`；
-> 3. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
-> 4. 读取 `AGENTS.zh-CN.md`；
-> 5. 严格按照 manifest 的 `required_read_order` 读取当前规范状态；
-> 6. 中文是 canonical；英文只作为 synchronized mirror；
-> 7. 读取并汇总当前 `BLOCKING` 和与任务相关的 `NON-BLOCKING` Clarifications；
-> 8. 确认 Working Framework、最新 Approved Framework（如有）、Artifact 状态和同步缺陷；
-> 9. 在做任何实质性修改前，先按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出一份 HARC Onboarding Report，并在其中生成 `HARC ACTIVE SESSION CONTRACT — LOADED`。
+> 3. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
+> 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
+> 5. 读取 `AGENTS.zh-CN.md`；
+> 6. 严格按照 manifest / context interface 的 task route 按需读取当前规范状态；
+> 7. 中文是 canonical；英文只作为 synchronized mirror；
+> 8. 仅在当前任务需要时读取并汇总 `BLOCKING` / `NON-BLOCKING` Clarifications；
+> 9. 仅在当前任务需要时读取 Framework / Artifact / Evidence 的最新 canonical revision；
+> 10. 在做任何实质性修改前，先按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态不得依赖该报告副本，必须从 GitHub 按需 fresh-fetch。
 >
 > 你不得：
 >
