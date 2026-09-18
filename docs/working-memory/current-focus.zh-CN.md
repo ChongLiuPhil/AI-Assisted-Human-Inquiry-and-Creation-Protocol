@@ -10,7 +10,7 @@
 
 方法论文章处于 **Working Framework 的整体人类审阅 / Framework Approval 决策阶段**。
 
-`CLR-001 / CLR-002 / CLR-005` 已通过 `HARC-D023` 解决并完成 Promotion。此前阻塞 `MA-FW-001` 的 clarification gate 已清除。
+`CLR-001 / CLR-002 / CLR-005` 已通过 `HARC-D023` 解决并完成 Promotion；`HARC-D024` 进一步精确化责任概念为“人类是责任主体”，并确认当前中文题目。此前阻塞 `MA-FW-001` 的 clarification gate 已清除。
 
 ## CURRENT_OBJECTIVE
 
@@ -38,7 +38,8 @@
 - 主要推论 / 依赖关系；
 - 核心区分；
 - 各章节 / 小节的功能；
-- HARC-D023 后更新的 T3 / T4 人类责任模型；
+- HARC-D023 / HARC-D024 后更新的 T3 / T4“人类作为责任主体”模型；
+- 已获人类认可的题目与尚未获批的整体 framework 之间的状态区分；
 - 仍明确标记为 `AI-PROPOSED` 或 `NON-BLOCKING` 的内容是否可以保留在待批准 framework 中。
 
 然后明确作出 `APPROVE / REVISE / REJECT`。
