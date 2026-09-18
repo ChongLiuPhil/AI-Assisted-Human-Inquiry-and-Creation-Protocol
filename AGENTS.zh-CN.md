@@ -10,10 +10,11 @@
 
 1. `START_HERE.zh-CN.md`
 2. `HARC_MANIFEST.yaml`
-3. `BOOTSTRAP_PROMPT.zh-CN.md`
-4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+3. `HARC_CONTEXT_INTERFACE.yaml`
+4. `BOOTSTRAP_PROMPT.zh-CN.md`
+5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 
-然后按照其中的 mandatory read order 重建项目状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 先向人类输出 **HARC Onboarding Report**。报告末尾必须回显 `HARC ACTIVE SESSION CONTRACT — LOADED`，把关键规则重新注入当前对话上下文。
+然后按照 manifest 与 context interface 的规则按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 **HARC Onboarding Report**。报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载最小 Repository Resolver；动态项目状态仍必须从 GitHub 最新 canonical revision 按需读取。
 
 在完成这一接管握手前，不得进行大规模结构修改、正文重写、Framework Approval、关键术语传播或把 AI 提议提升为人类承诺。
 
@@ -24,6 +25,18 @@
 任何特定聊天、模型、厂商、账号记忆、隐藏 scratchpad 或本地上下文，都不是项目的规范性记忆。
 
 如果一条人类指令应当约束未来工作，就必须把它显式持久化到适当的仓库文件中。
+
+### Repository-backed context 规则
+
+- GitHub 是唯一权威项目状态源；
+- 会话中的文件摘录、Onboarding Report、summary 和模型记忆都是非权威缓存；
+- 当前任务只读取最小必要 canonical state；
+- 高影响判断与写入前重新读取相关最新 revision；
+- 写入 canonical 文件后，旧上下文副本立即视为 `STALE`；
+- 后续若仍依赖该文件，重新读取，不维护聊天内第二份真值源；
+- 优先通过 GitHub API、MCP、connector/plugin 或等价工具直接读取/写入。
+
+完整规则见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` 与 `HARC_CONTEXT_INTERFACE.yaml`。
 
 ## 2. 保持三个不同的领域
 
