@@ -30,6 +30,7 @@ HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
 | 批准/同步状态 | `docs/framework-status.zh-CN.md` |
 | 证据与核验 | `evidence/` |
+| 零上下文启动与握手 | `START_HERE.zh-CN.md`、`BOOTSTRAP_PROMPT.zh-CN.md`、`HARC_MANIFEST.yaml`、`ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | 协作规则 | `AGENTS.zh-CN.md`、`protocol/` |
 | 扩写成果 | `paper/`、`book/`、`article/` 等 |
 
