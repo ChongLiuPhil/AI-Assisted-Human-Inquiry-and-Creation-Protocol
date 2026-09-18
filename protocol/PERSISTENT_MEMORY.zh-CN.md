@@ -30,7 +30,7 @@ HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
 | 批准/同步状态 | `docs/framework-status.zh-CN.md` |
 | 证据与核验 | `evidence/` |
-| 零上下文启动与握手 | `START_HERE.zh-CN.md`、`BOOTSTRAP_PROMPT.zh-CN.md`、`HARC_MANIFEST.yaml`、`ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
+| 零上下文启动与握手 | `START_HERE.zh-CN.md`、`BOOTSTRAP_PROMPT.zh-CN.md`、`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`、`HARC_MANIFEST.yaml`、`ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | 协作规则 | `AGENTS.zh-CN.md`、`protocol/` |
 | 扩写成果 | `paper/`、`book/`、`article/` 等 |
 
@@ -88,6 +88,15 @@ HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 5. 仅在相关时检索历史细节。
 
 目标是**可恢复性**，而不是让所有历史同时进入模型上下文。
+
+## 双层记忆模型
+
+HARC 现在区分：
+
+- **Durable Repository State** — GitHub 中可恢复、可审计的长期项目状态；
+- **Active Session Contract** — Agent 根据仓库重新生成并回显到当前对话上下文中的压缩操作契约。
+
+仓库负责 persistence，会话契约负责 salience。会话契约丢失时，必须重新从仓库恢复，而不能反向把会话记忆当成权威来源。
 
 ## 新 Agent 重建目标
 
