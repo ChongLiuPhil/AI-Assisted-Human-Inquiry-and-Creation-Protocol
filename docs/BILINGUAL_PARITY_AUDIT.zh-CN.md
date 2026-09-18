@@ -25,9 +25,9 @@
 
 扫描结果：
 
-- Markdown 文件总数：**72**
-- 中文 canonical（`*.zh-CN.md`）：**36**
-- 英文 mirror：**36**
+- Markdown 文件总数：**74**
+- 中文 canonical（`*.zh-CN.md`）：**37**
+- 英文 mirror：**37**
   - 绝大多数使用既有 `*.md`
   - 方法论文章完整正文使用 `METHODOLOGY_ARTICLE.en.md`
 - 缺少英文 mirror 的中文文件：**0**
