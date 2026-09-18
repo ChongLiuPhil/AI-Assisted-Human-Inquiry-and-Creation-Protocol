@@ -145,6 +145,46 @@ Work Log is excluded from default AI context and retrieved only for historical r
 
 ---
 
+## 2026-09-18 — HARC-D023 — Human purpose, AI tool role, and Framework responsibility model
+
+**Related:** HARC-D023; CLR-001 / CLR-002 / CLR-005.
+
+**Human decision summary:**
+
+- the purpose, central problem, and direction of a research or creative project originate with humans and remain under human initiation, navigation, and approval; humans bear core responsibility for the resulting work;
+- within HARC, an AI Agent is a collaboration tool that may perform or assist extensive concrete work, but it should not be characterized as a cognitive subject and “AI performs cognitive labor / cognitive tasks” is not used as the normative central concept;
+- for long-form work, the Layer 2 Current / Approved Framework is the primary structural carrier of human core intellectual responsibility;
+- Framework Approval requires the human to clearly understand, carefully review item by item, and explicitly confirm every substantive element actually represented in the framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework;
+- `responsibility concentration` is no longer retained as the current central term;
+- treating an Approved Framework as a possible scholarly human–AI collaboration attachment remains only a possible future direction, not a current mandatory HARC rule.
+
+**Promotion / propagation in this work cycle:**
+
+- added `HARC-D023` to Decision Log;
+- synchronized Protocol Core / Specification / README / research-project templates in Chinese and English;
+- promoted the decision into the Article Content Core at Layer 1;
+- updated T3 / T4, core distinctions, dependencies, and Clarification state in the Working Argument Map at Layer 2;
+- selectively synchronized the methodology draft's abstract, Section 6, and conclusion at Layer 3; the full article remains `DERIVED-PROVISIONAL` and no major structural rewrite was performed early;
+- moved `CLR-001 / CLR-002 / CLR-005` out of active blocking state in Task Plan while preserving `RESOLVED / PROMOTED` pointers.
+
+**Framework readiness review:**
+
+`PASS FOR HUMAN FRAMEWORK REVIEW`
+
+The previous blocking Clarification gate is cleared. There is no active blocking Clarification preventing overall Framework Approval review.
+
+**Not yet done:**
+
+- `MA-FW-001` has not been created;
+- overall Framework Approval has not occurred;
+- the full 15-part -> 10-part structural rewrite has not been performed.
+
+**Next stage:**
+
+The human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole and explicitly decides `APPROVE / REVISE / REJECT`.
+
+---
+
 ## Current log boundary
 
 This log currently contains high-level historical summaries backfilled from Decision Log and canonical protocol files. Future entries should be appended at meaningful milestones rather than reproducing conversations verbatim.
