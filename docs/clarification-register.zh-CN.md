@@ -7,7 +7,7 @@ Critical Clarification 不再是独立 “Layer 1.5”。
 
 当前所有 active clarification、blocker、pending human decision 与相关工作状态统一维护在：
 
-`docs/working-memory.zh-CN.md`
+`docs/working-memory/task-plan.zh-CN.md`
 
 Clarification workflow 见：
 
