@@ -375,28 +375,37 @@ A possible empirical test suite belongs here as `AI-PROPOSED FUTURE RESEARCH`, u
 # 5. Dependency structure
 
 ```text
-T1 Persistent research state
-├── enables T7 replaceable agents / durable project
-└── supplies infrastructure for T2 layered semantic governance
+T1 Persistent Research State
+├── enables T7 Replaceable Agent / Persistent Project
+├── provides the persistent state that T10 Zero-context Onboarding must discover and reconstruct
+└── provides the authoritative external-state basis for T11 Repository-Backed Context
 
-T2 Layered semantic governance
-├── protects human intention from silent AI drift
-├── routes high-impact uncertainty through T9 Working Memory
-├── uses T12 to separate durable memory from current work state
-└── enables an inspectable Working Framework
+T2 Layered Semantic Governance
+├── prevents silent AI drift from replacing human intent
+├── uses T9 to route high-impact uncertainty into Working Memory
+├── uses T12 to separate Long-Term Research Memory from Working Memory
+│   └── T13 further separates operational resume state from human retrospective history
+└── enables an inspectable Working Framework and upstream-first propagation
 
-T3 AI tool work / human purpose and governance
+T7 Replaceable Agent / Persistent Project
+├── combines with T10 so a new Agent can find the correct continuation entry point
+└── combines with T11 so an Agent resumes work by selectively retrieving the latest canonical state
+
+T3 AI Tool Work / Humans as Bearers of Responsibility
 └── supplies the human-subject and responsibility basis for T4 Framework Responsibility
 
 T4 Framework Responsibility
-├── requires T5 Dual Approval Gates
-└── requires T6 Framework Projection for public-facing fidelity
+├── requires T5 Dual Approval Gates to distinguish intellectual-architecture approval from public-version approval
+└── requires T6 Framework Projection to check whether the public artifact faithfully reflects the approved intellectual architecture
 
-T1 + T2 + T3 + T4 + T5 + T6 + T7
-└── jointly support T8 Practical Reusability as an executable collaboration protocol
+T9 + T10 + T11 + T12 + T13
+└── turn the persistent-state, governance, and cross-Agent continuity commitments of T1 / T2 / T7 into an executable workflow
+
+T1 + T2 + T3 + T4 + T5 + T6 + T7 + T9 + T10 + T11 + T12 + T13
+└── jointly provide the main implementation conditions for T8: HARC must be practically implementable and reusable
 ```
 
-This dependency graph is `AI-FORMULATED` and still requires overall human review before approval.
+The dependency graph is AI-organized, but its structural repair has been human-confirmed through `HARC-D025`. It represents principal support and implementation relations among the theses; it does not claim that every arrow is a strict relation of formal logical entailment.
 
 # 6. Evidence/literature role
 
@@ -433,6 +442,8 @@ Verified source notes are maintained canonically in `evidence/METHODOLOGY_SOURCE
 - `CLR-007` — empirical validation program;
 - `CLR-008` — disciplinary/venue positioning;
 - `CLR-010` — final publication venue and venue-specific form constraints (non-blocking for Framework Approval).
+
+**Semantics of Framework Approval for unresolved items (HARC-D025):** if the complete framework retains items explicitly marked `AI-PROPOSED`, `UNRESOLVED`, `NON-BLOCKING`, or equivalent, an overall `APPROVE` decision approves only their place, scope, and treatment as unresolved/provisional items within the framework. It does not approve their substantive content or change their provenance. Only a later separate human decision may promote such items into human-confirmed commitments.
 
 See Task Plan for the complete active state. No Framework Approval blocker now remains from `CLR-001 / CLR-002 / CLR-005`; however, the overall Working Framework still requires explicit human approval, revision, or rejection before `MA-FW-001` can be created.
 
