@@ -14,7 +14,7 @@
 
 ## 2. NEXT ACTIONS
 
-1. 人类整体审阅 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`，重点确认当前命题集合、依赖关系、章节功能与 HARC-D023 / HARC-D024 后更新的 T3 / T4；题目本身已经通过 HARC-D024 获得人类认可，但这不等于整体 framework 已批准；
+1. 人类整体审阅 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` 的当前修订版；HARC-D025 已修复 T1–T13 依赖结构，并明确 unresolved / AI-PROPOSED 项目的整体批准语义；题目本身已经通过 HARC-D024 获得人类认可，但这不等于整体 framework 已批准；
 2. 人类明确作出 `APPROVE / REVISE / REJECT` 决定；
 3. 只有在明确 `APPROVE` 后，Agent 才创建 `MA-FW-001` Approved Framework Snapshot，并更新 Framework Status；
 4. Framework Approval 后再执行当前正文的大规模结构性同步/重写，并继续保留 Final Artifact Approval；
@@ -55,6 +55,8 @@
 - `REJECT`
 
 局部措辞的接受不自动等于整体批准。
+
+如果整体 `APPROVE` 时 framework 中仍保留 `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` 项目，批准只确认这些项目作为未决/提议项目在 framework 中的位置、范围与处理方式，不确认其尚未批准的实质内容，也不改变其 provenance。
 
 ### CLR-003 — `semantic version control`
 
@@ -138,6 +140,7 @@
 - `CLR-005` — `RESOLVED / PROMOTED` via `HARC-D023`：`responsibility concentration` 不作为当前中心术语。
 
 - `HARC-D024` — `RESOLVED / PROMOTED`：当前中文题目已获人类认可；英文为同步翻译镜像；title approval 不等于整体 Framework Approval。
+- `HARC-D025` — `RESOLVED / PROMOTED`：T1–T13 dependency graph 已修复；整体 Framework Approval 对显式 unresolved / AI-PROPOSED 项目只批准其未决状态与架构位置，不自动批准其内容。
 
 ## 6. BACKLOG
 
