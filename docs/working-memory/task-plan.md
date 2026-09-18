@@ -145,6 +145,21 @@ Distinction from `CLR-008`:
 - study Working Memory update granularity, compression, and handoff efficiency;
 - cross-Agent / cross-platform takeover tests.
 
+### AI-PROPOSED — Repository Collaboration Architecture Upgrade Candidates (2026-09-18 audit)
+
+The following items come from the current repository-wide audit and **are not human-approved protocol decisions**:
+
+- `WM-PROP-001` — **Lightweight zero-context onboarding**: preserve the multi-entry discoverability required by P20/D018, but shrink the default mandatory path to “START_HERE / Manifest / Context Interface -> Current Focus -> Task Plan -> task-routed canonical state”. Bootstrap Prompt, Session Context Bootstrap, Onboarding Report Template, full AGENTS / Specification / Protocol Core / Decision Log become role- or exception-driven reads rather than universal defaults.
+- `WM-PROP-002` — **Control-plane separation and version compatibility**: make `HARC_MANIFEST.yaml` responsible only for topology/role resolution and `HARC_CONTEXT_INTERFACE.yaml` responsible only for retrieval / freshness / cache / write semantics; add explicit schema/interface versions and compatible HARC protocol versions.
+- `WM-PROP-003` — **Strict separation of static navigation from live state**: README, AGENTS, and long-lived explanatory docs should contain pointers rather than copied dynamic values; Current Focus / Task Plan / Framework Status own live state. Audit/self-test files should be immutable historical snapshots with tested commit/revision, snapshot time, live-state pointers, and superseded status.
+- `WM-PROP-004` — **Scalable Decision Log**: stop requiring a growing full Decision Log on every onboarding; add a recent/relevant decision index or partition/archive scheme so task routing loads only relevant decisions while preserving complete historical traceability.
+- `WM-PROP-005` — **Bilingual synchronization automation**: keep D015–D016 Chinese-canonical / English-mirror governance unchanged, but reduce manual maintenance across 60+ file pairs through lint/CI, mirror metadata, parity checks, or generated synchronization workflows.
+- `WM-PROP-006` — **Formal open-release infrastructure**: after the human resolves CLR-009 licensing, add LICENSE/LICENSES, CHANGELOG, version tags/releases, CITATION.cff, Issue/PR templates, and appropriate contribution/migration guidance so HARC becomes a versioned, citable, reusable open project rather than only a public development repository.
+- `WM-PROP-007` — **Machine-verifiable conformance**: prioritize automated checks for manifest path existence, bilingual pairing, version consistency, broken references, Framework/Artifact state, and stale snapshot pointers; repository complexity is now high enough that manual-only auditing is regression-prone.
+- `WM-PROP-008` — **De-duplicate templates**: the research-project template currently copies many bootstrap/governance files from the main protocol. Consider a bootstrap generator, GitHub template release, or versioned template bundle to reduce drift between upstream HARC and downstream templates.
+
+Without disturbing the current methodology-article Framework Approval process, the human should first decide the priority of `WM-PROP-001 / 002 / 003 / 006 / 007`; the others can remain later-version candidates.
+
 ## 7. SYNC DEFECTS
 
 `NONE RECORDED`
