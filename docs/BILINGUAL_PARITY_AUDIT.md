@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **108**
-- Chinese canonical files (`*.zh-CN.md`): **54**
-- English mirrors: **54**
+- total Markdown files: **120**
+- Chinese canonical files (`*.zh-CN.md`): **60**
+- English mirrors: **60**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
@@ -209,6 +209,26 @@ in parallel with:
 Clarification is now a Working Memory item; human-resolved stable content is promoted into the appropriate Long-Term Memory destination.
 
 The latest recursive scan reports **108 Markdown files = 54 Chinese canonical + 54 English mirrors, with 0 missing counterparts**.
+
+### 3.12 Modular Working Memory
+
+HARC-D022 further develops Working Memory from a logical area typically carried by one file into an explicitly modular functional area.
+
+The current HARC reference implementation and project template add three bilingual pairs:
+
+- `working-memory/current-focus.zh-CN.md` / English mirror;
+- `working-memory/task-plan.zh-CN.md` / English mirror;
+- `working-memory/work-log.zh-CN.md` / English mirror.
+
+The root `working-memory.zh-CN.md` is now the Index / Resolver.
+
+Default AI onboarding reads:
+
+`Index -> Current Focus -> Task Plan`
+
+Work Log primarily serves human retrospective review and is outside default AI context.
+
+The latest recursive scan reports **120 Markdown files = 60 Chinese canonical + 60 English mirrors, with 0 missing counterparts**.
 
 ## 4. High-risk semantic mismatches repaired
 
