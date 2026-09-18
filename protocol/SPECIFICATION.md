@@ -537,7 +537,7 @@ HARC separates things that AI-assisted research often collapses:
 
 The protocol treats this separation as the basis for durable, auditable, human-governed AI-assisted research.
 
-## 24. Bilingual canonical synchronization
+## 25. Bilingual canonical synchronization
 
 HARC project documentation SHOULD be maintained bilingually in Chinese and English.
 
