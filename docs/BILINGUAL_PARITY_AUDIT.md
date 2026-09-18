@@ -74,7 +74,24 @@ The earlier Chinese and English white papers had evolved independently:
 
 That violated the new canonical/mirror rule.
 
-**Repair:** the Chinese historical white paper remains canonical and the English white paper was reset to a faithful mirror. Substantive English-only ideas that had become part of HARC were not lost because they already exist in Protocol Core, Specification, or the Methodology Article.
+**Initial handling had the wrong direction:** the English version was first reset to the older Chinese version. The human then clarified the cutover principle: substantive developments that had already occurred in English before the rule existed must first be absorbed into Chinese rather than discarded by an older Chinese text.
+
+**Final repair:** the pre-rule 14-section English white paper was recovered from Git history. Its substantive English-only developments—including Presentation Drift, Agent Handoff Failure, an Evidence Layer, Derived Artifact, a dedicated Semantic Version Control section, Self-hosting / Protocol Evolution, and fuller limitations/future-development material—were incorporated into the Chinese canonical version. English was then restored as the synchronized mirror of that updated Chinese version.
+
+The white paper therefore completed the correct sequence:
+
+`pre-cutover English development -> Chinese catch-up -> parity -> Chinese canonical cutover`.
+
+### 3.3.1 Audit of bilingual files that already existed before cutover
+
+The main documents that already had both language versions before the rule change were checked historically:
+
+- **README:** the complete English version was created at 2026-09-18 01:28:50Z and the complete Chinese version followed at 01:28:52Z with corresponding section structure; no white-paper-like independent content divergence was found;
+- **WHITEPAPER:** a real English-ahead divergence was confirmed and repaired through the catch-up procedure above;
+- **Methodology Article:** before the rule, the complete manuscript existed only in Chinese, so there was no English-ahead risk;
+- other Chinese canonical governance files created during this migration were translated from the then-current English governance files, so they already absorbed the pre-cutover English state.
+
+**Legacy reconciliation result: `PASS`.**
 
 ### 3.4 Audits, evidence, and project governance
 
