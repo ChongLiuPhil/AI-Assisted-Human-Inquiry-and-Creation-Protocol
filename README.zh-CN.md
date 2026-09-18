@@ -19,7 +19,8 @@ HARC 有意设计为一个双重输出项目：
 
 当前方法论论文文件：
 
-- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，尚未由人类批准。
+- [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — 当前高影响不确定性的正式人类澄清界面。
+- [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，Clarification Gate 仍打开，尚未由人类批准。
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — 中文 canonical、`DERIVED-PROVISIONAL` 草稿。
 - [`paper/METHODOLOGY_ARTICLE.en.md`](paper/METHODOLOGY_ARTICLE.en.md) — 英文完整镜像。
 - [`paper/methodology-references.bib`](paper/methodology-references.bib) — 参考文献源文件。
