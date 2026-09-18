@@ -16,10 +16,10 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 > 2. read `HARC_MANIFEST.yaml`;
 > 3. read `AGENTS.zh-CN.md`;
 > 4. follow the manifest `required_read_order`;
-> 5. treat Chinese as canonical and English only as the synchronized mirror;
-> 6. identify all current `BLOCKING` and task-relevant `NON-BLOCKING` Clarifications;
-> 7. determine Working Framework, latest Approved Framework if any, Artifact status, and synchronization defects;
-> 8. before substantive modification, output a HARC Onboarding Report following `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`.
+> 6. treat Chinese as canonical and English only as the synchronized mirror;
+> 7. identify all current `BLOCKING` and task-relevant `NON-BLOCKING` Clarifications;
+> 8. determine Working Framework, latest Approved Framework if any, Artifact status, and synchronization defects;
+> 9. before substantive modification, output a HARC Onboarding Report following `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` and include `HARC ACTIVE SESSION CONTRACT — LOADED`.
 >
 > Do not:
 >
