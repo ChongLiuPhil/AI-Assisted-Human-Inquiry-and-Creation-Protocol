@@ -72,10 +72,10 @@ Current `BLOCKING` entries:
 
 Current `NON-BLOCKING` entries:
 
-- `CLR-003`, `CLR-004`, `CLR-006`, `CLR-007`, `CLR-008`.
+- `CLR-003`, `CLR-004`, `CLR-006`, `CLR-007`, `CLR-008`, `CLR-010`.
 
 Do not create `MA-FW-001` until blocking clarifications are human-resolved or explicitly `DEFERRED`. The review-ready framework must still receive explicit overall approval, revision, or rejection afterward.
 
 ## Current instruction to AI agents
 
-Do not treat the present Working Framework as human-approved. Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred. Use `docs/working-memory.zh-CN.md` first to resolve high-impact uncertainty, then return to the Working Framework for overall human review.
+Do not treat the present Working Framework as human-approved. Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred. Use `docs/working-memory/task-plan.zh-CN.md` first to resolve high-impact uncertainty, then return to the Working Framework for overall human review.
