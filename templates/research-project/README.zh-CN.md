@@ -25,22 +25,26 @@
 
 ## 初始化顺序
 
-1. 确定成果类型：paper、book、article、report、thesis 等。
+1. 创建/确认 `START_HERE.zh-CN.md`、英文 mirror 与 `HARC_MANIFEST.yaml`，记录采用的 HARC version/commit 和 mandatory read order。
+3. 确定成果类型：paper、book、article、report、thesis 等.
 2. 仅把人类实际表达的实质性承诺提取到 `core/CONTENT_CORE.zh-CN.md`，并同步英文 mirror。
-3. 确定明确适用的 reusable author form profile 与 artifact-type profile。
-4. 仅把人类明确的呈现决定提取到 `core/FORM_CORE.zh-CN.md`；保持 inherited、external、project-specific 与 temporary-default 可区分，并同步英文 mirror。
-5. 把初始化决定记录到 `core/DECISION_LOG.zh-CN.md` 与英文 mirror。
-6. 创建 `docs/clarification-register.zh-CN.md` 与英文 mirror，作为高影响不确定性的 Layer 1.5 操作界面。
-7. 建立 `docs/argument-map.zh-CN.md` 作为 AI 维护的工作表示，并同步英文 mirror。
-8. 初始化 `docs/framework-status.zh-CN.md` 为 `WORKING-FRAMEWORK`；除非人类明确批准，否则没有 Approved Snapshot。
-9. 创建适合项目的成果目录。
-10. 研究核验、数据、计算或来源相关时创建 `evidence/`，其中人类可读说明双语化。
-11. 未知项保持明确未知，不要用 AI 假设填充。
+4. 确定明确适用的 reusable author form profile 与 artifact-type profile。
+5. 仅把人类明确的呈现决定提取到 `core/FORM_CORE.zh-CN.md`；保持 inherited、external、project-specific 与 temporary-default 可区分，并同步英文 mirror。
+6. 把初始化决定记录到 `core/DECISION_LOG.zh-CN.md` 与英文 mirror。
+7. 创建 `docs/clarification-register.zh-CN.md` 与英文 mirror，作为高影响不确定性的 Layer 1.5 操作界面。
+8. 建立 `docs/argument-map.zh-CN.md` 作为 AI 维护的工作表示，并同步英文 mirror。
+9. 初始化 `docs/framework-status.zh-CN.md` 为 `WORKING-FRAMEWORK`；除非人类明确批准，否则没有 Approved Snapshot。
+10. 创建适合项目的成果目录。
+11. 研究核验、数据、计算或来源相关时创建 `evidence/`，其中人类可读说明双语化。
+12. 未知项保持明确未知，不要用 AI 假设填充。
 
 ## 最小模板树
 
 ```text
 project/
+├── START_HERE.zh-CN.md
+├── START_HERE.md
+├── HARC_MANIFEST.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
