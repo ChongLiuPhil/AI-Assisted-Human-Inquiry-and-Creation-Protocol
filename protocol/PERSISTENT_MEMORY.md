@@ -30,7 +30,7 @@ If yes, persist it.
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
 | Evidence and verification | `evidence/` |
-| Zero-context bootstrap and handshake | `START_HERE.zh-CN.md`, `BOOTSTRAP_PROMPT.zh-CN.md`, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, `HARC_MANIFEST.yaml`, `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
+| Zero-context bootstrap and repository context interface | `START_HERE.zh-CN.md`, `BOOTSTRAP_PROMPT.zh-CN.md`, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, `HARC_MANIFEST.yaml`, `HARC_CONTEXT_INTERFACE.yaml`, `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | Collaboration rules | `AGENTS.zh-CN.md`, `protocol/` |
 | Expanded output | `paper/`, `book/`, `article/`, etc. |
 
@@ -87,18 +87,31 @@ When historical files become large:
 
 The objective is **recoverability**, not universal simultaneous ingestion.
 
-## Two-layer memory model
+## Repository-backed memory model
 
-HARC now distinguishes:
+HARC now uses:
 
-- **Durable Repository State** — recoverable, auditable long-term project state in GitHub;
-- **Active Session Contract** — a compressed operating contract regenerated from the repository and echoed into the current conversation context.
+`GitHub Repository = authoritative external memory + working state`
 
-The repository provides persistence; the session contract provides salience. If the session contract is lost, rebuild it from the repository rather than treating remembered conversation state as authoritative.
+`Model Context = transient retrieval cache + control plane`
+
+This means:
+
+- GitHub stores the sole authoritative project state;
+- the session does not maintain long-lived copies of Blocking Clarifications, Framework, Artifact, Core, or other dynamic state;
+- the Agent selectively retrieves latest canonical files according to the current task;
+- file excerpts in active context are temporary non-authoritative cache;
+- relevant latest revisions are refetched before high-impact judgments and writes;
+- after canonical writes, older cache becomes `STALE`;
+- refetch when needed rather than synchronizing a second chat copy.
+
+Session Context Bootstrap therefore retains only a Repository Resolver: how to find memory, not another copy of memory.
+
+See `protocol/REPOSITORY_CONTEXT_INTERFACE.md` and `HARC_CONTEXT_INTERFACE.yaml`.
 
 ## New-agent reconstruction target
 
-Before answering these questions, a new Agent should complete the Onboarding Handshake defined in `START_HERE.zh-CN.md` and reconstruct current state using the read order in `HARC_MANIFEST.yaml`.
+Before answering these questions, a new Agent should complete the Onboarding Handshake, activate `HARC REPOSITORY CONTEXT — ACTIVE`, and retrieve latest state on demand according to `HARC_MANIFEST.yaml` and `HARC_CONTEXT_INTERFACE.yaml`.
 
 A new competent agent should be able to answer:
 
