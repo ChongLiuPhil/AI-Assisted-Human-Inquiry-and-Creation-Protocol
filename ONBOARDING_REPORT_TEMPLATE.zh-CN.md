@@ -26,16 +26,28 @@
 ### B4. 最近重要人类决定
 - 
 
-## C. Critical Clarification 状态
+## C. Working Memory 状态
 
-### C1. Blocking
-- `CLR-...` — 
+### C1. 当前阶段与目标
+- CURRENT_STAGE：
+- CURRENT_OBJECTIVE：
 
-### C2. 与当前任务相关的 Non-blocking
-- `CLR-...` — 
+### C2. 当前工作
+- ACTIVE_TASKS：
+- RECENTLY_COMPLETED：
+- NEXT_ACTIONS：
+- TODO / BACKLOG：
 
-### C3. 当前必须向人类询问的问题
-- 
+### C3. 阻塞与待人类确认
+- BLOCKERS：
+- PENDING_HUMAN_DECISIONS：
+- Clarifications：
+- 当前必须询问人类的问题：
+
+### C4. Working Memory 健康
+- SYNC_DEFECTS：
+- HANDOFF_NOTE：
+- Working Memory 是否明显过期：`YES / NO`
 
 ## D. Framework 状态
 
