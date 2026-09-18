@@ -15,10 +15,17 @@
 - Form state:
 - recent important decisions:
 
-## C. Clarification
-- Blocking:
-- task-relevant Non-blocking:
-- questions that must be put to the human:
+## C. Working Memory
+- CURRENT_STAGE:
+- CURRENT_OBJECTIVE:
+- ACTIVE_TASKS:
+- RECENTLY_COMPLETED:
+- NEXT_ACTIONS:
+- BLOCKERS:
+- PENDING_HUMAN_DECISIONS / Clarifications:
+- TODO / BACKLOG:
+- SYNC_DEFECTS:
+- HANDOFF_NOTE:
 
 ## D. Framework
 - Working Framework:
