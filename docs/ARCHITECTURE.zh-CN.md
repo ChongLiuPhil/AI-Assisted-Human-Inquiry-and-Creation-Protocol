@@ -5,6 +5,9 @@
 ## 系统模型
 
 ```text
+        Zero-context Bootstrap / Onboarding Handshake
+             START_HERE + HARC_MANIFEST
+                      |
                    人类作者
                       |
         +-------------+-------------+
@@ -115,7 +118,7 @@ Working intellectual structure
 
 ## 核心不变量
 
-一个稳定 HARC 项目应允许新的、能力合格的 Agent 仅通过仓库状态回答：
+一个稳定 HARC 项目应先让新的、能力合格的 Agent 通过 START_HERE / HARC_MANIFEST 完成 Onboarding Handshake，然后仅通过仓库状态回答：
 
 1. 人类当前究竟想论证什么？
 2. 人类当前希望成果怎样呈现？
