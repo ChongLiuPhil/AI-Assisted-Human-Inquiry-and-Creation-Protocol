@@ -32,7 +32,7 @@
 **从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性**  
 *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
-`AI-PROPOSED TITLE` — 文章主题由人类要求，但当前标题尚未被明确批准。
+`HUMAN-APPROVED TITLE — HARC-D024` — 中文题目已由人类明确认可；英文为同步翻译镜像。题目获批不等于完整 Working Framework 已获 Framework Approval.
 
 ---
 
@@ -40,11 +40,13 @@
 
 `HUMAN-ORIGINATED / AI-FORMULATED`
 
-AI Agent 可以承担越来越多的检索、结构化、起草、修订、形式化、检查与格式处理工作；人的阅读、理解、判断和责任并不会自动按同样速度扩展。因此，方法论文章提出：
+AI Agent 可以执行或辅助越来越多的检索、结构化、起草、修订、形式化、检查与格式处理工作；人的阅读、理解、判断与责任承担能力并不会自动按同样速度扩展。因此，方法论文章提出：
 
-> **一个长期 AI 辅助研究项目，怎样在扩展研究工作的执行与表达能力时，仍保持人类对项目目的、方向、意义、判断、批准、证据与责任的持久控制？**
+> **一个长期 AI 辅助研究项目，怎样在扩展研究工作的执行与表达能力时，仍确保项目目的、方向、核心判断与公开知识传播最终由人类作为责任主体来理解、批准和承担责任？**
 
-短语 **generation–verification asymmetry（生成—验证不对称）** 是 `AI-PROPOSED` 的问题标签，尚不是经批准的中心术语。
+这里的“人类责任”不是一个未经定义的抽象属性，而是“**人类仍是责任主体／责任承担者**”的简写。尤其当研究、探究结果或知识主张进入公开传播时，不能把最终责任主体位置转移给 AI。
+
+短语 **generation–verification asymmetry（生成—验证不对称）** 是 `AI-PROPOSED` 的问题标签，尚不是经批准的中心术语.
 
 ---
 
@@ -85,33 +87,34 @@ AI Agent 可以承担越来越多的检索、结构化、起草、修订、形�
 
 ---
 
-## T3 — AI 工具工作分担 / 人类目的与治理命题
+## T3 — AI 工具工作分担 / 人类责任主体命题
 
 **来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
 
 研究或创作项目的目的、核心问题与方向应由人类给予、发起并持续导航或批准。AI Agent 在 HARC 中作为工具，可以执行或辅助大量检索、综合、结构化、起草、重组、核查、格式处理和其他工作，但不应被描述为具有认知性的主体，也不应使用“AI 承担认知劳动 / 认知任务”作为中心表述。
 
-AI 能够执行大量工作，并不意味着项目目的、核心判断或最终核心责任可以转移给 AI。人类必须对作品所追求的目标与方向保持实际理解、导航和授权。
+AI 能够执行大量工作，并不意味着项目目的、核心判断或最终责任主体位置可以转移给 AI。更精确地说，HARC 要求**人类保持为责任主体**。
 
-当前高杠杆人类责任节点至少包括：
+这一责任主体地位至少体现在：
 
-- 研究目的、问题与方向；
+- 研究目的、问题与方向的发起、理解与授权；
 - 核心主张的接受/拒绝；
 - 主要推论关系；
 - 关键证据冲突的处理；
 - 对重要 AI 提议的接受；
 - Framework Approval；
-- 适用时的 Final Artifact Approval。
+- 适用时的 Final Artifact Approval；
+- 特别是在论文、书籍、报告或其他形式的公开知识传播中，对最终知识主张与公开版本承担责任。
 
-`responsibility concentration` 不再作为当前中心术语。底层责任模型以描述性语言表达：人类提供目的与方向，AI 工具执行或辅助部分工作，Layer 2 Framework 承载核心思想责任。
+`responsibility concentration` 不再作为当前中心术语。“人类责任”在标题或一般叙述中可以作为简写，但理论上应解释为“人类是责任主体 / humans remain the bearers of responsibility”。
 
-**创始依据：** Article Content Core C2；HARC Protocol Core P17；HARC-D023。
+**创始依据：** Article Content Core C2、C16；HARC Protocol Core P17；HARC-D023、HARC-D024.
 
 ## T4 — Framework Responsibility Thesis
 
-**来源：** `HUMAN-ORIGINATED`；原有强/中等二选一已由 HARC-D023 的人类第三种表述取代。
+**来源：** `HUMAN-ORIGINATED`；HARC-D024 对 HARC-D023 的责任措辞作进一步精确化。
 
-对于 AI 辅助的长篇研究或创作成果，Layer 2 Current / Approved Framework 应作为人类核心思想责任的主要结构性承载点。它不是仅供 AI 使用的摘要，而是人类作者必须真正理解、审核并明确确认的思想结构。
+对于 AI 辅助的长篇研究或创作成果，Layer 2 Current / Approved Framework 应作为**人类作为责任主体时，其核心思想责任的主要结构性承载点**。它不是仅供 AI 使用的摘要，而是人类作者必须真正理解、审核并明确确认的思想结构。
 
 Framework Approval 前，人类作者必须对其中实际呈现的全部实质内容形成清晰、完整的理解，并逐项审核和确认，包括：
 
@@ -122,11 +125,11 @@ Framework Approval 前，人类作者必须对其中实际呈现的全部实质�
 - 章节/小节功能；
 - 被纳入 framework 的具体措辞。
 
-Framework 可以由 AI 辅助提出、组织和表达，但获批版本必须真实体现人类作者的核心思想与认同。人类对该 framework 所承载的原创性、理解、判断和思想责任负责。
+Framework 可以由 AI 辅助提出、组织和表达，但获批版本必须真实体现人类作者的核心思想与认同。人类承担该 framework 所承载的原创性、理解、判断与思想责任；AI 不能成为这一责任的承担主体。
 
-这一命题是 HARC 的责任架构，并不声称 Framework Approval 自动构成所有领域的一般作者身份理论，也不取消 Final Artifact Approval、事实准确性、研究诚信或目标渠道规则。
+这一命题是 HARC 的治理架构，并不声称 Framework Approval 自动构成所有领域的一般作者身份理论，也不取消 Final Artifact Approval、事实准确性、研究诚信或目标渠道规则。尤其在公开传播知识主张时，责任主体仍必须是人类。
 
-**创始依据：** Article Content Core C5；HARC Protocol Core P6、P13、P17；HARC-D023。
+**创始依据：** Article Content Core C5、C16；HARC Protocol Core P6、P13、P17；HARC-D023、HARC-D024.
 
 ## T5 — 双批准门命题
 
@@ -284,8 +287,9 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 - 人类研究内容意图 vs 人类形式/呈现意图；
 - 人类意图 vs AI 操作性表示；
-- AI 工具可以执行/辅助的工作 vs 人类对目的、方向、理解、判断与责任的承担；
-- AI 作为协作工具 vs 人类作为项目目的与方向的发起/授权主体；
+- AI 工具可以执行/辅助的工作 vs 谁是责任承担主体；
+- AI 作为协作工具 vs 人类作为项目目的与方向的发起/授权主体及责任主体；
+- “人类责任”作为一般简写 vs “人类是责任主体”这一更精确命题；
 - Working Framework vs Approved Framework；
 - framework defect vs derived-expansion defect；
 - Framework Approval vs Final Artifact Approval；
@@ -300,7 +304,7 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 - semantic version control vs 普通文本版本控制；
 - generation–verification asymmetry 作为 heuristic label 的地位。
 
-`responsibility concentration` 已由人类决定不作为当前中心术语；“cognitive labor / 认知劳动”也不应用来描述 AI 所承担的工作。
+`responsibility concentration` 已由人类决定不作为当前中心术语；“cognitive labor / 认知劳动”也不应用来描述 AI 所承担的工作.
 
 # 4. 修订后的文章架构
 
@@ -338,13 +342,13 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 支持 T4。
 
-## VI. AI 工具工作分担与人类目的 / Framework 责任
+## VI. AI 工具工作分担与人类责任主体 / Framework 责任
 
-**功能：** 处理文章的哲学中心：AI 工具可以执行或辅助哪些研究工作；为什么项目目的、问题与方向必须由人类给予、导航和批准；以及为什么人类核心思想责任主要通过其真正理解并确认的 Layer 2 Framework 落实。
+**功能：** 处理文章的哲学中心：AI 工具可以执行或辅助哪些研究工作；为什么项目目的、问题与方向必须由人类给予、导航和批准；为什么在人机协作的研究、探究以及尤其公开知识传播中，人类必须保持为责任主体；以及为什么这一责任主体地位在长篇成果中主要通过其真正理解并确认的 Layer 2 Framework 落实。
 
 本节不得把 AI 描述为具有认知性的主体，也不得以“AI 承担认知劳动 / 认知任务”为中心概念。
 
-支持 T3 与 T4。
+支持 T3 与 T4.
 
 ## VII. 两类缺陷、两个批准门与一个公开结构
 
@@ -417,7 +421,7 @@ T1 + T2 + T3 + T4 + T5 + T6 + T7
 
 ### 已解决并 Promotion
 
-- `CLR-001` — 中心责任概念：不再以“AI 认知劳动 vs 人类认识责任”为中心二分；采用人类目的/方向、AI 工具工作分担与人类责任的描述性模型。
+- `CLR-001` — 中心责任概念：经 HARC-D024 进一步精确化，不把“人类责任”视为自足术语；核心命题是在人机协作研究、探究与尤其公开知识传播中，**人类仍是责任主体／责任承担者**。AI 工具可以分担工作，但不能成为最终责任主体。
 - `CLR-002` — Framework Responsibility Thesis：采用 HARC-D023 的第三种人类表述；Layer 2 Framework 是人类核心思想责任的主要结构性承载点，人类必须理解、审核并确认其中全部实质内容。
 - `CLR-005` — `responsibility concentration`：不作为当前中心术语继续使用。
 
