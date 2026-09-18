@@ -45,9 +45,9 @@
   - `AGENTS.zh-CN.md`
   - `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
   - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`
-- 当前主要协议决定：P1–P23
-- 最近人类协议决定：HARC-D015 至 HARC-D021
-- D018–D021 已由人类明确确认；D021 用并行 Working Memory 取代旧 Layer 1.5 模型。
+- 当前主要协议决定：P1–P24
+- 最近人类协议决定：HARC-D015 至 HARC-D022
+- D018–D022 已由人类明确确认；D021 用并行 Working Memory 取代旧 Layer 1.5，D022 将 Working Memory 模块化为 Current Focus / Task Plan / Work Log。
 
 **协议状态结论：** 可从仓库发现并重建。
 
@@ -72,8 +72,10 @@ HARC 是独立、GitHub-centered、可复用的人机研究协作协议，同时
 - AI 扩写必须保持 framework fidelity；
 - 中文 canonical / 英文 synchronized mirror；
 - 三个内容层属于 Long-Term Research Memory；
-- Working Memory 与三层并行，记录当前阶段、目标、任务、阻塞、待确认事项、Clarifications 与 handoff；
-- Clarification 是 Working Memory item，不是 Layer 1.5；
+- Working Memory 与三层并行；
+- Current Focus 保存最高优先级当前目标，Task Plan 保存动态任务/阻塞/待确认事项，Work Log 主要供人类回顾；
+- Work Log 默认不属于 AI onboarding 必读上下文；
+- Clarification 是 Task Plan / Working Memory item，不是 Layer 1.5；
 - 新 Agent 必须经过 zero-context bootstrap + Onboarding Handshake 才进入实质工作。
 
 ### B3. 方法论文章 Form 状态
@@ -203,7 +205,7 @@ Current task:
 
 **Repository context active：`YES`**
 
-动态 Blocking Clarifications、Framework 与 Artifact 状态仍由测试 Agent从相应 GitHub canonical 文件 fresh-fetch；没有复制进 resolver。
+Working Memory Index + Current Focus + Task Plan 由测试 Agent fresh-fetch；Work Log 默认跳过；Framework、Artifact 与三层长期状态仍从相应 GitHub canonical 文件按需读取，没有复制进 resolver。
 
 ## I. Onboarding 结论
 
