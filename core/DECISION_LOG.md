@@ -358,3 +358,25 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Clarifications resolved:** `CLR-001`, `CLR-002`, `CLR-005`
 
 **Status:** confirmed; Promotion and bilingual propagation implemented in this work cycle.
+
+
+---
+
+## 2026-09-18 — HARC-D024
+
+**Source:** human project founder  
+**Classification:** CONTENT, FORM, PROTOCOL
+
+**Decision:**
+
+1. The Chinese methodology-article title **“从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性”** is explicitly human-approved. The English title is maintained as a synchronized translation mirror of the Chinese canonical title. Approval of the title does not constitute Framework Approval of the complete Working Framework.
+2. HARC-D023's responsibility language is further clarified: `human responsibility / 人类责任` should not be treated as a self-sufficient central concept requiring no explanation. The more precise core claim is: **humans remain the bearers of responsibility**.
+3. In research and inquiry, especially when research results, arguments, or knowledge claims enter public knowledge dissemination through papers, books, reports, or other forms, humans must remain the responsibility-bearing subjects. AI Agents may act as tools and perform or assist extensive work, but they cannot become the bearers of ultimate responsibility for project purpose, core judgment, framework authorization, or public dissemination of knowledge claims.
+4. “Human responsibility” may remain as shorthand in titles or general exposition, but theoretical definitions, protocol rules, and key arguments should make explicit that it means humans remain the bearers of responsibility.
+5. All other confirmed elements of HARC-D023 remain in force.
+
+**Relation:** this decision clarifies HARC-D023 without rescinding its other contents.
+
+**Affected components:** Article Form Core, Article Content Core, Working Argument Map, methodology article, Protocol Core, Framework Approval, Specification, README, Agent contracts/templates, Framework Status, Working Memory
+
+**Status:** confirmed; bilingual Promotion and propagation implemented in this work cycle.
