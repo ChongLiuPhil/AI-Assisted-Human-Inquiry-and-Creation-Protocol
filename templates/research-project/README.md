@@ -27,16 +27,16 @@ A different language-governance choice must be an explicit human/project decisio
 
 1. Create/confirm `START_HERE.zh-CN.md`, its English mirror, and `HARC_MANIFEST.yaml`; record the adopted HARC version/commit and mandatory read order.
 2. Identify the artifact type: paper, book, article, report, thesis, etc.
-2. Extract only the human's actual substantive commitments into `core/CONTENT_CORE.zh-CN.md plus English mirror`.
-3. Identify any explicitly reusable author form profile and the applicable artifact-type profile.
-4. Extract only explicit human presentation decisions into `core/FORM_CORE.zh-CN.md plus English mirror`; keep inherited, external, project-specific, and temporary-default rules distinguishable.
-5. Record initialization decisions in the Chinese canonical Decision Log plus its English mirror.
-6. Create `docs/clarification-register.zh-CN.md` plus `docs/clarification-register.md` as the Layer 1.5 interface for high-impact uncertainty.
-7. Build the Chinese canonical argument map plus its English mirror as an AI-maintained working representation.
-8. Initialize framework status as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
-9. Create the artifact directory appropriate to the project.
-10. Create `evidence/` when research verification, data, calculations, or sources are relevant.
-11. Keep unknowns explicit. Do not fill them with AI assumptions.
+3. Extract only the human's actual substantive commitments into `core/CONTENT_CORE.zh-CN.md` and synchronize the English mirror.
+4. Identify any explicitly reusable author form profile and the applicable artifact-type profile.
+5. Extract only explicit human presentation decisions into `core/FORM_CORE.zh-CN.md`; keep inherited, external, project-specific, and temporary-default rules distinguishable and synchronize English.
+6. Record initialization decisions in `core/DECISION_LOG.zh-CN.md` and its English mirror.
+7. Create `docs/clarification-register.zh-CN.md` and its English mirror as the Layer 1.5 interface for high-impact uncertainty.
+8. Build `docs/argument-map.zh-CN.md` and its English mirror as an AI-maintained working representation.
+9. Initialize `docs/framework-status.zh-CN.md` as `WORKING-FRAMEWORK` with no approved snapshot unless the human has explicitly approved one.
+10. Create the artifact directory appropriate to the project.
+11. Create `evidence/` when research verification, data, calculations, or sources are relevant.
+12. Keep unknowns explicit. Do not fill them with AI assumptions.
 
 ## Minimum template tree
 
@@ -48,8 +48,11 @@ project/
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
+│   ├── CONTENT_CORE.zh-CN.md
 │   ├── CONTENT_CORE.md
+│   ├── FORM_CORE.zh-CN.md
 │   ├── FORM_CORE.md
+│   ├── DECISION_LOG.zh-CN.md
 │   └── DECISION_LOG.md
 ├── docs/
 │   ├── clarification-register.zh-CN.md
