@@ -128,7 +128,38 @@ Decision Log 是重要人类决定的历史审计轨迹。
 
 当前 Core 可以重写以反映当前有效状态；Decision Log 保存历史连续性。
 
-### 5.4 Working Argument Map — `docs/argument-map.zh-CN.md`
+### 5.4 Critical Clarification Register — `docs/clarification-register.zh-CN.md`
+
+Critical Clarification Register 是 Layer 1 与 Layer 2 之间的桥接状态，用于管理**高影响且尚未经人类解决的不确定性**。
+
+它 MUST 记录那些如果 AI 自行猜测，可能实质改变核心命题、关键概念、范围、主要推论关系、章节功能、关键术语/翻译、Framework Approval 或长期项目连续性的问题。
+
+每个重要条目 SHOULD 包括：
+
+- ID；
+- 状态；
+- `BLOCKING / NON-BLOCKING` 严重度；
+- 类别；
+- 不确定点；
+- 候选解释；
+- 影响说明；
+- 受影响文件/命题/章节；
+- AI 建议（如有，必须标为 `AI-PROPOSED`）；
+- 需要人类回答的问题；
+- 人类解决结果；
+- 传播目标。
+
+未解决 clarification MUST NOT 被视为人类承诺。
+
+人类解决后，Agent MUST 执行 Resolution Promotion：
+
+`Human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+
+Resolved entry 可以保留为审计痕迹，但规范答案必须进入适当 Core。
+
+完整规则见 `protocol/CLARIFICATION_REGISTER.zh-CN.md`。
+
+### 5.5 Working Argument Map — `docs/argument-map.zh-CN.md`
 
 Working Argument Map 是长篇思想结构的主要操作性讨论界面。
 
@@ -151,7 +182,7 @@ Working Argument Map 是长篇思想结构的主要操作性讨论界面。
 
 它应明显短于完整成果。
 
-### 5.5 Approved Framework Snapshot — `docs/frameworks/FW-xxx.zh-CN.md`
+### 5.6 Approved Framework Snapshot — `docs/frameworks/FW-xxx.zh-CN.md`
 
 只有在人类明确审阅并确认后，才能创建 Approved Framework Snapshot。
 
@@ -159,7 +190,7 @@ Working Argument Map 是长篇思想结构的主要操作性讨论界面。
 
 实质性思想变化必须产生新的 framework 版本。
 
-### 5.6 Framework Status — `docs/framework-status.zh-CN.md`
+### 5.7 Framework Status — `docs/framework-status.zh-CN.md`
 
 该文件应说明：
 
@@ -169,13 +200,13 @@ Working Argument Map 是长篇思想结构的主要操作性讨论界面。
 - 尚未解决的同步缺陷；
 - Final Artifact Approval 状态。
 
-### 5.7 Evidence Layer — `evidence/`
+### 5.8 Evidence Layer — `evidence/`
 
 证据文件可以包括文献笔记、来源核验、数据集、计算、形式推导、经验 notebook 与来源清单。
 
 证据约束可以负责任地主张什么，但不得静默改写人类意图。
 
-### 5.8 派生成果
+### 5.9 派生成果
 
 论文、书籍、文章、报告、演示文稿或其他输出属于派生表达。
 
