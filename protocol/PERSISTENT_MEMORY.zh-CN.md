@@ -90,6 +90,8 @@ HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 
 ## 新 Agent 重建目标
 
+在回答这些问题之前，新 Agent 应先完成 `START_HERE.zh-CN.md` 定义的 Onboarding Handshake，并按照 `HARC_MANIFEST.yaml` 的 read order 重建当前状态。
+
 一个新的、能力合格的 Agent 应能回答：
 
 - 人类当前想论证什么？
