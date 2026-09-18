@@ -1,5 +1,7 @@
 # HARC Decision Log
 
+> **Language:** Chinese canonical: `core/DECISION_LOG.zh-CN.md`; this English file is the synchronized mirror.
+
 This file is the chronological audit trail of substantive human decisions about the protocol project.
 
 ## Entry format
