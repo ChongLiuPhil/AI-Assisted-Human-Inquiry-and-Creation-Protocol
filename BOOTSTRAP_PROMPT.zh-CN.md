@@ -16,10 +16,10 @@
 > 2. 读取 `HARC_MANIFEST.yaml`；
 > 3. 读取 `AGENTS.zh-CN.md`；
 > 4. 严格按照 manifest 的 `required_read_order` 读取当前规范状态；
-> 5. 中文是 canonical；英文只作为 synchronized mirror；
-> 6. 读取并汇总当前 `BLOCKING` 和与任务相关的 `NON-BLOCKING` Clarifications；
-> 7. 确认 Working Framework、最新 Approved Framework（如有）、Artifact 状态和同步缺陷；
-> 8. 在做任何实质性修改前，先按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出一份 HARC Onboarding Report。
+> 6. 中文是 canonical；英文只作为 synchronized mirror；
+> 7. 读取并汇总当前 `BLOCKING` 和与任务相关的 `NON-BLOCKING` Clarifications；
+> 8. 确认 Working Framework、最新 Approved Framework（如有）、Artifact 状态和同步缺陷；
+> 9. 在做任何实质性修改前，先按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出一份 HARC Onboarding Report，并在其中生成 `HARC ACTIVE SESSION CONTRACT — LOADED`。
 >
 > 你不得：
 >
