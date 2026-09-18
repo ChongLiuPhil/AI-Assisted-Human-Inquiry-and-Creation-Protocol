@@ -192,6 +192,18 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 ---
 
+## T10 — Zero-context Onboarding Thesis
+
+**来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
+
+持久仓库状态只有在新的 AI Agent 能够可靠发现并按正确顺序读取它时，才能真正支持跨 Agent 连续性。因此，HARC 应提供显式零上下文入口、mandatory read order、机器可读 manifest 与 Onboarding Handshake。
+
+成功接管不应被假定，而应通过 Agent 向人类报告当前规范状态、Blocking Clarifications、Framework/Artifact 状态和同步缺陷来验证。
+
+**创始依据：** Article Content Core C12；HARC Protocol Core P20。
+
+---
+
 # 3. 文章必须保留的核心区分
 
 ### 人类原创区分
@@ -231,9 +243,9 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 ## III. 以仓库为中心的持久研究状态
 
-**功能：** 说明 GitHub 作为当前实现基础；区分 persistent memory 与 infinite context；引入当前状态与历史状态的压缩结构。
+**功能：** 说明 GitHub 作为当前实现基础；区分 persistent memory 与 infinite context；引入当前状态与历史状态的压缩结构；进一步说明新的 Agent 必须通过 zero-context bootstrap、manifest 和 Onboarding Handshake 才能可靠接管。
 
-支持 T1 与 T7。
+支持 T1、T7 与 T10。
 
 ## IV. 分层语义治理
 
