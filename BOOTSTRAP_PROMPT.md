@@ -17,12 +17,15 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 > 3. read `HARC_CONTEXT_INTERFACE.yaml`;
 > 4. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
 > 5. read `AGENTS.zh-CN.md`;
-> 6. read `docs/working-memory.zh-CN.md` to determine current stage, objective, active tasks, blockers, pending human decisions, and next actions;
-> 7. use manifest/context-interface task routing to selectively retrieve current normative state from the three long-term layers;
-> 8. treat Chinese as canonical and English only as the synchronized mirror;
-> 9. read task-relevant blockers/clarifications from Working Memory and verify destination files when needed;
-> 10. retrieve latest canonical Layer 1 / Layer 2 / Layer 3 / Evidence state only when needed;
-> 11. before substantive modification, output a HARC Onboarding Report including the current Working Memory resume state and confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
+> 6. read `docs/working-memory.zh-CN.md` (Index);
+> 7. read `docs/working-memory/current-focus.zh-CN.md` for the highest-priority objective, primary blocker, and immediate next action;
+> 8. read `docs/working-memory/task-plan.zh-CN.md` for active tasks, TODOs, blockers, pending human decisions, and next actions;
+> 9. do not read Work Log by default; retrieve it only for historical review, audit, change reconstruction, or current/history conflict;
+> 10. use manifest/context-interface task routing to selectively retrieve current normative state from the three long-term layers;
+> 11. treat Chinese as canonical and English only as the synchronized mirror;
+> 12. read task-relevant blockers/clarifications from Task Plan and verify destination files when needed;
+> 13. retrieve latest canonical Layer 1 / Layer 2 / Layer 3 / Evidence state only when needed;
+> 14. before substantive modification, output a HARC Onboarding Report covering Current Focus + Task Plan and confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
 >
 > Do not:
 >
