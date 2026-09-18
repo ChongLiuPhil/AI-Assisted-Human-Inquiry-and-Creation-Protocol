@@ -12,6 +12,8 @@ Any AI Agent taking over this repository from zero context must, before substant
 
 Then follow the mandatory read order and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a **HARC Onboarding Report** before large-scale structural edits, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
 
+The current protocol-repository onboarding self-test is recorded in `docs/ONBOARDING_SELF_TEST.md`; it is audit evidence, not normative state.
+
 ## 1. Do not depend on chat memory
 
 A particular chat, model, vendor, account memory, hidden scratchpad, or local context is not the canonical project memory.
