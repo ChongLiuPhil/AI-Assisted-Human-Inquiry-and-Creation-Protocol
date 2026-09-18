@@ -152,6 +152,7 @@ Use the audit documents according to their roles:
 - `docs/FOUNDING_IDEA_AUDIT.md` — founding-idea coverage inventory and traceability record;
 - `docs/THREE_CYCLE_REPAIR_AUDIT.md` — the corrected three-cycle `review -> repair -> verify` execution record;
 - `docs/FINAL_POST_REPAIR_AUDIT.md` — independent audit performed after all three repair cycles.
+- `docs/BILINGUAL_PARITY_AUDIT.md` — repository-wide bilingual pairing and high-risk semantic synchronization audit.
 
 If these documents conflict about process status, the later repair/final-audit records govern the interpretation of the audit procedure; founder decisions in `core/DECISION_LOG.md` remain canonical.
 
