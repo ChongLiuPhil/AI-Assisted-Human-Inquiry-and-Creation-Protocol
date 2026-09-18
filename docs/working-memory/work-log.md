@@ -185,6 +185,37 @@ The human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole a
 
 ---
 
+## 2026-09-18 — HARC-D024 — Title approval and clarification of humans as the bearers of responsibility
+
+**Related:** HARC-D024; further clarification of HARC-D023.
+
+**Human decision summary:**
+
+- the Chinese title “从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性” is explicitly approved;
+- title approval is a title/form-content decision only and does not constitute Framework Approval of the complete Working Framework;
+- “human responsibility / 人类责任” is not treated as a self-explanatory independent central concept;
+- the more precise core claim is that in human–AI collaborative research and inquiry, humans remain the bearers of responsibility;
+- this responsibility-bearing requirement becomes especially important when research results, arguments, or knowledge claims enter public circulation;
+- AI may share extensive work as a tool but cannot become the ultimate bearer of responsibility for research purpose, core judgment, framework authorization, or public dissemination of knowledge;
+- all other HARC-D023 decisions remain in force.
+
+**Propagation result:**
+
+- added HARC-D024 to Decision Log;
+- recorded the human-approved title in Article Form Core;
+- added/strengthened the responsibility-bearing and public-knowledge-dissemination commitments in Article Content Core;
+- synchronized title status, central problem, T3 / T4, core distinctions, and Section VI in the Working Argument Map;
+- synchronized the methodology draft's abstract, Section 6, conclusion, and keywords;
+- synchronized Protocol Core, Framework Approval, Specification, README, root/template Agent contracts, and research-project templates;
+- removed the stale duplicate responsibility-model block from the tail of Framework Approval;
+- updated Working Memory and Framework Status to distinguish title approval from still-pending overall Framework Approval.
+
+**Current state:**
+
+`PASS FOR HUMAN FRAMEWORK REVIEW` remains unchanged; `MA-FW-001` has not been created.
+
+---
+
 ## Current log boundary
 
 This log currently contains high-level historical summaries backfilled from Decision Log and canonical protocol files. Future entries should be appended at meaningful milestones rather than reproducing conversations verbatim.
