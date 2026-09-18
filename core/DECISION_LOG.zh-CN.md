@@ -268,3 +268,26 @@
 **实现：** 新增 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror，并接入 START_HERE、Bootstrap Prompt、Manifest、Onboarding Report、Agent contract 与项目模板。
 
 **状态：** 已确认并实施。
+
+---
+
+## 2026-09-18 — HARC-D020
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL
+
+**决定：** HARC 应进一步把 GitHub 直接作为 AI Agent 的权威外部记忆库和工作状态库。Agent 不需要在聊天上下文中长期维护一份重复的项目状态镜像，而应根据当前任务从 GitHub 按需读取最新 canonical 文件；所有应影响未来工作的更新直接写回 GitHub。模型上下文只保留最小访问内核和当前任务所需的临时缓存。
+
+**接口原则：**
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+写入后旧上下文副本立即失效；高影响判断和写入前必须重新确认最新 revision。优先通过 GitHub API、MCP、connector/plugin 或等价工具完成按需读取和 write-through。
+
+**对 HARC-D019 / P21 的修订：** Active Session Contract 不再承担动态项目状态副本；它被收缩为 Repository Resolver / access kernel。动态 Blocking Clarifications、Framework、Artifact 和 Core 状态需要时直接从仓库最新版本读取。
+
+**实现：** 新增 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md`、英文 mirror 与机器可读 `HARC_CONTEXT_INTERFACE.yaml`，并接入启动链、manifest、Agent contract 和项目模板。
+
+**状态：** 已确认并实施。
