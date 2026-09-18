@@ -34,6 +34,8 @@
 - [x] Complete one self-hosted HARC onboarding self-test.
 - [x] Establish the Repository-Backed Context Interface: GitHub as authoritative external memory/working store, model context as on-demand transient cache.
 - [x] Narrow Session Context Bootstrap to a minimal Repository Resolver with no dynamic state copy.
+- [x] Establish Working Memory parallel to the three long-term memory layers, replacing the former Layer 1.5 model.
+- [x] Move Clarification into Working Memory and define Promotion into Long-Term Memory.
 - [ ] Human review and approval of the methodology article Working Framework.
 - [ ] Create first Approved Framework snapshot for the methodology article.
 - [ ] Decide target publication venue / disciplinary positioning.
@@ -50,7 +52,7 @@
 - [ ] Define a HARC conformance-test suite.
 - [ ] Define a cross-agent handoff benchmark.
 - [ ] Define an automated bilingual parity check.
-- [ ] Define an automated onboarding/conformance check validating START_HERE, manifest, context interface, task routing, revision freshness, Blocking Clarifications, and Framework Status retrieval by a new Agent.
+- [ ] Define an automated onboarding/conformance check validating START_HERE, manifest, context interface, Working Memory resume state, task routing, revision freshness, blockers, and Framework Status retrieval by a new Agent.
 
 ## v0.4 — Automation
 
@@ -80,6 +82,7 @@
 - [ ] Measure whether responsibility concentration reduces review burden without increasing serious errors.
 - [ ] Compare GitHub-centered implementation with local-first or other versioned backends.
 - [ ] Study the effect of repository-backed context on context usage, stale-state errors, and cross-agent onboarding cost.
+- [ ] Study Working Memory update granularity, compression, and handoff efficiency.
 - [ ] Examine relationships among HARC, scholarly authorship norms, provenance systems, extended/distributed cognition, automation reliance, and human intellectual agency.
 - [ ] Develop operational measures for framework fidelity and semantic drift.
 - [ ] Study semantic drift introduced by bilingual canonical/mirror translation governance.
