@@ -208,6 +208,37 @@ HARC 项目应提供一个**从零上下文即可发现的启动入口**，使�
 
 协议不能保证任意外部平台会自动读取某个特定文件；因此 HARC 的目标是**最大化可发现性与可验证接管**：通过根目录显眼入口、通用 Agent 契约、机器 manifest、README 导航和可复制 prompt，使任何具有仓库读取能力且愿意遵循项目指令的 Agent 都能重建同一工作流。
 
+
+## P21. 持久仓库状态应在接管后重新注入当前会话上下文
+
+HARC 的持久状态保存在仓库中，但仅仅“存在于仓库”并不保证这些规则在长对话中的当前生成上下文里持续保持高显著度。
+
+因此，在 Zero-context Onboarding Handshake 完成后，新 AI Agent 应根据当前仓库状态生成一份压缩的 **HARC Active Session Contract**，并明确写入自己的当前对话回复，使关键 HARC 不变量与当前项目状态重新进入本轮会话上下文。
+
+该 Session Contract 至少应包含：
+
+- 权威层级；
+- canonical language；
+- 当前 Blocking Clarifications；
+- Working / Approved Framework 状态；
+- Artifact / approval 状态；
+- 当前任务分类与 upstream-first propagation path；
+- 当前被禁止或阻塞的动作。
+
+这不是平台真正的 system prompt。HARC 不得声称能够覆盖或修改平台 system / developer / safety instructions、模型参数或平台级 memory。
+
+正确优先级为：
+
+`Platform system/developer rules > HARC Session Contract > ordinary task-level AI defaults`
+
+重大状态变化、Blocking Clarification 解决、Framework Approval、Final Artifact Review 或 Agent 怀疑早期上下文已丢失时，应进行 `HARC CONTEXT REFRESH`，重新读取仓库并更新当前会话契约。
+
+这一机制形成双层记忆：
+
+`Durable Repository State + Active Session Contract`
+
+前者负责可恢复持久性，后者负责当前会话中的显著性与可验证执行。
+
 ---
 
 ## 当前范围
