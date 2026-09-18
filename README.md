@@ -25,6 +25,8 @@ Read first:
 
 Then follow the mandatory read order and submit a **HARC Onboarding Report** before making substantive changes.
 
+See [`docs/ONBOARDING_SELF_TEST.md`](docs/ONBOARDING_SELF_TEST.md) for the repository's current self-hosted onboarding validation.
+
 This makes correct project reconstruction an observable handshake rather than an assumption.
 
 ## Two project outputs
