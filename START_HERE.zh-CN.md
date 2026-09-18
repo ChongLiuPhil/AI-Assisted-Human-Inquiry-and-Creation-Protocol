@@ -21,14 +21,18 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
 4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 5. `AGENTS.zh-CN.md`
-6. `docs/working-memory.zh-CN.md` — 先确定当前阶段、目标、任务、阻塞、待确认事项与下一步
-7. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
-8. 与当前任务相关的 Layer 1 canonical Core / Decision Log
-9. 与当前任务相关的 Layer 2 Framework state
-10. 与当前任务相关的 Layer 3 Artifact / Evidence
-11. 对应英文 mirror，仅用于 parity 核验
+6. `docs/working-memory.zh-CN.md` — Working Memory Index
+7. `docs/working-memory/current-focus.zh-CN.md` — 先确定当前最重要的目标、blocker 与立即 next action
+8. `docs/working-memory/task-plan.zh-CN.md` — 再读取动态任务、待办、待确认事项与计划
+9. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
+10. 与当前任务相关的 Layer 1 canonical Core / Decision Log
+11. 与当前任务相关的 Layer 2 Framework state
+12. 与当前任务相关的 Layer 3 Artifact / Evidence
+13. 对应英文 mirror，仅用于 parity 核验
 
 旧 `docs/clarification-register.zh-CN.md` 只是兼容指针，不再承载 active state。
+
+`docs/working-memory/work-log.zh-CN.md` 主要供人类作者回顾，默认不属于 mandatory read order。只有历史回顾、审计、变迁重建或 current/history conflict 时才按需读取。
 
 对于 HARC 方法论文章，具体路径由 `HARC_MANIFEST.yaml` 给出。
 
@@ -70,12 +74,14 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 
 ### C. Working Memory 状态
 
-- 当前阶段与 CURRENT_OBJECTIVE；
-- ACTIVE_TASKS / RECENTLY_COMPLETED / NEXT_ACTIONS；
+- Current Focus：CURRENT_STAGE / CURRENT_OBJECTIVE / PRIMARY_BLOCKER / IMMEDIATE_NEXT_ACTION；
+- Task Plan：ACTIVE_TASKS / NEXT_ACTIONS / TODO / BACKLOG；
 - BLOCKERS；
 - PENDING_HUMAN_DECISIONS / Clarifications；
-- TODO / SYNC_DEFECTS；
+- SYNC_DEFECTS；
 - 哪些问题必须先问人类才能继续。
+
+Work Log 不要求在 Onboarding Report 中复述。
 
 ### D. Framework / Artifact 状态
 
