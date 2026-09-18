@@ -7,7 +7,7 @@ Critical Clarification is no longer an independent “Layer 1.5”.
 
 All active clarifications, blockers, pending human decisions, and related work state now live in:
 
-`docs/working-memory.zh-CN.md`
+`docs/working-memory/task-plan.zh-CN.md`
 
 Clarification workflow:
 
