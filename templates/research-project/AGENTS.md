@@ -88,7 +88,9 @@ Persist first, then propagate upstream-first.
 
 Human content decisions outrank AI drafts. AI proposals remain visibly pending until accepted.
 
-The AI Agent is a collaboration tool. Do not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as normative terminology; identify the concrete search, synthesis, drafting, restructuring, checking, and related work AI performs or assists. The purpose, central problem, and direction of the research or creative project must originate with the human or be explicitly authorized by the human, and core responsibility remains human.
+The AI Agent is a collaboration tool. Do not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as normative terminology; identify the concrete search, synthesis, drafting, restructuring, checking, and related work AI performs or assists.
+
+The purpose, central problem, and direction of the research or creative project must originate with the human or be explicitly authorized by the human. More precisely, humans must remain the bearers of responsibility; AI may share work but cannot become the ultimate bearer of responsibility for project purpose, core judgment, framework authorization, or public dissemination of knowledge.
 
 ## Form rules
 
@@ -114,7 +116,9 @@ Run a Working Memory / Clarification Scan before Framework Approval, formal tran
 
 Create `docs/frameworks/FW-xxx.zh-CN.md` and its English mirror only after explicit human Framework Approval. Do not silently modify an approved snapshot.
 
-The Approved Framework is the primary substantive intellectual baseline and the structural anchor of human core intellectual responsibility. Before Framework Approval, the human must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in the proposed framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework. Distinguish framework-level defects from local defects introduced only in later AI expansion.
+The Approved Framework is the primary substantive intellectual baseline and the structural anchor of core intellectual responsibility borne by humans. Before Framework Approval, the human must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in the proposed framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework. Distinguish framework-level defects from local defects introduced only in later AI expansion.
+
+AI may help construct the framework, but it cannot become the ultimate bearer of intellectual responsibility for it.
 
 ## Evidence rules
 
@@ -123,6 +127,8 @@ If evidence conflicts with a current human commitment, surface the conflict expl
 ## Artifact status
 
 AI-expanded prose remains `DERIVED-PROVISIONAL` until the applicable final human approval is recorded.
+
+If the artifact will enter public circulation, Final Artifact Approval must retain identifiable human bearers of responsibility. AI generation, expansion, editing, or checking must not be interpreted as transferring ultimate responsibility for public knowledge dissemination to AI.
 
 ## Bilingual synchronization
 
