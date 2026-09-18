@@ -9,9 +9,9 @@
 
 ---
 
-## Clarification Register 映射
+## Working Memory / Clarification 映射
 
-本 memo 现在只作为**分析附件**。高影响未决问题的正式操作状态已经迁移到 `docs/clarification-register.zh-CN.md`：
+本 memo 现在只作为**分析附件**。高影响未决问题的正式操作状态现在维护在 `docs/working-memory.zh-CN.md` 的 PENDING_HUMAN_DECISIONS / CLARIFICATIONS 区：
 
 - 原 D1 -> `CLR-001`
 - 原 D2 -> `CLR-002`
@@ -20,7 +20,7 @@
 - 原 D5 -> `CLR-007`
 - 原 D6 -> `CLR-008`
 
-如果本 memo 与 Clarification Register 在状态、严重度或人类答复上冲突，以 Clarification Register 为当前操作界面；最终人类决定仍必须提升到 Decision Log 与相应 Core。
+如果本 memo 与 Working Memory 在状态、严重度或人类答复上冲突，以 Working Memory 为当前操作界面；最终人类决定仍必须 Promotion 到 Decision Log 与相应长期记忆。
 
 # 1. 总体评估
 
