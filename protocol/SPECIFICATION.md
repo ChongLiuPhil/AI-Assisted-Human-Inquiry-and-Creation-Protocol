@@ -429,11 +429,12 @@ A project SHOULD provide at repository root:
 - `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror;
 - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror;
 - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror;
-- `HARC_MANIFEST.yaml` or equivalent machine-readable state index;
+- `HARC_MANIFEST.yaml`;
+- `HARC_CONTEXT_INTERFACE.yaml` or equivalent machine-readable context policy;
 - root `AGENTS.zh-CN.md` / English mirror;
 - a discoverable Onboarding Handshake specification.
 
-Before substantive work, a new AI Agent MUST follow the startup read order and SHOULD first output a HARC Onboarding Report covering protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and permitted next action. The Onboarding Report MUST echo `HARC ACTIVE SESSION CONTRACT — LOADED`, rewriting the compressed key rules and current state into the active conversation context.
+Before substantive work, a new AI Agent MUST follow the startup read order and SHOULD first output a HARC Onboarding Report covering protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and permitted next action. The Onboarding Report MUST confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the access kernel; dynamic Blocking Clarifications, Framework, Artifact, and Core state must still be retrieved on demand from latest canonical GitHub revisions.
 
 If the Agent cannot produce this report from repository state, the project has an onboarding/persistence defect.
 
