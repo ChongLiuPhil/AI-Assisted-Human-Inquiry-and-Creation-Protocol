@@ -189,12 +189,25 @@ The entry should include at least:
 - a root `AGENTS` contract;
 - a machine-readable HARC manifest or equivalent index;
 - an explicit mandatory read order;
-- entry points for the Clarification Register, Framework Status, Working/Approved Framework, and Artifact status;
+- a Working Memory Index;
+- Current Focus;
+- Task Plan;
+- entry points for Framework Status, Working/Approved Framework, and Artifact state;
 - a copyable bootstrap prompt for arbitrary AI agents.
 
-Before substantive modification, a new AI Agent should complete an **Onboarding Handshake**: report protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and the permitted next action.
+Before substantive modification, a new AI Agent should complete an **Onboarding Handshake** reporting at least:
 
-If the Agent cannot produce that report from repository state alone, the project has an onboarding/persistence defect that should be repaired before large-scale research or writing continues.
+- the highest-priority current objective;
+- primary blocker and immediate next action;
+- active tasks and TODO/backlog;
+- pending human decisions / Clarifications;
+- Framework / Artifact state;
+- synchronization defects;
+- permitted and blocked next actions.
+
+Work Log is outside the default zero-context takeover read set. Retrieve it only for human historical review, dedicated audit, reconstruction of direction changes, or current/history conflict.
+
+If the Agent cannot produce this report from repository state alone, the project has an onboarding/persistence defect that should be repaired before large-scale research or writing continues.
 
 No protocol file can guarantee that every external platform automatically reads a particular filename. HARC therefore aims for **maximal discoverability plus verifiable onboarding** through root-level entry files, a general agent contract, a machine manifest, README navigation, and a copyable prompt, so that any repository-capable agent that follows project instructions can reconstruct the same workflow.
 
@@ -210,7 +223,7 @@ HARC durable state lives in the repository. After takeover, an AI Agent may reta
 - when repository state must be refetched;
 - how stale cache is invalidated after writes.
 
-It should **not maintain long-lived copies** of Blocking Clarifications, Framework state, Artifact state, Core content, or other dynamic research state.
+It should **not maintain long-lived copies** of Current Focus, Task Plan, Framework state, Artifact state, Core content, or other dynamic research state.
 
 Dynamic state should be fetched on demand from the latest canonical GitHub revision. Earlier Onboarding Reports, session summaries, file excerpts, and model memory are non-authoritative cache.
 
