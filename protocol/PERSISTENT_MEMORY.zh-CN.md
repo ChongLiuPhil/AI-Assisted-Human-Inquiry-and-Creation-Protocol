@@ -18,6 +18,44 @@ HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个
 
 如果会，就应持久化。
 
+## 三层长期记忆与并行 Working Memory
+
+HARC 的研究记忆不是单一平面。
+
+### Long-Term Research Memory
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+- **Layer 1**：人类作者核心基础，最稳定、最具规范权威；
+- **Layer 2**：当前论述框架，持久但更可修改，以 Layer 1 为上游约束；
+- **Layer 3**：完整派生成果，主要从 Layer 2 展开。
+
+### Working Memory
+
+与三层长期记忆并行，维护：
+
+- 当前阶段；
+- 当前目标；
+- active tasks；
+- completed / uncompleted；
+- next actions；
+- TODO / backlog；
+- blockers；
+- pending human decisions；
+- clarifications；
+- sync defects；
+- handoff note。
+
+Working Memory 是“从哪里继续”的操作接口，不是长期实质性真值源。
+
+Clarification 是 Working Memory item，不再是 Layer 1.5。
+
+稳定结果通过 Promotion 进入长期记忆：
+
+`Working Memory resolution -> Decision Log -> appropriate Long-Term Memory destination`
+
+Promotion 后，Working Memory 只保留状态与指针。
+
 ## 什么内容放在哪里
 
 | 持久状态 | 规范位置 |
@@ -25,7 +63,8 @@ HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个
 | 研究意义、命题、区分 | `core/CONTENT_CORE.zh-CN.md` |
 | 形式、版式、风格、成果类型 | `core/FORM_CORE.zh-CN.md` |
 | 人类历史决定 | `core/DECISION_LOG.zh-CN.md` |
-| 高影响未决澄清 | `docs/clarification-register.zh-CN.md` |
+| 当前目标、任务、阻塞、待澄清与 handoff | `docs/working-memory.zh-CN.md` |
+| 旧 Clarification 路径 | `docs/clarification-register.zh-CN.md`（兼容指针，不再承载 active state） |
 | 当前论证结构 | `docs/argument-map.zh-CN.md` |
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
 | 批准/同步状态 | `docs/framework-status.zh-CN.md` |
@@ -56,15 +95,16 @@ HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 
 ### 当前活动状态
 
-日常应保持可快速读取：
+日常接管时首先读取 Working Memory，了解“现在做到哪里”。
 
-- Content Core；
-- Form Core；
-- 最近 Decision Log；
-- 当前 Critical Clarification Register；
-- Working Argument Map；
-- Framework Status；
-- 最新 Approved Framework。
+随后只根据当前任务选择性读取：
+
+- Layer 1：Content / Form / Protocol Core 与相关 Decision Log；
+- Layer 2：Working Argument Map、Framework Status、最新 Approved Framework；
+- Layer 3：相关 Artifact；
+- task-relevant Evidence。
+
+Working Memory 本身保存当前工作状态和指针，而不是复制长期层的全部内容。
 
 ### 历史状态
 
@@ -113,7 +153,7 @@ Session Context Bootstrap 只保存 Repository Resolver，也就是“如何找�
 
 ## 新 Agent 重建目标
 
-在回答这些问题之前，新 Agent 应先完成 `START_HERE.zh-CN.md` 定义的 Onboarding Handshake，激活 `HARC REPOSITORY CONTEXT — ACTIVE`，然后按照 `HARC_MANIFEST.yaml` 与 `HARC_CONTEXT_INTERFACE.yaml` 按需读取最新状态。
+在回答这些问题之前，新 Agent 应先完成 Onboarding Handshake，激活 `HARC REPOSITORY CONTEXT — ACTIVE`，读取 `docs/working-memory.zh-CN.md` 了解当前阶段与续接点，再按照 manifest/context interface 从三层长期记忆中按需读取最新权威状态。
 
 一个新的、能力合格的 Agent 应能回答：
 
