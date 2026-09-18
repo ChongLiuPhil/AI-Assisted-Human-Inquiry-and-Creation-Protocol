@@ -1,5 +1,7 @@
 # Founding-Idea Integration Audit
 
+> **Language:** Chinese canonical: `FOUNDING_IDEA_AUDIT.zh-CN.md`; this English file is the synchronized mirror.
+
 **Audit date:** 2026-09-17  
 **Scope:** Human-originated ideas stated during the conversations that led to HARC.  
 **Status:** Three-pass audit completed.
@@ -16,11 +18,34 @@ The founding discussions were checked three times using different criteria.
 
 Question: **Has each distinct human-originated collaboration idea been represented somewhere in HARC without being silently replaced by an AI reinterpretation?**
 
-### Pass 2 — Operational coverage
+#### F21 — Bilingual Chinese/English governance
+
+**Founding idea (added 2026-09-18):** all substantive HARC project content must be maintained in Chinese and English; Chinese is the canonical editing/review baseline; every substantive edit must synchronize the English mirror; Chinese governs conflicts.
+
+**Implemented in:**
+
+- Protocol Core P18
+- HARC-D015
+- `protocol/BILINGUAL_SYNC.zh-CN.md`
+- Specification bilingual synchronization section
+- AGENTS bilingual contract
+- repository-wide bilingual migration
+
+**Status:** MIGRATION / PARITY AUDIT IN PROGRESS; update to FULLY INTEGRATED after final bilingual parity audit.
+
+---
+
+# Pass 2 — Operational coverage
 
 Question: **Is each idea merely described, or can a project actually execute it through files, states, templates, update paths, and approval rules?**
 
-### Pass 3 — New-agent handoff simulation
+##### Gap D — Bilingual governance required retrofitting legacy single-language files
+
+**Fix:** added Chinese-canonical / English-mirror governance and initiated repository-wide migration. Final status is verified by a dedicated bilingual parity audit.
+
+---
+
+# Pass 3 — New-agent handoff simulation
 
 Question: **If the original chat disappears and a new competent AI agent receives only the repository, can it reconstruct and continue the intended collaboration model?**
 
@@ -403,6 +428,10 @@ Assumption: the original conversation is unavailable. The new agent receives onl
 
 **Yes in principle.** The persistent-memory protocol defines active state, historical state, indexes, archives, and selective retrieval.
 
+## Can the agent determine which language is authoritative?
+
+**Yes.** The Chinese-canonical / English-mirror rule is now explicit in Protocol Core, Specification, AGENTS, and the bilingual synchronization policy.
+
 ## Can the agent tell whether current prose is merely provisional?
 
 **Yes.** Artifact states distinguish `DERIVED-PROVISIONAL`, `FINAL-REVIEW`, and `FINAL-APPROVED`.
@@ -434,6 +463,6 @@ After the three-pass review and the fixes made during it:
 - framework-vs-expansion responsibility has been made explicit in founder-level state;
 - new-agent handoff has been strengthened with protocol-version pinning;
 - no specific objective-probability research content is required by HARC;
-- open-source licensing remains the one unresolved founder-level implementation decision.
+- open-source licensing remains an unresolved founder-level implementation decision; the bilingual migration added on 2026-09-18 is separately tracked until parity verification completes.
 
 Future audits should compare new founder decisions against this document and update the Protocol Core/Decision Log first when a genuine new design commitment appears.
