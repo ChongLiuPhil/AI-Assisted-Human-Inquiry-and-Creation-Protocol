@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **102**
-- Chinese canonical files (`*.zh-CN.md`): **51**
-- English mirrors: **51**
+- total Markdown files: **108**
+- Chinese canonical files (`*.zh-CN.md`): **54**
+- English mirrors: **54**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
@@ -121,7 +121,7 @@ Bilingualized:
 
 New-project templates now initialize Chinese canonical + English mirror instead of requiring later translation.
 
-### 3.6 Critical Clarification Layer
+### 3.6 Critical Clarification mechanism (historical stage; superseded by Working Memory)
 
 A later human-originated governance requirement added three new bilingual file pairs:
 
@@ -187,6 +187,28 @@ HARC-D020 formalizes:
 Session Context Bootstrap is now a Repository Resolver; dynamic Blocking Clarifications, Framework, Artifact, and Core state must be retrieved on demand from latest canonical GitHub revisions.
 
 The latest recursive scan reports **102 Markdown files = 51 Chinese canonical + 51 English mirrors, with 0 missing counterparts**.
+
+### 3.11 Working Memory
+
+HARC-D021 retires the independent “Layer 1.5” model and adds three bilingual Working Memory pairs:
+
+- `protocol/WORKING_MEMORY.zh-CN.md` / English mirror;
+- `docs/working-memory.zh-CN.md` / English mirror;
+- `templates/research-project/docs/working-memory.zh-CN.md` / English mirror.
+
+Legacy `docs/clarification-register*` paths remain as compatibility pointers but no longer carry active state.
+
+The new memory model is:
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+in parallel with:
+
+`Working Memory = stage / goals / tasks / blockers / pending decisions / clarifications / TODO / handoff`
+
+Clarification is now a Working Memory item; human-resolved stable content is promoted into the appropriate Long-Term Memory destination.
+
+The latest recursive scan reports **108 Markdown files = 54 Chinese canonical + 54 English mirrors, with 0 missing counterparts**.
 
 ## 4. High-risk semantic mismatches repaired
 
