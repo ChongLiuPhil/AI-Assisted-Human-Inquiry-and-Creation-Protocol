@@ -219,3 +219,48 @@ The human reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole a
 ## Current log boundary
 
 This log currently contains high-level historical summaries backfilled from Decision Log and canonical protocol files. Future entries should be appended at meaningful milestones rather than reproducing conversations verbatim.
+
+---
+
+## 2026-09-18 — Repository-wide collaboration architecture audit: from rule completeness to complexity governance
+
+**Role:** AI-maintained audit on the PROTOCOL route; does not create a new Human Protocol Decision.
+
+**Scope reviewed:**
+
+- root zero-context entry points;
+- Manifest / Context Interface control plane;
+- AGENTS / README / Onboarding Handshake;
+- Working Memory;
+- methodology-article governance entry points;
+- bilingual synchronization;
+- historical audits/self-tests;
+- reusable research-project template;
+- open-release readiness.
+
+**Synchronization defects repaired directly:**
+
+- README duplicated a second onboarding read order that could drift; it now points to START_HERE / Manifest authoritative routing instead;
+- README copied stale live Clarification Gate state; it now points to Framework Status / Current Focus / Task Plan for live state;
+- ONBOARDING_SELF_TEST displayed old blockers from test time and could be mistaken for live state; it is now explicitly marked as a historical snapshot / live state superseded, with future tests expected to record tested revisions.
+
+**AI-PROPOSED architecture upgrades still awaiting human decision:**
+
+Recorded in Task Plan as `WM-PROP-001..008`, including:
+
+- lightweight onboarding;
+- Manifest / Context Interface separation and compatibility versioning;
+- strict static-navigation / live-state separation;
+- scalable Decision Log indexing;
+- bilingual synchronization automation;
+- formal open-release infrastructure;
+- machine-verifiable conformance;
+- template de-duplication.
+
+**Overall judgment:**
+
+HARC's main problem is no longer missing governance rules. The next risk comes from rapid growth in governance assets: entry-point complexity, copied state, manual synchronization cost, and stale-state regressions. The next phase should prioritize complexity governance rather than adding more parallel explanatory files.
+
+**Normative status:**
+
+These architecture upgrades remain `AI-PROPOSED`. Other than synchronization repairs, no new architecture proposal was promoted into Protocol Core / Decision Log.
