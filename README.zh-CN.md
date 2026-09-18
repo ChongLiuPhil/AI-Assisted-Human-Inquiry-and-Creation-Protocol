@@ -17,8 +17,10 @@
 先读取：
 
 1. [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)
-2. `HARC_MANIFEST.yaml`
-3. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+2. [`BOOTSTRAP_PROMPT.zh-CN.md`](BOOTSTRAP_PROMPT.zh-CN.md)
+3. `HARC_MANIFEST.yaml`
+4. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+5. [`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`](ONBOARDING_REPORT_TEMPLATE.zh-CN.md)
 
 然后按照启动文件的 mandatory read order 重建项目状态，并在做任何实质性修改前向人类提交一份 **HARC Onboarding Report**。
 
@@ -76,6 +78,10 @@ HARC 通过区分**人类意图、操作性表示、证据、形式、批准、�
 project/
 ├── START_HERE.zh-CN.md
 ├── START_HERE.md
+├── BOOTSTRAP_PROMPT.zh-CN.md
+├── BOOTSTRAP_PROMPT.md
+├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
+├── ONBOARDING_REPORT_TEMPLATE.md
 ├── HARC_MANIFEST.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
