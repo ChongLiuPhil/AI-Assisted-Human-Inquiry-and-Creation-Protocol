@@ -1,6 +1,6 @@
 # 方法论文章 — Working Argument Map
 
-**状态：** `WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`  
+**状态：** `WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`  
 **成果类型：** 方法论文章  
 **人类批准：** 尚未完成  
 **派生草稿状态：** `DERIVED-PROVISIONAL`
@@ -411,14 +411,14 @@ T1 + T2 + T4 + T5 + T6 + T7
 - `CLR-007` — 经验验证计划；
 - `CLR-008` — 学科/投稿方向。
 
-完整候选解释、AI 建议、影响范围和人类答复字段见 Clarification Register；Argument Map 不再重复维护同一澄清的全部细节。
+完整候选解释、AI 建议、影响范围和人类答复字段见 Working Memory；Argument Map 不再重复维护同一澄清的全部细节。
 
 ---
 
 # 8. 当前同步状态
 
 - Founder commitments -> Article Content Core：`SYNC AFTER PROVENANCE CORRECTION`。
-- Article Content Core -> 本 map：`SYNC`，并已加入 T9 Critical Clarification Governance。
+- Article Content Core -> 本 map：`SYNC`，并已加入 T9 Working Memory / Clarification Governance。
 - 本 map -> 方法论文章草稿：`PARTIALLY SYNC`；当前草稿仍反映较早 12 部分组织与部分更强 AI 术语，因此在人类审阅 framework 之前不应进行结构性重写。
 - Evidence layer -> policy/literature claims：`RECHECKED 2026-09-17`；投稿前必须重新核验目标渠道的时效性政策。
 - Clarification Gate：`OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`。
