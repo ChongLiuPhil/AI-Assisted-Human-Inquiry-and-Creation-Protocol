@@ -14,7 +14,7 @@
 
 生成式人工智能正在显著改变研究工作的劳动结构。文献检索、观点整理、论证重构、草稿生成、语言编辑、格式转换乃至部分形式化工作，都可以由 AI Agent 以远高于传统人工流程的速度完成。然而，研究者的阅读速度、理解能力、判断能力与责任承担能力并不会按同样比例增长。由此出现一个比“AI 是否可以写论文”更基础的方法论问题：当大量认知劳动可以被机器辅助甚至自动执行时，人类研究者究竟还必须理解什么、确认什么、判断什么，并对什么承担责任？
 
-本文提出 Human–AI Research Collaboration Protocol（HARC）作为一种以 GitHub 为当前主要实现平台的持久、显性、可审计的人机研究协作架构。HARC 不把聊天窗口或某个模型的私有上下文视为研究项目的长期记忆，而把经过版本控制的仓库文本视为持续发展的研究状态。协议区分人类作者的研究内容意图、形式表达意图、AI 所维护的操作性论证框架、证据约束、历史决策以及最终派生文本，并通过 Content Core、Form Core、Decision Log、Critical Clarification Register、Working Argument Map、Approved Framework Snapshot 等文件结构建立一种“语义版本控制”。
+本文提出 Human–AI Research Collaboration Protocol（HARC）作为一种以 GitHub 为当前主要实现平台的持久、显性、可审计的人机研究协作架构。HARC 不把聊天窗口或某个模型的私有上下文视为研究项目的长期记忆，而把经过版本控制的仓库文本视为持续发展的研究状态。协议把项目的长期研究记忆分为三层：Layer 1 的人类作者核心基础、Layer 2 的当前论述框架、Layer 3 的派生成果；同时维护一个与三层并行的 Working Memory，用来记录当前阶段、目标、任务、阻塞、待确认事项、clarification、TODO 与 handoff。Content Core、Decision Log、Working Argument Map、Approved Framework Snapshot 与 Working Memory 等文件共同形成可追踪的研究状态治理。
 
 本文进一步提出：AI 时代的人类责任不应被理解为“人类必须亲自完成每一句文字”，也不能被理解为“只要 AI 足够强，人类即可将认知责任整体委托出去”。更合理的方向是责任集中（responsibility concentration）：把有限的人类注意力集中到高杠杆的认识论节点，包括研究目标、核心命题、主要推论关系、决定性证据冲突、论证框架确认以及最终发布确认。本文据此区分认知劳动的委托与认识责任的委托、框架缺陷与扩写缺陷、Framework Approval 与 Final Artifact Approval，并讨论这种架构与扩展心灵、分布式认知、认识依赖、自动化依赖以及现有学术作者规范之间的关系。
 
@@ -105,17 +105,31 @@ Decision Log 因而保存决策轨迹：何时改变某个主张、何时接受�
 
 可以说：Core 表示当前有效状态，Log 表示我们如何走到这里。
 
-### 4. Critical Clarification Register：把高影响不确定性提交人类治理
+### 4. Working Memory：把当前工作状态与高影响不确定性放在并行操作层
 
-在 Content/Form Core 与 Working Argument Map 之间，HARC 增加一个 **Layer 1.5**：Critical Clarification Register。
+HARC 不再把 Critical Clarification 理解为 Content/Form Core 与 Working Argument Map 之间的 “Layer 1.5”。
 
-它处理的不是所有小问题，而是那些一旦误解就可能显著改变核心命题、关键概念、范围、主要推论关系、章节功能或关键术语/翻译的高影响不确定性。
+更准确的架构是：三个主要内容层都属于长期研究记忆。
 
-当 AI 对这些内容存在多个合理解释时，其职责不是“选择自己认为最可能的版本然后继续”，而是把不确定性显式提升出来，说明候选解释、影响、严重度以及需要人类回答的问题。
+第一层是 **Human Authorial Core**。它保存人类作者主动表达、纠正、确认和持续净化后的核心观点与长期承诺，是最稳定的语义基础。
 
-未解决条目不是人类作者的立场。只有在人类明确确认或纠正后，结果才通过 Decision Log 进入相应 Core，再传播到 Working Argument Map 与正文。
+第二层是 **Current Framework**。它保存当前论述结构、核心命题、关键概念、推论关系与章节功能。它以第一层为基础，但可以包含第一层没有逐项表达的结构化内容。它比第一层更可修改，却仍属于长期项目记忆。
 
-这个机制尤其重要于母语写作和跨语言表达：关键概念的中文含义与英文对应关系如果尚未确认，就不应由翻译过程静默决定。
+第三层是 **Derived Artifact**。论文、书稿或报告主要由第二层展开生成，同时必须与第一层及证据约束保持兼容。
+
+与这三个长期层并行，HARC 维护 **Working Memory（工作记忆区）**。Working Memory 回答的不是“项目最终主张什么”，而是“项目现在做到哪里、下一步从哪里继续”。它记录当前阶段、工作目标、总体计划、active tasks、最近完成、next actions、TODO、blockers、pending human decisions、clarifications、同步缺陷与 handoff note。
+
+高影响不确定性现在只是 Working Memory 中的一种 Clarification item。当 AI 对核心命题、关键概念、范围、推论关系、章节功能或关键术语存在多个合理解释时，不应自行选择，而应把问题放入 Working Memory 等待人类确认。
+
+人类确认后，结果执行 Promotion：
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+如果涉及人类核心内容，继续传播为：
+
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+
+因此，Working Memory 的功能不是成为第四个内容层，而是提供一个可续接的操作界面。被解决的条目退出 active 状态；权威答案沉淀到长期记忆中，Working Memory 只保留 Decision ID 与目标文件指针。
 
 ### 5. Working Argument Map：真正适合人机讨论的中间层
 
@@ -263,15 +277,15 @@ HARC 的另一个设计原则可以概括为：
 
 但仅仅“仓库里有这些文件”还不等于新的 Agent 会正确读取它们。不同 AI 平台对入口文件、自动上下文和仓库指令的发现机制并不完全一致。因此 HARC 还需要一个**零上下文启动协议**：根目录 `START_HERE`、机器可读 manifest、明确的 mandatory read order，以及新 Agent 在实质工作前提交的 Onboarding Report。
 
-这个握手把“Agent 是否真正理解项目”从一个隐含假设变成可观察检查。Agent 应先报告它识别出的当前人类承诺、Blocking Clarifications、Working/Approved Framework、成果状态与同步缺陷；如果这些内容无法从仓库恢复，就说明存在 persistence/onboarding defect，应先修复而不是继续大规模扩写。
+这个握手把“Agent 是否真正理解项目”从一个隐含假设变成可观察检查。Agent 应先从 Working Memory 报告当前阶段、工作目标、active tasks、最近完成、next actions、blockers 与 pending human decisions，然后再按任务读取长期 Core、Framework 与 Artifact；如果这些内容无法从仓库恢复，就说明存在 persistence/onboarding defect，应先修复而不是继续大规模扩写。
 
 更进一步，HARC 不需要在聊天中再维护一份动态项目状态副本。更准确的机制是 **Repository-Backed Context Interface**：GitHub 同时承担权威外部记忆与工作状态库，而模型上下文只保存一个极小的 Repository Resolver，并按当前任务临时读取所需文件。
 
-因此，Blocking Clarifications、Framework、Artifact、Core 与 Decision Log 的真实当前状态都保留在 GitHub。Agent 在需要时从最新 canonical revision 获取相关内容；高影响判断或写入前重新确认 revision；更新直接写回仓库；写入后，之前进入模型上下文的旧摘录立即视为 stale。所谓 `HARC CONTEXT REFRESH` 也不再意味着把整个项目重新复制进聊天，而是重新解析当前任务依赖并 fresh-fetch 相关文件。
+因此，Working Memory 与三层长期研究记忆的真实当前状态都保留在 GitHub。Working Memory 提供续接位置；Layer 1/2/3 提供长期思想与成果状态。Agent 在需要时从最新 canonical revision 获取相关内容；高影响判断或写入前重新确认 revision；更新直接写回仓库；写入后，之前进入模型上下文的旧摘录立即视为 stale。所谓 `HARC CONTEXT REFRESH` 也不再意味着把整个项目重新复制进聊天，而是重新解析当前任务依赖并 fresh-fetch 相关文件。
 
 这并不意味着模型能够“完全不使用上下文”。任何一次推理仍然需要相关信息临时进入模型可用上下文。HARC 所改变的是权威位置和生命周期：**GitHub 是真值源，模型上下文只是当前任务对仓库状态的一次短期投影。**
 
-这并不会创造“无限上下文”。随着项目变大，历史资料仍然可能远超任何一次模型上下文。因此 HARC 采用活动状态与历史状态分层：Core、最新 Framework 和 Argument Map 保持压缩；详细日志、旧版本、证据和档案可以持续增长，并通过索引与选择性检索按需读取。
+这并不会创造“无限上下文”。随着项目变大，历史资料仍然可能远超任何一次模型上下文。因此 HARC 让 Working Memory 保持短小而当前，让 Layer 1 Core 和 Layer 2 Framework 保持紧凑，并把详细日志、旧版本、证据和档案交给历史层与选择性检索。
 
 这使项目从“依赖一个巨大对话”转变为“依赖可恢复的显性状态”。
 
