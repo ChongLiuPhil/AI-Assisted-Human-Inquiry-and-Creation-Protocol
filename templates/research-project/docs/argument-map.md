@@ -53,7 +53,7 @@ For each major part, state what intellectual work it performs.
 
 - `AI-PROPOSED — ...`
 
-## 11. Synchronization status
+## 12. Synchronization status
 
 - Content Core vs map: `SYNC / OUT-OF-SYNC`
 - Approved framework vs map: `N/A / SYNC / MATERIAL CHANGE PENDING`
