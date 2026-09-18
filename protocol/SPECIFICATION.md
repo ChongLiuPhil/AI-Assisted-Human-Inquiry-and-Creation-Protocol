@@ -428,11 +428,12 @@ A project SHOULD provide at repository root:
 - `START_HERE.zh-CN.md` / English mirror;
 - `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror;
 - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror;
+- `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror;
 - `HARC_MANIFEST.yaml` or equivalent machine-readable state index;
 - root `AGENTS.zh-CN.md` / English mirror;
 - a discoverable Onboarding Handshake specification.
 
-Before substantive work, a new AI Agent MUST follow the startup read order and SHOULD first output a HARC Onboarding Report covering protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and permitted next action.
+Before substantive work, a new AI Agent MUST follow the startup read order and SHOULD first output a HARC Onboarding Report covering protocol state, human-confirmed state, Form state, Blocking Clarifications, Framework/Artifact state, synchronization defects, and permitted next action. The Onboarding Report MUST echo `HARC ACTIVE SESSION CONTRACT — LOADED`, rewriting the compressed key rules and current state into the active conversation context.
 
 If the Agent cannot produce this report from repository state, the project has an onboarding/persistence defect.
 
