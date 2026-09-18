@@ -41,6 +41,16 @@ The snapshot should record:
 
 An approved snapshot is immutable. Material change requires a new version.
 
+## 2.5 Clarification Gate
+
+Before Framework Approval, inspect `docs/clarification-register.md`.
+
+As a rule, a framework should not be approved while a `BLOCKING` clarification remains unresolved if it could alter a central thesis, key concept, major inferential relation, scope, or section function.
+
+If the human explicitly chooses to defer an issue, mark it `DEFERRED` and preserve that unresolved status explicitly in the framework rather than pretending it is resolved.
+
+Framework Approval must not rest on key interpretations that the AI privately guessed.
+
 ## 3. What framework approval means
 
 Framework approval is the project's main substantive intellectual checkpoint.
