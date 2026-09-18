@@ -10,7 +10,7 @@ Before substantive research, structural revision, drafting, translation, formatt
 
 **reconstruct current repository state first; do not infer project state from the current chat.**
 
-The durable truth source is the repository, not a previous agent's memory.
+HARC's durable truth source is the repository, not a previous Agent's memory.
 
 ## 1. Required read order
 
@@ -30,7 +30,7 @@ Read Chinese canonical files in this order; use English only for parity checking
 12. task-relevant Layer 3 Artifact / Evidence
 13. corresponding English mirrors only for parity checking
 
-The old `docs/clarification-register.zh-CN.md` is a compatibility pointer and no longer carries active state.
+The old `docs/clarification-register.zh-CN.md` is only a compatibility pointer and no longer carries active state.
 
 `docs/working-memory/work-log.zh-CN.md` is primarily for human retrospective review and is outside the mandatory read order by default. Retrieve it only for historical review, audit, change reconstruction, or current/history conflict.
 
@@ -42,17 +42,21 @@ Before the onboarding handshake is complete, do not:
 
 - infer canonical state from chat;
 - promote AI proposals into human commitments;
-- treat unresolved clarification as resolved;
+- treat unresolved Clarification as resolved;
 - create an Approved Framework;
-- perform large-scale framework restructuring;
+- perform large-scale Working Argument Map restructuring;
 - perform large-scale manuscript rewriting;
 - use English mirrors to overwrite Chinese canonical state;
-- ignore existing `BLOCKING` clarifications;
+- ignore existing `BLOCKING` Clarifications;
 - infer author preferences from tool defaults.
 
 ## 3. Onboarding handshake: output a HARC Onboarding Report first
 
-After the required reading, output the HARC Onboarding Report. Recommended template: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must also follow `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the repository-access kernel, not a duplicate dynamic project state. The report summary is for human verification only; later work must refetch latest canonical repository state on demand.
+After the required reading, output a concise but structured **HARC Onboarding Report**. Recommended template: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must also follow `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and confirm:
+
+`HARC REPOSITORY CONTEXT — ACTIVE`
+
+This loads only the repository-access kernel, not a duplicate dynamic project state. The report summary is for human verification only; later work must refetch latest canonical repository state on demand.
 
 ### A. Protocol state
 
@@ -68,11 +72,16 @@ After the required reading, output the HARC Onboarding Report. Recommended templ
 - active form/presentation decisions;
 - recent important human decisions.
 
-### C. Critical Clarification state
+### C. Working Memory state
 
-- all current `BLOCKING` clarifications;
-- task-relevant `NON-BLOCKING` clarifications;
-- questions that require human resolution before proceeding.
+- Current Focus: CURRENT_STAGE / CURRENT_OBJECTIVE / PRIMARY_BLOCKER / IMMEDIATE_NEXT_ACTION;
+- Task Plan: ACTIVE_TASKS / NEXT_ACTIONS / TODO / BACKLOG;
+- BLOCKERS;
+- PENDING_HUMAN_DECISIONS / Clarifications;
+- SYNC_DEFECTS;
+- questions requiring human resolution before continuing.
+
+Work Log need not be restated in the Onboarding Report.
 
 ### D. Framework / Artifact state
 
@@ -83,13 +92,13 @@ After the required reading, output the HARC Onboarding Report. Recommended templ
 
 ### E. Permitted next action
 
-State what work may safely continue, what is blocked by clarification/approval gates, and which HARC propagation path applies to the current user request.
+State what work may safely continue, what is blocked by Clarification/approval gates, and which HARC propagation path applies to the current request.
 
 ## 4. Standard propagation
 
 For an explicit human decision:
 
-`Human decision -> Decision Log -> appropriate Core -> clarification cleanup if needed -> Working Argument Map -> Derived Artifact -> bilingual parity check`
+`Human decision -> Decision Log -> appropriate Core -> Clarification cleanup if needed -> Working Argument Map -> Derived Artifact -> bilingual parity check`
 
 For high-impact ambiguity:
 
@@ -99,7 +108,9 @@ AI proposals remain `AI-PROPOSED` until accepted.
 
 ## 5. Clarification-first rule
 
-If uncertainty could materially affect a core position, central thesis, key concept, major inference, scope, section function, key primary-language terminology, translation correspondence, or framework structure, do not guess. Use the Clarification Register first.
+If uncertainty could materially affect a core position, central thesis, key concept, major inference, scope, section function, key primary-language terminology, translation correspondence, or framework structure, do not guess. Put it into the Clarification queue in Task Plan first:
+
+`docs/working-memory/task-plan.zh-CN.md`
 
 ## 6. Bilingual rule
 
@@ -127,4 +138,4 @@ If not, repair the onboarding/persistence defect before large-scale work.
 
 # Copyable bootstrap prompt
 
-> You are taking over a research repository governed by the Human–AI Research Collaboration Protocol (HARC). Do not rely on prior chat, account memory, or your own inference to reconstruct project state. First read `START_HERE.zh-CN.md` and `HARC_MANIFEST.yaml`, then follow the required read order. Chinese is canonical and English is the synchronized mirror. Before making any substantive change, output a HARC Onboarding Report covering human commitments, Form state, Blocking/Non-blocking Clarifications, Working/Approved Framework state, Artifact status, synchronization defects, and the permitted next step for the current request. If uncertainty could materially affect core claims, key concepts, terminology/translation, scope, inference, or argument structure, do not guess; register it in the Clarification Register and ask for human resolution. Every explicit human decision must first enter the Decision Log and appropriate Core before propagating to the Argument Map and derived artifact. Never treat a Working Framework as human-approved without explicit Framework Approval.
+> You are taking over a research repository governed by the Human–AI Research Collaboration Protocol (HARC). Do not rely on prior chat, account memory, or your own inference to reconstruct project state. First read `START_HERE.zh-CN.md` and `HARC_MANIFEST.yaml`, then follow the required read order. Chinese is canonical and English is the synchronized mirror. Before making any substantive change, output a HARC Onboarding Report covering human commitments, Form state, Current Focus, Task Plan, Blocking/Non-blocking Clarifications, Working/Approved Framework state, Artifact status, synchronization defects, and the permitted next step for the current request. If uncertainty could materially affect core claims, key concepts, terminology/translation, scope, inference, or argument structure, do not guess; write it into the Clarification queue in `docs/working-memory/task-plan.zh-CN.md` and ask for human resolution. Every explicit human decision must first enter the Decision Log and appropriate Core before propagating to the Argument Map and derived artifact. Never treat a Working Framework as human-approved without explicit Framework Approval.
