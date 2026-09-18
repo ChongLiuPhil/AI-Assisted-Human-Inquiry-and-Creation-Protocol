@@ -436,15 +436,31 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 
 ## 16. Agent 交接
 
+### 16.1 Zero-context Bootstrap
+
+项目 SHOULD 在根目录提供：
+
+- `START_HERE.zh-CN.md` / English mirror；
+- `HARC_MANIFEST.yaml` 或等价机器可读状态索引；
+- 根 `AGENTS.zh-CN.md` / English mirror。
+
+新的 AI Agent 在实质性工作前 MUST 按启动入口定义的顺序读取当前状态，并 SHOULD 先输出 HARC Onboarding Report，说明协议状态、人类已确认状态、Form 状态、Blocking Clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。
+
+如果 Agent 无法从仓库完成该报告，项目存在 onboarding/persistence defect。
+
+### 16.2 常规接管读取
+
 新的 AI Agent 至少应通过阅读以下内容继续正常项目工作：
 
-1. 项目 `AGENTS.zh-CN.md`；
-2. Content Core；
-3. Form Core；
-4. 最近的 Decision Log；
-5. Working Argument Map；
-6. Framework Status 与最新 Approved Framework；
-7. 当前相关成果与证据。
+1. `START_HERE.zh-CN.md` 与 `HARC_MANIFEST.yaml`；
+2. 项目 `AGENTS.zh-CN.md`；
+3. Content Core；
+4. Form Core；
+5. 最近的 Decision Log；
+6. Critical Clarification Register；
+7. Framework Status 与最新 Approved Framework；
+8. Working Argument Map；
+9. 当前相关成果与证据。
 
 项目应记录所采用的 HARC version/tag/commit，避免把后续上游协议变化静默视为已经接受的治理规则。
 
@@ -537,10 +553,13 @@ HARC 项目本身应维护两个互相支撑的产出：
 轻量合规项目至少应包括：
 
 ```text
+START_HERE.zh-CN.md
 AGENTS.zh-CN.md
+HARC_MANIFEST.yaml
 core/CONTENT_CORE.zh-CN.md
 core/FORM_CORE.zh-CN.md
 core/DECISION_LOG.zh-CN.md
+docs/clarification-register.zh-CN.md
 docs/argument-map.zh-CN.md
 docs/framework-status.zh-CN.md
 ```
