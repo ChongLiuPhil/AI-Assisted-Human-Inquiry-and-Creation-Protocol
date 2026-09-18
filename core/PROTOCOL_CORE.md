@@ -263,6 +263,41 @@ It is not a fourth long-term semantic layer and must not replace durable truth s
 
 Stable confirmed content in Working Memory must be promoted into the appropriate long-term memory destination. After Promotion, Working Memory retains only status, Decision ID, and destination pointers.
 
+
+## P24. Working Memory is a functional area, not a fixed single file
+
+The normative object is a **set of Working Memory functions**, not one mandatory physical file.
+
+A project may implement Working Memory as one file or multiple files depending on engineering scale, AI Agent capability, context cost, and workflow convenience. Whatever the physical layout, at least three logical functions should exist:
+
+1. **Current Focus**
+   - stores the most immediate, highest-priority objective;
+   - states the current stage, what the present task/conversation should accomplish, the most important blocker, and immediate next action;
+   - remains extremely short and has highest priority during takeover.
+
+2. **Task Plan**
+   - stores the dynamic plan, TODOs, active tasks, blocked/waiting-human items, backlog, and next actions;
+   - completed tasks leave the active list;
+   - new tasks are added as collaboration develops;
+   - completed work is summarized into Work Log, while stable normative results are also promoted into the appropriate Long-Term Memory destination.
+
+3. **Work Log**
+   - stores a stage-level historical record primarily for later human reading;
+   - records broad progress, major work transitions, changes in intellectual/work direction, completed task batches, and milestones;
+   - is not required reading for normal AI onboarding;
+   - Agents SHOULD update it periodically, but should not read the full log merely to continue current work;
+   - Agents MAY retrieve it when the human asks for historical review, when change history must be reconstructed, when current state conflicts with history, or during dedicated audit.
+
+Work Log must not store hidden model chain-of-thought, scratchpads, or unverifiable internal reasoning. It records auditable project-level changes, expressed reasons, decisions, milestones, and high-level summaries.
+
+Working Memory may expose a stable Index / Resolver that maps these logical roles to current physical files. A lightweight project may map several roles to one file; a complex project may split them.
+
+Recommended takeover sequence:
+
+`Working Memory Index -> Current Focus -> Task Plan -> task-relevant Long-Term Memory`
+
+Work Log is not part of the default mandatory-read path.
+
 ---
 
 ## Current scope
