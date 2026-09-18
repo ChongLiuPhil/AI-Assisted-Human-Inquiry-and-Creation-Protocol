@@ -42,7 +42,10 @@ HARC 有意设计为一个双重输出项目：
 
 当前方法论论文文件：
 
-- [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) — 当前阶段、目标、任务、阻塞、待确认事项、clarification 与 handoff 的工作记忆区。
+- [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) — Working Memory Index / Resolver。
+- [`docs/working-memory/current-focus.zh-CN.md`](docs/working-memory/current-focus.zh-CN.md) — 当前最近期最高优先级目标。
+- [`docs/working-memory/task-plan.zh-CN.md`](docs/working-memory/task-plan.zh-CN.md) — 动态任务、TODO、blockers 与 pending decisions。
+- [`docs/working-memory/work-log.zh-CN.md`](docs/working-memory/work-log.zh-CN.md) — 主要供人类回顾的工作历史纪要，默认不进入 AI onboarding。
 - [`docs/clarification-register.zh-CN.md`](docs/clarification-register.zh-CN.md) — 旧路径兼容指针，不再承载 active state。
 - [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) — `WORKING-FRAMEWORK`，Working Memory / Clarification Gate 仍打开，尚未由人类批准。
 - [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) — 中文 canonical、`DERIVED-PROVISIONAL` 草稿。
@@ -132,15 +135,15 @@ AI 提案不会仅因为有用或写得漂亮，就自动成为作者承诺。
 
 `DECISION_LOG.md` 是人类在内容、形式和协作协议方面作出实质性决定的时间顺序审计轨迹。
 
-### Working Memory
+### Working Memory Area
 
-`docs/working-memory.zh-CN.md` 是与三层长期研究记忆并行的工作记忆区。
+Working Memory 是一个功能区，而不是固定单文件。当前 HARC 参考实现拆为 Index、Current Focus、Task Plan 与 Work Log。
 
 三层长期记忆是：
 
 `Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
 
-Working Memory 不属于 Layer 1.5。它维护当前阶段、目标、active tasks、最近完成、next actions、TODO、blockers、pending human decisions、clarifications、sync defects 与 handoff。
+Working Memory 不属于 Layer 1.5。Current Focus 保存“现在最重要的事”；Task Plan 保存“接下来怎么推进”；Work Log 保存“我们是怎么走到这里的”，主要面向人类作者回顾。
 
 Clarification 是 Working Memory 中的一种 item。人类解决后执行 Promotion：
 
