@@ -202,13 +202,15 @@ Before formal submission, publication, or public release under human authorship,
 
 Framework approval concentrates human attention on intellectual architecture; it does not waive final publication accountability.
 
-## AI-supported work and human responsibility
+## AI-supported work and human bearers of responsibility
 
 HARC does not assume that human value lies in manually producing every sentence. An AI Agent, used as a tool, may perform or assist with substantial search, synthesis, drafting, restructuring, consistency checking, and formatting.
 
-HARC does not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as normative language. The purpose, central problem, and direction of research or creative work originate with humans and remain under human navigation and approval; humans retain core responsibility for the resulting work.
+HARC does not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as normative language. The purpose, central problem, and direction of research or creative work originate with humans and remain under human navigation and approval.
 
-For long-form work, this responsibility is operationalized primarily through the Layer 2 Framework: before Framework Approval, the human must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in the framework. AI may help propose and organize the framework, but it cannot replace human authorization of the project’s direction and intellectual architecture. Final Artifact Approval remains a separate requirement.
+The key point is not to treat “human responsibility” as an abstract property, but to make explicit that **humans must remain the bearers of responsibility.** This applies throughout research and inquiry and becomes especially important when papers, books, reports, or other outputs enter public knowledge circulation. AI may share work, but it cannot become the ultimate bearer of responsibility for project purpose, core judgment, framework authorization, or public dissemination of knowledge.
+
+For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Framework: before Framework Approval, the human must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in the framework. AI may help propose and organize the framework, but it cannot replace human authorization of the project's direction and intellectual architecture. Final Artifact Approval remains a separate requirement, ensuring that the concrete public version retains identifiable human bearers of responsibility for release.
 
 This responsibility model is developed in the methodology article.
 
