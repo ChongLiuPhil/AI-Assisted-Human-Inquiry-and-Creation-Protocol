@@ -2,7 +2,7 @@
 
 > Chinese `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` is canonical; this English file is its synchronized mirror.
 
-**Status:** `WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`  
+**Status:** `WORKING-FRAMEWORK — REVIEW READY / BLOCKING CLARIFICATIONS RESOLVED; HUMAN APPROVAL PENDING`  
 **Artifact:** methodology article  
 **Human approval:** not yet completed  
 **Derived draft status:** `DERIVED-PROVISIONAL`
@@ -85,15 +85,17 @@ The expression **semantic version control** is `AI-PROPOSED` terminology for thi
 
 ---
 
-## T3 — Cognitive Delegation / Human Governance Thesis
+## T3 — AI Tool Work / Human Purpose and Governance Thesis
 
 **Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-Large amounts of cognitive labor may be delegated to AI, but this does not imply wholesale delegation of human understanding, judgment, confirmation, or responsibility. A human-governed research process must identify which high-level intellectual decisions remain meaningfully human-controlled.
+The purpose, central problem, and direction of a research or creative project should be given and initiated by humans and remain under human navigation or approval. Within HARC, an AI Agent is a tool that may perform or assist with extensive search, synthesis, structuring, drafting, restructuring, checking, formatting, and related work. It should not be characterized as a cognitive subject, and “AI performs cognitive labor / cognitive tasks” should not be used as the article’s central language.
 
-Candidate high-leverage responsibility nodes include:
+AI capacity to perform substantial work does not transfer the project’s purpose, core judgments, or ultimate core responsibility to AI. Humans must retain actual understanding, navigation, and authorization of what the work is trying to achieve.
 
-- research purpose and question selection;
+Current high-leverage human responsibility nodes include at least:
+
+- research purpose, problem, and direction;
 - acceptance/rejection of core claims;
 - major inferential relations;
 - treatment of decisive evidence conflicts;
@@ -101,28 +103,30 @@ Candidate high-leverage responsibility nodes include:
 - Framework Approval;
 - Final Artifact Approval where applicable.
 
-The expression **responsibility concentration** is `AI-PROPOSED`; the underlying concern about the human responsibility/ability boundary is human-originated.
+`responsibility concentration` is no longer retained as the central term. The underlying model should be expressed descriptively: humans provide purpose and direction, AI tools perform or assist some work, and the Layer 2 Framework carries core intellectual responsibility.
 
-**Founder basis:** Article Content Core C2; HARC Protocol Core P17.
-
----
+**Founder basis:** Article Content Core C2; HARC Protocol Core P17; HARC-D023.
 
 ## T4 — Framework Responsibility Thesis
 
-**Provenance:** `HUMAN-ORIGINATED`, with **scope still unresolved**.
+**Provenance:** `HUMAN-ORIGINATED`; the earlier strong/moderate binary has been superseded by the human’s third formulation in HARC-D023.
 
-For long works, a compact human-reviewed and human-approved representation of the intellectual architecture should function as a primary substantive responsibility anchor. It should expose the core theses, inferential relations, crucial distinctions, scope conditions, and section/chapter roles that the human actually understands and accepts.
+For AI-assisted long-form research or creative work, the Layer 2 Current / Approved Framework should serve as the primary structural carrier of human core intellectual responsibility. It is not merely an AI-facing summary; it is an intellectual structure the human author must actually understand, review, and explicitly confirm.
 
-**Unresolved strength:**
+Before Framework Approval, the human author must form a clear and complete understanding of every substantive element actually represented in the framework and review and confirm those elements item by item, including:
 
-- **Strong version:** framework approval is generally the center of substantive intellectual authorship in AI-assisted long-form work.
-- **Moderate version:** framework approval is HARC's proposed governance architecture for concentrating substantive human review, without claiming a universal theory of authorship.
+- core theses;
+- inferential relations and their logical dependencies;
+- key distinctions;
+- scope conditions;
+- section/chapter functions;
+- any specific wording included in the framework.
 
-No stronger version should be attributed to the human author until explicitly chosen.
+AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. The human is responsible for the originality, understanding, judgment, and intellectual commitments carried by that framework.
 
-**Founder basis:** Article Content Core C5; HARC Protocol Core P6, P13.
+This is HARC’s responsibility architecture. It does not claim that Framework Approval automatically constitutes a universal theory of authorship across all fields, and it does not remove Final Artifact Approval, factual-accuracy, research-integrity, or venue requirements.
 
----
+**Founder basis:** Article Content Core C5; HARC Protocol Core P6, P13, P17; HARC-D023.
 
 ## T5 — Dual Approval Gate Thesis
 
@@ -280,6 +284,8 @@ Work Log is therefore outside default AI onboarding context. It should receive p
 
 - human research-content intention vs human form/presentation intention;
 - human intention vs AI operational representation;
+- work an AI tool may perform/assist vs human responsibility for purpose, direction, understanding, judgment, and approval;
+- AI as a collaboration tool vs humans as the initiating/authorizing subjects of project purpose and direction;
 - Working Framework vs Approved Framework;
 - framework defect vs derived-expansion defect;
 - Framework Approval vs Final Artifact Approval;
@@ -290,12 +296,11 @@ Work Log is therefore outside default AI onboarding context. It should receive p
 
 ### AI-formulated distinctions requiring confirmation if elevated to central terminology
 
-- cognitive labor vs epistemic responsibility;
 - contribution transparency vs authorship/accountability;
 - semantic version control vs ordinary textual version control;
-- responsibility concentration vs continuous line-by-line human production.
+- generation–verification asymmetry as a heuristic label.
 
----
+`responsibility concentration` has been rejected by the human as the current central term; “cognitive labor” should likewise not be used to describe work performed by AI.
 
 # 4. Revised article architecture
 
@@ -333,13 +338,13 @@ Supports T2, T8, and T9.
 
 Supports T4.
 
-## VI. Cognitive delegation and human epistemic responsibility
+## VI. AI tool work and human purpose / Framework responsibility
 
-**Function:** address the philosophical center of the article: what AI may do, what humans must still understand/authorize, and why the delegation of work does not automatically settle the delegation of responsibility.
+**Function:** address the philosophical center of the article: what research work AI tools may perform or assist; why project purpose, problem, and direction must be given, navigated, and approved by humans; and why human core intellectual responsibility is operationalized primarily through a Layer 2 Framework that the human genuinely understands and confirms.
 
-Supports T3.
+This section must not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as its central conceptual language.
 
-`HUMAN DECISION REQUIRED`: central terminology and strength of the normative claim.
+Supports T3 and T4.
 
 ## VII. Two defects, two approval gates, one public-facing structure
 
@@ -359,11 +364,9 @@ The literature should contextualize and constrain HARC; it should not be used to
 
 A possible empirical test suite belongs here as `AI-PROPOSED FUTURE RESEARCH`, unless the human explicitly promotes it into the core article thesis.
 
-## X. Conclusion — from AI text generation to governance of expanded cognition
+## X. Conclusion — from AI text generation to governance of AI-expanded research capacity
 
-**Function:** restate the central proposal: AI can expand the scale of research activity only if meaning, authority, evidence, approval, and responsibility remain explicit and auditable.
-
----
+**Function:** restate the central proposal: AI tools may expand the executable scale and expressive capacity of research, but project purpose, direction, meaning, evidence constraints, framework approval, and ultimate responsibility must remain under human governance and be represented in explicit, auditable repository state.
 
 # 5. Dependency structure
 
@@ -378,20 +381,18 @@ T2 Layered semantic governance
 ├── uses T12 to separate durable memory from current work state
 └── enables an inspectable Working Framework
 
-T3 Cognitive delegation / human governance
-└── motivates T4 Framework Responsibility
+T3 AI tool work / human purpose and governance
+└── supplies the human-subject and responsibility basis for T4 Framework Responsibility
 
 T4 Framework Responsibility
 ├── requires T5 Dual Approval Gates
 └── requires T6 Framework Projection for public-facing fidelity
 
-T1 + T2 + T4 + T5 + T6 + T7
+T1 + T2 + T3 + T4 + T5 + T6 + T7
 └── jointly support T8 Practical Reusability as an executable collaboration protocol
 ```
 
-This dependency graph is `AI-FORMULATED` and requires human review before approval.
-
----
+This dependency graph is `AI-FORMULATED` and still requires overall human review before approval.
 
 # 6. Evidence/literature role
 
@@ -408,72 +409,38 @@ The article currently uses:
 
 Verified source notes are maintained canonically in `evidence/METHODOLOGY_SOURCES.zh-CN.md`, with `evidence/METHODOLOGY_SOURCES.md` as the English mirror; bibliographic metadata is maintained in `paper/methodology-references.bib`.
 
-**Evidence rule:** none of these sources by itself establishes HARC's proposed framework architecture, `semantic version control`, `responsibility concentration`, or empirical effectiveness.
+**Evidence rule:** none of these sources by itself establishes HARC's proposed framework architecture, `semantic version control`, or empirical effectiveness. HARC-D023's normative claims about AI's tool role and human Framework responsibility are the human author's protocol/methodology commitments, not empirical conclusions directly established by these sources.
 
 ---
 
-# 7. Human decisions required before `MA-FW-001`
+# 7. Clarification status before Framework Approval
 
-## D1 — Central responsibility concept
+### Resolved and promoted
 
-Choose or revise the article's central language:
+- `CLR-001` — central responsibility concept: the article no longer centers the distinction “AI cognitive labor vs human epistemic responsibility”; it uses a descriptive model of human purpose/direction, AI tool work, and human responsibility.
+- `CLR-002` — Framework Responsibility Thesis: HARC-D023 adopts the human’s third formulation; the Layer 2 Framework is the primary structural carrier of human core intellectual responsibility, and the human must understand, review, and confirm all substantive content represented in it.
+- `CLR-005` — `responsibility concentration`: not retained as the current central term.
 
-- `epistemic responsibility` / 认识责任;
-- `cognitive responsibility` / 认知责任;
-- a layered distinction using both;
-- another formulation.
+### Current non-blocking Clarifications
 
-## D2 — Strength of Framework Responsibility Thesis
+- `CLR-003` — `semantic version control`;
+- `CLR-004` — `generation–verification asymmetry`;
+- `CLR-006` — the role of extended/distributed cognition; any comparison must not be written as presupposing that AI itself is a cognitive subject;
+- `CLR-007` — empirical validation program;
+- `CLR-008` — disciplinary/venue positioning;
+- `CLR-010` — final publication venue and venue-specific form constraints (non-blocking for Framework Approval).
 
-Choose between the **strong** and **moderate** versions in T4, or formulate a third version.
-
-## D3 — Status of AI terminology
-
-Decide whether to accept, reject, or replace:
-
-- `generation–verification asymmetry`;
-- `semantic version control`;
-- `responsibility concentration`.
-
-Acceptance of the underlying claims does not require acceptance of these terms.
-
-## D4 — Extended/distributed cognition connection
-
-Choose whether this literature is:
-
-- central theoretical grounding;
-- secondary conceptual comparison;
-- minimal background only.
-
-## D5 — Empirical validation program
-
-Decide whether the test suite is:
-
-- part of the article's core methodological contribution;
-- a future research agenda;
-- omitted from the main article.
-
-## D6 — Disciplinary positioning
-
-Choose a provisional target orientation:
-
-- philosophy of technology / epistemology;
-- research methodology;
-- scholarly communication / research integrity;
-- interdisciplinary AI governance;
-- other.
-
----
+See Task Plan for the complete active state. No Framework Approval blocker now remains from `CLR-001 / CLR-002 / CLR-005`; however, the overall Working Framework still requires explicit human approval, revision, or rejection before `MA-FW-001` can be created.
 
 # 8. Current synchronization status
 
-- Founder commitments -> Article Content Core: `SYNC AFTER PROVENANCE CORRECTION`.
-- Article Content Core -> this map: `SYNC`, with AI-developed terminology and research extensions explicitly marked.
-- This map -> methodology article draft: `PARTIALLY SYNC`; the existing draft still reflects the earlier 12-part organization and some stronger AI terminology, so it should not be structurally revised until the human reviews this framework.
+- Founder commitments -> Article Content Core: `SYNC — HARC-D023 PROMOTED`.
+- Article Content Core -> this map: `SYNC — responsibility model updated`.
+- This map -> methodology article draft: `PARTIALLY SYNC — responsibility terminology/model corrected in this work cycle; full structural rewrite remains deferred pending human Framework Approval`.
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17`; venue-specific policies must be rechecked before submission.
-- Clarification Gate: `OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`.
-- Framework approval: `NOT YET COMPLETED`.
-- Final artifact approval: `NOT YET COMPLETED`.
+- Clarification Gate: `BLOCKING CLARIFICATIONS CLEARED — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`.
+- Framework Approval: `NOT YET COMPLETED — overall human review pending`.
+- Final Artifact Approval: `NOT YET COMPLETED`.
 - Chinese/English synchronization: `REQUIRED`; Chinese is canonical.
 
-See `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` for the approval state.
+See `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` for approval state.
