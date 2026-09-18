@@ -335,3 +335,26 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Implementation principle:** logical roles are fixed; physical file layout is adaptable; the manifest maps roles explicitly.
 
 **Status:** confirmed and implemented.
+
+
+---
+
+## 2026-09-18 — HARC-D023
+
+**Source:** human project founder  
+**Classification:** CONTENT, PROTOCOL
+
+**Decision:** HARC adopts the following principles for human responsibility in AI-assisted research and creation:
+
+1. The purpose, central problem, and direction of a research or creative project should originate with humans and remain under human initiation, navigation, and approval; humans bear the core responsibility for the resulting work.
+2. AI Agents participate in HARC as tools. They may perform or assist with extensive search, synthesis, structuring, drafting, restructuring, checking, formatting, and related work, but the protocol and methodology article should not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as normative language.
+3. For long-form work, the Layer 2 Current / Approved Framework is the primary structural carrier of human intellectual responsibility. Before Framework Approval, the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in the framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
+4. AI may help organize and express a framework, but an approved version must genuinely represent the human author’s core ideas and endorsed positions. The human is responsible for the originality, understanding, judgment, and intellectual commitments carried by that framework. This does not remove Final Artifact Approval or any venue-, discipline-, institution-, or research-integrity requirements applicable to the final work.
+5. `responsibility concentration` is not retained as the current central term. The responsibility model should instead be expressed descriptively in terms such as human purpose/direction and the framework as a responsibility anchor, without forcing a new single coined term.
+6. Treating an Approved Framework as a possible submission attachment in future human–AI scholarly norms remains a possible development direction, not a current mandatory HARC protocol requirement.
+
+**Affected components:** Protocol Core, Specification, research-project templates, README, methodology-article Content Core / Working Argument Map / Derived Artifact, Framework Status, Working Memory
+
+**Clarifications resolved:** `CLR-001`, `CLR-002`, `CLR-005`
+
+**Status:** confirmed; Promotion and bilingual propagation implemented in this work cycle.
