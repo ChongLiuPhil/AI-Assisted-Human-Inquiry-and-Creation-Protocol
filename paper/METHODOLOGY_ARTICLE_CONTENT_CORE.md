@@ -64,18 +64,23 @@ The article should explain that storing state in a repository is not by itself s
 
 The mechanism does not assume every AI platform automatically reads the same filename. Instead, root-level entry files, an agent contract, a machine-readable manifest, and a human-copyable bootstrap prompt maximize cross-platform discoverability and make successful handoff observable and verifiable.
 
-## C13. Durable repository state and an active session contract should form two-layer memory
+## C13. GitHub should serve as the authoritative external-memory and working-state interface
 
-The article should explain that repository persistence solves cross-session recoverability but does not guarantee that key rules remain sufficiently salient in the active generation context of a long conversation.
+The article should explain that HARC does not need to maintain a long-lived project-state copy in chat parallel to GitHub.
 
-HARC therefore uses two layers:
+A more accurate architecture is:
 
-1. **Durable Repository State** — auditable, recoverable, cross-agent long-term state;
-2. **Active Session Contract** — a compressed operating contract regenerated from current repository state after onboarding and echoed into the Agent's own current reply.
+`GitHub Repository = authoritative external memory + working state`
 
-The Session Contract is not the platform's true system prompt. It cannot override platform system/developer/safety instructions or permanently modify model memory. Its role is to reinject key HARC invariants, Blocking Clarifications, Framework/Artifact state, and the current task propagation path into the visible active conversation context.
+`Model Context = transient retrieval cache + control plane`
 
-After major state changes or suspected context loss, the Agent should regenerate a `HARC CONTEXT REFRESH` from repository state.
+A model still needs relevant information temporarily available for an individual response, but it should retrieve the minimum necessary state on demand from latest canonical GitHub revisions according to the current task.
+
+The session retains only a minimal Repository Resolver: repository identity, manifest/context-interface paths, task route, read-latest-before-write, write-through, and cache-invalidation rules. Dynamic Blocking Clarifications, Framework, Artifact, and Core state should not remain as a second authoritative session copy.
+
+All state changes that should constrain future work write directly back to GitHub; after a write, older context copies become stale. Relevant latest revisions should be reconfirmed before high-impact judgments and writes.
+
+This makes GitHub the cross-agent memory and working store, while model context is only a temporary projection of repository state for the current task.
 
 ## Current unresolved authorial decisions
 
