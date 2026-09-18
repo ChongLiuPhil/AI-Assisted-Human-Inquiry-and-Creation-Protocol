@@ -10,7 +10,7 @@
 
 方法论文章处于 **Working Framework 的整体人类审阅 / Framework Approval 决策阶段**。
 
-`CLR-001 / CLR-002 / CLR-005` 已通过 `HARC-D023` 解决并完成 Promotion；`HARC-D024` 进一步精确化责任概念为“人类是责任主体”，并确认当前中文题目。此前阻塞 `MA-FW-001` 的 clarification gate 已清除。
+`CLR-001 / CLR-002 / CLR-005` 已通过 `HARC-D023` 解决并完成 Promotion；`HARC-D024` 进一步精确化责任概念为“人类是责任主体”，并确认当前中文题目；`HARC-D025` 已修复 T1–T13 依赖表示，并明确 unresolved / AI-PROPOSED 项目的整体批准语义。此前阻塞 `MA-FW-001` 的 clarification gate 已清除。
 
 ## CURRENT_OBJECTIVE
 
@@ -42,7 +42,9 @@
 - 已获人类认可的题目与尚未获批的整体 framework 之间的状态区分；
 - 仍明确标记为 `AI-PROPOSED` 或 `NON-BLOCKING` 的内容是否可以保留在待批准 framework 中。
 
-然后明确作出 `APPROVE / REVISE / REJECT`。
+其中仍为 `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` 的项目，只需要确认其作为未决项目留在 framework 中的位置与处理方式；整体批准不会自动批准其内容。
+
+然后明确作出 `APPROVE / REVISE / REJECT`.
 
 如果 `APPROVE`：
 
