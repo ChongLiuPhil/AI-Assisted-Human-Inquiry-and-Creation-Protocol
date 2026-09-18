@@ -37,6 +37,6 @@
 
 ## 批准规则
 
-未经明确人类确认，不得创建或更新 Approved Framework Snapshot。批准后的实质性变化必须产生新 framework identifier。
+未经明确人类确认，不得创建或更新 Approved Framework Snapshot。Framework Approval 前，人类必须清楚理解、认真审核并确认拟批准 framework 中实际呈现的全部实质内容。批准后的实质性变化必须产生新 framework identifier。
 
 中文状态修改必须同步英文 mirror。
