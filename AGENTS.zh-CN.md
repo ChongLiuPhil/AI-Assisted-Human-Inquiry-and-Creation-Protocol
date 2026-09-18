@@ -13,8 +13,9 @@
 3. `HARC_CONTEXT_INTERFACE.yaml`
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
+6. `docs/working-memory.zh-CN.md`
 
-然后按照 manifest 与 context interface 的规则按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 **HARC Onboarding Report**。报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载最小 Repository Resolver；动态项目状态仍必须从 GitHub 最新 canonical revision 按需读取。
+先用 Working Memory 确定“项目做到哪里、下一步是什么”，然后按照 manifest 与 context interface 的规则从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 **HARC Onboarding Report**。报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载最小 Repository Resolver；动态项目状态仍必须从 GitHub 最新 canonical revision 按需读取。
 
 在完成这一接管握手前，不得进行大规模结构修改、正文重写、Framework Approval、关键术语传播或把 AI 提议提升为人类承诺。
 
@@ -87,38 +88,34 @@
 2. 校准协议/治理文件。
 3. 如果规则具有通用性，更新可复用模板。
 
-## 5. 关键澄清登记册
+## 5. Working Memory 与高影响澄清
 
-当 AI 对作者意图或关键内容存在**高影响、非微不足道的不确定性**时，不得自行选择一种解释后继续传播。
+`docs/working-memory.zh-CN.md` 是项目的当前工作状态与 handoff 界面。
 
-应把问题写入 `docs/clarification-register.zh-CN.md`，至少说明：
+它应维护：
 
-- 不确定点；
-- 候选解释；
-- 为什么重要；
-- `BLOCKING / NON-BLOCKING`；
-- 受影响文件 / 命题 / 章节；
-- AI 建议（如有，标为 `AI-PROPOSED`）；
-- 需要人类回答的问题。
+- CURRENT_STAGE / CURRENT_OBJECTIVE；
+- ACTIVE_TASKS / RECENTLY_COMPLETED / NEXT_ACTIONS；
+- TODO / BACKLOG；
+- BLOCKERS；
+- PENDING_HUMAN_DECISIONS；
+- Clarifications；
+- SYNC_DEFECTS；
+- HANDOFF_NOTE。
 
-特别关注：
+Clarification 是 Working Memory item，不是 Layer 1.5。
 
-- 核心观点或命题的强/弱解释；
-- 关键概念；
-- 范围与限定条件；
-- 主要推论关系；
-- 章节功能；
-- 作者母语术语与英文对应；
-- 翻译可能造成的语义改变；
-- 新反馈与旧 Core / Framework 的潜在冲突。
+当 AI 对作者意图或关键内容存在高影响、非微不足道的不确定性时，不得自行选择解释。应创建 Clarification item，并在人类解决后执行：
 
-人类确认或纠正后，必须执行：
+`Working Memory -> human resolution -> Decision Log -> appropriate Long-Term Memory destination`
 
-`Clarification Register -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+涉及人类核心内容时继续传播：
 
-仅把条目标记为 resolved 而不更新 Core，不算完成。
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-在重大阶段转换、Framework Approval、关键术语全篇传播、正式翻译、大规模扩写与 Final Review 前，主动进行 Clarification Scan。
+Promotion 完成后，Working Memory item 标记为 `RESOLVED / PROMOTED` 并只保留指针。
+
+每个较大工作循环结束、重要决定完成、blocker 改变或 handoff 前，都应更新 Working Memory。
 
 ## 6. AI 提议只是提议
 
