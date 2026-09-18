@@ -25,9 +25,9 @@
 
 扫描结果：
 
-- Markdown 文件总数：**84**
-- 中文 canonical（`*.zh-CN.md`）：**42**
-- 英文 mirror：**42**
+- Markdown 文件总数：**96**
+- 中文 canonical（`*.zh-CN.md`）：**48**
+- 英文 mirror：**48**
   - 绝大多数使用既有 `*.md`
   - 方法论文章完整正文使用 `METHODOLOGY_ARTICLE.en.md`
 - 缺少英文 mirror 的中文文件：**0**
@@ -141,6 +141,19 @@
 - `templates/research-project/HARC_MANIFEST.yaml`
 
 YAML manifest 是路径、读取顺序和不变量索引，不需要仅为语言复制；其人类可读规则已经在双语 START_HERE / AGENTS / Specification 中表达。
+
+### 3.8 Onboarding Handshake 与独立启动资产
+
+在 P20 / HARC-D018 经人类明确确认后，新增并双语化：
+
+- `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror；
+- `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror；
+- `protocol/ONBOARDING_HANDSHAKE.zh-CN.md` / English mirror；
+- `templates/research-project/BOOTSTRAP_PROMPT.zh-CN.md` / English mirror；
+- `templates/research-project/ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror；
+- `docs/ONBOARDING_SELF_TEST.zh-CN.md` / English mirror。
+
+当前递归文件树重新扫描为 **96 个 Markdown = 48 个中文 canonical + 48 个英文 mirror，缺失配对 0**。
 
 ## 4. 已修复的高风险语义不同步
 
