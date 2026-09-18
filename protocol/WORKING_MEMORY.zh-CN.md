@@ -51,23 +51,90 @@ Working Memory 与上述三层**并行**，不是 Layer 1.5，也不是第四个
 
 > **Long-term memory stores what the project is; Working Memory stores where the project currently is in its work.**
 
-## 2. Working Memory 的典型内容
+## 2. Working Memory 是功能区，不是固定文件
 
-Working Memory SHOULD 包括：
+Working Memory 规范的是**逻辑角色**，物理实现可以是一份文件，也可以拆成多份文件。
 
-- `CURRENT_STAGE` — 当前阶段；
-- `CURRENT_OBJECTIVE` — 当前主要目标；
-- `ACTIVE_TASKS` — 正在执行的任务；
-- `NEXT_ACTIONS` — 下一步；
-- `RECENTLY_COMPLETED` — 最近完成；
-- `BACKLOG / TODO` — 后续任务；
-- `BLOCKERS` — 阻塞项；
-- `PENDING_HUMAN_DECISIONS` — 等待人类确认；
-- `CLARIFICATIONS` — 高影响不确定性；
-- `SYNC_DEFECTS` — 已知同步缺陷；
-- `HANDOFF_NOTE` — 给下一位人类参与者或 AI Agent 的续接说明。
+一个合规实现至少应覆盖：
 
-Working Memory 可以包含临时分析，但必须明确为非权威、可淘汰状态。
+### 2.1 Working Memory Index / Resolver
+
+稳定入口，负责告诉 Agent / 人类：
+
+- Current Focus 在哪里；
+- Task Plan 在哪里；
+- Work Log 在哪里；
+- 哪些文件是默认 onboarding 必读；
+- 哪些只按需读取。
+
+Index SHOULD 尽量不复制动态状态。
+
+### 2.2 Current Focus
+
+最短、显著度最高的工作状态。
+
+至少应说明：
+
+- `CURRENT_STAGE`；
+- `CURRENT_OBJECTIVE`；
+- 本轮/最近期最核心任务；
+- `PRIMARY_BLOCKER`；
+- `IMMEDIATE_NEXT_ACTION`；
+- handoff 所需的最小指针。
+
+Current Focus 应适合任何工作流突然中断后由新 Agent 在几十秒内恢复方向。
+
+### 2.3 Task Plan
+
+动态计划与待办状态。
+
+至少可以包含：
+
+- `ACTIVE_TASKS`；
+- `NEXT_ACTIONS`；
+- `TODO / BACKLOG`；
+- `BLOCKERS`；
+- `WAITING-HUMAN`；
+- `PENDING_HUMAN_DECISIONS`；
+- `CLARIFICATIONS`；
+- `SYNC_DEFECTS`。
+
+任务完成后应退出 active list，而不是无限积累 completed-history。
+
+### 2.4 Work Log
+
+主要供人类作者以后回顾的历史纪要。
+
+它可以记录：
+
+- 阶段性进展；
+- 重要里程碑；
+- 已完成任务批次；
+- 方向变化；
+- 思想/工作路径的变化；
+- 已表达的高层理由；
+- 重要 handoff / phase transition。
+
+Work Log：
+
+- SHOULD 定期更新；
+- SHOULD 以阶段性高层总结为主；
+- MUST NOT 保存 AI 隐藏 chain-of-thought、scratchpad 或不可验证的内部推理；
+- MUST NOT 被视为当前规范状态；
+- SHOULD NOT 默认进入 AI onboarding 的必读上下文；
+- MAY 在人类要求历史回顾、审计、变迁重建或历史冲突调查时按需读取。
+
+### 2.5 物理布局可适配
+
+轻量项目可以：
+
+`Index = Current Focus = Task Plan = Work Log = one file`
+
+复杂项目可以拆成：
+
+`Index + Current Focus + Task Plan + Work Log (+ archives)`
+
+Manifest MUST 显式映射实际角色。
 
 ## 3. 权威边界
 
@@ -128,9 +195,11 @@ Promotion 完成后，该条目应：
 - 标记为 `RESOLVED / PROMOTED`；
 - 记录 Decision ID；
 - 记录目标长期文件路径；
-- 从当前 Active 工作区移至简短的 Recently Resolved / Archive 区。
+- 从 Task Plan 的 active 区退出；
+- 把完成事项的高层历史摘要写入 Work Log；
+- 如需审计，记录 Decision ID 与长期目标路径。
 
-权威答案不再由 Working Memory 条目承载。
+权威答案不再由 Working Memory 条目或 Work Log 承载。
 
 ## 7. 工作进度生命周期
 
@@ -152,43 +221,81 @@ Clarification 可以继续使用：
 
 作为 severity，而不是层级名称。
 
-## 8. 更新时机
+## 8. 更新纪律
 
-AI Agent SHOULD 在以下节点更新 Working Memory：
+### Current Focus
 
-- 一个明确工作目标开始时；
-- 一个任务完成时；
-- 人类给出重要决定后；
-- 新 clarification / blocker 出现时；
-- clarification 被解决并 promotion 后；
-- Framework 状态改变时；
-- Artifact 阶段改变时；
-- 每个较大的工作循环结束时；
-- Agent handoff 前；
-- 新 Agent onboarding 时发现 Working Memory 已过期时。
+SHOULD 在以下情况更新：
+
+- 当前最重要目标变化；
+- blocker 变化；
+- 本轮对话/任务目标变化；
+- phase transition；
+- handoff 前。
+
+### Task Plan
+
+SHOULD 在以下情况更新：
+
+- 新任务产生；
+- 任务状态变化；
+- 新 clarification / blocker 出现；
+- 人类作出重要决定；
+- 任务完成；
+- Framework / Artifact gate 状态变化。
+
+完成项应及时退出 active list。
+
+### Work Log
+
+SHOULD 定期更新，但不是每个微小动作都记录。
+
+推荐写入节点：
+
+- 一个任务批次完成；
+- 一个重要协议/研究阶段完成；
+- 重大人类决定导致方向变化；
+- framework / artifact phase transition；
+- 较长工作周期结束；
+- 人类要求形成阶段纪要。
+
+Work Log 的目标是**可回顾历史**，不是实时事件流。
 
 ## 9. Onboarding / Handoff
 
-新的 AI Agent 或人类协作者接入时，建议顺序：
+推荐顺序：
 
-1. 读取 control plane：`HARC_MANIFEST.yaml`、`HARC_CONTEXT_INTERFACE.yaml`、START_HERE / AGENTS；
-2. 读取 `docs/working-memory.zh-CN.md`；
-3. 从 Working Memory 得知当前阶段、目标、任务、阻塞与待确认事项；
-4. 根据当前任务，从三层长期记忆中 selective retrieval 最新 canonical state；
-5. 不把 Working Memory 当成长期语义真值源。
+1. control plane：Manifest / Context Interface / START_HERE / AGENTS；
+2. Working Memory Index；
+3. Current Focus；
+4. Task Plan；
+5. 当前任务所需的三层 Long-Term Memory；
+6. 必要 Evidence / Artifact。
 
-这样 Working Memory 是**续接索引**，长期记忆是**权威研究状态**。
+**Work Log 默认跳过。**
+
+只有在以下情况才读取 Work Log：
+
+- 人类要求回顾；
+- 需要理解为什么方向发生变化；
+- 当前状态疑似 stale / inconsistent；
+- 专门审计或 provenance reconstruction。
+
+因此：
+
+> **Current Focus 告诉 Agent 现在最重要的事；Task Plan 告诉 Agent 接下来怎么推进；Work Log 告诉人类我们是怎么走到这里的。**
 
 ## 10. 可扩展性
 
-Working Memory 应保持短小、当前、可扫读。
+Working Memory 的 **Current Focus + Task Plan** 应保持短小、当前、可扫读。
 
-当其历史增长时：
+Work Log 可以持续增长，但应：
 
-- Active 区只保留当前工作；
-- resolved/promoted 项目压缩为索引；
-- 详细历史移入 archive；
-- Decision Log 和 Git 历史承担长期审计。
+- 以阶段条目而不是逐操作事件为单位；
+- 必要时按年份/阶段分卷归档；
+- 保留目录或索引；
+- 不进入默认 AI context；
+- 与 Decision Log / Git history 分工：Work Log 适合人类叙事性回顾，Decision Log 适合规范决定审计，Git history 适合精确版本追踪。
 
 ## 11. 原则
 
@@ -200,7 +307,13 @@ Working Memory 应保持短小、当前、可扫读。
 
 并行：
 
-`Working Memory <-> current goals / tasks / clarifications / blockers / handoff`
+`Working Memory Area = Index + Current Focus + Task Plan + Work Log`
+
+其中：
+
+`Current Focus + Task Plan = operational resume state`
+
+`Work Log = human retrospective history`
 
 Promotion：
 
