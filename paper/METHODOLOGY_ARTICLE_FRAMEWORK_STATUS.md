@@ -6,7 +6,7 @@
 
 Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` (canonical) / `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md` (English mirror)
 
-Status: `WORKING-FRAMEWORK — REVIEW READY`
+Status: `WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`
 
 Human approval: **not completed**.
 
@@ -41,6 +41,7 @@ Because the review-ready Working Framework has now been reorganized and provenan
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
+- `docs/clarification-register.zh-CN.md`
 - `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
@@ -50,20 +51,27 @@ Because the review-ready Working Framework has now been reorganized and provenan
 - Article Content Core -> Working Framework: `SYNC / REVIEW READY`
 - Working Framework -> Current draft: `PARTIALLY SYNC — structural rewrite deferred pending human framework review`
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17; further venue-specific verification required before submission`
+- Clarification Gate: `OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`
 - Framework approval: `NOT COMPLETED`
 - Final artifact approval: `NOT COMPLETED`
 - Chinese/English article pair: `BILINGUAL MIRROR REQUIRED`
 
-## Human decisions still required before `MA-FW-001`
+## Clarification Gate before `MA-FW-001`
 
-1. central responsibility terminology;
-2. strength of the Framework Responsibility Thesis;
-3. acceptance/rejection/replacement of AI-proposed terms (`generation–verification asymmetry`, `semantic version control`, `responsibility concentration`);
-4. strength of the relationship to extended/distributed cognition;
-5. status of the empirical validation/test program;
-6. target venue/disciplinary positioning;
-7. explicit approval, revision, or rejection of the review-ready framework as a whole.
+See `docs/clarification-register.md` for the full unresolved state.
+
+Current `BLOCKING` entries:
+
+- `CLR-001` — central responsibility concept;
+- `CLR-002` — strength of the Framework Responsibility Thesis;
+- `CLR-005` — status/replacement of `responsibility concentration`.
+
+Current `NON-BLOCKING` entries:
+
+- `CLR-003`, `CLR-004`, `CLR-006`, `CLR-007`, `CLR-008`.
+
+Do not create `MA-FW-001` until blocking clarifications are human-resolved or explicitly `DEFERRED`. The review-ready framework must still receive explicit overall approval, revision, or rejection afterward.
 
 ## Current instruction to AI agents
 
-Do not treat the present Working Framework as human-approved. Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred. Use the Working Framework as the primary discussion object until the human author has made the required decisions.
+Do not treat the present Working Framework as human-approved. Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred. Use `docs/clarification-register.md` first to resolve high-impact uncertainty, then return to the Working Framework for overall human review.
