@@ -31,12 +31,13 @@
 4. 确定明确适用的 reusable author form profile 与 artifact-type profile。
 5. 仅把人类明确的呈现决定提取到 `core/FORM_CORE.zh-CN.md`；保持 inherited、external、project-specific 与 temporary-default 可区分，并同步英文 mirror。
 6. 把初始化决定记录到 `core/DECISION_LOG.zh-CN.md` 与英文 mirror。
-7. 创建 `docs/clarification-register.zh-CN.md` 与英文 mirror，作为高影响不确定性的 Layer 1.5 操作界面。
-8. 建立 `docs/argument-map.zh-CN.md` 作为 AI 维护的工作表示，并同步英文 mirror。
-9. 初始化 `docs/framework-status.zh-CN.md` 为 `WORKING-FRAMEWORK`；除非人类明确批准，否则没有 Approved Snapshot。
-10. 创建适合项目的成果目录。
-11. 研究核验、数据、计算或来源相关时创建 `evidence/`，其中人类可读说明双语化。
-12. 未知项保持明确未知，不要用 AI 假设填充。
+7. 创建 `docs/working-memory.zh-CN.md` 与英文 mirror，作为当前阶段、目标、任务、阻塞、待确认事项和 handoff 的并行工作记忆区。
+8. 保留 `docs/clarification-register.zh-CN.md` 作为兼容指针；新的 clarification 作为 Working Memory item 管理。
+9. 建立 `docs/argument-map.zh-CN.md` 作为 AI 维护的工作表示，并同步英文 mirror。
+10. 初始化 `docs/framework-status.zh-CN.md` 为 `WORKING-FRAMEWORK`；除非人类明确批准，否则没有 Approved Snapshot。
+11. 创建适合项目的成果目录。
+12. 研究核验、数据、计算或来源相关时创建 `evidence/`，其中人类可读说明双语化。
+13. 未知项保持明确未知，不要用 AI 假设填充。
 
 ## 最小模板树
 
@@ -62,6 +63,8 @@ project/
 │   ├── DECISION_LOG.zh-CN.md
 │   └── DECISION_LOG.md
 ├── docs/
+│   ├── working-memory.zh-CN.md
+│   ├── working-memory.md
 │   ├── clarification-register.zh-CN.md
 │   ├── clarification-register.md
 │   ├── argument-map.zh-CN.md
@@ -86,7 +89,7 @@ project/
 
 ## 给 AI Agent 的建议指令
 
-> 使用 HARC Protocol 初始化本项目。把 GitHub 直接当作权威外部记忆库与工作状态库；模型上下文只保留 Repository Resolver 和当前任务所需的临时缓存。区分 CONTENT、FORM 和 PROTOCOL 决定。规范文件只写入人类实际提供的承诺。确定成果类型与适用形式 profile，但不要发明偏好。对任何可能重大影响核心命题、关键概念、术语/翻译或论证结构的高影响不确定性，先写入 Clarification Register 并向我确认；不要自行猜测。Argument Map 在我明确批准 framework snapshot 前始终属于 AI 生成的工作结构。实质性变化上游优先传播。记录项目采用的 HARC version/commit。中文是 canonical；任何修改必须同步英文 mirror。
+> 使用 HARC Protocol 初始化本项目。把 GitHub 直接当作权威外部记忆库与工作状态库；模型上下文只保留 Repository Resolver 和当前任务所需的临时缓存。区分 CONTENT、FORM 和 PROTOCOL 决定。规范文件只写入人类实际提供的承诺。确定成果类型与适用形式 profile，但不要发明偏好。用 Working Memory 维护当前阶段、目标、任务、完成情况、下一步、TODO、blockers、pending human decisions 与 clarifications。对任何可能重大影响核心命题、关键概念、术语/翻译或论证结构的高影响不确定性，创建 Working Memory Clarification item 并向我确认；不要自行猜测。Argument Map 在我明确批准 framework snapshot 前始终属于 AI 生成的工作结构。实质性变化上游优先传播。记录项目采用的 HARC version/commit。中文是 canonical；任何修改必须同步英文 mirror。
 
 ## 未知项是合法状态
 
