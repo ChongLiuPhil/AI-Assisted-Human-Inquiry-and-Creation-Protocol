@@ -8,6 +8,19 @@
 
 `ACADEMIC_PAPER / METHODOLOGY ARTICLE`
 
+## Title
+
+**Canonical Chinese title:**  
+从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性
+
+**Status:** `HUMAN-APPROVED TITLE — HARC-D024`
+
+Synchronized English translation:
+
+*From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
+
+The English wording is maintained as the translation mirror of the canonical Chinese title. This title approval does not mean that the complete Working Framework has received Framework Approval.
+
 ## Language
 
 **Canonical editing language: Chinese.**
