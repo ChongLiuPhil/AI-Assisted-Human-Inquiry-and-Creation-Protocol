@@ -2,7 +2,7 @@
 
 > Chinese `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` is canonical; this English file is its synchronized mirror.
 
-**Status:** `WORKING-FRAMEWORK — REVIEW READY`  
+**Status:** `WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`  
 **Artifact:** methodology article  
 **Human approval:** not yet completed  
 **Derived draft status:** `DERIVED-PROVISIONAL`
@@ -13,6 +13,7 @@
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
+- `docs/clarification-register.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
 ## Provenance legend
@@ -179,6 +180,18 @@ This is currently a research-agenda proposal, not part of the human-approved cor
 
 ---
 
+## T9 — Critical Clarification Governance Thesis
+
+**Provenance:** `HUMAN-ORIGINATED`
+
+When AI has non-trivial uncertainty about authorial intent, core claims, key concepts, scope, major inferential relations, section functions, or key terminology/translation that could materially affect the work's structure, it should not silently choose an interpretation. It should promote the issue into the Critical Clarification Register for human confirmation or correction.
+
+Open clarifications are not human commitments. Resolutions must be promoted into the Decision Log and appropriate Core, then propagated to the Working Framework and derived text.
+
+**Founder basis:** Article Content Core C11; HARC Protocol Core P19.
+
+---
+
 # 3. Core distinctions that the article should preserve
 
 ### Human-originated distinctions
@@ -224,9 +237,9 @@ Supports T1 and T7.
 
 ## IV. Layered semantic governance
 
-**Function:** introduce Content Core, Form Core, Decision Log, evidence, provenance statuses, upstream-first propagation, and the distinction between human commitments and AI proposals.
+**Function:** introduce Content Core, Form Core, Decision Log, the Critical Clarification Register, evidence, provenance statuses, upstream-first propagation, and the distinction between human commitments and AI proposals; explain why high-impact uncertainty must be resolved by the human before entering the framework.
 
-Supports T2 and T8.
+Supports T2, T8, and T9.
 
 `AI-PROPOSED TERM`: semantic version control.
 
@@ -277,6 +290,7 @@ T1 Persistent research state
 
 T2 Layered semantic governance
 ├── protects human intention from silent AI drift
+├── routes high-impact uncertainty through T9 human clarification
 └── enables an inspectable Working Framework
 
 T3 Cognitive delegation / human governance
@@ -372,6 +386,7 @@ Choose a provisional target orientation:
 - Article Content Core -> this map: `SYNC`, with AI-developed terminology and research extensions explicitly marked.
 - This map -> methodology article draft: `PARTIALLY SYNC`; the existing draft still reflects the earlier 12-part organization and some stronger AI terminology, so it should not be structurally revised until the human reviews this framework.
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17`; venue-specific policies must be rechecked before submission.
+- Clarification Gate: `OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`.
 - Framework approval: `NOT YET COMPLETED`.
 - Final artifact approval: `NOT YET COMPLETED`.
 - Chinese/English synchronization: `REQUIRED`; Chinese is canonical.
