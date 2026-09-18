@@ -111,6 +111,7 @@ Non-blocking pending items:
 - `CLR-006`
 - `CLR-007`
 - `CLR-008`
+- `CLR-010`
 
 ### C3. Handoff / next actions
 
