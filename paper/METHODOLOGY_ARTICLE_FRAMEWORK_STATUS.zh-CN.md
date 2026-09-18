@@ -41,7 +41,7 @@
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
-- `docs/clarification-register.zh-CN.md`
+- `docs/working-memory.zh-CN.md`
 - `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
@@ -51,14 +51,14 @@
 - Article Content Core -> Working Framework：`SYNC / REVIEW READY`
 - Working Framework -> 当前正文：`PARTIALLY SYNC — structural rewrite deferred pending human framework review`
 - 证据层 -> 政策/文献主张：`RECHECKED 2026-09-17; further venue-specific verification required before submission`
-- Clarification Gate：`OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`
+- Working Memory / Clarification Gate：`OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`
 - Framework Approval：`NOT COMPLETED`
 - Final Artifact Approval：`NOT COMPLETED`
 - 中英正文：`BILINGUAL MIRROR REQUIRED`
 
-## 在 `MA-FW-001` 之前的 Clarification Gate
+## 在 `MA-FW-001` 之前的 Working Memory / Clarification Gate
 
-完整未决状态见 `docs/clarification-register.zh-CN.md`。
+完整未决状态见 `docs/working-memory.zh-CN.md`。
 
 当前 `BLOCKING`：
 
@@ -76,4 +76,4 @@
 
 不要把当前 Working Framework 当成人类已批准框架。不要创建 `MA-FW-001`，也不要假定批准已经发生而结构性重写全文。
 
-当前主要人机讨论界面分为两步：先以 `docs/clarification-register.zh-CN.md` 解决高影响不确定性，再回到中文 Working Framework 进行整体审阅。任何中文修改都必须同步更新英文镜像。
+当前主要人机讨论界面分为两步：先以 `docs/working-memory.zh-CN.md` 解决高影响不确定性，再回到中文 Working Framework 进行整体审阅。任何中文修改都必须同步更新英文镜像。
