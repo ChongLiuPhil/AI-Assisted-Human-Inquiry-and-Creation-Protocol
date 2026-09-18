@@ -107,7 +107,19 @@ The Decision Log therefore records how the project changed: when a claim changed
 
 The Core represents the current active state; the Log represents how the project arrived there.
 
-### 4.4 Working Argument Map: the intermediate layer best suited to human–AI discussion
+### 4.4 Critical Clarification Register: putting high-impact uncertainty under human governance
+
+Between the Content/Form Core and the Working Argument Map, HARC adds a **Layer 1.5**: the Critical Clarification Register.
+
+It is not intended for every minor question. It captures high-impact uncertainties whose misinterpretation could materially change a core claim, key concept, scope, major inferential relation, section function, or important terminology/translation.
+
+When multiple reasonable interpretations exist, the AI's task is not to choose the interpretation it considers most likely and continue silently. It should promote the uncertainty explicitly, showing candidate interpretations, impact, severity, and the question requiring human resolution.
+
+Open entries are not the human author's position. Only after explicit human confirmation or correction does the resolution pass through the Decision Log into the appropriate Core and then propagate into the Working Argument Map and manuscript.
+
+This mechanism is especially important in primary-language writing and cross-language expression: if the meaning of a key Chinese concept and its English correspondence has not been confirmed, translation should not silently decide it.
+
+### 4.5 Working Argument Map: the intermediate layer best suited to human–AI discussion
 
 A full paper or book may be too long to serve as the direct object of every structural discussion. HARC therefore maintains a Working Argument Map, primarily maintained by AI but constrained by the Content Core.
 
