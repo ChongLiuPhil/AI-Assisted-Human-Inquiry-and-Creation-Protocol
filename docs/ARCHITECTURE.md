@@ -1,5 +1,7 @@
 # HARC Architecture
 
+> **Language:** Chinese canonical: `ARCHITECTURE.zh-CN.md`; this English file is the synchronized mirror.
+
 ## System model
 
 ```text
