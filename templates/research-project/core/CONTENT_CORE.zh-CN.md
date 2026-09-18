@@ -25,7 +25,13 @@
 
 ## 开放作者问题
 
-- `UNRESOLVED — ...`
+一般性开放问题可以在此摘要。
+
+高影响、需要正式人类澄清的问题应引用 `docs/clarification-register.zh-CN.md`：
+
+- `CLR-001 — ...`
+
+其他：`UNRESOLVED — ...`
 
 ## 治理
 
