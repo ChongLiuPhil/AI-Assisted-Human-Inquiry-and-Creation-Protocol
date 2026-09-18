@@ -454,6 +454,35 @@ Clarification 是 Working Memory item。人类解决后的稳定内容必须 Pro
 
 ---
 
+## E03 — Working Memory 模块化：Current Focus / Task Plan / Work Log
+
+**后续人类决定：** Working Memory 是功能区，不应被固定成单一文档。项目可根据工程需求、AI 性能与工作流便利性采用单文件或多文件实现，但至少应有三个逻辑角色：
+
+- Current Focus — 当前最近期最高优先级目标；
+- Task Plan — 动态任务、计划、TODO、blockers、pending decisions / Clarifications；
+- Work Log — 主要供人类作者以后回顾的大体进展、里程碑与思想/工作路径变化。
+
+完成的任务应退出 active Task Plan，并以适当粒度进入 Work Log；稳定规范结果仍需 Promotion 到 Long-Term Memory。
+
+Work Log 需要定期维护，但默认不进入 AI onboarding 上下文。它不保存 AI 隐藏 chain-of-thought / scratchpad。
+
+**实现位置：**
+
+- Protocol Core P24
+- HARC-D022
+- `protocol/WORKING_MEMORY.zh-CN.md`
+- `docs/working-memory.zh-CN.md`（Index）
+- `docs/working-memory/current-focus.zh-CN.md`
+- `docs/working-memory/task-plan.zh-CN.md`
+- `docs/working-memory/work-log.zh-CN.md`
+- Manifest / Context Interface / Onboarding / AGENTS
+- project templates
+- methodology article C15 / T13 / draft
+
+**状态：** IMPLEMENTED。
+
+---
+
 # 仍未解决的项目
 
 ## Open-source licensing
