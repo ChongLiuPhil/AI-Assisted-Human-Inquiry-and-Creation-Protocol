@@ -116,11 +116,11 @@ Non-blocking pending items：
 
 ## D. Framework 状态
 
-- Working Framework：`WORKING-FRAMEWORK — REVIEW READY / CLARIFICATION GATE OPEN`
+- Working Framework：`WORKING-FRAMEWORK — REVIEW READY / WORKING-MEMORY CLARIFICATION GATE OPEN`
 - 最新 Approved Framework：**无**
 - 下一标识符：`MA-FW-001`
 - Framework Approval：`NOT COMPLETED`
-- Clarification Gate：`OPEN`
+- Working Memory / Clarification Gate：`OPEN`
 - 允许创建 `MA-FW-001`：**否**
 
 **正确行为：** 先解决或由人类明确 defer `CLR-001 / CLR-002 / CLR-005`，再进行整体 Framework Approval。
@@ -153,7 +153,7 @@ Non-blocking pending items：
 ### 可以安全执行
 
 - 继续协议实现、审计与 onboarding infrastructure 改进；
-- 向人类呈现 Clarification Register 中的问题；
+- 向人类呈现 Working Memory 中的 pending human decisions / Clarifications；
 - 对不依赖 Blocking Clarification 的证据、非实质性维护和一致性检查继续工作；
 - 在不假定答案的前提下准备候选分析。
 
