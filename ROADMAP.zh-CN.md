@@ -32,7 +32,8 @@
 - [x] 完成仓库历史文件与全部模板的双语迁移与 parity audit。
 - [x] 建立 zero-context bootstrap：START_HERE、独立 Bootstrap Prompt、HARC_MANIFEST、Onboarding Handshake 与 Onboarding Report Template。
 - [x] 完成一次 HARC 自举 onboarding self-test。
-- [x] 建立 Active Session Contract / Session Context Bootstrap 双层保险：repository persistence + current-session salience。
+- [x] 建立 Repository-Backed Context Interface：GitHub 作为权威外部记忆/工作库，模型上下文作为按需临时缓存。
+- [x] 将 Session Context Bootstrap 收缩为最小 Repository Resolver，不再维护动态状态副本。
 - [ ] 人类审阅并批准方法论文章 Working Framework。
 - [ ] 创建方法论文章第一个 Approved Framework Snapshot。
 - [ ] 决定目标发布渠道 / 学科定位。
@@ -49,7 +50,7 @@
 - [ ] 定义 HARC conformance-test suite。
 - [ ] 定义 cross-agent handoff benchmark。
 - [ ] 定义自动 bilingual parity check。
-- [ ] 定义自动 onboarding/conformance 检查：验证 START_HERE、manifest、required read order、Blocking Clarification、Framework Status 与 Active Session Contract 是否可由新 Agent正确重建和回显。
+- [ ] 定义自动 onboarding/conformance 检查：验证 START_HERE、manifest、context interface、task route、revision freshness、Blocking Clarification 与 Framework Status 是否可由新 Agent正确按需读取。
 
 ## v0.4 — 自动化
 
@@ -78,6 +79,7 @@
 - [ ] 研究怎样让 Framework Approval 具有实质意义而不是 ceremonial。
 - [ ] 测量责任锚定/高杠杆审阅是否能减少审阅负担而不增加严重错误。
 - [ ] 比较 GitHub-centered 实现与 local-first 或其他 versioned backend。
+- [ ] 研究 repository-backed context 对上下文使用量、stale-state 错误和跨 Agent 接管成本的影响。
 - [ ] 研究 HARC 与学术 authorship norm、provenance system、extended/distributed cognition、automation reliance 与 human intellectual agency 的关系。
 - [ ] 为 framework fidelity 与 semantic drift 发展可操作测量。
 - [ ] 研究双语 canonical/mirror 模型中的语义漂移与翻译治理。
