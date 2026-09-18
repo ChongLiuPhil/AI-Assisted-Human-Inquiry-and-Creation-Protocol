@@ -25,9 +25,9 @@
 
 扫描结果：
 
-- Markdown 文件总数：**80**
-- 中文 canonical（`*.zh-CN.md`）：**40**
-- 英文 mirror：**40**
+- Markdown 文件总数：**84**
+- 中文 canonical（`*.zh-CN.md`）：**42**
+- 英文 mirror：**42**
   - 绝大多数使用既有 `*.md`
   - 方法论文章完整正文使用 `METHODOLOGY_ARTICLE.en.md`
 - 缺少英文 mirror 的中文文件：**0**
@@ -127,6 +127,20 @@
 - `templates/research-project/docs/clarification-register.zh-CN.md` / English mirror。
 
 当前全树重新扫描仍为缺失配对 **0**。
+
+### 3.7 Zero-context Bootstrap
+
+新增两组双语启动文件：
+
+- 根目录 `START_HERE.zh-CN.md` / `START_HERE.md`；
+- 模板 `templates/research-project/START_HERE.zh-CN.md` / English mirror。
+
+同时新增语言中立的机器可读：
+
+- `HARC_MANIFEST.yaml`
+- `templates/research-project/HARC_MANIFEST.yaml`
+
+YAML manifest 是路径、读取顺序和不变量索引，不需要仅为语言复制；其人类可读规则已经在双语 START_HERE / AGENTS / Specification 中表达。
 
 ## 4. 已修复的高风险语义不同步
 
