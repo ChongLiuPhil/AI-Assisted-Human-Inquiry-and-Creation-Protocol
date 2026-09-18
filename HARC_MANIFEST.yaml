@@ -11,12 +11,14 @@ harc:
     onboarding_report_template: "ONBOARDING_REPORT_TEMPLATE.zh-CN.md"
     onboarding_handshake_protocol: "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
     session_context_bootstrap: "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
+    context_interface: "HARC_CONTEXT_INTERFACE.yaml"
     agent_contract:
       canonical: "AGENTS.zh-CN.md"
       mirror: "AGENTS.md"
 
   required_read_order:
     - "HARC_MANIFEST.yaml"
+    - "HARC_CONTEXT_INTERFACE.yaml"
     - "START_HERE.zh-CN.md"
     - "BOOTSTRAP_PROMPT.zh-CN.md"
     - "SESSION_CONTEXT_BOOTSTRAP.zh-CN.md"
@@ -31,6 +33,7 @@ harc:
     decision_log: "core/DECISION_LOG.zh-CN.md"
     specification: "protocol/SPECIFICATION.zh-CN.md"
     persistent_memory: "protocol/PERSISTENT_MEMORY.zh-CN.md"
+    repository_context_interface: "protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md"
     onboarding_handshake: "protocol/ONBOARDING_HANDSHAKE.zh-CN.md"
     clarification_protocol: "protocol/CLARIFICATION_REGISTER.zh-CN.md"
     framework_approval: "protocol/FRAMEWORK_APPROVAL.zh-CN.md"
@@ -74,6 +77,7 @@ harc:
       - "synchronization_defects"
       - "permitted_next_action"
       - "session_contract_loaded"
+      - "repository_context_active"
 
   invariants:
     - "Repository state outranks chat memory."
@@ -85,4 +89,7 @@ harc:
     - "Working Framework is not Approved Framework."
     - "Derived artifacts remain provisional until the applicable approval gate is complete."
     - "Every substantive Chinese edit must synchronize the English mirror in the same work cycle."
-    - "Active Session Contract must be refreshed after major state changes or suspected context loss."
+    - "GitHub is the sole authoritative project-state source."
+    - "Session copies are non-authoritative transient cache."
+    - "Read latest canonical state before high-impact actions and writes."
+    - "Invalidate touched cache after repository writes."
