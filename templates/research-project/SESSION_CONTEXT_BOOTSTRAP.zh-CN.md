@@ -16,6 +16,10 @@ Control:
 - HARC_MANIFEST.yaml
 - HARC_CONTEXT_INTERFACE.yaml
 
+Working Memory:
+- resume index: docs/working-memory.zh-CN.md
+- operational state only; not long-term semantic authority
+
 Policy:
 - repository-backed
 - selective retrieval
@@ -30,17 +34,18 @@ Current task:
 - authoritative refs: [paths only]
 ```
 
-Blocking Clarifications、Framework、Artifact、Core 等动态信息需要时直接读取 GitHub 最新 canonical revision。
+Working Memory 需要时先从 GitHub fresh-fetch，用于确定当前阶段与续接点；Layer 1 / Layer 2 / Layer 3 / Evidence 的权威状态再按任务从最新 canonical revision 选择性读取。
 
 ## Context Refresh
 
 `HARC CONTEXT REFRESH` 表示：
 
 1. 重读 manifest / context interface；
-2. 解析当前任务依赖；
-3. fresh-fetch 依赖文件；
-4. 丢弃 stale cache；
-5. 继续工作。
+2. fresh-fetch Working Memory，确认当前阶段、目标、任务、阻塞与 next actions；
+3. 解析当前任务所需的长期记忆依赖；
+4. fresh-fetch 这些 canonical 文件；
+5. 丢弃 stale cache；
+6. 继续工作。
 
 不把全部项目状态重新复制进聊天。
 
