@@ -84,23 +84,26 @@
 
 **结论：**
 
-## J. Active Session Contract
+## J. Repository Context Resolver
 
-根据 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，Agent 必须在本报告末尾回显：
+根据 `HARC_CONTEXT_INTERFACE.yaml` 与 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，Agent 必须确认：
 
-`HARC ACTIVE SESSION CONTRACT — LOADED`
+`HARC REPOSITORY CONTEXT — ACTIVE`
 
 至少包括：
 
-- authority hierarchy；
+- source of truth = GitHub；
+- manifest / context-interface 路径；
 - canonical language；
-- Blocking Clarifications；
-- Working / Approved Framework；
-- Artifact status；
-- 当前任务分类；
-- upstream-first propagation path；
-- blocked actions。
+- `repository-backed / selective retrieval / no authoritative session copy`；
+- `read latest before high-impact action`；
+- `read latest before write`；
+- `invalidate touched cache after write`；
+- 当前任务 CONTENT / FORM / PROTOCOL route；
+- authoritative refs 只列路径，不复制动态状态。
 
-**Session Contract loaded：** `YES / NO`
+**Repository context active：** `YES / NO`
 
 如果为 `NO`，Onboarding 不得判定为 `PASS`。
+
+> 注意：本报告中的 Blocking Clarifications、Framework、Artifact 等摘要仅用于人类检查 Agent 是否理解正确；后续工作必须从 GitHub 最新 canonical revision 重新按需读取，不能把本报告当成权威状态。
