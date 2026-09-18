@@ -1,6 +1,8 @@
-# AGENTS.md — HARC Agent Contract
+# AGENTS.md — HARC Agent Collaboration Contract
 
-This repository defines the **Human–AI Research Collaboration Protocol (HARC)**. AI agents working in this repository or using it as a template must treat repository state as the durable collaboration substrate.
+This repository defines the **Human–AI Research Collaboration Protocol (HARC)**. Any AI Agent working in this repository, or using it as a template, must treat repository state as durable collaboration infrastructure.
+
+> **Language rule:** Chinese `AGENTS.zh-CN.md` is canonical; this English file is the synchronized mirror.
 
 ## 0. Zero-context onboarding: read START_HERE first
 
@@ -15,19 +17,33 @@ Any AI Agent taking over this repository from zero context must, before substant
 7. `docs/working-memory/current-focus.zh-CN.md`
 8. `docs/working-memory/task-plan.zh-CN.md`
 
-Use Working Memory Index -> Current Focus -> Task Plan first to determine what matters most now and how work should proceed, then reconstruct task-relevant state from the three long-term layers according to the manifest/context interface and use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a **HARC Onboarding Report**. The report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only a minimal Repository Resolver; dynamic project state must still be retrieved on demand from the latest canonical GitHub revision before large-scale structural edits, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
+Use Working Memory Index -> Current Focus -> Task Plan first to determine what matters most now and how work should proceed. Then reconstruct task-relevant state from the three Long-Term Memory layers according to the manifest/context interface and output a **HARC Onboarding Report** using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
 
-The current protocol-repository onboarding self-test is recorded in `docs/ONBOARDING_SELF_TEST.md`; it is audit evidence, not normative state.
+Before onboarding is complete, do not perform large-scale structural changes, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
+
+The current protocol-repository onboarding self-test is recorded in `docs/ONBOARDING_SELF_TEST.zh-CN.md`; it is audit evidence, not normative state.
 
 ## 1. Do not depend on chat memory
 
-A particular chat, model, vendor, account memory, hidden scratchpad, or local context is not the canonical project memory.
+A particular chat, model, vendor, account memory, hidden scratchpad, or local context is not canonical project memory.
 
 If a human instruction should constrain future work, persist it explicitly in the appropriate repository file.
 
+### Repository-backed context rules
+
+- GitHub is the sole authoritative project-state source;
+- file excerpts, Onboarding Reports, summaries, and model memory in the session are non-authoritative cache;
+- retrieve only the minimum canonical state required by the current task;
+- refetch relevant latest revisions before high-impact judgments and writes;
+- after a canonical write, older context copies immediately become `STALE`;
+- refetch when later reasoning still depends on the touched file rather than maintaining a second chat truth source;
+- prefer GitHub API, MCP, connector/plugin, or equivalent direct repository tools.
+
+See `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` and `HARC_CONTEXT_INTERFACE.yaml`.
+
 ## 2. Preserve three distinct domains
 
-Before acting on substantive human feedback, classify it as one or more of:
+Classify substantive human feedback as one or more of:
 
 - `CONTENT` — research meaning, claims, distinctions, assumptions, questions, conclusions;
 - `FORM` — artifact type, prose presentation, typography, layout, citation style, visual system, rendering;
@@ -39,7 +55,7 @@ Do not merge these domains merely for convenience.
 
 ### Content chain
 
-`Human content decision > CONTENT_CORE > approved framework > working argument map > derived prose`
+`Human content decision > CONTENT_CORE > approved framework > Working Argument Map > derived prose`
 
 ### Form chain
 
@@ -47,7 +63,7 @@ Do not merge these domains merely for convenience.
 
 ### Protocol chain
 
-`Human workflow decision > project protocol files > agent default behavior`
+`Human workflow decision > project protocol files > Agent default behavior`
 
 Lower layers must not silently contradict higher layers.
 
@@ -55,16 +71,16 @@ Lower layers must not silently contradict higher layers.
 
 ### CONTENT
 
-1. Record the human decision in `DECISION_LOG.md`.
-2. Reconcile `CONTENT_CORE.md`.
-3. Reconcile the working argument map.
+1. Record the human decision in the Decision Log.
+2. Reconcile the Content Core.
+3. Reconcile the Working Argument Map.
 4. If the change materially alters an already approved framework, mark the project out of sync and request/create a new framework version.
 5. Only then propagate the change into derived prose.
 
 ### FORM
 
 1. Record the decision.
-2. Reconcile `FORM_CORE.md`.
+2. Reconcile the Form Core.
 3. Propagate into typesetting/rendering implementation.
 4. Do not turn temporary AI defaults into human preferences.
 
@@ -72,45 +88,47 @@ Lower layers must not silently contradict higher layers.
 
 1. Record the decision.
 2. Reconcile protocol/governance files.
-3. Update reusable templates if the rule is intended to generalize.
+3. Update reusable templates if the rule generalizes.
 
-## 5. Critical Clarification Register
+## 5. Working Memory and high-impact Clarification
 
-When the AI has **high-impact, non-trivial uncertainty** about authorial intent or key content, it must not silently choose an interpretation and propagate it.
+`docs/working-memory.zh-CN.md` is the Working Memory Index; Current Focus and Task Plan carry the operational resume state required for current work and handoff.
 
-Record the issue in `docs/clarification-register.md`, including at least:
+It maintains:
 
-- the uncertain point;
-- candidate interpretations;
-- why it matters;
-- `BLOCKING / NON-BLOCKING` severity;
-- affected files / claims / sections;
-- any explicitly `AI-PROPOSED` recommendation;
-- the question requiring human resolution.
+- Current Focus: CURRENT_STAGE / CURRENT_OBJECTIVE / PRIMARY_BLOCKER / IMMEDIATE_NEXT_ACTION;
+- Task Plan: ACTIVE_TASKS / NEXT_ACTIONS / TODO / BACKLOG / BLOCKERS / PENDING_HUMAN_DECISIONS / Clarifications / SYNC_DEFECTS;
+- Work Log: stage-level progress, direction changes, milestones, and completed-task history.
 
-Pay particular attention to strong/weak readings of core claims, key concepts, scope/qualification, major inferential relations, section functions, primary-language/English terminology, translation-induced semantic change, and tension between new feedback and older Core/Framework state.
+Clarification is a Working Memory item, not Layer 1.5.
 
-After human confirmation or correction, perform:
+Work Log is outside default required context for a replacement Agent; retrieve it only for historical review, audit, change reconstruction, or current/history conflict.
 
-`Clarification Register -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+When AI encounters high-impact, non-trivial uncertainty about authorial intent or key content, do not privately choose an interpretation. Create a Clarification item, then after human resolution perform:
 
-Marking an item resolved without updating the Core is incomplete.
+`Working Memory -> human resolution -> Decision Log -> appropriate Long-Term Memory destination`
 
-Run a Clarification Scan before major phase transitions, Framework Approval, broad propagation of key terminology, formal translation, large-scale expansion, and Final Review.
+For human core content, continue:
+
+`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+
+After Promotion, mark the Working Memory item `RESOLVED / PROMOTED` and retain only pointers.
+
+Update Working Memory after substantial work cycles, important decisions, blocker changes, and before handoff.
 
 ## 6. AI proposals are proposals
 
-An AI-generated thesis, distinction, reorganization, term, layout, or aesthetic choice is not a human commitment merely because the AI has written it.
+An AI-generated thesis, distinction, reorganization, term, layout, or aesthetic choice is not a human commitment merely because it appears in a file.
 
 Until accepted by the human:
 
-- content proposals remain visibly `AI-PROPOSED` in the operational layer;
-- form proposals remain outside `FORM_CORE.md`;
+- content proposals remain visibly `AI-PROPOSED`;
+- form proposals remain outside Form Core;
 - protocol proposals remain proposals rather than silently becoming mandatory rules.
 
-## 7. Working framework vs approved framework
+## 7. Working Framework vs Approved Framework
 
-The current argument map is mutable and AI-maintained.
+The current Argument Map is mutable and AI-maintained.
 
 Human endorsement occurs only through an explicit **Framework Approval Gate**. Once approved, create a versioned immutable snapshot such as `FW-001.md`.
 
@@ -122,7 +140,7 @@ Human authorial authority concerns intended claims; it does not authorize suppre
 
 If evidence, formal reasoning, or source verification conflicts with an active human commitment:
 
-1. preserve the authorial commitment as the current intention;
+1. preserve the current authorial intention;
 2. surface the conflict explicitly;
 3. do not knowingly write a misleading downstream claim;
 4. present the issue for human decision;
@@ -130,7 +148,7 @@ If evidence, formal reasoning, or source verification conflicts with an active h
 
 ## 9. Final artifact status
 
-AI may produce extensive derived text after framework approval, but it remains `DERIVED-PROVISIONAL` until final human review.
+AI may produce extensive derived text after Framework Approval, but it remains `DERIVED-PROVISIONAL` until final human review.
 
 Do not represent an artifact as submission-ready or human-approved unless the relevant final approval gate has actually been completed.
 
@@ -145,17 +163,17 @@ When history becomes large:
 - keep current-state cores concise;
 - retrieve historical detail selectively.
 
-The goal is recoverable project memory, not forcing every agent to ingest the entire archive.
+The goal is recoverable project memory, not forcing every Agent to ingest the entire archive.
 
 ## 11. Handoff criterion
 
-A new competent AI agent should be able to reconstruct the project's active state without access to the original conversation history.
+A new competent AI Agent should be able to reconstruct the project's active state without access to the original conversation history.
 
 If this is not possible, the project has a persistence defect.
 
 ## 12. Multi-pass audits are review-and-repair loops
 
-If the human requests a multi-pass audit, each pass MUST include:
+If the human requests a multi-pass audit, each pass must include:
 
 1. review;
 2. identification of defects/omissions;
@@ -173,70 +191,77 @@ This repository has two major outputs:
 
 For the methodology article, read in this order:
 
-1. `docs/working-memory.zh-CN.md`
-2. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
-3. `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
-4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
-5. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
-6. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
-7. `paper/methodology-references.bib`
-8. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
-9. corresponding English mirrors for bilingual parity
+1. `docs/working-memory.zh-CN.md` (Index)
+2. `docs/working-memory/current-focus.zh-CN.md`
+3. `docs/working-memory/task-plan.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
+5. `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
+6. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+7. latest Approved Framework if any
+8. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+9. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
+10. `paper/methodology-references.bib`
+11. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
 
-The article's argument map is a `WORKING-FRAMEWORK` until the human explicitly approves it. The prose draft is `DERIVED-PROVISIONAL` until the appropriate approval gates are completed.
+Work Log is outside this read chain by default.
 
-The methodology article must obey the same HARC principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative HARC proposals distinct from external publication rules.
+The article's Argument Map remains a `WORKING-FRAMEWORK` until explicit human approval. Its draft remains `DERIVED-PROVISIONAL` until applicable approval gates are completed.
+
+The methodology article must obey the HARC principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When external research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative HARC proposals distinct from external publication rules.
 
 ## 14. Audit records
 
-Use the audit documents according to their roles:
+Use audit files according to their roles:
 
-- `docs/FOUNDING_IDEA_AUDIT.md` — founding-idea coverage inventory and traceability record;
-- `docs/THREE_CYCLE_REPAIR_AUDIT.md` — the corrected three-cycle `review -> repair -> verify` execution record;
-- `docs/FINAL_POST_REPAIR_AUDIT.md` — independent audit performed after all three repair cycles.
-- `docs/BILINGUAL_PARITY_AUDIT.md` — repository-wide bilingual pairing and high-risk semantic synchronization audit.
+- `docs/FOUNDING_IDEA_AUDIT.zh-CN.md` — founding-idea coverage inventory and traceability;
+- `docs/THREE_CYCLE_REPAIR_AUDIT.zh-CN.md` — corrected three-cycle `review -> repair -> verify` execution record;
+- `docs/FINAL_POST_REPAIR_AUDIT.zh-CN.md` — independent post-repair audit after all three cycles;
+- `docs/BILINGUAL_PARITY_AUDIT.zh-CN.md` — bilingual pairing and high-risk semantic synchronization audit.
 
-If these documents conflict about process status, the later repair/final-audit records govern the interpretation of the audit procedure; founder decisions in `core/DECISION_LOG.md` remain canonical.
+If these files conflict on process status, later repair/final-audit records govern process interpretation; human decisions in `core/DECISION_LOG.zh-CN.md` remain canonical.
 
 ## 15. When using this repository as a template
 
 Read, in order:
 
-1. `protocol/SPECIFICATION.md`
-2. `protocol/PERSISTENT_MEMORY.md`
-3. `protocol/FRAMEWORK_APPROVAL.md`
-4. `protocol/FORM_CONTENT_ROUTING.md`
-5. `protocol/FORM_PROFILE_INHERITANCE.md`
-6. `templates/research-project/README.md`
+1. `protocol/SPECIFICATION.zh-CN.md`
+2. `protocol/PERSISTENT_MEMORY.zh-CN.md`
+3. `protocol/FRAMEWORK_APPROVAL.zh-CN.md`
+4. `protocol/FORM_CONTENT_ROUTING.zh-CN.md`
+5. `protocol/FORM_PROFILE_INHERITANCE.zh-CN.md`
+6. `protocol/BILINGUAL_SYNC.zh-CN.md`
+7. `templates/research-project/README.zh-CN.md`
 
-Then instantiate only the human decisions actually supplied for the new project. Unknowns should remain explicit rather than being filled with AI assumptions.
+Then instantiate only human decisions actually supplied for the new project. Unknowns remain explicit rather than being filled by AI assumptions.
 
 ## 16. Chinese canonical / English synchronized mirror
 
-HARC is a bilingual project.
+HARC is bilingual.
 
 For substantive Markdown content:
 
-- the Chinese version is the canonical semantic and editing baseline;
-- the English version is a synchronized translation mirror;
-- every substantive edit to Chinese MUST be reflected in English in the same work cycle;
-- an edit is not complete while the language pair is materially inconsistent;
-- if Chinese and English conflict, Chinese governs and the English version MUST be repaired;
-- new substantive documents SHOULD be created as bilingual pairs from the beginning.
+- Chinese is the canonical semantic and editing baseline;
+- English is a synchronized translation mirror;
+- every substantive Chinese edit must be reflected in English in the same work cycle;
+- work is incomplete while the language pair is materially inconsistent;
+- if the languages conflict, Chinese governs and English must be repaired;
+- new substantive Markdown documents should be created as bilingual pairs.
 
 Preferred naming:
 
 - Chinese canonical: `NAME.zh-CN.md`
-- English mirror: `NAME.md` when an existing GitHub-default path is useful, otherwise `NAME.en.md`.
+- English mirror: `NAME.md` where GitHub-default or compatibility paths matter, otherwise `NAME.en.md`.
 
-Language-neutral technical files (for example BibTeX, schemas, code, raw data) need not be duplicated solely for translation, but human-readable guidance around them must remain bilingual.
+Language-neutral technical artifacts such as BibTeX, schemas, code, and raw data need not be duplicated solely for translation, but human-readable guidance around them remains bilingual.
 
-When editing a bilingual pair, treat the two-file synchronization as one atomic task. Do not mark the work complete after updating only one language.
+Treat synchronization of a bilingual pair as one atomic editing task.
 
 ### Pre-cutover legacy exception
 
-For files that existed before the bilingual rule was established on 2026-09-18, if historical English actually contains newer substantive development not yet absorbed by Chinese, first merge that development into Chinese so Chinese represents the latest state at cutover, then synchronize English. After this one-time legacy catch-up, the normal direction is fixed as:
+For files predating the bilingual rule, if historical English contains newer substantive development not yet absorbed by Chinese, merge that development into Chinese first so Chinese represents the latest state at cutover, then synchronize English.
 
-`human decision -> Chinese canonical -> English synchronized mirror`
+After that one-time legacy catch-up, normal development is:
+
+`Human decision -> Chinese canonical -> English synchronized mirror`
 
 English must not independently develop substantive content after cutover.
