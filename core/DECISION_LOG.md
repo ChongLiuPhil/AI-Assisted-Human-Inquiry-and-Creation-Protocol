@@ -266,3 +266,26 @@ This file is the chronological audit trail of substantive human decisions about 
 **Implementation:** add `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror and connect it to START_HERE, Bootstrap Prompt, Manifest, Onboarding Report, Agent contract, and project templates.
 
 **Status:** human-confirmed and implemented.
+
+---
+
+## 2026-09-18 — HARC-D020
+
+**Source:** Human project founder  
+**Classification:** PROTOCOL
+
+**Decision:** HARC should further treat GitHub directly as the AI Agent's authoritative external memory and working-state store. The Agent does not need to maintain a long-lived duplicate project-state mirror in chat context; it should retrieve the latest canonical files from GitHub on demand for the current task, and all updates that should constrain future work should be written directly back to GitHub. Model context retains only a minimal access kernel and task-relevant transient cache.
+
+**Interface principle:**
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+After a write, old context copies become stale; before high-impact judgments or writes, latest revisions must be reconfirmed. Direct GitHub API, MCP, connector/plugin, or equivalent tool access is preferred for on-demand reads and write-through updates.
+
+**Revision to HARC-D019 / P21:** the Active Session Contract no longer carries a dynamic project-state copy. It is narrowed to a Repository Resolver / access kernel. Dynamic Blocking Clarifications, Framework, Artifact, and Core state are fetched from the latest repository version when needed.
+
+**Implementation:** add `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md`, its English mirror, and machine-readable `HARC_CONTEXT_INTERFACE.yaml`, and connect them to startup, manifests, agent contracts, and project templates.
+
+**Status:** human-confirmed and implemented.
