@@ -54,7 +54,7 @@ Agent 可以在当前会话中保持一个非常小的 Repository Resolver，包
 
 GitHub 中同时保存：
 
-- **Working Memory** — 当前阶段、目标、任务、阻塞、澄清和 handoff 的操作状态；
+- **Working Memory Area** — Index、Current Focus、Task Plan 与 Work Log；其中 Current Focus + Task Plan 是默认 operational resume state，Work Log 主要供人类历史回顾；
 - **Long-Term Memory** — 三层长期研究记忆。
 
 以下长期内容的权威版本始终只在 GitHub：
@@ -77,7 +77,7 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 
 每个实质性任务应执行：
 
-1. **Resume** — 先读取最新 Working Memory，确定当前阶段、目标、任务、阻塞与 next actions；
+1. **Resume** — 读取 Working Memory Index -> Current Focus -> Task Plan，确定当前阶段、最高优先级目标、primary blocker、active tasks 与 next actions；
 2. **Resolve** — 根据任务确定需要哪些长期记忆角色；
 3. **Fetch** — 从 GitHub 读取这些角色的最新 canonical 文件；
 4. **Reason** — 仅使用当前任务所需内容进行推理；
@@ -90,21 +90,21 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 
 ### PROTOCOL
 
-先读 Working Memory，再优先读取：
+先读 Working Memory Index -> Current Focus -> Task Plan，再优先读取：
 
 - Protocol Core；
 - Decision Log 最近相关部分；
-- Clarification Register；
+- Task Plan 中相关 Clarification / pending decision；
 - 当前相关 protocol 文件；
 - Specification / AGENTS / templates（仅在影响时）。
 
 ### CONTENT
 
-先读 Working Memory，再优先读取：
+先读 Working Memory Index -> Current Focus -> Task Plan，再优先读取：
 
 - Content Core；
 - Decision Log 最近相关部分；
-- Clarification Register；
+- Task Plan 中相关 Clarification / pending decision；
 - Framework Status；
 - Working / Approved Framework；
 - 与任务直接相关 evidence；
@@ -112,13 +112,15 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 
 ### FORM
 
-先读 Working Memory，再优先读取：
+先读 Working Memory Index -> Current Focus -> Task Plan，再优先读取：
 
 - Form Core；
 - Decision Log 最近相关部分；
-- Clarification Register（如果存在高影响表达不确定性）；
+- Task Plan 中相关 Clarification（如果存在高影响表达不确定性）；
 - 适用 form profile；
 - 相关 Artifact / rendering state。
+
+Work Log 默认不参与 task-based retrieval；只有人类要求历史回顾、审计、变迁重建或 current/history conflict 时读取。
 
 Agent SHOULD 避免为了“保险”每轮读取整个仓库。
 
@@ -126,7 +128,9 @@ Agent SHOULD 避免为了“保险”每轮读取整个仓库。
 
 Working Memory 是 repository-backed operational state，但不是长期实质性权威。
 
-- 当前工作状态、TODO、blocker、handoff 以 Working Memory 为准；
+- 当前最重要目标与立即下一步以 Current Focus 为准；
+- 当前任务、TODO、blocker、pending decision / Clarification 以 Task Plan 为准；
+- 历史阶段纪要以 Work Log 为准，但 Work Log 不覆盖当前状态；
 - 人类长期承诺以 Layer 1 canonical Core / Decision Log 为准；
 - 论述结构以 Layer 2 current framework 为准；
 - 成果内容以 Layer 3 artifact 为准；
