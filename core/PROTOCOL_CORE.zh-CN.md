@@ -34,13 +34,15 @@ AI 扩写不得静默违背或替代这层人类基础。
 
 在适当情况下，作者的跨项目偏好可以由未来项目继承。
 
-## P4. AI 应维护紧凑的操作性论证表示
+## P4. 第二层应保存持久但高可修改性的当前论述框架
 
-第二层文档应以压缩、可检查的方式表示论文、书籍或其他研究成果的实际结构。
+第二层属于长期研究记忆，但比第一层更可修改。它应以压缩、可检查的方式表示论文、书籍或其他研究成果的当前实际思想结构。
 
-这一操作性表示应包含主要主张、关系、章节/小节功能、概念区分与未决问题。
+这一层应包含核心命题、关键概念、推论关系、章节/小节功能、概念区分与当前结构状态。
 
-对于大型项目，它应成为人类与 AI 讨论结构问题的主要界面，而不是要求人类反复重读整个扩写成果。
+第二层必须以第一层的人类作者核心基础为上游约束，但可以包含第一层没有逐项表达、而为研究展开所必需的结构化内容。
+
+对于大型项目，它应成为人类与 AI 讨论结构问题的主要界面。Working Argument Map 与 Approved Framework snapshots 是这一长期层的不同批准状态。
 
 ## P5. 人类反馈必须先向上游传播
 
@@ -174,19 +176,27 @@ HARC 项目的所有实质性文档应提供中文与英文版本。
 canonical cutover 完成之后，正常实质性发展方向固定为：`人类决定 -> 中文 canonical -> 英文 synchronized mirror`。英文不得再作为独立的实质性发展分支。
 
 
-## P19. 高影响不确定性必须进入关键澄清层
+## P19. 高影响不确定性必须进入 Working Memory 的 Clarification 队列
 
-在人类已确认的规范状态与 AI 维护的 Working Framework 之间，HARC 应维护一个 **Critical Clarification Register（关键澄清登记册）**。
+HARC 不再把 Critical Clarification 视为 Layer 1 与 Layer 2 之间的独立“1.5 层”。
 
-当 AI Agent 对作者意图、核心命题、关键概念、范围、推论关系、章节功能、关键术语或母语/英文对应存在**非微不足道且高影响**的不确定性时，不得静默选择一种解释并向下游传播。
+Clarification 是 **Working Memory（工作记忆）** 中的一种记录类型。
 
-Agent 应主动把这种不确定性提升为显式澄清条目，说明候选解释、影响范围、严重度以及需要人类确认的问题。
+当 AI Agent 对作者意图、核心命题、关键概念、范围、推论关系、章节功能、关键术语或母语/英文对应存在非微不足道且高影响的不确定性时，不得静默选择一种解释并向下游传播。
 
-未解决条目不属于人类已批准观点。人类确认或纠正后，结果必须通过 Decision Log 进入相应 Content Core / Form Core / Protocol Core，再传播到 Working Argument Map 与派生成果。
+Agent 应把该不确定性写入 Working Memory 的 Clarification 区，说明候选解释、影响范围、严重度以及需要人类确认的问题。
 
-对于可能造成重大语义漂移或大规模返工的问题，可以标记为 `BLOCKING`，在解决前暂停相关结构性传播。对于不阻塞其他工作的条目，可以标记为 `NON-BLOCKING`，但不得把任何候选答案写成人类立场。
+未解决条目不属于人类长期承诺，可以标记为 `BLOCKING` 或 `NON-BLOCKING`。
 
-HARC 应在重大阶段转换、Framework Approval、关键术语全篇传播、正式翻译、大规模章节扩写及 Final Artifact Review 前主动执行 Clarification Scan。
+人类确认或纠正后，结果必须执行 Promotion：
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+如果涉及人类核心内容，则进入 Layer 1 Content Core，再传播到 Layer 2 Framework 与 Layer 3 Artifact；Form / Protocol 决定进入对应长期 Core；纯结构性 Framework 决定进入 Layer 2。
+
+Promotion 完成后，Working Memory 中的条目退出 active 状态，仅保留 resolved/promoted 指针与审计信息。
+
+HARC 应在重大阶段转换、Framework Approval、关键术语全篇传播、正式翻译、大规模章节扩写及 Final Artifact Review 前主动执行 Working Memory / Clarification Scan。
 
 
 ## P20. 零上下文接管必须有显式启动入口与接管握手
@@ -251,6 +261,31 @@ HARC 应支持一种 **Repository-Backed Context Interface（仓库支撑的上�
 高影响判断与写入前必须重新确认相关 canonical 文件的最新 revision。Agent 应尽量通过 GitHub API、MCP、connector/plugin 或等价工具直接读取/写入，而不是要求人类把文件内容复制进聊天。
 
 HARC 应提供机器可读的 context-interface manifest，描述 task routing、revision policy、cache invalidation、write-through 和 trust boundary。
+
+
+## P23. 三层长期记忆与并行 Working Memory 必须明确区分
+
+HARC 的核心研究状态采用三层长期记忆：
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+其中：
+
+- Layer 1 保存人类作者持续表达、纠正、确认和净化后的核心基础；
+- Layer 2 以 Layer 1 为基础，保存当前论述框架、核心命题、关键概念和论证结构，持久但更可修改；
+- Layer 3 主要由 Layer 2 展开为完整成果，并同时受 Layer 1 与证据约束。
+
+与三层长期记忆并行，项目必须维护 **Working Memory**。
+
+Working Memory 记录当前阶段、目标、工作计划、active tasks、completed work、next actions、TODO、blockers、pending human decisions、clarifications、sync defects 与 handoff note。
+
+Working Memory 的功能是让任何新的人类参与者或 AI Agent 能迅速回答：
+
+> “项目现在做到哪里，下一步从哪里继续？”
+
+它不是第四个长期语义层，也不得成为长期主张的替代真值源。
+
+Working Memory 中获得稳定确认的内容必须 Promotion 到相应长期记忆；Promotion 后 Working Memory 只保留状态、Decision ID 与目标文件指针。
 
 ---
 
