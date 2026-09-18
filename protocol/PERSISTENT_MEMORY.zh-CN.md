@@ -30,7 +30,7 @@ HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
 | 批准/同步状态 | `docs/framework-status.zh-CN.md` |
 | 证据与核验 | `evidence/` |
-| 零上下文启动与握手 | `START_HERE.zh-CN.md`、`BOOTSTRAP_PROMPT.zh-CN.md`、`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`、`HARC_MANIFEST.yaml`、`ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
+| 零上下文启动与仓库上下文接口 | `START_HERE.zh-CN.md`、`BOOTSTRAP_PROMPT.zh-CN.md`、`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`、`HARC_MANIFEST.yaml`、`HARC_CONTEXT_INTERFACE.yaml`、`ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | 协作规则 | `AGENTS.zh-CN.md`、`protocol/` |
 | 扩写成果 | `paper/`、`book/`、`article/` 等 |
 
@@ -89,18 +89,31 @@ HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 
 目标是**可恢复性**，而不是让所有历史同时进入模型上下文。
 
-## 双层记忆模型
+## Repository-backed memory model
 
-HARC 现在区分：
+HARC 现在采用：
 
-- **Durable Repository State** — GitHub 中可恢复、可审计的长期项目状态；
-- **Active Session Contract** — Agent 根据仓库重新生成并回显到当前对话上下文中的压缩操作契约。
+`GitHub Repository = authoritative external memory + working state`
 
-仓库负责 persistence，会话契约负责 salience。会话契约丢失时，必须重新从仓库恢复，而不能反向把会话记忆当成权威来源。
+`Model Context = transient retrieval cache + control plane`
+
+这意味着：
+
+- GitHub 保存唯一权威项目状态；
+- 会话中不长期维护 Blocking Clarifications、Framework、Artifact、Core 等动态状态副本；
+- Agent 根据当前任务选择性读取最新 canonical 文件；
+- 当前上下文中的文件摘录只是临时、非权威缓存；
+- 高影响判断与写入前重新读取相关最新 revision；
+- canonical 文件写入后，旧缓存立即视为 `STALE`；
+- 后续仍需要时重新读取，而不是同步维护一份聊天副本。
+
+Session Context Bootstrap 只保存 Repository Resolver，也就是“如何找到记忆”，而不是“另一份记忆”。
+
+完整接口见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` 与 `HARC_CONTEXT_INTERFACE.yaml`。
 
 ## 新 Agent 重建目标
 
-在回答这些问题之前，新 Agent 应先完成 `START_HERE.zh-CN.md` 定义的 Onboarding Handshake，并按照 `HARC_MANIFEST.yaml` 的 read order 重建当前状态。
+在回答这些问题之前，新 Agent 应先完成 `START_HERE.zh-CN.md` 定义的 Onboarding Handshake，激活 `HARC REPOSITORY CONTEXT — ACTIVE`，然后按照 `HARC_MANIFEST.yaml` 与 `HARC_CONTEXT_INTERFACE.yaml` 按需读取最新状态。
 
 一个新的、能力合格的 Agent 应能回答：
 
