@@ -17,11 +17,12 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 > 3. read `HARC_CONTEXT_INTERFACE.yaml`;
 > 4. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
 > 5. read `AGENTS.zh-CN.md`;
-> 6. follow manifest/context-interface task routing and retrieve current normative state on demand;
-> 7. treat Chinese as canonical and English only as the synchronized mirror;
-> 8. retrieve current Blocking/task-relevant Non-blocking Clarifications only when needed;
-> 9. retrieve latest canonical Framework / Artifact / Evidence state only when needed by the task;
-> 10. before substantive modification, output a HARC Onboarding Report and confirm `HARC REPOSITORY CONTEXT — ACTIVE`. Do not treat that report as future authority; refetch dynamic state from GitHub on demand.
+> 6. read `docs/working-memory.zh-CN.md` to determine current stage, objective, active tasks, blockers, pending human decisions, and next actions;
+> 7. use manifest/context-interface task routing to selectively retrieve current normative state from the three long-term layers;
+> 8. treat Chinese as canonical and English only as the synchronized mirror;
+> 9. read task-relevant blockers/clarifications from Working Memory and verify destination files when needed;
+> 10. retrieve latest canonical Layer 1 / Layer 2 / Layer 3 / Evidence state only when needed;
+> 11. before substantive modification, output a HARC Onboarding Report including the current Working Memory resume state and confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
 >
 > Do not:
 >
@@ -35,7 +36,7 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 >
 > If uncertainty could materially affect a core claim, key concept, terminology/translation, scope, major inference, section function, or the overall argument structure, use:
 >
-> `ambiguity -> Clarification Register -> human resolution -> Decision Log -> appropriate Core -> Working Argument Map -> Derived Artifact`
+> `ambiguity -> Working Memory / Clarification -> human resolution -> Promotion -> Decision Log -> appropriate Long-Term Memory destination`
 >
 > For an explicit human decision, use:
 >
