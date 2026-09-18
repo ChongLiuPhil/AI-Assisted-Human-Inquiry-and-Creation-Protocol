@@ -13,7 +13,7 @@ The first is a tool for collaboration. The second is a durable record of the int
 
 ## 2. Framework Approval Gate
 
-A framework is ready for approval when it compactly states:
+A framework is ready to enter approval review when it compactly but adequately states:
 
 - central question;
 - thesis or thesis set;
@@ -21,9 +21,14 @@ A framework is ready for approval when it compactly states:
 - principal supporting claims;
 - dependency relations among claims;
 - major sections/chapters and their roles;
-- important limitations;
+- important scope conditions and limitations;
 - intentionally unresolved questions;
-- known evidence conflicts that materially affect the argument.
+- known evidence conflicts that materially affect the argument;
+- any specific wording deliberately included in the framework and therefore made part of its intellectual representation.
+
+Being ready for approval is not the same as being approved. Framework Approval requires the human author to clearly understand, carefully review item by item, and explicitly confirm **every substantive element actually represented in the proposed framework**. The human cannot give only a blanket approval to headings, a summary, or the general idea and then treat substantive framework details that were not understood or reviewed as approved.
+
+An AI Agent may assist in proposing, organizing, compressing, and expressing the Working Framework, but it cannot replace human authorization of project purpose, direction, and intellectual architecture.
 
 When the human explicitly approves it, the agent should create:
 
@@ -53,18 +58,22 @@ Framework Approval must not rest on key interpretations that the AI privately gu
 
 ## 3. What framework approval means
 
-Framework approval is the project's main substantive intellectual checkpoint.
+Framework Approval is the project's main substantive intellectual checkpoint and the structural anchor of human core intellectual responsibility.
 
-It indicates human acceptance of:
+It indicates that the human has understood, reviewed, and accepted every substantive element actually represented in the framework, including:
 
 - central theses;
-- major inferential relations;
+- major inferential relations and their logical dependencies;
 - core distinctions;
 - organization of the reasoning;
 - intended role of major sections/chapters;
-- declared limitations and unresolved issues.
+- scope conditions;
+- declared limitations and unresolved issues;
+- specific wording included in the framework.
 
-It allows human attention to focus on the intellectual architecture rather than requiring line-by-line approval of every provisional AI expansion during development.
+It allows development to proceed without requiring human line-by-line approval of every provisional AI expansion, but it does not permit the human to approve only a high-level summary while ignoring substantive details inside the framework itself.
+
+Framework Approval is a HARC governance architecture; it should not automatically be presented as a universal theory of authorship across all disciplines, institutions, or publication regimes.
 
 ## 4. Derived expansion
 
@@ -162,6 +171,32 @@ Recommended states:
 - `FINAL-APPROVED`
 
 ## 9. Responsibility distinction
+
+HARC distinguishes:
+
+### Responsibility for project purpose and direction
+
+The purpose, central problem, and direction of research or creative work originate with humans and remain under human initiation, navigation, or approval. An AI Agent is a collaboration tool that may perform or assist substantial concrete work, but it does not bear the project's purpose or ultimate core responsibility.
+
+### Intellectual-architecture responsibility
+
+Anchored primarily in the human-approved framework. The human is responsible for understanding, reviewing, judging, and confirming every substantive element actually represented there.
+
+### Derived-expression quality control
+
+AI may perform or assist extensive expansion, restructuring, and expression work; concrete factual, evidential, expressive, and implementation defects in later derived text remain subject to checking and revision.
+
+### Public scholarly accountability
+
+The release/submission decision remains a human responsibility to the extent required by relevant external standards and is handled through the separate Final Artifact Approval Gate.
+
+A concise formulation is:
+
+> **HARC takes human-given project purpose and direction as upstream, uses a framework fully understood and approved by the human as the structural anchor of core intellectual responsibility, and uses Final Artifact Approval for accountability over the concrete public version.**
+
+This is HARC's governance model. It does not claim that Framework Approval by itself supplies a universal cross-domain theory of authorship.
+
+
 
 HARC distinguishes:
 
