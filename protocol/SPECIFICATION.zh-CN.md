@@ -557,6 +557,8 @@ HARC 项目本身应维护两个互相支撑的产出：
 
 ```text
 START_HERE.zh-CN.md
+BOOTSTRAP_PROMPT.zh-CN.md
+ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 AGENTS.zh-CN.md
 HARC_MANIFEST.yaml
 core/CONTENT_CORE.zh-CN.md
