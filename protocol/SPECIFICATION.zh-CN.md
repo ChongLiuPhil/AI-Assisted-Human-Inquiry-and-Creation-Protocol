@@ -592,6 +592,8 @@ docs/framework-status.zh-CN.md
 
 采用双语配置时，还应同时维护对应英文 mirror。
 
+旧 clarification-register 路径可作为兼容指针保留，但不属于 active state 的最小必需文件。
+
 对于长篇或高风险项目，强烈推荐 evidence 目录、Approved Framework 快照、详细协议文件和审计记录。
 
 ---
