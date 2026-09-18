@@ -69,4 +69,6 @@ Do not duplicate current blockers, pending human decisions, or high-impact Clari
 
 ## Governance
 
-This file is not human-approved merely because it exists. Create a versioned `FW-xxx` snapshot only after explicit human framework approval.
+This file is not human-approved merely because it exists. Create a versioned `FW-xxx` snapshot only after explicit human Framework Approval.
+
+AI may assist in proposing, organizing, and expressing the framework, but should not be characterized as a cognitive subject or as “performing cognitive labor / cognitive tasks.” Before Framework Approval, the human must clearly understand, carefully review, and confirm every substantive element actually represented in the proposed version; approval is not a blanket sign-off on headings or a summary alone.
