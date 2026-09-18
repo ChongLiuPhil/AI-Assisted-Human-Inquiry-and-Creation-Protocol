@@ -1,5 +1,7 @@
 # Methodology Article — AI Framework Review Memo
 
+> Chinese `paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md` is the canonical version of this review aid; this English file is its synchronized mirror. The memo remains AI-PROPOSED in both languages.
+
 **Status:** `AI-PROPOSED REVIEW AID`  
 **Authority:** non-canonical; this file does not modify the Article Content Core and does not constitute human approval.  
 **Purpose:** help the human author review the `WORKING-FRAMEWORK — REVIEW READY` before any `MA-FW-001` snapshot is created.
