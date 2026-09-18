@@ -18,8 +18,8 @@ Before substantive work:
 8. read `docs/working-memory/task-plan.zh-CN.md`;
 9. skip Work Log by default;
 10. selectively retrieve current state from the three long-term layers using manifest/context-interface task routing;
-8. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report and confirm `HARC REPOSITORY CONTEXT — ACTIVE`;
-9. begin substantive work only after the report passes and Repository Context is active; update Working Memory after substantial work cycles.
+11. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report and confirm `HARC REPOSITORY CONTEXT — ACTIVE`;
+12. begin substantive work only after the report passes and Repository Context is active; update Current Focus / Task Plan after substantial work cycles and update Work Log at appropriate milestones.
 
 ## Onboarding Report must include
 
