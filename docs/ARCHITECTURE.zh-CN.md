@@ -10,9 +10,12 @@
                        |
                Repository Resolver
                        |
-                 Working Memory
-        stage / goals / tasks / blockers
-      clarifications / TODO / handoff / status
+              Working Memory Area
+       +-----------------------------+
+       | Current Focus               |
+       | Task Plan                   |
+       | Work Log (human history)    |
+       +-----------------------------+
               /           |           \
              v            v            v
      +-----------+   +-----------+   +-----------+
@@ -26,7 +29,7 @@
                  resolved Working Memory
 ```
 
-三层都是长期研究记忆。Working Memory 与三层并行，负责当前工作的可续接状态。
+三层都是长期研究记忆。Working Memory Area 与三层并行：Current Focus + Task Plan 负责当前工作的可续接状态；Work Log 主要保留供人类回顾的阶段历史，不进入默认 AI 接管上下文。
 
 采用双语配置时，上述所有人类可读规范状态同时具有中文 canonical 与英文 mirror。
 
@@ -55,7 +58,9 @@ HARC 区分：
 - **长期记忆 Layer 1** — 人类作者核心基础；
 - **长期记忆 Layer 2** — 当前论述框架；
 - **长期记忆 Layer 3** — 派生成果；
-- **Working Memory** — 当前阶段、目标、任务、阻塞、clarification、TODO 与 handoff；
+- **Working Memory / Current Focus** — 当前最高优先级目标与立即下一步；
+- **Working Memory / Task Plan** — 当前任务、阻塞、clarification、TODO 与计划；
+- **Working Memory / Work Log** — 面向人类回顾的阶段历史与方向变化；
 - **历史** — 决策、旧 framework、证据、归档草稿与 Git 历史。
 
 Working Memory 用于续接，不取代长期层。稳定结果通过 Promotion 进入相应长期层。
@@ -115,7 +120,7 @@ Working intellectual structure
 3. 哪个论证 framework 实际已经得到人类批准？
 4. 哪些内容由 AI 提议但人类尚未接受？
 5. 哪些证据约束当前主张？
-6. Working Memory 中有哪些 blocker、pending human decision 与 clarification？
+6. Current Focus 指向的当前最重要目标是什么？Task Plan 中有哪些 blocker、pending human decision 与 clarification？
 7. 哪些问题仍未解决？
 8. 当前成果是否与已批准状态同步？
 9. 中英文规范文件是否保持语义同步？
