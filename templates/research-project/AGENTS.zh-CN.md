@@ -84,6 +84,8 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 
 人类内容决定高于 AI 草拟。AI 提议在被接受前必须明显保持 pending。
 
+AI Agent 在项目中作为协作工具。不要把 AI 描述为具有认知性的主体，也不要把“AI 承担认知劳动 / 认知任务”作为规范性术语；应具体说明 AI 执行或辅助的检索、综合、起草、重组、核查等工作。研究或创作的目的、核心问题与方向必须来源于人类或得到人类明确授权，最终核心责任仍由人类承担。
+
 ## Form 规则
 
 人类形式决定高于渲染默认值。不得从临时工具选择推断长期作者偏好。
@@ -104,7 +106,7 @@ Framework Approval、正式翻译、大规模扩写和 Final Review 前主动执
 
 只有在人类明确 Framework Approval 后才能创建 `docs/frameworks/FW-xxx.zh-CN.md`，并同步创建英文 mirror。不得静默修改已批准快照。
 
-Approved Framework 是主要实质性思想基线。应区分 framework-level defect 与后续 AI 扩写才引入的局部缺陷。
+Approved Framework 是主要实质性思想基线和人类核心思想责任的结构性锚点。Framework Approval 前，人类必须清楚理解、认真审核并明确确认拟批准 framework 中实际呈现的全部实质内容，包括核心命题、推论关系、关键区分、范围条件、章节/小节功能及被纳入 framework 的具体措辞。应区分 framework-level defect 与后续 AI 扩写才引入的局部缺陷。
 
 ## Evidence 规则
 
