@@ -41,7 +41,8 @@ Because the review-ready Working Framework has now been reorganized and provenan
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
-- `docs/working-memory.zh-CN.md`
+- `docs/working-memory/current-focus.zh-CN.md`
+- `docs/working-memory/task-plan.zh-CN.md`
 - `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
@@ -58,9 +59,10 @@ Because the review-ready Working Framework has now been reorganized and provenan
 
 ## Working Memory / Clarification Gate before `MA-FW-001`
 
-Working Memory resume state: `docs/working-memory.zh-CN.md`
+Current Focus: `docs/working-memory/current-focus.zh-CN.md`
+Task Plan: `docs/working-memory/task-plan.zh-CN.md`
 
-See `docs/working-memory.zh-CN.md` for the full unresolved state.
+See `docs/working-memory/task-plan.zh-CN.md` for the full unresolved state.
 
 Current `BLOCKING` entries:
 
