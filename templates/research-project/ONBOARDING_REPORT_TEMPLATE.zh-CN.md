@@ -52,8 +52,12 @@
 - `PASS / PARTIAL / FAIL`
 - 说明：
 
-## J. Active Session Contract
-- 按 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 回显：`HARC ACTIVE SESSION CONTRACT — LOADED`
-- Session Contract loaded：`YES / NO`
+## J. Repository Context Resolver
+- 按 `HARC_CONTEXT_INTERFACE.yaml` / `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 确认：`HARC REPOSITORY CONTEXT — ACTIVE`
+- Repository context active：`YES / NO`
+- Current task route：`CONTENT / FORM / PROTOCOL`
+- Authoritative refs：仅列路径，不复制动态状态
 
 如果为 `NO`，Onboarding 不得判定为 `PASS`。
+
+> 本报告的动态状态摘要只用于人类验证。后续工作必须从 GitHub 最新 canonical revision 按需读取。
