@@ -2,6 +2,15 @@
 
 This repository defines the **Human–AI Research Collaboration Protocol (HARC)**. AI agents working in this repository or using it as a template must treat repository state as the durable collaboration substrate.
 
+## 0. Zero-context onboarding: read START_HERE first
+
+Any AI Agent taking over this repository from zero context must, before substantive work, read:
+
+1. `START_HERE.zh-CN.md`
+2. `HARC_MANIFEST.yaml`
+
+Then follow the mandatory read order and output a **HARC Onboarding Report** before large-scale structural edits, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
+
 ## 1. Do not depend on chat memory
 
 A particular chat, model, vendor, account memory, hidden scratchpad, or local context is not the canonical project memory.
