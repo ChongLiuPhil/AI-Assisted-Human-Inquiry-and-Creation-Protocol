@@ -189,35 +189,48 @@ If the Agent cannot produce that report from repository state alone, the project
 No protocol file can guarantee that every external platform automatically reads a particular filename. HARC therefore aims for **maximal discoverability plus verifiable onboarding** through root-level entry files, a general agent contract, a machine manifest, README navigation, and a copyable prompt, so that any repository-capable agent that follows project instructions can reconstruct the same workflow.
 
 
-## P21. Durable repository state should be reinjected into active session context after onboarding
+## P21. Session context should retain only a repository-access kernel, not a second authoritative project state
 
-HARC durable state lives in the repository, but merely existing in the repository does not guarantee that the rules remain highly salient in the active generation context throughout a long conversation.
+HARC durable state lives in the repository. After takeover, an AI Agent may retain a very small **Repository Resolver / Active Session Kernel** in the current conversation, but that kernel should contain only:
 
-After the Zero-context Onboarding Handshake, a replacement AI Agent should generate a compressed **HARC Active Session Contract** from current repository state and explicitly write it into its own current reply so that key HARC invariants and current project status re-enter the active conversation context.
+- that GitHub is the sole authoritative project-state source;
+- where the manifest and context-interface are;
+- Chinese-canonical / English-mirror priority;
+- the current CONTENT / FORM / PROTOCOL route;
+- when repository state must be refetched;
+- how stale cache is invalidated after writes.
 
-The Session Contract should include at least:
+It should **not maintain long-lived copies** of Blocking Clarifications, Framework state, Artifact state, Core content, or other dynamic research state.
 
-- authority hierarchy;
-- canonical language;
-- current Blocking Clarifications;
-- Working / Approved Framework state;
-- Artifact / approval state;
-- current task classification and upstream-first propagation path;
-- currently prohibited or blocked actions.
-
-This is not the platform's true system prompt. HARC must not claim to override or modify platform system/developer/safety instructions, model weights, or platform-level memory.
+Dynamic state should be fetched on demand from the latest canonical GitHub revision. Earlier Onboarding Reports, session summaries, file excerpts, and model memory are non-authoritative cache.
 
 Correct precedence is:
 
-`Platform system/developer rules > HARC Session Contract > ordinary task-level AI defaults`
+`Platform system/developer rules > HARC repository access kernel > ordinary task-level AI defaults`
 
-After major state changes, resolution of a Blocking Clarification, Framework Approval, Final Artifact Review, or suspected context loss, the Agent should perform a `HARC CONTEXT REFRESH` by rereading repository state and updating the active session contract.
+This does not promote repository files into a true platform system prompt or claim to modify model weights or platform memory.
 
-This creates two-layer memory:
 
-`Durable Repository State + Active Session Contract`
 
-The former provides recoverable persistence; the latter provides active-session salience and verifiable execution.
+## P22. GitHub should serve as the authoritative external-context and working-state interface
+
+HARC should support a **Repository-Backed Context Interface**:
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+A model still needs relevant information temporarily available during an inference, but it should not maintain a parallel long-lived authoritative copy of GitHub state.
+
+Each substantive task should use:
+
+`Resolve -> Fetch latest -> Reason -> Act -> Write-through -> Invalidate stale cache -> Refresh if needed`
+
+Updates that must constrain future Agents are written only to GitHub; any session copy becomes stale immediately after repository changes.
+
+Before high-impact judgments or writes, the Agent should reconfirm the latest revision of relevant canonical files. It should prefer direct GitHub API, MCP, connector/plugin, or equivalent tool access rather than requiring humans to paste repository content into chat.
+
+HARC should provide a machine-readable context-interface manifest describing task routing, revision policy, cache invalidation, write-through behavior, and trust boundaries.
 
 ---
 
