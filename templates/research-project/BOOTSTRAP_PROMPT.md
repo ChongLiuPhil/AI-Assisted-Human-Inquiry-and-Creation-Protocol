@@ -8,10 +8,11 @@
 >
 > 1. read `START_HERE.zh-CN.md`;
 > 2. read `HARC_MANIFEST.yaml`;
-> 3. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
-> 4. read `AGENTS.zh-CN.md`;
-> 5. reconstruct project state using the manifest `required_read_order`;
-> 6. output a HARC Onboarding Report using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` and echo `HARC ACTIVE SESSION CONTRACT — LOADED`.
+> 3. read `HARC_CONTEXT_INTERFACE.yaml`;
+> 4. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
+> 5. read `AGENTS.zh-CN.md`;
+> 6. retrieve project state on demand using manifest/context-interface task routing;
+> 7. output a HARC Onboarding Report and confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
 >
 > Chinese is canonical; English is the synchronized mirror.
 >
