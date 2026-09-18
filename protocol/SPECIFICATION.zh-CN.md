@@ -441,8 +441,11 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 项目 SHOULD 在根目录提供：
 
 - `START_HERE.zh-CN.md` / English mirror；
+- `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror；
+- `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror；
 - `HARC_MANIFEST.yaml` 或等价机器可读状态索引；
-- 根 `AGENTS.zh-CN.md` / English mirror。
+- 根 `AGENTS.zh-CN.md` / English mirror；
+- 一个可发现的 Onboarding Handshake 规范。
 
 新的 AI Agent 在实质性工作前 MUST 按启动入口定义的顺序读取当前状态，并 SHOULD 先输出 HARC Onboarding Report，说明协议状态、人类已确认状态、Form 状态、Blocking Clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。
 
