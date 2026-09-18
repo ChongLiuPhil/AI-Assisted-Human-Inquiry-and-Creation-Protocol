@@ -1,5 +1,7 @@
 # Open Licensing Decision
 
+> **Language:** Chinese canonical: `LICENSE-DECISION.zh-CN.md`; this English file is the synchronized mirror.
+
 This repository is intended to become an openly reusable protocol project. Repository visibility alone, however, should not be treated as a substitute for an explicit license.
 
 ## Current status
