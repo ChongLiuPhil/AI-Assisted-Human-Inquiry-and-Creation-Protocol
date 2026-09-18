@@ -67,6 +67,7 @@ harc:
     - "Repository state outranks chat memory."
     - "AI proposals are not human commitments."
     - "Working Memory is parallel operational state, not Layer 1.5."
+    - "Working Memory must be updated after substantial work cycles and before handoff."
     - "High-impact uncertainty enters Working Memory as a Clarification item."
     - "Resolved Working Memory items are promoted into the appropriate long-term memory destination."
     - "Blocking clarifications must be resolved or explicitly deferred before Framework Approval."
