@@ -82,4 +82,25 @@
 - `FAIL` — 存在 onboarding/persistence defect，先修复；
 - `PARTIAL` — 可进行有限工作，但某些部分被 clarification / missing state 阻塞。
 
-**结论：** 
+**结论：**
+
+## J. Active Session Contract
+
+根据 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，Agent 必须在本报告末尾回显：
+
+`HARC ACTIVE SESSION CONTRACT — LOADED`
+
+至少包括：
+
+- authority hierarchy；
+- canonical language；
+- Blocking Clarifications；
+- Working / Approved Framework；
+- Artifact status；
+- 当前任务分类；
+- upstream-first propagation path；
+- blocked actions。
+
+**Session Contract loaded：** `YES / NO`
+
+如果为 `NO`，Onboarding 不得判定为 `PASS`。
