@@ -118,6 +118,31 @@ Working Memory 被进一步拆分为三个逻辑功能：
 
 ---
 
+## 2026-09-18 — 当前全讨论覆盖复核
+
+**性质：** 一轮完整的 `审查 -> 修复 -> 验证`。
+
+**复核结果：**
+
+- 三层 Long-Term Research Memory、并行 Working Memory、Current Focus / Task Plan / Work Log 均已落实；
+- Clarification / Promotion、Repository-Backed Context、zero-context onboarding、双语 canonical/mirror、Framework/Final Approval、form inheritance、方法论文章自托管等已形成规范与执行入口；
+- 未发现新的核心架构缺失。
+
+**本轮实际修复：**
+
+- 根 START_HERE / AGENTS 英文 mirror 的旧 Clarification Register 与旧读取顺序；
+- project-template START_HERE 的编号回归和旧 Clarification 路由；
+- project-template AGENTS 的 legacy clarification-register active-state 用法；
+- English Onboarding Handshake；
+- Bootstrap Prompt / Persistent Memory 中少量旧表述；
+- Founding Idea Audit 自身过时的双语迁移状态。
+
+**结论：** `PASS AFTER REPAIR`。
+
+**仍需人类决定：** 方法论文章 `CLR-001 / CLR-002 / CLR-005`；formal release 前 `CLR-009` license。
+
+---
+
 ## 当前日志边界
 
 本日志目前包含根据 Decision Log 和规范文件回填的高层历史摘要。后续应在阶段性里程碑形成时持续追加，而不是把聊天逐字转录进来。
