@@ -135,7 +135,8 @@ Working Memory 被进一步拆分为三个逻辑功能：
 - project-template AGENTS 的 legacy clarification-register active-state 用法；
 - English Onboarding Handshake；
 - Bootstrap Prompt / Persistent Memory 中少量旧表述；
-- Founding Idea Audit 自身过时的双语迁移状态。
+- Founding Idea Audit 自身过时的双语迁移状态；
+- 最终终审已记录、但 Task Plan 未单列的“目标发布渠道与渠道特定形式约束”，现补为 `CLR-010`。
 
 **结论：** `PASS AFTER REPAIR`。
 
