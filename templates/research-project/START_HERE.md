@@ -9,10 +9,11 @@ This file is the entry point for any AI Agent taking over this research project 
 Before substantive work:
 
 1. read `HARC_MANIFEST.yaml`;
-2. read `AGENTS.zh-CN.md`;
-3. follow the manifest required read order;
-4. output a HARC Onboarding Report;
-5. begin substantive work only after reporting blocking clarifications, framework state, and permitted next action.
+2. read `BOOTSTRAP_PROMPT.zh-CN.md`;
+3. read `AGENTS.zh-CN.md`;
+4. follow the manifest required read order;
+5. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report;
+6. begin substantive work only after reporting blocking clarifications, framework state, and permitted next action.
 
 ## Onboarding Report must include
 
@@ -45,4 +46,4 @@ Unless the project explicitly decides otherwise, Chinese is canonical and Englis
 
 ## Copyable bootstrap prompt
 
-> You are taking over a HARC-governed research repository. First read `START_HERE.zh-CN.md`, `HARC_MANIFEST.yaml`, and `AGENTS.zh-CN.md`, then follow the manifest required read order to reconstruct project state. Before any substantive modification, output a HARC Onboarding Report listing current human commitments, Form state, Blocking/Non-blocking Clarifications, Working/Approved Framework, Artifact state, synchronization defects, and the permitted next action. Do not guess high-impact uncertainty; route it through the Clarification Register for human resolution.
+> See `BOOTSTRAP_PROMPT.zh-CN.md` for the full copyable startup prompt.
