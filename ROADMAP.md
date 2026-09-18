@@ -46,6 +46,7 @@
 - [ ] Define a HARC conformance-test suite.
 - [ ] Define a cross-agent handoff benchmark.
 - [ ] Define an automated bilingual parity check.
+- [ ] Define an automated onboarding/conformance check validating START_HERE, manifest, required read order, Blocking Clarifications, and Framework Status reconstruction by a new Agent.
 
 ## v0.4 — Automation
 
