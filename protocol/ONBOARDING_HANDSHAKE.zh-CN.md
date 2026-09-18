@@ -30,7 +30,7 @@
 
 - 创建或批准 Framework；
 - 把 AI 提议升级成人类承诺；
-- 解决或关闭 Clarification；
+- 未经人类确认就解决或关闭 Clarification；
 - 大规模重构 Argument Map；
 - 大规模改写 Artifact；
 - 改变作者级 Form preference；
@@ -180,7 +180,7 @@ Onboarding Report 的目的不是要求人类逐字重新审核仓库，而是�
 - Protocol Core；
 - Decision Log；
 - Content/Form Core；
-- Clarification Register；
+- Task Plan / Clarification state；
 - Framework。
 
 如果 manifest 与中文 canonical 人类可读规范冲突，以中文 canonical 为准，并修复 manifest。
