@@ -14,6 +14,7 @@
 - `WM-T011` — 将上述决定 Promotion 并传播到 Layer 1 / Layer 2 / Layer 3：`TODO`
 - `WM-T012` — 重新执行 Framework Approval readiness review：`TODO`
 - `WM-T013` — CLR-009 licensing 决定（formal release 前）：`WAITING-HUMAN`
+- `WM-T014` — CLR-010 目标发布渠道与渠道特定形式约束：`WAITING-HUMAN`
 
 ## 2. NEXT ACTIONS
 
@@ -22,7 +23,8 @@
 3. 同步 Article Content Core、Working Argument Map、Framework Status 与方法论正文；
 4. 重新执行 `MA-FW-001` readiness review；
 5. 如人类明确批准具体版本，才创建 Approved Framework Snapshot；
-6. 正式 release 前解决 `CLR-009`。
+6. 正式 release 前解决 `CLR-009`；
+7. 正式投稿/发布形式冻结前解决 `CLR-010`。
 
 ## 3. BLOCKERS / GATES
 
@@ -37,6 +39,10 @@
 ### Formal release
 
 - `CLR-009` — license 未决定。
+
+### Final submission / publication form
+
+- `CLR-010` — 目标发布渠道及渠道特定引用、字数、版式、AI disclosure 等约束未决定。
 
 ## 4. PENDING HUMAN DECISIONS / CLARIFICATIONS
 
@@ -132,6 +138,31 @@
 候选：documentation CC BY 4.0 + code MIT / Apache-2.0 / MIT / 其他。
 
 关联：`LICENSE-DECISION.zh-CN.md`
+
+### CLR-010 — 目标发布渠道与渠道特定形式约束
+
+**状态：** `WAITING-HUMAN`  
+**严重度：** Framework Approval = `NON-BLOCKING`；Final submission/publication form = `BLOCKING`
+
+问题：方法论文章最终面向什么发布渠道，以及由该渠道带来的具体形式约束是什么？
+
+待确认内容包括：
+
+- 目标期刊 / 会议 / 预印本 / 其他发布渠道；
+- 引用与参考文献样式；
+- 字数 / 篇幅限制；
+- 字体、版式、页面约束（如适用）；
+- 渠道特定 AI disclosure / authorship / research-integrity 要求；
+- 渠道是否只接受一种语言，以及对项目内部双语版本的输出要求。
+
+与 `CLR-008` 的区别：
+
+- `CLR-008` 处理文章的**学科定位 / intellectual positioning**；
+- `CLR-010` 处理具体的**发布渠道 / external form constraints**。
+
+**AI-PROPOSED：** 在 Working Framework 稳定后再选择具体渠道；在渠道确定前，不把当前 citation / layout defaults 升级为人类 Form commitment。
+
+**Promotion 目标：** Article Form Core -> external constraints / final rendering / submission checklist。
 
 ## 5. BACKLOG
 
