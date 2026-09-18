@@ -204,6 +204,22 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 ---
 
+## T11 — Two-Layer Memory Thesis
+
+**来源：** `HUMAN-CONFIRMED / AI-FORMULATED`
+
+跨 Agent 连续性不仅需要持久仓库状态，还需要在新 Agent 接管后把关键规则与当前状态重新注入当前会话上下文。
+
+因此 HARC 区分：
+
+`Durable Repository State + Active Session Contract`
+
+前者提供 persistence，后者提供 salience 与可验证执行。Session Contract 不是平台 system prompt，而是服从平台更高优先级指令的项目级会话操作契约。
+
+**创始依据：** Article Content Core C13；HARC Protocol Core P21。
+
+---
+
 # 3. 文章必须保留的核心区分
 
 ### 人类原创区分
@@ -245,7 +261,7 @@ HARC 可以进一步发展成经验方法论研究计划，例如 handoff test�
 
 **功能：** 说明 GitHub 作为当前实现基础；区分 persistent memory 与 infinite context；引入当前状态与历史状态的压缩结构；进一步说明新的 Agent 必须通过 zero-context bootstrap、manifest 和 Onboarding Handshake 才能可靠接管。
 
-支持 T1、T7 与 T10。
+支持 T1、T7、T10 与 T11。
 
 ## IV. 分层语义治理
 
