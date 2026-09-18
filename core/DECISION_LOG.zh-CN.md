@@ -250,4 +250,6 @@
 
 **受影响组件：** START_HERE、HARC_MANIFEST、AGENTS、README、Specification、Persistent Memory、项目模板、Agent handoff
 
-**状态：** 已实现。
+**人类后续确认：** 人类项目发起人明确确认上述理解“基本准确”，并要求正式落实。该确认支持把 zero-context bootstrap、独立启动提示词、manifest、Onboarding Handshake 与 Onboarding Report 作为正式 HARC 协议组成部分。
+
+**状态：** 已确认并实现。
