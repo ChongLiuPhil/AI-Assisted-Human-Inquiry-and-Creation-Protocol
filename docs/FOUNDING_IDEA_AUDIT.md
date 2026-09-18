@@ -438,6 +438,49 @@ Assumption: the original conversation is unavailable. The new agent receives onl
 
 ---
 
+# Later human-confirmed developments
+
+This section does not retroactively present later design evolution as part of the original 2026-09-17 founding discussion. It records later protocol commitments explicitly proposed and confirmed by the human project founder.
+
+## E01 — GitHub as authoritative external memory and working-state interface
+
+**Later human decision:** do not maintain a second long-lived project-state copy inside chat. Treat GitHub directly as authoritative external memory + working state; model context retains only a Repository Resolver and task-relevant transient retrieval cache.
+
+**Implemented in:**
+
+- Protocol Core P21–P22
+- HARC-D020
+- `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md`
+- `HARC_CONTEXT_INTERFACE.yaml`
+- project-template context interface
+- methodology article C13 / T11
+
+**Status:** IMPLEMENTED.
+
+## E02 — Three-layer Long-Term Research Memory plus parallel Working Memory
+
+**Later human decision:** retire the former “Layer 1.5” model. All three content layers are Long-Term Research Memory:
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+Maintain Working Memory in parallel for current stage, objective, active tasks, completion state, next actions, TODOs, blockers, pending human decisions, Clarifications, synchronization defects, and handoff.
+
+Clarification is a Working Memory item. Stable human-resolved content must be promoted into the appropriate Long-Term Memory destination; after leaving active state, Working Memory retains only status, Decision ID, and destination pointers.
+
+**Implemented in:**
+
+- Protocol Core P19, P23
+- HARC-D021
+- `protocol/WORKING_MEMORY.zh-CN.md`
+- `docs/working-memory.zh-CN.md`
+- Manifest / Context Interface / Onboarding / AGENTS
+- project templates
+- methodology article C11, C14 / T9, T12 / draft
+
+**Status:** IMPLEMENTED.
+
+---
+
 # Remaining unresolved item
 
 ## Open-source licensing
