@@ -314,3 +314,26 @@ Clarification 是 Working Memory 中的一种 item，而不是独立层。问题
 **受影响组件：** Protocol Core、Persistent Memory、Architecture、Clarification workflow、Working Memory、Onboarding/Handoff、Manifest、Context Interface、Specification、AGENTS、项目模板、方法论文章
 
 **状态：** 已实现。
+
+---
+
+## 2026-09-18 — HARC-D022
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL, CONTENT
+
+**决定：** Working Memory 不应被固定理解为单一文档，而应被定义为可以根据工程需要实现为一个或多个文件的功能区。其核心逻辑至少包括：
+
+1. `Current Focus` — 当前最近期、最高优先级工作目标；
+2. `Task Plan` — 动态任务/计划清单；
+3. `Work Log` — 主要供人类日后回顾的阶段性历史纪要。
+
+Task Plan 中完成的事项应退出 active list，并适度沉淀到 Work Log；如果完成事项形成稳定规范结果，还必须 Promotion 到相应长期记忆。
+
+Work Log 需要定期更新，保存大体进展、工作/思想路径的变化和里程碑，但它默认不应成为 AI Agent 日常 onboarding 的必读上下文。它服务于人类作者回顾项目的发展史。需要历史回顾、审计或冲突追溯时，AI 才按需读取。
+
+Current Focus 应保持最短、显著度最高，使任何工作流被突然中断后，新 Agent 能立即知道“现在最重要的事情是什么”。
+
+**实现原则：** 功能角色固定，物理文件布局可变；manifest 应显式映射各角色。
+
+**状态：** 已确认并实施。
