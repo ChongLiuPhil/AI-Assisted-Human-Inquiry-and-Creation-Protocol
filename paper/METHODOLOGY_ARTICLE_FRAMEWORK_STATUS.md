@@ -51,14 +51,16 @@ Because the review-ready Working Framework has now been reorganized and provenan
 - Article Content Core -> Working Framework: `SYNC / REVIEW READY`
 - Working Framework -> Current draft: `PARTIALLY SYNC — structural rewrite deferred pending human framework review`
 - Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17; further venue-specific verification required before submission`
-- Clarification Gate: `OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`
+- Working Memory / Clarification Gate: `OPEN — CLR-001 / CLR-002 / CLR-005 BLOCKING`
 - Framework approval: `NOT COMPLETED`
 - Final artifact approval: `NOT COMPLETED`
 - Chinese/English article pair: `BILINGUAL MIRROR REQUIRED`
 
-## Clarification Gate before `MA-FW-001`
+## Working Memory / Clarification Gate before `MA-FW-001`
 
-See `docs/clarification-register.md` for the full unresolved state.
+Working Memory resume state: `docs/working-memory.zh-CN.md`
+
+See `docs/working-memory.zh-CN.md` for the full unresolved state.
 
 Current `BLOCKING` entries:
 
@@ -74,4 +76,4 @@ Do not create `MA-FW-001` until blocking clarifications are human-resolved or ex
 
 ## Current instruction to AI agents
 
-Do not treat the present Working Framework as human-approved. Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred. Use `docs/clarification-register.md` first to resolve high-impact uncertainty, then return to the Working Framework for overall human review.
+Do not treat the present Working Framework as human-approved. Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred. Use `docs/working-memory.zh-CN.md` first to resolve high-impact uncertainty, then return to the Working Framework for overall human review.
