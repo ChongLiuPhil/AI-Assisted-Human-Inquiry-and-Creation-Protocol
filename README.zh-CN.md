@@ -10,6 +10,20 @@
 
 聊天窗口只是交互界面，并不是长期研究项目的持久记忆。重要的人类决策、论证结构、呈现要求、证据约束与批准状态，应被外化为明确、受版本控制的仓库文件，使一个新的、有能力的 AI Agent 即使没有原始聊天记录，也可以继续工作。
 
+## AI Agent 从零接管：先从这里开始
+
+新的 AI Agent **不要直接从 README 或正文开始工作**。
+
+先读取：
+
+1. [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)
+2. `HARC_MANIFEST.yaml`
+3. [`AGENTS.zh-CN.md`](AGENTS.zh-CN.md)
+
+然后按照启动文件的 mandatory read order 重建项目状态，并在做任何实质性修改前向人类提交一份 **HARC Onboarding Report**。
+
+这使“Agent 是否真正理解当前项目状态”变成一个可观察、可检查的握手步骤，而不是假定。
+
 ## 两类项目输出
 
 HARC 有意设计为一个双重输出项目：
