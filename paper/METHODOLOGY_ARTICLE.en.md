@@ -1,6 +1,6 @@
-# From Conversation to Persistent Research State: Human–AI Research Collaboration, Cognitive Responsibility, and Auditable Authorship in the AI Era
+# From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era
 
-**Chinese title:** 从对话到持久研究状态：AI时代的人机研究协作、认知责任与可审计作者性
+**Chinese title:** 从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性
 
 **Status:** `DERIVED-PROVISIONAL`  
 **Framework status:** `WORKING-FRAMEWORK — not yet formally approved by the human author`  
@@ -20,7 +20,7 @@ This article presents the Human–AI Research Collaboration Protocol (HARC) as a
 
 The article further argues that the purpose, central problem, and direction of a research or creative project must originate with humans and remain under human navigation or approval; within HARC, an AI Agent is a collaboration tool that may perform or assist extensive work but is not characterized as a cognitive subject. For long-form work, human core intellectual responsibility is operationalized primarily through the Layer 2 Framework: AI may assist in proposing, organizing, and expressing the framework, but before Framework Approval the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in it. On this basis, the article distinguishes framework-level defects from derived-expansion defects and Framework Approval from Final Artifact Approval, while discussing the relation of this architecture to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
 
-**Keywords:** human–AI collaboration; generative AI; research methodology; epistemic responsibility; authorship; distributed cognition; version control; GitHub; AI agents; research integrity
+**Keywords:** human–AI collaboration; generative AI; research methodology; human responsibility; authorship; distributed cognition; version control; GitHub; AI agents; research integrity
 
 ---
 
