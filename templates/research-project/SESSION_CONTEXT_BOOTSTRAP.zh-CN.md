@@ -4,55 +4,50 @@
 
 ## 目的
 
-在仓库持久状态之外，为当前 AI 会话建立一份压缩的 **HARC Active Session Contract**。
+当前会话只加载一个最小 **Repository Resolver**，不复制项目动态状态。
 
-该契约不是平台真正的 system prompt，而是项目级 session operating contract。
+```text
+HARC REPOSITORY CONTEXT — ACTIVE
 
-优先级：
+Source of truth:
+- GitHub repository
 
-`Platform system/developer rules > HARC Session Contract > ordinary task-level AI defaults`
+Control:
+- HARC_MANIFEST.yaml
+- HARC_CONTEXT_INTERFACE.yaml
 
-## 新 Agent 必须执行
+Policy:
+- repository-backed
+- selective retrieval
+- no authoritative session copy
+- read latest before high-impact action
+- read latest before write
+- invalidate touched cache after write
+- write-through to repository
 
-完成仓库 onboarding 后，在 Onboarding Report 末尾输出：
+Current task:
+- route: CONTENT / FORM / PROTOCOL
+- authoritative refs: [paths only]
+```
 
-`HARC ACTIVE SESSION CONTRACT — LOADED`
-
-至少包含：
-
-- Repository state > prior chat memory；
-- Chinese canonical > English mirror；
-- Human-confirmed Core > AI proposals；
-- Approved Framework > Working Argument Map；
-- 当前 Blocking Clarifications；
-- Working / Approved Framework 状态；
-- Artifact 状态；
-- 当前任务 CONTENT / FORM / PROTOCOL 分类；
-- upstream-first propagation path；
-- 当前 blocked actions。
-
-只有回显完成后，Onboarding 才能标记 `PASS`。
+Blocking Clarifications、Framework、Artifact、Core 等动态信息需要时直接读取 GitHub 最新 canonical revision。
 
 ## Context Refresh
 
-在以下情况输出简短的 `HARC CONTEXT REFRESH`：
+`HARC CONTEXT REFRESH` 表示：
 
-- Blocking Clarification 被解决；
-- Core 发生实质变化；
-- 新 Approved Framework 创建；
-- 开始大规模 Artifact expansion；
-- Final Artifact Review；
-- Agent 怀疑早期 HARC 状态已经从活动上下文中丢失。
+1. 重读 manifest / context interface；
+2. 解析当前任务依赖；
+3. fresh-fetch 依赖文件；
+4. 丢弃 stale cache；
+5. 继续工作。
 
-如果上下文丢失，重新读取 manifest 和 canonical state，不要凭记忆猜测。
+不把全部项目状态重新复制进聊天。
 
-## 禁止错误声明
+## 写入规则
 
-不要声称：
+canonical 文件写入后，旧上下文摘录立即视为 `STALE`。如果后续仍依赖，重新读取。
 
-- 已把本文件安装为平台真正的 system prompt；
-- 已修改模型参数；
-- 已永久修改平台 memory；
-- 新会话会自动记住。
+## 原则
 
-HARC 只要求把压缩契约显式写回当前可见会话上下文。
+> **会话里保留的是如何找到记忆，而不是另一份记忆。**
