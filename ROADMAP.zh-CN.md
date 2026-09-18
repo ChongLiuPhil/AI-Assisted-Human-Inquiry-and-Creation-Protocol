@@ -29,7 +29,7 @@
 - [x] 建立方法论文章 BibTeX 来源文件。
 - [x] 规定中文 canonical / 英文 synchronized mirror 的双语治理。
 - [x] 为方法论文章建立英文同步镜像。
-- [ ] 完成仓库历史文件与全部模板的双语迁移与 parity audit。
+- [x] 完成仓库历史文件与全部模板的双语迁移与 parity audit。
 - [ ] 人类审阅并批准方法论文章 Working Framework。
 - [ ] 创建方法论文章第一个 Approved Framework Snapshot。
 - [ ] 决定目标发布渠道 / 学科定位。
