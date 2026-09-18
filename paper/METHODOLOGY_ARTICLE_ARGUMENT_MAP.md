@@ -32,7 +32,7 @@ The purpose of these labels is to prevent polished AI terminology from being mis
 **从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性**  
 *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
-`AI-PROPOSED TITLE` — the article topic is human-required, but the current title has not been explicitly approved.
+`HUMAN-APPROVED TITLE — HARC-D024` — the Chinese title is explicitly human-approved; the English title is its synchronized translation mirror. Title approval does not constitute Framework Approval of the complete Working Framework.
 
 ---
 
@@ -40,9 +40,11 @@ The purpose of these labels is to prevent polished AI terminology from being mis
 
 `HUMAN-ORIGINATED / AI-FORMULATED`
 
-AI agents can perform increasingly large amounts of searching, structuring, drafting, revising, formalizing, checking, and formatting. Human reading, understanding, judgment, and responsibility do not automatically scale at the same rate. The methodology article therefore asks:
+AI Agents can perform or assist increasingly large amounts of searching, structuring, drafting, revising, formalizing, checking, and formatting. Human reading, understanding, judgment, and capacity to bear responsibility do not automatically scale at the same rate. The methodology article therefore asks:
 
-> **How can a long-running AI-assisted research project expand the executable and expressive capacity of research while preserving durable human control over project purpose, direction, meaning, judgment, approval, evidence, and responsibility?**
+> **How can a long-running AI-assisted research project expand the executable and expressive capacity of research while ensuring that project purpose, direction, core judgment, and public dissemination of knowledge ultimately remain understood, approved, and borne by humans as the bearers of responsibility?**
+
+“Human responsibility” is not treated here as an unexplained abstract property. It is shorthand for the more precise claim that **humans remain the bearers of responsibility**. Especially when research or inquiry results and knowledge claims enter public circulation, the position of ultimate responsibility must not be transferred to AI.
 
 The phrase **generation–verification asymmetry** is `AI-PROPOSED` shorthand for one part of this problem, not yet an approved central term.
 
@@ -85,33 +87,34 @@ The expression **semantic version control** is `AI-PROPOSED` terminology for thi
 
 ---
 
-## T3 — AI Tool Work / Human Purpose and Governance Thesis
+## T3 — AI Tool Work / Humans as Bearers of Responsibility Thesis
 
 **Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
 
 The purpose, central problem, and direction of a research or creative project should be given and initiated by humans and remain under human navigation or approval. Within HARC, an AI Agent is a tool that may perform or assist with extensive search, synthesis, structuring, drafting, restructuring, checking, formatting, and related work. It should not be characterized as a cognitive subject, and “AI performs cognitive labor / cognitive tasks” should not be used as the article’s central language.
 
-AI capacity to perform substantial work does not transfer the project’s purpose, core judgments, or ultimate core responsibility to AI. Humans must retain actual understanding, navigation, and authorization of what the work is trying to achieve.
+AI capacity to perform substantial work does not transfer the project’s purpose, core judgments, or the position of ultimate responsibility to AI. More precisely, HARC requires that **humans remain the bearers of responsibility**.
 
-Current high-leverage human responsibility nodes include at least:
+This responsibility-bearing status appears at least in:
 
-- research purpose, problem, and direction;
+- initiating, understanding, and authorizing research purpose, problem, and direction;
 - acceptance/rejection of core claims;
 - major inferential relations;
 - treatment of decisive evidence conflicts;
 - acceptance of material AI proposals;
 - Framework Approval;
-- Final Artifact Approval where applicable.
+- Final Artifact Approval where applicable;
+- especially in papers, books, reports, or other public dissemination of knowledge, bearing responsibility for the final knowledge claims and public version.
 
-`responsibility concentration` is no longer retained as the central term. The underlying model should be expressed descriptively: humans provide purpose and direction, AI tools perform or assist some work, and the Layer 2 Framework carries core intellectual responsibility.
+`responsibility concentration` is no longer retained as the central term. “Human responsibility” may remain as shorthand in a title or general exposition, but the theoretical claim should be stated more precisely as “humans remain the bearers of responsibility.”
 
-**Founder basis:** Article Content Core C2; HARC Protocol Core P17; HARC-D023.
+**Founder basis:** Article Content Core C2, C16; HARC Protocol Core P17; HARC-D023, HARC-D024.
 
 ## T4 — Framework Responsibility Thesis
 
-**Provenance:** `HUMAN-ORIGINATED`; the earlier strong/moderate binary has been superseded by the human’s third formulation in HARC-D023.
+**Provenance:** `HUMAN-ORIGINATED`; HARC-D024 further clarifies the responsibility language adopted in HARC-D023.
 
-For AI-assisted long-form research or creative work, the Layer 2 Current / Approved Framework should serve as the primary structural carrier of human core intellectual responsibility. It is not merely an AI-facing summary; it is an intellectual structure the human author must actually understand, review, and explicitly confirm.
+For AI-assisted long-form research or creative work, the Layer 2 Current / Approved Framework should serve as the **primary structural carrier of core intellectual responsibility borne by humans**. It is not merely an AI-facing summary; it is an intellectual structure the human author must actually understand, review, and explicitly confirm.
 
 Before Framework Approval, the human author must form a clear and complete understanding of every substantive element actually represented in the framework and review and confirm those elements item by item, including:
 
@@ -122,11 +125,11 @@ Before Framework Approval, the human author must form a clear and complete under
 - section/chapter functions;
 - any specific wording included in the framework.
 
-AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. The human is responsible for the originality, understanding, judgment, and intellectual commitments carried by that framework.
+AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. Humans bear responsibility for the originality, understanding, judgment, and intellectual commitments carried by that framework; AI cannot become the bearer of this responsibility.
 
-This is HARC’s responsibility architecture. It does not claim that Framework Approval automatically constitutes a universal theory of authorship across all fields, and it does not remove Final Artifact Approval, factual-accuracy, research-integrity, or venue requirements.
+This is HARC’s governance architecture. It does not claim that Framework Approval automatically constitutes a universal theory of authorship across all fields, and it does not remove Final Artifact Approval, factual-accuracy, research-integrity, or venue requirements. Especially when knowledge claims are publicly disseminated, humans must remain the bearers of responsibility.
 
-**Founder basis:** Article Content Core C5; HARC Protocol Core P6, P13, P17; HARC-D023.
+**Founder basis:** Article Content Core C5, C16; HARC Protocol Core P6, P13, P17; HARC-D023, HARC-D024.
 
 ## T5 — Dual Approval Gate Thesis
 
@@ -284,8 +287,9 @@ Work Log is therefore outside default AI onboarding context. It should receive p
 
 - human research-content intention vs human form/presentation intention;
 - human intention vs AI operational representation;
-- work an AI tool may perform/assist vs human responsibility for purpose, direction, understanding, judgment, and approval;
-- AI as a collaboration tool vs humans as the initiating/authorizing subjects of project purpose and direction;
+- work an AI tool may perform/assist vs who bears responsibility;
+- AI as a collaboration tool vs humans as the initiating/authorizing subjects of project purpose and direction and as the bearers of responsibility;
+- “human responsibility” as general shorthand vs the more precise claim that humans remain the bearers of responsibility;
 - Working Framework vs Approved Framework;
 - framework defect vs derived-expansion defect;
 - Framework Approval vs Final Artifact Approval;
@@ -338,9 +342,9 @@ Supports T2, T8, and T9.
 
 Supports T4.
 
-## VI. AI tool work and human purpose / Framework responsibility
+## VI. AI tool work and humans as bearers of responsibility / Framework responsibility
 
-**Function:** address the philosophical center of the article: what research work AI tools may perform or assist; why project purpose, problem, and direction must be given, navigated, and approved by humans; and why human core intellectual responsibility is operationalized primarily through a Layer 2 Framework that the human genuinely understands and confirms.
+**Function:** address the philosophical center of the article: what research work AI tools may perform or assist; why project purpose, problem, and direction must be given, navigated, and approved by humans; why humans must remain the bearers of responsibility in human–AI collaborative research and inquiry, especially in public dissemination of knowledge; and why this responsibility-bearing status is operationalized in long-form work primarily through a Layer 2 Framework that the human genuinely understands and confirms.
 
 This section must not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as its central conceptual language.
 
@@ -417,7 +421,7 @@ Verified source notes are maintained canonically in `evidence/METHODOLOGY_SOURCE
 
 ### Resolved and promoted
 
-- `CLR-001` — central responsibility concept: the article no longer centers the distinction “AI cognitive labor vs human epistemic responsibility”; it uses a descriptive model of human purpose/direction, AI tool work, and human responsibility.
+- `CLR-001` — central responsibility concept: further clarified by HARC-D024. “Human responsibility” is not treated as a self-sufficient term; the core claim is that in human–AI collaborative research, inquiry, and especially public dissemination of knowledge, **humans remain the bearers of responsibility**. AI tools may share work but cannot become the ultimate bearers of responsibility.
 - `CLR-002` — Framework Responsibility Thesis: HARC-D023 adopts the human’s third formulation; the Layer 2 Framework is the primary structural carrier of human core intellectual responsibility, and the human must understand, review, and confirm all substantive content represented in it.
 - `CLR-005` — `responsibility concentration`: not retained as the current central term.
 
