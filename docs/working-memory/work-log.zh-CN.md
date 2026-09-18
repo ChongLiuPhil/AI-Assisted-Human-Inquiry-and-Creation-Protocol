@@ -162,7 +162,7 @@ Working Memory 被进一步拆分为三个逻辑功能：
 **本轮 Promotion / 传播：**
 
 - Decision Log 新增 `HARC-D023`；
-- Protocol Core / Specification / README / research-project templates 完成中英文同步；
+- Protocol Core / Framework Approval / Specification / 根 Agent Contract / README / research-project templates 完成中英文同步；
 - Article Content Core 完成 Layer 1 Promotion；
 - Working Argument Map 的 T3 / T4、核心区分、依赖关系与 clarification 状态完成 Layer 2 更新；
 - 方法论正文摘要、第六节和结论完成定向 Layer 3 同步；全文仍保持 `DERIVED-PROVISIONAL`，未提前执行大规模结构重写；
