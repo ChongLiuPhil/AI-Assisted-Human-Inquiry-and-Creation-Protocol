@@ -92,7 +92,7 @@
 
 ## 5. Working Memory 与高影响澄清
 
-`docs/working-memory.zh-CN.md` 是项目的当前工作状态与 handoff 界面。
+`docs/working-memory.zh-CN.md` 是 Working Memory Index；Current Focus 与 Task Plan 承载当前工作状态与 handoff 所需的 operational resume state。
 
 它应维护：
 
@@ -191,14 +191,19 @@ Framework Approval 后，AI 可以生成大量派生文本，但在最终人类�
 
 方法论文章应按以下顺序读取：
 
-1. `docs/working-memory.zh-CN.md`
-2. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
-3. `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
-4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
-5. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
-6. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
-7. `paper/methodology-references.bib`
-8. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+1. `docs/working-memory.zh-CN.md`（Index）
+2. `docs/working-memory/current-focus.zh-CN.md`
+3. `docs/working-memory/task-plan.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
+5. `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
+6. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+7. 最新 Approved Framework（如有）
+8. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+9. `evidence/METHODOLOGY_SOURCES.zh-CN.md`
+10. `paper/methodology-references.bib`
+11. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+
+Work Log 默认不在该读取链中。
 
 在中文 framework 未被人类明确批准之前，文章 Argument Map 仍是 `WORKING-FRAMEWORK`。在相关批准门完成之前，正文仍是 `DERIVED-PROVISIONAL`。
 
