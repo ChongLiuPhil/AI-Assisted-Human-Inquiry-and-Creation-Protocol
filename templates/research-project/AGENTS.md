@@ -88,6 +88,8 @@ Persist first, then propagate upstream-first.
 
 Human content decisions outrank AI drafts. AI proposals remain visibly pending until accepted.
 
+The AI Agent is a collaboration tool. Do not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as normative terminology; identify the concrete search, synthesis, drafting, restructuring, checking, and related work AI performs or assists. The purpose, central problem, and direction of the research or creative project must originate with the human or be explicitly authorized by the human, and core responsibility remains human.
+
 ## Form rules
 
 Human form decisions outrank rendering defaults. Do not infer durable author preferences from temporary tool choices.
@@ -108,11 +110,11 @@ Run a Working Memory / Clarification Scan before Framework Approval, formal tran
 
 ## Framework rules
 
-`docs/argument-map.zh-CN.md` is an AI-maintained Working Framework and is not automatically human-approved.
+`docs/argument-map.zh-CN.md` is an AI-maintained working structure and is not automatically human-endorsed.
 
-Create `docs/frameworks/FW-xxx.zh-CN.md` and its English mirror only after explicit Framework Approval. Never silently modify an approved snapshot.
+Create `docs/frameworks/FW-xxx.zh-CN.md` and its English mirror only after explicit human Framework Approval. Do not silently modify an approved snapshot.
 
-Approved Framework is the principal substantive intellectual baseline. Distinguish framework-level defects from local defects introduced only during later AI expansion.
+The Approved Framework is the primary substantive intellectual baseline and the structural anchor of human core intellectual responsibility. Before Framework Approval, the human must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in the proposed framework, including core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework. Distinguish framework-level defects from local defects introduced only in later AI expansion.
 
 ## Evidence rules
 
