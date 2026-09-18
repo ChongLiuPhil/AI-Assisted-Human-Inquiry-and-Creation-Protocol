@@ -29,8 +29,8 @@ The purpose of these labels is to prevent polished AI terminology from being mis
 
 ## Working title
 
-**从对话到持久研究状态：AI时代的人机研究协作、认知责任与可审计作者性**  
-*From Conversation to Persistent Research State: Human–AI Research Collaboration, Epistemic Responsibility, and Auditable Authorship in the AI Era*
+**从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性**  
+*From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
 `AI-PROPOSED TITLE` — the article topic is human-required, but the current title has not been explicitly approved.
 
@@ -42,7 +42,7 @@ The purpose of these labels is to prevent polished AI terminology from being mis
 
 AI agents can perform increasingly large amounts of searching, structuring, drafting, revising, formalizing, checking, and formatting. Human reading, understanding, judgment, and responsibility do not automatically scale at the same rate. The methodology article therefore asks:
 
-> **How can a long-running AI-assisted research project expand human cognitive capacity while preserving durable human control over meaning, judgment, approval, evidence, and responsibility?**
+> **How can a long-running AI-assisted research project expand the executable and expressive capacity of research while preserving durable human control over project purpose, direction, meaning, judgment, approval, evidence, and responsibility?**
 
 The phrase **generation–verification asymmetry** is `AI-PROPOSED` shorthand for one part of this problem, not yet an approved central term.
 
