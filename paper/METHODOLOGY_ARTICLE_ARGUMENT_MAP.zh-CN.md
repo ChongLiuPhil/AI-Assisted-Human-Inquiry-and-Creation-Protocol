@@ -377,26 +377,35 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 ```text
 T1 持久研究状态
 ├── 使 T7 可替换 Agent / 持久项目成为可能
-└── 为 T2 分层语义治理提供基础设施
+├── 为 T10 Zero-context Onboarding 提供需要被发现和重建的持久状态
+└── 为 T11 Repository-Backed Context 提供权威外部状态基础
 
 T2 分层语义治理
 ├── 防止 AI 静默漂移替代人类意图
 ├── 通过 T9 把高影响不确定性放入 Working Memory
-├── 通过 T12 区分长期记忆与当前工作状态
-└── 使可检查 Working Framework 成为可能
+├── 通过 T12 区分 Long-Term Research Memory 与 Working Memory
+│   └── T13 进一步区分 operational resume state 与 human retrospective history
+└── 使可检查的 Working Framework 与上游优先传播成为可能
 
-T3 AI 工具工作分担 / 人类目的与治理
+T7 可替换 Agent / 持久项目
+├── 与 T10 一起保证新 Agent 能找到正确续接入口
+└── 与 T11 一起保证 Agent 通过按需读取最新 canonical state 接续项目
+
+T3 AI 工具工作分担 / 人类责任主体
 └── 为 T4 Framework Responsibility 提供人类主体与责任基础
 
 T4 Framework Responsibility
-├── 需要 T5 双批准门
-└── 需要 T6 Framework Projection 以保证公开成果忠实性
+├── 需要 T5 双批准门区分思想架构批准与公开版本批准
+└── 需要 T6 Framework Projection 检查公开成果是否忠实反映获批思想架构
 
-T1 + T2 + T3 + T4 + T5 + T6 + T7
-└── 共同支持 T8 作为可执行协作协议的实际可复用性
+T9 + T10 + T11 + T12 + T13
+└── 把 T1 / T2 / T7 的持久状态、治理与跨 Agent 连续性转化为可执行工作流程
+
+T1 + T2 + T3 + T4 + T5 + T6 + T7 + T9 + T10 + T11 + T12 + T13
+└── 共同构成 T8 “HARC 可实际实施并复用”的主要实现条件
 ```
 
-该依赖图由 AI 组织，属于 `AI-FORMULATED`，在人类批准前仍需整体审阅。
+该依赖图由 AI 组织，但其结构性修复已经通过 `HARC-D025` 获得人类确认。它表示命题之间的主要支持与实现关系，不声称所有箭头都是形式逻辑上的严格蕴涵。
 
 # 6. 证据/文献角色
 
@@ -434,7 +443,9 @@ T1 + T2 + T3 + T4 + T5 + T6 + T7
 - `CLR-008` — 学科/投稿方向；
 - `CLR-010` — 最终发布渠道与渠道特定形式约束（对 Framework Approval 非阻塞）。
 
-完整 active state 见 Task Plan。当前已无 `CLR-001 / CLR-002 / CLR-005` 造成的 Framework Approval blocker；但整体 Working Framework 仍需人类明确批准、修订或拒绝，才能创建 `MA-FW-001`。
+**Framework Approval 对未决项的语义（HARC-D025）：** 如果完整 framework 中保留明确标记为 `AI-PROPOSED`、`UNRESOLVED`、`NON-BLOCKING` 或类似状态的项目，整体 `APPROVE` 只批准这些项目作为“未决/提议项目”在 framework 中的位置、范围与处理方式，不批准其实质内容，也不改变其 provenance。后续只有单独的人类决定才能把这些项目 Promotion 为人类确认观点。
+
+完整 active state 见 Task Plan。当前已无 `CLR-001 / CLR-002 / CLR-005` 造成的 Framework Approval blocker；但整体 Working Framework 仍需人类明确批准、修订或拒绝，才能创建 `MA-FW-001`.
 
 # 8. 当前同步状态
 
