@@ -50,13 +50,17 @@ HARC 不是一个纯粹抽象的哲学提案。其文件层级、更新规则、
 
 诸如 `generation–verification asymmetry`、`semantic version control`、`responsibility concentration` 以及某一特定经验测试套件等术语和更强命题，可能是有用的 AI 表述，但在人类明确接受之前仍属于 provisional。
 
+## C11. 高影响不确定性必须显式提交人类澄清
+
+文章必须解释 HARC 的 Critical Clarification Layer：当 AI 对作者意图、核心命题、关键概念、范围、论证关系、章节功能或关键术语/翻译存在可能重大改变论证结构的非微不足道不确定性时，AI 不应自行猜测，而应主动把问题写入 Clarification Register，向人类作者请求确认。
+
+未解决 clarification 不是人类承诺。人类确认或纠正后，其结果应进入 Decision Log 与相应 Core，再传播到 Working Framework 和最终成果。
+
+这一机制尤其适用于作者母语中的核心概念及其英文对应，防止翻译或 AI 解释把未经确认的意义固化进文章结构。
+
 ## 当前尚未解决的人类决定
 
-- 中心术语优先使用 `epistemic responsibility`、`cognitive responsibility`，还是其他表述；
-- Framework Approval 应被论证为实质性作者身份的一般中心，还是只作为 HARC 提出的治理模型；
-- 与 extended/distributed cognition 的联系应做到多强；
-- 目标学科/期刊方向，以及规范哲学、方法论、协议说明和可能的经验评价之间的比例；
-- 正式经验/一致性测试计划应成为文章核心命题，还是只作为未来研究议程。
+高影响未决问题的操作性状态统一维护在 `docs/clarification-register.zh-CN.md`。当前与文章直接相关的条目为 `CLR-001` 至 `CLR-008`，其中 `CLR-001`、`CLR-002`、`CLR-005` 当前为 Framework Approval 前的 `BLOCKING` clarification。
 
 ## 来源纠正
 
