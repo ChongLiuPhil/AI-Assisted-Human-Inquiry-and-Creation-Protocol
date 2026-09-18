@@ -51,3 +51,9 @@
 ## I. Onboarding 结论
 - `PASS / PARTIAL / FAIL`
 - 说明：
+
+## J. Active Session Contract
+- 按 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 回显：`HARC ACTIVE SESSION CONTRACT — LOADED`
+- Session Contract loaded：`YES / NO`
+
+如果为 `NO`，Onboarding 不得判定为 `PASS`。
