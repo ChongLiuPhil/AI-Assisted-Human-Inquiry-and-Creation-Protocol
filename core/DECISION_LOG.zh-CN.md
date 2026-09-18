@@ -207,4 +207,4 @@
 
 **受影响组件：** Protocol Core、Specification、AGENTS 契约、README、方法论文章、证据笔记、审计、模板、未来文件
 
-**状态：** 正在实施；已启动仓库范围双语迁移。
+**状态：** 已实现初始仓库级双语迁移；后续每次实质性编辑仍必须持续执行同步。详见 `docs/BILINGUAL_PARITY_AUDIT.zh-CN.md`。
