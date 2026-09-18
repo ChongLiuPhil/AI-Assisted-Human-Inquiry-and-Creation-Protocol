@@ -5,10 +5,10 @@
 **状态：** `DERIVED-PROVISIONAL`  
 **框架状态：** `WORKING-FRAMEWORK — 尚未经人类作者正式确认`  
 **协议：** Human–AI Research Collaboration Protocol (HARC) v0.2.0-draft  
-**上游内容核心：** `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.md`  
-**形式核心：** `paper/METHODOLOGY_ARTICLE_FORM_CORE.md`  
-**框架状态：** `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md`  
-**证据核验：** `evidence/METHODOLOGY_SOURCES.md`
+**上游内容核心：** `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`  
+**形式核心：** `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`  
+**框架状态：** `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`  
+**证据核验：** `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 
 ## 摘要
 
@@ -366,8 +366,8 @@ HARC 将这一问题转化为一个可以被实现、审计、测试和持续改
 - NISO. CRediT — Contributor Role Taxonomy; ANSI/NISO Z39.104-2022. https://credit.niso.org/ ; https://doi.org/10.3789/ansi.niso.z39.104-2022
 - UNESCO. (2023). Guidance for Generative AI in Education and Research. https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research
 
-完整的来源核验说明见 `evidence/METHODOLOGY_SOURCES.md`，BibTeX 元数据见 `paper/methodology-references.bib`。
+完整的来源核验说明见 `evidence/METHODOLOGY_SOURCES.zh-CN.md`，BibTeX 元数据见 `paper/methodology-references.bib`。
 
 ## 当前文章开发说明
 
-本文是 HARC 项目的方法论文章第一版完整工作稿。它依据 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md` 展开，但该框架尚未通过人类的正式 Framework Approval，因此本文应被视为 `DERIVED-PROVISIONAL`，而不是最终的人类确认稿。
+本文是 HARC 项目的方法论文章第一版完整工作稿。它依据 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` 展开，但该框架尚未通过人类的正式 Framework Approval，因此本文应被视为 `DERIVED-PROVISIONAL`，而不是最终的人类确认稿。
