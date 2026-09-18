@@ -17,7 +17,9 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 按以下顺序读取中文 canonical；英文仅用于同步核验：
 
 1. `HARC_MANIFEST.yaml`
-2. `AGENTS.zh-CN.md`
+2. `BOOTSTRAP_PROMPT.zh-CN.md`
+3. `AGENTS.zh-CN.md`
+4. `protocol/ONBOARDING_HANDSHAKE.zh-CN.md`
 3. `core/PROTOCOL_CORE.zh-CN.md`
 4. 最近的 `core/DECISION_LOG.zh-CN.md`
 5. 当前项目的 Content Core / Form Core
@@ -47,7 +49,7 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 
 ## 3. 接管握手：必须先输出 Onboarding Report
 
-完成强制读取后，新 Agent 应先向人类输出一个简短但结构化的 **HARC Onboarding Report**，至少包含：
+完成强制读取后，新 Agent 应先向人类输出一个简短但结构化的 **HARC Onboarding Report**。推荐直接使用：`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`。至少包含：
 
 ### A. 协议状态
 
