@@ -253,3 +253,18 @@
 **人类后续确认：** 人类项目发起人明确确认上述理解“基本准确”，并要求正式落实。该确认支持把 zero-context bootstrap、独立启动提示词、manifest、Onboarding Handshake 与 Onboarding Report 作为正式 HARC 协议组成部分。
 
 **状态：** 已确认并实现。
+
+---
+
+## 2026-09-18 — HARC-D019
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL
+
+**决定：** 在新的 AI Agent 读取 GitHub 仓库并完成 onboarding 后，应进一步把关键 HARC 规则和当前项目状态压缩成一份会话级操作契约，并由 Agent 明确写入自己的当前回复，使这些规则重新进入本轮对话上下文，形成“仓库持久状态 + 当前会话活动契约”的双层保险。该文件应主动提示 Agent 执行这一操作，并在重大状态变化或上下文可能丢失时刷新。
+
+**限定：** 该机制不得声称把仓库文件提升成平台真正的 system prompt，也不得声称能够修改模型参数、隐藏记忆或平台级 memory。平台 system/developer/safety 指令始终高于 HARC Session Contract。
+
+**实现：** 新增 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror，并接入 START_HERE、Bootstrap Prompt、Manifest、Onboarding Report、Agent contract 与项目模板。
+
+**状态：** 已确认并实施。
