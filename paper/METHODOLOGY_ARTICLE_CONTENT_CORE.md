@@ -10,13 +10,15 @@ This file contains only human-originated commitments that have been stated or cl
 
 The HARC project should not only be an executable open protocol. It should also produce a methodology article that explains the project's ideas, architecture, and implications for human–AI research collaboration.
 
-## C2. The article must address human purpose, direction, and responsibility when AI tools participate
+## C2. The article must address human purpose, direction, and responsibility-bearing status when AI tools participate
 
-The article should treat humans as the source, initiator, and navigator of the purpose of a research or creative project. What problem the project is trying to solve, what direction it takes, and whether its core outcome is ultimately endorsed must be given, understood, and approved by humans; humans bear the core responsibility for the resulting work.
+The article should treat humans as the source, initiator, and navigator of the purpose of a research or creative project. What problem the project is trying to solve, what direction it takes, and whether its core outcome is ultimately endorsed must be given, understood, and approved by humans.
+
+“Human responsibility” should not be treated here as an unexplained abstract property. The more precise core claim is: **in human–AI collaborative research and inquiry, humans remain the bearers of responsibility.**
 
 Within HARC, an AI Agent is treated as a collaboration tool. It may perform or assist with extensive search, synthesis, structuring, drafting, revision, restructuring, checking, formatting, and related work. The article should not characterize AI as a cognitive subject or use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language.
 
-The relevant question is instead which concrete work AI tools may perform or assist, and which acts of purpose-setting, understanding, judgment, confirmation, and responsibility must remain under human governance.
+The relevant question is instead which concrete work AI tools may perform or assist, and which acts of purpose-setting, understanding, judgment, confirmation, and responsibility must be borne by humans as the responsibility-bearing subjects.
 
 ## C3. The article must explain persistent repository-based collaboration
 
@@ -26,13 +28,13 @@ The article should explain why durable research state should be externalized int
 
 It should explain the Content Core / Form Core / Decision Log / Working Framework / Approved Framework / Derived Artifact architecture and why AI expansion must remain subordinate to human-confirmed upstream state.
 
-## C5. The article must explain framework-level human responsibility
+## C5. The article must explain humans as the responsibility-bearing subjects at the framework layer
 
-For long-form work, the Layer 2 Current / Approved Framework is the primary structural carrier of human core intellectual responsibility.
+For long-form work, the Layer 2 Current / Approved Framework is the primary structural carrier of core intellectual responsibility borne by humans.
 
 Before Framework Approval, the human author must form a clear and complete understanding of every substantive element actually represented in the framework, and must carefully review and explicitly confirm those elements item by item. This includes at least the core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
 
-AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. The human is responsible for the originality, understanding, judgment, and intellectual commitments carried by that framework.
+AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. Humans bear responsibility for the originality, understanding, judgment, and intellectual commitments carried by that framework; AI cannot become the bearer of this responsibility.
 
 The article should still distinguish a framework-level defect already present in the approved architecture from a derived-expansion defect introduced only in later AI elaboration. Treating the framework as the primary intellectual responsibility anchor does not remove Final Artifact Approval or the factual-accuracy, research-integrity, and venue requirements that apply to the final work.
 
@@ -123,6 +125,14 @@ Current Focus + Task Plan form the operational resume state required for cross-A
 Work Log should not be default required context for ordinary AI onboarding and should not store hidden model chain-of-thought. Completed tasks should leave active Task Plan and receive appropriately granular historical summaries in Work Log; stable normative results still require Promotion into the appropriate Long-Term Memory destination.
 
 This design separates “seamless continuation of work” from “later human review of the development of the project and the author's thought”.
+
+## C16. Public dissemination of knowledge must retain human bearers of responsibility
+
+When research, inquiry, arguments, or knowledge claims enter public circulation through papers, books, reports, presentations, websites, or other forms, humans must remain the bearers of responsibility.
+
+AI Agents may participate as tools in search, organization, analytic assistance, drafting, expansion, checking, and presentation, but they cannot be treated as the bearers of ultimate responsibility for public knowledge dissemination.
+
+This principle is operationalized through human authorization of project purpose and direction, Framework Approval, and Final Artifact Approval where applicable.
 
 ## Current unresolved authorial decisions
 
