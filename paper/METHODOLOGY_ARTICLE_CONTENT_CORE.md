@@ -1,5 +1,7 @@
 # Methodology Article — Content Core
 
+> Chinese `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md` is canonical; this English file is its synchronized mirror. Every substantive change must update both versions.
+
 **Role:** canonical human-originated substantive foundation for the HARC methodology article.
 
 This file contains only human-originated commitments that have been stated or clearly confirmed in the founding discussion. AI-generated terminology, stronger theses, literature interpretations, empirical research programs, and article structure remain outside this file until explicitly accepted by the human author.
