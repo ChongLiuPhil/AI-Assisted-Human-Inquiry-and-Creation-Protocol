@@ -25,9 +25,9 @@ The current `main` tree was recursively scanned for Markdown files.
 
 Results:
 
-- total Markdown files: **72**
-- Chinese canonical files (`*.zh-CN.md`): **36**
-- English mirrors: **36**
+- total Markdown files: **74**
+- Chinese canonical files (`*.zh-CN.md`): **37**
+- English mirrors: **37**
   - most retain existing `*.md` paths;
   - the complete methodology article uses `METHODOLOGY_ARTICLE.en.md`;
 - Chinese files without English mirrors: **0**
