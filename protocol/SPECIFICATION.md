@@ -541,16 +541,28 @@ A lightweight compliant project SHOULD contain at least:
 ```text
 START_HERE.zh-CN.md
 START_HERE.md
+BOOTSTRAP_PROMPT.zh-CN.md
+BOOTSTRAP_PROMPT.md
+ONBOARDING_REPORT_TEMPLATE.zh-CN.md
+ONBOARDING_REPORT_TEMPLATE.md
 AGENTS.zh-CN.md
 AGENTS.md
 HARC_MANIFEST.yaml
+core/CONTENT_CORE.zh-CN.md
 core/CONTENT_CORE.md
+core/FORM_CORE.zh-CN.md
 core/FORM_CORE.md
+core/DECISION_LOG.zh-CN.md
 core/DECISION_LOG.md
+docs/clarification-register.zh-CN.md
 docs/clarification-register.md
+docs/argument-map.zh-CN.md
 docs/argument-map.md
+docs/framework-status.zh-CN.md
 docs/framework-status.md
 ```
+
+The Chinese files are canonical and the English files are synchronized mirrors.
 
 For long or high-stakes projects, evidence directories, Approved Framework snapshots, detailed protocol files, and audit records are strongly recommended.
 
