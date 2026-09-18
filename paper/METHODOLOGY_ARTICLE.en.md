@@ -368,7 +368,7 @@ HARC turns this question into an open-protocol problem that can be implemented, 
 - NISO. CRediT — Contributor Role Taxonomy; ANSI/NISO Z39.104-2022. https://credit.niso.org/ ; https://doi.org/10.3789/ansi.niso.z39.104-2022
 - UNESCO. (2023). Guidance for Generative AI in Education and Research. https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research
 
-For complete source-verification notes, see `evidence/METHODOLOGY_SOURCES.en.md`. BibTeX metadata is in `paper/methodology-references.bib`.
+For complete source-verification notes, see `evidence/METHODOLOGY_SOURCES.md`. BibTeX metadata is in `paper/methodology-references.bib`.
 
 ## Current article-development note
 
