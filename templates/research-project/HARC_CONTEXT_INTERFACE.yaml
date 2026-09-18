@@ -11,6 +11,7 @@ harc_context_interface:
 
   context_policy:
     retrieval: "selective-on-demand"
+    working_memory_first: true
     cache_authority: "none"
     cache_scope: "current-task-only"
     read_latest_before_high_impact_action: true
@@ -64,6 +65,7 @@ harc_context_interface:
       - "third_party_generated_content"
 
   failure_states:
+    - "WORKING-MEMORY-STALE"
     - "CONTEXT-STALE"
     - "REPOSITORY-UNAVAILABLE"
     - "REVISION-CONFLICT"
