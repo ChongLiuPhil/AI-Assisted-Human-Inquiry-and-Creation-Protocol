@@ -7,23 +7,25 @@
 ## 1. ACTIVE TASKS
 
 - `WM-T016` — AHICP v0.3 repository-wide semantic migration: `IN PROGRESS`
-- `WM-T017` — AHICP project templates/control-plane migration: `IN PROGRESS`
-- `WM-T018` — v0.3 bilingual parity + onboarding + post-migration audit: `PENDING`
+- `WM-T017` — AHICP project templates/control-plane migration: `COMPLETED`
+- `WM-T018` — v0.3 structural validation completed; semantic bilingual parity + post-migration audit: `IN PROGRESS`
 - `WM-T015` — methodology article overall Framework Approval: `WAITING-HUMAN / PARALLEL`
 - `WM-T013` — license decision: `WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
 
 ## 2. NEXT ACTIONS
 
-1. complete AHICP identifier migration in live protocol/core/template state;
-2. preserve historical HARC Decision IDs and explicit historical narration;
-3. define `templates/research-project/` as a research specialization and migrate its control files;
-4. create a Phase C audit using GENERALIZE / RETAIN / PRESERVE / MIGRATE categories;
-5. check broken references and old repository URLs;
-6. run bilingual parity;
-7. run zero-context onboarding self-test;
-8. run an independent post-migration audit;
-9. merge only after these checks pass.
+1. precisely handle the former project name in the methodology article and evidence layer, distinguishing historical HARC references from current AHICP references;
+2. perform semantic bilingual parity on key normative files, not merely file-pair checks;
+3. check remaining live navigation / repository URLs / identifiers for migration;
+4. perform an independent post-migration repair audit;
+5. merge only after these checks pass.
+
+Structural validation completed:
+- 33 manifest path candidates checked, 0 missing;
+- 62 Chinese `*.zh-CN.md` files checked, 0 missing English mirrors;
+- zero-context control chain points entirely to AHICP control files;
+- research-project template migrated to the AHICP control plane while remaining a research specialization.
 
 ## 3. MIGRATION INVARIANTS
 
