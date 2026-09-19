@@ -2,7 +2,7 @@
 
 > **Language:** Chinese canonical: `FORM_CONTENT_ROUTING.zh-CN.md`; this English file is the synchronized mirror.
 
-HARC treats human feedback as durable project state only after it has been classified and written to the appropriate canonical layer.
+AHICP treats human feedback as durable project state only after it has been classified and written to the appropriate canonical layer.
 
 ## CONTENT
 
