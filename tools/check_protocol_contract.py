@@ -99,8 +99,8 @@ REQUIRED = {
         "initial configuration",
         "mixed policy",
     ],
-    "core/DECISION_LOG.zh-CN.md": ["AHICP-D027", "AHICP-D028", "per-action authorization", "bounded pre-authorization"],
-    "core/DECISION_LOG.md": ["AHICP-D027", "AHICP-D028", "per-action authorization", "bounded pre-authorization"],
+    "core/DECISION_LOG.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "CI green"],
+    "core/DECISION_LOG.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "green CI"],
 }
 
 
