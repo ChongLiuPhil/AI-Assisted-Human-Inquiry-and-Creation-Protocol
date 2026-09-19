@@ -1,4 +1,4 @@
-# HARC Working Memory Index
+# AHICP Working Memory Index
 
 > **Language:** Chinese canonical: `working-memory.zh-CN.md`; this English file is the synchronized mirror.
 
