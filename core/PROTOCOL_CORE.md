@@ -330,6 +330,18 @@ Work Log is not part of the default required read chain.
 
 ---
 
+## P25. External-system operations should use authority-bounded machine-operable-first escalation
+
+When an AI Agent needs an external system, account, or service and appropriate human authorization already exists, it should first safely discover and verify available built-in tools, connectors/plugins, official MCP servers, provider APIs, official integrations, repository automation, and approved adapters before deciding that human handoff is necessary.
+
+A tool being listed as installed / enabled / connected is not sufficient evidence that it is actually callable; when technically possible and safe, capability should be verified with a real minimal invocation.
+
+The Agent must not ask a human to paste passwords, tokens, private keys, or other secrets into chat. Escalation to a human should be reserved for identity authorization, account-owner consent, permission grants, non-delegable high-impact decisions, or actions that currently available tool capabilities genuinely cannot perform. Handoff must be minimized, written for a nontechnical operator, and followed by the Agent resuming machine-operable work after the necessary authorization is completed.
+
+For external actions that affect future work, the Agent should verify provider actual state and write the verified durable result back to the repository. Provider UI, chat state, and model memory must not become a parallel authoritative project-state source.
+
+---
+
 ## Current scope
 
 AHICP v0.3 currently focuses on:
