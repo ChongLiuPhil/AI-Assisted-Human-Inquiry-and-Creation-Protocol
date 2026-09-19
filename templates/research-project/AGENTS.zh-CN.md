@@ -40,12 +40,27 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 - 写入后使相关缓存失效；
 - 不维护聊天内第二份动态真值源。
 
+## 外部系统、工具发现与人类交接
+
+当任务需要外部系统、账户或服务时：
+
+- 在已有适当人类授权的前提下，先检查当前可用并获授权的 built-in tools、plugins/connectors、官方 MCP、provider API、官方 integration、repository automation 与 approved adapters；
+- installed / enabled / connected 不等于真实 callable；在技术上可行且安全时，先做真实最小 capability probe；
+- 优先 official / OAuth / provider-managed / least-secret-handling 路线；
+- 不得要求人类把 password、token、private key 或其他 secret 粘贴到聊天；
+- 只有身份授权、账户所有者 consent、权限授予、不可委托高影响决定，或当前工具确实无法完成的动作才 handoff；
+- handoff 必须最少步骤、一次只要求当前必要动作、假定无技术背景、明确不能发给 AI 的值，并给出可验证完成标准；
+- 授权完成后由 Agent fresh-read repository、重新验证 provider actual state，并恢复后续 machine-operable work；
+- 影响未来工作的 external operation 必须验证并把 durable result 写回 repository。
+
+Provider UI、聊天状态和模型记忆都不是项目的持久权威状态。
+
 ## 协议来源
 
 初始化项目时记录所采用的协议来源：
 
 - 上游仓库：`ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol`
-- AHICP 版本：`0.2.0-draft`（替换成实际采用的 version/tag/commit）
+- AHICP 版本：`0.3.0-draft`（替换成实际采用的 version/tag/commit）
 - Adopted commit/tag：`UNRESOLVED — 初始化时记录`
 
 未来 Agent 不得静默假定上游 AHICP 最新规则已经被本项目采用。协议升级必须成为明确项目决定。
