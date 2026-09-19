@@ -6,48 +6,43 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T016` — AHICP v0.3 repository-wide semantic migration: `SUBSTANTIALLY COMPLETED`
-- `WM-T017` — AHICP project templates/control-plane migration: `COMPLETED`
-- `WM-T018` — v0.3 structural validation completed; semantic bilingual parity + post-migration audit: `IN PROGRESS`
-- `WM-T015` — methodology article overall Framework Approval: `WAITING-HUMAN / PARALLEL`
+- `WM-T015` — methodology article overall Framework Approval: `WAITING-HUMAN`
 - `WM-T013` — license decision: `WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
 
-## 2. NEXT ACTIONS
+## 2. COMPLETED MIGRATION TASKS
 
-1. perform semantic bilingual parity on key normative files, not merely file-pair checks;
-2. check remaining live navigation / repository URLs / identifiers for migration;
-3. perform an independent post-migration repair audit;
-4. merge only after these checks pass.
+- `WM-T016` — AHICP v0.3 repository-wide semantic migration: `COMPLETED`
+- `WM-T017` — AHICP project templates/control-plane migration: `COMPLETED`
+- `WM-T018` — structural validation + semantic bilingual parity + post-migration audit: `COMPLETED / PASS`
 
-Structural validation completed:
-- 33 manifest path candidates checked, 0 missing;
-- 62 Chinese `*.zh-CN.md` files checked, 0 missing English mirrors;
-- zero-context control chain points entirely to AHICP control files;
-- research-project template migrated to the AHICP control plane while remaining a research specialization.
+Validation summary:
+- manifest path candidates: 33 / missing 0;
+- Chinese Markdown pairs: 62 / missing English mirror 0;
+- Protocol Core: 24 / 24 sections;
+- Specification: 25 / 25 sections;
+- AGENTS: 17 / 17 sections;
+- Working Memory: 11 / 11 sections;
+- Repository Context Interface: 16 / 16 sections;
+- old live HARC control paths / full name / v0.2 identifiers: 0 across key normative files;
+- final post-migration audit: PASS.
 
-## 3. MIGRATION INVARIANTS
+## 3. NEXT ACTIONS
 
-- Name: **AI-Assisted Human Inquiry and Creation Protocol**.
-- Subtitle: **A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.**
-- Humans retain purpose, direction, substantive judgment, approval, and ultimate responsibility.
-- AI is assistive; extensive execution does not make it a symmetric cognitive subject.
-- Historical facts are not rewritten merely because the project was renamed.
-- Research-specific content remains research-specific where appropriate.
-- AHICP does not duplicate PPF publishing-lifecycle rules.
-- Chinese-canonical / English-mirror governance remains in force.
+1. await the human's overall `APPROVE / REVISE / REJECT` decision on the methodology Working Framework;
+2. decide the license before formal release;
+3. decide target venue / external form constraints before final submission/publication.
 
-## 4. PARALLEL METHODOLOGY ARTICLE GATES
+## 4. MIGRATION INVARIANTS
 
-Unchanged:
-- overall Framework Approval: `WAITING-HUMAN`;
-- `CLR-009` license: blocking before formal release;
-- `CLR-010` target venue / publication form: blocking before final publication.
+Future AHICP v0.3 development must preserve:
 
-## 5. COMPLETION RULE
-
-Migration completion requires:
-
-`semantic migration complete + bilingual parity + control-path consistency + zero-context onboarding pass + post-migration audit pass`
-
-A repository rename or README rename alone is not completion.
+- **AI-Assisted Human Inquiry and Creation Protocol**
+- *A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.*
+- humans retain purpose, direction, substantive judgment, approval, and ultimate responsibility;
+- AI remains assistive;
+- repository state outranks chat memory;
+- historical `HARC-D001`–`HARC-D025` remain historical identifiers;
+- new protocol decisions use the AHICP prefix;
+- AHICP and PPF retain their boundary;
+- Chinese canonical / English synchronized mirror.
