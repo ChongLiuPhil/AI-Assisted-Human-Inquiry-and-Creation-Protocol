@@ -468,3 +468,28 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Specification §23.5、Protocol Core P26、AGENTS、research-project template、Protocol Contract CI。
 
 **状态：** 人类已明确确认本项原则；授权在当前 PR #3 中传播。
+
+---
+
+## 2026-09-20 — AHICP-D029
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL
+
+**决定：**
+
+1. 人类项目发起人批准当前 PR #3 所提出的 **scoped authorization for durable-state actions** 规范方向及其当前实质内容，包括：
+   - `proposal != authorization != execution != verification != durable write-back`；
+   - authorization scope / provenance 的显式建模；
+   - durability 本身不自动等于 high-impact；
+   - provider-neutral 的 high-impact 判断；
+   - 对已授权、低风险、可逆机器操作避免不必要的人类升级；
+   - AHICP-D028 所确认的首次配置 authorization-mode human choice gate。
+2. 批准保留 human-reserved / non-delegable 边界：bounded pre-authorization 不得覆盖治理规则明确保留给人类的行动。
+3. 批准 AHICP 与 PPF 的边界保持不变：AHICP 规范 authorization provenance、scope、selection、escalation、execution/verification separation 与 durable write-back；PPF 或其他 publishing framework 继续拥有 publication-lifecycle state semantics。
+4. 本决定授权把 PR #3 从 draft 收束为可合并状态，并在最新 head 的 Protocol Contract CI 成功且未出现新的实质冲突后合并到 `main`。
+5. 合并、CI 成功或其他机器执行结果本身不构成新的授权；本条人类决定是本次规范 promotion / merge 的 authorization provenance。
+
+**受影响组件：** Specification §23.5、Protocol Core P26、AGENTS、research-project template、Decision Log、Protocol Contract CI。
+
+**状态：** 人类已明确批准；授权完成当前 PR #3 的规范收束，并在 CI green 后合并。
