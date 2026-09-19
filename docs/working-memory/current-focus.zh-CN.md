@@ -4,13 +4,14 @@
 > **中文 canonical；英文 `current-focus.md` 为同步 mirror。**
 
 **状态：** `ACTIVE`  
-**最后更新：** 2026-09-19
+**最后更新：** 2026-09-20
 
 ## CURRENT_STAGE
 
-**HARC → AHICP v0.3 语义迁移已完成，并通过最终迁移后审计。**
+**AHICP v0.3 语义迁移已完成；后续 external-system authorization / human-handoff 与 scoped authorization 治理也已完成规范收束。**
 
-迁移依据：`AHICP-D026`。
+迁移依据：`AHICP-D026`。  
+后续授权治理依据：`AHICP-D027`、`AHICP-D028`、`AHICP-D029`。
 
 已完成：
 - 正式名称与固定 subtitle；
@@ -21,19 +22,23 @@
 - research-project specialization template 迁移；
 - 方法论文章/evidence 的当前协议身份迁移，同时保留 research-specific 主题；
 - 关键双语规范 semantic parity；
-- final post-migration repair audit。
+- final post-migration repair audit；
+- provider-neutral machine-operable-first escalation、authorization / human handoff 与 provider actual-state write-back；
+- scoped authorization lifecycle：`proposal != authorization != execution != verification != durable write-back`；
+- 首次配置 reusable authorization policy 时由 AI 提出方案、人类选择，选择及其 scope / provenance / escalation conditions 持久记录；
+- PR #3 合并后的独立 consistency review 与传播修复。
 
-最终审计：
-
-`docs/AHICP_V0_3_FINAL_POST_MIGRATION_AUDIT.zh-CN.md`
-
-结论：`PASS — merge-ready`。
+最近的 protocol repair 已关闭以下问题：
+- D028 的 durable authorization record 在下游规范中被弱化；
+- Specification §23.3 漏列 `permission grants`；
+- Working Memory 未记录 D028/D029 与 PR #3 milestone；
+- Protocol Contract CI 对 §23.5.1 只做全文件 marker 检查、未校验 section-local invariant。
 
 ## CURRENT_OBJECTIVE
 
 ### WM-OBJ-003 — 方法论文章整体 Framework Approval
 
-AHICP v0.3 迁移完成后，协议仓库恢复到迁移前尚未解决的主要工作门：
+protocol maintenance 完成后，仓库的主要未决工作门仍为：
 
 - 方法论文章 Working Framework：`WAITING-HUMAN`
 - license：`WAITING-HUMAN`
@@ -57,8 +62,8 @@ AHICP v0.3 迁移完成后，协议仓库恢复到迁移前尚未解决的主要
 
 `WAITING-HUMAN: methodology article overall Framework Approval`
 
-这不阻塞已经完成的 AHICP v0.3 protocol migration。
+这不阻塞已经完成的 AHICP protocol migration 与 authorization-governance maintenance。
 
 ## HANDOFF
 
-新的 AI Agent 应按 AHICP control plane 接管。协议迁移已经完成，不应重新把旧 HARC live identifiers 引入当前规范文件。
+新的 AI Agent 应按 AHICP control plane 接管，并以 repository `main` 的最新 revision 为唯一项目状态来源。D027–D029 已是当前授权治理依据；旧 HARC live identifiers 不应重新进入当前规范文件。
