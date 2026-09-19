@@ -420,3 +420,27 @@ Current Focus should remain the shortest and highest-salience component so a rep
 8. AHICP remains separate from the **Personal Publishing Framework (PPF)**: AHICP governs AI assistance in human inquiry and creation; PPF governs the source / build / publish / release / archive lifecycle. They may be adopted independently or together.
 
 **Status:** explicitly human-confirmed; propagation is in progress on the v0.3 semantic-migration branch.
+
+---
+
+## 2026-09-19 — AHICP-D027
+
+**Source:** Human project founder  
+**Classification:** PROTOCOL
+
+**Decision:**
+
+1. AHICP formally adopts general **External Systems, Tool Discovery, Authorization, and Human Handoff** governance.
+2. When work requires an external system, account, or service and appropriate human authorization already exists, an AI Agent should first safely discover and exhaust currently available and authorized machine-operable paths before returning routine operational steps to the human.
+3. Discovery should cover platform built-in tools, connected plugins/connectors, official MCP servers, provider APIs, official GitHub Apps/integrations, existing repository automation, and explicitly approved adapters/plugins.
+4. “Installed / enabled / connected” does not prove that a capability is actually callable. When capability status affects the execution route or a decision to escalate to a human, it must be verified through a real minimal invocation when technically possible and safe.
+5. Where functionally equivalent, official, OAuth, provider-managed, least-secret-handling connections are preferred. Humans must not be asked to paste passwords, tokens, private keys, or other secrets into chat for convenience.
+6. Human escalation is reserved for identity authorization, account-owner consent, permission grants, non-delegable high-impact decisions, or actions that currently authorized tools genuinely cannot perform. Human handoff must use the fewest steps, request only the necessary current action, assume no technical background, and identify values that must not be sent to AI.
+7. After the necessary human action, the AI Agent should re-read the repository, re-verify capability/provider actual state, and resume later machine-operable work.
+8. External operations that affect future project work must be followed by verification of actual provider state and write-back of the verified durable result to the repository. Provider UI, chat state, and model memory must not become a parallel authoritative project-state source.
+9. This is provider-neutral AHICP execution/escalation governance. It does not place Cloudflare or any other specific provider in the normative core and does not change the publishing-lifecycle boundary owned by PPF.
+
+**Affected components:** Protocol Core, Specification, AGENTS, research-project template, future adoption/conformance audits.
+
+**Status:** explicitly requested for execution by the human; this decision authorizes the current normative propagation.
+
