@@ -366,6 +366,8 @@ durable state 并不自动等于 high-impact。已经获得授权、风险较低
 
 high-impact 应根据行动的合理可预见效果来判断：它是否会实质改变责任主体的外部承诺、access/security/identity/permission 边界、canonical identity 或 public cutover、adopted governance authority，或不可逆/实质上难以逆转的状态。repository write、merge、deployment、email send、API call 等技术操作名称本身不是授权等级。
 
+在第一次配置将被后续操作重复依赖的 authorization policy 时，Agent 应先根据 action class、target、side effects、reversibility 与 high-impact boundary 提出适合的授权方式；在适用时区分 per-action authorization、bounded pre-authorization 与 mixed policy，并说明 scope 与 escalation conditions。AI 只能提出 proposal；人类必须选择、修改或拒绝授权方式，最终选择必须在后续操作依赖它之前写入 repository durable state。
+
 在有效授权作用域内，Agent 可以执行机器可操作工作、验证 actual state 并把结果写回 repository durable state；如果行动属于 non-delegable、超出 scope，或其 impact / reversibility 已经实质改变，则只升级当前真正缺失的人类授权或判断。
 
 ---
