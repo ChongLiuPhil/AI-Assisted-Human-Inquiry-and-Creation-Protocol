@@ -465,7 +465,7 @@ If the Agent cannot produce this report from repository state, the project has a
 
 A new AI Agent SHOULD be able to continue normal project work by reading, at minimum:
 
-1. `START_HERE.zh-CN.md`, `HARC_MANIFEST.yaml`, and `HARC_CONTEXT_INTERFACE.yaml`;
+1. `START_HERE.zh-CN.md`, `AHICP_MANIFEST.yaml`, and `AHICP_CONTEXT_INTERFACE.yaml`;
 2. project `AGENTS.zh-CN.md`;
 3. Working Memory Index;
 4. Current Focus;
@@ -581,8 +581,8 @@ ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 ONBOARDING_REPORT_TEMPLATE.md
 AGENTS.zh-CN.md
 AGENTS.md
-HARC_MANIFEST.yaml
-HARC_CONTEXT_INTERFACE.yaml
+AHICP_MANIFEST.yaml
+AHICP_CONTEXT_INTERFACE.yaml
 core/CONTENT_CORE.zh-CN.md
 core/CONTENT_CORE.md
 core/FORM_CORE.zh-CN.md
