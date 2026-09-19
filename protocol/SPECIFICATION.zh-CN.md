@@ -467,7 +467,7 @@ AHICP 提供的是持久项目记忆，而不是字面意义上的无限模型�
 
 新的 AI Agent 至少应通过阅读以下内容继续正常项目工作：
 
-1. `START_HERE.zh-CN.md`、`HARC_MANIFEST.yaml` 与 `HARC_CONTEXT_INTERFACE.yaml`；
+1. `START_HERE.zh-CN.md`、`AHICP_MANIFEST.yaml` 与 `AHICP_CONTEXT_INTERFACE.yaml`；
 2. 项目 `AGENTS.zh-CN.md`；
 3. Working Memory Index；
 4. Current Focus；
@@ -483,7 +483,7 @@ Work Log 仅在人类要求历史回顾、专门审计、变迁重建或 current
 
 ### 16.3 Repository-Backed Context
 
-项目 SHOULD 使用 `HARC_CONTEXT_INTERFACE.yaml` 或等价机制规定：
+项目 SHOULD 使用 `AHICP_CONTEXT_INTERFACE.yaml` 或等价机制规定：
 
 - GitHub 是唯一权威项目状态源；
 - 模型上下文只是非权威临时缓存；
@@ -593,8 +593,8 @@ BOOTSTRAP_PROMPT.zh-CN.md
 SESSION_CONTEXT_BOOTSTRAP.zh-CN.md
 ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 AGENTS.zh-CN.md
-HARC_MANIFEST.yaml
-HARC_CONTEXT_INTERFACE.yaml
+AHICP_MANIFEST.yaml
+AHICP_CONTEXT_INTERFACE.yaml
 core/CONTENT_CORE.zh-CN.md
 core/FORM_CORE.zh-CN.md
 core/DECISION_LOG.zh-CN.md
