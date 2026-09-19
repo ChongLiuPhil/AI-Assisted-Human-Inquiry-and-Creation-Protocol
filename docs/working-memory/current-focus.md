@@ -7,53 +7,57 @@
 
 ## CURRENT_STAGE
 
-The repository is performing the **HARC → AHICP v0.3 semantic migration**.
+**The HARC → AHICP v0.3 semantic migration is complete and has passed the final post-migration audit.**
 
-The migration is explicitly authorized by `AHICP-D026`. It is not a simple rename. The goal is to preserve the mature governance architecture while generalizing the protocol from research as the default setting to human-led inquiry / research / reasoning / writing / creation with AI assistance, and while preventing normative language from presenting AI as a symmetric cognitive subject or ultimate bearer of responsibility.
+Migration authority: `AHICP-D026`.
 
 Completed:
-- new formal name and subtitle;
-- first-pass README / Specification / AGENTS / onboarding migration;
-- `AHICP_MANIFEST.yaml` and `AHICP_CONTEXT_INTERFACE.yaml`;
-- legacy `HARC_*` control files reduced to compatibility pointers;
-- bilingual semantic migration plan;
-- initial Protocol Core generalization;
-- `AHICP-D026` recorded in Decision Log.
+- formal name and fixed subtitle;
+- human-led / AI-assisted / repository-grounded normative direction;
+- Protocol Core, Specification, AGENTS, and live protocol migration;
+- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` control plane;
+- zero-context onboarding migration;
+- research-project specialization template migration;
+- methodology article/evidence current protocol identity migration while preserving research-specific subject matter;
+- semantic parity of key bilingual normative files;
+- final post-migration repair audit.
+
+Final audit:
+
+`docs/AHICP_V0_3_FINAL_POST_MIGRATION_AUDIT.zh-CN.md`
+
+Conclusion: `PASS — merge-ready`.
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-004 — Complete AHICP v0.3 repository-wide semantic migration
+### WM-OBJ-003 — Methodology article overall Framework Approval
 
-Phase C classifies each relevant occurrence as:
+With the AHICP v0.3 migration complete, the repository returns to the principal unresolved work gates that preceded the migration:
 
-1. **GENERALIZE** — research-limited wording that served a general protocol function;
-2. **RETAIN RESEARCH-SPECIFIC** — evidence, research integrity, methodology-article, scholarly-policy, and genuinely research-specific content;
-3. **PRESERVE HISTORICAL** — historical facts and IDs such as HARC-D001–HARC-D025;
-4. **MIGRATE LEGACY IDENTIFIER** — current control files, templates, and startup paths that still use HARC identifiers.
+- methodology article Working Framework: `WAITING-HUMAN`
+- license: `WAITING-HUMAN`
+- target publication venue / form constraints: `WAITING-HUMAN`
+
+Current Chinese Working Framework:
+
+`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
 ## IMMEDIATE_NEXT_ACTION
 
-- migrate the research-project template control files to AHICP while preserving that template as a **research-specific specialization**;
-- reserve a distinct generic inquiry / creation template layer rather than forcing the research template to represent every project;
-- update live Architecture / Roadmap / Working Memory references;
-- produce a Phase C semantic audit record;
-- run bilingual parity, zero-context onboarding, and post-migration audits.
+When the human is ready to continue the methodology article, make an overall Working Framework decision:
+
+- `APPROVE`
+- `REVISE`
+- `REJECT`
+
+No Approved Framework snapshot is created before that decision.
 
 ## PRIMARY_BLOCKER
 
-`NONE` — the migration has explicit human authorization.
+`WAITING-HUMAN: methodology article overall Framework Approval`
 
-## PARALLEL WAITING-HUMAN ITEMS
-
-The methodology article remains:
-- overall Working Framework Approval: `WAITING-HUMAN`;
-- license: `WAITING-HUMAN`;
-- target publication venue / form constraints: `WAITING-HUMAN`.
-
-The AHICP migration does not approve, reject, or cancel those states.
+This does not block the completed AHICP v0.3 protocol migration.
 
 ## HANDOFF
 
-A replacement AI Agent should read this file and Task Plan first, then `docs/AHICP_SEMANTIC_MIGRATION_PLAN.zh-CN.md`, `AHICP-D026`, and task-relevant files.
-
-Do not treat “the repository has been renamed” as “the semantic migration is complete.”
+A replacement AI Agent should use the AHICP control plane for takeover. The protocol migration is complete; legacy HARC live identifiers must not be reintroduced into current normative files.
