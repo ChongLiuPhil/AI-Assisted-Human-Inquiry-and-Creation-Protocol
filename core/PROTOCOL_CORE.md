@@ -1,10 +1,10 @@
-# HARC Protocol Core
+# AHICP Protocol Core
 
 ## Purpose
 
 This file records the active human-originated design commitments that define the Human–AI Research Collaboration Protocol project itself.
 
-It is the project's semantic source of truth for what HARC is intended to achieve. AI elaborations may extend these ideas, but should not silently replace them.
+It is the project's semantic source of truth for what AHICP is intended to achieve. AI elaborations may extend these ideas, but should not silently replace them.
 
 ---
 
@@ -34,7 +34,7 @@ Reusable author preferences may be inherited by future projects where appropriat
 
 ## P4. Layer 2 should preserve a durable but highly revisable current framework
 
-Layer 2 belongs to Long-Term Research Memory but is more revisable than Layer 1. It should represent the current intellectual structure of the paper, book, or other research artifact in a compact, inspectable form.
+Layer 2 belongs to Long-Term Project Memory but is more revisable than Layer 1. It should represent the current intellectual structure of the paper, book, or other research artifact in a compact, inspectable form.
 
 This layer should contain core propositions, key concepts, inferential relations, section/chapter functions, conceptual distinctions, and current structural state.
 
@@ -84,7 +84,7 @@ It should not assume an AI can load unlimited history at once. Large projects sh
 
 ## P11. The protocol should be reusable and portable
 
-HARC should exist as an independent open project, not depend on any one research topic, and provide reusable specifications and templates for new papers, books, articles, reports, and sustained intellectual projects.
+AHICP should exist as an independent open project, not depend on any one research topic, and provide reusable specifications and templates for new papers, books, articles, reports, and sustained intellectual projects.
 
 A future AI agent should be able to inspect this repository and instantiate a topic-appropriate project structure that follows the same collaboration logic.
 
@@ -136,24 +136,24 @@ A stated three-pass audit therefore means three successive review-and-repair cyc
 
 After those cycles, the project should perform an additional independent post-repair audit to detect residual omissions, regressions, or inconsistencies.
 
-## P16. HARC should produce both an executable open project and a methodology article
+## P16. AHICP should produce both an executable open project and a methodology article
 
-HARC has two mutually supporting outputs:
+AHICP has two mutually supporting outputs:
 
 1. an executable and reusable open collaboration protocol, including specifications, templates, states, and governance rules;
 2. a methodology article explaining the conceptual basis of the protocol and developing its significance for research practice in the AI era.
 
 The article should address, among other themes, humans as the bearers of responsibility in research and inquiry, human authorization of research purpose and direction, the scope of work that AI tools may perform or assist, human intellectual responsibility at the framework layer, responsibility for public dissemination of knowledge, AI-assisted expansion, epistemic dependence, persistent external research memory, and the conditions under which human accountability remains meaningful.
 
-The article is a scholarly derivative of the protocol and should itself be developed under HARC-style framework control rather than treated as an ungoverned explanatory essay.
+The article is a scholarly derivative of the protocol and should itself be developed under AHICP-style framework control rather than treated as an ungoverned explanatory essay.
 
 ## P17. AI is a collaboration tool; humans remain the bearers of responsibility for project purpose and direction
 
-HARC treats an AI Agent as a research-collaboration tool, not as a participant that must be granted human-like cognitive-subject status or ultimate responsibility-bearing status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
+AHICP treats an AI Agent as a research-collaboration tool, not as a participant that must be granted human-like cognitive-subject status or ultimate responsibility-bearing status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
 
 The purpose, central problem, and direction of a research or creative project should originate with humans and remain under human initiation, navigation, or approval. AI capability to perform substantial work does not transfer the project's purpose, core judgments, or the position of ultimate responsibility to AI.
 
-Accordingly, HARC's shorthand “human responsibility” should be understood more precisely as follows: **in human–AI collaborative research and inquiry, humans remain the bearers of responsibility.** Especially when research results, arguments, or knowledge claims enter public circulation through papers, books, reports, websites, or other forms, the ultimate bearers of responsibility must remain human.
+Accordingly, AHICP's shorthand “human responsibility” should be understood more precisely as follows: **in human–AI collaborative research and inquiry, humans remain the bearers of responsibility.** Especially when research results, arguments, or knowledge claims enter public circulation through papers, books, reports, websites, or other forms, the ultimate bearers of responsibility must remain human.
 
 For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Current / Approved Framework: the human author must clearly understand, carefully review, and explicitly confirm the core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and specific formulations actually represented there. AI may help propose, organize, or express the framework, but it cannot replace human authorization of the project's direction and intellectual architecture or become the ultimate bearer of responsibility for it.
 
@@ -161,7 +161,7 @@ Framework Approval does not remove Final Artifact Approval; the concrete public 
 
 ## P18. Chinese is the canonical language; English is a synchronized mirror
 
-All substantive HARC project documents should exist in Chinese and English.
+All substantive AHICP project documents should exist in Chinese and English.
 
 The Chinese version is the **canonical source of meaning and editing authority**. Human review, correction, confirmation, and substantive editing are based on the Chinese version unless the human explicitly decides otherwise for a specific artifact.
 
