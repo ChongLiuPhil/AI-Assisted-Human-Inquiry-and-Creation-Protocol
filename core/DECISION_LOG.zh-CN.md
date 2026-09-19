@@ -446,3 +446,25 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 
 **状态：** 人类已明确要求执行；本决定授权本轮规范传播。
 
+---
+
+## 2026-09-20 — AHICP-D028
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL
+
+**决定：**
+
+1. 当项目第一次配置某个 integration、automation 或 workflow，且后续机器操作将依赖可重复使用的 authorization policy 时，AI Agent 应先分析场景并提出适合的人类授权方式，再由人类选择之后继续配置。
+2. AI 可以推荐授权方式、解释差异与适用范围，但 **AI proposal != human authorization**；Agent 不得替人类静默采用默认授权方式，也不得先完成建立授权策略的配置，再根据技术结果反推人类已经授权。
+3. 在适用时，方案应至少区分：
+   - `per-action authorization`：由人类逐次确认被指定为需要单独授权的行动或状态转换；
+   - `bounded pre-authorization`：人类预先批准明确且有限的 action class / target / side-effect / duration scope，AI 可在 scope 内重复执行；
+   - `mixed policy`：部分低风险行动可预授权，而指定 high-impact 或 human-reserved 行动继续逐次由人类决定。
+4. 人类可以选择、修改或拒绝 AI 提出的方案。最终选择必须连同 scope、authorization provenance 与 escalation conditions 写入 repository durable state，之后 AI 才能依赖该策略执行后续配置与机器操作。
+5. 后续行动如果超出已选择的 action class、target、allowed side effects、duration，或 impact / reversibility 发生实质变化，则必须重新取得相应的人类选择或授权。
+6. 本决定精确化 AHICP-D027 的 authorization / human-handoff 语义，并授权把这一规则传播到当前 PR #3；它**不构成对 PR #3 其余 AI-proposed 规范内容的整体批准，也不授权自动 merge**。
+
+**受影响组件：** Specification §23.5、Protocol Core P26、AGENTS、research-project template、Protocol Contract CI。
+
+**状态：** 人类已明确确认本项原则；授权在当前 PR #3 中传播。
