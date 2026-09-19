@@ -7,7 +7,7 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T016` — AHICP v0.3 repository-wide semantic migration：`IN PROGRESS`
+- `WM-T016` — AHICP v0.3 repository-wide semantic migration：`SUBSTANTIALLY COMPLETED`
 - `WM-T017` — AHICP project templates/control-plane migration：`COMPLETED`
 - `WM-T018` — v0.3 structural validation completed；semantic bilingual parity + post-migration audit：`IN PROGRESS`
 - `WM-T015` — 方法论文章整体 Framework Approval：`WAITING-HUMAN / PARALLEL`
@@ -16,11 +16,10 @@
 
 ## 2. NEXT ACTIONS
 
-1. 精确处理方法论文章与 evidence 层中旧项目名称：区分 historical HARC reference 与 current AHICP reference；
-2. 对关键中英文规范文件执行语义级 parity 审计，而不仅是文件配对；
-3. 检查剩余 live navigation / repository URL / identifier 是否需要迁移；
-4. 执行独立 post-migration repair audit；
-5. 上述检查通过后，PR 才具备合并条件。
+1. 对关键中英文规范文件执行语义级 parity 审计，而不仅是文件配对；
+2. 检查剩余 live navigation / repository URL / identifier 是否需要迁移；
+3. 执行独立 post-migration repair audit；
+4. 上述检查通过后，PR 才具备合并条件。
 
 已完成的结构验证：
 - `AHICP_MANIFEST.yaml` 路径候选 33，缺失 0；
