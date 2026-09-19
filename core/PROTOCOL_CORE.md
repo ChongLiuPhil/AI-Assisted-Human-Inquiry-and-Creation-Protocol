@@ -2,15 +2,15 @@
 
 ## Purpose
 
-This file records the active human-originated design commitments that define the Human–AI Research Collaboration Protocol project itself.
+This file records the active human-originated design commitments that define the AI-Assisted Human Inquiry and Creation Protocol (AHICP) project itself.
 
 It is the project's semantic source of truth for what AHICP is intended to achieve. AI elaborations may extend these ideas, but should not silently replace them.
 
 ---
 
-## P1. GitHub-centered persistent collaboration
+## P1. GitHub-centered durable project state and AI assistance
 
-The protocol should support sustained collaboration among a human author, GitHub, and one or more AI agents.
+The protocol should support sustained human inquiry and creation on top of a durable repository such as GitHub, with assistance from one or more replaceable AI agents.
 
 Important project state should be explicitly stored in repository documents rather than depending on the memory or conversation context of one particular AI platform or agent.
 
@@ -20,27 +20,27 @@ The initial protocol targets GitHub. Other platforms may be considered later.
 
 During discussion, the human author will express, correct, accept, reject, qualify, and develop substantive ideas.
 
-Durable human decisions about the research topic should be extracted and persisted into a foundational content document.
+Durable human decisions about the project's substantive content should be extracted and persisted into a foundational content document.
 
 AI-generated expansion must not silently contradict or replace this human foundation.
 
-## P3. Form/presentation intention must be separated from research content
+## P3. Form/presentation intention must be separated from substantive content
 
-Human instructions about typography, layout, visual design, citation presentation, writing format, artifact type, and other presentation concerns are distinct from substantive research claims.
+Human instructions about typography, layout, visual design, citation presentation, writing format, artifact type, and other presentation concerns are distinct from substantive content decisions.
 
 They should therefore be stored in a separate form/presentation source of truth.
 
 Reusable author preferences may be inherited by future projects where appropriate.
 
-## P4. Layer 2 should preserve a durable but highly revisable current framework
+## P4. Layer 2 should preserve a durable but highly revisable operational framework
 
-Layer 2 belongs to Long-Term Project Memory but is more revisable than Layer 1. It should represent the current intellectual structure of the paper, book, or other research artifact in a compact, inspectable form.
+Layer 2 belongs to Long-Term Project Memory but is more revisable than Layer 1. It should represent the current structure of a paper, book, creative work, or other artifact in a compact, inspectable form.
 
 This layer should contain core propositions, key concepts, inferential relations, section/chapter functions, conceptual distinctions, and current structural state.
 
-Layer 2 must remain constrained by the Layer 1 Human Authorial Core while it may contain structural material not stated item-by-item in Layer 1 but necessary for developing the research.
+Layer 2 must remain constrained by the Layer 1 Human Authorial Core while it may contain structural material not stated item-by-item in Layer 1 but necessary for developing the project.
 
-For large projects, it should be the primary human–AI interface for structural discussion. Working Argument Maps and Approved Framework snapshots are different approval states within this long-term layer.
+For large projects, it should be the primary human–AI interface for structural discussion. Working Frameworks / Argument Maps and Approved Framework snapshots may serve as different approval states or project-type instances within this long-term layer.
 
 ## P5. Human feedback must propagate upstream first
 
@@ -84,11 +84,11 @@ It should not assume an AI can load unlimited history at once. Large projects sh
 
 ## P11. The protocol should be reusable and portable
 
-AHICP should exist as an independent open project, not depend on any one research topic, and provide reusable specifications and templates for new papers, books, articles, reports, and sustained intellectual projects.
+AHICP should exist as an independent open project, not depend on any one research topic, and provide reusable specifications and templates for inquiry, research, papers, books, articles, reports, creative work, and other sustained projects.
 
 A future AI agent should be able to inspect this repository and instantiate a topic-appropriate project structure that follows the same collaboration logic.
 
-## P12. The protocol should make human–AI contribution boundaries explicit
+## P12. The protocol should make the boundary between human agency and AI assistance explicit
 
 The system should distinguish at least:
 
@@ -100,7 +100,7 @@ The system should distinguish at least:
 - approval state;
 - historical decisions.
 
-The purpose is not to hide AI assistance, but to make the collaboration auditable and intellectually governable.
+The purpose is not to hide AI assistance, but to make that assistance auditable while keeping human purpose, judgment, approval, and responsibility explicit.
 
 ## P13. Framework-level responsibility and expansion-level defects should be distinguished
 
@@ -147,9 +147,9 @@ The article should address, among other themes, humans as the bearers of respons
 
 The article is a scholarly derivative of the protocol and should itself be developed under AHICP-style framework control rather than treated as an ungoverned explanatory essay.
 
-## P17. AI is a collaboration tool; humans remain the bearers of responsibility for project purpose and direction
+## P17. AI is an assistive tool; humans remain the bearers of project purpose, direction, and responsibility
 
-AHICP treats an AI Agent as a research-collaboration tool, not as a participant that must be granted human-like cognitive-subject status or ultimate responsibility-bearing status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
+AHICP treats an AI Agent as an assistive tool within human-led inquiry and creation, not as a participant that must be granted human-like cognitive-subject status or ultimate responsibility-bearing status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
 
 The purpose, central problem, and direction of a research or creative project should originate with humans and remain under human initiation, navigation, or approval. AI capability to perform substantial work does not transfer the project's purpose, core judgments, or the position of ultimate responsibility to AI.
 
