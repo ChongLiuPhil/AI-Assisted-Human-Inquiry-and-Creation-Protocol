@@ -613,7 +613,63 @@ For long or high-stakes projects, evidence directories, Approved Framework snaps
 
 ---
 
-## 23. Portability
+## 23. External Systems, Tool Discovery, Authorization, and Human Handoff
+
+### 23.1 Machine-operable-first escalation
+
+When a task requires an external system, account, or service and the human authorization needed for that task already exists, an AI Agent **SHOULD** first safely discover and exhaust currently available and authorized machine-operable paths before handing routine operational steps back to the human.
+
+Paths to inspect include at least:
+
+- platform built-in tools;
+- connected plugins / connectors;
+- official MCP servers or equivalent official tool interfaces;
+- official provider APIs;
+- official GitHub Apps or other provider-managed integrations;
+- existing repository automation / workflows that are approved for use;
+- adapters / plugins explicitly approved by the human or project governance.
+
+Being shown as “installed,” “enabled,” “connected,” or present in a directory **does not prove that a capability is actually callable**. When capability availability affects the execution route or a decision to escalate to a human, the Agent **MUST**, when technically possible and safe, perform a real, minimal, preferably read-only capability probe. If the current host does not expose an actual invocation path, the Agent must record the capability as unavailable or unverified in the current environment rather than treating directory state as verified capability.
+
+### 23.2 Authorization and credential safety
+
+Where functionally equivalent paths exist, the Agent **SHOULD** prefer official, OAuth, provider-managed, least-secret-handling integrations and, where the provider supports it, the minimum permission scope needed for the task.
+
+The Agent **MUST NOT** ask a human to paste passwords, API tokens, private keys, recovery codes, or other secrets into chat merely to simplify execution. When a credential must be created or stored by a human, the handoff should keep the secret inside the provider or an approved secret store and explicitly state which values must not be sent to the AI.
+
+The Agent must not bypass:
+
+- identity verification;
+- account-owner consent;
+- permission grants;
+- human-reserved high-impact or non-delegable approvals;
+- project-defined public / canonical cutover, release, or other responsibility boundaries.
+
+### 23.3 Human handoff
+
+An action should be escalated to a human only when the next step genuinely requires human identity authorization, account-owner consent, a non-delegable high-impact decision, or an action that the currently available and authorized tool capabilities cannot perform.
+
+Such a handoff **MUST**:
+
+1. reduce the instructions to the minimum set needed to clear the current blocker;
+2. request only the human action that is necessary now, rather than delegating later machine-operable steps;
+3. assume no technical background and use provider UI names and observable completion conditions;
+4. state explicitly which passwords, tokens, secrets, private keys, or similar values must not be sent to the AI;
+5. define a completion condition that the AI can independently verify after authorization.
+
+After the human completes the necessary action, the Agent **SHOULD** re-read current repository state, re-probe the relevant capability, and resume from the interruption point rather than asking the human to restate project context or continue performing machine-operable steps.
+
+### 23.4 Provider actual state and repository durable state
+
+Provider dashboards, transient UI screens, chat state, and model memory are not authoritative project state.
+
+After an external action, the Agent **SHOULD** verify actual provider state. If that action changes durable project state that will affect future work, the Agent **MUST** write the verified result through to the appropriate repository-backed durable state. As needed, the record should include observed state, verification evidence or references, useful build/deployment identifiers, current blockers, and authorization/cutover status, but it must not contain secrets.
+
+The provider is the direct observation source for its live account configuration and runtime results; the repository stores the project's durable, auditable interpretation of those observations. If the two disagree, the Agent must re-check the provider and update or mark repository state stale / unresolved rather than relying on old chat, old UI captures, or model memory.
+
+---
+
+## 24. Portability
 
 AHICP v0.3 currently targets GitHub in its reference implementation but separates logical functions from exact filenames.
 
@@ -621,7 +677,7 @@ Future implementations MAY map the same canonical roles to other versioned colla
 
 ---
 
-## 24. Design thesis
+## 25. Design thesis
 
 AHICP separates things that AI-assisted inquiry, research, and creation often collapse:
 
@@ -636,7 +692,7 @@ AHICP separates things that AI-assisted inquiry, research, and creation often co
 
 The protocol treats this separation as the basis for durable, auditable, human-governed AI-assisted inquiry and creation.
 
-## 25. Bilingual canonical synchronization
+## 26. Bilingual canonical synchronization
 
 AHICP project documentation SHOULD be maintained bilingually in Chinese and English.
 
