@@ -1,32 +1,38 @@
-# 人机研究协作协议
+# AI 辅助人类探究与创作协议
 
 [English](README.md) | [中文](README.zh-CN.md)
 
 **语言治理：中文是规范性基准（canonical source）；英文是同步镜像（synchronized mirror）。任何实质性修改都必须在同一工作轮次同步两种语言。冲突时以中文为准。**
 
-**HARC Protocol** 是一个以 GitHub 为中心的工作流，用于人类作者与可替换 AI Agent 之间持续进行研究与知识协作。
+**AI-Assisted Human Inquiry and Creation Protocol（AHICP）** 是一个以 GitHub 为中心的协议，用于在人类主导下，借助 AI 持续进行探究、研究、推理、写作与创作。
 
-> **AI Agent 可以被替换，但研究状态不能丢失。**
+> **AI Agent 可以被替换，但人的目的与持久项目状态不能丢失。**
 
-聊天窗口只是交互界面，并不是长期研究项目的持久记忆。重要的人类决策、论证结构、呈现要求、证据约束与批准状态，应被外化为明确、受版本控制的仓库文件，使一个新的、有能力的 AI Agent 即使没有原始聊天记录，也可以继续工作。
+聊天窗口只是交互界面，并不是长期探究或创作项目的持久记忆。重要的人类决策、论证结构、呈现要求、证据约束与批准状态，应被外化为明确、受版本控制的仓库文件，使一个新的、有能力的 AI Agent 即使没有原始聊天记录，也可以继续工作。
+
+## 规范性方向
+
+AHICP 是一套**人类主导、AI 辅助**的协议。人类始终是项目目的、实质判断、批准与最终责任的承担者。AI 系统可以大量辅助检索、比较、结构化、提出方案、起草、检查、转换和仓库维护，但 AI 的提议不会仅仅因为有用或表达成熟就自动成为人的承诺。
+
+AHICP 规范 AI 如何辅助人的探究与创作；它**不定义出版基础设施**。需要可迁移的 source-to-publication 工作流时，项目可以另外采用 **Personal Publishing Framework（PPF）**。
 
 ## AI Agent 从零接管：先从这里开始
 
 新的 AI Agent **不要直接从 README 或正文开始工作**。
 
-只把本 README 当作项目说明页。零上下文接管时，先打开 [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)，随后严格按照 `START_HERE.zh-CN.md` 与 `HARC_MANIFEST.yaml` 当前声明的读取顺序和 task routing 执行。README 不再复制另一份 mandatory read order，以避免多个入口之间发生状态漂移。
+只把本 README 当作项目说明页。零上下文接管时，先打开 [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md)，随后严格按照 `START_HERE.zh-CN.md` 与 `AHICP_MANIFEST.yaml` 当前声明的读取顺序和 task routing 执行。README 不再复制另一份 mandatory read order，以避免多个入口之间发生状态漂移。
 
-先从 Working Memory 确定当前续接点，再按任务选择性重建三层长期记忆，并在做任何实质性修改前完成 **HARC Onboarding Report**。
+先从 Working Memory 确定当前续接点，再按任务选择性重建三层长期记忆，并在做任何实质性修改前完成 **AHICP Onboarding Report**。
 
 当前仓库的自举验证见 [`docs/ONBOARDING_SELF_TEST.zh-CN.md`](docs/ONBOARDING_SELF_TEST.zh-CN.md)。
 
 这使“Agent 是否真正理解当前项目状态”变成一个可观察、可检查的握手步骤，而不是假定。
 
-在握手之后，`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 只加载一个最小 Repository Resolver；`HARC_CONTEXT_INTERFACE.yaml` 则规定按需读取、revision freshness、write-through 与 cache invalidation。动态项目状态不复制成第二份聊天真值源。
+在握手之后，`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 只加载一个最小 Repository Resolver；`AHICP_CONTEXT_INTERFACE.yaml` 则规定按需读取、revision freshness、write-through 与 cache invalidation。动态项目状态不复制成第二份聊天真值源。
 
 ## 两类项目输出
 
-HARC 有意设计为一个双重输出项目：
+AHICP 有意设计为一个双重输出项目：
 
 1. **可执行的开放协议** — 规范、治理规则、模板、批准状态、形式配置、记忆架构以及未来的一致性工具。
 2. **方法论论文** — 一篇解释该协议并讨论人类对研究目的、方向与思想架构的责任、AI 工具的工作分担、可审计作者性、持久研究记忆以及 AI 中介研究协作边界的学术论文。
@@ -48,7 +54,7 @@ HARC 有意设计为一个双重输出项目：
 
 ## 双语治理
 
-HARC 项目的所有实质性人类可读文档都采用中英双语维护：
+AHICP 项目的所有实质性人类可读文档都采用中英双语维护：
 
 - 中文 `*.zh-CN.md` 是编辑、人类审阅和语义权威基准；
 - 英文 `*.md` / `*.en.md` 是同步翻译镜像；
@@ -58,7 +64,7 @@ HARC 项目的所有实质性人类可读文档都采用中英双语维护：
 
 完整规则见 [`protocol/BILINGUAL_SYNC.zh-CN.md`](protocol/BILINGUAL_SYNC.zh-CN.md)。
 
-## HARC 解决什么问题？
+## AHICP 解决什么问题？
 
 长期 AI 辅助项目反复面临以下失败：
 
@@ -70,11 +76,11 @@ HARC 项目的所有实质性人类可读文档都采用中英双语维护：
 - **交接失败（handoff failure）** — 新模型或 Agent 无法可靠重建项目当前状态；
 - **生成—验证不对称（generation–verification asymmetry）** — AI 生成、重组工作的速度快于人类持续验证的速度。
 
-HARC 通过区分**人类意图、操作性表示、证据、形式、批准、历史与派生表达**来处理这些问题。
+AHICP 通过区分**人类意图、操作性表示、证据、形式、批准、历史与派生表达**来处理这些问题。
 
 ## 权威架构
 
-一个典型的 HARC 项目通常包含：
+一个典型的 AHICP 项目通常包含：
 
 ```text
 project/
@@ -86,8 +92,8 @@ project/
 ├── SESSION_CONTEXT_BOOTSTRAP.md
 ├── ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 ├── ONBOARDING_REPORT_TEMPLATE.md
-├── HARC_MANIFEST.yaml
-├── HARC_CONTEXT_INTERFACE.yaml
+├── AHICP_MANIFEST.yaml
+├── AHICP_CONTEXT_INTERFACE.yaml
 ├── AGENTS.zh-CN.md
 ├── AGENTS.md
 ├── core/
@@ -108,7 +114,7 @@ project/
 
 ### 零上下文启动入口
 
-`START_HERE.zh-CN.md` 与 `HARC_MANIFEST.yaml` 定义一个新 Agent 的第一读取顺序和 Onboarding Handshake。它们不保存新的研究主张，而负责让新的 Agent 正确找到权威状态并证明自己已经重建项目。
+`START_HERE.zh-CN.md` 与 `AHICP_MANIFEST.yaml` 定义一个新 Agent 的第一读取顺序和 Onboarding Handshake。它们不保存新的研究主张，而负责让新的 Agent 正确找到权威状态并证明自己已经重建项目。
 
 ### 内容核心
 
@@ -128,7 +134,7 @@ AI 提案不会仅因为有用或写得漂亮，就自动成为作者承诺。
 
 ### Working Memory Area
 
-Working Memory 是一个功能区，而不是固定单文件。当前 HARC 参考实现拆为 Index、Current Focus、Task Plan 与 Work Log。
+Working Memory 是一个功能区，而不是固定单文件。当前 AHICP 参考实现拆为 Index、Current Focus、Task Plan 与 Work Log。
 
 三层长期记忆是：
 
@@ -185,7 +191,7 @@ Human decision -> Decision Log -> Protocol Documents -> Agent Behavior
 
 这是项目最主要的**实质性知识检查点**。
 
-HARC 区分两类缺陷：一种已经存在于获批架构中，另一种只是在后续 AI 扩写中局部引入。
+AHICP 区分两类缺陷：一种已经存在于获批架构中，另一种只是在后续 AI 扩写中局部引入。
 
 ### Gate B — 最终成果批准
 
@@ -195,9 +201,9 @@ HARC 区分两类缺陷：一种已经存在于获批架构中，另一种只是
 
 ## AI 工具分工与人类责任主体
 
-HARC 并不假设人的价值在于亲手写出每一个句子。AI Agent 作为工具，可以执行或辅助大量检索、综合、起草、重组、一致性检查和格式处理工作。
+AHICP 并不假设人的价值在于亲手写出每一个句子。AI Agent 作为工具，可以执行或辅助大量检索、综合、起草、重组、一致性检查和格式处理工作。
 
-HARC 不把 AI 描述为认知主体，也不把“AI 承担认知劳动 / 认知任务”作为规范性表述。研究或创作的目的、核心问题和方向由人类发起、导航并批准。
+AHICP 不把 AI 描述为认知主体，也不把“AI 承担认知劳动 / 认知任务”作为规范性表述。研究或创作的目的、核心问题和方向由人类发起、导航并批准。
 
 这里的关键不是把“人类责任”当作一个抽象属性，而是明确：**人类必须保持为责任主体／责任承担者。** 这一点适用于研究与探究全过程，并在论文、书籍、报告或其他成果进入公开知识传播时尤其重要。AI 可以分担工作，但不能成为项目目的、核心判断、framework 授权或公开知识传播的最终责任主体。
 
@@ -207,7 +213,7 @@ HARC 不把 AI 描述为认知主体，也不把“AI 承担认知劳动 / 认�
 
 ## 可复用形式配置
 
-HARC 支持跨项目继承表达形式：
+AHICP 支持跨项目继承表达形式：
 
 `可复用作者配置 -> 成果类型配置 -> 项目 Form Core -> 外部约束 -> 实现`
 
@@ -229,7 +235,7 @@ HARC 支持跨项目继承表达形式：
 
 ## 审计纪律
 
-HARC 的多轮审计是一系列**审阅—修复循环**：
+AHICP 的多轮审计是一系列**审阅—修复循环**：
 
 `review -> identify defect -> repair/implement -> verify repair`
 
@@ -256,21 +262,21 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 ### 对 AI Agent
 
 1. 从 [`START_HERE.zh-CN.md`](START_HERE.zh-CN.md) 开始。
-2. 以 `HARC_MANIFEST.yaml` / `HARC_CONTEXT_INTERFACE.yaml` 的最新 task routing 为读取依据，不把 README 的说明性文字当作第二份启动规范。
+2. 以 `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` 的最新 task routing 为读取依据，不把 README 的说明性文字当作第二份启动规范。
 3. 先恢复 Working Memory 的当前续接点，再只读取当前任务所需的 Core / Decision / Framework / Evidence / Artifact 状态。
 4. 不要虚构人类从未表达过的承诺；写入前重新确认相关 canonical revision。
-5. 新项目应记录所采用的 HARC 版本／tag／commit，避免把后续上游变更静默视为已经接受的治理规则。
+5. 新项目应记录所采用的 AHICP 版本／tag／commit，避免把后续上游变更静默视为已经接受的治理规则。
 
 ## 仓库状态
 
-本仓库是 HARC Protocol 的独立开发主仓库，包含：
+本仓库是 AHICP Protocol 的独立开发主仓库，包含：
 
 - 规范性协议；
 - 实施指南；
 - 可复用的研究项目模板；
 - 可复用的形式配置模板；
 - 概念性白皮书；
-- 受 HARC 框架控制的方法论论文；
+- 受 AHICP 框架控制的方法论论文；
 - 方法论论文的证据层；
 - 初始思想与修复审计；
 - 未来开发路线图。
@@ -279,11 +285,11 @@ HARC 的多轮审计是一系列**审阅—修复循环**：
 
 ## 设计原则
 
-HARC 不是一个让 AI 成为“以人类署名作品的隐藏作者”的系统。它要做的是让**人类意图、AI 转化、证据、批准、责任与最终表达之间的关系变得明确并可审计**。
+AHICP 不是一个让 AI 成为“以人类署名作品的隐藏作者”的系统。它要做的是让**人类意图、AI 转化、证据、批准、责任与最终表达之间的关系变得明确并可审计**。
 
 ## 版本
 
-工作规范：**v0.2.0-draft**。
+工作规范：**v0.3.0-draft**。
 
 ## 许可
 
