@@ -1,4 +1,4 @@
-# HARC Project Session Context Bootstrap
+# AHICP Project Session Context Bootstrap
 
 > **本中文文件是规范性基准；英文 `SESSION_CONTEXT_BOOTSTRAP.md` 是同步镜像。**
 
@@ -7,14 +7,14 @@
 当前会话只加载一个最小 **Repository Resolver**，不复制项目动态状态。
 
 ```text
-HARC REPOSITORY CONTEXT — ACTIVE
+AHICP REPOSITORY CONTEXT — ACTIVE
 
 Source of truth:
 - GitHub repository
 
 Control:
-- HARC_MANIFEST.yaml
-- HARC_CONTEXT_INTERFACE.yaml
+- AHICP_MANIFEST.yaml
+- AHICP_CONTEXT_INTERFACE.yaml
 
 Working Memory:
 - index: docs/working-memory.zh-CN.md
@@ -41,7 +41,7 @@ Working Memory 需要时先从 GitHub fresh-fetch，用于确定当前阶段与�
 
 ## Context Refresh
 
-`HARC CONTEXT REFRESH` 表示：
+`AHICP CONTEXT REFRESH` 表示：
 
 1. 重读 manifest / context interface；
 2. fresh-fetch Working Memory，确认当前阶段、目标、任务、阻塞与 next actions；
