@@ -307,3 +307,21 @@ HARC 当前主要问题不再是缺少治理规则，而是治理资产数量快
 - 独立 post-migration repair audit。
 
 PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers Static Assets reference implementation PR；未把 PPF publishing lifecycle 规则复制进 AHICP。
+
+---
+
+## 2026-09-19 — External systems / human handoff 规范迁移
+
+本轮依据 AHICP-D027，把近期真实 external-provider 协作经验提升为 provider-neutral 协议规则：
+
+- 新增 machine-operable-first escalation；
+- 要求对 installed/enabled/connected capability 做真实最小调用验证，而不是只相信目录状态；
+- 固化 official/OAuth/provider-managed/least-secret-handling 优先级；
+- 明确 secret 不进入聊天；
+- 把 human handoff 限制为身份授权、账户 consent、权限授予、不可委托高影响决定或真实工具能力缺失；
+- 规定 handoff 面向非技术操作者、步骤最小，并在授权后由 Agent 恢复执行；
+- 要求外部操作后验证 provider actual state，并把影响未来工作的 durable result 写回 repository；
+- 保持 AHICP provider-neutral，不复制 PPF provider lifecycle 或 Cloudflare-specific 细节。
+
+中文 canonical 与英文 mirror、root AGENTS 与 research-project template 同步更新。
+
