@@ -351,6 +351,25 @@ Agent 不得要求人类把 password、token、private key 或其他 secret 粘�
 
 对影响后续工作的外部操作，Agent 应验证 provider actual state，并把经验证的 durable result 写回 repository。Provider UI、聊天状态与模型记忆都不得成为与 repository 平行的 authoritative project state。
 
+
+## P26. 授权必须具有作用域，并按影响判断且与执行生命周期分离
+
+AHICP 必须区分：
+
+`proposal != authorization != execution != verification != durable write-back`。
+
+durable state 并不自动等于 high-impact。已经获得授权、风险较低且可逆的机器操作，不应仅因为会持久化就升级给人类。
+
+当授权边界具有实质意义时，应以足够明确的作用域表示 authority，包括 action class、target、allowed side effects、reversibility / rollback assumptions、duration or occurrence bound、escalation conditions 与 authorization provenance。
+
+授权可以来自明确人类决定，或已经持久记录且由人类批准的 pre-authorization policy；但如果 AHICP 或项目治理把行动标记为 human-reserved / non-delegable，则不能用一般预授权替代相应人类授权。技术能力、provider state、repository state、成功执行或 upstream 变化都不会自行产生人类授权。
+
+high-impact 应根据行动的合理可预见效果来判断：它是否会实质改变责任主体的外部承诺、access/security/identity/permission 边界、canonical identity 或 public cutover、adopted governance authority，或不可逆/实质上难以逆转的状态。repository write、merge、deployment、email send、API call 等技术操作名称本身不是授权等级。
+
+在第一次配置将被后续操作重复依赖的 authorization policy 时，Agent 应先根据 action class、target、side effects、reversibility 与 high-impact boundary 提出适合的授权方式；在适用时区分 per-action authorization、bounded pre-authorization 与 mixed policy，并说明 scope 与 escalation conditions。AI 只能提出 proposal；人类必须选择、修改或拒绝授权方式，最终选择必须在后续操作依赖它之前写入 repository durable state。
+
+在有效授权作用域内，Agent 可以执行机器可操作工作、验证 actual state 并把结果写回 repository durable state；如果行动属于 non-delegable、超出 scope，或其 impact / reversibility 已经实质改变，则只升级当前真正缺失的人类授权或判断。
+
 ---
 
 ## 当前范围

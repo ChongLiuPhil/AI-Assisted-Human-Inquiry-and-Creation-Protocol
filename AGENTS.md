@@ -56,6 +56,20 @@ When work requires an external account, provider, or service:
 
 See §23 of `protocol/SPECIFICATION.zh-CN.md`.
 
+### Authorization scope for durable-state actions
+
+Keep `proposal != authorization != execution != verification != durable write-back`.
+
+A durable write is not automatically high-impact. Before an external or durable-state action whose authorization boundary matters, identify the action class, target, allowed side effects, reversibility assumptions, authorization source, and escalation conditions at a level proportionate to risk.
+
+Do not infer authorization from technical capability, repository/provider state, successful build/deployment, existing endpoints, or upstream changes. A durable human-approved pre-authorization policy may authorize only actions within its recorded scope and never overrides a human-reserved / non-delegable boundary.
+
+At initial configuration of a reusable authorization policy, first have the AI propose appropriate authorization patterns for the situation; where applicable distinguish per-action authorization, bounded pre-authorization, and a mixed policy, with scope, control boundaries, and escalation conditions. The human must select, modify, or reject the pattern before configuration relies on that policy, and the final choice and provenance must be written to repository durable state.
+
+Escalate only when the action is non-delegable, authorization is absent/unclear, scope would be exceeded, or impact/reversibility has materially changed. Do not hand routine, reversible, already-authorized machine operations back to the human merely because they persist.
+
+After execution, verify actual state and write the verified result through to repository durable state.
+
 ## 2. Preserve three distinct domains
 
 Classify substantive human feedback as one or more of:

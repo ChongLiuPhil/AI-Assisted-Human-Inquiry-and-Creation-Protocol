@@ -340,6 +340,25 @@ The Agent must not ask a human to paste passwords, tokens, private keys, or othe
 
 For external actions that affect future work, the Agent should verify provider actual state and write the verified durable result back to the repository. Provider UI, chat state, and model memory must not become a parallel authoritative project-state source.
 
+
+## P26. Authorization is scoped, impact-sensitive, and lifecycle-separated
+
+AHICP must distinguish:
+
+`proposal != authorization != execution != verification != durable write-back`.
+
+Durable state is not automatically high-impact. An already-authorized, low-risk, reversible machine operation should not be escalated merely because it persists.
+
+Where authorization boundaries matter, authority should be represented with enough scope to identify the action class, target, allowed side effects, reversibility / rollback assumptions, duration or occurrence bound, escalation conditions, and authorization provenance.
+
+Authorization may derive from an explicit human decision or a durable human-approved pre-authorization policy, except where AHICP or project governance marks the action as human-reserved / non-delegable. Technical capability, provider state, repository state, successful execution, or upstream changes do not create human authorization.
+
+High impact is determined by foreseeable effects on responsibility-bearing external commitments, access/security/identity/permission boundaries, canonical identity or public cutover, adopted governance authority, or irreversible / materially difficult-to-reverse state. Technical action names such as repository write, merge, deployment, email send, or API call are not authorization levels by themselves.
+
+When first configuring an authorization policy that later operations will repeatedly rely on, the Agent should propose appropriate authorization patterns based on action class, target, side effects, reversibility, and high-impact boundaries; where applicable it should distinguish per-action authorization, bounded pre-authorization, and a mixed policy, with their scopes and escalation conditions. The AI may only propose; the human must select, modify, or reject the authorization mode, and the final choice must be recorded in repository durable state before later operations rely on it.
+
+Within a valid scope, the Agent may execute machine-operable work, verify actual state, and write the result back to durable repository state. If the action is non-delegable, falls outside scope, or materially changes the assumed impact or reversibility, the Agent must escalate only the authorization or judgment that is genuinely missing.
+
 ---
 
 ## Current scope

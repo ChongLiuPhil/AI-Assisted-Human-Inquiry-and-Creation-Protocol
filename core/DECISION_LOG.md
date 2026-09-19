@@ -444,3 +444,50 @@ Current Focus should remain the shortest and highest-salience component so a rep
 
 **Status:** explicitly requested for execution by the human; this decision authorizes the current normative propagation.
 
+---
+
+## 2026-09-20 — AHICP-D028
+
+**Source:** human project founder  
+**Classification:** PROTOCOL
+
+**Decision:**
+
+1. When a project first configures an integration, automation, or workflow whose later machine actions will rely on a reusable authorization policy, the AI Agent should first analyze the situation and propose suitable human authorization patterns; configuration that relies on the policy proceeds only after the human chooses.
+2. The AI may recommend authorization patterns and explain their differences and scope, but **AI proposal != human authorization**. The Agent must not silently choose a default authorization mode for the human or first establish an authorization policy through configuration and then infer human authorization from the technical result.
+3. Where applicable, the proposal should distinguish at least:
+   - `per-action authorization`: the human confirms each action or state transition designated as requiring separate authorization;
+   - `bounded pre-authorization`: the human approves a clearly bounded action-class / target / side-effect / duration scope in advance, within which the AI may act repeatedly;
+   - `mixed policy`: selected low-risk actions may be pre-authorized while specified high-impact or human-reserved actions continue to require per-action human decisions.
+4. The human may select, modify, or reject the AI proposal. The final choice, including its scope, authorization provenance, and escalation conditions, must be recorded in repository durable state before the AI relies on that policy for later configuration and machine operations.
+5. If later actions exceed the selected action class, target, allowed side effects, or duration, or if impact / reversibility materially changes, renewed human selection or authorization is required.
+6. This decision refines the authorization / human-handoff semantics of AHICP-D027 and authorizes propagation of this rule in current PR #3. It **does not constitute overall approval of the remaining AI-proposed normative content in PR #3 and does not authorize automatic merge**.
+
+**Affected components:** Specification §23.5, Protocol Core P26, AGENTS, research-project template, Protocol Contract CI.
+
+**Status:** this principle is explicitly human-confirmed and authorized for propagation in current PR #3.
+
+---
+
+## 2026-09-20 — AHICP-D029
+
+**Source:** human project founder  
+**Classification:** PROTOCOL
+
+**Decision:**
+
+1. The human project founder approves the normative direction and current substantive content of PR #3 on **scoped authorization for durable-state actions**, including:
+   - `proposal != authorization != execution != verification != durable write-back`;
+   - explicit modeling of authorization scope and provenance;
+   - durability not being automatically equivalent to high impact;
+   - a provider-neutral high-impact test;
+   - avoiding unnecessary human escalation for authorized, low-risk, reversible machine operations;
+   - the initial-configuration authorization-mode human-choice gate confirmed by AHICP-D028.
+2. The human-reserved / non-delegable boundary remains: bounded pre-authorization must not override actions that governing rules explicitly reserve for human authorization.
+3. The AHICP / PPF boundary remains unchanged: AHICP governs authorization provenance, scope, selection, escalation, execution/verification separation, and durable write-back; PPF or another publishing framework continues to own publication-lifecycle state semantics.
+4. This decision authorizes moving PR #3 out of draft and merging it into `main` once Protocol Contract CI succeeds on the latest head and no new substantive conflict has appeared.
+5. Merge completion, CI success, or any other machine-execution result does not itself create authorization. This human decision is the authorization provenance for the current normative promotion / merge.
+
+**Affected components:** Specification §23.5, Protocol Core P26, AGENTS, research-project template, Decision Log, Protocol Contract CI.
+
+**Status:** explicitly human-approved; authorized to complete PR #3 normative consolidation and merge after green CI.

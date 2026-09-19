@@ -670,6 +670,83 @@ Provider dashboard、临时 UI 页面、聊天状态与模型记忆都不是 aut
 
 Provider 是其账户实时配置和运行结果的直接观察来源；repository 则保存项目对这些观察的持久、可审计状态。若二者不一致，Agent 必须重新检查 provider，并更新或标记 repository state 为 stale / unresolved，而不是依赖旧聊天、旧 UI 截图或模型记忆。
 
+### 23.5 授权作用域与持久状态行动生命周期
+
+**持久状态变化（durable-state change）**是指会超出当前交互而继续存在，并可能约束后续工作或影响外部主体的变化。持久化本身并不等于高影响。对于已经落在有效授权作用域内、风险较低且可逆的 repository/provider 写入，**不应**仅因为它会持久存在就升级给人类。
+
+在机器执行之前，Agent **必须**保持以下状态彼此区分：
+
+~~~text
+proposal
+!= authorization
+!= execution
+!= verification
+!= durable write-back
+~~~
+
+proposal 可以描述或建议行动，但不等于授权；authorization 只允许其覆盖范围内的行动；execution 不证明目标状态已经实现；verification 用于确认实际观察到的状态；durable write-back 把经验证的结果写入持久项目状态，不能反过来补造授权。
+
+当某项行动的授权边界具有实质意义时，repository-backed 的授权记录或策略**应当**按与风险相称的粒度明确：
+
+- **action class**：允许执行哪一类行动；
+- **target**：覆盖哪个 repository、branch、artifact、account、channel、endpoint、audience 或其他对象；
+- **allowed side effects**：哪些副作用属于授权范围，而不是意外扩张；
+- **reversibility / rollback assumptions**：行动是否可逆，以及预期如何回滚；
+- **duration or occurrence bound**：一次行动、限定时间、指定 workflow 或其他明确边界；
+- **escalation condition**：何种 scope、impact、不确定性或 provider state 变化需要重新交由人类判断；
+- **authorization provenance**：授权所来源的人类决定或已经持久记录的人类批准策略。
+
+有效授权可以来自：
+
+1. 针对当前行动或状态转换的明确人类决定；或
+2. 已经持久记录、由人类批准且其作用域确实覆盖当前行动的 pre-authorization policy。
+
+pre-authorization policy **不得**覆盖 AHICP 或项目治理已经标记为 human-reserved / non-delegable 的行动类别；这类行动必须获得相应治理规则要求的人类授权。
+
+Agent **不得**仅根据 AI proposal、技术能力、repository visibility、provider 配置、provider 可达性、build/deployment 成功、已有 endpoint、upstream branch/tag/version 变化或其他机器观察事实推断授权已经存在。
+
+### 23.5.1 首次配置时的人类授权方式选择
+
+当第一次配置某个 integration、automation 或 workflow，且其后续机器操作将依赖可重复使用的授权策略时，Agent **不得**替人类静默选择授权方式，也不得先完成会实际建立该授权策略的配置，再反向把配置结果解释为授权。
+
+在依赖该策略继续配置之前，Agent **必须**：
+
+1. 根据预期的 action class、target、allowed side effects、reversibility 与 high-impact boundary 分析所需授权；
+2. 提出适合当前场景的一种或多种授权方式，并说明其 scope、便利性、控制边界与 escalation condition；
+3. 在适用时至少区分：
+   - **per-action authorization**：在约定范围内，每个需要单独授权的行动或状态转换由人类逐次确认；
+   - **bounded pre-authorization**：人类预先批准一个明确且有限的 action class / target / side-effect / duration scope，Agent 可在该 scope 内重复执行；
+   - **mixed policy**：部分低风险行动使用 bounded pre-authorization，而指定的 high-impact 或 human-reserved action 继续逐次由人类决定；
+4. 由人类明确选择、修改或拒绝所提方案；
+5. 在后续操作依赖该选择之前，把最终选择及其 authorization provenance 写入 repository durable state。
+
+AI 的推荐只是 proposal，不是 human commitment。人类完成选择后，Agent 可以继续执行该选择所允许的 machine-operable 配置与后续操作；如果未来的 action class、target、side effects、impact、reversibility 或 duration 超出原选择，则必须重新取得相应的人类选择/授权。
+
+### 23.5.2 Provider-neutral 的高影响判断
+
+如果一项行动的合理可预见效果会实质改变以下一个或多个边界，则应视为 high-impact：
+
+- **人类/项目的外部承诺或公开代表行为**：包括以人类/项目名义进行的 release、publication、submission 或 communication；
+- **access、confidentiality、security、identity、ownership 或 permission 边界**；
+- **canonical identity、routing、production/public cutover，或对既有依赖身份/路由的 retirement**；
+- **adopted governance authority**：包括后续工作采用哪个 protocol、framework、policy、version、tag 或 commit；
+- **不可逆或实质上难以逆转的状态**，尤其是 deletion、destructive migration 或失去可靠 rollback 路径。
+
+这些是 impact dimensions，不是 provider-specific 的操作名称。repository write、merge、deployment、email send、API call 或 configuration change **并不会**仅因其技术类别就自动属于同一个授权等级。例如，可逆的 branch write 可以在既有授权范围内作为常规机器操作，而 public release 或 canonical cutover 可能跨越 human-reserved 边界。同样，deployment 本身不等于 release、publication authorization 或 canonical cutover。
+
+出现以下情况时，Agent **必须**升级请求人类授权：
+
+- 行动属于 human-reserved / non-delegable；
+- 没有有效授权来源覆盖当前行动；
+- target 或 side effects 超出已记录作用域；或
+- reversibility、impact 或 uncertainty 已经实质偏离原授权所依赖的假设。
+
+对于已经授权、低风险、可逆的机器操作，Agent **不应**仅因为它会改变 durable state 就升级给人类。
+
+执行后依照 §23.4：验证 provider actual state，并把经验证的 durable result 写回 repository。若验证失败，或观察到的影响超出授权范围，则停止继续传播，按需把状态标记为 unresolved/stale，并只升级当前新增的授权或判断问题。
+
+如果项目采用 PPF 或其他 publishing framework，publication lifecycle 的具体状态语义由该框架定义。AHICP 只规范 authorization provenance、scope、escalation、execution/verification separation 与 durable write-back，不重新定义 publishing lifecycle。
+
 ---
 
 ## 24. 可迁移性

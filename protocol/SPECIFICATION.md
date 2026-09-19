@@ -667,6 +667,83 @@ After an external action, the Agent **SHOULD** verify actual provider state. If 
 
 The provider is the direct observation source for its live account configuration and runtime results; the repository stores the project's durable, auditable interpretation of those observations. If the two disagree, the Agent must re-check the provider and update or mark repository state stale / unresolved rather than relying on old chat, old UI captures, or model memory.
 
+### 23.5 Authorization scope and durable-state action lifecycle
+
+A **durable-state change** is a change that survives the current interaction and can constrain later work or affect external parties. Durability alone does not make an action high-impact. A routine, reversible repository or provider write that is already within a valid authorization scope **SHOULD NOT** be escalated merely because it persists.
+
+Before machine execution, the Agent **MUST** keep the following states distinct:
+
+~~~text
+proposal
+!= authorization
+!= execution
+!= verification
+!= durable write-back
+~~~
+
+A proposal may describe or recommend an action without authorizing it. Authorization permits only the covered action. Execution does not prove that the intended state was reached. Verification establishes observed actual state. Durable write-back records the verified result for future work; it does not retroactively create authorization.
+
+For an action whose authorization boundary matters, the repository-backed authorization record or policy **SHOULD** identify, to a level proportionate to the risk:
+
+- **action class** — what kind of action is permitted;
+- **target** — the repository, branch, artifact, account, channel, endpoint, audience, or other object covered;
+- **allowed side effects** — effects that are inside the authorization rather than incidental surprises;
+- **reversibility / rollback assumptions** — whether and how the action can be undone;
+- **duration or occurrence bound** — one action, a bounded period, a named workflow, or another clear limit;
+- **escalation condition** — what change in scope, impact, uncertainty, or provider state requires renewed human review;
+- **authorization provenance** — the human decision or durable human-approved policy from which authority derives.
+
+Valid authorization may come from:
+
+1. an explicit human decision for the current action or transition; or
+2. a durable human-approved pre-authorization policy whose scope actually covers the action.
+
+A pre-authorization policy **MUST NOT** override an action class that AHICP or project governance marks as human-reserved / non-delegable. Such an action requires the human authorization specified by that governing rule.
+
+An Agent **MUST NOT** infer authorization merely from AI proposal, technical capability, repository visibility, provider configuration, provider reachability, build/deployment success, an existing endpoint, an upstream branch/tag/version change, or any other machine-observed fact.
+
+### 23.5.1 Human choice of authorization mode at initial configuration
+
+When first configuring an integration, automation, or workflow whose later machine actions will rely on a reusable authorization policy, the Agent **MUST NOT** silently choose the authorization mode for the human, and must not first establish that policy through configuration and then treat the resulting technical state as authorization.
+
+Before continuing configuration that depends on such a policy, the Agent **MUST**:
+
+1. analyze the expected action classes, targets, allowed side effects, reversibility, and high-impact boundaries;
+2. propose one or more authorization patterns appropriate to the situation, explaining their scope, convenience, control boundary, and escalation conditions;
+3. when applicable, distinguish at least:
+   - **per-action authorization** — each action or state transition designated as requiring separate authorization is confirmed by the human when it occurs;
+   - **bounded pre-authorization** — the human approves a clearly bounded action-class / target / side-effect / duration scope in advance, within which the Agent may act repeatedly;
+   - **mixed policy** — selected low-risk actions use bounded pre-authorization while specified high-impact or human-reserved actions continue to require per-action human decisions;
+4. require the human to select, modify, or reject the proposed pattern;
+5. record the final choice and its authorization provenance in repository durable state before later operations rely on it.
+
+The AI recommendation is a proposal, not a human commitment. After the human selects the policy, the Agent may continue machine-operable configuration and later operations that fall within the selected scope. If future action class, target, side effects, impact, reversibility, or duration exceeds that choice, renewed human selection/authorization is required.
+
+### 23.5.2 Provider-neutral high-impact test
+
+An action is high-impact when its reasonably foreseeable effect can materially alter one or more of these boundaries:
+
+- **human/project external commitment or public representation** — including release, publication, submission, or communication performed on behalf of the human/project;
+- **access, confidentiality, security, identity, ownership, or permission boundaries**;
+- **canonical identity, routing, production/public cutover, or retirement of a previously relied-on identity/route**;
+- **adopted governance authority** — including which protocol, framework, policy, version, tag, or commit governs later work;
+- **irreversible or materially difficult-to-reverse state**, especially deletion, destructive migration, or loss of a reliable rollback path.
+
+These are impact dimensions, not provider-specific action names. A repository write, merge, deployment, email send, API call, or configuration change is **not automatically** one authorization level merely because of its technical category. For example, a reversible branch write may be routine within scope, while a public release or canonical cutover may cross a human-reserved boundary. Likewise, deployment is not by itself equivalent to release, publication authorization, or canonical cutover.
+
+The Agent **MUST** escalate for human authorization when:
+
+- the action is human-reserved / non-delegable;
+- no valid authorization source covers the action;
+- the target or side effects exceed the recorded scope; or
+- reversibility, impact, or uncertainty has materially changed beyond the assumptions under which authorization was granted.
+
+The Agent **SHOULD NOT** escalate a low-risk, reversible, already-authorized machine operation solely because it changes durable state.
+
+After execution, follow §23.4: verify actual state and write the verified durable result back to the repository. If verification fails or observed effects exceed authorization, stop further propagation, mark state unresolved/stale as appropriate, and escalate only the new authorization or judgment that is actually required.
+
+If a project adopts PPF or another publishing framework, that framework defines publication-lifecycle state semantics. AHICP governs authorization provenance, scope, escalation, execution/verification separation, and durable write-back; it does not redefine the publishing lifecycle.
+
 ---
 
 ## 24. Portability
