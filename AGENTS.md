@@ -56,19 +56,17 @@ When work requires an external account, provider, or service:
 
 See §23 of `protocol/SPECIFICATION.zh-CN.md`.
 
-### High-impact durable-state authorization boundary
+### Authorization scope for durable-state actions
 
-Do not silently infer human approval for these states from technical facts:
+Keep `proposal != authorization != execution != verification != durable write-back`.
 
-- publication authorization;
-- publication visibility / audience;
-- access policy;
-- canonical identity / production cutover / legacy retirement;
-- adopted version/tag/commit or semantic revision of an upstream protocol / governance / publishing framework.
+A durable write is not automatically high-impact. Before an external or durable-state action whose authorization boundary matters, identify the action class, target, allowed side effects, reversibility assumptions, authorization source, and escalation conditions at a level proportionate to risk.
 
-Authorization must come from an explicit human decision for the current change or a durable pre-authorization policy already recorded in the repository with clear scope and trigger conditions. Build/deployment success, provider endpoints, repository visibility, provider UI settings, and upstream main/tag changes are not authorization by themselves.
+Do not infer authorization from technical capability, repository/provider state, successful build/deployment, existing endpoints, or upstream changes. A durable human-approved pre-authorization policy may authorize only actions within its recorded scope and never overrides a human-reserved / non-delegable boundary.
 
-Within an authorized scope, the Agent may automate implementation, deployment, verification, and write-back. If authorization is unclear, keep the state unresolved / pending human decision and create a Clarification when appropriate.
+Escalate only when the action is non-delegable, authorization is absent/unclear, scope would be exceeded, or impact/reversibility has materially changed. Do not hand routine, reversible, already-authorized machine operations back to the human merely because they persist.
+
+After execution, verify actual state and write the verified result through to repository durable state.
 
 ## 2. Preserve three distinct domains
 
