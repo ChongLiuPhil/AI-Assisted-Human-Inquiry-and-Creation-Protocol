@@ -1,9 +1,9 @@
-# HARC Project Onboarding Report Template
+# AHICP Project Onboarding Report Template
 
 > **本中文文件是规范性基准；英文 `ONBOARDING_REPORT_TEMPLATE.md` 是同步镜像。**
 
 ## A. 协议状态
-- adopted HARC version：
+- adopted AHICP version：
 - adopted commit/tag：
 - canonical language：
 - bootstrap / manifest / AGENTS：
@@ -67,7 +67,7 @@
 - 说明：
 
 ## J. Repository Context Resolver
-- 按 `HARC_CONTEXT_INTERFACE.yaml` / `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 确认：`HARC REPOSITORY CONTEXT — ACTIVE`
+- 按 `AHICP_CONTEXT_INTERFACE.yaml` / `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 确认：`AHICP REPOSITORY CONTEXT — ACTIVE`
 - Repository context active：`YES / NO`
 - Current task route：`CONTENT / FORM / PROTOCOL`
 - Authoritative refs：仅列路径，不复制动态状态
