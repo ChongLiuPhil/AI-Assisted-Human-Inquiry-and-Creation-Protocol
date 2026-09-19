@@ -56,6 +56,20 @@
 
 完整规范见 `protocol/SPECIFICATION.zh-CN.md` §23。
 
+### 高影响持久状态授权边界
+
+以下状态不能从技术事实中静默推断为“已经得到人类批准”：
+
+- publication authorization；
+- publication visibility / audience；
+- access policy；
+- canonical identity / production cutover / legacy retirement；
+- 上游 protocol / governance / publishing framework 的 adopted version/tag/commit 或 semantic revision。
+
+授权来源必须是当前明确人类决定，或 repository 中已经记录、范围与触发条件清楚的 pre-authorization policy。Build/deployment success、provider endpoint、repository visibility、provider UI setting、upstream main/tag change 都不是授权本身。
+
+在授权范围内，Agent 可以自动实现、部署、验证与 write-back；授权不明时保持 unresolved / pending human decision，并按需创建 Clarification。
+
 ## 2. 保持三个不同的领域
 
 在处理实质性人类反馈之前，先将其归类为以下一个或多个类别：
