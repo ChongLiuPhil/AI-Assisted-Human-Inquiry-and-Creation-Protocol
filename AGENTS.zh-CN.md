@@ -56,19 +56,17 @@
 
 完整规范见 `protocol/SPECIFICATION.zh-CN.md` §23。
 
-### 高影响持久状态授权边界
+### 持久状态行动的授权作用域
 
-以下状态不能从技术事实中静默推断为“已经得到人类批准”：
+保持 `proposal != authorization != execution != verification != durable write-back`。
 
-- publication authorization；
-- publication visibility / audience；
-- access policy；
-- canonical identity / production cutover / legacy retirement；
-- 上游 protocol / governance / publishing framework 的 adopted version/tag/commit 或 semantic revision。
+durable write 并不自动等于 high-impact。对于授权边界具有实质意义的 external / durable-state action，应按与风险相称的粒度明确 action class、target、allowed side effects、reversibility assumptions、authorization source 与 escalation conditions。
 
-授权来源必须是当前明确人类决定，或 repository 中已经记录、范围与触发条件清楚的 pre-authorization policy。Build/deployment success、provider endpoint、repository visibility、provider UI setting、upstream main/tag change 都不是授权本身。
+不得根据技术能力、repository/provider state、build/deployment 成功、已有 endpoint 或 upstream 变化推断授权。durable human-approved pre-authorization policy 只能授权其已记录作用域内的行动，并且不能覆盖 human-reserved / non-delegable 边界。
 
-在授权范围内，Agent 可以自动实现、部署、验证与 write-back；授权不明时保持 unresolved / pending human decision，并按需创建 Clarification。
+只有当行动属于 non-delegable、授权缺失/不清楚、将超出 scope，或 impact/reversibility 已经实质变化时才升级给人类。不要仅因为操作会持久化，就把已经授权、可逆的常规机器操作交还给人类。
+
+执行后验证 actual state，并把经验证的结果 write-through 到 repository durable state。
 
 ## 2. 保持三个不同的领域
 
