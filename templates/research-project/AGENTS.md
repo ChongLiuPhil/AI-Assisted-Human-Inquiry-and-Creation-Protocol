@@ -1,6 +1,6 @@
-# AGENTS.md — Project HARC Contract
+# AGENTS.md — Project AHICP Contract
 
-This project follows the Human–AI Research Collaboration Protocol.
+This project follows the AI-Assisted Human Inquiry and Creation Protocol.
 
 > **Language:** Chinese `AGENTS.zh-CN.md` is canonical; this English file is the synchronized mirror. Projects initialized from this template use Chinese canonical + English synchronized mirror unless the human explicitly chooses different language governance.
 
@@ -9,15 +9,15 @@ This project follows the Human–AI Research Collaboration Protocol.
 Before substantive work, any new AI Agent must read:
 
 1. `START_HERE.zh-CN.md`
-2. `HARC_MANIFEST.yaml`
-3. `HARC_CONTEXT_INTERFACE.yaml`
+2. `AHICP_MANIFEST.yaml`
+3. `AHICP_CONTEXT_INTERFACE.yaml`
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `docs/working-memory.zh-CN.md`
 7. `docs/working-memory/current-focus.zh-CN.md`
 8. `docs/working-memory/task-plan.zh-CN.md`
 
-Use Working Memory Index -> Current Focus -> Task Plan first to identify the resume point. Then reconstruct task-relevant state from the three Long-Term Memory layers according to the manifest/context interface and output a HARC Onboarding Report using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`. Later dynamic state is always retrieved from the latest canonical GitHub revision on demand.
+Use Working Memory Index -> Current Focus -> Task Plan first to identify the resume point. Then reconstruct task-relevant state from the three Long-Term Memory layers according to the manifest/context interface and output a AHICP Onboarding Report using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must confirm `AHICP REPOSITORY CONTEXT — ACTIVE`. Later dynamic state is always retrieved from the latest canonical GitHub revision on demand.
 
 Before the onboarding handshake is complete, do not perform large-scale structural changes, Framework Approval, or promotion of AI proposals into human commitments.
 
@@ -48,11 +48,11 @@ Update Current Focus / Task Plan after substantial work cycles and before handof
 
 At project initialization record:
 
-- upstream repository: `ChongLiuPhil/Human-AI-Research-Collaboration-Protocol`
-- HARC version: `0.2.0-draft` (replace with actual adopted version/tag/commit)
+- upstream repository: `ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol`
+- AHICP version: `0.2.0-draft` (replace with actual adopted version/tag/commit)
 - adopted commit/tag: `UNRESOLVED — record at initialization`
 
-Future Agents must not silently assume later upstream HARC rules have already been adopted by this project. Protocol upgrades require an explicit project decision.
+Future Agents must not silently assume later upstream AHICP rules have already been adopted by this project. Protocol upgrades require an explicit project decision.
 
 ## Task-relevant Long-Term Memory retrieval
 
