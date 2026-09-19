@@ -67,6 +67,8 @@ Durable state is not automatically high-impact. For an action whose authorizatio
 
 Do not infer authorization from technical facts such as capability, repository/provider state, build/deployment success, an existing endpoint, or an upstream change. A durable human-approved pre-authorization policy applies only within its recorded scope and cannot override a human-reserved / non-delegable boundary.
 
+At initial configuration of a reusable authorization policy, the AI first proposes authorization patterns suited to the situation; where applicable distinguish per-action authorization, bounded pre-authorization, and a mixed policy, with their scopes and escalation conditions. The human must select, modify, or reject the pattern, and the final choice plus authorization provenance must be recorded in repository durable state before the AI relies on that policy for further configuration or execution.
+
 Escalate only when authorization is genuinely missing, the action is non-delegable, scope would be exceeded, or impact/reversibility materially changes. Otherwise continue authorized machine-operable execution, verify actual state, and write the verified result back to durable repository state.
 
 ## Protocol source
