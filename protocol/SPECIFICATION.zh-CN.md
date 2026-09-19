@@ -705,7 +705,24 @@ pre-authorization policy **不得**覆盖 AHICP 或项目治理已经标记为 h
 
 Agent **不得**仅根据 AI proposal、技术能力、repository visibility、provider 配置、provider 可达性、build/deployment 成功、已有 endpoint、upstream branch/tag/version 变化或其他机器观察事实推断授权已经存在。
 
-### 23.5.1 Provider-neutral 的高影响判断
+### 23.5.1 首次配置时的人类授权方式选择
+
+当第一次配置某个 integration、automation 或 workflow，且其后续机器操作将依赖可重复使用的授权策略时，Agent **不得**替人类静默选择授权方式，也不得先完成会实际建立该授权策略的配置，再反向把配置结果解释为授权。
+
+在依赖该策略继续配置之前，Agent **必须**：
+
+1. 根据预期的 action class、target、allowed side effects、reversibility 与 high-impact boundary 分析所需授权；
+2. 提出适合当前场景的一种或多种授权方式，并说明其 scope、便利性、控制边界与 escalation condition；
+3. 在适用时至少区分：
+   - **per-action authorization**：在约定范围内，每个需要单独授权的行动或状态转换由人类逐次确认；
+   - **bounded pre-authorization**：人类预先批准一个明确且有限的 action class / target / side-effect / duration scope，Agent 可在该 scope 内重复执行；
+   - **mixed policy**：部分低风险行动使用 bounded pre-authorization，而指定的 high-impact 或 human-reserved action 继续逐次由人类决定；
+4. 由人类明确选择、修改或拒绝所提方案；
+5. 在后续操作依赖该选择之前，把最终选择及其 authorization provenance 写入 repository durable state。
+
+AI 的推荐只是 proposal，不是 human commitment。人类完成选择后，Agent 可以继续执行该选择所允许的 machine-operable 配置与后续操作；如果未来的 action class、target、side effects、impact、reversibility 或 duration 超出原选择，则必须重新取得相应的人类选择/授权。
+
+### 23.5.2 Provider-neutral 的高影响判断
 
 如果一项行动的合理可预见效果会实质改变以下一个或多个边界，则应视为 high-impact：
 
