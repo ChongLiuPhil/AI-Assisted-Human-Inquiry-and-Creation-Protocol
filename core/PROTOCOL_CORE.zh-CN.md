@@ -341,6 +341,18 @@ Work Log 默认不进入该必读链。
 
 ---
 
+## P25. 外部系统操作应采用授权边界内的 machine-operable-first escalation
+
+当 AI Agent 需要访问外部系统、账户或服务时，在已经具备适当人类授权的前提下，应先安全发现并验证当前可用的内建工具、connector/plugin、官方 MCP、provider API、官方 integration、仓库 automation 与已批准 adapter，再决定是否需要 human handoff。
+
+工具被列为 installed / enabled / connected 不足以证明它真实可调用；在技术上可行且安全时，应以真实最小调用验证 capability。
+
+Agent 不得要求人类把 password、token、private key 或其他 secret 粘贴到聊天。只有身份授权、账户所有者 consent、权限授予、不可委托的高影响决定，或当前工具能力确实无法完成的动作，才应升级给人类；交接必须最小化、面向非技术操作者，并在完成必要授权后由 Agent 恢复机器可执行工作。
+
+对影响后续工作的外部操作，Agent 应验证 provider actual state，并把经验证的 durable result 写回 repository。Provider UI、聊天状态与模型记忆都不得成为与 repository 平行的 authoritative project state。
+
+---
+
 ## 当前范围
 
 AHICP v0.3 当前聚焦：

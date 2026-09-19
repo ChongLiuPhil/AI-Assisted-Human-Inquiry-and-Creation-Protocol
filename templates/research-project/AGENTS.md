@@ -44,12 +44,27 @@ Update Current Focus / Task Plan after substantial work cycles and before handof
 - invalidate affected cache after writes;
 - do not maintain a second dynamic truth source inside chat.
 
+## External systems, tool discovery, and human handoff
+
+When a task requires an external system, account, or service:
+
+- where appropriate human authorization already exists, first inspect currently available and authorized built-in tools, plugins/connectors, official MCP servers, provider APIs, official integrations, repository automation, and approved adapters;
+- installed / enabled / connected does not mean actually callable; when technically possible and safe, perform a real minimal capability probe first;
+- prefer official / OAuth / provider-managed / least-secret-handling paths;
+- never ask a human to paste passwords, tokens, private keys, or other secrets into chat;
+- hand off only identity authorization, account-owner consent, permission grants, non-delegable high-impact decisions, or actions the current tools genuinely cannot perform;
+- keep handoff to the fewest steps, request only the necessary current action, assume no technical background, identify values that must not be sent to AI, and define a verifiable completion condition;
+- after authorization, have the Agent fresh-read the repository, re-verify provider actual state, and resume later machine-operable work;
+- external operations that affect future work must be verified and their durable result written back to the repository.
+
+Provider UI, chat state, and model memory are not durable project authority.
+
 ## Protocol source
 
 At project initialization record:
 
 - upstream repository: `ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol`
-- AHICP version: `0.2.0-draft` (replace with actual adopted version/tag/commit)
+- AHICP version: `0.3.0-draft` (replace with actual adopted version/tag/commit)
 - adopted commit/tag: `UNRESOLVED — record at initialization`
 
 Future Agents must not silently assume later upstream AHICP rules have already been adopted by this project. Protocol upgrades require an explicit project decision.

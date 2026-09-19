@@ -41,6 +41,21 @@
 
 完整规则见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` 与 `AHICP_CONTEXT_INTERFACE.yaml`。
 
+### 外部系统、工具发现与人类交接
+
+需要外部账户、provider 或服务时：
+
+- 在已有适当人类授权的前提下，先安全检查并使用当前可用的 built-in tools、connected plugins/connectors、官方 MCP、provider API、官方 GitHub App / integration、现有 repository automation 与已批准 adapter；
+- “installed / enabled / connected” 不能作为 capability 已可调用的证据；当它会影响执行路线或是否升级给人类时，技术上可行且安全的情况下必须做一次真实、最小、优先只读的 capability probe；
+- 功能等价时优先 official / OAuth / provider-managed / least-secret-handling 路线；
+- 不得要求人类把 password、token、private key、recovery code 或其他 secret 粘贴到聊天；
+- 只有身份授权、账户所有者 consent、权限授予、不可委托的高影响决定，或当前已授权工具确实不能完成的动作，才升级给人类；
+- handoff 必须最小化、一次只要求当前必要动作、默认操作者无技术背景、明确哪些值不能发送给 AI，并给出可由 AI 独立验证的完成标准；
+- 人类完成必要授权后，重新读取最新 repository state、重新验证 capability/provider actual state，并由 Agent 恢复后续 machine-operable work；
+- 对影响后续项目工作的外部操作，验证真实 provider state，并把 durable result write-through 到 repository；provider UI、聊天与模型记忆不能成为平行的项目真值源。
+
+完整规范见 `protocol/SPECIFICATION.zh-CN.md` §23。
+
 ## 2. 保持三个不同的领域
 
 在处理实质性人类反馈之前，先将其归类为以下一个或多个类别：

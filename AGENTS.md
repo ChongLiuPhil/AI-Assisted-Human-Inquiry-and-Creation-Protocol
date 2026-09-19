@@ -41,6 +41,21 @@ If a human instruction should constrain future work, persist it explicitly in th
 
 See `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` and `AHICP_CONTEXT_INTERFACE.yaml`.
 
+### External systems, tool discovery, and human handoff
+
+When work requires an external account, provider, or service:
+
+- where appropriate human authorization already exists, first safely inspect and use available built-in tools, connected plugins/connectors, official MCP servers, provider APIs, official GitHub Apps/integrations, existing repository automation, and approved adapters;
+- “installed / enabled / connected” is not evidence that a capability is callable; when capability status affects the execution route or a decision to escalate to a human, perform a real, minimal, preferably read-only capability probe when technically possible and safe;
+- prefer official / OAuth / provider-managed / least-secret-handling paths where functionally equivalent;
+- never ask a human to paste a password, token, private key, recovery code, or other secret into chat;
+- escalate only for identity authorization, account-owner consent, permission grants, non-delegable high-impact decisions, or actions the currently authorized tools genuinely cannot perform;
+- keep handoff minimal, request only the necessary current action, assume no technical background, state which values must not be sent to AI, and define a completion condition the AI can independently verify;
+- after necessary human authorization, re-read current repository state, re-verify capability/provider actual state, and have the Agent resume later machine-operable work;
+- after external operations that affect future project work, verify actual provider state and write the durable result through to the repository; provider UI, chat, and model memory must not become a parallel project truth source.
+
+See §23 of `protocol/SPECIFICATION.zh-CN.md`.
+
 ## 2. Preserve three distinct domains
 
 Classify substantive human feedback as one or more of:

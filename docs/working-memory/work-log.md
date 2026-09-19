@@ -306,3 +306,21 @@ Remaining:
 - independent post-migration repair audit.
 
 Separately, PPF now has its first Quarto + GitHub Actions + Cloudflare Workers Static Assets reference-implementation PR. PPF publishing-lifecycle rules were not duplicated into AHICP.
+
+---
+
+## 2026-09-19 — External systems / human handoff normative migration
+
+Under AHICP-D027, this work cycle promotes lessons from real external-provider collaboration into provider-neutral protocol rules:
+
+- add machine-operable-first escalation;
+- require real minimal invocation to verify installed/enabled/connected capability rather than trusting directory state alone;
+- prefer official/OAuth/provider-managed/least-secret-handling paths;
+- keep secrets out of chat;
+- reserve human handoff for identity authorization, account consent, permission grants, non-delegable high-impact decisions, or genuine tool-capability absence;
+- require minimal nontechnical handoff and Agent resumption after authorization;
+- verify provider actual state after external operations and write durable results affecting future work back to the repository;
+- keep AHICP provider-neutral without copying PPF provider lifecycle or Cloudflare-specific details.
+
+Chinese canonical and English mirror, root AGENTS, and the research-project template were synchronized in the same work cycle.
+

@@ -422,3 +422,27 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 8. AHICP 与 **Personal Publishing Framework (PPF)** 保持边界：AHICP 规范 AI 如何辅助人的探究与创作；PPF 规范作品的 source / build / publish / release / archive 生命周期。二者可独立采用，也可组合采用。
 
 **状态：** 人类已明确确认；正在通过 v0.3 semantic migration 分支传播。
+
+---
+
+## 2026-09-19 — AHICP-D027
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL
+
+**决定：**
+
+1. AHICP 正式加入通用的 **External Systems, Tool Discovery, Authorization, and Human Handoff** 治理规则。
+2. 当任务需要外部系统、账户或服务，并且适当的人类授权已经存在时，AI Agent 应先安全发现并穷尽当前可用且已获授权的 machine-operable path，再把纯操作步骤交还给人类。
+3. 可发现路径应覆盖平台内建工具、已连接 plugin/connector、官方 MCP、provider API、官方 GitHub App/integration、现有 repository automation 与明确批准的 adapter/plugin。
+4. “installed / enabled / connected” 不构成 capability 已真正可调用的证据；当能力状态影响执行路线或是否升级给人类时，在技术上可行且安全的情况下必须以真实最小调用验证。
+5. 功能等价时优先 official、OAuth、provider-managed、least-secret-handling 的连接方式。不得为了便利要求人类把 password、token、private key 或其他 secret 粘贴到聊天。
+6. 只有身份授权、账户所有者 consent、权限授予、不可委托的高影响决定，或当前已授权工具能力确实无法完成的动作，才升级给人类。Human handoff 必须最少步骤、一次只要求当前必要动作、默认无技术背景，并明确哪些值不得发送给 AI。
+7. 必要人类动作完成后，AI Agent 应重新读取仓库、重新验证 capability/provider actual state，并恢复后续 machine-operable work。
+8. 影响未来项目工作的 external operation 必须验证真实 provider state，并把经验证的 durable result 写回 repository；provider UI、聊天状态和模型记忆不得成为与 repository 平行的 authoritative project state。
+9. 该规则是 provider-neutral 的 AHICP execution/escalation governance，不把 Cloudflare 或任何其他具体 provider 写入 normative core，也不改变 PPF 的 publishing lifecycle 边界。
+
+**受影响组件：** Protocol Core、Specification、AGENTS、research-project template、后续 adoption/conformance 审计。
+
+**状态：** 人类已明确要求执行；本决定授权本轮规范传播。
+
