@@ -340,6 +340,22 @@ The Agent must not ask a human to paste passwords, tokens, private keys, or othe
 
 For external actions that affect future work, the Agent should verify provider actual state and write the verified durable result back to the repository. Provider UI, chat state, and model memory must not become a parallel authoritative project-state source.
 
+
+## P26. High-impact durable state must not be silently inferred from technical facts
+
+Publication authorization, publication visibility / audience, access policy, canonical identity / production cutover / legacy retirement, and the adopted version/tag/commit or semantic revision of an upstream protocol / governance / publishing framework are high-impact durable states that require an auditable authorization source.
+
+An Agent must not infer human approval for these state changes merely because a build/deployment succeeded, a provider endpoint exists, a repository has a particular visibility, a provider UI shows a setting, upstream main/tag changed, or another technical fact became true.
+
+Valid authorization may come from:
+
+- an explicit human decision for the current change; or
+- a durable pre-authorization policy already recorded in repository state with clear scope and trigger conditions.
+
+Within an authorized scope, an Agent may automate implementation, deployment, verification, and write-back; authorization itself must remain distinct from implementation facts.
+
+If authorization intent or scope is unclear, keep the state unresolved / pending human decision and create a Clarification when appropriate. AHICP governs authorization provenance and non-inference here; concrete publishing-lifecycle semantics remain the responsibility of PPF or another compatible framework.
+
 ---
 
 ## Current scope
