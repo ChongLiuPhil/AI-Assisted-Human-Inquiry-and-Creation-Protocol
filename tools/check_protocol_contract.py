@@ -23,8 +23,8 @@ REQUIRED = {
         "write-through",
         "### 23.5 高影响持久状态的授权边界",
         "publication visibility",
-        "pre-authorization policy",
-        "upstream protocol",
+        "长期授权策略",
+        "上游 protocol",
     ],
     "protocol/SPECIFICATION.md": [
         "## 23. External Systems, Tool Discovery, Authorization, and Human Handoff",
