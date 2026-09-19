@@ -1,13 +1,13 @@
-# HARC Working Memory Protocol
+# AHICP Working Memory Protocol
 ## 工作记忆协议
 
 > **本中文文件是规范性基准；英文 `WORKING_MEMORY.md` 是同步镜像。**
 
 ## 1. 定义
 
-HARC 区分两类项目记忆：
+AHICP 区分两类项目记忆：
 
-### A. Long-Term Research Memory — 长期研究记忆
+### A. Long-Term Project Memory — 长期项目记忆
 
 用于保存项目“是什么”、已经形成什么持续性思想结构，以及哪些成果构成项目的长期状态。
 

@@ -6,7 +6,7 @@
 
 > **Chat is temporary interaction context. The repository is durable shared research memory.**
 
-HARC externalizes project-relevant state so that continuity does not depend on one model, one account, one vendor, or one conversation window.
+AHICP externalizes project-relevant state so that continuity does not depend on one model, one account, one vendor, or one conversation window.
 
 ## Promotion test
 
@@ -33,7 +33,7 @@ If yes, persist it.
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
 | Evidence and verification | `evidence/` |
-| Zero-context bootstrap and repository context interface | `START_HERE.zh-CN.md`, `BOOTSTRAP_PROMPT.zh-CN.md`, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, `HARC_MANIFEST.yaml`, `HARC_CONTEXT_INTERFACE.yaml`, `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
+| Zero-context bootstrap and repository context interface | `START_HERE.zh-CN.md`, `BOOTSTRAP_PROMPT.zh-CN.md`, `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, `AHICP_MANIFEST.yaml`, `AHICP_CONTEXT_INTERFACE.yaml`, `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | Collaboration rules | `AGENTS.zh-CN.md`, `protocol/` |
 | Expanded output | `paper/`, `book/`, `article/`, etc. |
 
@@ -51,7 +51,7 @@ If it matters to future continuity, give it an explicit repository representatio
 
 ## Context-window independence is not infinite context
 
-HARC does not claim that a model can read an indefinitely growing repository in one prompt.
+AHICP does not claim that a model can read an indefinitely growing repository in one prompt.
 
 Instead use **layered compression**.
 
@@ -96,7 +96,7 @@ The objective is **recoverability**, not universal simultaneous ingestion.
 
 ## Repository-backed memory model
 
-HARC now uses:
+AHICP now uses:
 
 `GitHub Repository = authoritative external memory + working state`
 
@@ -114,11 +114,11 @@ This means:
 
 Session Context Bootstrap therefore retains only a Repository Resolver: how to find memory, not another copy of memory.
 
-See `protocol/REPOSITORY_CONTEXT_INTERFACE.md` and `HARC_CONTEXT_INTERFACE.yaml`.
+See `protocol/REPOSITORY_CONTEXT_INTERFACE.md` and `AHICP_CONTEXT_INTERFACE.yaml`.
 
 ## New-agent reconstruction target
 
-Before answering these questions, a new Agent should complete the Onboarding Handshake, activate `HARC REPOSITORY CONTEXT — ACTIVE`, read Working Memory Index -> Current Focus -> Task Plan for the operational resume point, then selectively retrieve authoritative state from the three long-term layers. Work Log is skipped unless historical reconstruction is required.
+Before answering these questions, a new Agent should complete the Onboarding Handshake, activate `AHICP REPOSITORY CONTEXT — ACTIVE`, read Working Memory Index -> Current Focus -> Task Plan for the operational resume point, then selectively retrieve authoritative state from the three long-term layers. Work Log is skipped unless historical reconstruction is required.
 
 A new competent agent should be able to answer:
 

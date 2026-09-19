@@ -4,7 +4,7 @@
 
 ## Purpose
 
-HARC separates research content from presentation form. This document makes form reuse operational across multiple projects and artifact types.
+AHICP separates research content from presentation form. This document makes form reuse operational across multiple projects and artifact types.
 
 The human-originated design goal is that an author may develop stable presentation preferences over time while still allowing books, academic papers, articles, reports, and individual projects to use different forms.
 
@@ -51,7 +51,7 @@ Template:
 
 ## 4. Artifact-type profiles
 
-HARC provides separate template profiles for common artifact types.
+AHICP provides separate template profiles for common artifact types.
 
 Initial profiles:
 

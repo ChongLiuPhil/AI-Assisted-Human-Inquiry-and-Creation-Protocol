@@ -1,4 +1,4 @@
-# HARC 架构
+# AHICP 架构
 
 > **本中文文件是规范性基准；英文 `ARCHITECTURE.md` 是同步镜像。**
 
@@ -29,13 +29,13 @@
                  resolved Working Memory
 ```
 
-三层都是长期研究记忆。Working Memory Area 与三层并行：Current Focus + Task Plan 负责当前工作的可续接状态；Work Log 主要保留供人类回顾的阶段历史，不进入默认 AI 接管上下文。
+三层都是长期项目记忆。Working Memory Area 与三层并行：Current Focus + Task Plan 负责当前工作的可续接状态；Work Log 主要保留供人类回顾的阶段历史，不进入默认 AI 接管上下文。
 
 采用双语配置时，上述所有人类可读规范状态同时具有中文 canonical 与英文 mirror。
 
 ## Repository-backed context
 
-HARC 把 GitHub 定义为唯一权威项目状态源：
+AHICP 把 GitHub 定义为唯一权威项目状态源：
 
 `GitHub Repository = authoritative external memory + working state`
 
@@ -53,7 +53,7 @@ Agent 会话只保留最小 Repository Resolver。Blocking Clarifications、Fram
 
 ## 长期记忆、工作记忆与历史
 
-HARC 区分：
+AHICP 区分：
 
 - **长期记忆 Layer 1** — 人类作者核心基础；
 - **长期记忆 Layer 2** — 当前论述框架；
@@ -113,7 +113,7 @@ Working intellectual structure
 
 ## 核心不变量
 
-一个稳定 HARC 项目应先让新的、能力合格的 Agent 通过 START_HERE / HARC_MANIFEST / HARC_CONTEXT_INTERFACE 完成 Onboarding Handshake，激活 Repository Resolver，然后仅通过 GitHub 最新 canonical 状态回答：
+一个稳定 AHICP 项目应先让新的、能力合格的 Agent 通过 START_HERE / HARC_MANIFEST / HARC_CONTEXT_INTERFACE 完成 Onboarding Handshake，激活 Repository Resolver，然后仅通过 GitHub 最新 canonical 状态回答：
 
 1. 人类当前究竟想论证什么？
 2. 人类当前希望成果怎样呈现？

@@ -26,7 +26,7 @@
 
 **尚无。**
 
-目前还没有方法论文章 framework 通过 HARC Framework Approval Gate。
+目前还没有方法论文章 framework 通过 AHICP Framework Approval Gate。
 
 ## 下一 framework 标识符
 

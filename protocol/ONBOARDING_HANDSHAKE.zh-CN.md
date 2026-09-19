@@ -7,7 +7,7 @@
 
 持久仓库状态只有在新的 AI Agent 能够正确发现、读取、区分权威层级并据此行动时，才真正支持跨 Agent 连续性。
 
-因此 HARC 不把“Agent 已经获得仓库访问权限”视为“Agent 已经接管成功”。
+因此 AHICP 不把“Agent 已经获得仓库访问权限”视为“Agent 已经接管成功”。
 
 接管成功必须通过一个显式的 **Onboarding Handshake** 验证。
 
@@ -104,9 +104,9 @@ Work Log 默认不读取；只有历史回顾、审计、变迁重建或 current
 
 ## 5.5 Repository Context Activation
 
-Onboarding Report 完成后，Agent MUST 读取 `HARC_CONTEXT_INTERFACE.yaml` 与 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，并确认：
+Onboarding Report 完成后，Agent MUST 读取 `AHICP_CONTEXT_INTERFACE.yaml` 与 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`，并确认：
 
-`HARC REPOSITORY CONTEXT — ACTIVE`
+`AHICP REPOSITORY CONTEXT — ACTIVE`
 
 该确认只加载最小 Repository Resolver：
 
@@ -173,7 +173,7 @@ Onboarding Report 的目的不是要求人类逐字重新审核仓库，而是�
 
 ## 8. 机器 manifest 与人类文本的关系
 
-`HARC_MANIFEST.yaml` 是路径、状态入口和不变量的机器可读索引。
+`AHICP_MANIFEST.yaml` 是路径、状态入口和不变量的机器可读索引。
 
 它不替代：
 
@@ -187,9 +187,9 @@ Onboarding Report 的目的不是要求人类逐字重新审核仓库，而是�
 
 ## 9. 平台独立性的现实边界
 
-HARC 无法保证任意第三方 AI 平台会自动读取 `START_HERE`、`AGENTS` 或 manifest。
+AHICP 无法保证任意第三方 AI 平台会自动读取 `START_HERE`、`AGENTS` 或 manifest。
 
-因此 HARC 使用多重发现机制：
+因此 AHICP 使用多重发现机制：
 
 - 根目录显眼文件；
 - README 导航；

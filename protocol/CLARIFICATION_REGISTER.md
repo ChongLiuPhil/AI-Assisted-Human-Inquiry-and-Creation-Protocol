@@ -1,4 +1,4 @@
-# Clarification Workflow inside HARC Working Memory
+# Clarification Workflow inside AHICP Working Memory
 
 > **Language:** Chinese canonical: `CLARIFICATION_REGISTER.zh-CN.md`; this English file is the synchronized mirror.
 

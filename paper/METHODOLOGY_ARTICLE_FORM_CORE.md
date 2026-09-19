@@ -2,7 +2,7 @@
 
 > Chinese `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md` is canonical; this English file is its synchronized mirror.
 
-**Role:** canonical current source of truth for human-confirmed presentation decisions for the HARC methodology article.
+**Role:** canonical current source of truth for human-confirmed presentation decisions for the AHICP methodology article.
 
 ## Artifact type
 
@@ -25,7 +25,7 @@ The English wording is maintained as the translation mirror of the canonical Chi
 
 **Canonical editing language: Chinese.**
 
-HARC now requires bilingual Chinese–English maintenance:
+AHICP now requires bilingual Chinese–English maintenance:
 
 - Chinese is the canonical editing and human-review baseline;
 - English is the synchronized translation mirror;
@@ -44,7 +44,7 @@ The current draft uses an academic-expository register as an AI working default.
 
 The article should explain:
 
-- the HARC problem setting;
+- the AHICP problem setting;
 - the protocol architecture;
 - human cognitive/epistemic responsibility and capability boundaries in AI-assisted research;
 - approval and accountability mechanisms;

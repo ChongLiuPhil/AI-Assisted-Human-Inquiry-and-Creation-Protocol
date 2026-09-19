@@ -4,7 +4,7 @@
 
 ## 1. 操作性 framework 的两种状态
 
-HARC 区分：
+AHICP 区分：
 
 1. **Working Framework** — 可修改、由 AI 维护、用于讨论。
 2. **Approved Framework Snapshot** — 已由人类作者明确审阅并确认。
@@ -86,7 +86,7 @@ Framework Approval 是项目主要的实质性思想检查点，也是人类作�
 
 Framework Approval 使开发阶段不需要人类逐行批准每一份 provisional AI 扩写，但不意味着人类可以只批准一个高层概要而忽略 framework 自身的实质细节。
 
-Framework Approval 是 HARC 的治理架构，不应自动被表述成所有学科、机构或出版制度下的一般 authorship theory.
+Framework Approval 是 AHICP 的治理架构，不应自动被表述成所有学科、机构或出版制度下的一般 authorship theory.
 
 ## 4. 派生扩写
 
@@ -128,7 +128,7 @@ Framework Approval 后，AI Agent 可以把 framework 展开成：
 
 ## 6. Framework defect 与 expansion defect
 
-HARC 应分析性地区分两类缺陷。
+AHICP 应分析性地区分两类缺陷。
 
 ### Framework-level defect
 
@@ -189,7 +189,7 @@ Framework Approval 不等于 release approval。
 
 ## 9. 责任主体与责任层级
 
-HARC 区分：
+AHICP 区分：
 
 ### 项目目的与方向
 
@@ -209,6 +209,6 @@ AI 可以执行或辅助大量扩写、重组和表达工作；后续派生文�
 
 可以压缩为：
 
-> **HARC 允许 AI 工具广泛参与研究工作的执行，但人类始终保持为责任主体：人类给予并授权项目目的与方向，以其充分理解并批准的 framework 承担核心思想责任，并通过 Final Artifact Approval 对具体公开知识成果承担最终发布责任。**
+> **AHICP 允许 AI 工具广泛参与研究工作的执行，但人类始终保持为责任主体：人类给予并授权项目目的与方向，以其充分理解并批准的 framework 承担核心思想责任，并通过 Final Artifact Approval 对具体公开知识成果承担最终发布责任。**
 
-这一表述是 HARC 的治理模型，不声称单凭 Framework Approval 就已经给出跨领域的一般作者身份理论.
+这一表述是 AHICP 的治理模型，不声称单凭 Framework Approval 就已经给出跨领域的一般作者身份理论.

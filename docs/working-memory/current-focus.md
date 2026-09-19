@@ -1,66 +1,63 @@
-# HARC Working Memory — Current Focus
+# AHICP Working Memory — Current Focus
 
-> **Language:** Chinese canonical: `current-focus.zh-CN.md`; this English file is the synchronized mirror.
+> **Chinese canonical: `current-focus.zh-CN.md`; this file is the synchronized English mirror.**
 
 **Status:** `ACTIVE`  
-**Last updated:** 2026-09-18
+**Last updated:** 2026-09-19
 
 ## CURRENT_STAGE
 
-The methodology article is in the **overall human review / Framework Approval decision stage for the Working Framework**.
+**The HARC → AHICP v0.3 semantic migration is complete and has passed the final post-migration audit.**
 
-`CLR-001 / CLR-002 / CLR-005` were resolved and promoted through `HARC-D023`; `HARC-D024` further clarifies the responsibility model as humans remaining the bearers of responsibility and confirms the current Chinese title; `HARC-D025` repaired the T1–T13 dependency representation and clarified overall-approval semantics for unresolved / AI-PROPOSED items. The Clarification gate that previously blocked `MA-FW-001` has been cleared.
+Migration authority: `AHICP-D026`.
+
+Completed:
+- formal name and fixed subtitle;
+- human-led / AI-assisted / repository-grounded normative direction;
+- Protocol Core, Specification, AGENTS, and live protocol migration;
+- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` control plane;
+- zero-context onboarding migration;
+- research-project specialization template migration;
+- methodology article/evidence current protocol identity migration while preserving research-specific subject matter;
+- semantic parity of key bilingual normative files;
+- final post-migration repair audit.
+
+Final audit:
+
+`docs/AHICP_V0_3_FINAL_POST_MIGRATION_AUDIT.zh-CN.md`
+
+Conclusion: `PASS — merge-ready`.
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — Complete overall human review of the current Working Framework and decide `MA-FW-001`
+### WM-OBJ-003 — Methodology article overall Framework Approval
 
-The current Chinese Working Framework:
+With the AHICP v0.3 migration complete, the repository returns to the principal unresolved work gates that preceded the migration:
+
+- methodology article Working Framework: `WAITING-HUMAN`
+- license: `WAITING-HUMAN`
+- target publication venue / form constraints: `WAITING-HUMAN`
+
+Current Chinese Working Framework:
 
 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
-is now `REVIEW READY`, but it has **not received overall human approval**.
+## IMMEDIATE_NEXT_ACTION
 
-The highest-priority work is not further structural rewriting of the draft. It is an explicit human decision on the framework as a whole:
+When the human is ready to continue the methodology article, make an overall Working Framework decision:
 
 - `APPROVE`
 - `REVISE`
 - `REJECT`
 
-Acceptance of local terminology, claims, or wording does not automatically constitute overall Framework Approval.
-
-## IMMEDIATE_NEXT_ACTION
-
-The human author reviews `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` as a whole, especially:
-
-- the current thesis set;
-- major inferential / dependency relations;
-- core distinctions;
-- the function of each section / subsection;
-- the T3 / T4 model of humans as the bearers of responsibility after HARC-D023 / HARC-D024;
-- the status distinction between the human-approved title and the still-unapproved overall framework;
-- whether content still marked `AI-PROPOSED` or `NON-BLOCKING` may remain in the framework under review.
-
-For items still marked `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING`, the human only needs to confirm their place and treatment as unresolved items within the framework; overall approval does not automatically approve their content.
-
-Then explicitly decide `APPROVE / REVISE / REJECT`.
-
-If `APPROVE`:
-
-`Human Framework Approval -> create MA-FW-001 -> Framework Status update -> structural Artifact synchronization`
-
-If `REVISE`:
-
-`Human revision -> Decision Log / appropriate upstream state -> Working Framework revision -> renewed overall review`
+No Approved Framework snapshot is created before that decision.
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: overall Framework Approval decision`
+`WAITING-HUMAN: methodology article overall Framework Approval`
 
-This is not a new Clarification. There is currently no active Clarification blocking Framework Approval review.
+This does not block the completed AHICP v0.3 protocol migration.
 
 ## HANDOFF
 
-A replacement AI Agent does not need to read Work Log first. Read this file, then Task Plan; if the current task is methodology-article Framework Approval, fresh-fetch the Chinese Working Argument Map and Framework Status.
-
-Do not interpret `REVIEW READY` as `APPROVED`, and do not create `MA-FW-001` without explicit overall human approval.
+A replacement AI Agent should use the AHICP control plane for takeover. The protocol migration is complete; legacy HARC live identifiers must not be reintroduced into current normative files.

@@ -1,4 +1,4 @@
-# HARC Bootstrap Prompt
+# AHICP Bootstrap Prompt
 
 > **Language:** Chinese canonical: `BOOTSTRAP_PROMPT.zh-CN.md`; this English file is the synchronized mirror.
 
@@ -6,15 +6,15 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 
 ---
 
-> You are taking over a research repository governed by the Human–AI Research Collaboration Protocol (HARC).
+> You are taking over a research repository governed by the AI-Assisted Human Inquiry and Creation Protocol (AHICP).
 >
 > Treat GitHub repository state—not old chat, account memory, platform memory, hidden scratchpads, or your own prior inference—as the durable source of project state.
 >
 > Before any substantive research, structural revision, drafting, translation, formatting, Framework Approval, or Final Artifact judgment:
 >
 > 1. read `START_HERE.zh-CN.md`;
-> 2. read `HARC_MANIFEST.yaml`;
-> 3. read `HARC_CONTEXT_INTERFACE.yaml`;
+> 2. read `AHICP_MANIFEST.yaml`;
+> 3. read `AHICP_CONTEXT_INTERFACE.yaml`;
 > 4. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
 > 5. read `AGENTS.zh-CN.md`;
 > 6. read `docs/working-memory.zh-CN.md` (Index);
@@ -25,7 +25,7 @@ The prompt below can be copied directly into any AI Agent capable of reading the
 > 11. treat Chinese as canonical and English only as the synchronized mirror;
 > 12. read task-relevant blockers/clarifications from Task Plan and verify destination files when needed;
 > 13. retrieve latest canonical Layer 1 / Layer 2 / Layer 3 / Evidence state only when needed;
-> 14. before substantive modification, output a HARC Onboarding Report covering Current Focus + Task Plan and confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
+> 14. before substantive modification, output a AHICP Onboarding Report covering Current Focus + Task Plan and confirm `AHICP REPOSITORY CONTEXT — ACTIVE`.
 >
 > Do not:
 >

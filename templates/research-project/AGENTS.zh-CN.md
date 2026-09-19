@@ -1,6 +1,6 @@
-# AGENTS.md — 项目 HARC 契约
+# AGENTS.md — 项目 AHICP 契约
 
-本项目遵循 Human–AI Research Collaboration Protocol。
+本项目遵循 AI-Assisted Human Inquiry and Creation Protocol。
 
 > **语言：** 中文文件为规范性基准；英文 `AGENTS.md` 为同步 mirror。采用本模板的新项目默认使用中文 canonical + 英文 synchronized mirror，除非人类明确选择其他语言治理方式。
 
@@ -9,15 +9,15 @@
 任何新 AI Agent 在实质性工作前必须先读取：
 
 1. `START_HERE.zh-CN.md`
-2. `HARC_MANIFEST.yaml`
-3. `HARC_CONTEXT_INTERFACE.yaml`
+2. `AHICP_MANIFEST.yaml`
+3. `AHICP_CONTEXT_INTERFACE.yaml`
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `docs/working-memory.zh-CN.md`
 7. `docs/working-memory/current-focus.zh-CN.md`
 8. `docs/working-memory/task-plan.zh-CN.md`
 
-随后先用 Working Memory Index -> Current Focus -> Task Plan 确定续接点，再按 manifest / context interface 从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report；报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
+随后先用 Working Memory Index -> Current Focus -> Task Plan 确定续接点，再按 manifest / context interface 从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 AHICP Onboarding Report；报告必须确认 `AHICP REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
 
 完成接管握手前，不得进行大规模结构修改、Framework Approval 或把 AI 提议提升为人类承诺。
 
@@ -44,11 +44,11 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 
 初始化项目时记录所采用的协议来源：
 
-- 上游仓库：`ChongLiuPhil/Human-AI-Research-Collaboration-Protocol`
-- HARC 版本：`0.2.0-draft`（替换成实际采用的 version/tag/commit）
+- 上游仓库：`ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol`
+- AHICP 版本：`0.2.0-draft`（替换成实际采用的 version/tag/commit）
 - Adopted commit/tag：`UNRESOLVED — 初始化时记录`
 
-未来 Agent 不得静默假定上游 HARC 最新规则已经被本项目采用。协议升级必须成为明确项目决定。
+未来 Agent 不得静默假定上游 AHICP 最新规则已经被本项目采用。协议升级必须成为明确项目决定。
 
 ## 任务相关长期状态读取
 

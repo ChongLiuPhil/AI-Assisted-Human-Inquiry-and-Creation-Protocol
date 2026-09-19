@@ -1,4 +1,4 @@
-# HARC Bootstrap Prompt
+# AHICP Bootstrap Prompt
 
 > **本中文文件是规范性基准；英文 `BOOTSTRAP_PROMPT.md` 是同步镜像。**
 
@@ -6,15 +6,15 @@
 
 ---
 
-> 你正在接手一个遵循 Human–AI Research Collaboration Protocol（HARC）的研究仓库。
+> 你正在接手一个遵循 AI-Assisted Human Inquiry and Creation Protocol（AHICP）的研究仓库。
 >
 > 你必须把 GitHub 仓库状态，而不是旧聊天、账号记忆、平台记忆、隐藏 scratchpad 或你自己的先验推断，作为项目的持久状态来源。
 >
 > 在进行任何实质性研究、结构修改、正文扩写、翻译、格式修改、Framework Approval 或 Final Artifact 判断之前：
 >
 > 1. 读取 `START_HERE.zh-CN.md`；
-> 2. 读取 `HARC_MANIFEST.yaml`；
-> 3. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
+> 2. 读取 `AHICP_MANIFEST.yaml`；
+> 3. 读取 `AHICP_CONTEXT_INTERFACE.yaml`；
 > 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
 > 5. 读取 `AGENTS.zh-CN.md`；
 > 6. 读取 `docs/working-memory.zh-CN.md`（Index）；
@@ -25,7 +25,7 @@
 > 11. 中文是 canonical；英文只作为 synchronized mirror；
 > 12. 从 Task Plan 读取与当前任务相关的 blockers / clarifications，并在需要时核验其长期目标文件；
 > 13. 仅在当前任务需要时读取 Layer 1 / Layer 2 / Layer 3 / Evidence 的最新 canonical revision；
-> 14. 在做任何实质性修改前，输出 HARC Onboarding Report，报告 Current Focus + Task Plan 的当前续接状态，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。
+> 14. 在做任何实质性修改前，输出 AHICP Onboarding Report，报告 Current Focus + Task Plan 的当前续接状态，并确认 `AHICP REPOSITORY CONTEXT — ACTIVE`。
 >
 > 你不得：
 >

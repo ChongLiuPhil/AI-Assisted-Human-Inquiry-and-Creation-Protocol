@@ -5,7 +5,7 @@
 **Title status:** `HUMAN-APPROVED TITLE — HARC-D024` (English is the synchronized translation mirror; title approval is not Framework Approval)  
 **Status:** `DERIVED-PROVISIONAL`  
 **Framework status:** `WORKING-FRAMEWORK — not yet formally approved by the human author`  
-**Protocol:** Human–AI Research Collaboration Protocol (HARC) v0.2.0-draft  
+**Protocol:** AI-Assisted Human Inquiry and Creation Protocol (AHICP) v0.2.0-draft  
 **Upstream Content Core:** `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`  
 **Form Core:** `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`  
 **Framework Status:** `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`  
@@ -17,9 +17,9 @@
 
 Generative artificial intelligence is substantially changing the division of work in research. Literature search, idea organization, argument reconstruction, draft generation, language editing, format conversion, and even some formalization can now be performed or assisted by AI Agents used as tools at speeds far beyond traditional manual workflows. Yet researchers' reading speed, capacity for understanding, judgment, and capacity to bear responsibility do not increase at the same rate. This creates a methodological problem more fundamental than whether “AI can write a paper”: when more and more concrete research work can be assisted or automated by AI tools, who must still understand, confirm, and judge the aims and conclusions of that work, and who remains the ultimate bearer of responsibility?
 
-This article presents the Human–AI Research Collaboration Protocol (HARC) as a persistent, explicit, and auditable architecture for human–AI research collaboration, currently implemented primarily through GitHub. HARC does not treat a chat window or the private context of a particular model as the long-term memory of a research project. Instead, it treats version-controlled repository documents as the persistent state of an evolving research process. The protocol separates the human author's substantive research intentions, presentation intentions, the operational argument framework maintained by AI, evidence constraints, historical decisions, and final derived text. It uses structures such as the Content Core, Form Core, Decision Log, Working Argument Map, and Approved Framework Snapshot to create a governable research state.
+This article presents the AI-Assisted Human Inquiry and Creation Protocol (AHICP) as a persistent, explicit, and auditable architecture for human–AI research collaboration, currently implemented primarily through GitHub. AHICP does not treat a chat window or the private context of a particular model as the long-term memory of a research project. Instead, it treats version-controlled repository documents as the persistent state of an evolving research process. The protocol separates the human author's substantive research intentions, presentation intentions, the operational argument framework maintained by AI, evidence constraints, historical decisions, and final derived text. It uses structures such as the Content Core, Form Core, Decision Log, Working Argument Map, and Approved Framework Snapshot to create a governable research state.
 
-The article further argues that the purpose, central problem, and direction of a research or creative project must originate with humans and remain under human navigation or approval; within HARC, an AI Agent is a collaboration tool that may perform or assist extensive work but is not characterized as a cognitive subject or the ultimate bearer of responsibility. “Human Responsibility” in the title is shorthand. The more precise claim is that **in human–AI collaborative research and inquiry, especially when research results, arguments, or knowledge claims enter public circulation, humans must remain the bearers of responsibility.** For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Framework: AI may assist in proposing, organizing, and expressing the framework, but before Framework Approval the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in it. On this basis, the article distinguishes framework-level defects from derived-expansion defects and Framework Approval from Final Artifact Approval, while discussing the relation of this architecture to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
+The article further argues that the purpose, central problem, and direction of a research or creative project must originate with humans and remain under human navigation or approval; within AHICP, an AI Agent is a collaboration tool that may perform or assist extensive work but is not characterized as a cognitive subject or the ultimate bearer of responsibility. “Human Responsibility” in the title is shorthand. The more precise claim is that **in human–AI collaborative research and inquiry, especially when research results, arguments, or knowledge claims enter public circulation, humans must remain the bearers of responsibility.** For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Framework: AI may assist in proposing, organizing, and expressing the framework, but before Framework Approval the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in it. On this basis, the article distinguishes framework-level defects from derived-expansion defects and Framework Approval from Final Artifact Approval, while discussing the relation of this architecture to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
 
 **Keywords:** human–AI collaboration; generative AI; research methodology; bearers of responsibility; authorship; distributed cognition; version control; GitHub; AI agents; research integrity
 
@@ -35,7 +35,7 @@ If research collaboration continues to use the traditional pattern of “convers
 
 The problem, therefore, is not only textual productivity but **cognitive governance**. How does a project lasting months or years preserve its intellectual state? How are the contribution boundaries between human and AI made explicit? Which changes represent a genuine change in the author's position, and which are merely temporary AI interpretations? When a new agent takes over, how does it know which material has been human-confirmed and which is merely a previous agent's suggestion?
 
-HARC is designed to address these questions.
+AHICP is designed to address these questions.
 
 ---
 
@@ -45,7 +45,7 @@ HARC is designed to address these questions.
 
 AI conversations are well suited to immediate reasoning, but they are not stable research infrastructure. Different models have different context limits, platform memory systems can change, account-level memory may not be transparent, and such memory is difficult to use as a formal research audit trail. More importantly, the lifetime of a research project can exceed the lifetime of any particular conversation.
 
-HARC therefore begins from a simple principle:
+AHICP therefore begins from a simple principle:
 
 > **Chat is the interaction surface; the repository is the persistent research state.**
 
@@ -64,27 +64,27 @@ Git can tell us when a passage changed, but it cannot automatically answer more 
 
 When these states are not distinguished, **semantic drift** occurs: a more polished and fluent AI-generated version gradually replaces what the human originally intended, until neither party can easily trace when the substitution happened.
 
-HARC therefore needs more than textual version control. It needs a form of **semantic version control**.
+AHICP therefore needs more than textual version control. It needs a form of **semantic version control**.
 
 ---
 
 ## 3. From a repository to externalized research state
 
-Treating GitHub as research memory has clear affinities with ideas about the extended mind and distributed cognition, but HARC need not commit to any strong metaphysical thesis.
+Treating GitHub as research memory has clear affinities with ideas about the extended mind and distributed cognition, but AHICP need not commit to any strong metaphysical thesis.
 
 In “The Extended Mind,” Clark and Chalmers argue that some stable, reliable, and readily available external resources can play roles in cognition analogous to internal memory (Clark & Chalmers, 1998). Hutchins's study of navigation teams emphasizes that complex cognitive activity can be distributed across people, tools, representations, and social organization rather than understood solely within isolated individuals (Hutchins, 1995).
 
-HARC can draw on this line of thought to understand long-term research collaboration. The “current cognitive state” of a paper or book need not be entirely stored in the author's brain or entirely inside an AI context. It can be externalized into a set of structured, mutually constraining files.
+AHICP can draw on this line of thought to understand long-term research collaboration. The “current cognitive state” of a paper or book need not be entirely stored in the author's brain or entirely inside an AI context. It can be externalized into a set of structured, mutually constraining files.
 
-This article adopts a weaker claim, however: **the repository is at least a cognitive scaffold and a carrier of external research state.** Whether it should further be considered part of some “collective cognitive subject” is not necessary for HARC to function.
+This article adopts a weaker claim, however: **the repository is at least a cognitive scaffold and a carrier of external research state.** Whether it should further be considered part of some “collective cognitive subject” is not necessary for AHICP to function.
 
-HARC's aim is operational: important project state should be readable, recoverable, comparable, and auditable.
+AHICP's aim is operational: important project state should be readable, recoverable, comparable, and auditable.
 
 ---
 
-## 4. HARC's core architecture: separating authorial intention, AI representation, and final text
+## 4. AHICP's core architecture: separating authorial intention, AI representation, and final text
 
-HARC separates several things that are often collapsed in conventional writing workflows.
+AHICP separates several things that are often collapsed in conventional writing workflows.
 
 ### 4.1 Content Core: what does the human actually intend to claim?
 
@@ -98,7 +98,7 @@ Presentation preferences are different from research content. Typeface, font siz
 
 This separation prevents another form of drift: an AI may temporarily choose a font size simply to make a LaTeX build work, and a later agent may mistakenly treat that choice as a long-standing author preference.
 
-HARC further allows form preferences to inherit across levels: reusable author preferences, artifact-type templates, current-project decisions, external journal or publisher constraints, and temporary AI defaults should remain distinguishable.
+AHICP further allows form preferences to inherit across levels: reusable author preferences, artifact-type templates, current-project decisions, external journal or publisher constraints, and temporary AI defaults should remain distinguishable.
 
 ### 4.3 Decision Log: separating current state from historical state
 
@@ -110,7 +110,7 @@ The Core represents the current active state; the Log represents how the project
 
 ### 4.4 Working Memory: a parallel operational layer for current work and high-impact uncertainty
 
-HARC no longer treats Critical Clarification as a “Layer 1.5” between the Content/Form Core and the Working Argument Map.
+AHICP no longer treats Critical Clarification as a “Layer 1.5” between the Content/Form Core and the Working Argument Map.
 
 A more accurate architecture treats all three primary content layers as Long-Term Research Memory.
 
@@ -120,7 +120,7 @@ Layer 2 is the **Current Framework**: current argument structure, core propositi
 
 Layer 3 is the **Derived Artifact**: the paper, book, or report expanded primarily from Layer 2 while remaining compatible with Layer 1 and evidence constraints.
 
-Parallel to these three layers, HARC maintains **Working Memory**. Working Memory answers not “what does the project ultimately claim?” but “where is the project now, and where should work resume?” It records current stage, work objective, overall plan, active tasks, recently completed work, next actions, TODOs, blockers, pending human decisions, Clarifications, synchronization defects, and handoff notes.
+Parallel to these three layers, AHICP maintains **Working Memory**. Working Memory answers not “what does the project ultimately claim?” but “where is the project now, and where should work resume?” It records current stage, work objective, overall plan, active tasks, recently completed work, next actions, TODOs, blockers, pending human decisions, Clarifications, synchronization defects, and handoff notes.
 
 High-impact uncertainty is now simply a Clarification item inside Working Memory. When multiple reasonable interpretations of a core claim, concept, scope condition, inferential relation, section function, or key term exist, the AI should not choose privately. It should place the issue in Working Memory for human resolution.
 
@@ -132,7 +132,7 @@ For human core content:
 
 `Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-Working Memory is therefore not a fourth content layer. It also need not be one monolithic document. HARC can separate it into three logical roles: **Current Focus** for the highest-priority immediate objective, **Task Plan** for dynamic tasks, TODOs, blockers, pending human decisions, and Clarifications, and **Work Log** for stage-level historical summaries primarily intended for later human review.
+Working Memory is therefore not a fourth content layer. It also need not be one monolithic document. AHICP can separate it into three logical roles: **Current Focus** for the highest-priority immediate objective, **Task Plan** for dynamic tasks, TODOs, blockers, pending human decisions, and Clarifications, and **Work Log** for stage-level historical summaries primarily intended for later human review.
 
 This separation answers two different needs. Current Focus + Task Plan support seamless continuation after interruption; Work Log supports later human review of how the project and intellectual path changed. A replacement Agent therefore reads Current Focus and Task Plan by default rather than loading the entire Work Log. Completed tasks leave active Task Plan and receive high-level summaries in Work Log, while stable normative results are still promoted into the three Long-Term Memory layers.
 
@@ -142,7 +142,7 @@ Resolved Clarifications leave active state; the authoritative answer is deposite
 
 ### 4.5 Working Argument Map: the intermediate layer best suited to human–AI discussion
 
-A full paper or book may be too long to serve as the direct object of every structural discussion. HARC therefore maintains a Working Argument Map, primarily maintained by AI but constrained by the Content Core.
+A full paper or book may be too long to serve as the direct object of every structural discussion. AHICP therefore maintains a Working Argument Map, primarily maintained by AI but constrained by the Content Core.
 
 It should be far shorter than the full manuscript, while explicitly showing:
 
@@ -161,7 +161,7 @@ This document is not automatically endorsed by the author. It is first and forem
 
 ## 5. From Working Framework to Approved Framework: a semantic approval gate
 
-A core mechanism of HARC is the distinction between:
+A core mechanism of AHICP is the distinction between:
 
 1. **Working Framework** — a mutable structure that AI can continuously revise;
 2. **Approved Framework Snapshot** — a structural version that the human has actually read and explicitly approved.
@@ -174,13 +174,13 @@ The value of this mechanism is that it answers a question that becomes crucial i
 
 For a large book, a human may not be able to reread every sentence after each AI revision. But the human may still be able to review a compressed intellectual architecture with high intensity. Such a framework should include at least the central theses, major inferential relations, key distinctions, chapter roles, scope conditions, and explicitly unresolved issues.
 
-HARC therefore treats framework approval as a **primary substantive intellectual checkpoint**.
+AHICP therefore treats framework approval as a **primary substantive intellectual checkpoint**.
 
 ---
 
 ## 6. Humans as the bearers of responsibility in the AI era: AI may perform work, but responsibility-bearing status cannot be transferred
 
-HARC first needs a clear description of the AI role. An AI Agent is a research-collaboration tool, not an actor that this article needs to treat as a cognitive subject or as the ultimate bearer of responsibility. The article therefore does not use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language. More precisely, AI tools may perform or assist with extensive concrete work, including:
+AHICP first needs a clear description of the AI role. An AI Agent is a research-collaboration tool, not an actor that this article needs to treat as a cognitive subject or as the ultimate bearer of responsibility. The article therefore does not use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language. More precisely, AI tools may perform or assist with extensive concrete work, including:
 
 - searching and preliminarily filtering literature;
 - summarizing debates;
@@ -197,11 +197,11 @@ But the fact that AI can perform these kinds of work does not imply that the pur
 
 Accordingly, “human responsibility” is not treated in this article as an unexplained abstract property. The more precise formulation is: **humans are the bearers of responsibility.** This matters throughout research and inquiry, and it becomes especially important when papers, books, reports, or other outputs place knowledge claims into public circulation. Extensive AI participation in the work cannot eliminate identifiable human bearers of responsibility for those public claims.
 
-For long-form work, HARC operationalizes this responsibility-bearing status primarily through the Layer 2 Framework. AI may assist in proposing, organizing, and expressing the framework, but the framework cannot be merely a summary that receives a blanket human sign-off. Framework Approval requires the human to form a clear and complete understanding of every substantive element actually represented in it and to review and confirm those elements item by item, including core theses, inferential relations and their logical dependencies, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
+For long-form work, AHICP operationalizes this responsibility-bearing status primarily through the Layer 2 Framework. AI may assist in proposing, organizing, and expressing the framework, but the framework cannot be merely a summary that receives a blanket human sign-off. Framework Approval requires the human to form a clear and complete understanding of every substantive element actually represented in it and to review and confirm those elements item by item, including core theses, inferential relations and their logical dependencies, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
 
-Hardwig's discussion of epistemic dependence can help contextualize the fact that research practices already depend on external resources, other people's work, and mediated information (Hardwig, 1985). But HARC does not infer from this that AI should be treated as a cognitive subject structurally equivalent to a human expert, much less as the ultimate bearer of responsibility. The more important question is how human understanding, judgment, authorization, and responsibility-bearing status remain locatable, inspectable, and auditable when people use AI tools to generate, organize, or transform research material.
+Hardwig's discussion of epistemic dependence can help contextualize the fact that research practices already depend on external resources, other people's work, and mediated information (Hardwig, 1985). But AHICP does not infer from this that AI should be treated as a cognitive subject structurally equivalent to a human expert, much less as the ultimate bearer of responsibility. The more important question is how human understanding, judgment, authorization, and responsibility-bearing status remain locatable, inspectable, and auditable when people use AI tools to generate, organize, or transform research material.
 
-HARC's responsibility model is therefore neither “humans must personally produce the whole text line by line” nor “sufficiently capable AI reduces human responsibility to a ceremonial approval.” Humans remain responsible for project purpose and direction and, as the bearers of responsibility, for the substantive content of the Approved Framework. The concrete public version still requires Final Artifact Approval and remains subject to factual-accuracy, research-integrity, and venue requirements.
+AHICP's responsibility model is therefore neither “humans must personally produce the whole text line by line” nor “sufficiently capable AI reduces human responsibility to a ceremonial approval.” Humans remain responsible for project purpose and direction and, as the bearers of responsibility, for the substantive content of the Approved Framework. The concrete public version still requires Final Artifact Approval and remains subject to factual-accuracy, research-integrity, and venue requirements.
 
 ---
 
@@ -217,7 +217,7 @@ First, it improves the precision of responsibility attribution. We should not in
 
 Second, it helps organize review resources. Framework-level problems must be returned upstream for renewed approval. Expansion-level problems can be repaired downstream so long as the repair does not change the core structure.
 
-This distinction, however, must not be misread as meaning that humans “only need to review the framework and may ignore the final manuscript.” Influential current scholarly norms such as those of ICMJE and Nature Portfolio still connect publication under human authorship with human approval, judgment, and accountability. ICMJE's current authorship criteria explicitly include final approval of the version to be published and agreement to be accountable for all aspects of the work. Nature Portfolio's current AI policies likewise emphasize that authors remain responsible for originality, accuracy, and integrity, and that the associated judgment cannot simply be delegated to AI. HARC therefore distinguishes two approval gates: Framework Approval and Final Artifact Approval.
+This distinction, however, must not be misread as meaning that humans “only need to review the framework and may ignore the final manuscript.” Influential current scholarly norms such as those of ICMJE and Nature Portfolio still connect publication under human authorship with human approval, judgment, and accountability. ICMJE's current authorship criteria explicitly include final approval of the version to be published and agreement to be accountable for all aspects of the work. Nature Portfolio's current AI policies likewise emphasize that authors remain responsible for originality, accuracy, and integrity, and that the associated judgment cannot simply be delegated to AI. AHICP therefore distinguishes two approval gates: Framework Approval and Final Artifact Approval.
 
 ---
 
@@ -240,9 +240,9 @@ It can be understood as the work's **intellectual-architecture responsibility an
 
 This gate confirms the concrete release version. The required level of review must follow the actual requirements of the discipline, publisher, journal, school, or institution.
 
-Under current ICMJE and Nature Portfolio rules, for example, AI tools cannot substitute for the approval, judgment, and accountability roles assigned to human authors. HARC does not attempt to universalize those specific rules into a single authorship law for every field, nor does it seek to circumvent the requirements of any target journal, publisher, or institution. Instead, it provides a process architecture in which statements such as “I approved this,” “I am responsible for this,” and “this is my core judgment” can correspond to explicit versions, approval nodes, and audit trails.
+Under current ICMJE and Nature Portfolio rules, for example, AI tools cannot substitute for the approval, judgment, and accountability roles assigned to human authors. AHICP does not attempt to universalize those specific rules into a single authorship law for every field, nor does it seek to circumvent the requirements of any target journal, publisher, or institution. Instead, it provides a process architecture in which statements such as “I approved this,” “I am responsible for this,” and “this is my core judgment” can correspond to explicit versions, approval nodes, and audit trails.
 
-Within HARC, framework approval establishes an intellectual baseline genuinely understood and accepted by the human. Final approval reconnects a concrete public version to that baseline and to relevant external rules.
+Within AHICP, framework approval establishes an intellectual baseline genuinely understood and accepted by the human. Final approval reconnects a concrete public version to that baseline and to relevant external rules.
 
 ---
 
@@ -250,7 +250,7 @@ Within HARC, framework approval establishes an intellectual baseline genuinely u
 
 If a human-approved framework exists only inside GitHub and readers cannot recover it from the work itself, then it is merely a project-management device.
 
-HARC requires a stronger correspondence: the core structure of the Approved Framework should be faithfully projected into a reader-facing overview.
+AHICP requires a stronger correspondence: the core structure of the Approved Framework should be faithfully projected into a reader-facing overview.
 
 For an academic paper, this normally means that the abstract and introduction should clearly state the main problem, core thesis, principal argumentative moves, and roadmap of the paper. For a book, this should appear in the introduction or general overview and in the chapter roadmap.
 
@@ -260,7 +260,7 @@ This produces a useful drift detector. If `FW-001` and the final introduction ha
 
 ## 10. Replaceable agents and non-disposable research state
 
-Another HARC design principle can be summarized as follows:
+Another AHICP design principle can be summarized as follows:
 
 > **AI agents may be replaceable; research state must not disappear with the agent.**
 
@@ -274,25 +274,25 @@ A project should therefore not depend primarily on the fact that “a particular
 - which evidence conflicts remain unresolved;
 - the status of the current full artifact.
 
-Merely having these files in the repository does not guarantee that a replacement agent will read them correctly. AI platforms differ in how they discover entry files, automatic context, and repository instructions. HARC therefore also requires a **zero-context bootstrap protocol**: a root `START_HERE`, a machine-readable manifest, an explicit mandatory read order, and an Onboarding Report produced before substantive work.
+Merely having these files in the repository does not guarantee that a replacement agent will read them correctly. AI platforms differ in how they discover entry files, automatic context, and repository instructions. AHICP therefore also requires a **zero-context bootstrap protocol**: a root `START_HERE`, a machine-readable manifest, an explicit mandatory read order, and an Onboarding Report produced before substantive work.
 
 This handshake turns “the agent understood the project” from an assumption into an observable check. The Agent should first report current stage, objective, active tasks, recently completed work, next actions, blockers, and pending human decisions from Working Memory, then retrieve task-relevant long-term Core, Framework, and Artifact state. If these cannot be recovered from repository state, the project has a persistence/onboarding defect that should be repaired before large-scale expansion continues.
 
-HARC goes further by avoiding a second dynamic project-state copy in chat. The more precise mechanism is a **Repository-Backed Context Interface**: GitHub serves as both authoritative external memory and working-state store, while model context retains only a minimal Repository Resolver and temporarily retrieves files needed by the current task.
+AHICP goes further by avoiding a second dynamic project-state copy in chat. The more precise mechanism is a **Repository-Backed Context Interface**: GitHub serves as both authoritative external memory and working-state store, while model context retains only a minimal Repository Resolver and temporarily retrieves files needed by the current task.
 
-Working Memory and all three Long-Term Research Memory layers therefore remain in GitHub. Working Memory provides the resume point; Layers 1/2/3 provide durable intellectual and artifact state. The Agent fetches relevant latest canonical revisions when needed, reconfirms revisions before high-impact judgments or writes, writes changes directly back to the repository, and treats older excerpts already present in model context as stale after a write. A `HARC CONTEXT REFRESH` no longer means copying the whole project back into chat; it means resolving current task dependencies and fresh-fetching those files.
+Working Memory and all three Long-Term Research Memory layers therefore remain in GitHub. Working Memory provides the resume point; Layers 1/2/3 provide durable intellectual and artifact state. The Agent fetches relevant latest canonical revisions when needed, reconfirms revisions before high-impact judgments or writes, writes changes directly back to the repository, and treats older excerpts already present in model context as stale after a write. A `AHICP CONTEXT REFRESH` no longer means copying the whole project back into chat; it means resolving current task dependencies and fresh-fetching those files.
 
-This does not mean that a model can reason with literally no context. Relevant information still has to become temporarily available during an inference. HARC changes the authority and lifecycle: **GitHub is the truth source; model context is a short-lived projection of repository state for the current task.**
+This does not mean that a model can reason with literally no context. Relevant information still has to become temporarily available during an inference. AHICP changes the authority and lifecycle: **GitHub is the truth source; model context is a short-lived projection of repository state for the current task.**
 
-This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. HARC therefore keeps Current Focus + Task Plan short and current and keeps Layer 1 Cores and Layer 2 Frameworks compact. Work Log may grow as a human-oriented historical chronicle while remaining outside default AI context; detailed older versions, evidence, and archives remain available through selective retrieval.
+This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. AHICP therefore keeps Current Focus + Task Plan short and current and keeps Layer 1 Cores and Layer 2 Frameworks compact. Work Log may grow as a human-oriented historical chronicle while remaining outside default AI context; detailed older versions, evidence, and archives remain available through selective retrieval.
 
 The project thereby shifts from “depending on one enormous conversation” to “depending on recoverable explicit state.”
 
 ---
 
-## 11. HARC and existing authorship norms: from abstract responsibility to operational responsibility
+## 11. AHICP and existing authorship norms: from abstract responsibility to operational responsibility
 
-Existing scholarly norms provide important boundary cases for HARC rather than a single unified rule that HARC can simply copy.
+Existing scholarly norms provide important boundary cases for AHICP rather than a single unified rule that AHICP can simply copy.
 
 ICMJE links authorship with substantial contribution, drafting or critical revision of important content, final approval, and accountability. Nature Portfolio's current AI policies emphasize that authors remain responsible for originality, accuracy, and integrity and require disclosure of relevant AI use according to applicable rules. CRediT offers another useful perspective: its 14 contribution roles increase transparency about research contributions, but a contribution taxonomy is not identical to the determination of authorship eligibility under a particular journal or institution.
 
@@ -301,19 +301,19 @@ These examples suggest that at least two different questions must be addressed i
 1. Who did what?
 2. Who understood, approved, and is responsible for what?
 
-HARC focuses primarily on the process infrastructure for the second question, while still allowing contribution records and AI-use disclosures to become part of project state.
+AHICP focuses primarily on the process infrastructure for the second question, while still allowing contribution records and AI-use disclosures to become part of project state.
 
-From this perspective, HARC is not trying to redefine a journal's authorship policy. It is trying to provide an **engineering implementation of authorial responsibility**: making statements such as “I approved this,” “I take responsibility for this,” and “this is my core judgment” correspond to explicit versions, files, and audit trails.
+From this perspective, AHICP is not trying to redefine a journal's authorship policy. It is trying to provide an **engineering implementation of authorial responsibility**: making statements such as “I approved this,” “I take responsibility for this,” and “this is my core judgment” correspond to explicit versions, files, and audit trails.
 
 ---
 
 ## 12. Automation reliance: why human approval gates cannot become ceremonial clicks
 
-Framework approval by itself cannot guarantee genuine responsibility. A person can click “approve” without seriously reading. One of HARC's largest risks, therefore, is that genuine epistemic judgment becomes another formal ritual.
+Framework approval by itself cannot guarantee genuine responsibility. A person can click “approve” without seriously reading. One of AHICP's largest risks, therefore, is that genuine epistemic judgment becomes another formal ritual.
 
 This risk is related to the problem of over-reliance discussed in classic automation research. Parasuraman and Riley (1997), for example, describe one form of automation misuse as excessive reliance on automation and note its potential relation to monitoring failures and decision biases.
 
-HARC therefore cannot prove good collaboration merely from the existence of files. Future conformance tests should also examine:
+AHICP therefore cannot prove good collaboration merely from the existence of files. Future conformance tests should also examine:
 
 - whether humans can explain the Approved Framework in their own words;
 - whether humans understand key premises and limitations;
@@ -321,13 +321,13 @@ HARC therefore cannot prove good collaboration merely from the existence of file
 - whether a framework is compressed enough to be usable without hiding decisive issues;
 - whether the final text remains faithful to the human-approved structure.
 
-In other words, HARC addresses how to build an inspectable responsibility architecture; it does not automatically guarantee that every participant exercised high-quality judgment.
+In other words, AHICP addresses how to build an inspectable responsibility architecture; it does not automatically guarantee that every participant exercised high-quality judgment.
 
 ---
 
-## 13. As an open protocol, HARC should be empirically testable
+## 13. As an open protocol, AHICP should be empirically testable
 
-If HARC were only an essay about “how people ought to work with AI,” it would remain a normative proposal. One value of making it an open-source project is that it can be tested.
+If AHICP were only an essay about “how people ought to work with AI,” it would remain a normative proposal. One value of making it an open-source project is that it can be tested.
 
 At least the following types of experiment could be designed:
 
@@ -337,7 +337,7 @@ Give a new agent the repository but not the original chat and test whether it ca
 
 ### 13.2 Semantic drift test
 
-Let multiple agents successively revise the same research project and compare drift in the human's core theses with and without HARC.
+Let multiple agents successively revise the same research project and compare drift in the human's core theses with and without AHICP.
 
 ### 13.3 Framework fidelity test
 
@@ -351,23 +351,23 @@ Measure whether framework approval enables human review time to shift from low-l
 
 Have agents from different vendors and capability levels take over the same project and observe whether the repository architecture actually reduces platform dependence.
 
-HARC can therefore function both as a normative project and as an ongoing experimental platform for AI-assisted research methodology.
+AHICP can therefore function both as a normative project and as an ongoing experimental platform for AI-assisted research methodology.
 
 ---
 
 ## 14. Limitations and objections
 
-HARC faces at least the following limitations.
+AHICP faces at least the following limitations.
 
 First, **framework compression may hide detail-level risk**. A correct-looking high-level structure does not guarantee that every empirical citation, mathematical derivation, or factual statement is correct. Evidence verification cannot be replaced by Framework Approval.
 
-Second, **human judgment is itself limited**. If an author lacks sufficient competence in a field, a structured framework can become merely ceremonial confirmation. HARC cannot transform lack of expertise into genuine epistemic responsibility.
+Second, **human judgment is itself limited**. If an author lacks sufficient competence in a field, a structured framework can become merely ceremonial confirmation. AHICP cannot transform lack of expertise into genuine epistemic responsibility.
 
-Third, **maintaining the repository has overhead**. Full HARC may be too heavy for very short projects, so the protocol needs lightweight profiles.
+Third, **maintaining the repository has overhead**. Full AHICP may be too heavy for very short projects, so the protocol needs lightweight profiles.
 
 Fourth, **confidentiality and data-governance problems are not solved by GitHub structure itself**. Sensitive data, unpublished peer-review materials, and restricted files still require compliance with relevant institutional and platform policies.
 
-Fifth, **authorship norms differ across fields**. HARC must be treated as a base collaboration architecture rather than a universal authorization mechanism that overrides journals, publishers, universities, or law.
+Fifth, **authorship norms differ across fields**. AHICP must be treated as a base collaboration architecture rather than a universal authorization mechanism that overrides journals, publishers, universities, or law.
 
 Sixth, **AI capabilities continue to change**. The protocol must keep its logical layer stable while allowing the implementation layer to evolve with agent capabilities, retrieval tools, and automation systems.
 
@@ -377,7 +377,7 @@ Sixth, **AI capabilities continue to change**. The protocol must keep its logica
 
 Generative AI creates a new speed structure in research: AI tools can generate, combine, restate, organize, and explore far more material than humans can inspect line by line. If we continue to define a “real human author” as someone who personally typed every sentence, that concept no longer describes actual human–AI research practice. But if AI's ability to perform more work becomes a reason to transfer purpose, judgment, direction, and the position of ultimate responsibility to the model as well, human authorship and research responsibility lose substantive content.
 
-HARC proposes a different direction: **expand the executable and expressive capacity of research while making explicit that humans remain the bearers of responsibility, together with human purpose, authority, memory, evidence, framework confirmation, and final approval.**
+AHICP proposes a different direction: **expand the executable and expressive capacity of research while making explicit that humans remain the bearers of responsibility, together with human purpose, authority, memory, evidence, framework confirmation, and final approval.**
 
 Under this model, an AI Agent used as a tool may perform or assist with extensive work, but the purpose, central problem, and direction of the research or creative project must be given and navigated by humans. A Working Framework may be developed with AI assistance, but it can become an Approved Framework only after the human has formed a clear understanding of every substantive element actually represented in it, reviewed those elements item by item, and explicitly confirmed them. Full text may then be extensively AI-expanded under that structure, but the expansion must remain faithful to the framework and pass the appropriate Final Artifact Approval before public release.
 
@@ -387,7 +387,7 @@ The central methodological question in AI-era research therefore need not be fra
 
 > **Can a research community clearly explain who supplied the project's purpose and direction, who understood and confirmed its core intellectual structure, which concrete work was performed or assisted by AI tools, which human subjects ultimately bear responsibility for the knowledge claims and public version, and whether those responsibility relations and the work's intellectual continuity remain traceable after the Agent is replaced?**
 
-HARC turns this question into an open-protocol problem that can be implemented, audited, tested, and iteratively improved.
+AHICP turns this question into an open-protocol problem that can be implemented, audited, tested, and iteratively improved.
 
 ---
 
@@ -407,6 +407,6 @@ For complete source-verification notes, see `evidence/METHODOLOGY_SOURCES.md`. B
 
 ## Current article-development note
 
-This document is the first complete working draft of HARC's methodology article. It was expanded from `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`, but that framework has not yet passed formal human Framework Approval. The article must therefore be treated as `DERIVED-PROVISIONAL`, not as a final human-approved manuscript.
+This document is the first complete working draft of AHICP's methodology article. It was expanded from `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`, but that framework has not yet passed formal human Framework Approval. The article must therefore be treated as `DERIVED-PROVISIONAL`, not as a final human-approved manuscript.
 
 The Chinese `paper/METHODOLOGY_ARTICLE.zh-CN.md` is the canonical semantic and editing source. This English document must remain synchronized with it.

@@ -97,9 +97,9 @@ Recommended format:
 
 ## 5.5 Repository Context Activation
 
-After the Onboarding Report, the Agent must read `HARC_CONTEXT_INTERFACE.yaml` and `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and confirm:
+After the Onboarding Report, the Agent must read `AHICP_CONTEXT_INTERFACE.yaml` and `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` and confirm:
 
-`HARC REPOSITORY CONTEXT — ACTIVE`
+`AHICP REPOSITORY CONTEXT — ACTIVE`
 
 This confirmation loads only the minimal Repository Resolver:
 
@@ -150,7 +150,7 @@ The human can confirm understanding, correct a misreading, identify missing stat
 
 ## 8. Machine manifest and human-readable state
 
-`HARC_MANIFEST.yaml` is a machine-readable index of paths, state entry points, and invariants.
+`AHICP_MANIFEST.yaml` is a machine-readable index of paths, state entry points, and invariants.
 
 It does not replace:
 
@@ -164,7 +164,7 @@ If the manifest conflicts with Chinese canonical human-readable rules, Chinese c
 
 ## 9. Real limits of platform independence
 
-HARC cannot guarantee that every third-party AI platform will automatically read `START_HERE`, `AGENTS`, or the manifest.
+AHICP cannot guarantee that every third-party AI platform will automatically read `START_HERE`, `AGENTS`, or the manifest.
 
 It therefore uses multiple discovery mechanisms:
 

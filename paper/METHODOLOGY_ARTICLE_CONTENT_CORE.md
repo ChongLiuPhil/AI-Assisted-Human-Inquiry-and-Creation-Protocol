@@ -2,13 +2,13 @@
 
 > Chinese `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md` is canonical; this English file is its synchronized mirror. Every substantive change must update both versions.
 
-**Role:** canonical human-originated substantive foundation for the HARC methodology article.
+**Role:** canonical human-originated substantive foundation for the AHICP methodology article.
 
 This file contains only human-originated commitments that have been stated or clearly confirmed in the founding discussion. AI-generated terminology, stronger theses, literature interpretations, empirical research programs, and article structure remain outside this file until explicitly accepted by the human author.
 
-## C1. The article must explain HARC as a research-collaboration methodology
+## C1. The article must explain AHICP's methodological significance in research settings
 
-The HARC project should not only be an executable open protocol. It should also produce a methodology article that explains the project's ideas, architecture, and implications for human–AI research collaboration.
+The AHICP project should not only be an executable open protocol. It should also produce a methodology article that explains the project's ideas, architecture, and implications for human–AI research collaboration.
 
 ## C2. The article must address human purpose, direction, and responsibility-bearing status when AI tools participate
 
@@ -16,7 +16,7 @@ The article should treat humans as the source, initiator, and navigator of the p
 
 “Human responsibility” should not be treated here as an unexplained abstract property. The more precise core claim is: **in human–AI collaborative research and inquiry, humans remain the bearers of responsibility.**
 
-Within HARC, an AI Agent is treated as a collaboration tool. It may perform or assist with extensive search, synthesis, structuring, drafting, revision, restructuring, checking, formatting, and related work. The article should not characterize AI as a cognitive subject or use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language.
+Within AHICP, an AI Agent is treated as a collaboration tool. It may perform or assist with extensive search, synthesis, structuring, drafting, revision, restructuring, checking, formatting, and related work. The article should not characterize AI as a cognitive subject or use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language.
 
 The relevant question is instead which concrete work AI tools may perform or assist, and which acts of purpose-setting, understanding, judgment, confirmation, and responsibility must be borne by humans as the responsibility-bearing subjects.
 
@@ -52,7 +52,7 @@ The methodology should explain that long-term research continuity should reside 
 
 ## C9. The protocol must be practically implementable and reusable
 
-The HARC project is not intended as a purely abstract philosophical proposal. Its file hierarchy, update rules, approval states, and templates should be concrete enough to instantiate in future research projects. The exact empirical benchmarking program for evaluating HARC is not yet a human-confirmed commitment.
+The AHICP project is not intended as a purely abstract philosophical proposal. Its file hierarchy, update rules, approval states, and templates should be concrete enough to instantiate in future research projects. The exact empirical benchmarking program for evaluating AHICP is not yet a human-confirmed commitment.
 
 ## C10. The article must not overstate unconfirmed AI proposals
 
@@ -78,7 +78,7 @@ The mechanism does not assume every AI platform automatically reads the same fil
 
 ## C13. GitHub should serve as the authoritative external-memory and working-state interface
 
-The article should explain that HARC does not need to maintain a long-lived project-state copy in chat parallel to GitHub.
+The article should explain that AHICP does not need to maintain a long-lived project-state copy in chat parallel to GitHub.
 
 A more accurate architecture is:
 
@@ -142,7 +142,7 @@ Current resume state is maintained through Working Memory Index, Current Focus, 
 
 ## Provenance correction
 
-A prior version treated an explicit empirical testing program (handoff tests, semantic-drift tests, framework-fidelity tests, review-effort tests, cross-model portability tests) as if it were already part of the human-originated article foundation. That was too strong. The human founder required HARC to be practically implementable and reusable; the specific empirical test program was an AI-developed extension and remains provisional unless accepted.
+A prior version treated an explicit empirical testing program (handoff tests, semantic-drift tests, framework-fidelity tests, review-effort tests, cross-model portability tests) as if it were already part of the human-originated article foundation. That was too strong. The human founder required AHICP to be practically implementable and reusable; the specific empirical test program was an AI-developed extension and remains provisional unless accepted.
 
 ## Status
 

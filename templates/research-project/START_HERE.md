@@ -1,4 +1,4 @@
-# START HERE — HARC Project Zero-Context Onboarding
+# START HERE — AHICP Project Zero-Context Onboarding
 
 > **Language:** Chinese canonical: `START_HERE.zh-CN.md`; this English file is the synchronized mirror.
 
@@ -8,8 +8,8 @@ This file is the entry point for any AI Agent taking over this research project 
 
 Before substantive work:
 
-1. read `HARC_MANIFEST.yaml`;
-2. read `HARC_CONTEXT_INTERFACE.yaml`;
+1. read `AHICP_MANIFEST.yaml`;
+2. read `AHICP_CONTEXT_INTERFACE.yaml`;
 3. read `BOOTSTRAP_PROMPT.zh-CN.md`;
 4. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
 5. read `AGENTS.zh-CN.md`;
@@ -18,7 +18,7 @@ Before substantive work:
 8. read `docs/working-memory/task-plan.zh-CN.md`;
 9. skip Work Log by default;
 10. selectively retrieve current state from the three long-term layers using manifest/context-interface task routing;
-11. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a HARC Onboarding Report and confirm `HARC REPOSITORY CONTEXT — ACTIVE`;
+11. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a AHICP Onboarding Report and confirm `AHICP REPOSITORY CONTEXT — ACTIVE`;
 12. begin substantive work only after the report passes and Repository Context is active; update Current Focus / Task Plan after substantial work cycles and update Work Log at appropriate milestones.
 
 ## Onboarding Report must include

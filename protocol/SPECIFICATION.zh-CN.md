@@ -1,9 +1,9 @@
-# HARC 协议规范
+# AHICP 协议规范
 
-**Human–AI Research Collaboration Protocol（人类—AI 研究协作协议）**
+**AI-Assisted Human Inquiry and Creation Protocol（AI 辅助人类探究与创作协议）**
 
-**版本：** 0.2.0-draft  
-**范围：** 以 GitHub 为中心，由人类作者与一个或多个 AI Agent 进行持续研究与长篇思想协作。
+**版本：** 0.3.0-draft  
+**范围：** 以 GitHub 为中心，在人类主导下，由一个或多个 AI Agent 辅助持续的探究、研究、推理、写作与创作工作。
 
 > **本中文版本是规范性基准；英文 `SPECIFICATION.md` 是同步镜像。**
 
@@ -11,7 +11,7 @@
 
 ## 1. 目的
 
-HARC 定义一种持久、可审计的协作架构，用于人类思想方向与 AI 辅助研究、结构化、起草、修订、核验和格式处理长期共同发展的项目。
+AHICP 定义一种持久、可审计、以人为主导的工作协议，用于组织 AI 对人的探究、研究、推理、写作与创作的辅助，包括检索、结构化、提出方案、起草、修订、核验、转换与项目状态维护。
 
 协议旨在保存：
 
@@ -27,13 +27,13 @@ HARC 定义一种持久、可审计的协作架构，用于人类思想方向与
 - 显式批准状态；
 - 有意义的人类目的设定、理解、判断、确认与责任。
 
-HARC v0.2 假定 GitHub 是持久仓库基础设施。未来实现可以把相同逻辑角色映射到其他系统。
+AHICP v0.3 的当前参考实现假定 GitHub 是持久仓库基础设施。未来实现可以把相同逻辑角色映射到其他系统。
 
 ---
 
 ## 2. 规范性术语
 
-- **MUST（必须）** — HARC 合规所要求。
+- **MUST（必须）** — AHICP 合规所要求。
 - **SHOULD（应当）** — 强烈推荐，除非项目记录了偏离理由。
 - **MAY（可以）** — 可选。
 
@@ -41,9 +41,9 @@ HARC v0.2 假定 GitHub 是持久仓库基础设施。未来实现可以把相�
 
 ## 3. 核心原则
 
-长期研究项目**不得**把一次临时 AI 对话当作唯一持久状态。
+长期探究、研究或创作项目**不得**把一次临时 AI 对话当作唯一持久状态。
 
-> **聊天是交互界面；仓库才是持久的共享研究记忆。**
+> **聊天是交互界面；仓库才是持久的共享项目记忆。**
 
 重要项目状态必须外部化到显式、受版本控制的仓库成果中。
 
@@ -57,7 +57,7 @@ HARC v0.2 假定 GitHub 是持久仓库基础设施。未来实现可以把相�
 
 研究或创作项目的目的、核心问题与方向必须由人类作者发起、给予或明确批准。
 
-在 HARC 中，人类作者不仅是内容授权者，也必须保持为**责任主体／责任承担者**。这一点适用于研究与探究过程，并在研究结果、论证或知识主张进入公开传播时尤其重要。
+在 AHICP 中，人类作者不仅是内容授权者，也必须保持为**责任主体／责任承担者**。这一点适用于研究与探究过程，并在研究结果、论证或知识主张进入公开传播时尤其重要。
 
 人类作者可以让 AI Agent 作为工具执行或辅助大量检索、综合、结构化、起草、编辑、形式化、检查与格式处理工作。此类工作分担不得被理解为项目目的、核心判断、framework 授权、公开知识传播责任或最终责任主体位置的转移.
 
@@ -134,7 +134,7 @@ Decision Log 是重要人类决定的历史审计轨迹。
 
 ### 5.4 Working Memory Area
 
-Working Memory 与三层 Long-Term Research Memory 并行，并且规范的是**逻辑功能**而非固定单文件。
+Working Memory 与三层 Long-Term Project Memory 并行，并且规范的是**逻辑功能**而非固定单文件。
 
 项目 MUST 提供或等价实现以下逻辑角色：
 
@@ -171,7 +171,7 @@ Working Argument Map 是长篇思想结构的主要操作性讨论界面。
 
 它应暴露：
 
-- 研究问题；
+- 中心问题 / 项目问题；
 - 当前命题集合；
 - 概念词汇；
 - 前提/支持性主张；
@@ -291,7 +291,7 @@ Framework Approval 要求人类作者清楚理解、逐项审核并明确确认�
 2. 更新协议/治理文档；
 3. 在适当情况下更新可复用模板；
 4. 验证新 Agent 是否能发现新规则；
-5. 不得仅仅因为治理规则变化而改变研究内容。
+5. 不得仅仅因为治理规则变化而改变项目实质内容。
 
 ---
 
@@ -352,7 +352,7 @@ Framework Approval 后，AI Agent 可以大量扩写作品。
 
 实质性偏离包括：改变中心命题、新增重大结论、移除关键前提、改变主要主张之间的关系、以改变论证的方式改变范围，或重新组织成果以至于已批准推理不能被准确表示。
 
-HARC 区分：
+AHICP 区分：
 
 - **framework-level defect** — 已经存在于人类批准思想架构中的缺陷；
 - **derived-expansion defect** — 只在后续 AI 扩写或实现中引入的局部问题。
@@ -407,15 +407,15 @@ AI Agent 持续进行扩写、编辑、研究整合与格式处理时，成果�
 
 ---
 
-## 14. 认知劳动委托与认识责任
+## 14. AI 工作分担与人类认识责任
 
-HARC 区分**认知劳动的委托**与**认识责任的委托**。
+AHICP 区分**AI 可以执行或辅助的工作分担**与**人类不能转移的认识判断和责任**。
 
 AI 可以进行大量检索、综合、结构化、起草、形式化、一致性检查、修订和格式处理。
 
 人类注意力应集中在高杠杆决定上，包括：
 
-- 研究目标与问题；
+- 项目目的、研究目标与核心问题；
 - 核心承诺；
 - 主要推论架构；
 - 对重要 AI 提议的接受/拒绝；
@@ -423,13 +423,13 @@ AI 可以进行大量检索、综合、结构化、起草、形式化、一致�
 - Framework Approval；
 - 在需要时完成 Final Artifact Approval。
 
-HARC 不主张文件结构本身能保证良好判断。批准机制是治理支架，不是人类能力与理解的替代物。
+AHICP 不主张文件结构本身能保证良好判断。批准机制是治理支架，不是人类能力与理解的替代物。
 
 ---
 
 ## 15. 持久记忆与上下文限制
 
-HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上下文。
+AHICP 提供的是持久项目记忆，而不是字面意义上的无限模型上下文。
 
 项目应通过以下方式扩展：
 
@@ -454,12 +454,12 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 - `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror；
 - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror；
 - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror；
-- `HARC_MANIFEST.yaml`；
-- `HARC_CONTEXT_INTERFACE.yaml` 或等价机器可读 context policy；
+- `AHICP_MANIFEST.yaml`；
+- `AHICP_CONTEXT_INTERFACE.yaml` 或等价机器可读 context policy；
 - 根 `AGENTS.zh-CN.md` / English mirror；
 - 一个可发现的 Onboarding Handshake 规范。
 
-新的 AI Agent 在实质性工作前 MUST 按启动入口读取 control plane、Working Memory Index、Current Focus 与 Task Plan，并 SHOULD 先输出 HARC Onboarding Report，说明当前最高优先级目标、primary blocker、immediate next action、active tasks、next actions、blockers、pending human decisions / clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Work Log 默认不读取。Onboarding Report MUST 确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载访问内核；Blocking Clarifications、Framework、Artifact 与 Core 等动态状态仍必须在后续任务中从 GitHub 最新 canonical revision 按需读取。
+新的 AI Agent 在实质性工作前 MUST 按启动入口读取 control plane、Working Memory Index、Current Focus 与 Task Plan，并 SHOULD 先输出 AHICP Onboarding Report，说明当前最高优先级目标、primary blocker、immediate next action、active tasks、next actions、blockers、pending human decisions / clarifications、Framework/Artifact 状态、同步缺陷与当前允许的下一步。Work Log 默认不读取。Onboarding Report MUST 确认 `AHICP REPOSITORY CONTEXT — ACTIVE`。该确认只加载访问内核；Blocking Clarifications、Framework、Artifact 与 Core 等动态状态仍必须在后续任务中从 GitHub 最新 canonical revision 按需读取。
 
 如果 Agent 无法从仓库完成该报告，项目存在 onboarding/persistence defect。
 
@@ -467,7 +467,7 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 
 新的 AI Agent 至少应通过阅读以下内容继续正常项目工作：
 
-1. `START_HERE.zh-CN.md`、`HARC_MANIFEST.yaml` 与 `HARC_CONTEXT_INTERFACE.yaml`；
+1. `START_HERE.zh-CN.md`、`AHICP_MANIFEST.yaml` 与 `AHICP_CONTEXT_INTERFACE.yaml`；
 2. 项目 `AGENTS.zh-CN.md`；
 3. Working Memory Index；
 4. Current Focus；
@@ -479,11 +479,11 @@ HARC 提供的是持久项目记忆，而不是字面意义上的无限模型上
 
 Work Log 仅在人类要求历史回顾、专门审计、变迁重建或 current/history conflict 时按需读取。
 
-项目应记录所采用的 HARC version/tag/commit，避免把后续上游协议变化静默视为已经接受的治理规则。
+项目应记录所采用的 AHICP version/tag/commit，避免把后续上游协议变化静默视为已经接受的治理规则。
 
 ### 16.3 Repository-Backed Context
 
-项目 SHOULD 使用 `HARC_CONTEXT_INTERFACE.yaml` 或等价机制规定：
+项目 SHOULD 使用 `AHICP_CONTEXT_INTERFACE.yaml` 或等价机制规定：
 
 - GitHub 是唯一权威项目状态源；
 - 模型上下文只是非权威临时缓存；
@@ -550,16 +550,16 @@ Work Log 仅在人类要求历史回顾、专门审计、变迁重建或 current
 
 ---
 
-## 20. 方法论文章作为受 HARC 治理的成果
+## 20. 方法论文章作为受 AHICP 治理的成果
 
-HARC 项目本身应维护两个互相支撑的产出：
+AHICP 项目本身应维护两个互相支撑的产出：
 
 1. 可执行开放协议；
 2. 解释并批判性发展协议的方法论文章。
 
 方法论文章应讨论 AI 辅助研究的概念意义，包括人类认知/认识责任、可委托与不可委托的思想劳动、持久研究状态、semantic version control、framework-level authorship 与 publication accountability。
 
-文章自身必须遵守 HARC：
+文章自身必须遵守 AHICP：
 
 - 维护 Working Framework；
 - 区分 AI 提议与人类批准主张；
@@ -583,7 +583,7 @@ HARC 项目本身应维护两个互相支撑的产出：
 
 ---
 
-## 22. 最小 HARC Profile
+## 22. 最小 AHICP Profile
 
 轻量合规项目至少应包括：
 
@@ -593,8 +593,8 @@ BOOTSTRAP_PROMPT.zh-CN.md
 SESSION_CONTEXT_BOOTSTRAP.zh-CN.md
 ONBOARDING_REPORT_TEMPLATE.zh-CN.md
 AGENTS.zh-CN.md
-HARC_MANIFEST.yaml
-HARC_CONTEXT_INTERFACE.yaml
+AHICP_MANIFEST.yaml
+AHICP_CONTEXT_INTERFACE.yaml
 core/CONTENT_CORE.zh-CN.md
 core/FORM_CORE.zh-CN.md
 core/DECISION_LOG.zh-CN.md
@@ -618,7 +618,7 @@ docs/framework-status.zh-CN.md
 
 ## 23. 可迁移性
 
-HARC v0.2 当前以 GitHub 为目标，但逻辑功能与精确文件名相分离。
+AHICP v0.3 当前参考实现以 GitHub 为目标，但逻辑功能与精确文件名相分离。
 
 未来实现可以把相同规范角色映射到其他受版本控制的协作系统，只要仍保留显式状态、人类/AI 来源区分、批准门、可检查历史和跨 Agent 交接。
 
@@ -626,7 +626,7 @@ HARC v0.2 当前以 GitHub 为目标，但逻辑功能与精确文件名相分�
 
 ## 24. 设计命题
 
-HARC 把 AI 辅助研究中经常被混在一起的东西分开：
+AHICP 把 AI 辅助探究、研究与创作中经常被混在一起的东西分开：
 
 1. Layer 1 人类作者核心基础；
 2. Layer 2 当前论述框架；
@@ -637,15 +637,15 @@ HARC 把 AI 辅助研究中经常被混在一起的东西分开：
 7. 批准状态；
 8. 历史决定。
 
-协议把这种分离视为持久、可审计、人类治理的 AI 辅助研究之基础。
+协议把这种分离视为持久、可审计、人类治理的 AI 辅助探究与创作之基础。
 
 ---
 
 ## 25. 双语规范同步
 
-HARC 项目文档应以中文和英文双语维护。
+AHICP 项目文档应以中文和英文双语维护。
 
-对于 HARC 自身仓库以及采用双语 profile 的项目：
+对于 AHICP 自身仓库以及采用双语 profile 的项目：
 
 1. 中文是规范性的语义来源，也是人类编辑/审阅的第一基准。
 2. 英文是同步翻译镜像。

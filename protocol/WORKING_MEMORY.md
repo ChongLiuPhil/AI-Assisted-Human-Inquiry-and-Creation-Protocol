@@ -1,12 +1,12 @@
-# HARC Working Memory Protocol
+# AHICP Working Memory Protocol
 
 > **Language:** Chinese canonical: `WORKING_MEMORY.zh-CN.md`; this English file is the synchronized mirror.
 
 ## 1. Definition
 
-HARC distinguishes two kinds of project memory.
+AHICP distinguishes two kinds of project memory.
 
-### A. Long-Term Research Memory
+### A. Long-Term Project Memory
 
 This stores what the project is, its durable intellectual structure, and the artifacts that constitute its long-term state.
 

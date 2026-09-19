@@ -401,3 +401,24 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Working Argument Map dependency structure；Framework Approval protocol；Framework Status；Working Memory。
 
 **状态：** 已确认；双语传播执行。
+
+
+---
+
+## 2026-09-19 — AHICP-D026
+
+**来源：** 人类项目发起人  
+**分类：** PROTOCOL, CONTENT, FORM
+
+**决定：**
+
+1. 原 **Human–AI Research Collaboration Protocol (HARC)** 正式迁移为 **AI-Assisted Human Inquiry and Creation Protocol (AHICP)**。
+2. 固定副标题为：**A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.**
+3. 协议的规范性方向明确为：**human-led, AI-assisted, repository-grounded**。
+4. AI 不被规范性描述为与人对称的认知主体、知识劳动主体或最终责任主体。AI 可以执行或辅助大量检索、比较、结构化、提出方案、起草、核验、转换与仓库维护工作；人的目的、方向、实质判断、批准和最终责任位置保持不可转移。
+5. 协议适用范围从以 research 为主要默认场景，上位化为 inquiry / research / reasoning / writing / creation。真正只讨论研究证据、研究诚信、学术论文或研究政策的部分可以继续保持 research-specific，不进行机械替换。
+6. HARC v0.2.x 的核心治理结构继续继承；迁移目标版本为 **AHICP v0.3.0-draft**。
+7. 历史 Decision IDs（如 HARC-D001–HARC-D025）保持原样，作为历史审计标识；新决定从本条开始采用 AHICP 前缀。
+8. AHICP 与 **Personal Publishing Framework (PPF)** 保持边界：AHICP 规范 AI 如何辅助人的探究与创作；PPF 规范作品的 source / build / publish / release / archive 生命周期。二者可独立采用，也可组合采用。
+
+**状态：** 人类已明确确认；正在通过 v0.3 semantic migration 分支传播。

@@ -58,7 +58,7 @@ AI Agent 可以执行或辅助越来越多的检索、结构化、起草、修�
 
 长期人机研究项目的思想连续性，不应依赖于某一个聊天窗口、某一个模型、某一个账号记忆或某一个 Agent 的私有上下文。与项目相关的持久状态应当被外部化到显式、受版本控制的仓库文档中。
 
-**创始依据：** Article Content Core C3、C8；HARC Protocol Core P1、P9、P10。
+**创始依据：** Article Content Core C3、C8；AHICP Protocol Core P1、P9、P10。
 
 ---
 
@@ -83,7 +83,7 @@ AI Agent 可以执行或辅助越来越多的检索、结构化、起草、修�
 
 表达 **semantic version control（语义版本控制）** 是对这一架构的 `AI-PROPOSED` 术语；底层的分离和传播规则来自人类。
 
-**创始依据：** Article Content Core C4；HARC Protocol Core P2–P5、P12。
+**创始依据：** Article Content Core C4；AHICP Protocol Core P2–P5、P12。
 
 ---
 
@@ -91,9 +91,9 @@ AI Agent 可以执行或辅助越来越多的检索、结构化、起草、修�
 
 **来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-研究或创作项目的目的、核心问题与方向应由人类给予、发起并持续导航或批准。AI Agent 在 HARC 中作为工具，可以执行或辅助大量检索、综合、结构化、起草、重组、核查、格式处理和其他工作，但不应被描述为具有认知性的主体，也不应使用“AI 承担认知劳动 / 认知任务”作为中心表述。
+研究或创作项目的目的、核心问题与方向应由人类给予、发起并持续导航或批准。AI Agent 在 AHICP 中作为工具，可以执行或辅助大量检索、综合、结构化、起草、重组、核查、格式处理和其他工作，但不应被描述为具有认知性的主体，也不应使用“AI 承担认知劳动 / 认知任务”作为中心表述。
 
-AI 能够执行大量工作，并不意味着项目目的、核心判断或最终责任主体位置可以转移给 AI。更精确地说，HARC 要求**人类保持为责任主体**。
+AI 能够执行大量工作，并不意味着项目目的、核心判断或最终责任主体位置可以转移给 AI。更精确地说，AHICP 要求**人类保持为责任主体**。
 
 这一责任主体地位至少体现在：
 
@@ -108,7 +108,7 @@ AI 能够执行大量工作，并不意味着项目目的、核心判断或最�
 
 `responsibility concentration` 不再作为当前中心术语。“人类责任”在标题或一般叙述中可以作为简写，但理论上应解释为“人类是责任主体 / humans remain the bearers of responsibility”。
 
-**创始依据：** Article Content Core C2、C16；HARC Protocol Core P17；HARC-D023、HARC-D024.
+**创始依据：** Article Content Core C2、C16；AHICP Protocol Core P17；HARC-D023、HARC-D024.
 
 ## T4 — Framework Responsibility Thesis
 
@@ -127,9 +127,9 @@ Framework Approval 前，人类作者必须对其中实际呈现的全部实质�
 
 Framework 可以由 AI 辅助提出、组织和表达，但获批版本必须真实体现人类作者的核心思想与认同。人类承担该 framework 所承载的原创性、理解、判断与思想责任；AI 不能成为这一责任的承担主体。
 
-这一命题是 HARC 的治理架构，并不声称 Framework Approval 自动构成所有领域的一般作者身份理论，也不取消 Final Artifact Approval、事实准确性、研究诚信或目标渠道规则。尤其在公开传播知识主张时，责任主体仍必须是人类。
+这一命题是 AHICP 的治理架构，并不声称 Framework Approval 自动构成所有领域的一般作者身份理论，也不取消 Final Artifact Approval、事实准确性、研究诚信或目标渠道规则。尤其在公开传播知识主张时，责任主体仍必须是人类。
 
-**创始依据：** Article Content Core C5、C16；HARC Protocol Core P6、P13、P17；HARC-D023、HARC-D024.
+**创始依据：** Article Content Core C5、C16；AHICP Protocol Core P6、P13、P17；HARC-D023、HARC-D024.
 
 ## T5 — 双批准门命题
 
@@ -156,7 +156,7 @@ Framework Approval 与 Final Artifact Approval 是两个不同的门槛。
 
 这提供一个实用忠实性检查：读者被告知的作品结构，是否与人类实际批准的 framework 对应。
 
-**创始依据：** Article Content Core C7；HARC Protocol Core P7。
+**创始依据：** Article Content Core C7；AHICP Protocol Core P7。
 
 ---
 
@@ -168,7 +168,7 @@ AI Agent 应当可替换，而不破坏项目连续性。项目的持久身份�
 
 这并不意味着无限上下文。长期记忆应通过紧凑当前状态、历史日志/归档、索引与选择性检索扩展。
 
-**创始依据：** Article Content Core C3、C8；HARC Protocol Core P9–P10。
+**创始依据：** Article Content Core C3、C8；AHICP Protocol Core P9–P10。
 
 ---
 
@@ -176,15 +176,15 @@ AI Agent 应当可替换，而不破坏项目连续性。项目的持久身份�
 
 **来源：** `HUMAN-ORIGINATED`
 
-HARC 应能够在未来论文、书籍、文章、报告及长期思想项目中实际实施并复用。因此其架构必须具体到可通过仓库文件、模板、更新规则和批准状态实例化。
+AHICP 应能够在未来论文、书籍、文章、报告及长期思想项目中实际实施并复用。因此其架构必须具体到可通过仓库文件、模板、更新规则和批准状态实例化。
 
-**创始依据：** Article Content Core C9；HARC Protocol Core P11。
+**创始依据：** Article Content Core C9；AHICP Protocol Core P11。
 
 ### 经验验证扩展
 
 `AI-PROPOSED`
 
-HARC 可以进一步发展成经验方法论研究计划，例如 handoff test、semantic-drift test、framework-fidelity test、review-effort study 与 cross-model portability test。
+AHICP 可以进一步发展成经验方法论研究计划，例如 handoff test、semantic-drift test、framework-fidelity test、review-effort study 与 cross-model portability test。
 
 它目前属于研究议程提议，不属于人类批准的核心命题。
 
@@ -206,7 +206,7 @@ Clarification 不是 Layer 1.5。未解决 item 不是人类长期承诺。
 
 `Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-**创始依据：** Article Content Core C11、C14；HARC Protocol Core P19、P23；HARC-D021。
+**创始依据：** Article Content Core C11、C14；AHICP Protocol Core P19、P23；HARC-D021。
 
 ---
 
@@ -214,11 +214,11 @@ Clarification 不是 Layer 1.5。未解决 item 不是人类长期承诺。
 
 **来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-持久仓库状态只有在新的 AI Agent 能够可靠发现并按正确顺序读取它时，才能真正支持跨 Agent 连续性。因此，HARC 应提供显式零上下文入口、mandatory read order、机器可读 manifest 与 Onboarding Handshake。
+持久仓库状态只有在新的 AI Agent 能够可靠发现并按正确顺序读取它时，才能真正支持跨 Agent 连续性。因此，AHICP 应提供显式零上下文入口、mandatory read order、机器可读 manifest 与 Onboarding Handshake。
 
 成功接管不应被假定。Agent 应先从 Working Memory 报告当前阶段、目标、active tasks、最近完成、next actions、blockers 与 pending human decisions，再按任务读取 Framework/Artifact 等长期状态。
 
-**创始依据：** Article Content Core C12；HARC Protocol Core P20。
+**创始依据：** Article Content Core C12；AHICP Protocol Core P20。
 
 ---
 
@@ -228,7 +228,7 @@ Clarification 不是 Layer 1.5。未解决 item 不是人类长期承诺。
 
 跨 Agent 连续性不要求在聊天上下文中维护第二份动态项目状态。
 
-HARC 应把 GitHub 作为权威外部记忆与工作状态接口：
+AHICP 应把 GitHub 作为权威外部记忆与工作状态接口：
 
 `GitHub Repository = authoritative external memory + working state`
 
@@ -238,7 +238,7 @@ Agent 根据当前任务按需读取最新 canonical 文件；高影响判断和
 
 会话中只保留最小 Repository Resolver。Working Memory 与三层长期记忆都留在 GitHub，并按需读取，而不是复制成聊天内长期副本。
 
-**创始依据：** Article Content Core C13；HARC Protocol Core P21–P22；HARC-D020。
+**创始依据：** Article Content Core C13；AHICP Protocol Core P21–P22；HARC-D020。
 
 
 ---
@@ -247,7 +247,7 @@ Agent 根据当前任务按需读取最新 canonical 文件；高影响判断和
 
 **来源：** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-HARC 的三个内容层都是 Long-Term Research Memory：
+AHICP 的三个内容层都是 Long-Term Research Memory：
 
 `Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
 
@@ -257,7 +257,7 @@ HARC 的三个内容层都是 Long-Term Research Memory：
 
 Working Memory 中形成稳定人类确认的内容必须 Promotion 到相应长期层。
 
-**创始依据：** Article Content Core C14；HARC Protocol Core P23；HARC-D021。
+**创始依据：** Article Content Core C14；AHICP Protocol Core P23；HARC-D021。
 
 ---
 
@@ -277,7 +277,7 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 因此 Work Log 默认不属于 AI onboarding 必读上下文。它应定期生成阶段性纪要，但不保存 AI 隐藏推理，也不替代长期规范状态。
 
-**创始依据：** Article Content Core C15；HARC Protocol Core P24；HARC-D022。
+**创始依据：** Article Content Core C15；AHICP Protocol Core P24；HARC-D022。
 
 ---
 
@@ -358,9 +358,9 @@ Current Focus 让新 Agent 知道当前最重要的事情；Task Plan 让新 Age
 
 ## VIII. 既有思想与制度背景
 
-**功能：** 谨慎比较 HARC 与 extended/distributed cognition、epistemic dependence、automation reliance、contribution taxonomy 及当前部分 authorship/AI policy。
+**功能：** 谨慎比较 AHICP 与 extended/distributed cognition、epistemic dependence、automation reliance、contribution taxonomy 及当前部分 authorship/AI policy。
 
-文献的作用是给 HARC 提供背景并限制其主张；不能借此暗示 HARC 自己的概念已经被这些文献证明。
+文献的作用是给 AHICP 提供背景并限制其主张；不能借此暗示 AHICP 自己的概念已经被这些文献证明。
 
 ## IX. 局限、反对意见与可能的验证
 
@@ -402,7 +402,7 @@ T9 + T10 + T11 + T12 + T13
 └── 把 T1 / T2 / T7 的持久状态、治理与跨 Agent 连续性转化为可执行工作流程
 
 T1 + T2 + T3 + T4 + T5 + T6 + T7 + T9 + T10 + T11 + T12 + T13
-└── 共同构成 T8 “HARC 可实际实施并复用”的主要实现条件
+└── 共同构成 T8 “AHICP 可实际实施并复用”的主要实现条件
 ```
 
 该依赖图由 AI 组织，但其结构性修复已经通过 `HARC-D025` 获得人类确认。它表示命题之间的主要支持与实现关系，不声称所有箭头都是形式逻辑上的严格蕴涵。
@@ -422,7 +422,7 @@ T1 + T2 + T3 + T4 + T5 + T6 + T7 + T9 + T10 + T11 + T12 + T13
 
 核验过的来源笔记维护在 `evidence/METHODOLOGY_SOURCES.zh-CN.md`；参考文献元数据维护在 `paper/methodology-references.bib`。
 
-**证据规则：** 上述任何来源都不能单独证明 HARC 所提出的 framework 架构、`semantic version control` 或其经验有效性。HARC-D023 关于 AI 工具地位与人类 Framework 责任的规范主张属于人类作者的协议/方法论立场，而不是由这些文献直接证明的经验结论。
+**证据规则：** 上述任何来源都不能单独证明 AHICP 所提出的 framework 架构、`semantic version control` 或其经验有效性。HARC-D023 关于 AI 工具地位与人类 Framework 责任的规范主张属于人类作者的协议/方法论立场，而不是由这些文献直接证明的经验结论。
 
 ---
 

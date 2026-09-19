@@ -1,16 +1,16 @@
-# HARC Protocol Core
+# AHICP Protocol Core
 
 ## Purpose
 
-This file records the active human-originated design commitments that define the Human–AI Research Collaboration Protocol project itself.
+This file records the active human-originated design commitments that define the AI-Assisted Human Inquiry and Creation Protocol (AHICP) project itself.
 
-It is the project's semantic source of truth for what HARC is intended to achieve. AI elaborations may extend these ideas, but should not silently replace them.
+It is the project's semantic source of truth for what AHICP is intended to achieve. AI elaborations may extend these ideas, but should not silently replace them.
 
 ---
 
-## P1. GitHub-centered persistent collaboration
+## P1. GitHub-centered durable project state and AI assistance
 
-The protocol should support sustained collaboration among a human author, GitHub, and one or more AI agents.
+The protocol should support sustained human inquiry and creation on top of a durable repository such as GitHub, with assistance from one or more replaceable AI agents.
 
 Important project state should be explicitly stored in repository documents rather than depending on the memory or conversation context of one particular AI platform or agent.
 
@@ -20,27 +20,27 @@ The initial protocol targets GitHub. Other platforms may be considered later.
 
 During discussion, the human author will express, correct, accept, reject, qualify, and develop substantive ideas.
 
-Durable human decisions about the research topic should be extracted and persisted into a foundational content document.
+Durable human decisions about the project's substantive content should be extracted and persisted into a foundational content document.
 
 AI-generated expansion must not silently contradict or replace this human foundation.
 
-## P3. Form/presentation intention must be separated from research content
+## P3. Form/presentation intention must be separated from substantive content
 
-Human instructions about typography, layout, visual design, citation presentation, writing format, artifact type, and other presentation concerns are distinct from substantive research claims.
+Human instructions about typography, layout, visual design, citation presentation, writing format, artifact type, and other presentation concerns are distinct from substantive content decisions.
 
 They should therefore be stored in a separate form/presentation source of truth.
 
 Reusable author preferences may be inherited by future projects where appropriate.
 
-## P4. Layer 2 should preserve a durable but highly revisable current framework
+## P4. Layer 2 should preserve a durable but highly revisable operational framework
 
-Layer 2 belongs to Long-Term Research Memory but is more revisable than Layer 1. It should represent the current intellectual structure of the paper, book, or other research artifact in a compact, inspectable form.
+Layer 2 belongs to Long-Term Project Memory but is more revisable than Layer 1. It should represent the current structure of a paper, book, creative work, or other artifact in a compact, inspectable form.
 
 This layer should contain core propositions, key concepts, inferential relations, section/chapter functions, conceptual distinctions, and current structural state.
 
-Layer 2 must remain constrained by the Layer 1 Human Authorial Core while it may contain structural material not stated item-by-item in Layer 1 but necessary for developing the research.
+Layer 2 must remain constrained by the Layer 1 Human Authorial Core while it may contain structural material not stated item-by-item in Layer 1 but necessary for developing the project.
 
-For large projects, it should be the primary human–AI interface for structural discussion. Working Argument Maps and Approved Framework snapshots are different approval states within this long-term layer.
+For large projects, it should be the primary human–AI interface for structural discussion. Working Frameworks / Argument Maps and Approved Framework snapshots may serve as different approval states or project-type instances within this long-term layer.
 
 ## P5. Human feedback must propagate upstream first
 
@@ -84,11 +84,11 @@ It should not assume an AI can load unlimited history at once. Large projects sh
 
 ## P11. The protocol should be reusable and portable
 
-HARC should exist as an independent open project, not depend on any one research topic, and provide reusable specifications and templates for new papers, books, articles, reports, and sustained intellectual projects.
+AHICP should exist as an independent open project, not depend on any one research topic, and provide reusable specifications and templates for inquiry, research, papers, books, articles, reports, creative work, and other sustained projects.
 
 A future AI agent should be able to inspect this repository and instantiate a topic-appropriate project structure that follows the same collaboration logic.
 
-## P12. The protocol should make human–AI contribution boundaries explicit
+## P12. The protocol should make the boundary between human agency and AI assistance explicit
 
 The system should distinguish at least:
 
@@ -100,7 +100,7 @@ The system should distinguish at least:
 - approval state;
 - historical decisions.
 
-The purpose is not to hide AI assistance, but to make the collaboration auditable and intellectually governable.
+The purpose is not to hide AI assistance, but to make that assistance auditable while keeping human purpose, judgment, approval, and responsibility explicit.
 
 ## P13. Framework-level responsibility and expansion-level defects should be distinguished
 
@@ -136,24 +136,24 @@ A stated three-pass audit therefore means three successive review-and-repair cyc
 
 After those cycles, the project should perform an additional independent post-repair audit to detect residual omissions, regressions, or inconsistencies.
 
-## P16. HARC should produce both an executable open project and a methodology article
+## P16. AHICP should produce both an executable open project and a methodology article
 
-HARC has two mutually supporting outputs:
+AHICP has two mutually supporting outputs:
 
 1. an executable and reusable open collaboration protocol, including specifications, templates, states, and governance rules;
 2. a methodology article explaining the conceptual basis of the protocol and developing its significance for research practice in the AI era.
 
 The article should address, among other themes, humans as the bearers of responsibility in research and inquiry, human authorization of research purpose and direction, the scope of work that AI tools may perform or assist, human intellectual responsibility at the framework layer, responsibility for public dissemination of knowledge, AI-assisted expansion, epistemic dependence, persistent external research memory, and the conditions under which human accountability remains meaningful.
 
-The article is a scholarly derivative of the protocol and should itself be developed under HARC-style framework control rather than treated as an ungoverned explanatory essay.
+The article is a scholarly derivative of the protocol and should itself be developed under AHICP-style framework control rather than treated as an ungoverned explanatory essay.
 
-## P17. AI is a collaboration tool; humans remain the bearers of responsibility for project purpose and direction
+## P17. AI is an assistive tool; humans remain the bearers of project purpose, direction, and responsibility
 
-HARC treats an AI Agent as a research-collaboration tool, not as a participant that must be granted human-like cognitive-subject status or ultimate responsibility-bearing status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
+AHICP treats an AI Agent as an assistive tool within human-led inquiry and creation, not as a participant that must be granted human-like cognitive-subject status or ultimate responsibility-bearing status. The protocol should not use “AI performs cognitive labor” or “AI performs cognitive tasks” as normative language. More precisely, AI may perform or assist with extensive search, synthesis, drafting, restructuring, checking, formatting, and related work.
 
 The purpose, central problem, and direction of a research or creative project should originate with humans and remain under human initiation, navigation, or approval. AI capability to perform substantial work does not transfer the project's purpose, core judgments, or the position of ultimate responsibility to AI.
 
-Accordingly, HARC's shorthand “human responsibility” should be understood more precisely as follows: **in human–AI collaborative research and inquiry, humans remain the bearers of responsibility.** Especially when research results, arguments, or knowledge claims enter public circulation through papers, books, reports, websites, or other forms, the ultimate bearers of responsibility must remain human.
+Accordingly, AHICP's shorthand “human responsibility” should be understood more precisely as follows: **in human–AI collaborative research and inquiry, humans remain the bearers of responsibility.** Especially when research results, arguments, or knowledge claims enter public circulation through papers, books, reports, websites, or other forms, the ultimate bearers of responsibility must remain human.
 
 For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Current / Approved Framework: the human author must clearly understand, carefully review, and explicitly confirm the core theses, inferential relations, key distinctions, scope conditions, section/chapter functions, and specific formulations actually represented there. AI may help propose, organize, or express the framework, but it cannot replace human authorization of the project's direction and intellectual architecture or become the ultimate bearer of responsibility for it.
 
@@ -161,7 +161,7 @@ Framework Approval does not remove Final Artifact Approval; the concrete public 
 
 ## P18. Chinese is the canonical language; English is a synchronized mirror
 
-All substantive HARC project documents should exist in Chinese and English.
+All substantive AHICP project documents should exist in Chinese and English.
 
 The Chinese version is the **canonical source of meaning and editing authority**. Human review, correction, confirmation, and substantive editing are based on the Chinese version unless the human explicitly decides otherwise for a specific artifact.
 
@@ -176,3 +176,169 @@ The repository should make language status and canonical precedence discoverable
 For bilingual files that existed before the rule was established on 2026-09-18, if the English version had historically developed newer substantive content not yet absorbed by Chinese, perform a one-time legacy catch-up first: incorporate those English developments into Chinese so that Chinese represents the genuinely latest semantic state at cutover, then resynchronize English as the mirror. Canonical cutover is complete only after this reconciliation.
 
 After canonical cutover, the normal substantive development direction is fixed as: `human decision -> Chinese canonical -> English synchronized mirror`. English must not continue as an independent substantive development branch.
+
+## P19. High-impact uncertainty must enter the Working Memory Clarification queue
+
+AHICP no longer treats Critical Clarification as an independent “Layer 1.5” between Layer 1 and Layer 2.
+
+A Clarification is an item type inside **Working Memory**.
+
+When an AI Agent has non-trivial, high-impact uncertainty about authorial intention, a core claim, a key concept, scope, an inferential relation, section function, important terminology, or source-language / English correspondence, it MUST NOT silently choose one interpretation and propagate it downstream.
+
+The Agent should record the uncertainty in the Working Memory Clarification area, including candidate interpretations, affected scope, severity, and the question requiring human confirmation.
+
+An unresolved item is not a durable human commitment and may be marked `BLOCKING` or `NON-BLOCKING`.
+
+After human confirmation or correction, the result MUST be promoted:
+
+`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+
+If the result concerns human core content, it enters the Layer 1 Content Core and then propagates to the Layer 2 Framework and Layer 3 Artifact. Form / Protocol decisions enter the corresponding durable Core; purely structural Framework decisions enter Layer 2.
+
+After Promotion, the Working Memory item leaves active state and retains only a resolved/promoted pointer and audit information.
+
+AHICP SHOULD proactively perform a Working Memory / Clarification Scan before major stage transitions, Framework Approval, propagation of key terminology across an artifact, formal translation, large-scale chapter expansion, and Final Artifact Review.
+
+## P20. Zero-context takeover requires an explicit entry point and onboarding handshake
+
+An AHICP project SHOULD provide an **entry point discoverable from zero context** so that a new AI Agent can reconstruct current project state in a deterministic order without old chat history, platform memory, or prior project knowledge.
+
+The entry point SHOULD include at least:
+
+- a human/Agent-readable root `START_HERE` file;
+- a root `AGENTS` contract;
+- a machine-readable AHICP manifest or equivalent index;
+- an explicit mandatory read order;
+- Working Memory Index;
+- Current Focus;
+- Task Plan;
+- entry points for Framework Status, Working/Approved Framework, and Artifact state;
+- a bootstrap prompt that can be copied directly to an arbitrary AI Agent.
+
+Before making substantive changes, a new AI Agent SHOULD complete an **Onboarding Handshake**. The report should state at least:
+
+- the highest-priority current objective;
+- primary blocker and immediate next action;
+- active tasks and TODO / backlog;
+- pending human decisions / Clarifications;
+- Framework / Artifact status;
+- synchronization defects;
+- currently permitted and blocked next actions.
+
+Work Log is not default required reading for zero-context takeover. It is read on demand only when the human requests historical review, during a dedicated audit, for direction-change reconstruction, or when current state conflicts with history.
+
+If the Agent cannot produce this report from repository state alone, the project has an onboarding/persistence defect that should be repaired before large-scale inquiry, research, writing, or creation continues.
+
+The protocol cannot guarantee that every external platform will automatically read a particular filename. AHICP therefore aims to **maximize discoverability and verifiable takeover** through visible root entry points, a generic Agent contract, a machine-readable manifest, README navigation, and a copyable prompt so that any repository-capable Agent willing to follow project instructions can reconstruct the same workflow.
+
+## P21. Session context retains only a repository-access kernel, not a second authoritative project state
+
+AHICP's durable state lives in the repository. After onboarding, a new AI Agent MAY retain a minimal **Repository Resolver / Active Session Kernel** in the current conversation context, limited to:
+
+- GitHub is the sole authoritative project-state source;
+- where the manifest and context interface are located;
+- the precedence of Chinese canonical / English mirror;
+- whether the current task routes through CONTENT / FORM / PROTOCOL;
+- when repository state must be re-read;
+- how stale cache is invalidated after writes.
+
+The session kernel SHOULD NOT maintain long-lived copies of Current Focus, Task Plan, Framework state, Artifact state, Core content, or other dynamic project state.
+
+Dynamic content should be fetched on demand from the latest canonical GitHub revision. Any earlier Onboarding Report, session summary, file excerpt, or model memory is only a non-authoritative cache.
+
+The precedence is:
+
+`Platform system/developer rules > AHICP repository access kernel > ordinary task-level AI defaults`
+
+This mechanism does not promote repository files into the platform's true system prompt and does not claim to modify model parameters or platform memory.
+
+## P22. GitHub should serve as the authoritative external context and working-state interface
+
+AHICP SHOULD support a **Repository-Backed Context Interface**:
+
+`GitHub Repository = authoritative external memory + working state`
+
+`Model Context = transient retrieval cache + control plane`
+
+A model still needs to retrieve relevant information into transient context for a particular task, but it MUST NOT maintain a parallel long-term authoritative copy alongside GitHub.
+
+Each substantive task should follow:
+
+`Resolve -> Fetch latest -> Reason -> Act -> Write-through -> Invalidate stale cache -> Refresh if needed`
+
+Updates that should constrain future Agents are written to GitHub. Session copies become stale immediately after repository writes.
+
+Before high-impact judgments and writes, the Agent MUST reconfirm the latest revision of relevant canonical files. Direct GitHub API, MCP, connector/plugin, or equivalent repository access is preferred over asking the human to paste repository content into chat.
+
+AHICP SHOULD provide a machine-readable context-interface manifest describing task routing, revision policy, cache invalidation, write-through, and trust boundaries.
+
+## P23. Three layers of Long-Term Project Memory and parallel Working Memory must remain distinct
+
+AHICP models core project state using three layers of Long-Term Project Memory:
+
+`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
+
+- Layer 1 preserves the human author's evolving, corrected, confirmed, and refined substantive foundation.
+- Layer 2 builds on Layer 1 and preserves the current operational framework, core claims/elements, key concepts, and structural relations. It is durable but more revisable.
+- Layer 3 expands mainly from Layer 2 into the complete artifact while remaining constrained by Layer 1 and evidence.
+
+In parallel with these three long-term layers, the project MUST maintain **Working Memory**.
+
+Working Memory records current stage, objectives, plan, active tasks, completed work, next actions, TODOs, blockers, pending human decisions, clarifications, synchronization defects, and handoff notes.
+
+Its purpose is to let any new human participant or AI Agent quickly answer:
+
+> “Where is the project now, and where should work resume?”
+
+Working Memory is not a fourth long-term semantic layer and MUST NOT become an alternative truth source for durable claims.
+
+Stable confirmed results in Working Memory MUST be promoted to the appropriate Long-Term Memory destination. After Promotion, Working Memory keeps only status, Decision IDs, and destination pointers.
+
+## P24. Working Memory is a functional area, not a mandatory single file
+
+The normative object is a **set of Working Memory roles**, not one fixed physical document.
+
+Depending on project scale, AI Agent performance, context cost, and workflow convenience, a project MAY implement Working Memory as one file or several files. Regardless of physical layout, it SHOULD provide at least three logical functions:
+
+1. **Current Focus**
+   - stores the most immediate, highest-priority objective;
+   - states the current stage, current task, primary blocker, and immediate next action;
+   - remains very short and is the highest-priority operational state during takeover.
+
+2. **Task Plan**
+   - stores dynamic plans, TODOs, active tasks, blocked/waiting-human items, backlog, and next actions;
+   - completed tasks leave the active list;
+   - new tasks are added as work develops;
+   - completed work is compressed into Work Log, while durable normative results are also promoted to Long-Term Memory.
+
+3. **Work Log**
+   - stores stage-level historical summaries primarily for later human retrospective review;
+   - records broad progress, important work/idea transitions, completed task batches, and milestones;
+   - serves human retrospective review rather than default AI onboarding;
+   - SHOULD be updated periodically, but SHOULD NOT be read in full merely to continue ordinary current work;
+   - MAY be retrieved when the human requests historical review, when provenance or change history must be reconstructed, when current state conflicts with history, or during a dedicated audit.
+
+Work Log MUST NOT store hidden model chain-of-thought, scratchpads, or unverifiable internal reasoning. It records only auditable project-level changes, expressed reasons, decisions, milestones, and high-level summaries.
+
+Working Memory MAY provide a stable Index / Resolver that maps these logical roles to current physical files. A lightweight project may map several roles to one file; a complex project may split them.
+
+Recommended resume order:
+
+`Working Memory Index -> Current Focus -> Task Plan -> task-relevant Long-Term Memory`
+
+Work Log is not part of the default required read chain.
+
+---
+
+## Current scope
+
+AHICP v0.3 currently focuses on:
+
+`Human + durable repository + AI Agent(s)`
+
+for sustained **human-led, AI-assisted inquiry, research, reasoning, writing, and creation**.
+
+The current reference implementation uses GitHub as the authoritative external project-state source; future implementations may map the same logical roles to other platforms.
+
+AHICP does not define publishing infrastructure. The source / build / publish / release / archive lifecycle belongs to the separate **Personal Publishing Framework (PPF)** or another compatible publishing framework.
+

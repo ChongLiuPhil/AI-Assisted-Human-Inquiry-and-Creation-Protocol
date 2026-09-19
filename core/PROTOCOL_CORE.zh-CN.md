@@ -1,18 +1,18 @@
-# HARC 协议核心（Protocol Core）
+# AHICP 协议核心（Protocol Core）
 
 > **本中文文件是规范性基准；英文 `PROTOCOL_CORE.md` 是同步镜像。**
 
 ## 目的
 
-本文件记录定义 Human–AI Research Collaboration Protocol（HARC）项目本身的、当前有效的人类原创设计承诺。
+本文件记录定义 AI-Assisted Human Inquiry and Creation Protocol（AHICP）项目本身的、当前有效的人类原创设计承诺。
 
-它是 HARC “想要实现什么”的语义真值源。AI 可以扩展这些思想，但不得静默替换它们。
+它是 AHICP “想要实现什么”的语义真值源。AI 可以扩展这些思想，但不得静默替换它们。
 
 ---
 
-## P1. 以 GitHub 为中心的持久协作
+## P1. 以 GitHub 为中心的持久项目状态与 AI 辅助
 
-协议应支持人类作者、GitHub 与一个或多个 AI Agent 之间的持续协作。
+协议应支持人在 GitHub 等持久仓库基础上开展长期探究与创作，并由一个或多个可替换 AI Agent 提供辅助。
 
 重要项目状态应显式存入仓库文档，而不是依赖某一个 AI 平台或 Agent 的记忆或对话上下文。
 
@@ -22,27 +22,27 @@
 
 讨论过程中，人类作者会表达、纠正、接受、拒绝、限定并发展实质性思想。
 
-关于研究主题的人类持久决定应被抽取并写入基础内容文档。
+关于项目实质内容的人类持久决定应被抽取并写入基础内容文档。
 
 AI 扩写不得静默违背或替代这层人类基础。
 
-## P3. 形式/呈现意图必须与研究内容分离
+## P3. 形式/呈现意图必须与实质内容分离
 
-人类关于字体、版式、视觉设计、引用呈现、写作格式、成果类型以及其他表现形式的指令，与实质性研究主张不同。
+人类关于字体、版式、视觉设计、引用呈现、写作格式、成果类型以及其他表现形式的指令，与实质性内容决定不同。
 
 因此这些内容应存入独立的形式/呈现真值源。
 
 在适当情况下，作者的跨项目偏好可以由未来项目继承。
 
-## P4. 第二层应保存持久但高可修改性的当前论述框架
+## P4. 第二层应保存持久但高可修改性的当前操作框架
 
-第二层属于长期研究记忆，但比第一层更可修改。它应以压缩、可检查的方式表示论文、书籍或其他研究成果的当前实际思想结构。
+第二层属于长期项目记忆，但比第一层更可修改。它应以压缩、可检查的方式表示论文、书籍、创作或其他成果的当前实际结构。
 
 这一层应包含核心命题、关键概念、推论关系、章节/小节功能、概念区分与当前结构状态。
 
-第二层必须以第一层的人类作者核心基础为上游约束，但可以包含第一层没有逐项表达、而为研究展开所必需的结构化内容。
+第二层必须以第一层的人类作者核心基础为上游约束，但可以包含第一层没有逐项表达、而为项目展开所必需的结构化内容。
 
-对于大型项目，它应成为人类与 AI 讨论结构问题的主要界面。Working Argument Map 与 Approved Framework snapshots 是这一长期层的不同批准状态。
+对于大型项目，它应成为人类与 AI 讨论结构问题的主要界面。Working Framework / Argument Map 与 Approved Framework snapshots 可以作为这一长期层的不同批准状态或项目类型实例。
 
 ## P5. 人类反馈必须先向上游传播
 
@@ -86,11 +86,11 @@ Framework Approval 后，AI Agent 可以进行大量展开、起草、解释、�
 
 ## P11. 协议应可复用、可迁移
 
-HARC 应作为一个独立开放项目存在，而不是依赖某一个研究主题，并应为新的论文、书籍、文章、报告及持续思想项目提供可复用的规范和模板。
+AHICP 应作为一个独立开放项目存在，而不是依赖某一个研究主题，并应为新的探究、研究、论文、书籍、文章、报告、创作及其他长期项目提供可复用的规范和模板。
 
 未来 AI Agent 应能检查本仓库，并针对新主题建立适合的项目结构，同时保持相同的协作逻辑。
 
-## P12. 协议应明确人类—AI 贡献边界
+## P12. 协议应明确人类主体性与 AI 辅助边界
 
 系统至少应区分：
 
@@ -102,7 +102,7 @@ HARC 应作为一个独立开放项目存在，而不是依赖某一个研究主
 - 批准状态；
 - 历史决定。
 
-目的不是隐藏 AI 协助，而是让协作可审计、可进行思想治理。
+目的不是隐藏 AI 协助，而是让 AI 辅助可审计，并保持人的目的、判断、批准与责任位置清晰。
 
 ## P13. 应区分框架层责任与扩写层缺陷
 
@@ -138,24 +138,24 @@ HARC 应作为一个独立开放项目存在，而不是依赖某一个研究主
 
 完成这些循环后，还应执行一次额外、独立的修复后审计，以发现剩余遗漏、回归或不一致。
 
-## P16. HARC 应同时产出可执行开放项目与方法论文章
+## P16. AHICP 应同时产出可执行开放项目与方法论文章
 
-HARC 具有两个互相支撑的产出：
+AHICP 具有两个互相支撑的产出：
 
 1. 一套可执行、可复用的开放协作协议，包括规范、模板、状态和治理规则；
 2. 一篇方法论文章，解释协议的概念根据，并发展其对 AI 时代研究实践的意义。
 
 文章应讨论包括但不限于：人类作为研究与探究责任主体的地位、人类对研究目的与方向的授权、AI 工具可以执行或辅助的工作范围、framework 层的人类思想责任、公开知识传播中的责任承担、AI 辅助扩写、认识依赖、持久外部研究记忆，以及人类问责仍然有意义的条件。
 
-文章是协议的学术派生成果，应自身在 HARC 风格的 framework 控制下发展，而不能作为无治理的说明性文章.
+文章是协议的学术派生成果，应自身在 AHICP 风格的 framework 控制下发展，而不能作为无治理的说明性文章.
 
 ## P17. AI 是协作工具；人类是项目目的、方向与责任主体
 
-HARC 将 AI Agent 作为研究协作工具，而不是作为需要被赋予人类式认知主体地位或最终责任主体地位的参与者。协议不应把“AI 承担认知劳动”或“AI 承担认知任务”作为规范性描述；更准确地说，AI 可以执行或辅助大量检索、综合、起草、重组、核查、格式处理和其他工作。
+AHICP 将 AI Agent 作为研究协作工具，而不是作为需要被赋予人类式认知主体地位或最终责任主体地位的参与者。协议不应把“AI 承担认知劳动”或“AI 承担认知任务”作为规范性描述；更准确地说，AI 可以执行或辅助大量检索、综合、起草、重组、核查、格式处理和其他工作。
 
 研究或创作项目的目的、核心问题与方向应由人类发起、给予并持续导航或批准。AI 能够执行大量工作，并不构成把项目目的、核心判断或责任主体位置转移给 AI 的理由。
 
-因此，HARC 所说的“人类责任”应精确理解为：**在人机协作的研究与探究中，人类仍然是责任主体／责任承担者。** 尤其当研究结果、论证或知识主张通过论文、书籍、报告、网站或其他形式进入公开知识传播时，最终责任主体必须保持为人类。
+因此，AHICP 所说的“人类责任”应精确理解为：**在人机协作的研究与探究中，人类仍然是责任主体／责任承担者。** 尤其当研究结果、论证或知识主张通过论文、书籍、报告、网站或其他形式进入公开知识传播时，最终责任主体必须保持为人类。
 
 对于长篇成果，这一责任主体地位主要通过 Layer 2 Current / Approved Framework 落实：人类作者必须对其中实际呈现的核心命题、推论关系、关键区分、范围条件、章节/小节功能及具体表述形成清楚理解，并在 Framework Approval 时认真审核和明确确认。AI 可以帮助提出、组织或表达该 framework，但不能替代人类对方向与思想架构的授权，也不能成为其最终责任承担者。
 
@@ -163,7 +163,7 @@ Framework Approval 不取消 Final Artifact Approval；具体公开版本仍必�
 
 ## P18. 中文是规范语言；英文是同步镜像
 
-HARC 项目的所有实质性文档应提供中文与英文版本。
+AHICP 项目的所有实质性文档应提供中文与英文版本。
 
 中文版本是**语义与编辑权威基准**。除非人类对某一具体成果明确另作决定，人类审阅、纠正、确认与实质性编辑都以中文版本为基准。
 
@@ -182,7 +182,7 @@ canonical cutover 完成之后，正常实质性发展方向固定为：`人类�
 
 ## P19. 高影响不确定性必须进入 Working Memory 的 Clarification 队列
 
-HARC 不再把 Critical Clarification 视为 Layer 1 与 Layer 2 之间的独立“1.5 层”。
+AHICP 不再把 Critical Clarification 视为 Layer 1 与 Layer 2 之间的独立“1.5 层”。
 
 Clarification 是 **Working Memory（工作记忆）** 中的一种记录类型。
 
@@ -200,18 +200,18 @@ Agent 应把该不确定性写入 Working Memory 的 Clarification 区，说明�
 
 Promotion 完成后，Working Memory 中的条目退出 active 状态，仅保留 resolved/promoted 指针与审计信息。
 
-HARC 应在重大阶段转换、Framework Approval、关键术语全篇传播、正式翻译、大规模章节扩写及 Final Artifact Review 前主动执行 Working Memory / Clarification Scan。
+AHICP 应在重大阶段转换、Framework Approval、关键术语全篇传播、正式翻译、大规模章节扩写及 Final Artifact Review 前主动执行 Working Memory / Clarification Scan。
 
 
 ## P20. 零上下文接管必须有显式启动入口与接管握手
 
-HARC 项目应提供一个**从零上下文即可发现的启动入口**，使新的 AI Agent 在没有旧聊天、平台记忆或项目先验知识的情况下，能够按确定顺序重建当前研究状态。
+AHICP 项目应提供一个**从零上下文即可发现的启动入口**，使新的 AI Agent 在没有旧聊天、平台记忆或项目先验知识的情况下，能够按确定顺序重建当前研究状态。
 
 该入口至少应包括：
 
 - 根目录人类/Agent 可读的 `START_HERE` 文件；
 - 根目录 `AGENTS` 契约；
-- 机器可读的 HARC manifest 或等价索引；
+- 机器可读的 AHICP manifest 或等价索引；
 - 明确的 mandatory read order；
 - Working Memory Index；
 - Current Focus；
@@ -233,12 +233,12 @@ Work Log 默认不属于零上下文接管的必读材料；只有人类要求�
 
 如果 Agent 无法仅凭仓库完成这一报告，项目存在 onboarding/persistence defect，应先修复，而不是继续大规模研究或写作。
 
-协议不能保证任意外部平台会自动读取某个特定文件；因此 HARC 的目标是**最大化可发现性与可验证接管**：通过根目录显眼入口、通用 Agent 契约、机器 manifest、README 导航和可复制 prompt，使任何具有仓库读取能力且愿意遵循项目指令的 Agent 都能重建同一工作流。
+协议不能保证任意外部平台会自动读取某个特定文件；因此 AHICP 的目标是**最大化可发现性与可验证接管**：通过根目录显眼入口、通用 Agent 契约、机器 manifest、README 导航和可复制 prompt，使任何具有仓库读取能力且愿意遵循项目指令的 Agent 都能重建同一工作流。
 
 
 ## P21. 会话上下文只保留仓库访问内核，不维护第二份权威项目状态
 
-HARC 的持久状态保存在仓库中。新的 AI Agent 在接管后可以在当前对话上下文中保留一个极小的 **Repository Resolver / Active Session Kernel**，但该内核只负责说明：
+AHICP 的持久状态保存在仓库中。新的 AI Agent 在接管后可以在当前对话上下文中保留一个极小的 **Repository Resolver / Active Session Kernel**，但该内核只负责说明：
 
 - GitHub 是唯一权威项目状态源；
 - manifest 与 context-interface 在哪里；
@@ -247,13 +247,13 @@ HARC 的持久状态保存在仓库中。新的 AI Agent 在接管后可以在�
 - 何时必须重新读取仓库；
 - 写入后如何使旧缓存失效。
 
-它**不应长期复制** Current Focus、Task Plan、Framework 状态、Artifact 状态、Core 内容或其他动态研究状态。
+它**不应长期复制** Current Focus、Task Plan、Framework 状态、Artifact 状态、Core 内容或其他动态项目状态。
 
 这些动态内容在需要时应从 GitHub 最新 canonical revision 按需读取。任何较早的 Onboarding Report、会话摘要、文件摘录或模型记忆都只是非权威缓存。
 
 正确优先级为：
 
-`Platform system/developer rules > HARC repository access kernel > ordinary task-level AI defaults`
+`Platform system/developer rules > AHICP repository access kernel > ordinary task-level AI defaults`
 
 该机制不把仓库文件提升为平台真正的 system prompt，也不声称能够修改模型参数或平台 memory。
 
@@ -261,7 +261,7 @@ HARC 的持久状态保存在仓库中。新的 AI Agent 在接管后可以在�
 
 ## P22. GitHub 应作为权威外部上下文与工作状态接口
 
-HARC 应支持一种 **Repository-Backed Context Interface（仓库支撑的上下文接口）**：
+AHICP 应支持一种 **Repository-Backed Context Interface（仓库支撑的上下文接口）**：
 
 `GitHub Repository = authoritative external memory + working state`
 
@@ -277,19 +277,19 @@ HARC 应支持一种 **Repository-Backed Context Interface（仓库支撑的上�
 
 高影响判断与写入前必须重新确认相关 canonical 文件的最新 revision。Agent 应尽量通过 GitHub API、MCP、connector/plugin 或等价工具直接读取/写入，而不是要求人类把文件内容复制进聊天。
 
-HARC 应提供机器可读的 context-interface manifest，描述 task routing、revision policy、cache invalidation、write-through 和 trust boundary。
+AHICP 应提供机器可读的 context-interface manifest，描述 task routing、revision policy、cache invalidation、write-through 和 trust boundary。
 
 
 ## P23. 三层长期记忆与并行 Working Memory 必须明确区分
 
-HARC 的核心研究状态采用三层长期记忆：
+AHICP 的核心项目状态采用三层长期记忆：
 
 `Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
 
 其中：
 
 - Layer 1 保存人类作者持续表达、纠正、确认和净化后的核心基础；
-- Layer 2 以 Layer 1 为基础，保存当前论述框架、核心命题、关键概念和论证结构，持久但更可修改；
+- Layer 2 以 Layer 1 为基础，保存当前操作框架、核心命题/要素、关键概念和结构关系，持久但更可修改；
 - Layer 3 主要由 Layer 2 展开为完整成果，并同时受 Layer 1 与证据约束。
 
 与三层长期记忆并行，项目必须维护 **Working Memory**。
@@ -343,10 +343,12 @@ Work Log 默认不进入该必读链。
 
 ## 当前范围
 
-HARC v0.2 当前聚焦：
+AHICP v0.3 当前聚焦：
 
-`人类作者 + GitHub 仓库 + AI Agent(s)`
+`人类 + 持久仓库 + AI Agent(s)`
 
-用于持续研究与思想发展。
+用于**人类主导、AI 辅助**的持续探究、研究、推理、写作与创作。
 
-更广泛的平台支持不属于当前初始范围。
+当前 reference implementation 以 GitHub 为权威外部项目状态源；更广泛的平台支持可以后续映射相同逻辑角色。
+
+AHICP 不定义出版基础设施。作品的 source / build / publish / release / archive 生命周期属于独立的 **Personal Publishing Framework（PPF）** 或其他兼容出版框架。

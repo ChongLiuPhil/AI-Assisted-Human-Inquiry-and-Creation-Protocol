@@ -1,4 +1,4 @@
-# HARC Architecture
+# AHICP Architecture
 
 > **Language:** Chinese canonical: `ARCHITECTURE.zh-CN.md`; this English file is the synchronized mirror.
 
@@ -29,11 +29,11 @@
                  resolved Working Memory
 ```
 
-All three layers are Long-Term Research Memory. Working Memory Area is parallel: Current Focus + Task Plan provide resumable operational state, while Work Log preserves human-oriented stage history outside default AI takeover context.
+All three layers are Long-Term Project Memory. Working Memory Area is parallel: Current Focus + Task Plan provide resumable operational state, while Work Log preserves human-oriented stage history outside default AI takeover context.
 
 ## Repository-backed context
 
-HARC defines GitHub as the sole authoritative project-state source:
+AHICP defines GitHub as the sole authoritative project-state source:
 
 `GitHub Repository = authoritative external memory + working state`
 
@@ -51,7 +51,7 @@ A human-approved framework does not override a later explicit human content deci
 
 ## Long-term memory, Working Memory, and history
 
-HARC separates:
+AHICP separates:
 
 - **Long-Term Memory Layer 1** — Human Authorial Core;
 - **Long-Term Memory Layer 2** — Current Framework;
@@ -111,7 +111,7 @@ The first gate governs intellectual architecture. The second governs the concret
 
 ## Core invariant
 
-A stable HARC project should allow a new competent agent to answer, from repository state alone:
+A stable AHICP project should allow a new competent agent to answer, from repository state alone:
 
 1. What does the human currently mean to argue?
 2. What presentation does the human currently want?

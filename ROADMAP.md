@@ -1,4 +1,4 @@
-# HARC Protocol Roadmap
+# AHICP Protocol Roadmap
 
 > **Language:** Chinese canonical: `ROADMAP.zh-CN.md`; this English file is the synchronized mirror.
 
@@ -31,7 +31,7 @@
 - [x] Create a synchronized English mirror of the methodology article.
 - [x] Complete bilingual migration and parity audit of legacy documentation and all templates.
 - [x] Establish zero-context bootstrap: START_HERE, standalone Bootstrap Prompt, HARC_MANIFEST, Onboarding Handshake, and Onboarding Report Template.
-- [x] Complete one self-hosted HARC onboarding self-test.
+- [x] Complete one self-hosted AHICP onboarding self-test.
 - [x] Establish the Repository-Backed Context Interface: GitHub as authoritative external memory/working store, model context as on-demand transient cache.
 - [x] Narrow Session Context Bootstrap to a minimal Repository Resolver with no dynamic state copy.
 - [x] Establish Working Memory parallel to the three long-term memory layers, replacing the former Layer 1.5 model.
@@ -50,7 +50,7 @@
 - [ ] Create consistency checklist for Content Core / Framework / Artifact.
 - [ ] Add examples for paper, book, article, and report projects.
 - [ ] Define framework diff conventions.
-- [ ] Define a HARC conformance-test suite.
+- [ ] Define a AHICP conformance-test suite.
 - [ ] Define a cross-agent handoff benchmark.
 - [ ] Define an automated bilingual parity check.
 - [ ] Define an automated onboarding/conformance check validating START_HERE, manifest, context interface, Working Memory resume state, task routing, revision freshness, blockers, and Framework Status retrieval by a new Agent.
@@ -76,7 +76,7 @@
 
 ## Research agenda
 
-- [ ] Evaluate whether HARC reduces semantic drift in longitudinal AI-assisted writing.
+- [ ] Evaluate whether AHICP reduces semantic drift in longitudinal AI-assisted writing.
 - [ ] Measure onboarding cost for a new agent with and without repository state.
 - [ ] Study how much compression an approved framework can tolerate before nuance is lost.
 - [ ] Study interfaces for meaningful rather than ceremonial framework approval.
@@ -84,6 +84,6 @@
 - [ ] Compare GitHub-centered implementation with local-first or other versioned backends.
 - [ ] Study the effect of repository-backed context on context usage, stale-state errors, and cross-agent onboarding cost.
 - [ ] Study Current Focus / Task Plan update granularity and compression, plus Work Log partitioning, indexing, and value for human retrospective review.
-- [ ] Examine relationships among HARC, scholarly authorship norms, provenance systems, extended/distributed cognition, automation reliance, and human intellectual agency.
+- [ ] Examine relationships among AHICP, scholarly authorship norms, provenance systems, extended/distributed cognition, automation reliance, and human intellectual agency.
 - [ ] Develop operational measures for framework fidelity and semantic drift.
 - [ ] Study semantic drift introduced by bilingual canonical/mirror translation governance.

@@ -1,67 +1,64 @@
-# HARC Working Memory — Current Focus
+# AHICP Working Memory — Current Focus
 ## 当前焦点
 
 > **中文 canonical；英文 `current-focus.md` 为同步 mirror。**
 
 **状态：** `ACTIVE`  
-**最后更新：** 2026-09-18
+**最后更新：** 2026-09-19
 
 ## CURRENT_STAGE
 
-方法论文章处于 **Working Framework 的整体人类审阅 / Framework Approval 决策阶段**。
+**HARC → AHICP v0.3 语义迁移已完成，并通过最终迁移后审计。**
 
-`CLR-001 / CLR-002 / CLR-005` 已通过 `HARC-D023` 解决并完成 Promotion；`HARC-D024` 进一步精确化责任概念为“人类是责任主体”，并确认当前中文题目；`HARC-D025` 已修复 T1–T13 依赖表示，并明确 unresolved / AI-PROPOSED 项目的整体批准语义。此前阻塞 `MA-FW-001` 的 clarification gate 已清除。
+迁移依据：`AHICP-D026`。
+
+已完成：
+- 正式名称与固定 subtitle；
+- human-led / AI-assisted / repository-grounded 规范方向；
+- Protocol Core、Specification、AGENTS 与 live protocol 文档迁移；
+- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` 控制面；
+- zero-context onboarding 控制链迁移；
+- research-project specialization template 迁移；
+- 方法论文章/evidence 的当前协议身份迁移，同时保留 research-specific 主题；
+- 关键双语规范 semantic parity；
+- final post-migration repair audit。
+
+最终审计：
+
+`docs/AHICP_V0_3_FINAL_POST_MIGRATION_AUDIT.zh-CN.md`
+
+结论：`PASS — merge-ready`。
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — 完成当前 Working Framework 的整体人类审阅并决定 `MA-FW-001`
+### WM-OBJ-003 — 方法论文章整体 Framework Approval
+
+AHICP v0.3 迁移完成后，协议仓库恢复到迁移前尚未解决的主要工作门：
+
+- 方法论文章 Working Framework：`WAITING-HUMAN`
+- license：`WAITING-HUMAN`
+- target publication venue / form constraints：`WAITING-HUMAN`
 
 当前中文 Working Framework：
 
 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
-已经进入 `REVIEW READY` 状态，但**尚未获得人类整体批准**。
+## IMMEDIATE_NEXT_ACTION
 
-当前最重要的事情不是继续结构性重写正文，而是由人类作者对当前 framework 的整体思想架构作明确决定：
+人类在准备继续方法论文章时，对当前 Working Framework 作：
 
 - `APPROVE`
 - `REVISE`
 - `REJECT`
 
-局部术语、命题或措辞的接受不自动等于整体 Framework Approval。
-
-## IMMEDIATE_NEXT_ACTION
-
-人类作者整体审阅 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`，重点确认：
-
-- 当前命题集合；
-- 主要推论 / 依赖关系；
-- 核心区分；
-- 各章节 / 小节的功能；
-- HARC-D023 / HARC-D024 后更新的 T3 / T4“人类作为责任主体”模型；
-- 已获人类认可的题目与尚未获批的整体 framework 之间的状态区分；
-- 仍明确标记为 `AI-PROPOSED` 或 `NON-BLOCKING` 的内容是否可以保留在待批准 framework 中。
-
-其中仍为 `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` 的项目，只需要确认其作为未决项目留在 framework 中的位置与处理方式；整体批准不会自动批准其内容。
-
-然后明确作出 `APPROVE / REVISE / REJECT`.
-
-如果 `APPROVE`：
-
-`Human Framework Approval -> create MA-FW-001 -> Framework Status update -> structural Artifact synchronization`
-
-如果 `REVISE`：
-
-`Human revision -> Decision Log / appropriate upstream state -> Working Framework revision -> renewed overall review`
+在此之前，不创建 Approved Framework snapshot。
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: overall Framework Approval decision`
+`WAITING-HUMAN: methodology article overall Framework Approval`
 
-这不是新的 Clarification；当前没有阻塞 Framework Approval 审阅的 active clarification。
+这不阻塞已经完成的 AHICP v0.3 protocol migration。
 
 ## HANDOFF
 
-新的 AI Agent 默认不需要先阅读 Work Log。先读本文件，再读 Task Plan；如果当前任务是继续方法论文章 Framework Approval，则 fresh-fetch 中文 Working Argument Map 与 Framework Status。
-
-不得把 `REVIEW READY` 解释为 `APPROVED`，不得在没有人类整体批准的情况下创建 `MA-FW-001`。
+新的 AI Agent 应按 AHICP control plane 接管。协议迁移已经完成，不应重新把旧 HARC live identifiers 引入当前规范文件。

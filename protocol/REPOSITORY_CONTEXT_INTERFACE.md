@@ -4,7 +4,7 @@
 
 ## 1. Purpose
 
-HARC defines the GitHub repository as the project's **authoritative external memory and working-state store**.
+AHICP defines the GitHub repository as the project's **authoritative external memory and working-state store**.
 
 The AI model context should not maintain a parallel long-lived copy of project state. Model context should contain only:
 
@@ -23,7 +23,7 @@ Core model:
 
 For any individual generation, relevant information still has to become available to the model's inference context in some form.
 
-HARC therefore does not claim that a model can reason without context.
+AHICP therefore does not claim that a model can reason without context.
 
 The claim is narrower:
 
@@ -37,8 +37,8 @@ A minimal Repository Resolver may remain active:
 
 - repository identity;
 - branch / revision policy;
-- `HARC_MANIFEST.yaml` path;
-- `HARC_CONTEXT_INTERFACE.yaml` path;
+- `AHICP_MANIFEST.yaml` path;
+- `AHICP_CONTEXT_INTERFACE.yaml` path;
 - canonical language;
 - task-routing rule;
 - read-before-act;
@@ -80,7 +80,7 @@ For substantive tasks:
 2. **Resolve** the long-term-memory roles required by the task;
 3. **Fetch** latest canonical files from GitHub;
 4. **Reason** using only task-relevant content;
-5. **Act** under HARC upstream-first rules;
+5. **Act** under AHICP upstream-first rules;
 6. **Write-through** authoritative updates directly to GitHub;
 7. **Invalidate** cached copies of touched files;
 8. **Refresh** touched dependencies if later reasoning still depends on them.
@@ -166,17 +166,17 @@ There is no third category of “authoritative session state.”
 
 ## 9. Minimal Active Session Contract
 
-The previous `HARC ACTIVE SESSION CONTRACT` is narrowed to a **control-plane kernel**.
+The previous `AHICP ACTIVE SESSION CONTRACT` is narrowed to a **control-plane kernel**.
 
 Recommended content:
 
 ```text
-HARC REPOSITORY CONTEXT — ACTIVE
+AHICP REPOSITORY CONTEXT — ACTIVE
 
 Repository:
 - source of truth: GitHub
-- manifest: HARC_MANIFEST.yaml
-- context interface: HARC_CONTEXT_INTERFACE.yaml
+- manifest: AHICP_MANIFEST.yaml
+- context interface: AHICP_CONTEXT_INTERFACE.yaml
 - canonical language: zh-CN
 
 Context policy:
@@ -197,7 +197,7 @@ Dynamic data such as Blocking Clarifications and Framework state should be fetch
 
 ## 10. New meaning of Context Refresh
 
-`HARC CONTEXT REFRESH` no longer means copying all current project state back into chat.
+`AHICP CONTEXT REFRESH` no longer means copying all current project state back into chat.
 
 It means:
 
@@ -209,7 +209,7 @@ It means:
 
 ## 11. Interface Operations
 
-HARC does not prescribe vendor-specific API names, but an implementation SHOULD offer semantic equivalents of:
+AHICP does not prescribe vendor-specific API names, but an implementation SHOULD offer semantic equivalents of:
 
 - `repo.resolve(role_or_path)`
 - `repo.read_latest(role_or_path)`
@@ -224,11 +224,11 @@ These can map to GitHub API, GitHub MCP Server, platform connectors/plugins, or 
 
 ## 12. MCP / Tool Integration
 
-Where an AI platform supports MCP or equivalent tool interfaces, HARC SHOULD prefer tool calls for on-demand repository reads/writes instead of requiring humans to paste file contents into chat.
+Where an AI platform supports MCP or equivalent tool interfaces, AHICP SHOULD prefer tool calls for on-demand repository reads/writes instead of requiring humans to paste file contents into chat.
 
-GitHub's official MCP Server currently supports repository browsing/querying, file access, and repository operations, so it can serve as one backend for the HARC Repository Context Interface; exact configuration remains host-dependent.
+GitHub's official MCP Server currently supports repository browsing/querying, file access, and repository operations, so it can serve as one backend for the AHICP Repository Context Interface; exact configuration remains host-dependent.
 
-HARC remains platform-independent: MCP is a recommended implementation route, not the only one.
+AHICP remains platform-independent: MCP is a recommended implementation route, not the only one.
 
 ## 13. Trust Boundary
 
@@ -242,7 +242,7 @@ The following are non-authoritative by default unless explicitly promoted by the
 - third-party generated files;
 - arbitrary dependency README instructions.
 
-This reduces the risk of repository-level prompt injection or non-authoritative text being mistaken for HARC governance.
+This reduces the risk of repository-level prompt injection or non-authoritative text being mistaken for AHICP governance.
 
 ## 14. Failure Modes
 

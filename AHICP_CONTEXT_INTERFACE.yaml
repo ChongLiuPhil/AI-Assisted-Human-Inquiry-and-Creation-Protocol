@@ -1,0 +1,98 @@
+ahicp_context_interface:
+  version: "0.1-draft"
+  mode: "repository-backed"
+  authoritative_store: "github"
+  canonical_language: "zh-CN"
+
+  control_plane:
+    manifest: "AHICP_MANIFEST.yaml"
+    protocol: "protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md"
+    session_resolver_only: true
+    authoritative_session_copy: false
+
+  working_memory_roles:
+    index: "working_memory_index"
+    current_focus: "working_memory_current_focus"
+    task_plan: "working_memory_task_plan"
+    work_log: "working_memory_work_log"
+    default_operational_reads:
+      - "working_memory_index"
+      - "working_memory_current_focus"
+      - "working_memory_task_plan"
+    work_log_default_read: false
+    work_log_read_when:
+      - "human_requests_historical_review"
+      - "audit_or_provenance_reconstruction"
+      - "current_history_conflict"
+      - "direction_change_reconstruction"
+
+  context_policy:
+    retrieval: "selective-on-demand"
+    working_memory_first: true
+    cache_authority: "none"
+    cache_scope: "current-task-only"
+    read_latest_before_high_impact_action: true
+    read_latest_before_write: true
+    invalidate_touched_cache_after_write: true
+    write_through_repository: true
+    refresh_after_repository_change: "affected-dependencies-only"
+
+  revision_policy:
+    preferred_tokens:
+      - "git_commit_sha"
+      - "git_blob_sha"
+      - "etag_or_equivalent_revision"
+    stale_after_write: true
+    conflict_state: "REVISION-CONFLICT"
+
+  task_routes:
+    PROTOCOL:
+      required_roles:
+        - "working_memory_index"
+        - "working_memory_current_focus"
+        - "working_memory_task_plan"
+        - "protocol_core"
+        - "decision_log"
+      optional_roles:
+        - "specification"
+        - "agent_contract"
+        - "templates"
+    CONTENT:
+      required_roles:
+        - "working_memory_index"
+        - "working_memory_current_focus"
+        - "working_memory_task_plan"
+        - "content_core"
+        - "decision_log"
+        - "framework_status"
+        - "working_or_approved_framework"
+      optional_roles:
+        - "evidence"
+        - "artifact"
+    FORM:
+      required_roles:
+        - "working_memory_index"
+        - "working_memory_current_focus"
+        - "working_memory_task_plan"
+        - "form_core"
+        - "decision_log"
+      optional_roles:
+        - "form_profile"
+        - "artifact"
+
+  trust_boundary:
+    normative_sources:
+      - "manifest-declared canonical version-controlled files"
+    non_authoritative_by_default:
+      - "issues"
+      - "pull_request_comments"
+      - "discussions"
+      - "external_web"
+      - "third_party_generated_content"
+
+  failure_states:
+    - "WORKING-MEMORY-STALE"
+    - "CONTEXT-STALE"
+    - "REPOSITORY-UNAVAILABLE"
+    - "REVISION-CONFLICT"
+    - "MANIFEST-MISMATCH"

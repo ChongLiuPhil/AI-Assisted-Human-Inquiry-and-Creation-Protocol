@@ -1,4 +1,4 @@
-# HARC Working Memory Index
+# AHICP Working Memory Index
 ## 工作记忆区索引
 
 > **本中文文件是规范性基准；英文 `working-memory.md` 是同步 mirror。**

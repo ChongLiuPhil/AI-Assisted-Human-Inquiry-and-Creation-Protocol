@@ -28,7 +28,7 @@ ICMJE 当前的 authorship criteria 包括：
 
 ICMJE 还说明，应披露 AI 辅助技术的使用，并且作者仍对所提交材料负责。
 
-### HARC 文章中的允许用法
+### AHICP 文章中的允许用法
 
 把 ICMJE 作为一个具体例子，说明至少有一个有影响力的学术 authorship framework 把作者身份与最终批准及问责联系起来。
 
@@ -63,7 +63,7 @@ https://www.nature.com/nature-portfolio/editorial-policies
 - 相关角色中的学术/编辑判断仍然属于人类责任；
 - 政策会继续变化，因此投稿前应重新核验。
 
-### HARC 文章中的允许用法
+### AHICP 文章中的允许用法
 
 把 Nature Portfolio 作为另一个当前例子，用来说明在人类—AI 辅助学术出版中，人类问责仍然处于中心位置。
 
@@ -93,7 +93,7 @@ https://credit.niso.org/
 - 其目的之一是以透明、结构化方式表示学术成果中的贡献。
 - 它可以补充 authorship 判断，但并不自动决定 authorship status。
 
-### HARC 文章中的允许用法
+### AHICP 文章中的允许用法
 
 使用 CRediT 来区分两个问题：
 
@@ -117,9 +117,9 @@ https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research
 
 UNESCO 将该指南描述为支持教育与研究中生成式 AI 的**以人为中心**方法，其中包括政策、隐私、伦理验证、公平/安全/有意义的使用以及人类能力发展。
 
-### HARC 文章中的允许用法
+### AHICP 文章中的允许用法
 
-作为以人为中心治理的政策背景。它不是 HARC 特定的 Framework Approval 或 responsibility concentration 模型的直接证据。
+作为以人为中心治理的政策背景。它不是 AHICP 特定的 Framework Approval 或 responsibility concentration 模型的直接证据。
 
 **状态：** 背景政策语境。
 
@@ -139,7 +139,7 @@ DOI: https://doi.org/10.1093/analys/58.1.7
 
 ### 限定
 
-HARC 不要求接受强版本 extended-mind thesis。文章更谨慎地把仓库描述为 external cognitive scaffold / persistent research-state substrate。
+AHICP 不要求接受强版本 extended-mind thesis。文章更谨慎地把仓库描述为 external cognitive scaffold / persistent research-state substrate。
 
 ---
 
@@ -155,7 +155,7 @@ DOI: https://doi.org/10.7551/mitpress/1881.001.0001
 
 ### 限定
 
-文章把它作为类比与方法论资源，不把它当作“ HARC 仓库本身就是自主认知主体”的证明。
+文章把它作为类比与方法论资源，不把它当作“ AHICP 仓库本身就是自主认知主体”的证明。
 
 ---
 
@@ -173,7 +173,7 @@ DOI: https://doi.org/10.2307/2026523
 
 ### 限定
 
-AI 系统不能简单等同于人类专家。HARC 用这套文献把 dependence 构造为一个治理问题，而不是假定两者等价。
+AI 系统不能简单等同于人类专家。AHICP 用这套文献把 dependence 构造为一个治理问题，而不是假定两者等价。
 
 ---
 
@@ -195,20 +195,20 @@ DOI: https://doi.org/10.1518/001872097778543886
 
 ---
 
-# 仍然属于 HARC 提议、而非外部已确立事实的主张
+# 仍然属于 AHICP 提议、而非外部已确立事实的主张
 
-以下内容不得因为在 HARC 中重要，就被写成已经由上述文献确立：
+以下内容不得因为在 AHICP 中重要，就被写成已经由上述文献确立：
 
 - Framework Approval 是 AI 时代作者身份的最佳一般解决方案；
 - “responsibility concentration” 是人类责任的正确普遍模型；
 - “generation–verification asymmetry” 是既定技术术语；
-- “semantic version control” 在 HARC 意义上已经是成熟学术方法术语；
+- “semantic version control” 在 AHICP 意义上已经是成熟学术方法术语；
 - 以仓库为中心的工作流能够经验证地减少 semantic drift；
-- HARC 会提升 research integrity；
-- HARC 能在不增加严重错误的情况下减少人类审阅负担；
+- AHICP 会提升 research integrity；
+- AHICP 能在不增加严重错误的情况下减少人类审阅负担；
 - 仅靠 human-approved framework 就足以满足任何外部发布渠道的 authorship 要求。
 
-这些属于 HARC 假说、拟议概念或规范主张，需要进一步论证，并在可能时进行经验测试。
+这些属于 AHICP 假说、拟议概念或规范主张，需要进一步论证，并在可能时进行经验测试。
 
 # 投稿前核验清单
 
@@ -217,7 +217,7 @@ DOI: https://doi.org/10.1518/001872097778543886
 - [ ] 重新核验 ICMJE authorship 与 AI assistance 的措辞；
 - [ ] 重新核验目标期刊/出版商的准确 AI 和 authorship policy；
 - [ ] 核验每一条参考文献和 DOI；
-- [ ] 区分当前政策事实与 HARC 规范性提案；
+- [ ] 区分当前政策事实与 AHICP 规范性提案；
 - [ ] 除非增加更广证据，把“publishing norms generally require...”一类宽泛表述替换为明确来源范围表述；
 - [ ] 按目标渠道样式补充需要的具体页码引文；
 - [ ] 核验没有任何 AI 生成但未经来源确认的参考文献进入 bibliography；

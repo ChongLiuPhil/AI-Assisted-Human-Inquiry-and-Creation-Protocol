@@ -1,4 +1,4 @@
-# HARC Project Session Context Bootstrap
+# AHICP Project Session Context Bootstrap
 
 > **Language:** Chinese canonical: `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`; this English file is the synchronized mirror.
 
@@ -7,14 +7,14 @@
 The current session loads only a minimal **Repository Resolver**, not a duplicate dynamic project state.
 
 ```text
-HARC REPOSITORY CONTEXT — ACTIVE
+AHICP REPOSITORY CONTEXT — ACTIVE
 
 Source of truth:
 - GitHub repository
 
 Control:
-- HARC_MANIFEST.yaml
-- HARC_CONTEXT_INTERFACE.yaml
+- AHICP_MANIFEST.yaml
+- AHICP_CONTEXT_INTERFACE.yaml
 
 Working Memory:
 - index: docs/working-memory.zh-CN.md
@@ -41,7 +41,7 @@ Fresh-fetch Working Memory first when needed to determine the current stage and 
 
 ## Context Refresh
 
-`HARC CONTEXT REFRESH` means reread manifest/context-interface, fresh-fetch Working Memory, resolve long-term-memory dependencies for the current task, fresh-fetch those canonical files, discard stale cache, and continue. It does not copy the whole project state into chat.
+`AHICP CONTEXT REFRESH` means reread manifest/context-interface, fresh-fetch Working Memory, resolve long-term-memory dependencies for the current task, fresh-fetch those canonical files, discard stale cache, and continue. It does not copy the whole project state into chat.
 
 ## Write rule
 

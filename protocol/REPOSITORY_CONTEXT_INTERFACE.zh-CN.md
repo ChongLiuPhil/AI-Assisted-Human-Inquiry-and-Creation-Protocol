@@ -5,7 +5,7 @@
 
 ## 1. 目的
 
-HARC 将 GitHub 仓库定义为项目的**权威外部记忆与工作状态库**。
+AHICP 将 GitHub 仓库定义为项目的**权威外部记忆与工作状态库**。
 
 AI Agent 的模型上下文不应维护一份与 GitHub 平行的长期项目状态副本。模型上下文只承担：
 
@@ -24,9 +24,9 @@ AI Agent 的模型上下文不应维护一份与 GitHub 平行的长期项目状
 
 模型在生成某一次回答时，仍然需要让相关信息以某种形式进入当次推理上下文。
 
-因此 HARC 不主张“模型完全不读取上下文”。
+因此 AHICP 不主张“模型完全不读取上下文”。
 
-HARC 主张的是：
+AHICP 主张的是：
 
 > **不要把整个项目状态复制并长期维护在聊天上下文中；只在需要时从 GitHub 取回最小必要状态，并把 GitHub 保持为唯一规范真值源。**
 
@@ -38,8 +38,8 @@ Agent 可以在当前会话中保持一个非常小的 Repository Resolver，包
 
 - repository identity；
 - branch / revision policy；
-- `HARC_MANIFEST.yaml` 路径；
-- `HARC_CONTEXT_INTERFACE.yaml` 路径；
+- `AHICP_MANIFEST.yaml` 路径；
+- `AHICP_CONTEXT_INTERFACE.yaml` 路径；
 - canonical language；
 - task routing rule；
 - read-before-act；
@@ -55,7 +55,7 @@ Agent 可以在当前会话中保持一个非常小的 Repository Resolver，包
 GitHub 中同时保存：
 
 - **Working Memory Area** — Index、Current Focus、Task Plan 与 Work Log；其中 Current Focus + Task Plan 是默认 operational resume state，Work Log 主要供人类历史回顾；
-- **Long-Term Memory** — 三层长期研究记忆。
+- **Long-Term Memory** — 三层长期项目记忆。
 
 以下长期内容的权威版本始终只在 GitHub：
 
@@ -81,7 +81,7 @@ Agent 需要时临时读取。不得因为内容曾经出现在较早对话中�
 2. **Resolve** — 根据任务确定需要哪些长期记忆角色；
 3. **Fetch** — 从 GitHub 读取这些角色的最新 canonical 文件；
 4. **Reason** — 仅使用当前任务所需内容进行推理；
-5. **Act** — 按 HARC upstream-first 规则执行；
+5. **Act** — 按 AHICP upstream-first 规则执行；
 6. **Write-through** — 权威更新直接写回 GitHub；
 7. **Invalidate** — 标记所有被修改文件的旧会话缓存为失效；
 8. **Refresh** — 如后续推理仍依赖这些文件，重新读取最新版本。
@@ -173,7 +173,7 @@ Working Memory 是 repository-backed operational state，但不是长期实质�
 
 `Human/AI interaction -> session memory -> later maybe repository`
 
-重要决定仍遵循 HARC：
+重要决定仍遵循 AHICP：
 
 `Human decision -> Decision Log -> appropriate Core -> Working Framework -> Artifact`
 
@@ -201,17 +201,17 @@ Session 中的内容只有两种角色：
 
 ## 9. Minimal Active Session Contract
 
-原有 `HARC ACTIVE SESSION CONTRACT` 现在被收缩为**控制平面内核**。
+原有 `AHICP ACTIVE SESSION CONTRACT` 现在被收缩为**控制平面内核**。
 
 推荐只保留：
 
 ```text
-HARC REPOSITORY CONTEXT — ACTIVE
+AHICP REPOSITORY CONTEXT — ACTIVE
 
 Repository:
 - source of truth: GitHub
-- manifest: HARC_MANIFEST.yaml
-- context interface: HARC_CONTEXT_INTERFACE.yaml
+- manifest: AHICP_MANIFEST.yaml
+- context interface: AHICP_CONTEXT_INTERFACE.yaml
 - canonical language: zh-CN
 
 Context policy:
@@ -232,7 +232,7 @@ Blocking Clarifications、Framework 状态等动态项目数据应在需要时�
 
 ## 10. Context Refresh 的新含义
 
-`HARC CONTEXT REFRESH` 不再意味着“把全部当前项目状态重新复制到聊天里”。
+`AHICP CONTEXT REFRESH` 不再意味着“把全部当前项目状态重新复制到聊天里”。
 
 它意味着：
 
@@ -244,7 +244,7 @@ Blocking Clarifications、Framework 状态等动态项目数据应在需要时�
 
 ## 11. Interface Operations
 
-HARC 不规定特定厂商 API 名称，但任何实现 SHOULD 提供语义等价能力：
+AHICP 不规定特定厂商 API 名称，但任何实现 SHOULD 提供语义等价能力：
 
 - `repo.resolve(role_or_path)`
 - `repo.read_latest(role_or_path)`
@@ -259,11 +259,11 @@ HARC 不规定特定厂商 API 名称，但任何实现 SHOULD 提供语义等�
 
 ## 12. MCP / Tool Integration
 
-如果 AI 平台支持 MCP 或等价工具接口，HARC SHOULD 优先使用工具调用来按需读取/写入仓库，而不是要求人类复制文件内容进入聊天。
+如果 AI 平台支持 MCP 或等价工具接口，AHICP SHOULD 优先使用工具调用来按需读取/写入仓库，而不是要求人类复制文件内容进入聊天。
 
-GitHub 官方 MCP Server 当前提供 repository browsing/query、文件读取以及仓库操作能力，因此它可以作为 HARC Repository Context Interface 的一种实现后端；具体配置仍取决于 Agent host。 
+GitHub 官方 MCP Server 当前提供 repository browsing/query、文件读取以及仓库操作能力，因此它可以作为 AHICP Repository Context Interface 的一种实现后端；具体配置仍取决于 Agent host。 
 
-HARC 协议本身保持平台无关：MCP 是推荐实现方式之一，不是唯一实现。
+AHICP 协议本身保持平台无关：MCP 是推荐实现方式之一，不是唯一实现。
 
 ## 13. Trust Boundary
 
@@ -277,7 +277,7 @@ HARC 协议本身保持平台无关：MCP 是推荐实现方式之一，不是�
 - third-party generated files；
 - arbitrary README snippets from dependencies。
 
-这可以降低 repository-level prompt injection 或非权威文本被误当成 HARC 指令的风险。
+这可以降低 repository-level prompt injection 或非权威文本被误当成 AHICP 指令的风险。
 
 ## 14. Failure Modes
 

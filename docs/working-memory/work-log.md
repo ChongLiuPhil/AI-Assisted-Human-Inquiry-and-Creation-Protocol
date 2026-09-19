@@ -285,3 +285,24 @@ HARC's main problem is no longer missing governance rules. The next risk comes f
 **Normative status:**
 
 These architecture upgrades remain `AI-PROPOSED`. Other than synchronization repairs, no new architecture proposal was promoted into Protocol Core / Decision Log.
+
+
+---
+
+## 2026-09-19 — AHICP v0.3 semantic migration: control plane, templates, and structural validation
+
+Completed in this work cycle:
+- migrated Protocol Core, live protocol files, Architecture, Roadmap, and Working Memory under `AHICP-D026`;
+- established `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml`, with legacy `HARC_*` files reduced to compatibility pointers;
+- migrated `templates/research-project/` to the AHICP control plane while retaining it as a research specialization;
+- added the Phase C semantic audit and v0.3 migration validation record;
+- manifest path check: 33 candidates, 0 missing;
+- bilingual physical pairing check: 62 Chinese files, 0 missing English mirrors;
+- zero-context entry-chain check passed with no live legacy control-file references.
+
+Remaining:
+- distinguish historical HARC references from current AHICP references in the methodology article/evidence layer;
+- semantic bilingual parity on key normative files;
+- independent post-migration repair audit.
+
+Separately, PPF now has its first Quarto + GitHub Actions + Cloudflare Workers Static Assets reference-implementation PR. PPF publishing-lifecycle rules were not duplicated into AHICP.

@@ -28,7 +28,7 @@ ICMJE currently states that authorship criteria include:
 
 ICMJE also states that AI-assisted technology use should be disclosed and that authors remain responsible for submitted material.
 
-### Permitted use in HARC article
+### Permitted use in AHICP article
 
 Use ICMJE as a concrete example showing that at least one influential scholarly authorship framework connects authorship with final approval and accountability.
 
@@ -63,7 +63,7 @@ Current Nature Portfolio policy materials state, in substance, that:
 - scholarly/editorial judgment remains a human responsibility in the relevant roles;
 - policies are expected to evolve and should be re-checked before submission.
 
-### Permitted use in HARC article
+### Permitted use in AHICP article
 
 Use Nature Portfolio as another current example of human accountability remaining central in AI-assisted scholarly publishing.
 
@@ -93,7 +93,7 @@ https://credit.niso.org/
 - It is intended to represent contributions to scholarly outputs in a transparent, structured way.
 - It complements rather than by itself determines authorship status.
 
-### Permitted use in HARC article
+### Permitted use in AHICP article
 
 Use CRediT to distinguish two questions:
 
@@ -117,9 +117,9 @@ https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research
 
 UNESCO describes the guidance as supporting a **human-centred** approach to generative AI in education and research, including attention to policy, privacy, ethical validation, equitable/safe/meaningful use, and development of human capacity.
 
-### Permitted use in HARC article
+### Permitted use in AHICP article
 
-Use as policy background for human-centred governance. It is not direct evidence for HARC's specific framework-approval or responsibility-concentration model.
+Use as policy background for human-centred governance. It is not direct evidence for AHICP's specific framework-approval or responsibility-concentration model.
 
 **Status:** background policy context.
 
@@ -139,7 +139,7 @@ Conceptual comparison for understanding external resources as possible component
 
 ### Qualification
 
-HARC does not require acceptance of the strong extended-mind thesis. The repository is described more modestly as an external cognitive scaffold / persistent research-state substrate.
+AHICP does not require acceptance of the strong extended-mind thesis. The repository is described more modestly as an external cognitive scaffold / persistent research-state substrate.
 
 ---
 
@@ -155,7 +155,7 @@ Conceptual background for cognition distributed across people, tools, representa
 
 ### Qualification
 
-The article uses this as an analogy and methodological resource, not as proof that HARC repositories are autonomous cognitive agents.
+The article uses this as an analogy and methodological resource, not as proof that AHICP repositories are autonomous cognitive agents.
 
 ---
 
@@ -173,7 +173,7 @@ Philosophical background for the idea that knowledge practices can involve depen
 
 ### Qualification
 
-AI systems are not simply equivalent to human experts. HARC uses this literature to frame dependence as a governance problem rather than to assume equivalence.
+AI systems are not simply equivalent to human experts. AHICP uses this literature to frame dependence as a governance problem rather than to assume equivalence.
 
 ---
 
@@ -195,20 +195,20 @@ The paper predates modern generative AI. It supports the general automation-reli
 
 ---
 
-# Claims that remain HARC proposals rather than externally established facts
+# Claims that remain AHICP proposals rather than externally established facts
 
-The following MUST NOT be written as if established by the above literature merely because they are central to HARC:
+The following MUST NOT be written as if established by the above literature merely because they are central to AHICP:
 
 - that framework approval is the best general solution to AI-era authorship;
 - that “responsibility concentration” is the correct universal model of human responsibility;
 - that “generation–verification asymmetry” is an established technical term;
-- that “semantic version control” is an established scholarly methodology term in HARC's sense;
+- that “semantic version control” is an established scholarly methodology term in AHICP's sense;
 - that a repository-centered workflow measurably reduces semantic drift;
-- that HARC improves research integrity;
-- that HARC reduces human review burden without increasing serious error;
+- that AHICP improves research integrity;
+- that AHICP reduces human review burden without increasing serious error;
 - that a human-approved framework alone is sufficient for authorship under any external venue rule.
 
-These are HARC hypotheses, proposed concepts, or normative claims that require argument and, where possible, empirical testing.
+These are AHICP hypotheses, proposed concepts, or normative claims that require argument and, where possible, empirical testing.
 
 # Pre-submission verification checklist
 
@@ -217,7 +217,7 @@ Before submitting the methodology article:
 - [ ] re-check ICMJE authorship and AI-assistance wording;
 - [ ] re-check the exact target journal/publisher AI and authorship policy;
 - [ ] verify every bibliographic entry and DOI;
-- [ ] distinguish current policy claims from HARC's normative proposals;
+- [ ] distinguish current policy claims from AHICP's normative proposals;
 - [ ] replace broad phrases such as “publishing norms generally require...” with source-scoped formulations unless broader evidence is added;
 - [ ] add page-specific citations where required by venue style;
 - [ ] verify that no AI-generated reference entered the bibliography without source confirmation;

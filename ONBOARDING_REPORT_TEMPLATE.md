@@ -1,4 +1,4 @@
-# HARC Onboarding Report Template
+# AHICP Onboarding Report Template
 
 > **Language:** Chinese canonical: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`; this English file is the synchronized mirror.
 
@@ -6,7 +6,7 @@ Before substantive work, a new AI Agent should report the state reconstructed fr
 
 ## A. Protocol state
 
-- HARC version:
+- AHICP version:
 - adopted commit/tag:
 - canonical language:
 - bootstrap / AGENTS / manifest status:
@@ -85,7 +85,7 @@ Before substantive work, a new AI Agent should report the state reconstructed fr
 ### Currently blocked
 - 
 
-### HARC propagation path for this request
+### AHICP propagation path for this request
 `...`
 
 ## I. Onboarding conclusion
@@ -98,9 +98,9 @@ Before substantive work, a new AI Agent should report the state reconstructed fr
 
 ## J. Repository Context Resolver
 
-Following `HARC_CONTEXT_INTERFACE.yaml` and `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, the Agent must confirm:
+Following `AHICP_CONTEXT_INTERFACE.yaml` and `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, the Agent must confirm:
 
-`HARC REPOSITORY CONTEXT — ACTIVE`
+`AHICP REPOSITORY CONTEXT — ACTIVE`
 
 including at least:
 

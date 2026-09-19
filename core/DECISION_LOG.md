@@ -399,3 +399,24 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Working Argument Map dependency structure; Framework Approval protocol; Framework Status; Working Memory.
 
 **Status:** confirmed; bilingual propagation implemented.
+
+
+---
+
+## 2026-09-19 — AHICP-D026
+
+**Source:** human project founder  
+**Classification:** PROTOCOL, CONTENT, FORM
+
+**Decision:**
+
+1. The former **Human–AI Research Collaboration Protocol (HARC)** formally migrates to **AI-Assisted Human Inquiry and Creation Protocol (AHICP)**.
+2. The fixed subtitle is: **A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.**
+3. The normative direction is explicitly **human-led, AI-assisted, repository-grounded**.
+4. AI is not normatively characterized as a cognitive subject, an intellectual-labor subject, or an ultimate bearer of responsibility symmetric with the human. AI may perform or assist extensive retrieval, comparison, structuring, proposal generation, drafting, verification, transformation, and repository maintenance; human purpose, direction, substantive judgment, approval, and ultimate responsibility remain non-transferable.
+5. The protocol generalizes from research as its primary default setting to inquiry / research / reasoning / writing / creation. Text genuinely specific to research evidence, research integrity, scholarly articles, or research policy may remain research-specific and must not be mechanically generalized.
+6. The mature governance architecture from HARC v0.2.x is inherited; the migration target is **AHICP v0.3.0-draft**.
+7. Historical decision IDs (for example HARC-D001–HARC-D025) remain unchanged as audit identifiers; new decisions use the AHICP prefix beginning with this entry.
+8. AHICP remains separate from the **Personal Publishing Framework (PPF)**: AHICP governs AI assistance in human inquiry and creation; PPF governs the source / build / publish / release / archive lifecycle. They may be adopted independently or together.
+
+**Status:** explicitly human-confirmed; propagation is in progress on the v0.3 semantic-migration branch.

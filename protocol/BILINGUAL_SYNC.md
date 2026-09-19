@@ -1,4 +1,4 @@
-# HARC Bilingual Synchronization Policy
+# AHICP Bilingual Synchronization Policy
 
 **Status: normative project rule**  
 **Chinese: canonical source**  
@@ -6,7 +6,7 @@
 
 ## 1. Core rule
 
-HARC substantive documentation is maintained in both Chinese and English.
+AHICP substantive documentation is maintained in both Chinese and English.
 
 - Chinese is the authoritative semantic, editing, and human-review baseline.
 - English is a synchronized translation mirror of the Chinese version.
@@ -69,12 +69,12 @@ An Agent must not use a more polished English wording to silently change the Chi
 
 ## 7. New-project inheritance
 
-A new HARC project may explicitly adopt the bilingual profile. When it does, Chinese canonical and English mirror files should be created at initialization rather than added later.
+A new AHICP project may explicitly adopt the bilingual profile. When it does, Chinese canonical and English mirror files should be created at initialization rather than added later.
 
 
 ## 8. Pre-cutover legacy catch-up
 
-The Chinese-canonical / English-synchronized-mirror rule became formal HARC governance on 2026-09-18.
+The Chinese-canonical / English-synchronized-mirror rule became formal AHICP governance on 2026-09-18.
 
 For bilingual files that existed before that rule, if the **English version had in fact developed substantive content newer than the Chinese version**, that newer content must not be discarded merely to impose Chinese canonical status immediately.
 
