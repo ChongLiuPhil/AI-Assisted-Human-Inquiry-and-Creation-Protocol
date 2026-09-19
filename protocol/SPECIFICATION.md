@@ -667,6 +667,36 @@ After an external action, the Agent **SHOULD** verify actual provider state. If 
 
 The provider is the direct observation source for its live account configuration and runtime results; the repository stores the project's durable, auditable interpretation of those observations. If the two disagree, the Agent must re-check the provider and update or mark repository state stale / unresolved rather than relying on old chat, old UI captures, or model memory.
 
+### 23.5 Authorization boundaries for high-impact durable state
+
+When a project uses publishing systems, distribution channels, access control, external governance frameworks, or reusable upstream protocols, an Agent **MUST NOT** infer human authorization for the following high-impact durable-state changes merely from runtime facts, provider configuration, repository visibility, or upstream changes:
+
+- publication authorization: whether an artifact / channel is approved for publication;
+- publication visibility / audience: for example public, restricted, private, or an equivalent state;
+- access policy: for example authentication requirements, selected audiences, allowlists, or equivalent access boundaries;
+- canonical publication identity, production cutover, legacy URL retirement, or equivalent public-identity migration;
+- adoption or upgrade of the version, tag, commit, or semantic revision of an upstream protocol / governance / publishing framework.
+
+These changes **MUST** have an auditable source of human authorization. Authorization may be either:
+
+1. an explicit human decision for the current change; or
+2. a durable pre-authorization policy already recorded in repository state with clear scope and trigger conditions.
+
+Within an authorized scope, an Agent may automatically implement, deploy, verify, and write back the change, but the following facts must not be treated as authorization by themselves:
+
+~~~text
+build/deployment success
+provider endpoint exists
+repository is public/private
+provider UI shows a setting
+upstream main/tag changed
+machine state became technically reachable
+~~~
+
+If the intended high-impact state, its scope, or its authorization source remains unclear, the Agent **MUST** keep it unresolved / pending human decision and create a Clarification when appropriate. Provider actual state must not be promoted directly into human intent.
+
+If the project adopts PPF or another publishing framework, that framework defines the concrete publication-state semantics. AHICP here governs **authorization provenance, non-inference, and durable-state discipline**; it does not redefine the publishing lifecycle.
+
 ---
 
 ## 24. Portability
