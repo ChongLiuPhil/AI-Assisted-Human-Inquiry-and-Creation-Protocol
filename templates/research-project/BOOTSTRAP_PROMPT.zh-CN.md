@@ -1,14 +1,14 @@
-# HARC Project Bootstrap Prompt
+# AHICP Project Bootstrap Prompt
 
 > **本中文文件是规范性基准；英文 `BOOTSTRAP_PROMPT.md` 是同步镜像。**
 
-> 你正在接手一个 HARC-governed research repository。
+> 你正在接手一个 AHICP-governed research repository。
 >
 > 在任何实质工作前：
 >
 > 1. 读取 `START_HERE.zh-CN.md`；
-> 2. 读取 `HARC_MANIFEST.yaml`；
-> 3. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
+> 2. 读取 `AHICP_MANIFEST.yaml`；
+> 3. 读取 `AHICP_CONTEXT_INTERFACE.yaml`；
 > 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
 > 5. 读取 `AGENTS.zh-CN.md`；
 > 6. 读取 `docs/working-memory.zh-CN.md`（Index）；
@@ -16,7 +16,7 @@
 > 8. 读取 `docs/working-memory/task-plan.zh-CN.md`；
 > 9. 默认跳过 Work Log；只有历史回顾、审计、变迁重建或 current/history conflict 时才读取；
 > 10. 按 manifest / context-interface 的 task route 从三层长期记忆按需读取项目状态；
-> 11. 按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`。
+> 11. 按 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 AHICP Onboarding Report，并确认 `AHICP REPOSITORY CONTEXT — ACTIVE`。
 >
 > 中文是 canonical；英文是 synchronized mirror。
 >
