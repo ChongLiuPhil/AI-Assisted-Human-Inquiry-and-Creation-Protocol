@@ -670,35 +670,65 @@ Provider dashboard、临时 UI 页面、聊天状态与模型记忆都不是 aut
 
 Provider 是其账户实时配置和运行结果的直接观察来源；repository 则保存项目对这些观察的持久、可审计状态。若二者不一致，Agent 必须重新检查 provider，并更新或标记 repository state 为 stale / unresolved，而不是依赖旧聊天、旧 UI 截图或模型记忆。
 
-### 23.5 高影响持久状态的授权边界
+### 23.5 授权作用域与持久状态行动生命周期
 
-当项目使用出版系统、发布渠道、访问控制、外部治理框架或可复用上游协议时，Agent **MUST NOT** 仅根据运行事实、provider 配置、公开仓库状态或 upstream 变化，推断人类已经授权以下高影响持久状态变化：
+**持久状态变化（durable-state change）**是指会超出当前交互而继续存在，并可能约束后续工作或影响外部主体的变化。持久化本身并不等于高影响。对于已经落在有效授权作用域内、风险较低且可逆的 repository/provider 写入，**不应**仅因为它会持久存在就升级给人类。
 
-- publication authorization：某个 artifact / channel 是否获准发布；
-- publication visibility / audience：例如 public、restricted、private 或等价状态；
-- access policy：例如 authentication requirement、selected audience、allowlist 或等价访问边界；
-- canonical publication identity、production cutover、legacy URL retirement 或等价公开身份迁移；
-- 对上游 protocol / governance / publishing framework 的 version、tag、commit 或 semantic revision 的采用与升级。
-
-这些变化 **MUST** 具有可审计的人类授权来源。授权可以是：
-
-1. 针对当前变化的明确人类决定；或
-2. 已经预先写入 repository durable state、范围与触发条件清楚的长期授权策略。
-
-Agent 可以在授权范围内自动执行实现、部署、验证与 write-back，但不得把以下事实当作授权本身：
+在机器执行之前，Agent **必须**保持以下状态彼此区分：
 
 ~~~text
-build/deployment success
-provider endpoint exists
-repository is public/private
-provider UI shows a setting
-upstream main/tag changed
-machine state became technically reachable
+proposal
+!= authorization
+!= execution
+!= verification
+!= durable write-back
 ~~~
 
-如果高影响状态的意图、范围或授权来源仍不明确，Agent **MUST** 把它保持为 unresolved / pending human decision，并在适当时创建 Clarification；不得把 provider actual state 直接升级为 human intent。
+proposal 可以描述或建议行动，但不等于授权；authorization 只允许其覆盖范围内的行动；execution 不证明目标状态已经实现；verification 用于确认实际观察到的状态；durable write-back 把经验证的结果写入持久项目状态，不能反过来补造授权。
 
-如果项目采用 PPF 或其他出版框架，publication-state 的具体语义由该框架定义；AHICP 在这里规范的是**授权来源、不可静默推断与持久化纪律**，不重新定义 publishing lifecycle。
+当某项行动的授权边界具有实质意义时，repository-backed 的授权记录或策略**应当**按与风险相称的粒度明确：
+
+- **action class**：允许执行哪一类行动；
+- **target**：覆盖哪个 repository、branch、artifact、account、channel、endpoint、audience 或其他对象；
+- **allowed side effects**：哪些副作用属于授权范围，而不是意外扩张；
+- **reversibility / rollback assumptions**：行动是否可逆，以及预期如何回滚；
+- **duration or occurrence bound**：一次行动、限定时间、指定 workflow 或其他明确边界；
+- **escalation condition**：何种 scope、impact、不确定性或 provider state 变化需要重新交由人类判断；
+- **authorization provenance**：授权所来源的人类决定或已经持久记录的人类批准策略。
+
+有效授权可以来自：
+
+1. 针对当前行动或状态转换的明确人类决定；或
+2. 已经持久记录、由人类批准且其作用域确实覆盖当前行动的 pre-authorization policy。
+
+pre-authorization policy **不得**覆盖 AHICP 或项目治理已经标记为 human-reserved / non-delegable 的行动类别；这类行动必须获得相应治理规则要求的人类授权。
+
+Agent **不得**仅根据 AI proposal、技术能力、repository visibility、provider 配置、provider 可达性、build/deployment 成功、已有 endpoint、upstream branch/tag/version 变化或其他机器观察事实推断授权已经存在。
+
+### 23.5.1 Provider-neutral 的高影响判断
+
+如果一项行动的合理可预见效果会实质改变以下一个或多个边界，则应视为 high-impact：
+
+- **人类/项目的外部承诺或公开代表行为**：包括以人类/项目名义进行的 release、publication、submission 或 communication；
+- **access、confidentiality、security、identity、ownership 或 permission 边界**；
+- **canonical identity、routing、production/public cutover，或对既有依赖身份/路由的 retirement**；
+- **adopted governance authority**：包括后续工作采用哪个 protocol、framework、policy、version、tag 或 commit；
+- **不可逆或实质上难以逆转的状态**，尤其是 deletion、destructive migration 或失去可靠 rollback 路径。
+
+这些是 impact dimensions，不是 provider-specific 的操作名称。repository write、merge、deployment、email send、API call 或 configuration change **并不会**仅因其技术类别就自动属于同一个授权等级。例如，可逆的 branch write 可以在既有授权范围内作为常规机器操作，而 public release 或 canonical cutover 可能跨越 human-reserved 边界。同样，deployment 本身不等于 release、publication authorization 或 canonical cutover。
+
+出现以下情况时，Agent **必须**升级请求人类授权：
+
+- 行动属于 human-reserved / non-delegable；
+- 没有有效授权来源覆盖当前行动；
+- target 或 side effects 超出已记录作用域；或
+- reversibility、impact 或 uncertainty 已经实质偏离原授权所依赖的假设。
+
+对于已经授权、低风险、可逆的机器操作，Agent **不应**仅因为它会改变 durable state 就升级给人类。
+
+执行后依照 §23.4：验证 provider actual state，并把经验证的 durable result 写回 repository。若验证失败，或观察到的影响超出授权范围，则停止继续传播，按需把状态标记为 unresolved/stale，并只升级当前新增的授权或判断问题。
+
+如果项目采用 PPF 或其他 publishing framework，publication lifecycle 的具体状态语义由该框架定义。AHICP 只规范 authorization provenance、scope、escalation、execution/verification separation 与 durable write-back，不重新定义 publishing lifecycle。
 
 ---
 
