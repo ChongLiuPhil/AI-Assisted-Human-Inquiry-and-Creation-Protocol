@@ -1,4 +1,4 @@
-# HARC Session Context Bootstrap
+# AHICP Session Context Bootstrap
 
 > **Language:** Chinese canonical: `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`; this English file is the synchronized mirror.
 
@@ -22,14 +22,14 @@ Dynamic project state is not maintained here or as a long-lived session copy.
 After bootstrap, the Agent should confirm:
 
 ```text
-HARC REPOSITORY CONTEXT — ACTIVE
+AHICP REPOSITORY CONTEXT — ACTIVE
 
 Source of truth:
 - GitHub repository
 
 Control files:
-- HARC_MANIFEST.yaml
-- HARC_CONTEXT_INTERFACE.yaml
+- AHICP_MANIFEST.yaml
+- AHICP_CONTEXT_INTERFACE.yaml
 
 Working Memory:
 - index: docs/working-memory.zh-CN.md
@@ -66,10 +66,10 @@ Earlier appearance of those values in chat does not remove the need for fresh re
 
 ## 3. Context Refresh
 
-`HARC CONTEXT REFRESH` means:
+`AHICP CONTEXT REFRESH` means:
 
-1. reread `HARC_MANIFEST.yaml`;
-2. reread `HARC_CONTEXT_INTERFACE.yaml`;
+1. reread `AHICP_MANIFEST.yaml`;
+2. reread `AHICP_CONTEXT_INTERFACE.yaml`;
 3. fresh-fetch Working Memory Index + Current Focus + Task Plan and confirm the resume point;
 4. skip Work Log by default;
 5. resolve long-term-memory dependencies for the current task;
@@ -117,7 +117,7 @@ After any canonical file changes:
 
 This kernel is not a true platform system prompt.
 
-`Platform system/developer rules > HARC Repository Resolver > ordinary AI defaults`
+`Platform system/developer rules > AHICP Repository Resolver > ordinary AI defaults`
 
 ## 8. Principle
 
