@@ -1,6 +1,6 @@
-# AGENTS.md — HARC Agent 协作契约
+# AGENTS.md — AHICP Agent 辅助契约
 
-本仓库定义 **Human–AI Research Collaboration Protocol（HARC，人类—AI 研究协作协议）**。任何在本仓库中工作、或把本仓库作为模板使用的 AI Agent，都必须把仓库状态视为持久的协作基础设施。
+本仓库定义 **AI-Assisted Human Inquiry and Creation Protocol（AHICP，AI 辅助人类探究与创作协议）**。任何在本仓库中工作、或把本仓库作为模板使用的 AI Agent，都必须把自己视为人类主导项目中的辅助系统，并把仓库状态视为持久的项目基础设施。
 
 > **语言规则：本文件的中文版本是规范性基准；英文 `AGENTS.md` 是同步镜像。**
 
@@ -9,15 +9,15 @@
 任何从零开始接手本仓库的 AI Agent，在进行实质性工作前必须先读取：
 
 1. `START_HERE.zh-CN.md`
-2. `HARC_MANIFEST.yaml`
-3. `HARC_CONTEXT_INTERFACE.yaml`
+2. `AHICP_MANIFEST.yaml`
+3. `AHICP_CONTEXT_INTERFACE.yaml`
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `docs/working-memory.zh-CN.md`
 7. `docs/working-memory/current-focus.zh-CN.md`
 8. `docs/working-memory/task-plan.zh-CN.md`
 
-先用 Working Memory Index -> Current Focus -> Task Plan 确定“现在最重要的事是什么、接下来怎么推进”，然后按照 manifest 与 context interface 的规则从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 **HARC Onboarding Report**。报告必须确认 `HARC REPOSITORY CONTEXT — ACTIVE`。该确认只加载最小 Repository Resolver；动态项目状态仍必须从 GitHub 最新 canonical revision 按需读取。
+先用 Working Memory Index -> Current Focus -> Task Plan 确定“现在最重要的事是什么、接下来怎么推进”，然后按照 manifest 与 context interface 的规则从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 **AHICP Onboarding Report**。报告必须确认 `AHICP REPOSITORY CONTEXT — ACTIVE`。该确认只加载最小 Repository Resolver；动态项目状态仍必须从 GitHub 最新 canonical revision 按需读取。
 
 在完成这一接管握手前，不得进行大规模结构修改、正文重写、Framework Approval、关键术语传播或把 AI 提议提升为人类承诺。
 
@@ -39,7 +39,7 @@
 - 后续若仍依赖该文件，重新读取，不维护聊天内第二份真值源；
 - 优先通过 GitHub API、MCP、connector/plugin 或等价工具直接读取/写入。
 
-完整规则见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` 与 `HARC_CONTEXT_INTERFACE.yaml`。
+完整规则见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` 与 `AHICP_CONTEXT_INTERFACE.yaml`。
 
 ## 2. 保持三个不同的领域
 
@@ -134,9 +134,9 @@ AI 生成的论点、区分、重组、术语、版式或审美选择，不会�
 
 批准后，创建诸如 `FW-001.md` 的版本化不可变快照。
 
-实质性思想变化要求产生新的 framework 版本。Framework Approval 是 HARC 的治理检查点，不得自动扩张为跨学科的一般作者身份理论，也不取消 Final Artifact Approval。
+实质性思想变化要求产生新的 framework 版本。Framework Approval 是 AHICP 的治理检查点，不得自动扩张为跨学科的一般作者身份理论，也不取消 Final Artifact Approval。
 
-HARC 的责任原则是：AI 可以分担工作，但在人机协作研究、探究以及尤其公开知识传播中，人类必须保持为责任主体.
+AHICP 的责任原则是：AI 可以分担工作，但在人机协作研究、探究以及尤其公开知识传播中，人类必须保持为责任主体.
 
 ## 8. 证据冲突
 
@@ -192,7 +192,7 @@ Framework Approval 后，AI 可以生成大量派生文本，但在最终人类�
 
 本仓库有两个主要产出：
 
-1. 可执行的 HARC 开放协议；
+1. 可执行的 AHICP 开放协议；
 2. 一篇解释并批判性发展该协议的方法论文章。
 
 方法论文章应按以下顺序读取：
@@ -213,7 +213,7 @@ Work Log 默认不在该读取链中。
 
 在中文 framework 未被人类明确批准之前，文章 Argument Map 仍是 `WORKING-FRAMEWORK`。在相关批准门完成之前，正文仍是 `DERIVED-PROVISIONAL`。
 
-方法论文章必须遵守它所描述的 HARC 原则。不能因为 AI 提议的术语或结构已经写进草稿，就把它当成人类批准。涉及作者身份、AI 政策、认识责任、自动化或认知的外部研究发生变化时，应先更新证据层，并区分规范性的 HARC 提案与外部出版规则。
+方法论文章必须遵守它所描述的 AHICP 原则。不能因为 AI 提议的术语或结构已经写进草稿，就把它当成人类批准。涉及作者身份、AI 政策、认识责任、自动化或认知的外部研究发生变化时，应先更新证据层，并区分规范性的 AHICP 提案与外部出版规则。
 
 ## 14. 审计记录
 
@@ -242,7 +242,7 @@ Work Log 默认不在该读取链中。
 
 ## 16. 中文规范基准 / 英文同步镜像
 
-HARC 是一个中英双语项目。
+AHICP 是一个中英双语项目。
 
 对于实质性 Markdown 内容：
 
