@@ -1,4 +1,4 @@
-# START HERE — HARC 项目零上下文接管入口
+# START HERE — AHICP 项目零上下文接管入口
 
 > **本中文文件是规范性基准；英文 `START_HERE.md` 是同步镜像。**
 
@@ -8,8 +8,8 @@
 
 在实质性工作前：
 
-1. 读取 `HARC_MANIFEST.yaml`；
-2. 读取 `HARC_CONTEXT_INTERFACE.yaml`；
+1. 读取 `AHICP_MANIFEST.yaml`；
+2. 读取 `AHICP_CONTEXT_INTERFACE.yaml`；
 3. 读取 `BOOTSTRAP_PROMPT.zh-CN.md`；
 4. 读取 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`；
 5. 读取 `AGENTS.zh-CN.md`；
@@ -18,7 +18,7 @@
 8. 读取 `docs/working-memory/task-plan.zh-CN.md`；
 9. 默认跳过 Work Log；
 10. 按 manifest / context interface 的 task route 从三层长期记忆按需读取当前状态；
-11. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 HARC Onboarding Report，并确认 `HARC REPOSITORY CONTEXT — ACTIVE`；
+11. 使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 向人类输出 AHICP Onboarding Report，并确认 `AHICP REPOSITORY CONTEXT — ACTIVE`；
 12. 只有在报告通过、Repository Context 已激活后，才开始实质工作；完成较大工作循环后更新 Current Focus / Task Plan，并在适当里程碑更新 Work Log。
 
 ## Onboarding Report 至少包含
