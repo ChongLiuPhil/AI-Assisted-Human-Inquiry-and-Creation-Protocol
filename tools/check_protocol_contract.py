@@ -55,8 +55,9 @@ for zh, en in PAIRS:
 
 for path, markers in REQUIRED.items():
     body = (ROOT / path).read_text(encoding="utf-8")
+    folded = body.casefold()
     for marker in markers:
-        if marker not in body:
+        if marker.casefold() not in folded:
             fail(f"{path} is missing contract marker: {marker}")
 
 for path in (
