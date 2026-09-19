@@ -1,5 +1,5 @@
-# Clarification Workflow inside HARC Working Memory
-## HARC 工作记忆中的澄清流程
+# Clarification Workflow inside AHICP Working Memory
+## AHICP 工作记忆中的澄清流程
 
 > **本中文文件是规范性基准；英文 `CLARIFICATION_REGISTER.md` 是同步镜像。**
 
