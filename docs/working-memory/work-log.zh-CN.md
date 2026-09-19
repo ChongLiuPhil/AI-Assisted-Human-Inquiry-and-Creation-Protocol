@@ -1,4 +1,4 @@
-# HARC Working Memory — Work Log
+# AHICP Working Memory — Work Log
 ## 工作日志
 
 > **中文 canonical；英文 `work-log.md` 为同步 mirror。**
@@ -325,3 +325,31 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 
 中文 canonical 与英文 mirror、root AGENTS 与 research-project template 同步更新。
 
+---
+
+## 2026-09-20 — Scoped authorization governance consolidation and post-merge repair
+
+**对应：** AHICP-D027、AHICP-D028、AHICP-D029；PR #3。
+
+**阶段性进展：**
+
+- D027 已建立 provider-neutral 的 machine-operable-first、tool discovery、authorization / human handoff、provider actual-state verification 与 repository write-back 治理；
+- D028 明确首次配置 reusable authorization policy 时，由 AI 提出适合场景的授权方式，人类选择、修改或拒绝，且最终选择必须连同 scope、authorization provenance 与 escalation conditions 写入 repository durable state；
+- D029 批准 scoped authorization 的整体规范方向，并授权 PR #3 在最新 head CI green 后合并；
+- PR #3 已完成 normative consolidation；合并后的独立审阅没有发现需要回滚的架构问题，但发现若干传播与 operational-state 缺口。
+
+**本轮 repair：**
+
+- 恢复 D028 在 Specification、Protocol Core、root AGENTS 与 research-project template 中的完整 durable authorization record，避免只记录“选择了哪种模式”而遗漏 scope / escalation boundary；
+- 在 Specification §23.3 的 Human handoff 枚举中补回 `permission grants`，与 §23.2、P25、AGENTS 和 D027 对齐；
+- 刷新 Current Focus / Task Plan，使 D027–D029、PR #3 与 post-merge review 成为可恢复的当前 operational history；
+- 把本 Work Log 的 live 标题从 HARC 修正为 AHICP，同时保留历史 HARC-D001–HARC-D025 标识；
+- 将 Protocol Contract CI 从全文件 marker 存在性进一步加固到 §23.5.1 的 section-local authorization-record invariant。
+
+**边界：**
+
+- 没有改变 PPF publishing lifecycle；
+- 没有修改 Vault；
+- 没有触碰 textbook；
+- 没有进行 downstream adoption bump；
+- 本轮是对已经批准的 D028/D029 规范进行传播与一致性修复，不创建新的 Human Protocol Decision。
