@@ -670,6 +670,36 @@ Provider dashboard、临时 UI 页面、聊天状态与模型记忆都不是 aut
 
 Provider 是其账户实时配置和运行结果的直接观察来源；repository 则保存项目对这些观察的持久、可审计状态。若二者不一致，Agent 必须重新检查 provider，并更新或标记 repository state 为 stale / unresolved，而不是依赖旧聊天、旧 UI 截图或模型记忆。
 
+### 23.5 高影响持久状态的授权边界
+
+当项目使用出版系统、发布渠道、访问控制、外部治理框架或可复用上游协议时，Agent **MUST NOT** 仅根据运行事实、provider 配置、公开仓库状态或 upstream 变化，推断人类已经授权以下高影响持久状态变化：
+
+- publication authorization：某个 artifact / channel 是否获准发布；
+- publication visibility / audience：例如 public、restricted、private 或等价状态；
+- access policy：例如 authentication requirement、selected audience、allowlist 或等价访问边界；
+- canonical publication identity、production cutover、legacy URL retirement 或等价公开身份迁移；
+- 对上游 protocol / governance / publishing framework 的 version、tag、commit 或 semantic revision 的采用与升级。
+
+这些变化 **MUST** 具有可审计的人类授权来源。授权可以是：
+
+1. 针对当前变化的明确人类决定；或
+2. 已经预先写入 repository durable state、范围与触发条件清楚的长期授权策略。
+
+Agent 可以在授权范围内自动执行实现、部署、验证与 write-back，但不得把以下事实当作授权本身：
+
+~~~text
+build/deployment success
+provider endpoint exists
+repository is public/private
+provider UI shows a setting
+upstream main/tag changed
+machine state became technically reachable
+~~~
+
+如果高影响状态的意图、范围或授权来源仍不明确，Agent **MUST** 把它保持为 unresolved / pending human decision，并在适当时创建 Clarification；不得把 provider actual state 直接升级为 human intent。
+
+如果项目采用 PPF 或其他出版框架，publication-state 的具体语义由该框架定义；AHICP 在这里规范的是**授权来源、不可静默推断与持久化纪律**，不重新定义 publishing lifecycle。
+
 ---
 
 ## 24. 可迁移性
