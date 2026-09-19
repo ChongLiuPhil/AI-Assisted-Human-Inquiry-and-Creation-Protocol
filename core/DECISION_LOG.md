@@ -466,3 +466,28 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Specification §23.5, Protocol Core P26, AGENTS, research-project template, Protocol Contract CI.
 
 **Status:** this principle is explicitly human-confirmed and authorized for propagation in current PR #3.
+
+---
+
+## 2026-09-20 — AHICP-D029
+
+**Source:** human project founder  
+**Classification:** PROTOCOL
+
+**Decision:**
+
+1. The human project founder approves the normative direction and current substantive content of PR #3 on **scoped authorization for durable-state actions**, including:
+   - `proposal != authorization != execution != verification != durable write-back`;
+   - explicit modeling of authorization scope and provenance;
+   - durability not being automatically equivalent to high impact;
+   - a provider-neutral high-impact test;
+   - avoiding unnecessary human escalation for authorized, low-risk, reversible machine operations;
+   - the initial-configuration authorization-mode human-choice gate confirmed by AHICP-D028.
+2. The human-reserved / non-delegable boundary remains: bounded pre-authorization must not override actions that governing rules explicitly reserve for human authorization.
+3. The AHICP / PPF boundary remains unchanged: AHICP governs authorization provenance, scope, selection, escalation, execution/verification separation, and durable write-back; PPF or another publishing framework continues to own publication-lifecycle state semantics.
+4. This decision authorizes moving PR #3 out of draft and merging it into `main` once Protocol Contract CI succeeds on the latest head and no new substantive conflict has appeared.
+5. Merge completion, CI success, or any other machine-execution result does not itself create authorization. This human decision is the authorization provenance for the current normative promotion / merge.
+
+**Affected components:** Specification §23.5, Protocol Core P26, AGENTS, research-project template, Decision Log, Protocol Contract CI.
+
+**Status:** explicitly human-approved; authorized to complete PR #3 normative consolidation and merge after green CI.
