@@ -8,23 +8,25 @@
 ## 1. ACTIVE TASKS
 
 - `WM-T016` — AHICP v0.3 repository-wide semantic migration：`IN PROGRESS`
-- `WM-T017` — AHICP project templates/control-plane migration：`IN PROGRESS`
-- `WM-T018` — v0.3 bilingual parity + onboarding + post-migration audit：`PENDING`
+- `WM-T017` — AHICP project templates/control-plane migration：`COMPLETED`
+- `WM-T018` — v0.3 structural validation completed；semantic bilingual parity + post-migration audit：`IN PROGRESS`
 - `WM-T015` — 方法论文章整体 Framework Approval：`WAITING-HUMAN / PARALLEL`
 - `WM-T013` — license 决定：`WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints：`WAITING-HUMAN`
 
 ## 2. NEXT ACTIONS
 
-1. 完成 live protocol/core/template 中的 AHICP identifier 迁移；
-2. 保留历史 HARC Decision IDs 和明确的历史叙述；
-3. 把 `templates/research-project/` 明确为 research specialization，并迁移其控制文件；
-4. 建立 Phase C audit，列出 GENERALIZE / RETAIN / PRESERVE / MIGRATE 四类；
-5. 检查 broken references 与旧 repo URL；
-6. 执行 bilingual parity；
-7. 执行 zero-context onboarding self-test；
-8. 执行独立 post-migration audit；
-9. 上述检查通过后，PR 才具备合并条件。
+1. 精确处理方法论文章与 evidence 层中旧项目名称：区分 historical HARC reference 与 current AHICP reference；
+2. 对关键中英文规范文件执行语义级 parity 审计，而不仅是文件配对；
+3. 检查剩余 live navigation / repository URL / identifier 是否需要迁移；
+4. 执行独立 post-migration repair audit；
+5. 上述检查通过后，PR 才具备合并条件。
+
+已完成的结构验证：
+- `AHICP_MANIFEST.yaml` 路径候选 33，缺失 0；
+- 中文 `*.zh-CN.md` 文件 62，缺失英文 mirror 0；
+- zero-context control chain 已全部指向 AHICP 控制文件；
+- research-project template 已迁移到 AHICP 控制面并保留 research specialization。
 
 ## 3. MIGRATION INVARIANTS
 
