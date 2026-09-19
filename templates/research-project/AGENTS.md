@@ -59,6 +59,20 @@ When a task requires an external system, account, or service:
 
 Provider UI, chat state, and model memory are not durable project authority.
 
+## High-impact durable-state authorization boundary
+
+Do not infer human approval for these changes merely from technical facts:
+
+- publication authorization;
+- publication visibility / audience;
+- access policy;
+- canonical identity / production cutover / legacy retirement;
+- adoption of an upstream protocol / governance / publishing-framework revision.
+
+Authorization must come from an explicit human decision or a durable pre-authorization policy already recorded in the repository with clear scope and trigger conditions. Build/deployment success, provider endpoints, repository visibility, provider UI settings, and upstream changes are not authorization by themselves.
+
+Once authorization scope is clear, the Agent may perform machine-operable implementation, deployment, verification, and write-back. If authorization intent or scope is unclear, keep the state unresolved / pending human decision and create a Clarification when appropriate.
+
 ## Protocol source
 
 At project initialization record:
