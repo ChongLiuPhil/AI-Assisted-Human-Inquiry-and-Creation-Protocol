@@ -3,13 +3,14 @@
 > **Chinese canonical: `current-focus.zh-CN.md`; this file is the synchronized English mirror.**
 
 **Status:** `ACTIVE`  
-**Last updated:** 2026-09-19
+**Last updated:** 2026-09-20
 
 ## CURRENT_STAGE
 
-**The HARC → AHICP v0.3 semantic migration is complete and has passed the final post-migration audit.**
+**The AHICP v0.3 semantic migration is complete; the later external-system authorization / human-handoff and scoped-authorization governance have also completed normative consolidation.**
 
-Migration authority: `AHICP-D026`.
+Migration authority: `AHICP-D026`.  
+Later authorization-governance authority: `AHICP-D027`, `AHICP-D028`, and `AHICP-D029`.
 
 Completed:
 - formal name and fixed subtitle;
@@ -20,19 +21,23 @@ Completed:
 - research-project specialization template migration;
 - methodology article/evidence current protocol identity migration while preserving research-specific subject matter;
 - semantic parity of key bilingual normative files;
-- final post-migration repair audit.
+- final post-migration repair audit;
+- provider-neutral machine-operable-first escalation, authorization / human handoff, and provider actual-state write-back;
+- scoped authorization lifecycle: `proposal != authorization != execution != verification != durable write-back`;
+- initial configuration of reusable authorization policies through AI proposal, human selection, and durable recording of the selected scope / provenance / escalation conditions;
+- independent post-merge consistency review and propagation repair after PR #3.
 
-Final audit:
-
-`docs/AHICP_V0_3_FINAL_POST_MIGRATION_AUDIT.zh-CN.md`
-
-Conclusion: `PASS — merge-ready`.
+The latest protocol repair closes:
+- weakening of the D028 durable authorization record during downstream propagation;
+- omission of `permission grants` from Specification §23.3;
+- Working Memory not reflecting D028/D029 and the PR #3 milestone;
+- Protocol Contract CI checking §23.5.1 only through file-wide markers rather than a section-local invariant.
 
 ## CURRENT_OBJECTIVE
 
 ### WM-OBJ-003 — Methodology article overall Framework Approval
 
-With the AHICP v0.3 migration complete, the repository returns to the principal unresolved work gates that preceded the migration:
+After protocol maintenance, the repository's principal unresolved work gates remain:
 
 - methodology article Working Framework: `WAITING-HUMAN`
 - license: `WAITING-HUMAN`
@@ -56,8 +61,8 @@ No Approved Framework snapshot is created before that decision.
 
 `WAITING-HUMAN: methodology article overall Framework Approval`
 
-This does not block the completed AHICP v0.3 protocol migration.
+This does not block the completed AHICP protocol migration or authorization-governance maintenance.
 
 ## HANDOFF
 
-A replacement AI Agent should use the AHICP control plane for takeover. The protocol migration is complete; legacy HARC live identifiers must not be reintroduced into current normative files.
+A replacement AI Agent should use the AHICP control plane and treat the latest repository `main` revision as the sole project-state source. D027–D029 are current authorization-governance authority; legacy HARC live identifiers must not be reintroduced into current normative files.

@@ -64,7 +64,7 @@ durable write 并不自动等于 high-impact。对于授权边界具有实质意
 
 不得根据技术能力、repository/provider state、build/deployment 成功、已有 endpoint 或 upstream 变化推断授权。durable human-approved pre-authorization policy 只能授权其已记录作用域内的行动，并且不能覆盖 human-reserved / non-delegable 边界。
 
-第一次配置可重复使用的 authorization policy 时，先由 AI 根据场景提出适合的授权方式；在适用时区分 per-action authorization、bounded pre-authorization 与 mixed policy，并说明 scope、控制边界与 escalation conditions。必须由人类选择、修改或拒绝，随后才能继续依赖该 policy 的配置；最终选择及 provenance 必须写入 repository durable state。
+第一次配置可重复使用的 authorization policy 时，先由 AI 根据场景提出适合的授权方式；在适用时区分 per-action authorization、bounded pre-authorization 与 mixed policy，并说明 scope、控制边界与 escalation conditions。必须由人类选择、修改或拒绝，随后才能继续依赖该 policy 的配置；最终选择连同 scope、authorization provenance 与 escalation conditions 必须写入 repository durable state。
 
 只有当行动属于 non-delegable、授权缺失/不清楚、将超出 scope，或 impact/reversibility 已经实质变化时才升级给人类。不要仅因为操作会持久化，就把已经授权、可逆的常规机器操作交还给人类。
 

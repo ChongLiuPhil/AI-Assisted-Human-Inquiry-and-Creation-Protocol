@@ -1,4 +1,4 @@
-# HARC Working Memory — Work Log
+# AHICP Working Memory — Work Log
 
 > **Language:** Chinese canonical: `work-log.zh-CN.md`; this English file is the synchronized mirror.
 >
@@ -324,3 +324,31 @@ Under AHICP-D027, this work cycle promotes lessons from real external-provider c
 
 Chinese canonical and English mirror, root AGENTS, and the research-project template were synchronized in the same work cycle.
 
+---
+
+## 2026-09-20 — Scoped authorization governance consolidation and post-merge repair
+
+**Related:** AHICP-D027, AHICP-D028, AHICP-D029; PR #3.
+
+**Stage progress:**
+
+- D027 established provider-neutral machine-operable-first execution, tool discovery, authorization / human handoff, provider actual-state verification, and repository write-back governance;
+- D028 established that initial configuration of a reusable authorization policy begins with AI-proposed authorization patterns and human selection/modification/rejection, with the final choice recorded together with scope, authorization provenance, and escalation conditions in repository durable state;
+- D029 approved the overall scoped-authorization direction and authorized PR #3 to merge after green CI on the latest head;
+- PR #3 completed normative consolidation. An independent post-merge review found no architectural issue requiring rollback, but identified several propagation and operational-state gaps.
+
+**Repair in this work cycle:**
+
+- restored the complete D028 durable authorization record across the Specification, Protocol Core, root AGENTS, and research-project template so a stored policy cannot omit its scope / escalation boundary;
+- restored `permission grants` to the Specification §23.3 Human handoff enumeration, aligning it with §23.2, P25, AGENTS, and D027;
+- refreshed Current Focus / Task Plan so D027–D029, PR #3, and the post-merge review are recoverable operational history;
+- corrected the live Work Log title from HARC to AHICP while preserving historical HARC-D001–HARC-D025 identifiers;
+- strengthened Protocol Contract CI from file-wide marker presence to a section-local authorization-record invariant for §23.5.1.
+
+**Boundary:**
+
+- no change to the PPF publishing lifecycle;
+- no Vault modification;
+- no textbook change;
+- no downstream adoption bump;
+- this work is propagation and consistency repair of already approved D028/D029 semantics, not a new Human Protocol Decision.

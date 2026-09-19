@@ -63,7 +63,7 @@ durable state 并不自动等于 high-impact。对于授权边界具有实质意
 
 不得根据 capability、repository/provider state、build/deployment 成功、已有 endpoint 或 upstream change 等技术事实推断授权。durable human-approved pre-authorization policy 只在其已记录作用域内有效，并且不能覆盖 human-reserved / non-delegable 边界。
 
-第一次配置可重复使用的 authorization policy 时，由 AI 先提出适合当前场景的授权方式；在适用时区分 per-action authorization、bounded pre-authorization 与 mixed policy，并说明 scope 与 escalation conditions。人类必须先选择、修改或拒绝该方案，最终选择及 authorization provenance 写入 repository durable state 后，AI 才能依赖该 policy 继续配置与执行。
+第一次配置可重复使用的 authorization policy 时，由 AI 先提出适合当前场景的授权方式；在适用时区分 per-action authorization、bounded pre-authorization 与 mixed policy，并说明 scope 与 escalation conditions。人类必须先选择、修改或拒绝该方案，最终选择连同 scope、authorization provenance 与 escalation conditions 写入 repository durable state 后，AI 才能依赖该 policy 继续配置与执行。
 
 只有当授权确实缺失、行动属于 non-delegable、将超出 scope，或 impact/reversibility 实质变化时才升级给人类；否则继续已经授权的 machine-operable execution，验证 actual state，并把经验证的结果写回 repository durable state。
 

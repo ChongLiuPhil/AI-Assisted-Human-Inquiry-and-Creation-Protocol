@@ -28,13 +28,21 @@
 - old live HARC control paths / full name / v0.2 identifiers：关键规范文件中 0；
 - final post-migration audit：PASS。
 
-## 3. NEXT ACTIONS
+## 3. COMPLETED PROTOCOL GOVERNANCE TASKS
+
+- `WM-T019` — AHICP-D027 external systems / tool discovery / authorization / human handoff governance：`COMPLETED`
+- `WM-T020` — AHICP-D028 / D029 scoped authorization、initial authorization-mode human choice 与 PR #3 normative consolidation：`COMPLETED`
+- `WM-T021` — PR #3 post-merge review：补齐 durable authorization record、§23.3 permission grants、Working Memory 与 section-local contract validation：`COMPLETED / CI-GATED`
+
+这些任务不改变 PPF publishing lifecycle，也不构成 downstream project 的静默 adoption bump。
+
+## 4. NEXT ACTIONS
 
 1. 等待人类对方法论文章整体 Working Framework 作 `APPROVE / REVISE / REJECT`；
 2. formal release 前决定 license；
 3. final submission/publication 前决定 target venue / external form constraints。
 
-## 4. MIGRATION INVARIANTS
+## 5. MIGRATION / GOVERNANCE INVARIANTS
 
 AHICP v0.3 后续开发必须保持：
 
@@ -42,6 +50,10 @@ AHICP v0.3 后续开发必须保持：
 - *A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.*
 - 人类保持目的、方向、实质判断、批准与最终责任；
 - AI 是辅助系统；
+- `AI proposal != human authorization`；
+- `proposal != authorization != execution != verification != durable write-back`；
+- reusable authorization policy 必须由人类选择，并持久记录 scope / authorization provenance / escalation conditions；
+- human-reserved / non-delegable 边界不能由一般 pre-authorization 覆盖；
 - repository state outranks chat memory；
 - 历史 `HARC-D001`–`HARC-D025` 保持历史标识；
 - 新协议决定采用 AHICP 前缀；
