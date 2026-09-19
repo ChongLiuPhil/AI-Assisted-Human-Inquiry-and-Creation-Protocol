@@ -8,53 +8,57 @@
 
 ## CURRENT_STAGE
 
-仓库正在执行 **HARC → AHICP v0.3 语义迁移**。
+**HARC → AHICP v0.3 语义迁移已完成，并通过最终迁移后审计。**
 
-本次迁移由 `AHICP-D026` 明确授权，不是简单改名。目标是保留现有成熟治理架构，同时把协议的默认范围从 research 上位化为 human-led inquiry / research / reasoning / writing / creation with AI assistance，并确保规范语言不把 AI 表述为与人对称的认知主体或最终责任主体。
+迁移依据：`AHICP-D026`。
 
 已完成：
-- 新正式名称与 subtitle；
-- README / Specification / AGENTS / onboarding 入口第一阶段迁移；
-- `AHICP_MANIFEST.yaml` 与 `AHICP_CONTEXT_INTERFACE.yaml`；
-- 旧 `HARC_*` 控制文件降级为 compatibility pointer；
-- 双语 semantic migration plan；
-- Protocol Core 初步泛化；
-- `AHICP-D026` 进入 Decision Log。
+- 正式名称与固定 subtitle；
+- human-led / AI-assisted / repository-grounded 规范方向；
+- Protocol Core、Specification、AGENTS 与 live protocol 文档迁移；
+- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` 控制面；
+- zero-context onboarding 控制链迁移；
+- research-project specialization template 迁移；
+- 方法论文章/evidence 的当前协议身份迁移，同时保留 research-specific 主题；
+- 关键双语规范 semantic parity；
+- final post-migration repair audit。
+
+最终审计：
+
+`docs/AHICP_V0_3_FINAL_POST_MIGRATION_AUDIT.zh-CN.md`
+
+结论：`PASS — merge-ready`。
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-004 — 完成 AHICP v0.3 repository-wide semantic migration
+### WM-OBJ-003 — 方法论文章整体 Framework Approval
 
-当前目标是逐文件完成 Phase C：
+AHICP v0.3 迁移完成后，协议仓库恢复到迁移前尚未解决的主要工作门：
 
-1. **GENERALIZE** — 原本只是因为旧项目默认 research 而使用的研究限定语言；
-2. **RETAIN RESEARCH-SPECIFIC** — 真正讨论证据、研究诚信、方法论文章、学术政策等内容；
-3. **PRESERVE HISTORICAL** — HARC-D001–HARC-D025 等历史审计标识与历史事实；
-4. **MIGRATE LEGACY IDENTIFIER** — 当前控制文件、模板、启动链中的 HARC 名称与路径。
+- 方法论文章 Working Framework：`WAITING-HUMAN`
+- license：`WAITING-HUMAN`
+- target publication venue / form constraints：`WAITING-HUMAN`
+
+当前中文 Working Framework：
+
+`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
 ## IMMEDIATE_NEXT_ACTION
 
-- 迁移 research-project template 的控制文件到 AHICP 名称，同时保留其作为 **research-specific specialization**；
-- 为通用 inquiry / creation template 预留独立层，而不是把 research template 强行改成所有项目唯一模板；
-- 更新 Architecture / Roadmap / Working Memory 中的 live references；
-- 生成 Phase C semantic audit record；
-- 最后执行 bilingual parity + zero-context onboarding + post-migration audit。
+人类在准备继续方法论文章时，对当前 Working Framework 作：
+
+- `APPROVE`
+- `REVISE`
+- `REJECT`
+
+在此之前，不创建 Approved Framework snapshot。
 
 ## PRIMARY_BLOCKER
 
-`NONE` — 当前迁移有明确的人类授权。
+`WAITING-HUMAN: methodology article overall Framework Approval`
 
-## PARALLEL WAITING-HUMAN ITEMS
-
-方法论文章仍保持：
-- overall Working Framework Approval：`WAITING-HUMAN`;
-- license：`WAITING-HUMAN`;
-- target publication venue / form constraints：`WAITING-HUMAN`.
-
-这些状态没有被 AHICP 迁移自动批准、拒绝或取消。
+这不阻塞已经完成的 AHICP v0.3 protocol migration。
 
 ## HANDOFF
 
-新的 AI Agent 应先读取本文件与 Task Plan，然后读取 `docs/AHICP_SEMANTIC_MIGRATION_PLAN.zh-CN.md`、`AHICP-D026` 和任务相关文件。
-
-不得把“仓库已经重命名”误解成“语义迁移已经完成”。
+新的 AI Agent 应按 AHICP control plane 接管。协议迁移已经完成，不应重新把旧 HARC live identifiers 引入当前规范文件。
