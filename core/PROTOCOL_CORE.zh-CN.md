@@ -352,20 +352,21 @@ Agent 不得要求人类把 password、token、private key 或其他 secret 粘�
 对影响后续工作的外部操作，Agent 应验证 provider actual state，并把经验证的 durable result 写回 repository。Provider UI、聊天状态与模型记忆都不得成为与 repository 平行的 authoritative project state。
 
 
-## P26. 高影响持久状态不得从技术事实中静默推断
+## P26. 授权必须具有作用域，并按影响判断且与执行生命周期分离
 
-Publication authorization、publication visibility / audience、access policy、canonical identity / production cutover / legacy retirement，以及上游 protocol / governance / publishing framework 的 adopted version/tag/commit 或 semantic revision，都属于需要可审计授权来源的高影响持久状态。
+AHICP 必须区分：
 
-Agent 不得因为 build/deployment 成功、provider endpoint 存在、repository visibility、provider UI 配置、upstream main/tag 更新或其他技术事实，而推断人类已经批准这些状态变化。
+`proposal != authorization != execution != verification != durable write-back`。
 
-合法授权来源可以是：
+durable state 并不自动等于 high-impact。已经获得授权、风险较低且可逆的机器操作，不应仅因为会持久化就升级给人类。
 
-- 当前变化的明确人类决定；或
-- repository 中已经持久记录、范围与触发条件明确的 pre-authorization policy。
+当授权边界具有实质意义时，应以足够明确的作用域表示 authority，包括 action class、target、allowed side effects、reversibility / rollback assumptions、duration or occurrence bound、escalation conditions 与 authorization provenance。
 
-在已授权范围内，Agent 可以自动实现、部署、验证与 write-back；授权本身仍必须与实施事实区分。
+授权可以来自明确人类决定，或已经持久记录且由人类批准的 pre-authorization policy；但如果 AHICP 或项目治理把行动标记为 human-reserved / non-delegable，则不能用一般预授权替代相应人类授权。技术能力、provider state、repository state、成功执行或 upstream 变化都不会自行产生人类授权。
 
-授权意图或范围不明确时，应保持 unresolved / pending human decision，并按需要创建 Clarification。AHICP 只规范授权来源与不可静默推断；具体 publishing lifecycle 语义继续由 PPF 或其他兼容框架定义。
+high-impact 应根据行动的合理可预见效果来判断：它是否会实质改变责任主体的外部承诺、access/security/identity/permission 边界、canonical identity 或 public cutover、adopted governance authority，或不可逆/实质上难以逆转的状态。repository write、merge、deployment、email send、API call 等技术操作名称本身不是授权等级。
+
+在有效授权作用域内，Agent 可以执行机器可操作工作、验证 actual state 并把结果写回 repository durable state；如果行动属于 non-delegable、超出 scope，或其 impact / reversibility 已经实质改变，则只升级当前真正缺失的人类授权或判断。
 
 ---
 
