@@ -7,48 +7,43 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T016` — AHICP v0.3 repository-wide semantic migration：`SUBSTANTIALLY COMPLETED`
-- `WM-T017` — AHICP project templates/control-plane migration：`COMPLETED`
-- `WM-T018` — v0.3 structural validation completed；semantic bilingual parity + post-migration audit：`IN PROGRESS`
-- `WM-T015` — 方法论文章整体 Framework Approval：`WAITING-HUMAN / PARALLEL`
+- `WM-T015` — 方法论文章整体 Framework Approval：`WAITING-HUMAN`
 - `WM-T013` — license 决定：`WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints：`WAITING-HUMAN`
 
-## 2. NEXT ACTIONS
+## 2. COMPLETED MIGRATION TASKS
 
-1. 对关键中英文规范文件执行语义级 parity 审计，而不仅是文件配对；
-2. 检查剩余 live navigation / repository URL / identifier 是否需要迁移；
-3. 执行独立 post-migration repair audit；
-4. 上述检查通过后，PR 才具备合并条件。
+- `WM-T016` — AHICP v0.3 repository-wide semantic migration：`COMPLETED`
+- `WM-T017` — AHICP project templates/control-plane migration：`COMPLETED`
+- `WM-T018` — structural validation + semantic bilingual parity + post-migration audit：`COMPLETED / PASS`
 
-已完成的结构验证：
-- `AHICP_MANIFEST.yaml` 路径候选 33，缺失 0；
-- 中文 `*.zh-CN.md` 文件 62，缺失英文 mirror 0；
-- zero-context control chain 已全部指向 AHICP 控制文件；
-- research-project template 已迁移到 AHICP 控制面并保留 research specialization。
+验证摘要：
+- manifest path candidates：33 / missing 0；
+- 中文 Markdown 配对：62 / missing English mirror 0；
+- Protocol Core：24 / 24 sections；
+- Specification：25 / 25 sections；
+- AGENTS：17 / 17 sections；
+- Working Memory：11 / 11 sections；
+- Repository Context Interface：16 / 16 sections；
+- old live HARC control paths / full name / v0.2 identifiers：关键规范文件中 0；
+- final post-migration audit：PASS。
 
-## 3. MIGRATION INVARIANTS
+## 3. NEXT ACTIONS
 
-- 名称：**AI-Assisted Human Inquiry and Creation Protocol**。
-- Subtitle：**A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.**
-- 人类保持目的、方向、实质判断、批准与最终责任。
-- AI 是辅助系统；大量执行工作不等于成为对称认知主体。
-- 历史事实不因重命名而重写。
-- research-specific 内容不因范围泛化而被错误去学术化。
-- AHICP 不复制 PPF 的 publishing lifecycle 规则。
-- 中文 canonical / 英文 mirror 同步治理继续有效。
+1. 等待人类对方法论文章整体 Working Framework 作 `APPROVE / REVISE / REJECT`；
+2. formal release 前决定 license；
+3. final submission/publication 前决定 target venue / external form constraints。
 
-## 4. PARALLEL METHODOLOGY ARTICLE GATES
+## 4. MIGRATION INVARIANTS
 
-仍未改变：
-- overall Framework Approval：`WAITING-HUMAN`;
-- `CLR-009` license：formal release 前 blocking；
-- `CLR-010` target venue / publication form：final publication 前 blocking。
+AHICP v0.3 后续开发必须保持：
 
-## 5. COMPLETION RULE
-
-迁移完成必须同时满足：
-
-`semantic migration complete + bilingual parity + control-path consistency + zero-context onboarding pass + post-migration audit pass`
-
-仅完成仓库重命名或 README 改名不算完成。
+- **AI-Assisted Human Inquiry and Creation Protocol**
+- *A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.*
+- 人类保持目的、方向、实质判断、批准与最终责任；
+- AI 是辅助系统；
+- repository state outranks chat memory；
+- 历史 `HARC-D001`–`HARC-D025` 保持历史标识；
+- 新协议决定采用 AHICP 前缀；
+- AHICP 与 PPF 保持边界；
+- 中文 canonical / 英文 synchronized mirror。
