@@ -6,7 +6,7 @@
 
 > **聊天是临时交互上下文；仓库才是持久共享研究记忆。**
 
-HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个模型、账号、厂商或对话窗口。
+AHICP 把与项目有关的状态外部化，使项目连续性不依赖某一个模型、账号、厂商或对话窗口。
 
 ## 提升测试
 
@@ -20,9 +20,9 @@ HARC 把与项目有关的状态外部化，使项目连续性不依赖某一个
 
 ## 三层长期记忆与并行 Working Memory
 
-HARC 的研究记忆不是单一平面。
+AHICP 的研究记忆不是单一平面。
 
-### Long-Term Research Memory
+### Long-Term Project Memory
 
 `Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
 
@@ -66,7 +66,7 @@ Promotion 后，Working Memory 只保留状态与指针。
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
 | 批准/同步状态 | `docs/framework-status.zh-CN.md` |
 | 证据与核验 | `evidence/` |
-| 零上下文启动与仓库上下文接口 | `START_HERE.zh-CN.md`、`BOOTSTRAP_PROMPT.zh-CN.md`、`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`、`HARC_MANIFEST.yaml`、`HARC_CONTEXT_INTERFACE.yaml`、`ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
+| 零上下文启动与仓库上下文接口 | `START_HERE.zh-CN.md`、`BOOTSTRAP_PROMPT.zh-CN.md`、`SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`、`AHICP_MANIFEST.yaml`、`AHICP_CONTEXT_INTERFACE.yaml`、`ONBOARDING_REPORT_TEMPLATE.zh-CN.md` |
 | 协作规则 | `AGENTS.zh-CN.md`、`protocol/` |
 | 扩写成果 | `paper/`、`book/`、`article/` 等 |
 
@@ -86,7 +86,7 @@ Promotion 后，Working Memory 只保留状态与指针。
 
 ## 对上下文窗口独立，不等于无限上下文
 
-HARC 并不声称模型能在一个 prompt 中读取无限增长的仓库。
+AHICP 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 
 它采用**分层压缩**。
 
@@ -128,7 +128,7 @@ Working Memory 本身保存当前工作状态和指针，而不是复制长期�
 
 ## Repository-backed memory model
 
-HARC 现在采用：
+AHICP 现在采用：
 
 `GitHub Repository = authoritative external memory + working state`
 
@@ -146,11 +146,11 @@ HARC 现在采用：
 
 Session Context Bootstrap 只保存 Repository Resolver，也就是“如何找到记忆”，而不是“另一份记忆”。
 
-完整接口见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` 与 `HARC_CONTEXT_INTERFACE.yaml`。
+完整接口见 `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` 与 `AHICP_CONTEXT_INTERFACE.yaml`。
 
 ## 新 Agent 重建目标
 
-在回答这些问题之前，新 Agent 应先完成 Onboarding Handshake，激活 `HARC REPOSITORY CONTEXT — ACTIVE`，依次读取 Working Memory Index、Current Focus 与 Task Plan 了解当前阶段、最高优先级目标和续接点，再按照 manifest/context interface 从三层长期记忆中按需读取最新权威状态。Work Log 默认跳过。
+在回答这些问题之前，新 Agent 应先完成 Onboarding Handshake，激活 `AHICP REPOSITORY CONTEXT — ACTIVE`，依次读取 Working Memory Index、Current Focus 与 Task Plan 了解当前阶段、最高优先级目标和续接点，再按照 manifest/context interface 从三层长期记忆中按需读取最新权威状态。Work Log 默认跳过。
 
 一个新的、能力合格的 Agent 应能回答：
 
