@@ -3,13 +3,13 @@
 **AI-Assisted Human Inquiry and Creation Protocol**
 
 **Version:** 0.3.0-draft  
-**Scope:** GitHub-centered research and long-form intellectual collaboration between a human author and one or more AI agents.
+**Scope:** GitHub-centered, human-led inquiry, research, reasoning, writing, and creation with assistance from one or more AI agents.
 
 ---
 
 ## 1. Purpose
 
-AHICP defines a persistent, auditable collaboration architecture for projects in which human intellectual direction and AI-assisted research, structuring, drafting, revision, verification, and formatting develop over time.
+AHICP defines a persistent, auditable, human-led protocol for organizing AI assistance in inquiry, research, reasoning, writing, and creation, including retrieval, structuring, proposal generation, drafting, revision, verification, transformation, and project-state maintenance.
 
 The protocol is designed to preserve:
 
@@ -25,7 +25,7 @@ The protocol is designed to preserve:
 - explicit approval states;
 - meaningful human purpose-setting, understanding, judgment, confirmation, and responsibility.
 
-AHICP v0.2 assumes GitHub as the persistent repository substrate. Future implementations may map the same logical roles to other systems.
+AHICP v0.3 currently uses GitHub as the persistent repository substrate in its reference implementation. Future implementations may map the same logical roles to other systems.
 
 ---
 
@@ -39,9 +39,9 @@ AHICP v0.2 assumes GitHub as the persistent repository substrate. Future impleme
 
 ## 3. Core maxim
 
-A long-running research project MUST NOT treat a transient AI conversation as its sole durable state.
+A sustained inquiry, research, or creation project MUST NOT treat a transient AI conversation as its sole durable state.
 
-> **Chat is an interaction surface; the repository is durable shared research memory.**
+> **Chat is an interaction surface; the repository is durable shared project memory.**
 
 Important project state MUST be externalized into explicit, version-controlled repository artifacts.
 
@@ -132,7 +132,7 @@ Current cores may be rewritten to represent active state; the Decision Log prese
 
 ### 5.4 Working Memory Area
 
-Working Memory is parallel to the three Long-Term Research Memory layers and specifies **logical functions**, not one mandatory physical file.
+Working Memory is parallel to the three Long-Term Project Memory layers and specifies **logical functions**, not one mandatory physical file.
 
 A project MUST provide or equivalently implement:
 
@@ -169,7 +169,7 @@ It is normally AI-maintained and MUST be treated as mutable until human approval
 
 It SHOULD expose:
 
-- research question;
+- central question / project problem;
 - current thesis set;
 - conceptual vocabulary;
 - premises/supporting claims;
@@ -289,7 +289,7 @@ A lower layer MUST NOT be treated as evidence that the human endorsed a higher-l
 2. update protocol/governance documents;
 3. update reusable templates where applicable;
 4. verify that new rules are discoverable by future agents;
-5. do not alter research content merely because governance changed.
+5. do not alter substantive project content merely because governance changed.
 
 ---
 
@@ -405,15 +405,15 @@ If reliable evidence or formal reasoning conflicts with active human content:
 
 ---
 
-## 14. Cognitive delegation and epistemic responsibility
+## 14. AI work delegation and human epistemic responsibility
 
-AHICP distinguishes **delegation of cognitive labor** from **delegation of epistemic responsibility**.
+AHICP distinguishes **work that AI may perform or assist** from **human epistemic judgment and responsibility that cannot be transferred**.
 
 AI MAY perform extensive search, synthesis, structuring, drafting, formalization, consistency checking, revision, and formatting.
 
 Human attention SHOULD be concentrated on high-leverage decisions, including:
 
-- research aims and questions;
+- project purpose, research aims, and central questions;
 - core commitments;
 - major inferential architecture;
 - acceptance/rejection of material AI proposals;
@@ -452,8 +452,8 @@ A project SHOULD provide at repository root:
 - `BOOTSTRAP_PROMPT.zh-CN.md` / English mirror;
 - `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` / English mirror;
 - `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` / English mirror;
-- `HARC_MANIFEST.yaml`;
-- `HARC_CONTEXT_INTERFACE.yaml` or equivalent machine-readable context policy;
+- `AHICP_MANIFEST.yaml`;
+- `AHICP_CONTEXT_INTERFACE.yaml` or equivalent machine-readable context policy;
 - root `AGENTS.zh-CN.md` / English mirror;
 - a discoverable Onboarding Handshake specification.
 
@@ -615,7 +615,7 @@ For long or high-stakes projects, evidence directories, Approved Framework snaps
 
 ## 23. Portability
 
-AHICP v0.2 targets GitHub but separates logical functions from exact filenames.
+AHICP v0.3 currently targets GitHub in its reference implementation but separates logical functions from exact filenames.
 
 Future implementations MAY map the same canonical roles to other versioned collaboration systems while preserving explicit state, human/AI provenance distinctions, approval gates, inspectable history, and cross-agent handoff.
 
@@ -623,7 +623,7 @@ Future implementations MAY map the same canonical roles to other versioned colla
 
 ## 24. Design thesis
 
-AHICP separates things that AI-assisted research often collapses:
+AHICP separates things that AI-assisted inquiry, research, and creation often collapse:
 
 1. Layer 1 — Human Authorial Core;
 2. Layer 2 — Current Framework;
@@ -634,7 +634,7 @@ AHICP separates things that AI-assisted research often collapses:
 7. approval state;
 8. historical decisions.
 
-The protocol treats this separation as the basis for durable, auditable, human-governed AI-assisted research.
+The protocol treats this separation as the basis for durable, auditable, human-governed AI-assisted inquiry and creation.
 
 ## 25. Bilingual canonical synchronization
 
