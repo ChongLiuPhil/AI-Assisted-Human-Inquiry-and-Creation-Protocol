@@ -62,7 +62,7 @@ REQUIRED = {
         "## P26.",
         "Authorization is scoped",
         "non-delegable",
-        "initial configuration",
+        "When first configuring",
         "mixed policy",
     ],
     "AGENTS.zh-CN.md": [
