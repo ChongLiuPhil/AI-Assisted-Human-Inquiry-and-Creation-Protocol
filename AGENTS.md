@@ -1,6 +1,6 @@
-# AGENTS.md — HARC Agent Collaboration Contract
+# AGENTS.md — AHICP Agent Assistance Contract
 
-This repository defines the **Human–AI Research Collaboration Protocol (HARC)**. Any AI Agent working in this repository, or using it as a template, must treat repository state as durable collaboration infrastructure.
+This repository defines the **AI-Assisted Human Inquiry and Creation Protocol (AHICP)**. Any AI Agent working in this repository, or using it as a template, must treat repository state as durable collaboration infrastructure.
 
 > **Language rule:** Chinese `AGENTS.zh-CN.md` is canonical; this English file is the synchronized mirror.
 
@@ -9,15 +9,15 @@ This repository defines the **Human–AI Research Collaboration Protocol (HARC)*
 Any AI Agent taking over this repository from zero context must, before substantive work, read:
 
 1. `START_HERE.zh-CN.md`
-2. `HARC_MANIFEST.yaml`
-3. `HARC_CONTEXT_INTERFACE.yaml`
+2. `AHICP_MANIFEST.yaml`
+3. `AHICP_CONTEXT_INTERFACE.yaml`
 4. `BOOTSTRAP_PROMPT.zh-CN.md`
 5. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 6. `docs/working-memory.zh-CN.md`
 7. `docs/working-memory/current-focus.zh-CN.md`
 8. `docs/working-memory/task-plan.zh-CN.md`
 
-Use Working Memory Index -> Current Focus -> Task Plan first to determine what matters most now and how work should proceed. Then reconstruct task-relevant state from the three Long-Term Memory layers according to the manifest/context interface and output a **HARC Onboarding Report** using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
+Use Working Memory Index -> Current Focus -> Task Plan first to determine what matters most now and how work should proceed. Then reconstruct task-relevant state from the three Long-Term Memory layers according to the manifest/context interface and output a **AHICP Onboarding Report** using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must confirm `AHICP REPOSITORY CONTEXT — ACTIVE`.
 
 Before onboarding is complete, do not perform large-scale structural changes, manuscript rewriting, Framework Approval, broad terminology propagation, or promotion of AI proposals into human commitments.
 
@@ -39,7 +39,7 @@ If a human instruction should constrain future work, persist it explicitly in th
 - refetch when later reasoning still depends on the touched file rather than maintaining a second chat truth source;
 - prefer GitHub API, MCP, connector/plugin, or equivalent direct repository tools.
 
-See `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` and `HARC_CONTEXT_INTERFACE.yaml`.
+See `protocol/REPOSITORY_CONTEXT_INTERFACE.zh-CN.md` and `AHICP_CONTEXT_INTERFACE.yaml`.
 
 ## 2. Preserve three distinct domains
 
@@ -134,9 +134,9 @@ Human endorsement occurs only through an explicit **Framework Approval Gate**. B
 
 Once approved, create a versioned immutable snapshot such as `FW-001.md`.
 
-Material intellectual changes require a new framework version. Framework Approval is a HARC governance checkpoint; it must not automatically be expanded into a universal cross-disciplinary theory of authorship, and it does not remove Final Artifact Approval.
+Material intellectual changes require a new framework version. Framework Approval is a AHICP governance checkpoint; it must not automatically be expanded into a universal cross-disciplinary theory of authorship, and it does not remove Final Artifact Approval.
 
-HARC's responsibility principle is that AI may share work, but humans must remain the bearers of responsibility in human–AI collaborative research and inquiry, especially in public dissemination of knowledge.
+AHICP's responsibility principle is that AI may share work, but humans must remain the bearers of responsibility in human–AI collaborative research and inquiry, especially in public dissemination of knowledge.
 
 ## 8. Evidence conflicts
 
@@ -192,7 +192,7 @@ Do not interpret “review three times” as three passive readings followed by 
 
 This repository has two major outputs:
 
-1. the executable HARC open protocol;
+1. the executable AHICP open protocol;
 2. a methodology article explaining and critically developing the protocol.
 
 For the methodology article, read in this order:
@@ -213,7 +213,7 @@ Work Log is outside this read chain by default.
 
 The article's Argument Map remains a `WORKING-FRAMEWORK` until explicit human approval. Its draft remains `DERIVED-PROVISIONAL` until applicable approval gates are completed.
 
-The methodology article must obey the HARC principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When external research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative HARC proposals distinct from external publication rules.
+The methodology article must obey the AHICP principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When external research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative AHICP proposals distinct from external publication rules.
 
 ## 14. Audit records
 
@@ -242,7 +242,7 @@ Then instantiate only human decisions actually supplied for the new project. Unk
 
 ## 16. Chinese canonical / English synchronized mirror
 
-HARC is bilingual.
+AHICP is bilingual.
 
 For substantive Markdown content:
 
