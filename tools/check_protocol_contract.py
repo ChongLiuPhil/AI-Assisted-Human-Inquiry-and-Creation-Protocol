@@ -25,6 +25,9 @@ REQUIRED = {
         "proposal",
         "authorization provenance",
         "non-delegable",
+        "### 23.5.1 首次配置时的人类授权方式选择",
+        "bounded pre-authorization",
+        "mixed policy",
     ],
     "protocol/SPECIFICATION.md": [
         "## 23. External Systems, Tool Discovery, Authorization, and Human Handoff",
@@ -38,6 +41,9 @@ REQUIRED = {
         "proposal",
         "authorization provenance",
         "non-delegable",
+        "### 23.5.1 Human choice of authorization mode at initial configuration",
+        "bounded pre-authorization",
+        "mixed policy",
     ],
     "core/PROTOCOL_CORE.zh-CN.md": [
         "## P25.",
@@ -46,6 +52,8 @@ REQUIRED = {
         "## P26.",
         "授权必须具有作用域",
         "non-delegable",
+        "第一次配置",
+        "mixed policy",
     ],
     "core/PROTOCOL_CORE.md": [
         "## P25.",
@@ -54,6 +62,8 @@ REQUIRED = {
         "## P26.",
         "Authorization is scoped",
         "non-delegable",
+        "initial configuration",
+        "mixed policy",
     ],
     "AGENTS.zh-CN.md": [
         "capability probe",
@@ -61,6 +71,8 @@ REQUIRED = {
         "provider actual state",
         "持久状态行动的授权作用域",
         "durable write-back",
+        "第一次配置",
+        "mixed policy",
     ],
     "AGENTS.md": [
         "capability probe",
@@ -68,21 +80,27 @@ REQUIRED = {
         "provider actual state",
         "Authorization scope for durable-state actions",
         "durable write-back",
+        "initial configuration",
+        "mixed policy",
     ],
     "templates/research-project/AGENTS.zh-CN.md": [
         "capability probe",
         "0.3.0-draft",
         "持久状态行动的授权作用域",
         "non-delegable",
+        "第一次配置",
+        "mixed policy",
     ],
     "templates/research-project/AGENTS.md": [
         "capability probe",
         "0.3.0-draft",
         "Authorization scope for durable-state actions",
         "non-delegable",
+        "initial configuration",
+        "mixed policy",
     ],
-    "core/DECISION_LOG.zh-CN.md": ["AHICP-D027"],
-    "core/DECISION_LOG.md": ["AHICP-D027"],
+    "core/DECISION_LOG.zh-CN.md": ["AHICP-D027", "AHICP-D028", "per-action authorization", "bounded pre-authorization"],
+    "core/DECISION_LOG.md": ["AHICP-D027", "AHICP-D028", "per-action authorization", "bounded pre-authorization"],
 }
 
 
