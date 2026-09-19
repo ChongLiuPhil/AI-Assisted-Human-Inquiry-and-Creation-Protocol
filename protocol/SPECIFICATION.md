@@ -702,7 +702,24 @@ A pre-authorization policy **MUST NOT** override an action class that AHICP or p
 
 An Agent **MUST NOT** infer authorization merely from AI proposal, technical capability, repository visibility, provider configuration, provider reachability, build/deployment success, an existing endpoint, an upstream branch/tag/version change, or any other machine-observed fact.
 
-### 23.5.1 Provider-neutral high-impact test
+### 23.5.1 Human choice of authorization mode at initial configuration
+
+When first configuring an integration, automation, or workflow whose later machine actions will rely on a reusable authorization policy, the Agent **MUST NOT** silently choose the authorization mode for the human, and must not first establish that policy through configuration and then treat the resulting technical state as authorization.
+
+Before continuing configuration that depends on such a policy, the Agent **MUST**:
+
+1. analyze the expected action classes, targets, allowed side effects, reversibility, and high-impact boundaries;
+2. propose one or more authorization patterns appropriate to the situation, explaining their scope, convenience, control boundary, and escalation conditions;
+3. when applicable, distinguish at least:
+   - **per-action authorization** — each action or state transition designated as requiring separate authorization is confirmed by the human when it occurs;
+   - **bounded pre-authorization** — the human approves a clearly bounded action-class / target / side-effect / duration scope in advance, within which the Agent may act repeatedly;
+   - **mixed policy** — selected low-risk actions use bounded pre-authorization while specified high-impact or human-reserved actions continue to require per-action human decisions;
+4. require the human to select, modify, or reject the proposed pattern;
+5. record the final choice and its authorization provenance in repository durable state before later operations rely on it.
+
+The AI recommendation is a proposal, not a human commitment. After the human selects the policy, the Agent may continue machine-operable configuration and later operations that fall within the selected scope. If future action class, target, side effects, impact, reversibility, or duration exceeds that choice, renewed human selection/authorization is required.
+
+### 23.5.2 Provider-neutral high-impact test
 
 An action is high-impact when its reasonably foreseeable effect can materially alter one or more of these boundaries:
 
