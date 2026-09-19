@@ -1,8 +1,8 @@
-# 为 HARC Protocol 贡献
+# 为 AHICP Protocol 贡献
 
 > **本中文文件是规范性基准；英文 `CONTRIBUTING.md` 是同步镜像。**
 
-HARC 旨在成为一套开放、可检查的持久人机研究协作协议。
+AHICP 旨在成为一套开放、可检查的持久人机研究协作协议。
 
 ## 欢迎哪些贡献？
 
@@ -32,7 +32,7 @@ HARC 旨在成为一套开放、可检查的持久人机研究协作协议。
 
 ## 双语贡献规则
 
-HARC 的实质性 Markdown 文档以中文为 canonical、英文为同步 mirror。
+AHICP 的实质性 Markdown 文档以中文为 canonical、英文为同步 mirror。
 
 因此，影响实质含义的贡献应当：
 
@@ -54,7 +54,7 @@ HARC 的实质性 Markdown 文档以中文为 canonical、英文为同步 mirror
 
 ## 兼容原则
 
-如果一个实现保留以下功能性区分，则可以被视为与 HARC 兼容：
+如果一个实现保留以下功能性区分，则可以被视为与 AHICP 兼容：
 
 - 人类内容意图；
 - 人类形式意图；
