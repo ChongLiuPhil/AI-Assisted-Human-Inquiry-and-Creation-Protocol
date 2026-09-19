@@ -4,7 +4,7 @@
 
 ## 1. Two states of the operational framework
 
-HARC distinguishes:
+AHICP distinguishes:
 
 1. **Working Framework** — mutable, AI-maintained, open to discussion.
 2. **Approved Framework Snapshot** — explicitly reviewed and confirmed by the human author.
@@ -86,7 +86,7 @@ An Approved Framework may therefore contain explicit unresolved items, but those
 
 Framework Approval allows development to proceed without requiring human line-by-line approval of every provisional AI expansion, but it does not permit the human to approve only a high-level summary while ignoring substantive details inside the framework itself.
 
-Framework Approval is a HARC governance architecture; it should not automatically be presented as a universal theory of authorship across all disciplines, institutions, or publication regimes.
+Framework Approval is a AHICP governance architecture; it should not automatically be presented as a universal theory of authorship across all disciplines, institutions, or publication regimes.
 
 ## 4. Derived expansion
 
@@ -128,7 +128,7 @@ When material deviation occurs, return upstream and create a new Working Framewo
 
 ## 6. Framework defect versus expansion defect
 
-HARC should keep two kinds of defect analytically separate.
+AHICP should keep two kinds of defect analytically separate.
 
 ### Framework-level defect
 
@@ -189,7 +189,7 @@ Recommended states:
 
 ## 9. Responsibility-bearing subjects and layers of responsibility
 
-HARC distinguishes:
+AHICP distinguishes:
 
 ### Project purpose and direction
 
@@ -209,6 +209,6 @@ When research results, arguments, or knowledge claims enter public circulation, 
 
 A concise formulation is:
 
-> **HARC permits extensive AI participation in carrying out research work, while humans remain the bearers of responsibility: humans supply and authorize project purpose and direction, bear core intellectual responsibility through a framework they fully understand and approve, and bear final release responsibility for concrete public knowledge artifacts through Final Artifact Approval.**
+> **AHICP permits extensive AI participation in carrying out research work, while humans remain the bearers of responsibility: humans supply and authorize project purpose and direction, bear core intellectual responsibility through a framework they fully understand and approve, and bear final release responsibility for concrete public knowledge artifacts through Final Artifact Approval.**
 
-This is HARC's governance model. It does not claim that Framework Approval by itself supplies a universal cross-domain theory of authorship.
+This is AHICP's governance model. It does not claim that Framework Approval by itself supplies a universal cross-domain theory of authorship.
