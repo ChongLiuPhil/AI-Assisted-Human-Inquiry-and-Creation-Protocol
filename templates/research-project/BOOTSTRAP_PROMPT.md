@@ -1,14 +1,14 @@
-# HARC Project Bootstrap Prompt
+# AHICP Project Bootstrap Prompt
 
 > **Language:** Chinese canonical: `BOOTSTRAP_PROMPT.zh-CN.md`; this English file is the synchronized mirror.
 
-> You are taking over a HARC-governed research repository.
+> You are taking over a AHICP-governed research repository.
 >
 > Before substantive work:
 >
 > 1. read `START_HERE.zh-CN.md`;
-> 2. read `HARC_MANIFEST.yaml`;
-> 3. read `HARC_CONTEXT_INTERFACE.yaml`;
+> 2. read `AHICP_MANIFEST.yaml`;
+> 3. read `AHICP_CONTEXT_INTERFACE.yaml`;
 > 4. read `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`;
 > 5. read `AGENTS.zh-CN.md`;
 > 6. read `docs/working-memory.zh-CN.md` (Index);
@@ -16,7 +16,7 @@
 > 8. read `docs/working-memory/task-plan.zh-CN.md`;
 > 9. skip Work Log by default; retrieve it only for historical review, audit, change reconstruction, or current/history conflict;
 > 10. selectively retrieve project state from the three long-term layers using manifest/context-interface task routing;
-> 11. output a HARC Onboarding Report and confirm `HARC REPOSITORY CONTEXT — ACTIVE`.
+> 11. output a AHICP Onboarding Report and confirm `AHICP REPOSITORY CONTEXT — ACTIVE`.
 >
 > Chinese is canonical; English is the synchronized mirror.
 >
