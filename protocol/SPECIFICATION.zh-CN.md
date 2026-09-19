@@ -650,7 +650,7 @@ Agent 不得绕过：
 
 ### 23.3 Human handoff
 
-只有当下一步确实要求人类身份授权、账户所有者 consent、不可委托的高影响决定，或当前可用并获授权的工具能力无法完成该动作时，才应把该动作升级给人类。
+只有当下一步确实要求人类身份授权、账户所有者 consent、权限授予、不可委托的高影响决定，或当前可用并获授权的工具能力无法完成该动作时，才应把该动作升级给人类。
 
 此类 handoff **MUST**：
 
@@ -718,7 +718,7 @@ Agent **不得**仅根据 AI proposal、技术能力、repository visibility、p
    - **bounded pre-authorization**：人类预先批准一个明确且有限的 action class / target / side-effect / duration scope，Agent 可在该 scope 内重复执行；
    - **mixed policy**：部分低风险行动使用 bounded pre-authorization，而指定的 high-impact 或 human-reserved action 继续逐次由人类决定；
 4. 由人类明确选择、修改或拒绝所提方案；
-5. 在后续操作依赖该选择之前，把最终选择及其 authorization provenance 写入 repository durable state。
+5. 在后续操作依赖该选择之前，把最终选择及其 scope、authorization provenance 与 escalation conditions 写入 repository durable state。
 
 AI 的推荐只是 proposal，不是 human commitment。人类完成选择后，Agent 可以继续执行该选择所允许的 machine-operable 配置与后续操作；如果未来的 action class、target、side effects、impact、reversibility 或 duration 超出原选择，则必须重新取得相应的人类选择/授权。
 
