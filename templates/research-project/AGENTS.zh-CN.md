@@ -55,19 +55,15 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 
 Provider UI、聊天状态和模型记忆都不是项目的持久权威状态。
 
-## 高影响持久状态授权边界
+## 持久状态行动的授权作用域
 
-不得仅根据技术事实推断人类已经批准以下变化：
+保持 `proposal != authorization != execution != verification != durable write-back`。
 
-- publication authorization；
-- publication visibility / audience；
-- access policy；
-- canonical identity / production cutover / legacy retirement；
-- 上游 protocol / governance / publishing framework adopted revision。
+durable state 并不自动等于 high-impact。对于授权边界具有实质意义的行动，应按与风险相称的粒度明确 action class、target、allowed side effects、reversibility assumptions、authorization source 与 escalation conditions。
 
-授权必须来自明确人类决定，或已在 repository 中持久记录且范围/触发条件清楚的 pre-authorization policy。Build/deployment success、provider endpoint、repository visibility、provider UI setting 或 upstream 更新都不等于授权。
+不得根据 capability、repository/provider state、build/deployment 成功、已有 endpoint 或 upstream change 等技术事实推断授权。durable human-approved pre-authorization policy 只在其已记录作用域内有效，并且不能覆盖 human-reserved / non-delegable 边界。
 
-授权范围明确后，Agent 可以执行机器可操作的实现、部署、验证和 write-back。若授权意图或范围不清楚，保持 unresolved / pending human decision，并按需创建 Clarification。
+只有当授权确实缺失、行动属于 non-delegable、将超出 scope，或 impact/reversibility 实质变化时才升级给人类；否则继续已经授权的 machine-operable execution，验证 actual state，并把经验证的结果写回 repository durable state。
 
 ## 协议来源
 
