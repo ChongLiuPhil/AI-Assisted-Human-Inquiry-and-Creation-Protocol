@@ -6,7 +6,7 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T016` — AHICP v0.3 repository-wide semantic migration: `IN PROGRESS`
+- `WM-T016` — AHICP v0.3 repository-wide semantic migration: `SUBSTANTIALLY COMPLETED`
 - `WM-T017` — AHICP project templates/control-plane migration: `COMPLETED`
 - `WM-T018` — v0.3 structural validation completed; semantic bilingual parity + post-migration audit: `IN PROGRESS`
 - `WM-T015` — methodology article overall Framework Approval: `WAITING-HUMAN / PARALLEL`
@@ -15,11 +15,10 @@
 
 ## 2. NEXT ACTIONS
 
-1. precisely handle the former project name in the methodology article and evidence layer, distinguishing historical HARC references from current AHICP references;
-2. perform semantic bilingual parity on key normative files, not merely file-pair checks;
-3. check remaining live navigation / repository URLs / identifiers for migration;
-4. perform an independent post-migration repair audit;
-5. merge only after these checks pass.
+1. perform semantic bilingual parity on key normative files, not merely file-pair checks;
+2. check remaining live navigation / repository URLs / identifiers for migration;
+3. perform an independent post-migration repair audit;
+4. merge only after these checks pass.
 
 Structural validation completed:
 - 33 manifest path candidates checked, 0 missing;
