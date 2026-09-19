@@ -1,15 +1,15 @@
-# HARC Protocol Specification
+# AHICP Protocol Specification
 
-**Human–AI Research Collaboration Protocol**
+**AI-Assisted Human Inquiry and Creation Protocol**
 
-**Version:** 0.2.0-draft  
+**Version:** 0.3.0-draft  
 **Scope:** GitHub-centered research and long-form intellectual collaboration between a human author and one or more AI agents.
 
 ---
 
 ## 1. Purpose
 
-HARC defines a persistent, auditable collaboration architecture for projects in which human intellectual direction and AI-assisted research, structuring, drafting, revision, verification, and formatting develop over time.
+AHICP defines a persistent, auditable collaboration architecture for projects in which human intellectual direction and AI-assisted research, structuring, drafting, revision, verification, and formatting develop over time.
 
 The protocol is designed to preserve:
 
@@ -25,13 +25,13 @@ The protocol is designed to preserve:
 - explicit approval states;
 - meaningful human purpose-setting, understanding, judgment, confirmation, and responsibility.
 
-HARC v0.2 assumes GitHub as the persistent repository substrate. Future implementations may map the same logical roles to other systems.
+AHICP v0.2 assumes GitHub as the persistent repository substrate. Future implementations may map the same logical roles to other systems.
 
 ---
 
 ## 2. Normative terms
 
-- **MUST** — required for HARC compliance.
+- **MUST** — required for AHICP compliance.
 - **SHOULD** — strongly recommended unless a project records a reason to deviate.
 - **MAY** — optional.
 
@@ -55,13 +55,13 @@ The Human Author supplies, revises, or confirms substantive intellectual commitm
 
 The purpose, central problem, and direction of a research or creative project MUST originate with the Human Author or be explicitly authorized by the Human Author.
 
-Within HARC, the Human Author is not only a source of content authorization but must also remain a **bearer of responsibility**. This applies throughout research and inquiry and becomes especially important when research results, arguments, or knowledge claims enter public circulation.
+Within AHICP, the Human Author is not only a source of content authorization but must also remain a **bearer of responsibility**. This applies throughout research and inquiry and becomes especially important when research results, arguments, or knowledge claims enter public circulation.
 
 The Human Author MAY use AI Agents as tools to perform or assist with extensive search, synthesis, structuring, drafting, editing, formalization, checking, and formatting. This division of work MUST NOT be treated as a transfer of project purpose, core judgment, framework authorization, responsibility for public knowledge dissemination, or the position of ultimate responsibility.
 
 ### 4.2 AI Agent
 
-The AI Agent is a collaboration tool. Normative HARC language SHOULD NOT characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as protocol terminology; it should identify the concrete work AI performs or assists.
+The AI Agent is a collaboration tool. Normative AHICP language SHOULD NOT characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as protocol terminology; it should identify the concrete work AI performs or assists.
 
 The AI Agent MAY:
 
@@ -350,7 +350,7 @@ The derived artifact MUST NOT materially depart from the approved framework with
 
 Material deviation includes changing the central thesis, adding a new major conclusion, removing an essential premise, changing relations among major claims, altering scope in a way that changes the argument, or restructuring the work so the approved reasoning is no longer accurately represented.
 
-HARC distinguishes:
+AHICP distinguishes:
 
 - **framework-level defect** — a defect already present in the human-approved intellectual architecture;
 - **derived-expansion defect** — a local problem introduced only during later AI expansion or implementation.
@@ -407,7 +407,7 @@ If reliable evidence or formal reasoning conflicts with active human content:
 
 ## 14. Cognitive delegation and epistemic responsibility
 
-HARC distinguishes **delegation of cognitive labor** from **delegation of epistemic responsibility**.
+AHICP distinguishes **delegation of cognitive labor** from **delegation of epistemic responsibility**.
 
 AI MAY perform extensive search, synthesis, structuring, drafting, formalization, consistency checking, revision, and formatting.
 
@@ -421,13 +421,13 @@ Human attention SHOULD be concentrated on high-leverage decisions, including:
 - Framework Approval;
 - Final Artifact Approval where required.
 
-HARC does not claim that file structure alone guarantees good judgment. Approval mechanisms are governance scaffolds, not substitutes for human competence and understanding.
+AHICP does not claim that file structure alone guarantees good judgment. Approval mechanisms are governance scaffolds, not substitutes for human competence and understanding.
 
 ---
 
 ## 15. Persistent memory and context limits
 
-HARC provides persistent project memory, not literal infinite model context.
+AHICP provides persistent project memory, not literal infinite model context.
 
 Projects SHOULD scale through:
 
@@ -457,7 +457,7 @@ A project SHOULD provide at repository root:
 - root `AGENTS.zh-CN.md` / English mirror;
 - a discoverable Onboarding Handshake specification.
 
-Before substantive work, a new AI Agent MUST read the control plane, Working Memory Index, Current Focus, and Task Plan, then SHOULD output a HARC Onboarding Report covering the highest-priority objective, primary blocker, immediate next action, active tasks, next actions, blockers, pending human decisions/Clarifications, Framework/Artifact state, synchronization defects, and permitted next action. Work Log is skipped by default. The Onboarding Report MUST confirm `HARC REPOSITORY CONTEXT — ACTIVE`. This loads only the access kernel; dynamic Blocking Clarifications, Framework, Artifact, and Core state must still be retrieved on demand from latest canonical GitHub revisions.
+Before substantive work, a new AI Agent MUST read the control plane, Working Memory Index, Current Focus, and Task Plan, then SHOULD output a AHICP Onboarding Report covering the highest-priority objective, primary blocker, immediate next action, active tasks, next actions, blockers, pending human decisions/Clarifications, Framework/Artifact state, synchronization defects, and permitted next action. Work Log is skipped by default. The Onboarding Report MUST confirm `AHICP REPOSITORY CONTEXT — ACTIVE`. This loads only the access kernel; dynamic Blocking Clarifications, Framework, Artifact, and Core state must still be retrieved on demand from latest canonical GitHub revisions.
 
 If the Agent cannot produce this report from repository state, the project has an onboarding/persistence defect.
 
@@ -477,7 +477,7 @@ A new AI Agent SHOULD be able to continue normal project work by reading, at min
 
 Work Log is read only when the human requests historical review, during dedicated audit/change reconstruction, or when current state conflicts with history.
 
-A project SHOULD record the HARC version/tag/commit it adopted so later upstream protocol changes are not silently treated as already accepted governance.
+A project SHOULD record the AHICP version/tag/commit it adopted so later upstream protocol changes are not silently treated as already accepted governance.
 
 If essential constraints exist only in an unavailable chat or hidden memory, the project is non-compliant until they are externalized.
 
@@ -533,16 +533,16 @@ Audit records SHOULD state what defect was found, what repository change repaire
 
 ---
 
-## 20. Methodology article as a governed HARC artifact
+## 20. Methodology article as a governed AHICP artifact
 
-The HARC project itself SHOULD maintain two mutually supporting outputs:
+The AHICP project itself SHOULD maintain two mutually supporting outputs:
 
 1. an executable open protocol;
 2. a methodology article explaining and critically developing the protocol.
 
 The methodology article SHOULD address the conceptual implications of AI-assisted research, including human cognitive/epistemic responsibility, delegable and non-delegable intellectual work, persistent research state, semantic version control, framework-level authorship, and publication accountability.
 
-The article MUST itself follow HARC discipline:
+The article MUST itself follow AHICP discipline:
 
 - maintain a Working Framework;
 - separate AI proposals from human-approved claims;
@@ -566,7 +566,7 @@ Suggested prefixes:
 
 ---
 
-## 22. Minimal HARC profile
+## 22. Minimal AHICP profile
 
 A lightweight compliant project SHOULD contain at least:
 
@@ -615,7 +615,7 @@ For long or high-stakes projects, evidence directories, Approved Framework snaps
 
 ## 23. Portability
 
-HARC v0.2 targets GitHub but separates logical functions from exact filenames.
+AHICP v0.2 targets GitHub but separates logical functions from exact filenames.
 
 Future implementations MAY map the same canonical roles to other versioned collaboration systems while preserving explicit state, human/AI provenance distinctions, approval gates, inspectable history, and cross-agent handoff.
 
@@ -623,7 +623,7 @@ Future implementations MAY map the same canonical roles to other versioned colla
 
 ## 24. Design thesis
 
-HARC separates things that AI-assisted research often collapses:
+AHICP separates things that AI-assisted research often collapses:
 
 1. Layer 1 — Human Authorial Core;
 2. Layer 2 — Current Framework;
@@ -638,9 +638,9 @@ The protocol treats this separation as the basis for durable, auditable, human-g
 
 ## 25. Bilingual canonical synchronization
 
-HARC project documentation SHOULD be maintained bilingually in Chinese and English.
+AHICP project documentation SHOULD be maintained bilingually in Chinese and English.
 
-For HARC's own repository, and for projects that adopt the bilingual profile:
+For AHICP's own repository, and for projects that adopt the bilingual profile:
 
 1. Chinese is the canonical semantic source and primary human editing/review baseline.
 2. English is a synchronized translation mirror.
