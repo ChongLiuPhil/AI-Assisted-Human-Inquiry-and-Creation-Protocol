@@ -60,14 +60,17 @@
 - 把旧 `HARC_*` 控制文件降级为 compatibility pointer；
 - 更新主要 onboarding / agent 文件到 AHICP 标识。
 
-## 6. 仍未完成的语义检查
+## 6. 方法论文章 / evidence 迁移结果
 
-以下项目仍需在 PR 合并前处理：
+已完成：
+- 方法论文章 Content Core 中把协议自身定位为 research-only 的表述，改为“AHICP 在研究场景中的方法论意义”；
+- Working Argument Map、正文、evidence、Form Core、Framework Status 中当前协议身份迁移为 AHICP；
+- 历史 `HARC-Dxxx` 标识保持不变；
+- 文章已获人类认可的 research-specific 标题保持不变，因为它描述的是文章主题，而不是协议正式名称。
 
-1. 方法论文章中旧项目名称与当前 AHICP 名称之间的精确叙述；
-2. evidence / methodology files 中哪些 HARC 表达是历史事实、哪些是 live project reference；
-3. 中英文**语义 parity**，而不仅是文件配对；
-4. 迁移后的独立 post-repair audit。
+仍未完成：
+1. 关键中英文规范文件的**语义级 parity**；
+2. 独立 post-migration repair audit。
 
 ## 7. 当前结论
 
