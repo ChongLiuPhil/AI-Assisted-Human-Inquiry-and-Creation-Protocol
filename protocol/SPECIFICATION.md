@@ -647,7 +647,7 @@ The Agent must not bypass:
 
 ### 23.3 Human handoff
 
-An action should be escalated to a human only when the next step genuinely requires human identity authorization, account-owner consent, a non-delegable high-impact decision, or an action that the currently available and authorized tool capabilities cannot perform.
+An action should be escalated to a human only when the next step genuinely requires human identity authorization, account-owner consent, permission grants, a non-delegable high-impact decision, or an action that the currently available and authorized tool capabilities cannot perform.
 
 Such a handoff **MUST**:
 
@@ -715,7 +715,7 @@ Before continuing configuration that depends on such a policy, the Agent **MUST*
    - **bounded pre-authorization** — the human approves a clearly bounded action-class / target / side-effect / duration scope in advance, within which the Agent may act repeatedly;
    - **mixed policy** — selected low-risk actions use bounded pre-authorization while specified high-impact or human-reserved actions continue to require per-action human decisions;
 4. require the human to select, modify, or reject the proposed pattern;
-5. record the final choice and its authorization provenance in repository durable state before later operations rely on it.
+5. record the final choice, including its scope, authorization provenance, and escalation conditions, in repository durable state before later operations rely on it.
 
 The AI recommendation is a proposal, not a human commitment. After the human selects the policy, the Agent may continue machine-operable configuration and later operations that fall within the selected scope. If future action class, target, side effects, impact, reversibility, or duration exceeds that choice, renewed human selection/authorization is required.
 
