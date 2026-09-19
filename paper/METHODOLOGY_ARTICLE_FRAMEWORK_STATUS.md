@@ -26,7 +26,7 @@ This is not Framework Approval itself.
 
 **None yet.**
 
-No methodology-article framework has yet passed the HARC Framework Approval Gate.
+No methodology-article framework has yet passed the AHICP Framework Approval Gate.
 
 ## Next framework identifier
 
