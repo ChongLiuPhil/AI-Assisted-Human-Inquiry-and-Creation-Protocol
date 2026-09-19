@@ -1,4 +1,4 @@
-# HARC Protocol 路线图
+# AHICP Protocol 路线图
 
 > **本中文文件是规范性基准；英文 `ROADMAP.md` 是同步镜像。**
 
@@ -31,7 +31,7 @@
 - [x] 为方法论文章建立英文同步镜像。
 - [x] 完成仓库历史文件与全部模板的双语迁移与 parity audit。
 - [x] 建立 zero-context bootstrap：START_HERE、独立 Bootstrap Prompt、HARC_MANIFEST、Onboarding Handshake 与 Onboarding Report Template。
-- [x] 完成一次 HARC 自举 onboarding self-test。
+- [x] 完成一次 AHICP 自举 onboarding self-test。
 - [x] 建立 Repository-Backed Context Interface：GitHub 作为权威外部记忆/工作库，模型上下文作为按需临时缓存。
 - [x] 将 Session Context Bootstrap 收缩为最小 Repository Resolver，不再维护动态状态副本。
 - [x] 建立与三层长期记忆并行的 Working Memory，取代旧 Layer 1.5 模型。
@@ -50,7 +50,7 @@
 - [ ] 为 Content Core / Framework / Artifact 建立一致性 checklist。
 - [ ] 增加 paper、book、article、report 项目示例。
 - [ ] 定义 framework diff 约定。
-- [ ] 定义 HARC conformance-test suite。
+- [ ] 定义 AHICP conformance-test suite。
 - [ ] 定义 cross-agent handoff benchmark。
 - [ ] 定义自动 bilingual parity check。
 - [ ] 定义自动 onboarding/conformance 检查：验证 START_HERE、manifest、context interface、Working Memory resume state、task route、revision freshness、blockers 与 Framework Status 是否可由新 Agent正确按需读取。
@@ -76,7 +76,7 @@
 
 ## 研究议程
 
-- [ ] 评估 HARC 是否减少长期 AI 辅助写作中的 semantic drift。
+- [ ] 评估 AHICP 是否减少长期 AI 辅助写作中的 semantic drift。
 - [ ] 测量有/无 repository state 时新 Agent 的 onboarding cost。
 - [ ] 研究 Approved Framework 可以压缩到何种程度而不丢失关键 nuance。
 - [ ] 研究怎样让 Framework Approval 具有实质意义而不是 ceremonial。
@@ -84,6 +84,6 @@
 - [ ] 比较 GitHub-centered 实现与 local-first 或其他 versioned backend。
 - [ ] 研究 repository-backed context 对上下文使用量、stale-state 错误和跨 Agent 接管成本的影响。
 - [ ] 研究 Current Focus / Task Plan 的更新粒度与压缩策略，以及 Work Log 的分卷、索引和人类回顾价值。
-- [ ] 研究 HARC 与学术 authorship norm、provenance system、extended/distributed cognition、automation reliance 与 human intellectual agency 的关系。
+- [ ] 研究 AHICP 与学术 authorship norm、provenance system、extended/distributed cognition、automation reliance 与 human intellectual agency 的关系。
 - [ ] 为 framework fidelity 与 semantic drift 发展可操作测量。
 - [ ] 研究双语 canonical/mirror 模型中的语义漂移与翻译治理。
