@@ -1,8 +1,8 @@
-# Contributing to HARC Protocol
+# Contributing to AHICP Protocol
 
 > **Language:** Chinese canonical: `CONTRIBUTING.zh-CN.md`; this English file is the synchronized mirror.
 
-HARC is intended to be an open, inspectable protocol for durable human–AI research collaboration.
+AHICP is intended to be an open, inspectable protocol for durable human–AI research collaboration.
 
 ## What contributions are welcome?
 
@@ -32,7 +32,7 @@ Do not present a contributor proposal as an already accepted founder principle.
 
 ## Bilingual contribution rule
 
-HARC substantive Markdown is governed by a Chinese-canonical / English-mirror model.
+AHICP substantive Markdown is governed by a Chinese-canonical / English-mirror model.
 
 A substantive contribution should therefore:
 
@@ -54,7 +54,7 @@ Language-neutral code, schemas, BibTeX, and raw data need not be duplicated sole
 
 ## Compatibility principle
 
-A proposed implementation is HARC-compatible when it preserves the functional distinctions among:
+A proposed implementation is AHICP-compatible when it preserves the functional distinctions among:
 
 - human content intention;
 - human form intention;
