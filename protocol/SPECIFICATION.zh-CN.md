@@ -616,7 +616,63 @@ docs/framework-status.zh-CN.md
 
 ---
 
-## 23. 可迁移性
+## 23. 外部系统、工具发现、授权与人类交接
+
+### 23.1 Machine-operable-first escalation
+
+当任务需要访问外部系统、账户或服务，并且完成该任务所需的人类授权已经存在时，AI Agent **SHOULD** 先安全地发现并穷尽当前可用且已获授权的 machine-operable path，再把纯操作性步骤交还给人类。
+
+可检查的路径至少包括：
+
+- 平台内建工具；
+- 已连接的 plugin / connector；
+- 官方 MCP server 或等价官方工具接口；
+- provider 官方 API；
+- 官方 GitHub App 或其他 provider-managed integration；
+- 仓库中已经存在并获准使用的 automation / workflow；
+- 人类或项目治理已经明确批准的 adapter / plugin。
+
+“installed”“enabled”“connected”或目录中可见，**不等于能力已经实际可调用**。当某项能力的可用性会影响执行路线或是否升级给人类时，Agent **MUST** 在技术上可行且安全的前提下进行一次真实、最小、优先只读的 capability probe。若当前 host 根本不暴露实际调用能力，Agent 必须把它记录为“当前环境不可调用/未验证”，不得把目录状态写成已验证能力。
+
+### 23.2 授权与凭据安全
+
+在功能等价时，Agent **SHOULD** 优先采用官方、OAuth、provider-managed、最少 secret handling 的连接路径，并在 provider 支持时优先选择满足任务所需的最小权限范围。
+
+Agent **MUST NOT** 为了操作方便而要求人类把 password、API token、private key、recovery code 或其他 secret 粘贴到聊天。需要由人类创建或保存凭据时，交接应把 secret 留在 provider 或受控 secret store 中，并明确说明哪些值不得发送给 AI。
+
+Agent 不得绕过：
+
+- 身份验证；
+- 账户所有者 consent；
+- 权限授予；
+- 人类保留的高影响或不可委托批准；
+- 项目已经定义的 public / canonical cutover、release 或其他责任边界。
+
+### 23.3 Human handoff
+
+只有当下一步确实要求人类身份授权、账户所有者 consent、不可委托的高影响决定，或当前可用并获授权的工具能力无法完成该动作时，才应把该动作升级给人类。
+
+此类 handoff **MUST**：
+
+1. 将步骤压缩到完成当前 blocker 所需的最小集合；
+2. 一次只要求当前必要的人类动作，不把后续可由 AI 执行的步骤一并外包；
+3. 默认操作者没有技术背景，使用 provider UI 中可识别的名称和结果条件；
+4. 明确指出 password、token、secret、private key 等哪些值不得发送给 AI；
+5. 说明完成标准，使 AI 能在授权后独立检查是否成功。
+
+人类完成必要动作后，Agent **SHOULD** 重新读取最新仓库状态、重新探测相关 capability，并从中断点恢复执行，而不是要求人类重新说明项目上下文或继续承担本可由机器执行的操作。
+
+### 23.4 Provider actual state 与 repository durable state
+
+Provider dashboard、临时 UI 页面、聊天状态与模型记忆都不是 authoritative project state。
+
+外部操作完成后，Agent **SHOULD** 验证真实 provider state；如果该操作改变了会影响后续工作的持久项目状态，则 **MUST** 把经验证的结果 write-through 到 repository 中适当的 durable state。记录应按任务需要包含 observed state、验证证据或引用、有用的 build/deployment identifier、当前 blocker 与后续授权/cutover 状态，但不得保存 secret。
+
+Provider 是其账户实时配置和运行结果的直接观察来源；repository 则保存项目对这些观察的持久、可审计状态。若二者不一致，Agent 必须重新检查 provider，并更新或标记 repository state 为 stale / unresolved，而不是依赖旧聊天、旧 UI 截图或模型记忆。
+
+---
+
+## 24. 可迁移性
 
 AHICP v0.3 当前参考实现以 GitHub 为目标，但逻辑功能与精确文件名相分离。
 
@@ -624,7 +680,7 @@ AHICP v0.3 当前参考实现以 GitHub 为目标，但逻辑功能与精确文�
 
 ---
 
-## 24. 设计命题
+## 25. 设计命题
 
 AHICP 把 AI 辅助探究、研究与创作中经常被混在一起的东西分开：
 
@@ -641,7 +697,7 @@ AHICP 把 AI 辅助探究、研究与创作中经常被混在一起的东西分�
 
 ---
 
-## 25. 双语规范同步
+## 26. 双语规范同步
 
 AHICP 项目文档应以中文和英文双语维护。
 
