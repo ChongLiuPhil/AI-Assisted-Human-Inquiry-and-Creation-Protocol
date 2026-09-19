@@ -60,14 +60,17 @@ It now has:
 - legacy `HARC_*` control files reduced to compatibility pointers;
 - principal onboarding/agent files migrated to AHICP identifiers.
 
-## 6. Remaining semantic work
+## 6. Methodology article / evidence migration result
 
-Before merge:
+Completed:
+- the methodology Content Core now describes the **methodological significance of AHICP in research settings** rather than treating the protocol itself as research-only;
+- the Working Argument Map, article text, evidence layer, Form Core, and Framework Status now use AHICP as the current protocol identity;
+- historical `HARC-Dxxx` identifiers remain unchanged;
+- the human-approved research-specific article title remains unchanged because it describes the article's subject rather than the protocol's formal name.
 
-1. precisely handle the former project name inside the methodology article;
-2. classify HARC references in evidence/methodology files as historical facts vs live project references;
-3. perform **semantic** bilingual parity rather than file-pair parity only;
-4. perform an independent post-repair audit.
+Remaining:
+1. **semantic** bilingual parity on key normative files;
+2. independent post-migration repair audit.
 
 ## 7. Current conclusion
 
