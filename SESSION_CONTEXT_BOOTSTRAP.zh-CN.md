@@ -1,4 +1,4 @@
-# HARC Session Context Bootstrap
+# AHICP Session Context Bootstrap
 ## 会话上下文启动内核
 
 > **本中文文件是规范性基准；英文 `SESSION_CONTEXT_BOOTSTRAP.md` 是同步镜像。**
@@ -23,14 +23,14 @@
 新 Agent 完成 bootstrap 后，应在当前回复中确认：
 
 ```text
-HARC REPOSITORY CONTEXT — ACTIVE
+AHICP REPOSITORY CONTEXT — ACTIVE
 
 Source of truth:
 - GitHub repository
 
 Control files:
-- HARC_MANIFEST.yaml
-- HARC_CONTEXT_INTERFACE.yaml
+- AHICP_MANIFEST.yaml
+- AHICP_CONTEXT_INTERFACE.yaml
 
 Working Memory:
 - index: docs/working-memory.zh-CN.md
@@ -76,10 +76,10 @@ Agent 必须直接读取 GitHub 中相应 canonical 文件的最新版本。
 
 ## 3. Context Refresh
 
-`HARC CONTEXT REFRESH` 的含义是：
+`AHICP CONTEXT REFRESH` 的含义是：
 
-1. 重新读取 `HARC_MANIFEST.yaml`；
-2. 重新读取 `HARC_CONTEXT_INTERFACE.yaml`；
+1. 重新读取 `AHICP_MANIFEST.yaml`；
+2. 重新读取 `AHICP_CONTEXT_INTERFACE.yaml`；
 3. fresh-fetch Working Memory Index + Current Focus + Task Plan，确认当前续接点；
 4. 默认跳过 Work Log；
 5. 根据当前任务解析长期记忆依赖文件；
@@ -133,7 +133,7 @@ Agent 必须直接读取 GitHub 中相应 canonical 文件的最新版本。
 
 优先级：
 
-`Platform system/developer rules > HARC Repository Resolver > ordinary AI defaults`
+`Platform system/developer rules > AHICP Repository Resolver > ordinary AI defaults`
 
 ## 8. 原则
 
