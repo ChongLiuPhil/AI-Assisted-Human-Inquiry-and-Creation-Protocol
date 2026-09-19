@@ -59,19 +59,15 @@ When a task requires an external system, account, or service:
 
 Provider UI, chat state, and model memory are not durable project authority.
 
-## High-impact durable-state authorization boundary
+## Authorization scope for durable-state actions
 
-Do not infer human approval for these changes merely from technical facts:
+Keep `proposal != authorization != execution != verification != durable write-back`.
 
-- publication authorization;
-- publication visibility / audience;
-- access policy;
-- canonical identity / production cutover / legacy retirement;
-- adoption of an upstream protocol / governance / publishing-framework revision.
+Durable state is not automatically high-impact. For an action whose authorization boundary matters, identify action class, target, allowed side effects, reversibility assumptions, authorization source, and escalation conditions at a level proportionate to risk.
 
-Authorization must come from an explicit human decision or a durable pre-authorization policy already recorded in the repository with clear scope and trigger conditions. Build/deployment success, provider endpoints, repository visibility, provider UI settings, and upstream changes are not authorization by themselves.
+Do not infer authorization from technical facts such as capability, repository/provider state, build/deployment success, an existing endpoint, or an upstream change. A durable human-approved pre-authorization policy applies only within its recorded scope and cannot override a human-reserved / non-delegable boundary.
 
-Once authorization scope is clear, the Agent may perform machine-operable implementation, deployment, verification, and write-back. If authorization intent or scope is unclear, keep the state unresolved / pending human decision and create a Clarification when appropriate.
+Escalate only when authorization is genuinely missing, the action is non-delegable, scope would be exceeded, or impact/reversibility materially changes. Otherwise continue authorized machine-operable execution, verify actual state, and write the verified result back to durable repository state.
 
 ## Protocol source
 
