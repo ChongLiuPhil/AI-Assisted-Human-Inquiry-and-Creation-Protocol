@@ -15,8 +15,8 @@ PAIRS = [
 REQUIRED = {
     "protocol/SPECIFICATION.zh-CN.md": [
         "## 23. 外部系统、工具发现、授权与人类交接",
-        "built-in tools",
-        "official MCP",
+        "平台内建工具",
+        "官方 MCP",
         "MUST",
         "MUST NOT",
         "provider actual state",
