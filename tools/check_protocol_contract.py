@@ -10,6 +10,9 @@ PAIRS = [
     ("AGENTS.zh-CN.md", "AGENTS.md"),
     ("templates/research-project/AGENTS.zh-CN.md", "templates/research-project/AGENTS.md"),
     ("core/DECISION_LOG.zh-CN.md", "core/DECISION_LOG.md"),
+    ("docs/working-memory/current-focus.zh-CN.md", "docs/working-memory/current-focus.md"),
+    ("docs/working-memory/task-plan.zh-CN.md", "docs/working-memory/task-plan.md"),
+    ("docs/working-memory/work-log.zh-CN.md", "docs/working-memory/work-log.md"),
 ]
 
 REQUIRED = {
@@ -101,12 +104,32 @@ REQUIRED = {
     ],
     "core/DECISION_LOG.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "CI green"],
     "core/DECISION_LOG.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "green CI"],
+    "docs/working-memory/current-focus.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "2026-09-20"],
+    "docs/working-memory/current-focus.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "2026-09-20"],
+    "docs/working-memory/task-plan.zh-CN.md": ["WM-T019", "WM-T020", "WM-T021", "COMPLETED / CI-GATED"],
+    "docs/working-memory/task-plan.md": ["WM-T019", "WM-T020", "WM-T021", "COMPLETED / CI-GATED"],
+    "docs/working-memory/work-log.zh-CN.md": ["# AHICP Working Memory — Work Log", "AHICP-D029", "section-local"],
+    "docs/working-memory/work-log.md": ["# AHICP Working Memory — Work Log", "AHICP-D029", "section-local"],
 }
 
 
 def fail(message: str) -> None:
     print(f"ERROR: {message}", file=sys.stderr)
     raise SystemExit(1)
+
+
+def require_section(path: str, start_marker: str, end_marker: str, markers: list[str]) -> None:
+    body = (ROOT / path).read_text(encoding="utf-8")
+    start = body.find(start_marker)
+    if start < 0:
+        fail(f"{path} is missing section start: {start_marker}")
+    end = body.find(end_marker, start + len(start_marker))
+    if end < 0:
+        fail(f"{path} is missing section end: {end_marker}")
+    section = body[start:end].casefold()
+    for marker in markers:
+        if marker.casefold() not in section:
+            fail(f"{path} section {start_marker} is missing contract marker: {marker}")
 
 
 for zh, en in PAIRS:
@@ -121,6 +144,31 @@ for path, markers in REQUIRED.items():
     for marker in markers:
         if marker.casefold() not in folded:
             fail(f"{path} is missing contract marker: {marker}")
+
+require_section(
+    "protocol/SPECIFICATION.zh-CN.md",
+    "### 23.3 Human handoff",
+    "### 23.4 Provider actual state 与 repository durable state",
+    ["权限授予"],
+)
+require_section(
+    "protocol/SPECIFICATION.md",
+    "### 23.3 Human handoff",
+    "### 23.4 Provider actual state and repository durable state",
+    ["permission grants"],
+)
+require_section(
+    "protocol/SPECIFICATION.zh-CN.md",
+    "### 23.5.1 首次配置时的人类授权方式选择",
+    "### 23.5.2 Provider-neutral 的高影响判断",
+    ["scope", "authorization provenance", "escalation conditions", "repository durable state"],
+)
+require_section(
+    "protocol/SPECIFICATION.md",
+    "### 23.5.1 Human choice of authorization mode at initial configuration",
+    "### 23.5.2 Provider-neutral high-impact test",
+    ["scope", "authorization provenance", "escalation conditions", "repository durable state"],
+)
 
 for path in (
     "protocol/SPECIFICATION.zh-CN.md",
