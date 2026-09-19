@@ -286,3 +286,24 @@ HARC 当前主要问题不再是缺少治理规则，而是治理资产数量快
 **规范状态：**
 
 上述架构升级仍为 `AI-PROPOSED`。除同步修复外，没有把任何新架构建议 Promotion 到 Protocol Core / Decision Log。
+
+
+---
+
+## 2026-09-19 — AHICP v0.3 语义迁移：控制面、模板与结构验证
+
+本轮完成：
+- 依据 `AHICP-D026` 迁移 Protocol Core、live protocol 文件、Architecture、Roadmap 与 Working Memory；
+- 建立 `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml`，旧 `HARC_*` 文件降为 compatibility pointer；
+- 把 `templates/research-project/` 迁移到 AHICP 控制面，同时明确其为 research specialization；
+- 建立 Phase C semantic audit 与 v0.3 migration validation record；
+- manifest 路径检查：33 个候选，缺失 0；
+- 双语物理配对检查：62 个中文文件，缺失英文 mirror 0；
+- zero-context 入口链检查通过，未发现 live 旧控制文件引用。
+
+仍待完成：
+- 方法论文章/evidence 中 historical HARC 与 current AHICP 语义区分；
+- 关键规范文件的语义级双语 parity；
+- 独立 post-migration repair audit。
+
+PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers Static Assets reference implementation PR；未把 PPF publishing lifecycle 规则复制进 AHICP。
