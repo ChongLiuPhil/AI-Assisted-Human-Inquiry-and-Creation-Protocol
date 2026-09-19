@@ -1,9 +1,9 @@
-# HARC Project Onboarding Report Template
+# AHICP Project Onboarding Report Template
 
 > **Language:** Chinese canonical: `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`; this English file is the synchronized mirror.
 
 ## A. Protocol state
-- adopted HARC version:
+- adopted AHICP version:
 - adopted commit/tag:
 - canonical language:
 - bootstrap / manifest / AGENTS:
@@ -67,7 +67,7 @@
 - explanation:
 
 ## J. Repository Context Resolver
-- Following `HARC_CONTEXT_INTERFACE.yaml` / `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, confirm: `HARC REPOSITORY CONTEXT — ACTIVE`
+- Following `AHICP_CONTEXT_INTERFACE.yaml` / `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`, confirm: `AHICP REPOSITORY CONTEXT — ACTIVE`
 - Repository context active: `YES / NO`
 - Current task route: `CONTENT / FORM / PROTOCOL`
 - Authoritative refs: paths only; do not duplicate dynamic state
