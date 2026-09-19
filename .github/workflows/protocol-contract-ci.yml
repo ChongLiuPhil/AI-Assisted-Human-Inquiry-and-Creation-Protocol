@@ -1,0 +1,39 @@
+name: Protocol Contract CI
+
+on:
+  pull_request:
+    paths:
+      - "protocol/SPECIFICATION*.md"
+      - "core/PROTOCOL_CORE*.md"
+      - "core/DECISION_LOG*.md"
+      - "AGENTS*.md"
+      - "templates/research-project/AGENTS*.md"
+      - "tools/check_protocol_contract.py"
+      - ".github/workflows/protocol-contract-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "protocol/SPECIFICATION*.md"
+      - "core/PROTOCOL_CORE*.md"
+      - "core/DECISION_LOG*.md"
+      - "AGENTS*.md"
+      - "templates/research-project/AGENTS*.md"
+      - "tools/check_protocol_contract.py"
+      - ".github/workflows/protocol-contract-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-protocol-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate AHICP protocol contract
+        run: python tools/check_protocol_contract.py
