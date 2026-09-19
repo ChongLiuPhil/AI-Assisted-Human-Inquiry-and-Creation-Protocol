@@ -55,6 +55,20 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 
 Provider UI、聊天状态和模型记忆都不是项目的持久权威状态。
 
+## 高影响持久状态授权边界
+
+不得仅根据技术事实推断人类已经批准以下变化：
+
+- publication authorization；
+- publication visibility / audience；
+- access policy；
+- canonical identity / production cutover / legacy retirement；
+- 上游 protocol / governance / publishing framework adopted revision。
+
+授权必须来自明确人类决定，或已在 repository 中持久记录且范围/触发条件清楚的 pre-authorization policy。Build/deployment success、provider endpoint、repository visibility、provider UI setting 或 upstream 更新都不等于授权。
+
+授权范围明确后，Agent 可以执行机器可操作的实现、部署、验证和 write-back。若授权意图或范围不清楚，保持 unresolved / pending human decision，并按需创建 Clarification。
+
 ## 协议来源
 
 初始化项目时记录所采用的协议来源：
