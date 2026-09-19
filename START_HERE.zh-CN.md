@@ -1,4 +1,4 @@
-# START HERE — HARC 零上下文接管入口
+# START HERE — AHICP 零上下文接管入口
 
 > **本中文文件是规范性基准；英文 `START_HERE.md` 是同步镜像。**
 >
@@ -10,14 +10,14 @@
 
 **先重建仓库当前状态，不要从当前聊天猜测项目状态。**
 
-HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
+AHICP 的持久真值源在仓库，不在旧 Agent 的记忆中。
 
 ## 1. 强制读取顺序
 
 按以下顺序读取中文 canonical；英文仅用于同步核验：
 
-1. `HARC_MANIFEST.yaml`
-2. `HARC_CONTEXT_INTERFACE.yaml`
+1. `AHICP_MANIFEST.yaml`
+2. `AHICP_CONTEXT_INTERFACE.yaml`
 3. `BOOTSTRAP_PROMPT.zh-CN.md`
 4. `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md`
 5. `AGENTS.zh-CN.md`
@@ -34,7 +34,7 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 
 `docs/working-memory/work-log.zh-CN.md` 主要供人类作者回顾，默认不属于 mandatory read order。只有历史回顾、审计、变迁重建或 current/history conflict 时才按需读取。
 
-对于 HARC 方法论文章，具体路径由 `HARC_MANIFEST.yaml` 给出。
+对于 AHICP 方法论文章，具体路径由 `AHICP_MANIFEST.yaml` 给出。
 
 ## 2. 零上下文接管时禁止做的事
 
@@ -52,15 +52,15 @@ HARC 的持久真值源在仓库，不在旧 Agent 的记忆中。
 
 ## 3. 接管握手：必须先输出 Onboarding Report
 
-完成强制读取后，新 Agent 应先向人类输出一个简短但结构化的 **HARC Onboarding Report**。推荐直接使用：`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`。报告中还必须根据 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 确认：
+完成强制读取后，新 Agent 应先向人类输出一个简短但结构化的 **AHICP Onboarding Report**。推荐直接使用：`ONBOARDING_REPORT_TEMPLATE.zh-CN.md`。报告中还必须根据 `SESSION_CONTEXT_BOOTSTRAP.zh-CN.md` 确认：
 
-`HARC REPOSITORY CONTEXT — ACTIVE`
+`AHICP REPOSITORY CONTEXT — ACTIVE`
 
 它只加载仓库访问内核，不复制动态项目状态。Onboarding Report 中的状态摘要仅用于人类验证；后续不得把该摘要当作权威状态，必须按需读取 GitHub 最新 canonical revision。至少包含：
 
 ### A. 协议状态
 
-- 当前采用的 HARC version / commit（如记录）；
+- 当前采用的 AHICP version / commit（如记录）；
 - canonical language；
 - 当前适用的主要协议文件；
 - 是否发现协议版本或文件同步缺陷。
@@ -96,7 +96,7 @@ Agent 应说明：
 
 - 可以安全继续哪些工作；
 - 哪些工作被 blocking clarification 或 approval gate 阻塞；
-- 当前用户请求将通过哪条 HARC propagation path 落实。
+- 当前用户请求将通过哪条 AHICP propagation path 落实。
 
 ## 4. 人类反馈进入项目后的标准流程
 
@@ -156,4 +156,4 @@ Agent 应说明：
 
 # 可直接复制给任意 AI Agent 的启动提示词
 
-> 你正在接手一个遵循 Human–AI Research Collaboration Protocol（HARC）的研究仓库。不要依赖旧聊天、账号记忆或你自己的先验推断来重建项目状态。首先读取仓库根目录的 `START_HERE.zh-CN.md` 和 `HARC_MANIFEST.yaml`，然后严格按照其中的 required read order 读取规范状态。中文是 canonical，英文是同步 mirror。完成读取后，在做任何实质性修改之前，先向我输出一份 HARC Onboarding Report：说明当前人类承诺、Form 状态、Blocking/Non-blocking Clarifications、Working/Approved Framework 状态、Artifact 状态、同步缺陷，以及当前请求允许的下一步。如果遇到可能显著影响核心命题、关键概念、术语/翻译、范围、推论关系或论证结构的不确定性，不要猜测；先写入 `docs/working-memory/task-plan.zh-CN.md` 的 Clarification 队列并向我确认。任何人类明确决定都必须先进入 Decision Log 与相应 Core，再传播到 Argument Map 和派生成果。未经显式 Framework Approval，不得把 Working Framework 当作人类已批准结构。
+> 你正在接手一个遵循 AI-Assisted Human Inquiry and Creation Protocol（AHICP）的研究仓库。不要依赖旧聊天、账号记忆或你自己的先验推断来重建项目状态。首先读取仓库根目录的 `START_HERE.zh-CN.md` 和 `AHICP_MANIFEST.yaml`，然后严格按照其中的 required read order 读取规范状态。中文是 canonical，英文是同步 mirror。完成读取后，在做任何实质性修改之前，先向我输出一份 AHICP Onboarding Report：说明当前人类承诺、Form 状态、Blocking/Non-blocking Clarifications、Working/Approved Framework 状态、Artifact 状态、同步缺陷，以及当前请求允许的下一步。如果遇到可能显著影响核心命题、关键概念、术语/翻译、范围、推论关系或论证结构的不确定性，不要猜测；先写入 `docs/working-memory/task-plan.zh-CN.md` 的 Clarification 队列并向我确认。任何人类明确决定都必须先进入 Decision Log 与相应 Core，再传播到 Argument Map 和派生成果。未经显式 Framework Approval，不得把 Working Framework 当作人类已批准结构。
