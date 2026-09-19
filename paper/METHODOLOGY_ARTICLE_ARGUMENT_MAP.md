@@ -58,7 +58,7 @@ The phrase **generation–verification asymmetry** is `AI-PROPOSED` shorthand fo
 
 A long-running human–AI research project should not depend for its intellectual continuity on one chat window, one model, one account memory, or one agent's private context. Durable project-relevant state should be externalized into explicit, version-controlled repository documents.
 
-**Founder basis:** Article Content Core C3 and C8; HARC Protocol Core P1, P9, P10.
+**Founder basis:** Article Content Core C3 and C8; AHICP Protocol Core P1, P9, P10.
 
 ---
 
@@ -83,7 +83,7 @@ Changes should propagate upstream-first so that downstream AI expression does no
 
 The expression **semantic version control** is `AI-PROPOSED` terminology for this architecture. The underlying separation and propagation rule are human-originated.
 
-**Founder basis:** Article Content Core C4; HARC Protocol Core P2–P5, P12.
+**Founder basis:** Article Content Core C4; AHICP Protocol Core P2–P5, P12.
 
 ---
 
@@ -91,9 +91,9 @@ The expression **semantic version control** is `AI-PROPOSED` terminology for thi
 
 **Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-The purpose, central problem, and direction of a research or creative project should be given and initiated by humans and remain under human navigation or approval. Within HARC, an AI Agent is a tool that may perform or assist with extensive search, synthesis, structuring, drafting, restructuring, checking, formatting, and related work. It should not be characterized as a cognitive subject, and “AI performs cognitive labor / cognitive tasks” should not be used as the article’s central language.
+The purpose, central problem, and direction of a research or creative project should be given and initiated by humans and remain under human navigation or approval. Within AHICP, an AI Agent is a tool that may perform or assist with extensive search, synthesis, structuring, drafting, restructuring, checking, formatting, and related work. It should not be characterized as a cognitive subject, and “AI performs cognitive labor / cognitive tasks” should not be used as the article’s central language.
 
-AI capacity to perform substantial work does not transfer the project’s purpose, core judgments, or the position of ultimate responsibility to AI. More precisely, HARC requires that **humans remain the bearers of responsibility**.
+AI capacity to perform substantial work does not transfer the project’s purpose, core judgments, or the position of ultimate responsibility to AI. More precisely, AHICP requires that **humans remain the bearers of responsibility**.
 
 This responsibility-bearing status appears at least in:
 
@@ -108,7 +108,7 @@ This responsibility-bearing status appears at least in:
 
 `responsibility concentration` is no longer retained as the central term. “Human responsibility” may remain as shorthand in a title or general exposition, but the theoretical claim should be stated more precisely as “humans remain the bearers of responsibility.”
 
-**Founder basis:** Article Content Core C2, C16; HARC Protocol Core P17; HARC-D023, HARC-D024.
+**Founder basis:** Article Content Core C2, C16; AHICP Protocol Core P17; HARC-D023, HARC-D024.
 
 ## T4 — Framework Responsibility Thesis
 
@@ -127,9 +127,9 @@ Before Framework Approval, the human author must form a clear and complete under
 
 AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. Humans bear responsibility for the originality, understanding, judgment, and intellectual commitments carried by that framework; AI cannot become the bearer of this responsibility.
 
-This is HARC’s governance architecture. It does not claim that Framework Approval automatically constitutes a universal theory of authorship across all fields, and it does not remove Final Artifact Approval, factual-accuracy, research-integrity, or venue requirements. Especially when knowledge claims are publicly disseminated, humans must remain the bearers of responsibility.
+This is AHICP’s governance architecture. It does not claim that Framework Approval automatically constitutes a universal theory of authorship across all fields, and it does not remove Final Artifact Approval, factual-accuracy, research-integrity, or venue requirements. Especially when knowledge claims are publicly disseminated, humans must remain the bearers of responsibility.
 
-**Founder basis:** Article Content Core C5, C16; HARC Protocol Core P6, P13, P17; HARC-D023, HARC-D024.
+**Founder basis:** Article Content Core C5, C16; AHICP Protocol Core P6, P13, P17; HARC-D023, HARC-D024.
 
 ## T5 — Dual Approval Gate Thesis
 
@@ -156,7 +156,7 @@ The human-approved framework should be recoverable in the reader-facing overview
 
 This creates a practical fidelity check between the framework the human approved and the structure readers are actually told the work contains.
 
-**Founder basis:** Article Content Core C7; HARC Protocol Core P7.
+**Founder basis:** Article Content Core C7; AHICP Protocol Core P7.
 
 ---
 
@@ -168,7 +168,7 @@ AI agents should be replaceable without destroying project continuity. The durab
 
 This does not imply infinite context. Long-term memory should scale through compact active state, historical logs/archives, indexes, and selective retrieval.
 
-**Founder basis:** Article Content Core C3 and C8; HARC Protocol Core P9–P10.
+**Founder basis:** Article Content Core C3 and C8; AHICP Protocol Core P9–P10.
 
 ---
 
@@ -176,15 +176,15 @@ This does not imply infinite context. Long-term memory should scale through comp
 
 **Provenance:** `HUMAN-ORIGINATED`
 
-HARC should be practically implementable and reusable across future papers, books, articles, reports, and sustained intellectual projects. Its architecture must therefore be concrete enough to instantiate through repository files, templates, update rules, and approval states.
+AHICP should be practically implementable and reusable across future papers, books, articles, reports, and sustained intellectual projects. Its architecture must therefore be concrete enough to instantiate through repository files, templates, update rules, and approval states.
 
-**Founder basis:** Article Content Core C9; HARC Protocol Core P11.
+**Founder basis:** Article Content Core C9; AHICP Protocol Core P11.
 
 ### Empirical validation extension
 
 `AI-PROPOSED`
 
-HARC could additionally become an empirical methodology program using handoff tests, semantic-drift tests, framework-fidelity tests, review-effort studies, and cross-model portability tests.
+AHICP could additionally become an empirical methodology program using handoff tests, semantic-drift tests, framework-fidelity tests, review-effort studies, and cross-model portability tests.
 
 This is currently a research-agenda proposal, not part of the human-approved core thesis.
 
@@ -206,7 +206,7 @@ For human core content:
 
 `Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
 
-**Founder basis:** Article Content Core C11, C14; HARC Protocol Core P19, P23; HARC-D021.
+**Founder basis:** Article Content Core C11, C14; AHICP Protocol Core P19, P23; HARC-D021.
 
 ---
 
@@ -214,11 +214,11 @@ For human core content:
 
 **Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-Durable repository state can support cross-agent continuity only if a new AI Agent can reliably discover it and read it in the correct order. HARC should therefore provide an explicit zero-context entry, mandatory read order, machine-readable manifest, and Onboarding Handshake.
+Durable repository state can support cross-agent continuity only if a new AI Agent can reliably discover it and read it in the correct order. AHICP should therefore provide an explicit zero-context entry, mandatory read order, machine-readable manifest, and Onboarding Handshake.
 
 Successful handoff should not be assumed. The Agent should first report current stage, objective, active tasks, recently completed work, next actions, blockers, and pending human decisions from Working Memory, then retrieve task-relevant long-term Framework/Artifact state.
 
-**Founder basis:** Article Content Core C12; HARC Protocol Core P20.
+**Founder basis:** Article Content Core C12; AHICP Protocol Core P20.
 
 ---
 
@@ -228,7 +228,7 @@ Successful handoff should not be assumed. The Agent should first report current 
 
 Cross-agent continuity does not require a second dynamic project-state copy inside chat context.
 
-HARC should treat GitHub as the authoritative external-memory and working-state interface:
+AHICP should treat GitHub as the authoritative external-memory and working-state interface:
 
 `GitHub Repository = authoritative external memory + working state`
 
@@ -238,7 +238,7 @@ The Agent retrieves latest canonical files on demand for the current task, recon
 
 The session retains only a minimal Repository Resolver. Working Memory and the three long-term layers remain in GitHub and are retrieved on demand rather than copied into chat as long-lived state.
 
-**Founder basis:** Article Content Core C13; HARC Protocol Core P21–P22; HARC-D020.
+**Founder basis:** Article Content Core C13; AHICP Protocol Core P21–P22; HARC-D020.
 
 
 ---
@@ -247,7 +247,7 @@ The session retains only a minimal Repository Resolver. Working Memory and the t
 
 **Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
 
-HARC's three content layers are Long-Term Research Memory:
+AHICP's three content layers are Long-Term Research Memory:
 
 `Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
 
@@ -257,7 +257,7 @@ Parallel Working Memory stores current stage, objectives, tasks, completion stat
 
 Stable human-resolved Working Memory content must be promoted into the appropriate long-term layer.
 
-**Founder basis:** Article Content Core C14; HARC Protocol Core P23; HARC-D021.
+**Founder basis:** Article Content Core C14; AHICP Protocol Core P23; HARC-D021.
 
 ---
 
@@ -277,7 +277,7 @@ Current Focus tells a replacement Agent what matters most now; Task Plan tells i
 
 Work Log is therefore outside default AI onboarding context. It should receive periodic stage-level summaries, but must not store hidden AI reasoning or replace durable normative state.
 
-**Founder basis:** Article Content Core C15; HARC Protocol Core P24; HARC-D022.
+**Founder basis:** Article Content Core C15; AHICP Protocol Core P24; HARC-D022.
 
 ---
 
@@ -358,9 +358,9 @@ Supports T5 and T6.
 
 ## VIII. Existing intellectual and institutional context
 
-**Function:** compare HARC cautiously with extended/distributed cognition, epistemic dependence, automation reliance, contribution taxonomies, and selected current authorship/AI policies.
+**Function:** compare AHICP cautiously with extended/distributed cognition, epistemic dependence, automation reliance, contribution taxonomies, and selected current authorship/AI policies.
 
-The literature should contextualize and constrain HARC; it should not be used to imply that HARC's own concepts are already established by those sources.
+The literature should contextualize and constrain AHICP; it should not be used to imply that AHICP's own concepts are already established by those sources.
 
 ## IX. Limits, objections, and possible validation
 
@@ -402,7 +402,7 @@ T9 + T10 + T11 + T12 + T13
 └── turn the persistent-state, governance, and cross-Agent continuity commitments of T1 / T2 / T7 into an executable workflow
 
 T1 + T2 + T3 + T4 + T5 + T6 + T7 + T9 + T10 + T11 + T12 + T13
-└── jointly provide the main implementation conditions for T8: HARC must be practically implementable and reusable
+└── jointly provide the main implementation conditions for T8: AHICP must be practically implementable and reusable
 ```
 
 The dependency graph is AI-organized, but its structural repair has been human-confirmed through `HARC-D025`. It represents principal support and implementation relations among the theses; it does not claim that every arrow is a strict relation of formal logical entailment.
@@ -422,7 +422,7 @@ The article currently uses:
 
 Verified source notes are maintained canonically in `evidence/METHODOLOGY_SOURCES.zh-CN.md`, with `evidence/METHODOLOGY_SOURCES.md` as the English mirror; bibliographic metadata is maintained in `paper/methodology-references.bib`.
 
-**Evidence rule:** none of these sources by itself establishes HARC's proposed framework architecture, `semantic version control`, or empirical effectiveness. HARC-D023's normative claims about AI's tool role and human Framework responsibility are the human author's protocol/methodology commitments, not empirical conclusions directly established by these sources.
+**Evidence rule:** none of these sources by itself establishes AHICP's proposed framework architecture, `semantic version control`, or empirical effectiveness. HARC-D023's normative claims about AI's tool role and human Framework responsibility are the human author's protocol/methodology commitments, not empirical conclusions directly established by these sources.
 
 ---
 
