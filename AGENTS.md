@@ -4,6 +4,12 @@ This repository defines the **AI-Assisted Human Inquiry and Creation Protocol (A
 
 > **Language rule:** Chinese `AGENTS.zh-CN.md` is canonical; this English file is the synchronized mirror.
 
+## Human-facing documentation routing
+
+The AHICP homepage and `docs/HUMAN_GUIDE.md` are the human conceptual entrypoint to the ecosystem. They are designed for people with little or no technical background. Preserve their progressive-disclosure structure and avoid turning them into an Agent bootstrap specification.
+
+For machine configuration, cross-component reconstruction, adoption, upgrade, or deployment, the Starter ecosystem and Agent Retrieval Contract remain authoritative.
+
 ## Cross-repository ecosystem routing
 
 When this repository is being used to configure, compose, upgrade, publish, or operate a downstream project together with PPF, Vault Interface, or the Starter, first read `docs/ECOSYSTEM.md`, `ecosystem.yaml`, and the [canonical cross-repository Agent Retrieval Contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md). Reconstruct all four public component roles before making cross-component decisions.
