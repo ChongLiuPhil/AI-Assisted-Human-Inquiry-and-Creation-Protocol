@@ -4,6 +4,12 @@
 
 > **语言规则：本文件的中文版本是规范性基准；英文 `AGENTS.md` 是同步镜像。**
 
+## 面向人的说明分流
+
+AHICP 公共主页与 `docs/HUMAN_GUIDE.zh-CN.md` 是整个体系的人类概念入口，面向可能完全没有技术背景的普通用户。维护时必须保留“先生活语言、再逐步深入”的渐进式结构，不得把它们改造成 Agent bootstrap specification。
+
+机器配置、跨组件状态恢复、采用、升级与部署仍以 Starter ecosystem 和 Agent Retrieval Contract 为权威入口。
+
 ## 跨仓库生态分流
 
 当本仓库用于与 PPF、Vault Interface 或 Starter 一起配置、组合、升级、发布或操作下游项目时，先阅读 `docs/ECOSYSTEM.zh-CN.md`、`ecosystem.yaml` 与 [canonical 跨仓库 Agent 调取契约](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.zh-CN.md)，并在作出跨组件决定前恢复四个公共组件的责任关系。
