@@ -3,6 +3,16 @@
 Current component: AHICP
 Role: human-led AI-assisted inquiry and creation governance.
 
+Human conceptual entrypoint:
+https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/
+Human Guide (Chinese canonical):
+https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol/blob/main/docs/HUMAN_GUIDE.zh-CN.md
+Human Guide (English mirror):
+https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol/blob/main/docs/HUMAN_GUIDE.md
+
+Machine/configuration entrypoint:
+https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/ecosystem.yaml
+
 Canonical ecosystem:
 https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md
 Machine-readable ecosystem:
