@@ -294,3 +294,12 @@ AHICP 不是一个让 AI 成为“以人类署名作品的隐藏作者”的系�
 ## 许可
 
 项目目标是开放复用。具体许可条款记录在 `LICENSE-DECISION.zh-CN.md` 中，应通过明确决定最终确定，而不能根据仓库是否公开来推断。
+
+
+## 与综合 Starter 的关系
+
+如果希望把 AHICP、PPF 与公开 Vault Interface 组合到新项目，或对既有 GitHub 项目进行可审计升级，可使用：
+
+https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter
+
+Starter 只负责组合、版本锁定、检查与升级计划；本仓库继续是自身规范／模板的权威来源。
