@@ -59,12 +59,39 @@ def main() -> int:
         MACHINE_ENTRY,
         'id="guideContentZh"',
         'id="guideContentEn"',
+        'id="start-now-zh"',
+        'id="start-now-en"',
         'data-copy="newProjectPromptZh"',
+        'data-copy="newProjectPromptEn"',
+        "你只需要把一段话发给 AI",
+        "You only need to send one instruction to your AI",
         "function renderMd",
     ]
     for marker in required_page_markers:
         if marker not in page:
             raise SystemExit(f"AHICP public homepage is missing {marker}")
+
+    if page.index('id="complete-guide-zh"') > page.index('id="start-now-zh"'):
+        raise SystemExit("Chinese start action must come after the complete Human Guide")
+    if page.index('id="complete-guide-en"') > page.index('id="start-now-en"'):
+        raise SystemExit("English start action must come after the complete Human Guide")
+
+    forbidden_tail_markers = [
+        "<h2>从这里继续</h2>",
+        "<h2>Continue from here</h2>",
+        'data-copy="upgradePromptZh"',
+        'data-copy="upgradePromptEn"',
+    ]
+    for marker in forbidden_tail_markers:
+        if marker in page:
+            raise SystemExit(f"Human Entry has regressed to multiple competing tail actions: {marker}")
+
+    guide_zh = (ROOT / "docs/HUMAN_GUIDE.zh-CN.md").read_text(encoding="utf-8")
+    guide_en = (ROOT / "docs/HUMAN_GUIDE.md").read_text(encoding="utf-8")
+    if "## 15. 现在真正开始：把一段话发给 AI" not in guide_zh:
+        raise SystemExit("Chinese Human Guide must end in the concrete AI start action")
+    if "## 15. Start for real: send one instruction to your AI" not in guide_en:
+        raise SystemExit("English Human Guide must end in the concrete AI start action")
 
     print("ecosystem + human-entry validation passed")
     return 0

@@ -610,38 +610,41 @@ It provides a structure that makes it easier to detect errors, preserve evidence
 
 ---
 
-## 15. Where to go next
+## 15. Start for real: send one instruction to your AI
 
-### I only want to understand the idea
+At this point, you do not need to learn GitHub, Starter, YAML, Cloudflare, or deployment terminology first.
 
-Continue with:
+Starting for real takes only four steps:
 
-- [AHICP public homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/)
+1. **Copy the bootstrap instruction below.**
+2. **Open the AI you normally use, start a new conversation, and paste it.**
+3. **Add one sentence describing what you actually want to do.** For example: “I want to study urban transportation over the long term and eventually write a book.”
+4. **Send it.** The AI should then enter the machine entrypoint, retrieve the technical contracts, create or inspect the project, and begin the engineering setup.
 
-### I want to create my first project
+Bootstrap instruction to give the AI:
 
-Go to:
+~~~text
+I want to start using AHICP / the Inquiry Publishing Stack.
 
-- [Inquiry Publishing Project Starter](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
+First read and follow the machine entrypoint:
+https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
 
-### I want to understand publishing
+You must retrieve the ecosystem, Agent Retrieval Contract, and required upstream specifications linked from that entry, then work from the complete default stack: full AHICP + full PPF + Vault Interface, with original and unpublished source private by default and unpublished Web restricted/authenticated by default.
 
-Go to:
+First confirm that you successfully loaded the machine entrypoint, then use the project goal I provide next to create or inspect the project.
 
-- [Personal Publishing Framework](https://chongliuphil.github.io/Personal-Publishing-Framework/)
+Complete routine technical configuration, repository changes, validation, deployment preparation, and durable state write-back yourself when tools permit. Ask me to act only when key judgment, approval, sign-in/MFA, authorization, or direct secret entry is truly required, and then give precise numbered steps, completion criteria, verification, and rollback.
 
-### I want to understand public metadata and privacy boundaries
+Never ask me to paste passwords, API tokens, private keys, recovery codes, or other secrets into chat.
+~~~
 
-Go to:
+Then add one sentence at the end of the same message:
 
-- [Vault Interface](https://chongliuphil.github.io/Vault-interface/)
+> **What I want to do is: …**
 
-### I am an AI agent
+After you send it, the AI should normally tell you that it loaded the machine entrypoint, confirm your project goal, and continue the engineering setup.
 
-Read:
-
-- [Starter ecosystem](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/ecosystem.yaml)
-- [Agent Retrieval Contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md)
+You do not need to open the machine entry yourself or read the technical GitHub files. Those are for the AI and for people who want to inspect the implementation in depth.
 
 ---
 
@@ -659,3 +662,5 @@ What should endure in a long-running project is:
 - human responsibility for the final result.
 
 That is what AHICP and the broader Inquiry Publishing Stack are designed to protect.
+
+**Once you understand the system, the next step is not to study more tools. Send the bootstrap instruction to your AI and tell it what you actually want to do.**
