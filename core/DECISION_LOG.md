@@ -491,3 +491,36 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Specification §23.5, Protocol Core P26, AGENTS, research-project template, Decision Log, Protocol Contract CI.
 
 **Status:** explicitly human-approved; authorized to complete PR #3 normative consolidation and merge after green CI.
+
+---
+
+## 2026-09-20 — AHICP-D030
+
+**Source:** human project founder  
+**Classification:** CONTENT, PROTOCOL, FORM
+
+**Decision:**
+
+1. The existing AHICP methodology article will continue to develop as **one unified paper** rather than being split into separate “protocol” and “memory” papers.
+2. The paper is authorized for substantial structural revision so that the following become core theoretical contributions rather than peripheral implementation details:
+   - **Project Memory Architecture:** the durable memory of a long-running human–AI project should belong to the project rather than depend on a particular model, Agent, chat, or platform memory;
+   - **Working Memory as a continuity layer:** Working Memory is a persistent operational representation of the project's current epistemic/task state and a cross-session continuity layer, not human psychological working memory and not a model's hidden state;
+   - **Agent / Model Substitution:** AI Agents and models should be replaceable while project purpose, evidence, decisions, current state, and next actions remain recoverable from the repository; substitution is an important stress test of the architecture;
+   - **Human Decision Persistence:** human-confirmed, rejected, deferred, or authorized decisions are first-class project memory and must not collapse into unattributed text or become re-opened merely because a new Agent takes over.
+3. The article should present AHICP memory as a **multi-role, layered, governable project-memory architecture**. In addition to the three Long-Term Research Memory layers and parallel Working Memory, it should discuss functional roles such as normative memory, epistemic/evidence memory, decision memory, operational memory, handoff memory, and publication/authorization memory. These are functional roles and need not map one-to-one onto physical files.
+4. The article should explicitly distinguish **agent memory / conversational memory** from **project memory**. Existing agent-memory research largely asks how an Agent stores, retrieves, updates, and uses past information; AHICP asks how a long-running project can maintain authoritative state that is Agent-independent, inspectable, versionable, provenance-aware, and portable.
+5. The paper must discuss:
+   - inspectability / editability / versionability / provenance;
+   - separation of evidence, inference, proposal, and human-confirmed decision;
+   - stale state, conflicting memory, memory curation, selective retrieval, and memory growth;
+   - Working Memory promotion / resolution / write-back;
+   - privacy, unpublished material, and publication authorization as project-state boundaries;
+   - how human responsibility, Framework Approval, and Final Artifact Approval connect to durable project memory.
+6. The human project founder accepts inclusion of the previously discussed evaluation program in the same paper, including handoff/resumption tests, agent/model-substitution tests, decision-persistence tests, semantic-drift/fidelity tests, review-effort studies, and evaluation of memory curation/conflict handling. **These are currently proposed evaluation / research agenda items and must not be represented as completed empirical results.**
+7. The article should engage current work on agent memory, long-term interactive memory, provenance, distributed cognition / extended mind, epistemic dependence, automation reliance, and authorship/accountability norms, without claiming that those literatures have already validated AHICP.
+8. The existing title remains in place. This decision authorizes major structural rewriting of the Working Framework and DERIVED-PROVISIONAL article to implement the direction above. It **does not constitute overall Framework Approval of the rewritten complete framework and does not constitute Final Artifact Approval**.
+9. Chinese remains the canonical scholarly draft and English the synchronized mirror; substantive structural changes in this work cycle must update both languages.
+
+**Affected components:** Article Content Core, Working Argument Map, Framework Status, methodology article, evidence layer, bibliography, Working Memory, Decision Log.
+
+**Status:** explicitly human-confirmed; authorizes the current structural revision and article upgrade.
