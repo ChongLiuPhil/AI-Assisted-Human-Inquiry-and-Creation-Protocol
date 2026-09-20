@@ -197,7 +197,7 @@ AI 可以提出方案。
 
 它关心：
 
-- canonical source；
+- 权威源文件（canonical source）；
 - 网页输出；
 - 书籍/文档输出；
 - 构建过程；
@@ -214,7 +214,7 @@ AI 可以提出方案。
 
 > 怎样让一个项目在公共体系中被理解，而不必公开私人材料？
 
-它提供公共 metadata contract。
+它提供一套公开元数据约定（metadata contract）。
 
 例如，一个项目可以公开：
 
@@ -229,7 +229,7 @@ AI 可以提出方案。
 - 工作记忆；
 - 未发布手稿；
 - 密码；
-- private repository 的 locator。
+- 私有仓库的位置。
 
 [Vault Interface 主页](https://chongliuphil.github.io/Vault-interface/)
 
@@ -242,11 +242,11 @@ Starter 处理的问题是：
 它负责：
 
 - 组合；
-- profile；
+- 配置方案（profile）；
 - adoption；
 - upgrade；
-- machine-readable state；
-- Agent 配置入口。
+- 机器可读的项目状态；
+- AI 配置入口。
 
 对一个完整新项目，当前默认基线是：
 
@@ -354,7 +354,7 @@ Starter 处理的问题是：
 6. 完成作品。
 7. 如果公开网页，只发布最终内容，不公开私人草稿。
 
-即使学生不知道 Git 是什么，AI Agent 也可以帮助维护这些结构。
+即使学生不知道 Git 是什么，AI 也可以帮助维护这些结构。
 
 ### 例子二：一个人长期学习一个主题
 
@@ -380,10 +380,10 @@ PPF
 → 管理 manuscript、build 和 publication
 
 Vault Interface
-→ 公开安全的项目 metadata
+→ 公开安全的项目元数据
 
 Starter
-→ 让 Agent 正确组合并升级这些组件
+→ 让 AI 正确组合并升级这些组件
 ~~~
 
 ---
@@ -395,26 +395,26 @@ Starter
 你可以：
 
 ~~~text
-GitHub source repository = private
-Web publication = restricted
+源文件仓库 = private
+网页发布 = restricted
 ~~~
 
 也可以以后变成：
 
 ~~~text
 GitHub source repository = private
-Web publication = public
+网页发布 = public
 ~~~
 
 因此：
 
 > **公开最终作品，不代表必须公开你的全部研究过程。**
 
-原创、未发布或私人材料默认留在 private source。
+原创、未发布或私人材料默认保持私有。
 
 只有经过批准的内容才进入公开输出。
 
-密码、token、private key 等秘密永远不应该进入仓库。
+密码、token、私钥等秘密永远不应该进入仓库。
 
 ---
 
@@ -468,11 +468,11 @@ Web publication = public
 
 > “公开发布之前必须先问我。”
 
-### 第三步：让 Agent 按完整体系建立项目
+### 第三步：让 AI 按完整体系建立项目
 
 可以使用：
 
-> “按照 Inquiry Publishing Stack 的默认完整配置建立这个项目。保留我的目标、来源、决定和工作状态；原创内容默认 private。”
+> “按照 Inquiry Publishing Stack 的默认完整配置建立这个项目。保留我的目标、来源、决定和工作状态；原创内容默认保持 private（私有）。”
 
 ### 第四步：开始正常工作
 
@@ -520,14 +520,14 @@ AI 帮你维护结构。
 
 你理解：
 
-- private source；
-- restricted Web；
+- 私有源文件（private source）；
+- 受限网页（restricted Web）；
 - public release；
 - publication authorization。
 
 ### Level 4 — 会管理复杂项目
 
-这时 Git、CI、Cloudflare、Agent routing 等技术细节才真正值得深入学习。
+这时 Git、CI、Cloudflare、Agent 路由等技术细节才值得深入学习。
 
 这套体系的目标不是逼每个人变成工程师。
 
@@ -558,7 +558,7 @@ AI 帮你维护结构。
 
 - 建立项目；
 - 恢复四个组件；
-- 配置 profile；
+- 选择配置方案（profile）；
 - 升级；
 - 部署；
 
