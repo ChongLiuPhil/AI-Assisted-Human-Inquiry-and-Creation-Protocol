@@ -352,3 +352,24 @@ Chinese canonical and English mirror, root AGENTS, and the research-project temp
 - no textbook change;
 - no downstream adoption bump;
 - this work is propagation and consistency repair of already approved D028/D029 semantics, not a new Human Protocol Decision.
+
+## 2026-09-20 — Methodology article Project Memory Architecture structural upgrade
+
+**Authority:** AHICP-D030
+
+This work cycle keeps the existing methodology article as one unified paper and completes the following structural upgrade:
+
+- promotes Project Memory Architecture to the central article axis;
+- defines Working Memory as a persistent continuity layer;
+- treats Human Decision Persistence as first-class Project memory;
+- treats Agent / Model Substitution as an architectural stress test and proposed evaluation;
+- distinguishes Agent/conversational memory from Project memory;
+- adds memory curation, stale/conflict handling, selective retrieval, and privacy/publication boundaries;
+- connects Framework Approval / Final Artifact Approval to Project memory and human responsibility;
+- adds related work/evidence on Generative Agents, MemGPT, Agent-memory surveys, LongMemEval, MemBench, RealMem, and W3C PROV;
+- rewrites the Chinese canonical article and synchronized English mirror;
+- updates Content Core, Working Argument Map, Framework Status, and Working Memory;
+- retains `DERIVED-PROVISIONAL` / `WORKING-FRAMEWORK` status and does not create `MA-FW-001`;
+- explicitly reports no empirical results for the proposed evaluation framework.
+
+**Result:** structural rewrite completed; proceeding to consistency validation / PR / human review.
