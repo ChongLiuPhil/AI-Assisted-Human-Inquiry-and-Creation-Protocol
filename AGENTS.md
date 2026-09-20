@@ -4,6 +4,14 @@ This repository defines the **AI-Assisted Human Inquiry and Creation Protocol (A
 
 > **Language rule:** Chinese `AGENTS.zh-CN.md` is canonical; this English file is the synchronized mirror.
 
+## Cross-repository ecosystem routing
+
+When this repository is being used to configure, compose, upgrade, publish, or operate a downstream project together with PPF, Vault Interface, or the Starter, first read `docs/ECOSYSTEM.md`, `ecosystem.yaml`, and the [canonical cross-repository Agent Retrieval Contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md). Reconstruct all four public component roles before making cross-component decisions.
+
+This ecosystem routing does **not** replace AHICP's repository-internal onboarding. After ecosystem discovery, substantive work inside an AHICP repository still follows `START_HERE.zh-CN.md`, `AHICP_MANIFEST.yaml`, and the onboarding handshake below.
+
+For original or unpublished downstream work, the default full-stack posture is full AHICP + full PPF + Vault Interface, private canonical source, and restricted/authenticated Continuous Web until explicit human public-release authorization. Public links never grant private-state access. Cloudflare human handoffs must follow the shared operational contract and provide numbered operator-level steps, secret boundaries, completion evidence, verification, and rollback.
+
 ## 0. Zero-context onboarding: read START_HERE first
 
 Any AI Agent taking over this repository from zero context must, before substantive work, read:

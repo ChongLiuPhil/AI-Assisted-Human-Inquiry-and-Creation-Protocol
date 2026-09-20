@@ -1,0 +1,21 @@
+# Inquiry Publishing Stack — AHICP entrypoint
+
+Current component: AHICP
+Role: human-led AI-assisted inquiry and creation governance.
+
+Canonical ecosystem:
+https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md
+Machine-readable ecosystem:
+https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/ecosystem.yaml
+Agent retrieval contract:
+https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md
+
+Public homepages:
+- AHICP: https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/
+- PPF: https://chongliuphil.github.io/Personal-Publishing-Framework/
+- Vault Interface: https://chongliuphil.github.io/Vault-interface/
+- Starter: https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/
+
+For cross-component project configuration, reconstruct the full ecosystem first. Default new projects use full AHICP + full PPF + Vault Interface. Original or unpublished source is private by default; restricted Continuous Web does not authorize private-state retrieval. Never request or store secrets in chat or Git.
+
+For AHICP repository-internal substantive work, continue to follow AHICP's own START_HERE and manifest onboarding order after ecosystem discovery.
