@@ -52,11 +52,11 @@ Framework Approval 与 Final Artifact Approval 是不同的。Framework Approval
 
 AHICP 不是一个纯粹抽象的哲学提案。其文件层级、更新规则、批准状态与模板应具体到足以在未来研究项目中实例化。
 
-用于评价 AHICP 的精确经验 benchmark 方案目前尚不是人类确认的核心承诺。
+用于评价 AHICP 的经验研究方向已经通过 AHICP-D030 获得人类确认，包括 handoff/resumption、Agent/Model substitution、decision persistence、semantic drift/framework fidelity、review effort、stale/conflict handling 与 memory curation/retrieval efficiency。具体 benchmark 实现、样本、统计设计与效果结论仍需后续研究。
 
 ## C10. 文章不得夸大尚未确认的 AI 提议
 
-`generation–verification asymmetry`、`semantic version control` 以及某一特定经验测试套件等术语和更强命题，可能是有用的 AI 表述，但在人类明确接受之前仍属于 provisional。
+`generation–verification asymmetry` 与 `semantic version control` 仍是解释性、provisional 的 AI 表述，不应写成成熟领域标准术语。AHICP-D030 已明确接受把一套经验评估框架纳入论文，但具体 benchmark 实现、指标细节与任何效果性结论仍不得未经研究而被提升为事实。
 
 `responsibility concentration` 已被人类明确决定不作为当前中心术语继续使用。后续应使用“人类目的与方向”“framework 责任锚点”等描述性表达来说明责任模型，除非人类以后重新决定采用新的中心术语。
 
@@ -231,9 +231,7 @@ AHICP-D030 使“在论文中纳入上述评估框架”成为人类确认的文
 
 ## 来源纠正
 
-此前一个版本把明确的经验测试计划（handoff test、semantic-drift test、framework-fidelity test、review-effort test、cross-model portability test）写得像是已经属于人类原创文章基础，这是过强的。
-
-人类发起人明确要求的是：AHICP 必须可实际实施、可复用；具体经验测试计划是 AI 后续发展的扩展，在被人类接受前仍属于 provisional。
+此前一个版本把明确的经验测试计划写得像是已经属于人类原创文章基础，这是过强的；当时它确实只是 AI 后续发展的扩展。AHICP-D030 已改变这一状态：人类发起人现已明确接受把 handoff/resumption、Agent/Model substitution、decision persistence、semantic drift/framework fidelity、review effort、stale/conflict handling 与 memory-curation/retrieval-efficiency 纳入同一篇论文的 proposed evaluation framework。这个更新只确认“应当研究这些问题”，并不构成任何实证结果，也不预先批准具体 benchmark 实现、样本、统计方法或效果结论。
 
 ## 双语规则
 
