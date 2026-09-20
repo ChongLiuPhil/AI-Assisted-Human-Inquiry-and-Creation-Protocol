@@ -1,8 +1,8 @@
 **Project links:** [Public homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/) · [GitHub repository](https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol)
 
-**Related public projects:** [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
+**Related public projects:** [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [Vault Interface homepage](https://chongliuphil.github.io/Vault-interface/) · [Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
 
-**Ecosystem and agent entrypoint:** [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) · [`ecosystem.yaml`](ecosystem.yaml) · [Starter unified guide](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md)
+**Ecosystem and agent entrypoint:** [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) · [`ecosystem.yaml`](ecosystem.yaml) · [`llms.txt`](docs/llms.txt) · [Starter unified guide](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md) · [Agent retrieval contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md)
 
 # AI-Assisted Human Inquiry and Creation Protocol
 
