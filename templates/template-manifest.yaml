@@ -1,0 +1,62 @@
+schema: ahicp-template-manifest/v1
+template_version: 0.3.0-draft
+template_root: templates/research-project
+canonical_language: zh-CN
+
+profiles:
+  research-lite:
+    purpose: lightweight-long-lived-project
+    required_roles:
+      - agent-entry
+      - current-working-memory
+      - human-authority-source
+    may_map_existing_files: true
+  research-standard:
+    purpose: sustained-paper-book-or-research-workbench
+    required_roles:
+      - start-here
+      - agent-contract
+      - content-core
+      - form-core
+      - decision-log
+      - working-memory
+      - argument-map
+    may_map_existing_files: true
+  research-full:
+    purpose: high-complexity-theory-program
+    required_roles:
+      - start-here
+      - agent-contract
+      - content-core
+      - form-core
+      - decision-log
+      - working-memory
+      - argument-map
+      - framework-status
+      - approved-framework-snapshots
+      - evidence-layer
+      - final-artifact-approval
+    may_map_existing_files: true
+
+upgrade_policy:
+  project_owned:
+    - core/CONTENT_CORE*
+    - core/FORM_CORE*
+    - core/DECISION_LOG*
+    - docs/working-memory/**
+    - docs/frameworks/**
+    - evidence/**
+    - paper/**
+    - book/**
+    - article/**
+    - report/**
+  merge_managed:
+    - START_HERE*.md
+    - AGENTS*.md
+    - AHICP_MANIFEST.yaml
+    - AHICP_CONTEXT_INTERFACE.yaml
+  upstream_managed:
+    - SESSION_CONTEXT_BOOTSTRAP*.md
+    - ONBOARDING_REPORT_TEMPLATE*.md
+
+rule: Existing reliable project files SHOULD be functionally mapped before adding duplicate truth sources.
