@@ -1,5 +1,5 @@
-schema: ahicp-template-manifest/v1
-template_version: 0.3.0-draft
+schema: ahicp-template-manifest/v2
+template_version: 0.3.1-draft
 template_root: templates/research-project
 canonical_language: zh-CN
 
@@ -37,6 +37,22 @@ profiles:
       - evidence-layer
       - final-artifact-approval
     may_map_existing_files: true
+
+role_bindings:
+  agent-entry: START_HERE.zh-CN.md
+  current-working-memory: docs/working-memory/current-focus.zh-CN.md
+  human-authority-source: core/DECISION_LOG.zh-CN.md
+  start-here: START_HERE.zh-CN.md
+  agent-contract: AGENTS.zh-CN.md
+  content-core: core/CONTENT_CORE.zh-CN.md
+  form-core: core/FORM_CORE.zh-CN.md
+  decision-log: core/DECISION_LOG.zh-CN.md
+  working-memory: docs/working-memory.zh-CN.md
+  argument-map: docs/argument-map.zh-CN.md
+  framework-status: docs/framework-status.zh-CN.md
+  approved-framework-snapshots: docs/frameworks/
+  evidence-layer: evidence/
+  final-artifact-approval: core/DECISION_LOG.zh-CN.md
 
 upgrade_policy:
   project_owned:
