@@ -1,8 +1,8 @@
-# Start Here: A Human Guide to Inquiry, Creation, and AI Assistance
+# Start Here: A Guide to Inquiry, Creation, and Working with AI
 
-> This is the **human first entry point** to the Inquiry Publishing Stack.  
-> You can start here even if you do not know what GitHub, agents, YAML, or Cloudflare are.  
-> You do not need to learn the tools first. Start by understanding why the system exists, how it can help you, and which decisions should remain yours.
+> This is the place to understand and start using the Inquiry Publishing Stack.  
+> You can begin here even if GitHub, agents, YAML, and Cloudflare are unfamiliar.  
+> You do not need to learn the tools first. Start with what the system helps you preserve, what AI can take off your plate, and which decisions still need your judgment.
 
 ---
 
@@ -19,18 +19,18 @@ Every day you may:
 - receive polished AI writing without knowing whether it is correct;
 - keep work private now but possibly publish it later.
 
-This system is not designed to make AI think instead of you.
+The system is not designed to make AI think for you.
 
-It is designed to answer a different question:
+It is designed around a more practical question:
 
-> **How can you remain in control of your questions, evidence, judgments, decisions, and work while AI becomes an assistant that can help you, be inspected, and be replaced?**
+> **How can you stay focused on thinking and creating while AI helps with records, organization, checking, execution, and publishing—and the project still remains understandable months later?**
 
 In the simplest form:
 
 ~~~text
 You ask questions, choose direction, and make important judgments
         ↓
-AHICP keeps the thinking process clear
+AHICP keeps questions, evidence, and decisions organized
         ↓
 Your project preserves sources, ideas, decisions, and work
         ↓
@@ -158,17 +158,84 @@ A good project state lets you return months later and still understand:
 
 ---
 
+## Why the project can survive across chats, models, and long gaps
+
+AHICP does not depend on one model remembering the whole project. It separates different kinds of project state and gives each one a clear home.
+
+~~~text
+Manifest / Context Interface
+tells a new AI where to look
+            ↓
+Working Memory
+Current Focus + Task Plan + Clarifications
+records what is happening now
+            ↓
+stable results move into durable project memory
+Decision Log + Core
+            ↓
+Working / Approved Framework
+            ↓
+Artifact + Evidence
+~~~
+
+### Manifest and Context Interface: the project map
+
+These files do not duplicate the whole project. They tell a new AI:
+
+- which rules the project follows;
+- which files are authoritative;
+- where the current state lives;
+- what to read first.
+
+A new AI therefore does not need to guess from the folder structure or rely on an old conversation.
+
+### Working Memory: what needs attention now
+
+Working Memory is intentionally small and operational.
+
+- **Current Focus** holds the highest-priority objective, main blocker, and immediate next action.
+- **Task Plan** holds active work, pending decisions, clarifications, and synchronization issues.
+- **Work Log** records stage-level history for retrospective review; it is not part of the default AI onboarding context.
+
+This lets a long project resume from a compact, high-value state instead of loading its entire history.
+
+### Durable project memory: what has become stable
+
+Once a temporary issue is resolved, it should not remain in Working Memory forever.
+
+Stable results move into longer-lived structures such as:
+
+- **Decision Log** for important decisions and their history;
+- **Core** files for the current substantive and presentation baseline;
+- **Framework** for argument, structure, and relationships;
+- **Artifact / Evidence** for the actual outputs and the material that supports them.
+
+This is a promotion step: short-term state becomes durable project memory only after it is stable enough to belong there.
+
+### Why this matters
+
+The design has four practical effects:
+
+1. **Repository state outranks chat memory.** You can change chats, models, or return months later and reconstruct the project.
+2. **A new AI does not need the entire history at once.** It starts with Current Focus and Task Plan, then retrieves only the long-term memory relevant to the task.
+3. **AI suggestions do not silently become project decisions.** Important decisions are confirmed before they are recorded in the Decision Log and Core.
+4. **Downstream edits do not silently rewrite upstream intent.** Decisions are recorded first, the Framework is reconciled next, and the Artifact is updated last.
+
+The goal is not infinite context. It is **recoverable, traceable project memory that can be handed off reliably**.
+
+---
+
 ## 4. What each of the four components does for you
 
 The four projects are logically independent, but they can form one complete working system.
 
-### 4.1 AHICP: keep control of thinking and decisions
+### 4.1 AHICP: keep questions, evidence, and decisions clear
 
 **AHICP — AI-Assisted Human Inquiry and Creation Protocol**
 
 It addresses the question:
 
-> How do I think, research, and create with AI without giving my judgment to AI?
+> How do I keep a long-running project clear while working with AI?
 
 It helps preserve:
 
@@ -179,11 +246,11 @@ It helps preserve:
 - reasoning;
 - hypotheses;
 - decisions;
-- human approvals;
+- decisions that require your confirmation;
 - current work state;
 - handoff information.
 
-AHICP is therefore the **human-method center** of the ecosystem.
+AHICP is the part of the stack that governs inquiry, decisions, project memory, and handoff.
 
 [AHICP homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/)
 
@@ -299,9 +366,9 @@ It is:
 
 ---
 
-## 6. What AI can do, and what it should not own
+## 6. What AI is good at helping with—and what still needs your judgment
 
-### AI is well suited to help with
+### Good work to delegate to AI
 
 - finding and organizing sources;
 - comparing views;
@@ -316,7 +383,7 @@ It is:
 - executing technical steps under approved rules;
 - preparing handoff material.
 
-### Humans should retain responsibility for
+### Decisions that still need your judgment
 
 - why the project exists;
 - which questions matter;
@@ -329,7 +396,7 @@ It is:
 
 In one sentence:
 
-> **AI can expand your capability without becoming the owner of the project.**
+> **AI can make the work easier to organize and carry out; the project direction, important judgments, and publication decisions still come from you.**
 
 ---
 
@@ -418,9 +485,9 @@ Passwords, tokens, private keys, and other secrets should never be committed to 
 
 ---
 
-## 9. What if I know nothing about the technical tools?
+## 9. Can I start without a technical background?
 
-That is fine.
+Yes.
 
 You do not need to first learn:
 
@@ -492,15 +559,15 @@ At the end of important work, say:
 
 ---
 
-## 11. Learn gradually instead of all at once
+## 11. Learn the technical details gradually
 
-### Level 0 — only use conversation
+### Stage 0 — start with normal conversation
 
 You express goals.
 
 AI maintains structure.
 
-### Level 1 — read project state
+### Stage 1 — learn where the project stands
 
 You learn where to find:
 
@@ -508,7 +575,7 @@ You learn where to find:
 - sources;
 - approved decisions.
 
-### Level 2 — inspect evidence and changes
+### Stage 2 — inspect sources and changes
 
 You can check:
 
@@ -516,7 +583,7 @@ You can check:
 - which files changed;
 - whether AI followed the rules.
 
-### Level 3 — control publication
+### Stage 3 — understand and manage publication
 
 You understand:
 
@@ -525,7 +592,7 @@ You understand:
 - public release;
 - publication authorization.
 
-### Level 4 — manage complex systems
+### Stage 4 — manage more complex projects
 
 Only here do Git, CI, Cloudflare, and agent routing become useful topics to study deeply.
 
@@ -533,26 +600,26 @@ The purpose is not to force everyone to become an engineer.
 
 The purpose is:
 
-> **Let the system and agents absorb technical complexity while humans retain key judgment.**
+> **Let the system and AI absorb as much technical complexity as possible, so your attention can stay on the questions, judgments, and creative work.**
 
 ---
 
-## 12. Two entrypoints: one for humans and one for machines
+## 12. Two entrypoints for two different jobs
 
-To avoid confusion, the ecosystem has two different first entrypoints.
+The stack separates understanding the system from configuring it.
 
-### Human first entrypoint: AHICP
+### Use AHICP to understand the system
 
 Start here if you want to understand:
 
 - why the system exists;
 - how it supports thinking;
-- what it means for ordinary users;
+- what it means in everyday use;
 - why the four components exist.
 
 Use this guide and the AHICP homepage.
 
-### AI / configuration first entrypoint: Starter
+### Let AI enter through Starter for configuration
 
 When an agent needs to:
 
@@ -576,7 +643,7 @@ Machine/configuration entry
       Starter
 ~~~
 
-The two entrypoints are connected, but they have different responsibilities.
+The two entrypoints are connected, but they serve different purposes: AHICP explains the method; Starter handles composition and configuration.
 
 ---
 
@@ -610,16 +677,16 @@ It provides a structure that makes it easier to detect errors, preserve evidence
 
 ---
 
-## 15. Start for real: send one instruction to your AI
+## 15. Start now: send this instruction to your AI
 
 At this point, you do not need to learn GitHub, Starter, YAML, Cloudflare, or deployment terminology first.
 
-Starting for real takes only four steps:
+Starting takes only four steps:
 
 1. **Copy the bootstrap instruction below.**
 2. **Open the AI you normally use, start a new conversation, and paste it.**
 3. **Add one sentence describing what you actually want to do.** For example: “I want to study urban transportation over the long term and eventually write a book.”
-4. **Send it.** The AI should then enter the machine entrypoint, retrieve the technical contracts, create or inspect the project, and begin the engineering setup.
+4. **Send it.** The AI should then open the machine entrypoint, retrieve the technical contracts, create or inspect the project, and continue with setup and verification.
 
 Bootstrap instruction to give the AI:
 
@@ -652,13 +719,13 @@ You do not need to open the machine entry yourself or read the technical GitHub 
 
 Tools, models, and platforms will change.
 
-What should endure in a long-running project is:
+What a long-running project needs to preserve is:
 
-- human purpose;
-- inspectable evidence;
-- clear decisions;
-- resumable work state;
-- control over privacy and publication;
+- why you are doing the project;
+- sources and evidence you can revisit;
+- decisions with their reasons;
+- a work state that can be resumed;
+- clear control over what stays private and what can be published;
 - human responsibility for the final result.
 
 That is what AHICP and the broader Inquiry Publishing Stack are designed to protect.
