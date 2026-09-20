@@ -353,3 +353,24 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 - 没有触碰 textbook；
 - 没有进行 downstream adoption bump；
 - 本轮是对已经批准的 D028/D029 规范进行传播与一致性修复，不创建新的 Human Protocol Decision。
+
+## 2026-09-20 — 方法论文章 Project Memory Architecture 结构升级
+
+**依据：** AHICP-D030
+
+本工作周期把现有 methodology article 保持为一篇统一论文，并完成以下结构升级：
+
+- 将 Project Memory Architecture 提升为全文主轴；
+- 将 Working Memory 明确定义为 persistent continuity layer；
+- 将 Human Decision Persistence 作为 first-class project memory；
+- 将 Agent / Model Substitution 作为架构压力测试与 proposed evaluation；
+- 明确 Agent memory / conversational memory 与 Project memory 的边界；
+- 加入 memory curation、stale/conflict handling、selective retrieval、privacy/publication boundary；
+- 把 Framework Approval / Final Artifact Approval 与项目记忆、人类责任连接；
+- 补充 Generative Agents、MemGPT、Agent-memory survey、LongMemEval、MemBench、RealMem、W3C PROV 等 related work / evidence；
+- 重写中文 canonical 论文与英文同步镜像；
+- 更新 Content Core、Working Argument Map、Framework Status 与 Working Memory；
+- 保持 `DERIVED-PROVISIONAL` / `WORKING-FRAMEWORK`，没有创建 `MA-FW-001`；
+- 明确 proposed evaluation 没有实证结果。
+
+**结果：** 结构性重写完成；进入 consistency validation / PR / human review。
