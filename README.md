@@ -1,5 +1,7 @@
 **Project links:** [Public homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/) · [GitHub repository](https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol)
 
+**Human first entrypoint:** [Start Here: A Human Guide to Inquiry, Creation, and AI Assistance](docs/HUMAN_GUIDE.md) · [中文 canonical](docs/HUMAN_GUIDE.zh-CN.md)
+
 **Related public projects:** [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [Vault Interface homepage](https://chongliuphil.github.io/Vault-interface/) · [Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
 
 **Ecosystem and agent entrypoint:** [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) · [`ecosystem.yaml`](ecosystem.yaml) · [`llms.txt`](docs/llms.txt) · [Starter unified guide](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md) · [Agent retrieval contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md)
@@ -258,7 +260,8 @@ Audit records:
 
 ### For humans
 
-1. Read the canonical Chinese [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) for the emerging scholarly argument.
+1. If you are new to the ecosystem, start with the canonical Chinese [Human Guide](docs/HUMAN_GUIDE.zh-CN.md) or its [English mirror](docs/HUMAN_GUIDE.md). This is the non-technical conceptual entrypoint to the full Inquiry Publishing Stack.
+2. Read the canonical Chinese [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) for the emerging scholarly argument.
 2. Read [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) first for current stage, objective, tasks, blockers, and next actions.
 3. Then read [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) to inspect the current Working Framework.
 4. Read the canonical Chinese [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md) for the normative workflow.
