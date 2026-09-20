@@ -222,3 +222,121 @@ Before submitting the methodology article:
 - [ ] add page-specific citations where required by venue style;
 - [ ] verify that no AI-generated reference entered the bibliography without source confirmation;
 - [ ] record material policy changes in the Decision Log / evidence layer if they affect the article's argument.
+
+---
+
+## 9. Generative Agents (Park et al., 2023) — Agent memory, reflection, and retrieval
+
+**Source:** Park, J. S., et al. (2023). *Generative Agents: Interactive Simulacra of Human Behavior*. UIST 2023. DOI: 10.1145/3586183.3606763.
+
+**Verified:** ACM / Google Research, 2026-09-20.
+
+### Supported claim
+The work demonstrates an Agent-memory architecture combining an experience record, higher-level reflection, and dynamic retrieval so later behavior can depend on past experience.
+
+### Permitted AHICP use
+Use as a representative example of Agent memory focused on how an Agent remembers and uses its experiences.
+
+### Qualification
+Do not present it as evidence for project-memory governance, human decision persistence, or AHICP.
+
+---
+
+## 10. MemGPT (Packer et al., 2023) — hierarchical memory under finite context
+
+**Source:** Packer, C., et al. (2023). *MemGPT: Towards LLMs as Operating Systems*. arXiv:2310.08560.
+
+**Verified:** arXiv / UC Berkeley Sky Computing Lab, 2026-09-20.
+
+### Supported claim
+MemGPT treats finite context windows as a limitation for extended interaction and proposes OS-inspired virtual-context management across memory tiers.
+
+### Permitted AHICP use
+Use to show that Agent-memory research already studies multi-session memory, storage tiers, and management under limited model context.
+
+### Qualification
+AHICP asks a different project-memory question: even strong Agent-managed memory does not eliminate the need for external authoritative state, decision provenance, and human governance.
+
+---
+
+## 11. Zhang et al. (2025) — survey of LLM-Agent memory
+
+**Source:** Zhang, Z., et al. (2025). *A Survey on the Memory Mechanism of Large Language Model-based Agents*. ACM Transactions on Information Systems, 43(6), Article 155. DOI: 10.1145/3748302.
+
+**Verified:** ACM TOIS, 2026-09-20.
+
+### Supported claim
+The survey systematizes the necessity, design, evaluation, and applications of memory mechanisms in LLM-based Agents, demonstrating that memory is a major Agent-architecture research component.
+
+### Permitted AHICP use
+Use to delimit the neighboring field and motivate explicit engagement with Agent-memory research.
+
+### Qualification
+Its Agent-memory taxonomy must not be treated as identical to AHICP project-memory roles.
+
+---
+
+## 12. LongMemEval (Wu et al., 2025) and MemBench (Tan et al., 2025) — evaluating long-term memory
+
+**Sources:**
+- Wu, D., et al. (2025). *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*. ICLR 2025.
+- Tan, H., et al. (2025). *MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents*. Findings of ACL 2025. DOI: 10.18653/v1/2025.findings-acl.989.
+
+**Verified:** ICLR Proceedings / ACL Anthology, 2026-09-20.
+
+### Supported claim
+LongMemEval evaluates multi-session extraction, reasoning, temporal reasoning, knowledge updates, and abstention; MemBench evaluates Agent memory across memory levels, interaction scenarios, and effectiveness / efficiency / capacity dimensions.
+
+### Permitted AHICP use
+These works show that long-term memory can be decomposed into testable capabilities and provide methodological background for AHICP's proposed evaluation program.
+
+### Qualification
+Do not claim that these benchmarks already measure decision provenance, project governance, Framework Approval, or project continuity under Agent replacement.
+
+---
+
+## 13. RealMem (Bian et al., 2026) — project-oriented long-term interaction
+
+**Source:** Bian, H., et al. (2026). *RealMem: Benchmarking LLMs in Real-World Memory-Driven Interaction*. Findings of ACL 2026. DOI: 10.18653/v1/2026.findings-acl.703.
+
+**Verified:** ACL Anthology, 2026-09-20.
+
+### Supported claim
+RealMem explicitly introduces “long-term project-oriented interactions” as an evaluation setting with evolving goals and project state, and reports substantial challenges for current memory systems in such settings.
+
+### Permitted AHICP use
+Use as current evidence that Agent-memory research is moving toward realistic long-running project scenarios and that AHICP addresses a practically relevant problem.
+
+### Qualification
+RealMem remains an Agent-memory benchmark; it is not equivalent to AHICP's external project-memory governance.
+
+---
+
+## 14. W3C PROV — general provenance-model background
+
+**Source:** W3C Provenance Working Group, PROV Data Model / PROV Model Primer (2013).
+
+**Verified:** W3C, 2026-09-20.
+
+### Supported claim
+PROV provides a general model for describing entities, activities, agents, derivation, and responsibility-related provenance, and relates provenance to understanding origin, trust, compliance, and reproducibility.
+
+### Permitted AHICP use
+Use as standards background for provenance-aware project state.
+
+### Qualification
+AHICP's current file model is not a formal implementation of W3C PROV; AHICP adoption does not automatically provide PROV interoperability.
+
+---
+
+## 15. Evidence boundary added under AHICP-D030
+
+The following are now **human-confirmed directions for the AHICP article** but remain unvalidated empirical claims:
+- project memory should be independent of a particular Agent / model;
+- Working Memory can function as a long-running project continuity layer;
+- human decision persistence should be first-class project memory;
+- Agent/model substitution can be used as an AHICP architectural stress test;
+- the project-memory architecture reduces semantic drift or improves long-term project quality;
+- any effect claimed by the proposed evaluation framework.
+
+The article may argue for these claims, compare them with neighboring research, and propose tests. It must not report effectiveness conclusions before experiments are actually performed.
