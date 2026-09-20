@@ -35,9 +35,9 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
 <header>
   <div class="brand">AHICP · Human First</div>
   <div class="toplinks">
-    <a href="#start">Start</a>
-    <a href="#system">System</a>
-    <a href="#start-now-zh">开始使用 / Start</a>
+    <a id="overviewLink" href="#start">了解</a>
+    <a id="systemLink" href="#system">体系</a>
+    <a id="startLink" href="#start-now-zh">开始使用</a>
     <button id="zhBtn" type="button">中文</button>
     <button id="enBtn" type="button">English</button>
   </div>
@@ -170,7 +170,7 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
     <a class="secondary" href="#start-now-en">I understand — start now</a>
   </div>
 
-  <section class="block">
+  <section class="block" id="start-en">
     <h2>Understand it in one minute</h2>
     <p>You may use AI for learning, research, writing, or projects. The hard problem is often not whether AI can generate text. It is whether, weeks or months later, you can still tell why a decision was made, where the evidence came from, what was only a guess, what you actually approved, and how another AI can continue.</p>
     <div class="quote">The system is not designed to let AI think instead of you. It is designed to let your reasoning, evidence, and decisions endure while AI absorbs more organization, checking, execution, and technical complexity.</div>
@@ -202,7 +202,7 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" id="system-en">
     <h2>Four projects, four different problems</h2>
     <div class="map">
       <div><strong>AHICP · How do I think with AI without giving my judgment to AI?</strong><br>Governs questions, evidence, reasoning, decisions, human approval, work state, and handoff. It is the human-method center.</div>
@@ -316,9 +316,9 @@ async function loadGuide(lang){
   try{const r=await fetch(file,{cache:"no-cache"});if(!r.ok)throw new Error(r.status);target.innerHTML=renderMd(await r.text());target.classList.remove("guide-loading");loadedGuides[lang]=true}
   catch(e){target.innerHTML='<p>Guide could not be loaded here. <a href="'+file+'">Open the canonical guide</a>.</p>'}
 }
-function setLang(lang){const isZh=lang==="zh";zh.classList.toggle("active",isZh);en.classList.toggle("active",!isZh);zhBtn.classList.toggle("active",isZh);enBtn.classList.toggle("active",!isZh);document.documentElement.lang=isZh?"zh-CN":"en";localStorage.setItem("ahicp-lang",lang);loadGuide(lang)}
+function setLang(lang){const isZh=lang==="zh";zh.classList.toggle("active",isZh);en.classList.toggle("active",!isZh);zhBtn.classList.toggle("active",isZh);enBtn.classList.toggle("active",!isZh);document.documentElement.lang=isZh?"zh-CN":"en";document.getElementById("overviewLink").href=isZh?"#start":"#start-en";document.getElementById("overviewLink").textContent=isZh?"了解":"Overview";document.getElementById("systemLink").href=isZh?"#system":"#system-en";document.getElementById("systemLink").textContent=isZh?"体系":"System";document.getElementById("startLink").href=isZh?"#start-now-zh":"#start-now-en";document.getElementById("startLink").textContent=isZh?"开始使用":"Start";try{localStorage.setItem("ahicp-lang",lang)}catch(e){}loadGuide(lang)}
 document.querySelectorAll("[data-copy]").forEach(btn=>btn.addEventListener("click",async()=>{const id=btn.dataset.copy;const el=document.getElementById(id);try{await navigator.clipboard.writeText(el.value);document.getElementById(id+"Status").textContent=document.documentElement.lang.startsWith("zh")?"已复制":"Copied"}catch(e){el.select();document.execCommand("copy");document.getElementById(id+"Status").textContent=document.documentElement.lang.startsWith("zh")?"已复制":"Copied"}}));
-const saved=localStorage.getItem("ahicp-lang");setLang(saved||((navigator.language||"").toLowerCase().startsWith("zh")?"zh":"en"));
+let saved=null;try{saved=localStorage.getItem("ahicp-lang")}catch(e){}setLang(saved||((navigator.language||"").toLowerCase().startsWith("zh")?"zh":"en"));
 zhBtn.addEventListener("click",()=>setLang("zh"));enBtn.addEventListener("click",()=>setLang("en"));
 </script>
 </body>
