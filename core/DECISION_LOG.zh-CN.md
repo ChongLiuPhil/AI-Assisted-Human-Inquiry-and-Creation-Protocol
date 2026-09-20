@@ -493,3 +493,36 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Specification §23.5、Protocol Core P26、AGENTS、research-project template、Decision Log、Protocol Contract CI。
 
 **状态：** 人类已明确批准；授权完成当前 PR #3 的规范收束，并在 CI green 后合并。
+
+---
+
+## 2026-09-20 — AHICP-D030
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, PROTOCOL, FORM
+
+**决定：**
+
+1. AHICP 的现有 methodology article 继续作为**一篇统一论文**发展，不拆分为“协议论文”和“记忆论文”两篇。
+2. 论文应进行实质性结构升级，把以下内容提升为核心理论贡献，而不是边缘说明：
+   - **Project Memory Architecture**：长期人机项目的持久记忆应属于项目，而不是依赖某个具体模型、Agent、聊天或平台记忆；
+   - **Working Memory as a continuity layer**：Working Memory 是项目当前认识/任务状态的持久操作表示和跨会话连续性层，不应与心理学意义上的人类 working memory 或模型隐藏状态混同；
+   - **Agent / Model Substitution**：AI Agent 与模型应可替换，替换后仍能从仓库恢复项目目标、依据、决定、当前状态与下一步；这种可替换性应作为架构有效性的重要压力测试；
+   - **Human Decision Persistence**：人类已经确认、拒绝、保留或授权的决定本身是项目记忆的一等组成部分，不能在后续 Agent 接管时退化为无来源的文本或重新变成待猜测状态。
+3. 论文应把 AHICP 的记忆体系作为一个**多角色、分层且可治理的项目记忆架构**来论述。除三层 Long-Term Research Memory 与并行 Working Memory 外，还应从功能上讨论 normative memory、epistemic/evidence memory、decision memory、operational memory、handoff memory 与 publication/authorization memory；这些是功能角色，不要求机械对应为独立物理文件。
+4. 论文应明确区分 **agent memory / conversational memory** 与 **project memory**。现有 Agent-memory 研究主要关注 Agent 如何存储、检索、更新并利用过去信息；AHICP 的核心问题是长期项目如何拥有独立于 Agent 的、可检查、可版本化、可追溯、可迁移的权威状态。
+5. 论文必须讨论：
+   - inspectability / editability / versionability / provenance；
+   - evidence、inference、proposal、human-confirmed decision 的区分；
+   - stale state、conflicting memory、memory curation、选择性检索与记忆膨胀；
+   - Working Memory 的 promotion / resolution / write-back；
+   - 隐私、未公开内容与 publication authorization 作为项目状态边界；
+   - 人类责任、Framework Approval 与 Final Artifact Approval 如何与持久项目记忆连接。
+6. 人类项目发起人接受将此前讨论的评估思路纳入同一篇论文，包括 handoff/resumption test、agent/model substitution test、decision-persistence test、semantic-drift/fidelity test、review-effort test，以及 memory curation/conflict handling 的评估设计。**这些当前属于 proposed evaluation / research agenda，不得伪装成已经完成的实证结果。**
+7. 论文应与当前 Agent-memory、long-term interactive memory、provenance、distributed cognition / extended-mind、epistemic dependence、automation reliance 与作者/问责规范展开明确对话，同时避免声称这些文献已经证明 AHICP 的设计有效。
+8. 现有题目继续保留；本决定授权对 Working Framework 和 DERIVED-PROVISIONAL 正文进行大规模结构性重写，以落实上述方向。该授权**不等于对重写后完整 Framework 的整体 Framework Approval，也不等于 Final Artifact Approval**。
+9. 中文继续作为 canonical 学术稿，英文作为 synchronized mirror；本轮结构性修改必须同步维护两种语言。
+
+**受影响组件：** Article Content Core、Working Argument Map、Framework Status、methodology article、evidence layer、bibliography、Working Memory、Decision Log。
+
+**状态：** 人类明确确认；授权本轮结构重构与论文升级。
