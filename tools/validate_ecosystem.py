@@ -112,7 +112,7 @@ def main() -> int:
 
     guide_zh = (ROOT / "docs/HUMAN_GUIDE.zh-CN.md").read_text(encoding="utf-8")
     guide_en = (ROOT / "docs/HUMAN_GUIDE.md").read_text(encoding="utf-8")
-    if "## 15. 现在真正开始：把一段话发给 AI" not in guide_zh:
+    if "## 15. 现在开始：把这段话发给 AI" not in guide_zh:
         raise SystemExit("Chinese Human Guide must end in the concrete AI start action")
     if "## 15. Start for real: send one instruction to your AI" not in guide_en:
         raise SystemExit("English Human Guide must end in the concrete AI start action")
