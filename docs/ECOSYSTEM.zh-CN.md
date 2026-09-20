@@ -2,6 +2,15 @@
 
 AHICP 是人类主导的探究与创作治理组件。它独立于出版基础设施、元数据接口以及任何私人项目控制平面。
 
+## 两个第一入口
+
+整个体系有意设置两个不同的第一入口：
+
+- **人类概念入口 — AHICP：** [Human Guide](HUMAN_GUIDE.zh-CN.md) 与 AHICP 公共主页负责解释为什么需要这套体系、它怎样帮助普通人、它希望形成哪些思维习惯，以及四个组件怎样协作。
+- **机器/配置入口 — Starter：** Starter ecosystem 与 Agent Retrieval Contract 负责项目组合、状态恢复、采用、升级、部署和跨组件 Agent 行为。
+
+这样既能让普通人从生活语言进入，也不会削弱机器契约。AHICP 保持人类方法中心；Starter 保持组合与配置中心。
+
 要完成一个项目的完整配置，请先阅读 [Starter 体系入口](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.zh-CN.md)，再阅读 PPF 发布层：
 
 - [PPF 主页](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [仓库](https://github.com/ChongLiuPhil/Personal-Publishing-Framework)
