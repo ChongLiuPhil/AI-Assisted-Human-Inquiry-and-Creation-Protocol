@@ -43,7 +43,7 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
   </div>
 </header>
 <main class="page">
-<section id="zh" class="lang">
+<section id="zh" class="lang active">
   <div class="hero">
     <div class="eyebrow">Human entry to the Inquiry Publishing Stack</div>
     <h1>让你一直是思考和创作的主人，让 AI 成为可以帮助、检查和替换的助手。</h1>
@@ -286,8 +286,8 @@ function esc(s){return s.replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"
 function inlineMd(s){
   let x=esc(s);
   x=x.replace(/`([^`]+)`/g,"<code>$1</code>");
-  x=x.replace(/**([^*]+)**/g,"<strong>$1</strong>");
-  x=x.replace(/[([^]]+)]((https?:\/\/[^)]+|[^)]+))/g,'<a href="$2">$1</a>');
+  x=x.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
+  x=x.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+|[^)]+)\)/g,'<a href="$2">$1</a>');
   return x;
 }
 function renderMd(src){
