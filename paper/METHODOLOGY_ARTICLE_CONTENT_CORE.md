@@ -134,6 +134,95 @@ AI Agents may participate as tools in search, organization, analytic assistance,
 
 This principle is operationalized through human authorization of project purpose and direction, Framework Approval, and Final Artifact Approval where applicable.
 
+## C17. The article remains one unified paper with Project Memory Architecture as a core theoretical contribution
+
+The methodology article will not be split into separate protocol and memory papers. The existing article should integrate AHICP protocol design, project-memory architecture, Working Memory, Agent substitution, human decision persistence, framework approval, and auditable authorship within one paper.
+
+One central thesis is:
+
+> **The durable memory of a long-running human–AI project should belong to the project, not to a particular model.**
+
+“Belong to the project” is an engineering and governance claim: important project state should be stored in external state that humans can inspect, edit, version, and migrate rather than being available only through model-internal or platform-private memory.
+
+## C18. Working Memory is a continuity layer, not psychological working memory or model hidden state
+
+The article must define the conceptual boundary of AHICP Working Memory.
+
+Working Memory is a persistent operational representation of the project's current epistemic and task state. It answers where the project is now, what problem is active, what should happen next, and which blockers / Clarifications / pending human decisions remain.
+
+It is a cross-session / cross-Agent continuity layer, not:
+- a simulation of human psychological working memory;
+- model hidden state;
+- chain-of-thought;
+- the complete long-term archive.
+
+Current Focus + Task Plan are the default resume state; Work Log supports selective historical review.
+
+## C19. Human Decision Persistence is a first-class component of Project Memory
+
+The article must treat human decision state as first-class project memory.
+
+At minimum it should distinguish:
+- PROPOSED: suggested by AI or another source but not accepted;
+- CONFIRMED / APPROVED: explicitly confirmed by the human;
+- REJECTED: explicitly rejected and not to be reopened merely because a new Agent takes over;
+- DEFERRED / OPEN: intentionally left for later resolution;
+- AUTHORIZED: permitted within an explicit scope for action or state transition.
+
+Decision persistence does not prevent future revision. It requires future changes to preserve provenance, version, rationale, and renewed authorization rather than allowing Agent replacement to erase the decision history.
+
+## C20. Agent / Model Substitution is an architectural stress test
+
+The article must treat Agent / Model substitution as an important evaluation criterion for the AHICP project-memory architecture.
+
+If the current Agent, current chat history, and platform-private memory are removed, a competent replacement Agent should be able to reconstruct through explicit entrypoints, Working Memory, Long-Term Memory, Decision Log, evidence, and the manifest:
+- project purpose;
+- current questions and scope;
+- known evidence and important uncertainty;
+- confirmed / rejected / open decisions;
+- current framework / artifact state;
+- active tasks, blockers, and next actions;
+- privacy and publication-authorization boundaries.
+
+Failure to recover this state should be treated as a persistence / onboarding defect rather than requiring the human to narrate the entire history again.
+
+## C21. Project Memory should be described as a multi-role functional architecture with memory governance
+
+The article should discuss functional project-memory roles including:
+- normative memory;
+- epistemic / evidence memory;
+- decision memory;
+- working / operational memory;
+- handoff memory;
+- publication / authorization memory.
+
+These roles may map to one or multiple physical files; the model does not require one memory role per file.
+
+The article must also address memory curation. A project should neither save everything nor inject its entire history into every model context. It should manage:
+- active vs archived state;
+- current vs stale state;
+- conflicting memory;
+- selective retrieval;
+- summaries / indexes;
+- promotion / write-back;
+- history growth / memory bloat;
+- privacy / disclosure boundaries.
+
+## C22. The paper includes a proposed evaluation framework but must not fabricate results
+
+The article should treat AHICP as an empirically testable design architecture and propose at least:
+- zero-context handoff / resumption tests;
+- agent/model substitution tests;
+- decision-persistence tests;
+- semantic-drift / framework-fidelity tests;
+- review-effort studies;
+- stale/conflict-handling tests;
+- memory-curation / retrieval-efficiency tests.
+
+These are currently research designs and future empirical work. Unless experiments have actually been executed and recorded, the article must not claim that AHICP has been proven to improve accuracy, completeness, efficiency, research integrity, or review burden.
+
+AHICP-D030 makes inclusion of this evaluation framework a human-confirmed article direction; specific benchmarks, samples, statistical methods, and conclusions still require future research design and actual data.
+
 ## Current unresolved authorial decisions
 
 Current resume state is maintained through Working Memory Index, Current Focus, and Task Plan; active high-impact unresolved issues live in `docs/working-memory/task-plan.zh-CN.md`. Work Log primarily serves human retrospective review.
