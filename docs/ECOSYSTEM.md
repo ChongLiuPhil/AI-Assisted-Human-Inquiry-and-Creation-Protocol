@@ -11,6 +11,13 @@ The ecosystem deliberately has two different first entrypoints:
 
 This separation keeps the human explanation simple without weakening the machine contract. AHICP remains the human-method center; Starter remains the composition/configuration center.
 
+### Delivery-provider independence
+
+The current Human Entry is delivered through GitHub Pages. That URL is a delivery location, not the conceptual identity of the Human Entry. The canonical content remains the repository-tracked bilingual Human Guide. The public site may later move to Cloudflare or another provider without changing the human-entry role or the machine handoff contract.
+
+The current stable Machine Entry landing is:
+https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
+
 For a complete project configuration, follow the [Starter ecosystem entrypoint](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md) and read the PPF publishing layer:
 
 - [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [repository](https://github.com/ChongLiuPhil/Personal-Publishing-Framework)
