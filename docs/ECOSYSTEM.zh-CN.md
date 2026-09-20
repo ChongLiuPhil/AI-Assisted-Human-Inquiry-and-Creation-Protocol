@@ -11,6 +11,13 @@ AHICP 是人类主导的探究与创作治理组件。它独立于出版基础�
 
 这样既能让普通人从生活语言进入，也不会削弱机器契约。AHICP 保持人类方法中心；Starter 保持组合与配置中心。
 
+### Delivery provider 可替换
+
+当前 Human Entry 由 GitHub Pages 提供。这个 URL 是当前 delivery location，不是 Human Entry 的概念身份。Canonical 内容仍然是仓库中受版本控制的双语 Human Guide。以后公共网站可以迁移到 Cloudflare 或其他 provider，而不改变人类入口角色和机器交接契约。
+
+当前稳定 Machine Entry：
+https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
+
 要完成一个项目的完整配置，请先阅读 [Starter 体系入口](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.zh-CN.md)，再阅读 PPF 发布层：
 
 - [PPF 主页](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [仓库](https://github.com/ChongLiuPhil/Personal-Publishing-Framework)
