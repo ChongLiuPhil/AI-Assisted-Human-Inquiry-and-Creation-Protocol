@@ -2,411 +2,628 @@
 
 **Chinese title:** 从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性
 
-**Title status:** `HUMAN-APPROVED TITLE — HARC-D024` (English is the synchronized translation mirror; title approval is not Framework Approval)  
-**Status:** `DERIVED-PROVISIONAL`  
-**Framework status:** `WORKING-FRAMEWORK — not yet formally approved by the human author`  
-**Protocol:** AI-Assisted Human Inquiry and Creation Protocol (AHICP) v0.2.0-draft  
-**Upstream Content Core:** `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`  
-**Form Core:** `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`  
-**Framework Status:** `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`  
-**Evidence verification:** `evidence/METHODOLOGY_SOURCES.zh-CN.md`
+**Title status:** HUMAN-APPROVED TITLE — HARC-D024  
+**Article status:** DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030  
+**Framework status:** WORKING-FRAMEWORK — HUMAN REVIEW PENDING  
+**Protocol:** AI-Assisted Human Inquiry and Creation Protocol (AHICP)  
+**Language status:** Chinese is canonical; this English document is the synchronized mirror.
 
-> **Language status:** this English document is the synchronized mirror of the canonical Chinese `METHODOLOGY_ARTICLE.zh-CN.md`. If the two versions conflict, the Chinese version governs.
+> This article has been structurally rewritten under AHICP-D030. That decision authorizes Project Memory Architecture, Working Memory, Agent/Model substitution, and human decision persistence to become central theoretical contributions. It does not constitute overall Framework Approval of the rewritten framework and does not constitute Final Artifact Approval.
 
 ## Abstract
 
-Generative artificial intelligence is substantially changing the division of work in research. Literature search, idea organization, argument reconstruction, draft generation, language editing, format conversion, and even some formalization can now be performed or assisted by AI Agents used as tools at speeds far beyond traditional manual workflows. Yet researchers' reading speed, capacity for understanding, judgment, and capacity to bear responsibility do not increase at the same rate. This creates a methodological problem more fundamental than whether “AI can write a paper”: when more and more concrete research work can be assisted or automated by AI tools, who must still understand, confirm, and judge the aims and conclusions of that work, and who remains the ultimate bearer of responsibility?
+Generative artificial intelligence is changing the division of work in long-running research and creative projects. AI can rapidly participate in literature retrieval, comparison, structuring, drafting, reorganization, checking, formatting, and tool execution, while projects themselves may span many sessions, models, Agents, and platforms. This creates a problem more fundamental than whether AI can generate high-quality text: **how can a long-running human–AI project preserve its purpose, evidence, judgments, decisions, active work state, and publication boundaries without depending on the internal memory of a particular model or on one conversation?**
 
-This article presents the AI-Assisted Human Inquiry and Creation Protocol (AHICP) as a persistent, explicit, and auditable architecture for human–AI research collaboration, currently implemented primarily through GitHub. AHICP does not treat a chat window or the private context of a particular model as the long-term memory of a research project. Instead, it treats version-controlled repository documents as the persistent state of an evolving research process. The protocol separates the human author's substantive research intentions, presentation intentions, the operational argument framework maintained by AI, evidence constraints, historical decisions, and final derived text. It uses structures such as the Content Core, Form Core, Decision Log, Working Argument Map, and Approved Framework Snapshot to create a governable research state.
+This article presents and systematizes the **Project Memory Architecture** of the AI-Assisted Human Inquiry and Creation Protocol (AHICP). Its central claim is that **the durable memory of a long-running human–AI project should belong to the project, not to a particular model.** “Belong to the project” is not an anthropomorphic claim. It is an engineering and governance claim: state that should constrain future work ought, as far as practical, to be externalized into authoritative project state that humans can inspect, edit, version, trace, and migrate. AHICP currently uses a GitHub repository as its reference implementation and treats model context as a transient retrieval cache rather than as the long-term source of truth.
 
-The article further argues that the purpose, central problem, and direction of a research or creative project must originate with humans and remain under human navigation or approval; within AHICP, an AI Agent is a collaboration tool that may perform or assist extensive work but is not characterized as a cognitive subject or the ultimate bearer of responsibility. “Human Responsibility” in the title is shorthand. The more precise claim is that **in human–AI collaborative research and inquiry, especially when research results, arguments, or knowledge claims enter public circulation, humans must remain the bearers of responsibility.** For long-form work, this responsibility-bearing status is operationalized primarily through the Layer 2 Framework: AI may assist in proposing, organizing, and expressing the framework, but before Framework Approval the human author must clearly understand, carefully review, and explicitly confirm every substantive element actually represented in it. On this basis, the article distinguishes framework-level defects from derived-expansion defects and Framework Approval from Final Artifact Approval, while discussing the relation of this architecture to the extended mind, distributed cognition, epistemic dependence, automation reliance, and existing scholarly authorship norms.
+The article develops four closely related core contributions. First, it distinguishes **agent/conversational memory** from **project memory**: the former primarily concerns how an Agent stores, retrieves, updates, and uses past information, while the latter concerns how a project maintains governable authoritative state. Second, it defines **Working Memory** as a persistent operational representation of the project's current epistemic and task state—a cross-session, cross-Agent continuity layer rather than human psychological working memory, model hidden state, or chain-of-thought. Third, it treats **human decision persistence** as first-class project memory, allowing proposed, confirmed, rejected, deferred, and authorized states to retain their provenance and semantics across Agent changes. Fourth, it proposes **Agent/Model substitution** as an architectural stress test: after removing the current chat and platform-private memory, can a competent replacement Agent still reconstruct project purpose, evidence, decisions, active tasks, privacy/publication boundaries, and next actions?
 
-**Keywords:** human–AI collaboration; generative AI; research methodology; bearers of responsibility; authorship; distributed cognition; version control; GitHub; AI agents; research integrity
+In implementation, AHICP uses three Long-Term Research Memory layers—Human Authorial Core, Current/Approved Framework, and Derived Artifact—alongside parallel Working Memory, supplemented by Decision Logs, evidence/provenance records, Form Core, manifests, authorization state, and zero-context onboarding entrypoints. The article further examines memory curation, stale and conflicting state, selective retrieval, promotion and write-back, privacy and publication authorization, and the relationship between Framework Approval, Final Artifact Approval, human responsibility, and auditable authorship. It also proposes a future empirical evaluation program covering zero-context handoff, Agent/model substitution, decision persistence, semantic drift and fidelity, review effort, stale/conflict handling, and memory-curation tests. **No empirical results from those tests are reported here; they remain a research agenda rather than validated effectiveness claims.**
 
----
-
-## 1. The question is no longer merely “Can AI write?” but “Who governs the research state?”
-
-Discussions of generative AI and research writing often revolve around a surface-level question: can AI produce a competent paper, report, or book manuscript? That question matters, but it does not reach the most difficult part of long-term human–AI collaboration.
-
-The deeper structural change is that **generative capacity is beginning to outpace human review capacity**. An AI agent can quickly produce multiple versions of an argument, dozens of pages of elaboration, literature summaries, alternative formulations, and structural reorganizations. Humans, however, still need time to read, understand, compare, judge, and bear the consequences. This article provisionally calls this difference the **generation–verification asymmetry**.
-
-If research collaboration continues to use the traditional pattern of “conversation → full-text generation → line-by-line human review,” then as projects scale, humans face two unattractive choices. Either they reinvest enormous amounts of time in word-by-word verification, eroding much of AI's efficiency advantage, or they reduce verification, gradually losing the ability to say clearly which claims in a work they genuinely understood and confirmed.
-
-The problem, therefore, is not only textual productivity but **cognitive governance**. How does a project lasting months or years preserve its intellectual state? How are the contribution boundaries between human and AI made explicit? Which changes represent a genuine change in the author's position, and which are merely temporary AI interpretations? When a new agent takes over, how does it know which material has been human-confirmed and which is merely a previous agent's suggestion?
-
-AHICP is designed to address these questions.
+**Keywords:** human–AI collaboration; project memory; working memory; AI agents; long-term memory; Agent substitution; decision persistence; research methodology; version control; auditable authorship; human responsibility
 
 ---
 
-## 2. Why a chat window is not adequate long-term research memory
+## 1. Introduction: the problem is not only whether AI can write, but whether a project can remain continuous
 
-### 2.1 Context is transient
+Generative AI creates a new speed structure for research and creative work. Tasks that once required hours or days—organizing sources, generating alternative formulations, sketching structures, comparing documents, producing code, and converting formats—can now be completed much more quickly. AI therefore expands the search and production space of a project.
 
-AI conversations are well suited to immediate reasoning, but they are not stable research infrastructure. Different models have different context limits, platform memory systems can change, account-level memory may not be transparent, and such memory is difficult to use as a formal research audit trail. More importantly, the lifetime of a research project can exceed the lifetime of any particular conversation.
+Human reading, understanding, judgment, and responsibility, however, do not accelerate at the same rate. This article uses **generation–verification asymmetry** as an explanatory label for that difference. It is not presented as an established field-standard term. It describes a workflow problem: AI can generate candidate content faster than people can determine what is reliable, what should be accepted, and which changes genuinely represent a change in project direction.
 
-AHICP therefore begins from a simple principle:
+If human–AI collaboration remains organized primarily as “conversation → generation → more conversation,” continuity problems grow with project length. A project lasting months or years may involve:
 
-> **Chat is the interaction surface; the repository is the persistent research state.**
+- repeated session interruptions;
+- different models or providers;
+- Agents with different capabilities;
+- multiple repositories, files, and publication surfaces;
+- revisions to human judgments;
+- new evidence that invalidates old conclusions;
+- private and public materials coexisting;
+- changes in tools, permissions, integrations, and deployment state.
 
-“Repository” here currently means primarily GitHub. GitHub is not chosen because it has any special philosophical status, but because it provides several properties useful for long-term research collaboration: explicit files, version history, diffs, branches, commit records, cross-device access, and relatively mature automation and agent interfaces.
+In such an environment, the hard problem is no longer simply how many tokens a model can remember. It is:
 
-### 2.2 Textual version control does not by itself solve semantic drift
+> **How does the project remember itself?**
 
-Git can tell us when a passage changed, but it cannot automatically answer more important questions:
+A durable project must preserve, among other things:
 
-- Did the human author change their position?
-- Or did the AI alter the wording to make it more fluent?
-- Is this a newly accepted thesis?
-- Or an AI proposal awaiting human decision?
-- Was this revision required by evidence?
-- Or is it merely a temporary formatting default?
+- why the project exists;
+- what the current problem actually is;
+- which materials count as evidence;
+- which statements are inferences or AI proposals rather than confirmed positions;
+- which decisions have been confirmed, rejected, deferred, or authorized;
+- where current work stands;
+- what the next action is;
+- which materials remain private;
+- which actions are authorized;
+- which version may be released;
+- how a replacement Agent can continue.
 
-When these states are not distinguished, **semantic drift** occurs: a more polished and fluent AI-generated version gradually replaces what the human originally intended, until neither party can easily trace when the substitution happened.
+AHICP's Project Memory Architecture is an attempt to turn these concerns from informal chat habits into an implementable project architecture. Its central thesis is:
 
-AHICP therefore needs more than textual version control. It needs a form of **semantic version control**.
+> **The durable memory of a long-running human–AI project should belong to the project, not to a particular model.**
 
----
-
-## 3. From a repository to externalized research state
-
-Treating GitHub as research memory has clear affinities with ideas about the extended mind and distributed cognition, but AHICP need not commit to any strong metaphysical thesis.
-
-In “The Extended Mind,” Clark and Chalmers argue that some stable, reliable, and readily available external resources can play roles in cognition analogous to internal memory (Clark & Chalmers, 1998). Hutchins's study of navigation teams emphasizes that complex cognitive activity can be distributed across people, tools, representations, and social organization rather than understood solely within isolated individuals (Hutchins, 1995).
-
-AHICP can draw on this line of thought to understand long-term research collaboration. The “current cognitive state” of a paper or book need not be entirely stored in the author's brain or entirely inside an AI context. It can be externalized into a set of structured, mutually constraining files.
-
-This article adopts a weaker claim, however: **the repository is at least a cognitive scaffold and a carrier of external research state.** Whether it should further be considered part of some “collective cognitive subject” is not necessary for AHICP to function.
-
-AHICP's aim is operational: important project state should be readable, recoverable, comparable, and auditable.
-
----
-
-## 4. AHICP's core architecture: separating authorial intention, AI representation, and final text
-
-AHICP separates several things that are often collapsed in conventional writing workflows.
-
-### 4.1 Content Core: what does the human actually intend to claim?
-
-The Content Core stores the currently active human substantive intention: research questions, core theses, key distinctions, scope conditions, explicit reservations, and unresolved questions.
-
-Its purpose is to establish an **upstream source of semantic authority**. AI may propose new ideas, but before those ideas are accepted by the human, they do not automatically become the author's position simply because they are well written.
-
-### 4.2 Form Core: how should the work be presented?
-
-Presentation preferences are different from research content. Typeface, font size, section style, footnotes, citation format, page layout, figure style, and overall visual conventions for a book or paper should be managed in an independent Form Core.
-
-This separation prevents another form of drift: an AI may temporarily choose a font size simply to make a LaTeX build work, and a later agent may mistakenly treat that choice as a long-standing author preference.
-
-AHICP further allows form preferences to inherit across levels: reusable author preferences, artifact-type templates, current-project decisions, external journal or publisher constraints, and temporary AI defaults should remain distinguishable.
-
-### 4.3 Decision Log: separating current state from historical state
-
-The Content Core and Form Core should stay concise because a new agent must quickly understand “what governs now.” But concision should not require deleting history.
-
-The Decision Log therefore records how the project changed: when a claim changed, when an AI proposal was accepted or rejected, when a form requirement changed, and when the collaboration protocol itself was revised.
-
-The Core represents the current active state; the Log represents how the project arrived there.
-
-### 4.4 Working Memory: a parallel operational layer for current work and high-impact uncertainty
-
-AHICP no longer treats Critical Clarification as a “Layer 1.5” between the Content/Form Core and the Working Argument Map.
-
-A more accurate architecture treats all three primary content layers as Long-Term Research Memory.
-
-Layer 1 is the **Human Authorial Core**: progressively expressed, corrected, confirmed, and refined human commitments.
-
-Layer 2 is the **Current Framework**: current argument structure, core propositions, key concepts, inferential relations, and section functions. It is constrained by Layer 1 but may contain structural material not stated item-by-item there. It is more revisable while still remaining durable project memory.
-
-Layer 3 is the **Derived Artifact**: the paper, book, or report expanded primarily from Layer 2 while remaining compatible with Layer 1 and evidence constraints.
-
-Parallel to these three layers, AHICP maintains **Working Memory**. Working Memory answers not “what does the project ultimately claim?” but “where is the project now, and where should work resume?” It records current stage, work objective, overall plan, active tasks, recently completed work, next actions, TODOs, blockers, pending human decisions, Clarifications, synchronization defects, and handoff notes.
-
-High-impact uncertainty is now simply a Clarification item inside Working Memory. When multiple reasonable interpretations of a core claim, concept, scope condition, inferential relation, section function, or key term exist, the AI should not choose privately. It should place the issue in Working Memory for human resolution.
-
-After human resolution, perform Promotion:
-
-`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
-
-For human core content:
-
-`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
-
-Working Memory is therefore not a fourth content layer. It also need not be one monolithic document. AHICP can separate it into three logical roles: **Current Focus** for the highest-priority immediate objective, **Task Plan** for dynamic tasks, TODOs, blockers, pending human decisions, and Clarifications, and **Work Log** for stage-level historical summaries primarily intended for later human review.
-
-This separation answers two different needs. Current Focus + Task Plan support seamless continuation after interruption; Work Log supports later human review of how the project and intellectual path changed. A replacement Agent therefore reads Current Focus and Task Plan by default rather than loading the entire Work Log. Completed tasks leave active Task Plan and receive high-level summaries in Work Log, while stable normative results are still promoted into the three Long-Term Memory layers.
-
-Work Log records auditable progress, expressed high-level reasons, and direction changes rather than hidden AI chain-of-thought or scratchpads. This preserves a readable long-term research history for the human while keeping AI operational context compact.
-
-Resolved Clarifications leave active state; the authoritative answer is deposited into Long-Term Memory, while Working Memory retains only necessary status and pointers.
-
-### 4.5 Working Argument Map: the intermediate layer best suited to human–AI discussion
-
-A full paper or book may be too long to serve as the direct object of every structural discussion. AHICP therefore maintains a Working Argument Map, primarily maintained by AI but constrained by the Content Core.
-
-It should be far shorter than the full manuscript, while explicitly showing:
-
-- central questions and theses;
-- major concepts;
-- support and limitation relations;
-- the argumentative function of each section or chapter;
-- crucial objections;
-- evidence dependencies;
-- issues awaiting human decision;
-- AI suggestions not yet accepted.
-
-This document is not automatically endorsed by the author. It is first and foremost an **operational representation**.
+“Belong to the project” does not mean treating the project as a mental subject. It means placing state that should constrain future work in external structures that the project can control, inspect, migrate, and version.
 
 ---
 
-## 5. From Working Framework to Approved Framework: a semantic approval gate
+## 2. Related work and problem boundary: Agent memory is not Project memory
 
-A core mechanism of AHICP is the distinction between:
+### 2.1 Agent memory is already a major research topic
 
-1. **Working Framework** — a mutable structure that AI can continuously revise;
-2. **Approved Framework Snapshot** — a structural version that the human has actually read and explicitly approved.
+Memory has become a rapidly developing area in research on LLM-based Agents. Generative Agents records experiences in natural language, derives higher-level reflections, and retrieves relevant memories to influence later behavior (Park et al., 2023). MemGPT frames limited context windows as an obstacle to extended interaction and proposes operating-system-inspired management across memory tiers and virtual context (Packer et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
 
-Once a framework version is confirmed, it should be frozen as a versioned snapshot such as `FW-001`. If the central argument later changes materially, the project should create `FW-002` rather than silently overwriting the earlier framework.
+Evaluation research has also expanded beyond simple factual recall. LongMemEval examines multi-session information extraction, reasoning, temporal reasoning, knowledge updates, and abstention (Wu et al., 2025). MemBench evaluates memory across different memory levels, interaction scenarios, and dimensions including effectiveness, efficiency, and capacity (Tan et al., 2025). RealMem goes further by explicitly introducing long-term project-oriented interactions with evolving goals and project state as a benchmark setting (Bian et al., 2026).
 
-The value of this mechanism is that it answers a question that becomes crucial in long-form AI collaboration:
+Together, these works show that long-term memory is not a peripheral issue for persistent Agent systems.
 
-> What exactly did the human author approve?
+### 2.2 AHICP addresses a different layer
 
-For a large book, a human may not be able to reread every sentence after each AI revision. But the human may still be able to review a compressed intellectual architecture with high intensity. Such a framework should include at least the central theses, major inferential relations, key distinctions, chapter roles, scope conditions, and explicitly unresolved issues.
+Despite the proximity, **Agent memory and Project memory are not the same problem.**
 
-AHICP therefore treats framework approval as a **primary substantive intellectual checkpoint**.
+Agent-memory research commonly asks:
 
----
+- what history an Agent should retain;
+- how experiences should be summarized;
+- how relevant memories should be retrieved;
+- how user information should be updated;
+- how short- and long-term information should be scheduled under limited context;
+- how memory can improve later responses or actions.
 
-## 6. Humans as the bearers of responsibility in the AI era: AI may perform work, but responsibility-bearing status cannot be transferred
+Project memory asks instead:
 
-AHICP first needs a clear description of the AI role. An AI Agent is a research-collaboration tool, not an actor that this article needs to treat as a cognitive subject or as the ultimate bearer of responsibility. The article therefore does not use “AI performs cognitive labor” or “AI performs cognitive tasks” as its central conceptual language. More precisely, AI tools may perform or assist with extensive concrete work, including:
+- which state is authoritative for the project;
+- who confirmed what;
+- which evidence supports which claims;
+- which content is merely an AI proposal;
+- which proposals were explicitly rejected;
+- which issues remain open;
+- which state has become stale;
+- which materials may be public;
+- which external actions have been authorized;
+- how a replacement Agent reconstructs the project without a retelling of the full history.
 
-- searching and preliminarily filtering literature;
-- summarizing debates;
-- generating candidate structures;
-- discovering possible counterexamples;
-- drafting paragraphs;
-- formalizing an argument;
-- checking internal inconsistencies;
-- converting formats;
-- building citations and bibliographies;
-- comparing versions.
+Even an Agent with powerful internal long-term memory does not automatically eliminate the need for Project memory. Internal memory may be opaque, hard to migrate, difficult to version precisely, or insufficiently connected to formal project decisions and authorization provenance.
 
-But the fact that AI can perform these kinds of work does not imply that the purpose, central problem, direction, or position of ultimate responsibility in a research or creative project transfers to AI. What the project is trying to investigate, why it proceeds in a given direction, and which core claims are ultimately accepted must remain matters that the human author actually understands, navigates, and approves.
+### 2.3 External cognition, distributed cognition, and provenance
 
-Accordingly, “human responsibility” is not treated in this article as an unexplained abstract property. The more precise formulation is: **humans are the bearers of responsibility.** This matters throughout research and inquiry, and it becomes especially important when papers, books, reports, or other outputs place knowledge claims into public circulation. Extensive AI participation in the work cannot eliminate identifiable human bearers of responsibility for those public claims.
+AHICP has conceptual affinities with work on the extended mind and distributed cognition. Clark and Chalmers (1998) argue that under appropriate conditions external resources may participate in cognitive processes; Hutchins (1995) emphasizes that cognition may be distributed across people, tools, representations, and organized activity. This article adopts a weaker thesis: a versioned repository can at least function as a **persistent cognitive and project-state scaffold**. It is not necessary to characterize either the repository or an AI system as an independent cognitive subject.
 
-For long-form work, AHICP operationalizes this responsibility-bearing status primarily through the Layer 2 Framework. AI may assist in proposing, organizing, and expressing the framework, but the framework cannot be merely a summary that receives a blanket human sign-off. Framework Approval requires the human to form a clear and complete understanding of every substantive element actually represented in it and to review and confirm those elements item by item, including core theses, inferential relations and their logical dependencies, key distinctions, scope conditions, section/chapter functions, and any specific wording included in the framework.
-
-Hardwig's discussion of epistemic dependence can help contextualize the fact that research practices already depend on external resources, other people's work, and mediated information (Hardwig, 1985). But AHICP does not infer from this that AI should be treated as a cognitive subject structurally equivalent to a human expert, much less as the ultimate bearer of responsibility. The more important question is how human understanding, judgment, authorization, and responsibility-bearing status remain locatable, inspectable, and auditable when people use AI tools to generate, organize, or transform research material.
-
-AHICP's responsibility model is therefore neither “humans must personally produce the whole text line by line” nor “sufficiently capable AI reduces human responsibility to a ceremonial approval.” Humans remain responsible for project purpose and direction and, as the bearers of responsibility, for the substantive content of the Approved Framework. The concrete public version still requires Final Artifact Approval and remains subject to factual-accuracy, research-integrity, and venue requirements.
-
----
-
-## 7. Framework defects and expansion defects are not the same kind of error
-
-Suppose `FW-001` explicitly contains an invalid central inference—for example, its conclusion does not follow from its principal premises. This is a **framework-level defect**, because the error lies in an intellectual architecture that the human explicitly approved.
-
-By contrast, if the framework itself does not contain the error but a later AI expansion introduces an unsuitable example, a faulty transition, repetitive prose, or a local expression problem, this is first a **derived-expansion defect**.
-
-This distinction matters in two ways.
-
-First, it improves the precision of responsibility attribution. We should not infer from a local AI-generation error that the human previously approved that error. Conversely, a structural defect already present in an Approved Framework cannot simply be dismissed as “the AI wrote it badly.”
-
-Second, it helps organize review resources. Framework-level problems must be returned upstream for renewed approval. Expansion-level problems can be repaired downstream so long as the repair does not change the core structure.
-
-This distinction, however, must not be misread as meaning that humans “only need to review the framework and may ignore the final manuscript.” Influential current scholarly norms such as those of ICMJE and Nature Portfolio still connect publication under human authorship with human approval, judgment, and accountability. ICMJE's current authorship criteria explicitly include final approval of the version to be published and agreement to be accountable for all aspects of the work. Nature Portfolio's current AI policies likewise emphasize that authors remain responsible for originality, accuracy, and integrity, and that the associated judgment cannot simply be delegated to AI. AHICP therefore distinguishes two approval gates: Framework Approval and Final Artifact Approval.
+Provenance research provides another relevant background. W3C PROV models entities, activities, agents, and derivation or attribution relations, connecting provenance to understanding origin, trust, compliance, and reproducibility. AHICP is not currently a formal implementation of W3C PROV, but it shares a basic principle: **when state will influence future judgment, preserving final text alone is often insufficient; origin, status, and transformation history also matter.**
 
 ---
 
-## 8. Two approval gates: intellectual architecture and public accountability
+## 3. Design requirements for long-running Project Memory
 
-### Gate A: Framework Approval
+If Project memory cannot depend solely on a particular model, it must satisfy several requirements.
 
-This gate confirms:
+### 3.1 Model independence
 
-- major theses;
-- inferential structure;
-- central distinctions;
-- the argumentative roles of sections or chapters;
-- important limitations;
-- intentionally open questions.
+Critical project state should not be bound to one model or platform. Models may change while the project continues. GitHub is AHICP's present reference implementation rather than a theoretical prerequisite; the same architecture could be implemented on another durable substrate with suitable versioning, access control, query, write-back, and migration capabilities.
 
-It can be understood as the work's **intellectual-architecture responsibility anchor**.
+### 3.2 Inspectability and editability
 
-### Gate B: Final Artifact Approval
+Memory that constrains future work should, as far as possible, be visible and correctable by humans. Hidden platform memory may improve convenience, but it should not by itself constitute the project's formal long-term state when users cannot reliably inspect what the system believes it remembers.
 
-This gate confirms the concrete release version. The required level of review must follow the actual requirements of the discipline, publisher, journal, school, or institution.
+### 3.3 Versionability
 
-Under current ICMJE and Nature Portfolio rules, for example, AI tools cannot substitute for the approval, judgment, and accountability roles assigned to human authors. AHICP does not attempt to universalize those specific rules into a single authorship law for every field, nor does it seek to circumvent the requirements of any target journal, publisher, or institution. Instead, it provides a process architecture in which statements such as “I approved this,” “I am responsible for this,” and “this is my core judgment” can correspond to explicit versions, approval nodes, and audit trails.
+Project memory changes. New evidence may overturn an earlier judgment, and a later human decision may replace an earlier one. A reliable architecture must preserve not only “what is true now” but also when and how the current state came to be.
 
-Within AHICP, framework approval establishes an intellectual baseline genuinely understood and accepted by the human. Final approval reconnects a concrete public version to that baseline and to relevant external rules.
+### 3.4 Provenance
 
----
+State requires origin and status. Facts, inferences, AI proposals, human-confirmed decisions, external policy constraints, and verified provider state should not lose their distinctions merely because all are stored in text files.
 
-## 9. Why the Approved Framework must be projected into the abstract, introduction, or general overview
+### 3.5 Decision persistence
 
-If a human-approved framework exists only inside GitHub and readers cannot recover it from the work itself, then it is merely a project-management device.
+A project must remember not only facts but also the **state of decisions**. A rejected proposal should not be repeatedly revived because a new Agent lacks the old chat. Similarly, an authorized action should not become indeterminate simply because a session ended.
 
-AHICP requires a stronger correspondence: the core structure of the Approved Framework should be faithfully projected into a reader-facing overview.
+### 3.6 Resumability
 
-For an academic paper, this normally means that the abstract and introduction should clearly state the main problem, core thesis, principal argumentative moves, and roadmap of the paper. For a book, this should appear in the introduction or general overview and in the chapter roadmap.
+A replacement Agent should be able to answer:
 
-This produces a useful drift detector. If `FW-001` and the final introduction have become clearly inconsistent, then something is wrong: the framework is obsolete, the introduction is inaccurate, or the body has materially drifted during later expansion.
+- Where is the project now?
+- What is the highest-priority objective?
+- What is blocked?
+- What is the next action?
+- Which questions require human judgment?
 
----
+If these questions can be answered only from the original chat, continuity remains fragile.
 
-## 10. Replaceable agents and non-disposable research state
+### 3.7 Selective retrieval
 
-Another AHICP design principle can be summarized as follows:
+Persistent memory does not require loading all history into every context window. A mature project may eventually contain hundreds of thousands or millions of words. The architecture must support indexes, summaries, layering, and task-specific retrieval.
 
-> **AI agents may be replaceable; research state must not disappear with the agent.**
+### 3.8 Privacy and publication boundaries
 
-A project should therefore not depend primarily on the fact that “a particular model knows me well.” A replacement agent should be able to reconstruct from the repository:
+To remember something is not to publish it. Unpublished materials, private information, repository locators, access policies, credentials, and publication authorization may have different visibility boundaries. Project memory must support a private canonical source while allowing selected outputs to be released.
 
-- the current human substantive position;
-- current presentation preferences;
-- recent important decisions;
-- which framework has been approved;
-- which AI suggestions remain unapproved;
-- which evidence conflicts remain unresolved;
-- the status of the current full artifact.
+### 3.9 Human authority
 
-Merely having these files in the repository does not guarantee that a replacement agent will read them correctly. AI platforms differ in how they discover entry files, automatic context, and repository instructions. AHICP therefore also requires a **zero-context bootstrap protocol**: a root `START_HERE`, a machine-readable manifest, an explicit mandatory read order, and an Onboarding Report produced before substantive work.
-
-This handshake turns “the agent understood the project” from an assumption into an observable check. The Agent should first report current stage, objective, active tasks, recently completed work, next actions, blockers, and pending human decisions from Working Memory, then retrieve task-relevant long-term Core, Framework, and Artifact state. If these cannot be recovered from repository state, the project has a persistence/onboarding defect that should be repaired before large-scale expansion continues.
-
-AHICP goes further by avoiding a second dynamic project-state copy in chat. The more precise mechanism is a **Repository-Backed Context Interface**: GitHub serves as both authoritative external memory and working-state store, while model context retains only a minimal Repository Resolver and temporarily retrieves files needed by the current task.
-
-Working Memory and all three Long-Term Research Memory layers therefore remain in GitHub. Working Memory provides the resume point; Layers 1/2/3 provide durable intellectual and artifact state. The Agent fetches relevant latest canonical revisions when needed, reconfirms revisions before high-impact judgments or writes, writes changes directly back to the repository, and treats older excerpts already present in model context as stale after a write. A `AHICP CONTEXT REFRESH` no longer means copying the whole project back into chat; it means resolving current task dependencies and fresh-fetching those files.
-
-This does not mean that a model can reason with literally no context. Relevant information still has to become temporarily available during an inference. AHICP changes the authority and lifecycle: **GitHub is the truth source; model context is a short-lived projection of repository state for the current task.**
-
-This does not create “infinite context.” As a project grows, historical materials may still far exceed any model's one-shot context window. AHICP therefore keeps Current Focus + Task Plan short and current and keeps Layer 1 Cores and Layer 2 Frameworks compact. Work Log may grow as a human-oriented historical chronicle while remaining outside default AI context; detailed older versions, evidence, and archives remain available through selective retrieval.
-
-The project thereby shifts from “depending on one enormous conversation” to “depending on recoverable explicit state.”
+Project memory must preserve governance as well as content. It should make it possible to distinguish human confirmation from an AI proposal and authorization from mere technical capability. Otherwise, an opaque model memory may simply be replaced by opaque files.
 
 ---
 
-## 11. AHICP and existing authorship norms: from abstract responsibility to operational responsibility
+## 4. The AHICP Project Memory Architecture
 
-Existing scholarly norms provide important boundary cases for AHICP rather than a single unified rule that AHICP can simply copy.
+AHICP is not a single memory database. It is a set of mutually constraining durable-state roles.
 
-ICMJE links authorship with substantial contribution, drafting or critical revision of important content, final approval, and accountability. Nature Portfolio's current AI policies emphasize that authors remain responsible for originality, accuracy, and integrity and require disclosure of relevant AI use according to applicable rules. CRediT offers another useful perspective: its 14 contribution roles increase transparency about research contributions, but a contribution taxonomy is not identical to the determination of authorship eligibility under a particular journal or institution.
+### 4.1 Three Long-Term Research Memory layers
 
-These examples suggest that at least two different questions must be addressed in the AI era:
+AHICP organizes durable intellectual and artifact state as:
 
-1. Who did what?
-2. Who understood, approved, and is responsible for what?
+~~~text
+Layer 1 — Human Authorial Core
+        ↓
+Layer 2 — Current / Approved Framework
+        ↓
+Layer 3 — Derived Artifact
+~~~
 
-AHICP focuses primarily on the process infrastructure for the second question, while still allowing contribution records and AI-use disclosures to become part of project state.
+**Layer 1 — Human Authorial Core** stores core questions, claims, distinctions, scope conditions, and durable commitments that the human has explicitly expressed, corrected, or confirmed. It serves as the upstream source of semantic authority.
 
-From this perspective, AHICP is not trying to redefine a journal's authorship policy. It is trying to provide an **engineering implementation of authorial responsibility**: making statements such as “I approved this,” “I take responsibility for this,” and “this is my core judgment” correspond to explicit versions, files, and audit trails.
+**Layer 2 — Current / Approved Framework** stores the current argumentative architecture, core propositions, key concepts, major inferential relations, and section functions. A Working Framework may be continuously organized with AI assistance; only a Framework snapshot that passes Framework Approval represents explicit human confirmation of its substantive contents.
 
----
+**Layer 3 — Derived Artifact** is the paper, book manuscript, report, or other expanded output. AI may substantially assist in generating and revising it, but the artifact remains constrained by Layer 1, Layer 2, and evidence.
 
-## 12. Automation reliance: why human approval gates cannot become ceremonial clicks
+### 4.2 Parallel Working Memory
 
-Framework approval by itself cannot guarantee genuine responsibility. A person can click “approve” without seriously reading. One of AHICP's largest risks, therefore, is that genuine epistemic judgment becomes another formal ritual.
+Running in parallel is:
 
-This risk is related to the problem of over-reliance discussed in classic automation research. Parasuraman and Riley (1997), for example, describe one form of automation misuse as excessive reliance on automation and note its potential relation to monitoring failures and decision biases.
+~~~text
+Working Memory
+├── Current Focus
+├── Task Plan
+└── Work Log
+~~~
 
-AHICP therefore cannot prove good collaboration merely from the existence of files. Future conformance tests should also examine:
+Working Memory does not answer “what does the project ultimately claim?” It answers “where is the project now, and where should work resume?”
 
-- whether humans can explain the Approved Framework in their own words;
-- whether humans understand key premises and limitations;
-- whether agents actively surface uncertainty and evidence conflicts;
-- whether a framework is compressed enough to be usable without hiding decisive issues;
-- whether the final text remains faithful to the human-approved structure.
+### 4.3 Functional memory roles
 
-In other words, AHICP addresses how to build an inspectable responsibility architecture; it does not automatically guarantee that every participant exercised high-quality judgment.
+AHICP can also be understood through functional memory roles:
 
----
+| Functional role | Primary question | Typical AHICP carriers |
+|---|---|---|
+| Normative memory | How should the project work? | protocol / AGENTS / manifest / constraints |
+| Epistemic and evidence memory | What do we know, and on what basis? | evidence files / source notes / Core |
+| Decision memory | What has been confirmed, rejected, deferred, or authorized? | Decision Log / approval records |
+| Working and operational memory | Where is the work now? | Current Focus / Task Plan |
+| Handoff memory | How does a new human or Agent continue? | Working Memory / bootstrap / onboarding report |
+| Publication and authorization memory | What may be released or executed? | publication state / authorization records / verified provider state |
 
-## 13. As an open protocol, AHICP should be empirically testable
+These are **functional roles**, not a requirement that every kind of memory correspond to exactly one physical file. A file may support multiple roles, and a role may be distributed across several files.
 
-If AHICP were only an essay about “how people ought to work with AI,” it would remain a normative proposal. One value of making it an open-source project is that it can be tested.
+### 4.4 Repository-backed context
 
-At least the following types of experiment could be designed:
+AHICP currently uses a simple authority relation:
 
-### 13.1 Agent handoff test
+~~~text
+Repository = authoritative project state
+Model context = transient retrieval cache
+~~~
 
-Give a new agent the repository but not the original chat and test whether it can accurately reconstruct the current project state.
+A model still needs relevant information inside its context for any specific act of reasoning. AHICP does not claim otherwise. What changes is the **location and lifecycle of authority**. An Agent retrieves the relevant latest canonical revision, performs the current work, and writes back any state that should constrain future work. After a write, older excerpts in model context become stale.
 
-### 13.2 Semantic drift test
-
-Let multiple agents successively revise the same research project and compare drift in the human's core theses with and without AHICP.
-
-### 13.3 Framework fidelity test
-
-Compare the Approved Framework with the final abstract, introduction, and body structure.
-
-### 13.4 Review-effort test
-
-Measure whether framework approval enables human review time to shift from low-leverage line-by-line checking toward high-leverage structural judgment without significantly increasing serious errors.
-
-### 13.5 Cross-model portability test
-
-Have agents from different vendors and capability levels take over the same project and observe whether the repository architecture actually reduces platform dependence.
-
-AHICP can therefore function both as a normative project and as an ongoing experimental platform for AI-assisted research methodology.
-
----
-
-## 14. Limitations and objections
-
-AHICP faces at least the following limitations.
-
-First, **framework compression may hide detail-level risk**. A correct-looking high-level structure does not guarantee that every empirical citation, mathematical derivation, or factual statement is correct. Evidence verification cannot be replaced by Framework Approval.
-
-Second, **human judgment is itself limited**. If an author lacks sufficient competence in a field, a structured framework can become merely ceremonial confirmation. AHICP cannot transform lack of expertise into genuine epistemic responsibility.
-
-Third, **maintaining the repository has overhead**. Full AHICP may be too heavy for very short projects, so the protocol needs lightweight profiles.
-
-Fourth, **confidentiality and data-governance problems are not solved by GitHub structure itself**. Sensitive data, unpublished peer-review materials, and restricted files still require compliance with relevant institutional and platform policies.
-
-Fifth, **authorship norms differ across fields**. AHICP must be treated as a base collaboration architecture rather than a universal authorization mechanism that overrides journals, publishers, universities, or law.
-
-Sixth, **AI capabilities continue to change**. The protocol must keep its logical layer stable while allowing the implementation layer to evolve with agent capabilities, retrieval tools, and automation systems.
+This avoids maintaining a second dynamic source of truth inside the chat.
 
 ---
 
-## 15. Conclusion: from “AI writing for humans” to humans governing AI-expanded research capacity as the bearers of responsibility
+## 5. Working Memory as a cross-session continuity layer
 
-Generative AI creates a new speed structure in research: AI tools can generate, combine, restate, organize, and explore far more material than humans can inspect line by line. If we continue to define a “real human author” as someone who personally typed every sentence, that concept no longer describes actual human–AI research practice. But if AI's ability to perform more work becomes a reason to transfer purpose, judgment, direction, and the position of ultimate responsibility to the model as well, human authorship and research responsibility lose substantive content.
+The term “Working Memory” is potentially misleading because psychology and computer science already use it in other ways. AHICP Working Memory is not a simulation of human psychological working memory, and it is not model hidden state, scratchpad, or chain-of-thought.
 
-AHICP proposes a different direction: **expand the executable and expressive capacity of research while making explicit that humans remain the bearers of responsibility, together with human purpose, authority, memory, evidence, framework confirmation, and final approval.**
+This article defines it as:
 
-Under this model, an AI Agent used as a tool may perform or assist with extensive work, but the purpose, central problem, and direction of the research or creative project must be given and navigated by humans. A Working Framework may be developed with AI assistance, but it can become an Approved Framework only after the human has formed a clear understanding of every substantive element actually represented in it, reviewed those elements item by item, and explicitly confirmed them. Full text may then be extensively AI-expanded under that structure, but the expansion must remain faithful to the framework and pass the appropriate Final Artifact Approval before public release.
+> **a persistent operational representation of the project's current epistemic and task state.**
 
-Especially when research outputs enter the public knowledge space, the key question is not merely whether a human participated, but whether identifiable human bearers of responsibility remain answerable for the project's direction, core intellectual architecture, and concrete public version.
+It primarily answers:
 
-The central methodological question in AI-era research therefore need not be framed as whether machines participated in thinking. It can be stated more directly:
+- What stage is the project in?
+- What is the highest-priority objective?
+- Which tasks are active?
+- What was just completed?
+- What is blocked?
+- Which questions require human confirmation?
+- What is the next action?
+- Where should a replacement Agent resume?
 
-> **Can a research community clearly explain who supplied the project's purpose and direction, who understood and confirmed its core intellectual structure, which concrete work was performed or assisted by AI tools, which human subjects ultimately bear responsibility for the knowledge claims and public version, and whether those responsibility relations and the work's intellectual continuity remain traceable after the Agent is replaced?**
+### 5.1 Current Focus
 
-AHICP turns this question into an open-protocol problem that can be implemented, audited, tested, and iteratively improved.
+Current Focus should remain short. It stores the most important current objective, primary blocker, and immediate next action. Its function is not to preserve full history but to support rapid recovery after interruption.
+
+### 5.2 Task Plan
+
+Task Plan stores active tasks, TODOs, blockers, pending human decisions, Clarifications, and next actions. Completed work should leave the active list rather than accumulating indefinitely.
+
+### 5.3 Work Log
+
+Work Log supports retrospective review of how the project reached its current state: major stages, changes of direction, completed work, and expressed high-level reasons. It is not default onboarding context for every Agent and should not preserve hidden model reasoning.
+
+### 5.4 Clarification and Promotion
+
+When AI encounters multiple plausible interpretations of a high-impact issue, AHICP requires the uncertainty to be externalized rather than silently resolved. Examples include:
+
+- the author's intended core claim;
+- the meaning of a key term;
+- the scope of an argument;
+- the function of a section;
+- whether an AI proposal should be accepted.
+
+Such issues enter Working Memory as Clarifications. After human resolution, durable results are promoted:
+
+~~~text
+Working Memory
+    ↓ human resolution
+Decision Log
+    ↓
+Long-Term Memory destination
+    ↓
+Framework / Artifact propagation
+~~~
+
+Working Memory is therefore a continuity layer, not the final destination of authoritative content.
+
+---
+
+## 6. Human Decision Persistence: projects must remember decisions, not only facts
+
+Many memory systems focus on what happened previously or what a user once said. Long-running projects need to preserve another category: **what has already been decided.**
+
+AHICP needs at least the following distinctions:
+
+- **PROPOSED** — suggested by AI or another source but not accepted;
+- **CONFIRMED / APPROVED** — explicitly confirmed by a human;
+- **REJECTED** — explicitly rejected;
+- **DEFERRED / OPEN** — intentionally left for later resolution;
+- **AUTHORIZED** — permitted within an explicit scope for a class of action or state transition.
+
+These distinctions serve at least three purposes.
+
+First, they prevent **semantic regression**. If a proposal has been rejected, a replacement Agent should not simply repackage it as if it were a new unresolved idea.
+
+Second, they protect **authorization boundaries**. Technical capability is not equivalent to human authorization. AHICP therefore keeps distinct:
+
+proposal != authorization != execution != verification != durable write-back
+
+Third, they permit revision without losing history. Decision persistence does not freeze a human judgment forever. A person may change their mind, but the new decision should carry its own time, provenance, rationale, scope, and—where needed—renewed authorization.
+
+Project memory is therefore not merely an information store. It is also a **state-governance system**.
+
+---
+
+## 7. Agent / Model substitution: from design principle to stress test
+
+A simple but demanding AHICP criterion is:
+
+> **If the current AI is completely replaced, can the project continue?**
+
+Ideally, a replacement Agent does not require the original chat. It reconstructs the project through explicit entrypoints.
+
+### 7.1 Zero-context onboarding
+
+AHICP uses:
+
+- START_HERE;
+- a machine-readable manifest;
+- an Agent contract;
+- a bootstrap prompt;
+- Working Memory;
+- an Onboarding Report.
+
+The replacement Agent first reports the stage, objective, tasks, blockers, pending decisions, and next actions it reconstructed. Only then should it begin high-impact work. “Did the Agent actually understand the project?” becomes an observable checkpoint rather than an implicit assumption.
+
+### 7.2 Substitution resilience
+
+Agent/model substitution can be turned into an empirical test:
+
+1. freeze the project state at an intermediate stage;
+2. remove the original Agent's chat history and platform-private memory;
+3. switch to another model or provider;
+4. provide only the project entrypoint;
+5. measure whether it reconstructs the project correctly.
+
+If the replacement requires the human to retell the full history, the externalized memory is incomplete. If it treats a rejected decision as an open proposal, decision memory has failed. If it writes an old cached state over a newer decision, stale-state governance has failed.
+
+Substitution is therefore not merely a compatibility feature. It is a **stress test for whether the project actually possesses memory independent of the model.**
+
+---
+
+## 8. More memory is not always better: curation, conflict, staleness, and privacy
+
+Externalizing memory creates an opposite risk: saving everything and then asking every Agent to load all of it. That does not solve the continuity problem; it produces memory bloat.
+
+### 8.1 Active vs archived state
+
+Current authoritative state should remain compact. Detailed history belongs in Work Logs, old versions, evidence archives, or other historical stores. Default onboarding retrieves only what is needed for current work.
+
+### 8.2 Current vs stale state
+
+After repository write-back, copies already loaded into model context may be stale. Before a high-impact judgment or later write, the relevant canonical revision should be freshly retrieved.
+
+### 8.3 Conflicting memory
+
+Long-running projects inevitably encounter conflicts:
+
+- new evidence contradicts an older conclusion;
+- two files express inconsistent state;
+- a new human decision conflicts with the current framework;
+- provider actual state differs from repository records.
+
+Reliable Project memory should not silently select one version. It should:
+
+1. identify the governing authority relation;
+2. surface the conflict;
+3. prevent silent overwrite;
+4. route the issue to the human or an explicit resolution rule;
+5. write back the new authoritative state together with provenance.
+
+### 8.4 Selective retrieval
+
+A good memory architecture must define what **not** to read. A replacement Agent does not need to load the entire Work Log, all obsolete frameworks, or the full evidence archive. It should use manifests and indexes to find current state, then retrieve historical detail only when the task requires it.
+
+### 8.5 Privacy and publication
+
+Externalized memory also creates risk. Project state may include:
+
+- unpublished ideas;
+- private information;
+- review materials;
+- provider identifiers;
+- access policies;
+- deployment state.
+
+Project memory therefore has to separate “stored in the project” from “authorized for public release.” AHICP and companion publishing workflows assume that original and unpublished source may remain private while only authorized outputs are released. Passwords, API tokens, private keys, and similar secrets should not be stored as ordinary project memory.
+
+---
+
+## 9. Framework Approval, authorship responsibility, and public artifacts
+
+Project Memory Architecture does more than solve technical handoff. It also changes how human responsibility can be operationalized in AI-assisted long-form work.
+
+### 9.1 Why a Framework is needed
+
+When AI can rapidly generate dozens of pages, requiring a human to reread every word after every change may not scale. AHICP therefore uses a compact Layer 2 Framework as the primary interface for discussing intellectual architecture.
+
+A Framework should at least expose:
+
+- core claims;
+- major inferential relations;
+- key distinctions;
+- scope conditions;
+- section or chapter functions;
+- important unresolved issues.
+
+AI may help organize a Working Framework, but it does not automatically become the author's position.
+
+### 9.2 Framework Approval and Final Artifact Approval
+
+AHICP distinguishes two gates.
+
+**Framework Approval** means that the human has reviewed and confirmed the substantive intellectual architecture.
+
+**Final Artifact Approval** means human approval of the concrete version that will be released, subject to the requirements of the relevant journal, institution, publisher, or other dissemination venue.
+
+The distinction also supports a more precise error model:
+
+- **framework-level defect** — an error already present in the approved intellectual structure;
+- **derived-expansion defect** — an error introduced only during downstream AI-assisted expansion.
+
+The purpose is not to shift responsibility onto AI, but to identify the layer at which an error entered the project.
+
+### 9.3 Humans as bearers of responsibility
+
+AI can perform or assist extensive work, but project purpose, core questions, direction, key judgments, and ultimate responsibility for public knowledge claims cannot disappear merely because work is automated. Hardwig (1985) reminds us that epistemic practices already involve dependence, while Parasuraman and Riley (1997) provide classic background on automation over-reliance. AHICP's response is not to require humans to personally perform every operation. It is to make **human understanding, confirmation, and authorization locatable in project state**.
+
+Current ICMJE and Nature Portfolio policies provide concrete boundary cases: within those publishing systems, final approval and human accountability for accuracy and integrity remain important. AHICP does not universalize those policies into a single authorship law. It treats them as evidence that as AI participation grows, projects benefit from being able to answer clearly: “who confirmed what?”
+
+---
+
+## 10. Relationship to Agent-memory and provenance research
+
+AHICP is not intended to replace Agent-memory research. The two address different but complementary problems.
+
+| Question | Agent memory | AHICP Project memory |
+|---|---|---|
+| Primary object | Agent history and experience | authoritative project state |
+| Main goal | improve later Agent responses/actions | preserve continuity, governance, and auditability |
+| Typical operations | store / retrieve / summarize / reflect | confirm / reject / authorize / promote / version / handoff |
+| Authority | may be an internal system mechanism | intentionally explicit and human-inspectable |
+| Model replacement | may require migrating the memory store | model replaceability is an explicit design goal |
+| Human decisions | may be one kind of conversation content | first-class durable state |
+| Privacy/publication state | not necessarily central | a major project-governance concern |
+| Provenance | may be limited | origin and status should remain explicit |
+
+AHICP's research opportunity is therefore not to propose another vector database. It is to connect **memory governance, decision state, handoff, authorization, and authorship responsibility** into a long-running project architecture.
+
+RealMem and similar work increasingly brings project-oriented interactions into long-term memory evaluation, making the interface between the two research directions more important. A future research question is how internal Agent memory should interact with external Project memory: which state may be summarized automatically, and which state should enter the authoritative layer only after human confirmation?
+
+---
+
+## 11. Evaluation framework and research agenda
+
+AHICP already has an executable protocol and repository implementation, but this article does not claim systematic experimental validation. To turn its methodological claims into testable research questions, the following evaluations are proposed.
+
+### 11.1 Zero-context handoff / resumption test
+
+**Intervention:** remove the original conversation and give a replacement Agent only the project entrypoint.
+
+**Measures:**
+- current-state reconstruction accuracy;
+- critical-state omission rate;
+- time-to-resume;
+- number of unnecessary human restatements.
+
+### 11.2 Agent / model substitution test
+
+**Intervention:** switch model, provider, or Agent implementation at different project stages.
+
+**Measures:**
+- decision retention;
+- task continuity;
+- policy adherence;
+- privacy/publication-boundary errors.
+
+### 11.3 Decision-persistence test
+
+**Intervention:** seed confirmed, rejected, deferred, and scoped-authorized decisions.
+
+**Measures:**
+- rejected-decision reopening rate;
+- loss of confirmed state;
+- authorization overreach;
+- provenance reconstruction accuracy.
+
+### 11.4 Semantic-drift / framework-fidelity test
+
+**Intervention:** allow multiple Agents to revise the same long-form project and compare a chat-centric workflow with an AHICP workflow.
+
+**Measures:**
+- core-claim drift;
+- framework–artifact inconsistency;
+- unexplained changes of position;
+- evidence/claim mismatch.
+
+### 11.5 Stale/conflict handling test
+
+**Intervention:** expose the Agent to outdated cache, updated canonical state, and deliberately conflicting records.
+
+**Measures:**
+- stale-state use rate;
+- conflict-detection rate;
+- silent-overwrite rate;
+- correct escalation/resolution rate.
+
+### 11.6 Memory-curation and retrieval-efficiency test
+
+**Intervention:** progressively expand Work Logs, evidence stores, and archived versions.
+
+**Measures:**
+- retrieval precision/recall;
+- context cost;
+- onboarding latency;
+- resume quality;
+- recovery of relevant history.
+
+### 11.7 Human review-effort study
+
+**Intervention:** compare a conventional “chat + full-text review” workflow with a “framework + Project memory + final-artifact review” workflow.
+
+**Measures:**
+- human review time;
+- serious-defect rate;
+- correction latency;
+- the author's ability to explain core claims and limitations.
+
+These studies require explicit controls, task definitions, model versions, participant criteria, statistical plans, and open-data decisions. They are currently a research design, not a report of results.
+
+---
+
+## 12. Limitations and objections
+
+### 12.1 Structure has a maintenance cost
+
+Short tasks may not justify full AHICP adoption. Maintaining Cores, Decision Logs, Working Memory, Frameworks, and evidence layers creates overhead. Lightweight profiles and progressive adoption paths are therefore necessary.
+
+### 12.2 Persistence can preserve errors
+
+If an incorrect claim is wrongly marked as confirmed, externalized memory may make the error more durable. Provenance and approval cannot substitute for evidence checking.
+
+### 12.3 Human confirmation can become ceremonial
+
+Framework Approval does not guarantee genuine understanding. A person can still click through a review superficially. Future evaluation should therefore examine not only whether an approval record exists but whether the human can explain core claims, limitations, and evidence dependencies.
+
+### 12.4 Conflict resolution is not always mechanical
+
+When evidence sources conflict, collaborators disagree, or old decisions are in tension with new goals, authority rules cannot always resolve the problem automatically. Human judgment often remains necessary.
+
+### 12.5 GitHub is not an appropriate backend for every project
+
+GitHub is effective for text, versions, automation, and audit trails, but it is not inherently suitable for every sensitive dataset, large binary artifact, or highly regulated environment. The theoretical architecture should remain provider-neutral.
+
+### 12.6 Project memory still needs stronger formalization
+
+This paper presents a methodological and engineering architecture rather than a complete formal memory calculus. Conflict, expiry, inheritance, compression, and access control across memory roles could be formalized further.
+
+### 12.7 The optimal boundary with internal Agent memory is unresolved
+
+Which state should an Agent summarize automatically, and which state should require human confirmation before entering the authoritative layer? How should internal memory and external project state avoid duplication and conflict? This remains an important systems question.
+
+### 12.8 Disciplinary and authorship norms vary
+
+Framework Approval is an AHICP governance mechanism. It does not automatically satisfy authorship or accountability requirements imposed by a particular discipline, institution, publisher, or legal system. Final dissemination remains subject to the actual venue's rules.
+
+---
+
+## 13. Conclusion: giving the project a memory of its own
+
+Generative AI is shifting long-running inquiry and creation from “one person using one tool” toward humans governing projects across multiple sessions, models, Agents, and automated components. In that environment, discussing only context windows or chat memory is insufficient.
+
+AHICP proposes a central shift:
+
+> **The durable memory of a long-running human–AI project should belong to the project, not to a particular model.**
+
+Project memory is not merely historical storage. It needs to preserve and govern:
+
+- human purpose and core questions;
+- evidence and uncertainty;
+- confirmed, rejected, and open decisions;
+- the current Framework and derived artifacts;
+- current work position and next actions;
+- access, privacy, and publication boundaries;
+- authorization and verification state for external actions;
+- enough handoff information for a replacement Agent to continue.
+
+Working Memory functions as the continuity layer that persists current epistemic/task state from one session to the next. Decision persistence ensures that human judgments do not lose their semantics when an Agent changes. Agent/model substitution then provides a direct test: can the project continue without the particular model that previously “knew” it?
+
+This architecture does not require saving everything or injecting the entire archive into every model context. It instead requires selective retrieval, curation, stale-state invalidation, conflict surfacing, promotion, and write-back so that memory can grow without overwhelming current work.
+
+Finally, Project Memory Architecture links technical continuity with human responsibility. AI may take on more retrieval, organization, drafting, checking, and execution, but if a project enters the public knowledge space, humans should still be able to say why the project exists, which claims were accepted, which evidence was relied upon, which decisions were confirmed, and who approved the final public version. Framework Approval and Final Artifact Approval are therefore not merely procedural burdens; they are attempts to make “humans remain bearers of responsibility” locatable, versionable, and auditable in project state.
+
+This paper proposes an implementable and testable architecture rather than a completed empirical verdict. Future work should use cross-Agent handoff, model substitution, decision persistence, semantic drift, conflict handling, and review-cost studies to determine under what conditions Project Memory Architecture improves long-running human–AI collaboration.
 
 ---
 
 ## References and policy sources
 
+- Bian, H., et al. (2026). *RealMem: Benchmarking LLMs in Real-World Memory-Driven Interaction*. Findings of ACL 2026. https://doi.org/10.18653/v1/2026.findings-acl.703
 - Clark, A., & Chalmers, D. (1998). The Extended Mind. *Analysis*, 58(1), 7–19. https://doi.org/10.1093/analys/58.1.7
 - Hardwig, J. (1985). Epistemic Dependence. *The Journal of Philosophy*, 82(7), 335–349. https://doi.org/10.2307/2026523
 - Hutchins, E. (1995). *Cognition in the Wild*. MIT Press. https://doi.org/10.7551/mitpress/1881.001.0001
-- Parasuraman, R., & Riley, V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. *Human Factors*, 39(2), 230–253. https://doi.org/10.1518/001872097778543886
-- International Committee of Medical Journal Editors (ICMJE). Defining the Role of Authors and Contributors. https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html
-- Nature Portfolio. Editorial Policies, including Artificial Intelligence (AI) policies. https://www.nature.com/nature-portfolio/editorial-policies
+- International Committee of Medical Journal Editors (ICMJE). *Defining the Role of Authors and Contributors*.
+- Nature Portfolio. *Editorial Policies*, including current AI policies.
 - *Nature Methods*. (2026). Using AI responsibly in scientific publishing. *Nature Methods*, 23, 271. https://doi.org/10.1038/s41592-026-03020-1
-- NISO. CRediT — Contributor Role Taxonomy; ANSI/NISO Z39.104-2022. https://credit.niso.org/ ; https://doi.org/10.3789/ansi.niso.z39.104-2022
-- UNESCO. (2023). Guidance for Generative AI in Education and Research. https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research
+- National Information Standards Organization. *CRediT — Contributor Role Taxonomy*; ANSI/NISO Z39.104-2022.
+- Packer, C., et al. (2023). *MemGPT: Towards LLMs as Operating Systems*. arXiv:2310.08560.
+- Park, J. S., et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. *UIST 2023*. https://doi.org/10.1145/3586183.3606763
+- Parasuraman, R., & Riley, V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. *Human Factors*, 39(2), 230–253. https://doi.org/10.1518/001872097778543886
+- Tan, H., et al. (2025). MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents. *Findings of ACL 2025*. https://doi.org/10.18653/v1/2025.findings-acl.989
+- UNESCO. (2023). *Guidance for Generative AI in Education and Research*.
+- W3C Provenance Working Group. (2013). *PROV-DM: The PROV Data Model*.
+- Wu, D., et al. (2025). *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*. ICLR 2025.
+- Zhang, Z., et al. (2025). A Survey on the Memory Mechanism of Large Language Model-based Agents. *ACM Transactions on Information Systems*, 43(6), Article 155. https://doi.org/10.1145/3748302
 
-For complete source-verification notes, see `evidence/METHODOLOGY_SOURCES.md`. BibTeX metadata is in `paper/methodology-references.bib`.
+Complete source-verification notes and usage boundaries are maintained in `evidence/METHODOLOGY_SOURCES.md`; BibTeX metadata is maintained in `paper/methodology-references.bib`.
 
-## Current article-development note
+## Current development status
 
-This document is the first complete working draft of AHICP's methodology article. It was expanded from `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`, but that framework has not yet passed formal human Framework Approval. The article must therefore be treated as `DERIVED-PROVISIONAL`, not as a final human-approved manuscript.
-
-The Chinese `paper/METHODOLOGY_ARTICLE.zh-CN.md` is the canonical semantic and editing source. This English document must remain synchronized with it.
+This is the structurally upgraded AHICP methodology article under AHICP-D030. Project Memory Architecture, Working Memory continuity, Agent/Model Substitution, and Human Decision Persistence are now central to the argument. The article remains `DERIVED-PROVISIONAL`: the revised Working Framework has not yet received overall Framework Approval, and Final Artifact Approval has not occurred.
