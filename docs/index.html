@@ -20,6 +20,7 @@ section.block{background:#fff;border:1px solid #d8e2dd;border-radius:22px;paddin
 h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:0 0 16px}h3{color:#245c4c;margin:0 0 8px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}.card{border:1px solid #dce5e0;border-radius:16px;padding:20px;background:#fbfdfc}.card p{margin:0}
 .map{display:grid;gap:10px;margin-top:18px}.map div{padding:15px 18px;border-left:4px solid #6f9d8c;background:#f3f8f5;border-radius:10px}.map strong{color:#17352d}
+.architecture-flow{display:grid;gap:10px;margin:22px 0}.architecture-node{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:18px;align-items:start;padding:18px 20px;border:1px solid #d6e2dc;border-radius:16px;background:#fbfdfc}.architecture-node strong{color:#17352d}.architecture-node .role{font-size:.9rem;color:#557067;margin-top:3px}.architecture-arrow{text-align:center;color:#6b8d80;font-weight:800;font-size:1.25rem}.principle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.principle{padding:16px 18px;background:#f4f8f6;border-radius:14px;border:1px solid #dce6e1}.principle strong{display:block;color:#17352d;margin-bottom:4px}.small-note{font-size:.94rem;color:#5b6d65}
 .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.compare>div{border-radius:16px;padding:20px}.before{background:#f7f3f0;border:1px solid #e5d8cf}.after{background:#f0f7f3;border:1px solid #cfdfd6}
 .steps{counter-reset:step;display:grid;gap:12px}.step{background:#f7faf8;border:1px solid #dbe5df;border-radius:14px;padding:16px 18px}.step:before{counter-increment:step;content:counter(step);display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#17352d;color:#fff;font-weight:800;margin-right:9px}
 .quote{font-size:1.18rem;padding:20px 22px;border-left:5px solid #397363;background:#f2f7f4;border-radius:0 14px 14px 0}
@@ -28,7 +29,7 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
 .handoff{border:2px solid #7da896;background:#f4faf6}.handoff textarea{width:100%;min-height:150px;border:1px solid #cddbd4;border-radius:12px;padding:14px;font:inherit;line-height:1.55;background:#fff;color:#20332c;resize:vertical}.copybtn{border:0;background:#17352d;color:#fff;border-radius:10px;padding:12px 17px;font-weight:800;cursor:pointer;margin-top:10px;font-size:1rem}.copybtn:focus{outline:3px solid #98c1b1;outline-offset:2px}.copy-status{margin-left:10px;color:#397363;font-weight:700}
 .start-now{border:3px solid #397363;background:linear-gradient(180deg,#f0f8f4,#fff);padding:38px!important}.start-now h2{font-size:clamp(2rem,4vw,2.8rem)}.launch-steps{display:grid;gap:12px;margin:20px 0}.launch-step{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;padding:14px 16px;background:#fff;border:1px solid #cfddd6;border-radius:14px}.launch-step b:first-child{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#17352d;color:#fff}.start-note{font-size:.95rem;color:#50645b}.machine-url{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all;background:#eaf3ee;padding:3px 6px;border-radius:5px}
 .guide-shell{background:#fff;border:1px solid #d8e2dd;border-radius:22px;padding:32px;margin-top:20px;box-shadow:0 10px 28px #17352d0c}.guide-shell h1{font-size:2.3rem;margin-top:0}.guide-shell h2{margin-top:34px}.guide-shell h3{margin-top:24px}.guide-shell pre{overflow:auto;background:#132c25;color:#f2f7f4;padding:16px;border-radius:12px}.guide-shell code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.guide-shell p code,.guide-shell li code{background:#eef4f0;color:#17352d;padding:2px 5px;border-radius:5px}.guide-shell blockquote{margin:18px 0;padding:12px 18px;border-left:4px solid #6f9d8c;background:#f3f8f5}.guide-shell hr{border:0;border-top:1px solid #d9e3de;margin:30px 0}.guide-shell a{color:#1261a0}.guide-loading{color:#5c6c65}
-@media(max-width:720px){header{align-items:flex-start;flex-direction:column}.page{padding:24px 14px 60px}.hero{padding-top:30px}.compare{grid-template-columns:1fr}.secondary{margin-left:0;display:block}}
+@media(max-width:720px){header{align-items:flex-start;flex-direction:column}.page{padding:24px 14px 60px}.hero{padding-top:30px}.compare{grid-template-columns:1fr}.secondary{margin-left:0;display:block}.architecture-node{grid-template-columns:1fr;gap:6px}}
 </style>
 </head>
 <body>
@@ -82,6 +83,29 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
       <article class="card"><h3>AI 建议不等于你的决定</h3><p>重要提案经过你的确认以后，才成为项目正式采用的决定。</p></article>
       <article class="card"><h3>每次结束都留好下一步</h3><p>结束时留下当前状态、下一步和仍待解决的问题，之后可以直接接着做。</p></article>
     </div>
+  </section>
+
+  <section class="block" id="architecture">
+    <h2>为什么它能跨聊天、跨模型、隔很久以后继续</h2>
+    <p>关键不在于“让 AI 记住一切”，而在于把不同类型的项目状态放在不同位置。聊天只是临时工作区，真正需要长期保留的内容写回项目仓库；新的 AI 接手时，再按固定顺序读取当前状态和相关长期记录。</p>
+    <div class="architecture-flow">
+      <div class="architecture-node"><div><strong>Manifest + Context Interface</strong><div class="role">项目地图</div></div><div>告诉新的 AI：当前项目采用什么规则、哪些文件最重要、从哪里读取最新状态。它负责“找到信息”，而不是重复保存所有内容。</div></div>
+      <div class="architecture-arrow">↓</div>
+      <div class="architecture-node"><div><strong>Working Memory</strong><div class="role">当前正在做什么</div></div><div><strong>Current Focus</strong> 保存当前最重要的目标、阻塞和下一步；<strong>Task Plan</strong> 保存正在进行的任务、待确认问题和计划；<strong>Work Log</strong> 留给需要回顾历史时使用，不要求每次都加载。</div></div>
+      <div class="architecture-arrow">↓ 稳定结果写入长期记忆</div>
+      <div class="architecture-node"><div><strong>Core + Decision Log</strong><div class="role">长期事实与决定</div></div><div>重要的人类决定进入 Decision Log，并更新相应的 Core。这样可以区分“AI 建议过什么”和“你真正确认过什么”。</div></div>
+      <div class="architecture-arrow">↓</div>
+      <div class="architecture-node"><div><strong>Framework</strong><div class="role">结构和论证</div></div><div>把核心内容组织成可以检查的结构。Working Framework 可以继续修改；只有经过确认的版本才成为 Approved Framework。</div></div>
+      <div class="architecture-arrow">↓</div>
+      <div class="architecture-node"><div><strong>Artifact + Evidence</strong><div class="role">作品与依据</div></div><div>文章、书、报告、网站等成果从上面的状态派生；证据和来源限制它能负责任地说什么。成果变化不能反过来偷偷改写上游决定。</div></div>
+    </div>
+    <div class="principle-grid">
+      <div class="principle"><strong>仓库状态优先于聊天记忆</strong>重要状态写回仓库，换聊天或换 AI 不需要从头解释。</div>
+      <div class="principle"><strong>工作记忆保持简洁</strong>新 AI 先读当前焦点和任务计划，不需要把全部历史一次塞进上下文。</div>
+      <div class="principle"><strong>短期状态会“晋升”</strong>临时问题解决后，稳定结果进入 Decision Log、Core、Framework 或其他长期位置。</div>
+      <div class="principle"><strong>决定沿上游向下传播</strong>重要决定先记录，再更新结构，最后反映到作品，避免正文先变、依据却跟不上。</div>
+    </div>
+    <p class="small-note">因此 AHICP 提供的不是“无限记忆”，而是一套可恢复、可追溯、能交接的项目记忆结构。</p>
   </section>
 
   <section class="block" id="system">
@@ -163,27 +187,27 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
 
 <section id="en" class="lang">
   <div class="hero">
-    <div class="eyebrow">Human entry to the Inquiry Publishing Stack</div>
-    <h1>Keep ownership of your thinking and creation. Let AI become an assistant that can help, be inspected, and be replaced.</h1>
-    <p class="lead">You do not need to understand GitHub, agents, YAML, or Cloudflare first. AHICP starts with a simpler question: how can your questions, evidence, judgments, decisions, and work endure while AI increases capability without replacing human responsibility?</p>
-    <a class="primary" href="#complete-guide-en">Read the complete Human Guide</a>
+    <div class="eyebrow">Start here · Inquiry Publishing Stack</div>
+    <h1>Stay focused on thinking and creating. Let AI help with the records, structure, checks, and publishing.</h1>
+    <p class="lead">You do not need to learn GitHub, agents, YAML, or Cloudflare first. AHICP gives a long-running project a durable place for questions, sources, decisions, and work state, so AI can help without making the project depend on one chat or one model.</p>
+    <a class="primary" href="#complete-guide-en">Read the complete guide</a>
     <a class="secondary" href="#start-now-en">I understand — start now</a>
   </div>
 
   <section class="block" id="start-en">
     <h2>Understand it in one minute</h2>
     <p>You may use AI for learning, research, writing, or projects. The hard problem is often not whether AI can generate text. It is whether, weeks or months later, you can still tell why a decision was made, where the evidence came from, what was only a guess, what you actually approved, and how another AI can continue.</p>
-    <div class="quote">The system is not designed to let AI think instead of you. It is designed to let your reasoning, evidence, and decisions endure while AI absorbs more organization, checking, execution, and technical complexity.</div>
+    <div class="quote">The point is not to make AI think for you. It is to keep the project understandable over time while AI helps with organization, checking, execution, and other technical work.</div>
     <div class="grid">
       <article class="card"><h3>Keep the question</h3><p>Goals and important questions do not disappear into one conversation.</p></article>
       <article class="card"><h3>Keep evidence separate</h3><p>Facts, inferences, suggestions, and approved decisions remain distinguishable.</p></article>
       <article class="card"><h3>Change AI without starting over</h3><p>Project state is transferable rather than trapped in one model's memory.</p></article>
-      <article class="card"><h3>Keep control</h3><p>AI may do extensive work while key judgment, privacy, and publication remain human decisions.</p></article>
+      <article class="card"><h3>Keep important decisions explicit</h3><p>AI can do a great deal of work, while important judgments, privacy choices, and publication decisions stay explicit.</p></article>
     </div>
   </section>
 
   <section class="block">
-    <h2>The biggest change before and after adoption</h2>
+    <h2>What changes when the project keeps its own state</h2>
     <div class="compare">
       <div class="before"><h3>Temporary chat only</h3><p>Have a question → ask AI → receive an answer → ask again → weeks later lose the evidence → cannot tell what was confirmed → explain everything again to a new AI.</p></div>
       <div class="after"><h3>Durable project state</h3><p>Ask a question → preserve the goal → retain sources → AI helps analyze → separate fact/inference/suggestion → human confirms decisions → save state → another human or AI continues.</p></div>
@@ -191,21 +215,44 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
   </section>
 
   <section class="block">
-    <h2>It is designed to strengthen habits, not only speed</h2>
+    <h2>It supports a clearer way of working, not just faster output</h2>
     <div class="grid">
       <article class="card"><h3>Clarify the question</h3><p>Understand what you are really trying to solve before rushing to an answer.</p></article>
       <article class="card"><h3>Evidence before judgment</h3><p>What a source says and what you conclude are not the same thing.</p></article>
       <article class="card"><h3>Preserve uncertainty</h3><p>Explicitly recording “unknown” is often more reliable than pretending certainty.</p></article>
       <article class="card"><h3>Preserve reasons</h3><p>Your future self and a new AI can understand why the project reached its current state.</p></article>
-      <article class="card"><h3>AI proposals are not commitments</h3><p>Important proposals become project decisions only after appropriate human approval.</p></article>
-      <article class="card"><h3>Make every session resumable</h3><p>Leave current state, next steps, and unresolved questions clear.</p></article>
+      <article class="card"><h3>An AI proposal is not a project decision</h3><p>A proposal becomes part of the project only after it has been reviewed and accepted.</p></article>
+      <article class="card"><h3>Leave a clear next step</h3><p>End each work session with the current state, next actions, and unresolved questions easy to find.</p></article>
     </div>
   </section>
 
+  <section class="block" id="architecture-en">
+    <h2>Why the project can survive across chats, models, and long gaps</h2>
+    <p>AHICP does not try to make a model remember everything. It separates short-lived operational state from durable project memory, then gives a new AI a predictable route through both.</p>
+    <div class="architecture-flow">
+      <div class="architecture-node"><div><strong>Manifest + Context Interface</strong><div class="role">Project map</div></div><div>Points a new AI to the rules, canonical files, and current state. It tells the agent where to look instead of duplicating the project everywhere.</div></div>
+      <div class="architecture-arrow">↓</div>
+      <div class="architecture-node"><div><strong>Working Memory</strong><div class="role">What is happening now</div></div><div><strong>Current Focus</strong> holds the highest-priority objective, blocker, and next action. <strong>Task Plan</strong> holds active work, pending decisions, clarifications, and next steps. <strong>Work Log</strong> is available for retrospective history, but is not loaded by default.</div></div>
+      <div class="architecture-arrow">↓ stable results are promoted</div>
+      <div class="architecture-node"><div><strong>Core + Decision Log</strong><div class="role">Durable commitments</div></div><div>Important accepted decisions are recorded and reconciled with the relevant Core, keeping a visible boundary between AI proposals and decisions the project has actually adopted.</div></div>
+      <div class="architecture-arrow">↓</div>
+      <div class="architecture-node"><div><strong>Framework</strong><div class="role">Structure and reasoning</div></div><div>The project’s claims and structure are organized into an inspectable framework. A Working Framework can change; an Approved Framework becomes a stable baseline only after review.</div></div>
+      <div class="architecture-arrow">↓</div>
+      <div class="architecture-node"><div><strong>Artifact + Evidence</strong><div class="role">Outputs and support</div></div><div>Articles, books, reports, and sites are derived from the upstream state. Evidence constrains what can responsibly be claimed, and downstream edits do not silently rewrite upstream decisions.</div></div>
+    </div>
+    <div class="principle-grid">
+      <div class="principle"><strong>Repository state outranks chat memory</strong>Important state is written back to the project, so a new chat or model does not require a full restart.</div>
+      <div class="principle"><strong>Working Memory stays small</strong>A new AI starts with current focus and active tasks instead of loading the entire history.</div>
+      <div class="principle"><strong>Short-term state gets promoted</strong>Once an issue is resolved, durable results move into the appropriate long-term location.</div>
+      <div class="principle"><strong>Decisions propagate from upstream to downstream</strong>Record the decision first, update the structure next, and only then update the artifact.</div>
+    </div>
+    <p class="small-note">The goal is not infinite context. It is recoverable, traceable project memory that another AI can pick up reliably.</p>
+  </section>
+
   <section class="block" id="system-en">
-    <h2>Four projects, four different problems</h2>
+    <h2>Four projects, each solving a different part of the problem</h2>
     <div class="map">
-      <div><strong>AHICP · How do I think with AI without giving my judgment to AI?</strong><br>Governs questions, evidence, reasoning, decisions, human approval, work state, and handoff. It is the human-method center.</div>
+      <div><strong>AHICP · How do I keep questions, evidence, and decisions clear over time?</strong><br>Organizes inquiry, evidence, reasoning, decisions, current work state, and handoff.</div>
       <div><strong>PPF · How does my work remain durable, buildable, and publishable?</strong><br>Governs canonical source, builds, web output, versions, publication, and Continuous Web.</div>
       <div><strong>Vault Interface · How can a project be public without exposing private work?</strong><br>Supplies approved public metadata without requiring private research, working memory, or private repository locators.</div>
       <div><strong>Starter · I do not know the technical details. Can an AI compose this correctly?</strong><br>Handles composition, adoption, profiles, upgrades, and machine-readable configuration. Complete new projects default to full AHICP + full PPF + Vault Interface.</div>
@@ -224,10 +271,10 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
   </section>
 
   <section class="block">
-    <h2>AI can do a lot, but these decisions still belong to you</h2>
+    <h2>AI can take on a lot of work; important decisions still need your judgment</h2>
     <div class="compare">
-      <div class="after"><h3>Good work for AI</h3><p>Finding sources, organizing, comparing, summarizing, detecting inconsistencies, drafting, citation checks, repository maintenance, website builds, authorized technical execution, and handoffs.</p></div>
-      <div class="before"><h3>Human responsibility</h3><p>Why the project exists, which questions matter, whether to accept important interpretations, which proposals to adopt, what private material may become public, whether to publish, and responsibility for the final result.</p></div>
+      <div class="after"><h3>Good work to delegate to AI</h3><p>Finding sources, organizing, comparing, summarizing, detecting inconsistencies, drafting, citation checks, repository maintenance, website builds, authorized technical execution, and handoffs.</p></div>
+      <div class="before"><h3>Decisions that still need your judgment</h3><p>Why the project exists, which questions matter, whether to accept important interpretations, which proposals to adopt, what private material may become public, whether to publish, and responsibility for the final result.</p></div>
     </div>
   </section>
 
@@ -249,29 +296,29 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
   </section>
 
   <section class="block">
-    <h2>Two first entrypoints: humans and machines do not need the same path</h2>
+    <h2>Learn the system here; let the AI enter the technical setup</h2>
     <div class="compare">
-      <div class="after"><h3>Human first entry: AHICP</h3><p>Understand why the system exists, how it supports thinking and long-running work, and why the four components exist.</p></div>
-      <div class="card"><h3>AI / configuration first entry: Starter</h3><p>For project creation, ecosystem reconstruction, profiles, upgrades, and deployment, use the machine-readable ecosystem and Agent Retrieval Contract.</p></div>
+      <div class="after"><h3>Use AHICP to understand the system</h3><p>Start with why the system exists, how it supports long-running work, and what each component is for.</p></div>
+      <div class="card"><h3>Let the AI enter through Starter</h3><p>For project setup, reconstruction, upgrades, and deployment, the AI should use Starter’s machine entry and retrieval contract.</p></div>
     </div>
   </section>
 
   <section class="guide-shell" id="complete-guide-en">
-    <h2>Complete Human Guide</h2>
-    <p>The complete content below is loaded from the canonical source in this repository: <code>docs/HUMAN_GUIDE.md</code>. When the canonical guide changes, the public page reads the same source.</p>
+    <h2>Complete guide</h2>
+    <p>The full guide below is loaded from the versioned source in this repository, so the public page stays in sync with the maintained guide.</p>
     <div id="guideContentEn" class="guide-loading">Loading the complete guide…</div>
     <noscript><p>JavaScript is disabled. Read the <a href="HUMAN_GUIDE.md">Human Guide source</a>.</p></noscript>
   </section>
 
   <section class="block handoff start-now" id="start-now-en">
-    <div class="eyebrow">Start for real</div>
+    <div class="eyebrow">Start now</div>
     <h2>You only need to send one instruction to your AI.</h2>
-    <p>You do not need to learn GitHub, Starter, YAML, Cloudflare, or deployment terminology first. From here, the AI should enter the machine entrypoint and begin the engineering work.</p>
+    <p>You do not need to learn GitHub, Starter, YAML, Cloudflare, or deployment terminology before you begin. Send the instruction below to your AI; it should enter the machine setup and continue from there.</p>
     <div class="launch-steps">
       <div class="launch-step"><b>1</b><div><strong>Click “Copy for AI” below.</strong><br>This copies the machine entrypoint and the operating rules.</div></div>
       <div class="launch-step"><b>2</b><div><strong>Open the AI you normally use.</strong><br>Start a new conversation and paste the copied instruction.</div></div>
       <div class="launch-step"><b>3</b><div><strong>Add one sentence describing what you actually want to do.</strong><br>For example: “I want to study urban transportation over the long term and eventually write a book.” Then send it.</div></div>
-      <div class="launch-step"><b>4</b><div><strong>Let the AI take over the technical entry.</strong><br>It should read <span class="machine-url">https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/</span>, reconstruct the full stack, create or inspect the project, and begin configuration and verification.</div></div>
+      <div class="launch-step"><b>4</b><div><strong>Let the AI handle the technical setup.</strong><br>It should read <span class="machine-url">https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/</span>, reconstruct the full stack, create or inspect the project, and begin configuration and verification.</div></div>
     </div>
     <textarea id="newProjectPromptEn" readonly>I want to start using AHICP / the Inquiry Publishing Stack. First read and follow the machine entrypoint at https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/ . You must retrieve the ecosystem, Agent Retrieval Contract, and required upstream specifications linked from that entry, then work from the complete default stack: full AHICP + full PPF + Vault Interface, with original and unpublished source private by default and unpublished Web restricted/authenticated by default. First confirm that you successfully loaded the machine entrypoint, then use the project goal I provide next to create or inspect the project. Complete routine technical configuration, repository changes, validation, deployment preparation, and durable state write-back yourself when tools permit. Ask me to act only when key judgment, approval, sign-in/MFA, authorization, or direct secret entry is truly required, and then give precise numbered steps, completion criteria, verification, and rollback. Never ask me to paste passwords, API tokens, private keys, recovery codes, or other secrets into chat.</textarea>
     <button class="copybtn" type="button" data-copy="newProjectPromptEn">Copy for AI and start</button><span class="copy-status" id="newProjectPromptEnStatus"></span>
