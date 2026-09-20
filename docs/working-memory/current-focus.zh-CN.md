@@ -8,62 +8,72 @@
 
 ## CURRENT_STAGE
 
-**AHICP v0.3 语义迁移已完成；后续 external-system authorization / human-handoff 与 scoped authorization 治理也已完成规范收束。**
+**方法论文章已依据 AHICP-D030 完成 project-memory-centered 结构性升级；当前进入人类审阅与框架确认阶段。**
 
-迁移依据：`AHICP-D026`。  
-后续授权治理依据：`AHICP-D027`、`AHICP-D028`、`AHICP-D029`。
+本轮已经完成：
 
-已完成：
-- 正式名称与固定 subtitle；
-- human-led / AI-assisted / repository-grounded 规范方向；
-- Protocol Core、Specification、AGENTS 与 live protocol 文档迁移；
-- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` 控制面；
-- zero-context onboarding 控制链迁移；
-- research-project specialization template 迁移；
-- 方法论文章/evidence 的当前协议身份迁移，同时保留 research-specific 主题；
-- 关键双语规范 semantic parity；
-- final post-migration repair audit；
-- provider-neutral machine-operable-first escalation、authorization / human handoff 与 provider actual-state write-back；
-- scoped authorization lifecycle：`proposal != authorization != execution != verification != durable write-back`；
-- 首次配置 reusable authorization policy 时由 AI 提出方案、人类选择，选择及其 scope / provenance / escalation conditions 持久记录；
-- PR #3 合并后的独立 consistency review 与传播修复。
-
-最近的 protocol repair 已关闭以下问题：
-- D028 的 durable authorization record 在下游规范中被弱化；
-- Specification §23.3 漏列 `permission grants`；
-- Working Memory 未记录 D028/D029 与 PR #3 milestone；
-- Protocol Contract CI 对 §23.5.1 只做全文件 marker 检查、未校验 section-local invariant。
+- 记录 `AHICP-D030`：现有 methodology article 保持为一篇统一论文；
+- 将 Project Memory Architecture、Working Memory continuity、Agent/Model substitution、Human Decision Persistence 提升为核心理论贡献；
+- 在 Article Content Core 中新增 C17–C22；
+- 把 Working Argument Map 重构为 13 节 project-memory-centered framework；
+- 重写中文 methodology article；
+- 同步重写英文镜像；
+- 补充 Generative Agents、MemGPT、Agent-memory survey、LongMemEval、MemBench、RealMem 与 W3C PROV 相关 evidence / references；
+- 把经验测试方案从旧的 AI-proposed 状态更新为 AHICP-D030 已确认应纳入论文的 proposed evaluation framework；
+- 明确没有实证结果，不得提出已验证 effectiveness claim；
+- 更新 Framework Status，使仓库不再保留“整体批准前禁止结构性重写”的旧指令。
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — 方法论文章整体 Framework Approval
+### WM-OBJ-004 — Project-memory-centered methodology article human review
 
-protocol maintenance 完成后，仓库的主要未决工作门仍为：
+当前主要对象：
 
-- 方法论文章 Working Framework：`WAITING-HUMAN`
-- license：`WAITING-HUMAN`
-- target publication venue / form constraints：`WAITING-HUMAN`
+1. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+2. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
 
-当前中文 Working Framework：
+当前 framework 状态：
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`WORKING-FRAMEWORK — REVISED UNDER AHICP-D030 / HUMAN REVIEW PENDING`
+
+当前文章状态：
+
+`DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`
 
 ## IMMEDIATE_NEXT_ACTION
 
-人类在准备继续方法论文章时，对当前 Working Framework 作：
+本轮机器工作完成后：
 
-- `APPROVE`
-- `REVISE`
-- `REJECT`
+1. 运行仓库 CI / consistency validation；
+2. 创建 PR，保留最终 merge gate；
+3. 人类审阅新的 project-memory-centered framework 与论文；
+4. 后续明确选择：
+   - `APPROVE`
+   - `REVISE`
+   - `REJECT`
 
-在此之前，不创建 Approved Framework snapshot。
+在整体 `APPROVE` 前，不创建 `MA-FW-001`。
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: methodology article overall Framework Approval`
+当前没有阻止完成本轮结构性重写的 blocker。
 
-这不阻塞已经完成的 AHICP protocol migration 与 authorization-governance maintenance。
+下一治理门是：
+
+`WAITING-HUMAN: review of revised methodology framework and article`
+
+另外仍存在：
+- license：`WAITING-HUMAN`
+- target publication venue / form constraints：`WAITING-HUMAN`
 
 ## HANDOFF
 
-新的 AI Agent 应按 AHICP control plane 接管，并以 repository `main` 的最新 revision 为唯一项目状态来源。D027–D029 已是当前授权治理依据；旧 HARC live identifiers 不应重新进入当前规范文件。
+新的 AI Agent 应知道：
+
+- AHICP-D030 已授权并完成本轮论文结构重写；
+- “论文必须等 Framework Approval 才能结构性重写”是旧状态，不得恢复；
+- 重写后的 framework **尚未整体批准**；
+- evaluation framework 已被确认应纳入论文，但没有实证结果；
+- 中文论文为 canonical，英文为 synchronized mirror；
+- 下一步是验证、PR、人类审阅，而不是继续无边界扩写。
