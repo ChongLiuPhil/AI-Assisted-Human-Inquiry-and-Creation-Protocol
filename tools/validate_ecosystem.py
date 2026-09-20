@@ -1,5 +1,8 @@
 from pathlib import Path
+import re
+import subprocess
 import sys
+import tempfile
 
 import yaml
 
@@ -70,6 +73,27 @@ def main() -> int:
     for marker in required_page_markers:
         if marker not in page:
             raise SystemExit(f"AHICP public homepage is missing {marker}")
+
+    if '<section id="zh" class="lang active">' not in page:
+        raise SystemExit("Chinese Human Entry must be visible by default when JavaScript is unavailable or broken")
+
+    scripts = re.findall(r"<script>(.*?)</script>", page, flags=re.DOTALL)
+    if not scripts:
+        raise SystemExit("AHICP public homepage has no inline script to validate")
+    with tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".js", delete=False) as handle:
+        handle.write("\n".join(scripts))
+        script_path = handle.name
+    try:
+        check = subprocess.run(
+            ["node", "--check", script_path],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+    except FileNotFoundError as exc:
+        raise SystemExit("Node.js is required to validate public-page JavaScript syntax") from exc
+    if check.returncode != 0:
+        raise SystemExit("AHICP public homepage JavaScript syntax error:\n" + check.stderr)
 
     if page.index('id="complete-guide-zh"') > page.index('id="start-now-zh"'):
         raise SystemExit("Chinese start action must come after the complete Human Guide")
