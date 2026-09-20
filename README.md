@@ -1,3 +1,7 @@
+**Project links:** [Public homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/) · [GitHub repository](https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol)
+
+**Related public projects:** [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
+
 # AI-Assisted Human Inquiry and Creation Protocol
 
 [English](README.md) | [中文](README.zh-CN.md)
