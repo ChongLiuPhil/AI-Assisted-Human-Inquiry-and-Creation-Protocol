@@ -1,61 +1,86 @@
 # Methodology Article — Framework Status
 
-> Chinese `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md` is canonical; this English file is its synchronized mirror.
+> Chinese `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md` is canonical; this file is the synchronized English mirror.
 
-## Current working framework
+## Current Working Framework
 
-Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` (canonical) / `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md` (English mirror)
+Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
-Status: `WORKING-FRAMEWORK — REVIEW READY / BLOCKING CLARIFICATIONS CLEARED; HUMAN APPROVAL PENDING`
+Status:
 
-Human approval: **not completed**.
+`WORKING-FRAMEWORK — REVISED UNDER AHICP-D030 / HUMAN REVIEW PENDING`
 
-The current map is aligned with the Article Content Core, HARC-D023, and HARC-D024 and continues to distinguish human-originated commitments, AI-formulated representations, AI-proposed content, and evidence constraints.
+Overall human Framework Approval: **not completed.**
 
-**Title status:** the current Chinese title “从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性” is human-approved through `HARC-D024`; English is the synchronized translation mirror. Title approval does not constitute overall Framework Approval.
+AHICP-D030 explicitly authorizes structural revision of the methodology article and confirms that the following must become core content within the same unified paper:
 
-### Readiness review
+- Project Memory Architecture;
+- Working Memory as a continuity layer;
+- Agent / Model substitution;
+- Human Decision Persistence;
+- multi-role project memory;
+- memory curation / stale / conflict / selective retrieval;
+- a proposed empirical evaluation framework.
 
-Result: `PASS FOR HUMAN FRAMEWORK REVIEW`
+This human decision is **REVISE / STRUCTURAL REWRITE AUTHORIZED**, not overall `APPROVE` of the rewritten complete framework.
 
-The Clarifications that previously blocked Framework Approval — `CLR-001 / CLR-002 / CLR-005` — have been human-resolved and promoted. `HARC-D025` repaired the dependency structure and clarified the semantics of overall approval when unresolved / AI-PROPOSED items remain. There is currently no active blocking Clarification or known structural-representation defect preventing overall human review of the framework.
+## Structural state of the current framework
 
-This is not Framework Approval itself.
+The Working Framework has been reorganized from the older responsibility/authorship-centered structure into a project-memory-centered 13-section structure aligned with AHICP-D030.
+
+Its core theses now include:
+
+1. the durable memory of a long-running human–AI project should belong to the project, not to a particular model;
+2. Agent/conversational memory must be distinguished from Project memory;
+3. Working Memory is a cross-session / cross-Agent continuity layer;
+4. Human Decision Persistence is first-class Project memory;
+5. Agent / Model Substitution is an architectural stress test;
+6. Project Memory requires inspectability, versionability, provenance, curation, and privacy/publication boundaries;
+7. Framework Approval / Final Artifact Approval connect project memory to human responsibility;
+8. proposed evaluation must remain a research agenda and must not be represented as completed experiments.
 
 ## Latest human-approved framework snapshot
 
-**None yet.**
+**None.**
 
-No methodology-article framework has yet passed the AHICP Framework Approval Gate.
+No methodology-article framework has yet passed overall Framework Approval.
 
-## Next framework identifier
+The next framework identifier remains:
 
 `MA-FW-001`
 
-Create `MA-FW-001` only after the human author explicitly gives an overall `APPROVE` decision on the complete current Working Framework.
+Create `MA-FW-001` only after the human reviews the current complete Working Framework and gives an overall `APPROVE` decision.
 
 Do not infer overall approval merely because:
-
-- blocking Clarifications were resolved;
-- individual claims or wording were accepted;
-- the framework is `REVIEW READY`;
-- the dependency repair or approval semantics were accepted;
-- discussion continues.
-
-If the human later gives an explicit overall `APPROVE` decision on the complete current framework, items still marked `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` are included in the Approved Framework only in their unresolved/provisional status; their still-unconfirmed substantive content is not thereby promoted.
+- AHICP-D030 authorized rewriting;
+- the article has been structurally synchronized;
+- evidence and references were expanded;
+- CI passes;
+- the human approved individual central directions.
 
 ## Current derived article
 
-Chinese canonical source: `paper/METHODOLOGY_ARTICLE.zh-CN.md`  
-English synchronized mirror: `paper/METHODOLOGY_ARTICLE.en.md`
+Chinese canonical:
 
-Status: `DERIVED-PROVISIONAL`
+`paper/METHODOLOGY_ARTICLE.zh-CN.md`
 
-HARC-D023 / HARC-D024 have been selectively propagated into the abstract, responsibility argument, and conclusion: the old central “AI cognitive labor / responsibility concentration” model has been replaced and further clarified as humans remaining the bearers of responsibility, especially in public dissemination of knowledge.
+English synchronized mirror:
 
-However, the current draft retains the earlier 15-part structure while the latest Working Framework uses a reorganized 10-part structure. The draft therefore remains only **partially synchronized** with the framework.
+`paper/METHODOLOGY_ARTICLE.en.md`
 
-Do not perform the major structural rewrite before overall Framework Approval.
+Status:
+
+`DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`
+
+The article is now **structurally synchronized** with the revised Working Framework:
+
+- the earlier 15-part structure has been replaced by a project-memory-centered 13-section structure;
+- Project Memory, Working Memory, Decision Persistence, and Agent Substitution are central in the abstract, body, and conclusion;
+- Agent-memory and provenance literature has been added to the related-work / evidence layer;
+- proposed evaluation is included while explicitly reporting no empirical results;
+- Chinese and English article versions were rewritten in the same work cycle.
+
+Structural synchronization is not Framework Approval and is not Final Artifact Approval. Human review may still revise theoretical structure, terminology, literature positioning, evaluation design, or wording.
 
 ## Canonical upstream sources
 
@@ -67,55 +92,54 @@ Do not perform the major structural rewrite before overall Framework Approval.
 - `docs/working-memory/task-plan.zh-CN.md`
 - `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
+- `paper/methodology-references.bib`
+
+## Current Clarification / research-status boundaries
+
+### Human-decided
+
+- HARC-D023 / D024: humans as bearers of responsibility, Framework responsibility, title, and responsibility wording;
+- HARC-D025: framework dependency repair and unresolved-item approval semantics;
+- AHICP-D030: one-paper direction, project-memory-centered core contributions, and inclusion of the evaluation framework.
+
+### Still requiring later review or research
+
+- `semantic version control`: remains an explanatory / provisional label;
+- `generation–verification asymmetry`: remains an explanatory / provisional label;
+- final theoretical positioning of extended / distributed cognition;
+- specific benchmark implementations / samples / statistical designs;
+- any AHICP effectiveness claim;
+- target venue / disciplinary positioning;
+- venue-specific form / AI / authorship requirements.
 
 ## Synchronization state
 
-- Founder commitments -> Article Content Core: `SYNC — HARC-D023 + HARC-D024 PROMOTED`
-- Article Content Core -> Working Framework: `SYNC / REVIEW READY — HARC-D025 DEPENDENCY REPAIR APPLIED`
-- Working Framework -> current draft: `PARTIALLY SYNC — responsibility model synchronized; structural rewrite deferred pending human Framework Approval`
-- Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17; further venue-specific verification required before submission`
-- Working Memory / Clarification Gate: `CLEARED FOR FRAMEWORK REVIEW — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`
-- Framework Approval: `NOT COMPLETED — overall human review pending`
+- Human decision -> Decision Log: `SYNC — AHICP-D030 RECORDED`
+- Decision Log -> Article Content Core: `SYNC — C17–C22 ADDED`
+- Content Core -> Working Framework: `SYNC — PROJECT-MEMORY-CENTERED REWRITE`
+- Working Framework -> Chinese article: `STRUCTURALLY SYNCED / DERIVED-PROVISIONAL`
+- Chinese article -> English mirror: `SYNCED IN CURRENT WORK CYCLE`
+- External evidence -> related-work claims: `UPDATED 2026-09-20`
+- Proposed evaluation -> empirical results: `NO RESULTS CLAIMED`
+- Framework Approval: `NOT COMPLETED`
 - Final Artifact Approval: `NOT COMPLETED`
-- Chinese/English article pair: `BILINGUAL MIRROR REQUIRED`
 
 ## Framework Approval Gate
 
-### Resolved / promoted
+There is no longer a blocker caused by the older article structure.
 
-- `CLR-001` — central responsibility model;
-- `CLR-002` — Framework Responsibility Thesis;
-- `CLR-005` — status of `responsibility concentration`.
-
-`CLR-002 / CLR-005` were resolved and propagated through `HARC-D023`; `CLR-001` was further clarified by `HARC-D024` as humans remaining the bearers of responsibility. The current title was also human-approved through `HARC-D024`.
-
-### Current Framework Approval blocker
-
-There is no active blocking Clarification.
-
-The only remaining gate is:
-
-`WAITING-HUMAN: overall Framework Approval decision`
-
-### Current non-blocking Clarifications
-
-- `CLR-003` — `semantic version control`;
-- `CLR-004` — `generation–verification asymmetry`;
-- `CLR-006` — theoretical role of extended/distributed cognition;
-- `CLR-007` — empirical validation program;
-- `CLR-008` — disciplinary positioning;
-- `CLR-010` — target venue and form constraints (non-blocking for Framework Approval).
-
-`CLR-009` is a license blocker for formal release, not for the current methodology-framework review.
-
-## Current instruction to AI agents
-
-Do not treat the current Working Framework as human-approved.
-
-Do not create `MA-FW-001` or structurally rewrite the full article as if approval had occurred.
-
-The current primary human–AI discussion interface is:
+The next step is not another large autonomous AI expansion. It is human review of the revised:
 
 `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
-The next step is an explicit human `APPROVE / REVISE / REJECT` decision on that complete framework. Every substantive Chinese edit must be synchronized to the English mirror.
+and the structurally rewritten:
+
+`paper/METHODOLOGY_ARTICLE.zh-CN.md`
+
+followed by one of:
+
+- `APPROVE`
+- `REVISE`
+- `REJECT`
+
+Only a later overall `APPROVE` creates `MA-FW-001`. Until then, all article drafts remain `DERIVED-PROVISIONAL`.
