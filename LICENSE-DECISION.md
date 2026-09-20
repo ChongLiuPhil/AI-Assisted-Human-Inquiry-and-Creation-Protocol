@@ -1,35 +1,36 @@
-# Open Licensing Decision
+# Licensing Decision
 
 > **Language:** Chinese canonical: `LICENSE-DECISION.zh-CN.md`; this English file is the synchronized mirror.
 
-This repository is intended to become an openly reusable protocol project. Repository visibility alone, however, should not be treated as a substitute for an explicit license.
+## Decision
 
-## Current status
+The human project owner has explicitly selected a **noncommercial split-license model**.
 
-**License selection: pending explicit founder confirmation.**
+The project is intended to promote personal learning, education, research, public-benefit work, individual productivity, and improved inquiry practices without granting a general free right for third parties to commercially repackage or exploit the protected project materials.
 
-No AI agent should silently make an irreversible licensing decision on behalf of the human project founder.
+## Public licenses
 
-## Recommended option
+- **Software, scripts, machine-readable schemas, automation, executable configuration, and template code:** PolyForm Noncommercial License 1.0.0 (`PolyForm-Noncommercial-1.0.0`).
+- **Documentation, specifications, diagrams, educational materials, white-paper/methodology text, and other prose content:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (`CC-BY-NC-SA-4.0`).
 
-Because this repository contains both documentation/white-paper text and reusable templates, a practical dual-license model would be:
+The authoritative repository-level scope is recorded in `LICENSE.md`.
 
-- **Documentation, specification, and white paper:** Creative Commons Attribution 4.0 International (`CC BY 4.0`).
-- **Scripts, software, machine-readable schemas, and template code if/when added:** MIT License.
+## Commercial licensing
 
-This combination favors broad reuse while preserving attribution for the conceptual/documentation work.
+Commercial use is not granted as a general free permission. A separate commercial license may be offered for uses such as paid products, SaaS, commercial consulting or training, commercial publishing, paid redistribution, or other commercial exploitation of covered materials.
 
-## Simpler alternative
+See `COMMERCIAL-LICENSING.md`.
 
-Use a single permissive license such as Apache-2.0 or MIT for the entire repository. This is administratively simpler but less conventional for long-form documentation.
+## Rationale
 
-## Action required
+This model intentionally favors broad noncommercial learning and public-benefit reuse while preserving control over commercial exploitation. It is therefore better described as **source-available/noncommercial licensed**, not OSI Open Source.
 
-The human project founder should explicitly select the licensing model before the project is described as legally open source/open content rather than merely publicly visible.
+## Implementation status
 
-Once selected:
+This decision is implemented through:
 
-1. add the appropriate `LICENSE` / `LICENSES/` files;
-2. update README licensing text;
-3. add SPDX identifiers where useful;
-4. document how contributions are licensed in `CONTRIBUTING.md`.
+1. `LICENSE.md`;
+2. `COMMERCIAL-LICENSING.md`;
+3. synchronized licensing notices in the English and Chinese README files.
+
+Repository visibility alone must not be interpreted as broader permission than the applicable licenses grant.
