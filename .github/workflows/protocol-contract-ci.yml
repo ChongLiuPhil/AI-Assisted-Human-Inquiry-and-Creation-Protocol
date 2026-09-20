@@ -7,8 +7,11 @@ on:
       - "core/PROTOCOL_CORE*.md"
       - "core/DECISION_LOG*.md"
       - "AGENTS*.md"
-      - "templates/research-project/AGENTS*.md"
+      - "templates/research-project/**"
+      - "templates/template-manifest.yaml"
+      - "docs/TEMPLATE_ADOPTION_AND_UPGRADE*.md"
       - "tools/check_protocol_contract.py"
+      - "tools/check_template_manifest.py"
       - ".github/workflows/protocol-contract-ci.yml"
   push:
     branches: [main]
@@ -17,8 +20,11 @@ on:
       - "core/PROTOCOL_CORE*.md"
       - "core/DECISION_LOG*.md"
       - "AGENTS*.md"
-      - "templates/research-project/AGENTS*.md"
+      - "templates/research-project/**"
+      - "templates/template-manifest.yaml"
+      - "docs/TEMPLATE_ADOPTION_AND_UPGRADE*.md"
       - "tools/check_protocol_contract.py"
+      - "tools/check_template_manifest.py"
       - ".github/workflows/protocol-contract-ci.yml"
 
 permissions:
@@ -37,3 +43,5 @@ jobs:
           python-version: "3.12"
       - name: Validate AHICP protocol contract
         run: python tools/check_protocol_contract.py
+      - name: Validate installable template profiles
+        run: python tools/check_template_manifest.py
