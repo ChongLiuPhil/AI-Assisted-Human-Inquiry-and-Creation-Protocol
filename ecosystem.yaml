@@ -1,15 +1,34 @@
-schema_version: "1.0"
+schema_version: "1.1"
 current_component: ahicp
 ecosystem_entrypoint: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md
+agent_retrieval_contract: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md
+llms_entrypoint: https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/llms.txt
 homepage: https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/
 repository: https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol
+role: human-led AI-assisted inquiry and creation governance
 baseline:
+  default_profile: full-research-publication
   ahicp: full
   ppf: full-compatible-upstream
+  vault_interface: public-metadata-adapter
   continuous_web: required-for-published-projects
+  source_visibility: private-by-default-for-original-work
+  web_visibility: restricted-by-default-for-unpublished-work
   cloudflare_access: required-for-private-or-transitional-publications
+  reduced_profiles: explicit-human-selection-only
 components:
-  ppf: https://github.com/ChongLiuPhil/Personal-Publishing-Framework
-  vault_interface: https://github.com/ChongLiuPhil/Vault-interface
-  starter: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter
+  ahicp:
+    homepage: https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/
+    repository: https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol
+  ppf:
+    homepage: https://chongliuphil.github.io/Personal-Publishing-Framework/
+    repository: https://github.com/ChongLiuPhil/Personal-Publishing-Framework
+  vault_interface:
+    homepage: https://chongliuphil.github.io/Vault-interface/
+    repository: https://github.com/ChongLiuPhil/Vault-interface
+  starter:
+    homepage: https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/
+    repository: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter
 private_state_rule: fetch only after explicit human authorization
+public_links_grant_private_access: false
+cloudflare_guide: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CONTINUOUS_WEB_CLOUDFLARE.md
