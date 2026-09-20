@@ -1,4 +1,4 @@
-# AI 辅助人类探究与创作协议
+**公共项目入口：** [AHICP 主页](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/) · [PPF 主页](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [Vault Interface 主页](https://chongliuphil.github.io/Vault-interface/) · [Starter 主页](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)\n\n**体系与 Agent 入口：** [docs/ECOSYSTEM.zh-CN.md](docs/ECOSYSTEM.zh-CN.md) · [ecosystem.yaml](ecosystem.yaml) · [llms.txt](docs/llms.txt) · [统一 Agent 调取契约](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.zh-CN.md)\n\n# AI 辅助人类探究与创作协议
 
 [English](README.md) | [中文](README.zh-CN.md)
 
