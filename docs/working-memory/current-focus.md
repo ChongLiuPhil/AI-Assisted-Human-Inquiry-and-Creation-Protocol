@@ -7,62 +7,73 @@
 
 ## CURRENT_STAGE
 
-**The AHICP v0.3 semantic migration is complete; the later external-system authorization / human-handoff and scoped-authorization governance have also completed normative consolidation.**
+**The methodology article has completed a project-memory-centered structural upgrade under AHICP-D030 and is entering human review and framework-confirmation stage.**
 
-Migration authority: `AHICP-D026`.  
-Later authorization-governance authority: `AHICP-D027`, `AHICP-D028`, and `AHICP-D029`.
+Completed in this work cycle:
 
-Completed:
-- formal name and fixed subtitle;
-- human-led / AI-assisted / repository-grounded normative direction;
-- Protocol Core, Specification, AGENTS, and live protocol migration;
-- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` control plane;
-- zero-context onboarding migration;
-- research-project specialization template migration;
-- methodology article/evidence current protocol identity migration while preserving research-specific subject matter;
-- semantic parity of key bilingual normative files;
-- final post-migration repair audit;
-- provider-neutral machine-operable-first escalation, authorization / human handoff, and provider actual-state write-back;
-- scoped authorization lifecycle: `proposal != authorization != execution != verification != durable write-back`;
-- initial configuration of reusable authorization policies through AI proposal, human selection, and durable recording of the selected scope / provenance / escalation conditions;
-- independent post-merge consistency review and propagation repair after PR #3.
-
-The latest protocol repair closes:
-- weakening of the D028 durable authorization record during downstream propagation;
-- omission of `permission grants` from Specification §23.3;
-- Working Memory not reflecting D028/D029 and the PR #3 milestone;
-- Protocol Contract CI checking §23.5.1 only through file-wide markers rather than a section-local invariant.
+- recorded `AHICP-D030`: the existing methodology article remains one unified paper;
+- promoted Project Memory Architecture, Working Memory continuity, Agent/Model substitution, and Human Decision Persistence to core theoretical contributions;
+- added C17–C22 to the Article Content Core;
+- rebuilt the Working Argument Map as a 13-section project-memory-centered framework;
+- rewrote the Chinese methodology article;
+- synchronously rewrote the English mirror;
+- added evidence/references for Generative Agents, MemGPT, the Agent-memory survey, LongMemEval, MemBench, RealMem, and W3C PROV;
+- updated the evaluation program from its older AI-proposed status to an AHICP-D030-confirmed proposed evaluation framework that belongs in the paper;
+- explicitly preserved the boundary that no empirical effectiveness results are reported;
+- updated Framework Status so the repository no longer carries the obsolete instruction forbidding structural rewriting before overall approval.
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — Methodology article overall Framework Approval
+### WM-OBJ-004 — Human review of the project-memory-centered methodology article
 
-After protocol maintenance, the repository's principal unresolved work gates remain:
+Primary review objects:
 
-- methodology article Working Framework: `WAITING-HUMAN`
-- license: `WAITING-HUMAN`
-- target publication venue / form constraints: `WAITING-HUMAN`
+1. `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+2. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
 
-Current Chinese Working Framework:
+Current framework status:
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`WORKING-FRAMEWORK — REVISED UNDER AHICP-D030 / HUMAN REVIEW PENDING`
+
+Current article status:
+
+`DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`
 
 ## IMMEDIATE_NEXT_ACTION
 
-When the human is ready to continue the methodology article, make an overall Working Framework decision:
+After current machine work:
 
-- `APPROVE`
-- `REVISE`
-- `REJECT`
+1. run repository CI / consistency validation;
+2. open a PR while preserving the final merge gate;
+3. have the human review the revised project-memory-centered framework and paper;
+4. later make an explicit:
+   - `APPROVE`
+   - `REVISE`
+   - `REJECT`
+   decision.
 
-No Approved Framework snapshot is created before that decision.
+Do not create `MA-FW-001` before overall `APPROVE`.
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: methodology article overall Framework Approval`
+There is no blocker preventing completion of the current structural rewrite.
 
-This does not block the completed AHICP protocol migration or authorization-governance maintenance.
+The next governance gate is:
+
+`WAITING-HUMAN: review of revised methodology framework and article`
+
+Still separately unresolved:
+- license: `WAITING-HUMAN`
+- target publication venue / form constraints: `WAITING-HUMAN`
 
 ## HANDOFF
 
-A replacement AI Agent should use the AHICP control plane and treat the latest repository `main` revision as the sole project-state source. D027–D029 are current authorization-governance authority; legacy HARC live identifiers must not be reintroduced into current normative files.
+A replacement AI Agent should know:
+
+- AHICP-D030 authorized and the current cycle completed the structural article rewrite;
+- the old rule “do not structurally rewrite before Framework Approval” is stale and must not be restored;
+- the rewritten framework **has not received overall approval**;
+- the evaluation framework is human-confirmed for inclusion in the paper, but no empirical results exist;
+- Chinese is canonical and English is the synchronized mirror;
+- the next step is validation, PR, and human review rather than unbounded further expansion.
