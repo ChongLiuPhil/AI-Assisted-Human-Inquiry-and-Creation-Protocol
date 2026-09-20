@@ -262,11 +262,11 @@ Audit records:
 
 1. If you are new to the ecosystem, start with the canonical Chinese [Human Guide](docs/HUMAN_GUIDE.zh-CN.md) or its [English mirror](docs/HUMAN_GUIDE.md). This is the non-technical conceptual entrypoint to the full Inquiry Publishing Stack.
 2. Read the canonical Chinese [`paper/METHODOLOGY_ARTICLE.zh-CN.md`](paper/METHODOLOGY_ARTICLE.zh-CN.md) for the emerging scholarly argument.
-2. Read [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) first for current stage, objective, tasks, blockers, and next actions.
-3. Then read [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) to inspect the current Working Framework.
-4. Read the canonical Chinese [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md) for the normative workflow.
-5. Read [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) and [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md) for the current integration audit state.
-6. Use [`templates/research-project/`](templates/research-project/) to bootstrap a new project.
+3. Read [`docs/working-memory.zh-CN.md`](docs/working-memory.zh-CN.md) for current stage, objective, tasks, blockers, and next actions.
+4. Then read [`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`](paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md) to inspect the current Working Framework.
+5. Read the canonical Chinese [`protocol/SPECIFICATION.zh-CN.md`](protocol/SPECIFICATION.zh-CN.md) for the normative workflow.
+6. Read [`docs/THREE_CYCLE_REPAIR_AUDIT.md`](docs/THREE_CYCLE_REPAIR_AUDIT.md) and [`docs/FINAL_POST_REPAIR_AUDIT.md`](docs/FINAL_POST_REPAIR_AUDIT.md) for the current integration audit state.
+7. Use [`templates/research-project/`](templates/research-project/) to bootstrap a new project.
 
 ### For AI agents
 
