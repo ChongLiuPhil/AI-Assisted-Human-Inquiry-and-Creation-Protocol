@@ -2,6 +2,8 @@
 
 **Related public projects:** [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
 
+**Ecosystem and agent entrypoint:** [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) · [`ecosystem.yaml`](ecosystem.yaml) · [Starter unified guide](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md)
+
 # AI-Assisted Human Inquiry and Creation Protocol
 
 [English](README.md) | [中文](README.zh-CN.md)

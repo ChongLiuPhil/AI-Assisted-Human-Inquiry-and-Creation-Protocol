@@ -2,6 +2,8 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
+**体系与 Agent 入口：** [`docs/ECOSYSTEM.zh-CN.md`](docs/ECOSYSTEM.zh-CN.md) · [`ecosystem.yaml`](ecosystem.yaml) · [Starter 统一指南](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.zh-CN.md)
+
 **语言治理：中文是规范性基准（canonical source）；英文是同步镜像（synchronized mirror）。任何实质性修改都必须在同一工作轮次同步两种语言。冲突时以中文为准。**
 
 **AI-Assisted Human Inquiry and Creation Protocol（AHICP）** 是一个以 GitHub 为中心的协议，用于在人类主导下，借助 AI 持续进行探究、研究、推理、写作与创作。
