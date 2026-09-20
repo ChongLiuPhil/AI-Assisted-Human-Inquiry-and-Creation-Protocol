@@ -610,38 +610,41 @@ Machine/configuration entry
 
 ---
 
-## 15. 下一步去哪里
+## 15. 现在真正开始：把一段话发给 AI
 
-### 我只是想先理解
+到这里，你不需要再学习 GitHub、Starter、YAML、Cloudflare 或任何部署术语。
 
-继续浏览：
+真正开始只需要四步：
 
-- [AHICP 公共主页](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/)
+1. **复制下面的启动指令。**
+2. **打开你平常使用的 AI，新建一个聊天，把指令粘贴进去。**
+3. **在最后加一句你真正想做的事情。**例如：“我想长期研究城市交通，最后写成一本书。”
+4. **发送。**之后由 AI 自己进入机器入口、读取技术规范、建立或检查项目，并开始工程配置。
 
-### 我想建立第一个项目
+复制给 AI 的启动指令：
 
-进入：
+~~~text
+我要开始使用 AHICP / Inquiry Publishing Stack。
 
-- [Inquiry Publishing Project Starter](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
+请先读取并遵循机器入口：
+https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
 
-### 我想知道怎样发布作品
+你需要自行读取其中指向的 ecosystem、Agent Retrieval Contract 和必要的上游规范，然后按默认完整体系工作：完整 AHICP + 完整 PPF + Vault Interface，原创和未发布内容默认 private，未公开 Web 默认 restricted/authenticated。
 
-进入：
+请先确认你已经成功读取机器入口，再根据我接下来告诉你的项目目标开始建立或检查项目。
 
-- [Personal Publishing Framework](https://chongliuphil.github.io/Personal-Publishing-Framework/)
+能自动完成的技术配置、文件修改、验证、部署准备和状态写回请尽量自行完成；只有在必须由我进行关键判断、批准、登录/MFA、授权或直接输入秘密时才让我操作，并给我清楚的编号步骤、完成条件、验证和回滚。
 
-### 我想理解公共 metadata 和隐私边界
+不要要求我把密码、API token、私钥、恢复码或其他秘密粘贴到聊天。
+~~~
 
-进入：
+然后在同一条消息最后加一句：
 
-- [Vault Interface](https://chongliuphil.github.io/Vault-interface/)
+> **我想做的是：……**
 
-### 我是 AI Agent
+发送以后，正常情况下 AI 应先告诉你它已经读取机器入口，然后确认你的项目目标，并继续工程配置。
 
-读取：
-
-- [Starter ecosystem](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/ecosystem.yaml)
-- [Agent Retrieval Contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md)
+你不需要自己打开机器入口，也不需要自己阅读 GitHub 中的技术文件；那些是给 AI 和需要深入检查的人使用的。
 
 ---
 
@@ -659,3 +662,5 @@ Machine/configuration entry
 - 人对最终结果的责任。
 
 这就是 AHICP 以及整个 Inquiry Publishing Stack 想保护的东西。
+
+**理解以后，下一步不是继续研究工具，而是把上面的启动指令发给 AI，并告诉它你真正想做什么。**
