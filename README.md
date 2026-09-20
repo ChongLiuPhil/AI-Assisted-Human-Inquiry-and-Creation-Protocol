@@ -293,8 +293,13 @@ Working specification: **v0.3.0-draft**.
 
 ## Licensing
 
-The project is intended for open reuse. Exact licensing terms are recorded in `LICENSE-DECISION.md` and should be finalized explicitly rather than inferred from repository visibility.
+This repository uses a **noncommercial split-license model** intended to support personal learning, education, research, public-benefit work, and other noncommercial reuse.
 
+- Software, scripts, schemas, automation, machine-readable configuration, and executable templates: **PolyForm Noncommercial License 1.0.0**.
+- Prose documentation, specifications, diagrams, educational content, and methodological materials: **CC BY-NC-SA 4.0**.
+- Commercial use requires a separate commercial license.
+
+See [LICENSE.md](LICENSE.md) and [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md) for the authoritative repository-level licensing boundary.
 
 ## Composite Starter
 

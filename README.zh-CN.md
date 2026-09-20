@@ -293,8 +293,13 @@ AHICP 不是一个让 AI 成为“以人类署名作品的隐藏作者”的系�
 
 ## 许可
 
-项目目标是开放复用。具体许可条款记录在 `LICENSE-DECISION.zh-CN.md` 中，应通过明确决定最终确定，而不能根据仓库是否公开来推断。
+本仓库采用**非商业双重许可模式**，目的是支持个人学习、教育、研究、公益以及其他非商业复用，同时保留商业授权权利。
 
+- 软件、脚本、Schema、自动化、机器可读配置和可执行模板：**PolyForm Noncommercial License 1.0.0**；
+- 说明文档、规范、图示、教育材料与方法论内容：**CC BY-NC-SA 4.0**；
+- 商业使用需要另行取得商业许可。
+
+仓库级权威许可边界见 [LICENSE.md](LICENSE.md) 与 [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)。
 
 ## 与综合 Starter 的关系
 
