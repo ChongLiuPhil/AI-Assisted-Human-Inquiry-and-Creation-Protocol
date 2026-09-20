@@ -134,6 +134,95 @@ AI Agent 可以作为工具参与搜索、整理、分析辅助、起草、扩�
 
 这一原则通过人类对项目目的与方向的授权、Framework Approval 以及适用时的 Final Artifact Approval 共同落实。
 
+## C17. 论文作为一篇统一论文发展，并以 Project Memory Architecture 为核心理论贡献
+
+方法论文章不拆分为独立的“协议论文”和“记忆论文”。现有 article 应在同一篇论文中整合 AHICP 的协议设计、项目记忆架构、工作记忆、Agent 替换、人类决定持久化、framework approval 与可审计作者性。
+
+中心命题之一是：
+
+> **长期人机项目的持久记忆应属于项目，而不是属于某个具体模型。**
+
+这里的“属于项目”是工程与治理意义上的表述：关键项目状态应保存在人类可检查、可编辑、可版本控制、可迁移的外部状态中，而不是只能依赖模型内部或平台私有记忆。
+
+## C18. Working Memory 是连续性层，不是心理学 working memory 或模型隐藏状态
+
+论文必须明确说明 AHICP Working Memory 的概念边界。
+
+Working Memory 是对项目当前认识状态与任务状态的持久操作表示，用来回答“现在做到哪里、正在解决什么、下一步是什么、有哪些 blocker / clarification / pending human decision”。
+
+它是 cross-session / cross-Agent continuity layer，而不是：
+- 对人类心理工作记忆的模拟；
+- 模型隐藏状态；
+- chain-of-thought；
+- 全量长期档案。
+
+Current Focus + Task Plan 是默认续接状态；Work Log 服务于按需历史回顾。
+
+## C19. Human Decision Persistence 是 Project Memory 的一等组成部分
+
+论文必须把人类决定状态作为 first-class project memory 来讨论。
+
+至少应区分：
+- PROPOSED：AI 或其他来源提出但尚未被接受；
+- CONFIRMED / APPROVED：已经被人类明确确认；
+- REJECTED：已被人类拒绝，后续 Agent 不应因换模型而把它重新当成未决建议；
+- DEFERRED / OPEN：明确保留为以后处理；
+- AUTHORIZED：在明确 scope 内允许执行的行动或状态转换。
+
+Decision persistence 的作用不是禁止未来改变决定，而是要求未来变化保留来源、版本、理由与新的授权，不允许“换了 Agent 就失忆”。
+
+## C20. Agent / Model Substitution 是架构压力测试
+
+论文必须把 Agent / Model 替换能力作为 AHICP project-memory architecture 的重要评估标准。
+
+如果移除当前 Agent、当前聊天历史与平台私有记忆，一个新的合格 Agent 应能通过显式入口、Working Memory、长期记忆层、Decision Log、evidence 与 manifest 恢复：
+- 项目目的；
+- 当前问题与范围；
+- 已知证据与关键不确定性；
+- 已确认 / 已拒绝 / 待确认的决定；
+- 当前 framework / artifact 状态；
+- 当前任务、blocker 与 next action；
+- 隐私与发布授权边界。
+
+无法恢复时，应视为 persistence / onboarding defect，而不是要求人类重新讲一遍所有历史。
+
+## C21. Project Memory 应以多角色功能架构讨论，并包含记忆治理
+
+论文应从功能上讨论以下 project-memory roles：
+- normative memory；
+- epistemic / evidence memory；
+- decision memory；
+- working / operational memory；
+- handoff memory；
+- publication / authorization memory。
+
+这些角色可以映射到一个或多个实际文件，不要求“一种 memory = 一个文件”。
+
+论文还必须讨论 memory curation：项目不应保存一切，也不应把全部历史每次塞进模型上下文。需要处理：
+- active vs archived state；
+- current vs stale state；
+- conflicting memory；
+- selective retrieval；
+- summary / index；
+- promotion / write-back；
+- history growth / memory bloat；
+- privacy / disclosure boundary。
+
+## C22. 论文纳入明确的 proposed evaluation framework，但不得虚构结果
+
+论文应把 AHICP 作为可被经验检验的设计架构，并提出至少以下评估：
+- zero-context handoff / resumption test；
+- agent/model substitution test；
+- decision-persistence test；
+- semantic drift / framework fidelity test；
+- review-effort study；
+- stale/conflict handling test；
+- memory-curation / retrieval-efficiency test。
+
+这些评估目前属于研究设计与 future empirical work。除非真实实验已经执行并记录，不得写成 AHICP 已经被证明提高准确性、完整性、效率、research integrity 或减少审查负担。
+
+AHICP-D030 使“在论文中纳入上述评估框架”成为人类确认的文章方向；具体 benchmark、样本、统计方法和结论仍需后续研究设计与实际数据。
+
 ## 当前尚未解决的人类决定
 
 当前续接状态由 Working Memory Index、Current Focus 与 Task Plan 维护；高影响未决问题的 active state 位于 `docs/working-memory/task-plan.zh-CN.md`。Work Log 主要供人类回顾。
