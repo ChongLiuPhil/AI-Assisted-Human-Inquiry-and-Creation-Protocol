@@ -7,55 +7,61 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T015` — 方法论文章整体 Framework Approval：`WAITING-HUMAN`
+- `WM-T023` — project-memory-centered methodology paper validation + PR：`IN PROGRESS`
+- `WM-T015` — 重写后的 methodology Working Framework 整体审阅：`WAITING-HUMAN AFTER PR`
 - `WM-T013` — license 决定：`WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints：`WAITING-HUMAN`
 
-## 2. COMPLETED MIGRATION TASKS
+## 2. COMPLETED METHODOLOGY ARTICLE TASKS
+
+- `WM-T022` — AHICP-D030 methodology article project-memory structural rewrite：`COMPLETED`
+
+完成范围：
+
+- Decision Log：记录 AHICP-D030；
+- Content Core：新增 C17–C22；
+- Working Argument Map：重构为 Project Memory Architecture 主轴；
+- Chinese article：完成 13 节结构性重写；
+- English article：完成同步镜像重写；
+- Evidence layer：新增 Agent-memory / project-oriented memory / provenance 相关来源；
+- BibTeX：新增对应参考文献；
+- Framework Status：更新为 D030 后状态；
+- Evaluation：纳入论文但保持 proposed / no-results 边界；
+- bilingual semantic synchronization：本轮完成。
+
+## 3. COMPLETED PROTOCOL / MIGRATION TASKS
 
 - `WM-T016` — AHICP v0.3 repository-wide semantic migration：`COMPLETED`
 - `WM-T017` — AHICP project templates/control-plane migration：`COMPLETED`
 - `WM-T018` — structural validation + semantic bilingual parity + post-migration audit：`COMPLETED / PASS`
-
-验证摘要：
-- manifest path candidates：33 / missing 0；
-- 中文 Markdown 配对：62 / missing English mirror 0；
-- Protocol Core：24 / 24 sections；
-- Specification：25 / 25 sections；
-- AGENTS：17 / 17 sections；
-- Working Memory：11 / 11 sections；
-- Repository Context Interface：16 / 16 sections；
-- old live HARC control paths / full name / v0.2 identifiers：关键规范文件中 0；
-- final post-migration audit：PASS。
-
-## 3. COMPLETED PROTOCOL GOVERNANCE TASKS
-
 - `WM-T019` — AHICP-D027 external systems / tool discovery / authorization / human handoff governance：`COMPLETED`
-- `WM-T020` — AHICP-D028 / D029 scoped authorization、initial authorization-mode human choice 与 PR #3 normative consolidation：`COMPLETED`
-- `WM-T021` — PR #3 post-merge review：补齐 durable authorization record、§23.3 permission grants、Working Memory 与 section-local contract validation：`COMPLETED / CI-GATED`
-
-这些任务不改变 PPF publishing lifecycle，也不构成 downstream project 的静默 adoption bump。
+- `WM-T020` — AHICP-D028 / D029 scoped authorization consolidation：`COMPLETED`
+- `WM-T021` — PR #3 post-merge governance consistency repair：`COMPLETED / CI-GATED`
 
 ## 4. NEXT ACTIONS
 
-1. 等待人类对方法论文章整体 Working Framework 作 `APPROVE / REVISE / REJECT`；
-2. formal release 前决定 license；
-3. final submission/publication 前决定 target venue / external form constraints。
+1. 完成本轮 methodology article consistency audit；
+2. 运行最新 branch CI；
+3. 创建并收束 methodology article PR；
+4. 人类审阅新的 Working Framework 与正文；
+5. 如果后续整体 `APPROVE`，才创建 `MA-FW-001`；
+6. formal release 前决定 license；
+7. final submission/publication 前决定 target venue / form constraints，并重新核验时效性政策。
 
-## 5. MIGRATION / GOVERNANCE INVARIANTS
+## 5. ARTICLE INVARIANTS
 
-AHICP v0.3 后续开发必须保持：
+后续工作必须保持：
 
-- **AI-Assisted Human Inquiry and Creation Protocol**
-- *A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.*
-- 人类保持目的、方向、实质判断、批准与最终责任；
-- AI 是辅助系统；
-- `AI proposal != human authorization`；
-- `proposal != authorization != execution != verification != durable write-back`；
-- reusable authorization policy 必须由人类选择，并持久记录 scope / authorization provenance / escalation conditions；
-- human-reserved / non-delegable 边界不能由一般 pre-authorization 覆盖；
-- repository state outranks chat memory；
-- 历史 `HARC-D001`–`HARC-D025` 保持历史标识；
-- 新协议决定采用 AHICP 前缀；
-- AHICP 与 PPF 保持边界；
-- 中文 canonical / 英文 synchronized mirror。
+- one unified methodology article；
+- Project Memory Architecture 是核心理论贡献；
+- Working Memory = persistent continuity layer，不是心理学 working memory / hidden state / chain-of-thought；
+- Human Decision Persistence 是 first-class project memory；
+- Agent / Model substitution 是设计原则与 proposed stress test；
+- Agent memory != Project memory；
+- repository state outranks chat/model memory；
+- evidence / inference / proposal / human-confirmed decision 必须可区分；
+- memory curation / stale / conflict / selective retrieval 必须进入论证；
+- proposed evaluation != completed empirical result；
+- human responsibility / Framework Approval / Final Artifact Approval 边界保持；
+- Chinese canonical / English synchronized mirror；
+- `AHICP-D030 authorization != overall Framework Approval != Final Artifact Approval`.
