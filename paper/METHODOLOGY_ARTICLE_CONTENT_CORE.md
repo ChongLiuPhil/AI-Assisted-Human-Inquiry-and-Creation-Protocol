@@ -52,11 +52,11 @@ The methodology should explain that long-term research continuity should reside 
 
 ## C9. The protocol must be practically implementable and reusable
 
-The AHICP project is not intended as a purely abstract philosophical proposal. Its file hierarchy, update rules, approval states, and templates should be concrete enough to instantiate in future research projects. The exact empirical benchmarking program for evaluating AHICP is not yet a human-confirmed commitment.
+The AHICP project is not intended as a purely abstract philosophical proposal. Its file hierarchy, update rules, approval states, and templates should be concrete enough to instantiate in future research projects. The empirical research direction for evaluating AHICP is now human-confirmed through AHICP-D030, including handoff/resumption, Agent/Model substitution, decision persistence, semantic drift/framework fidelity, review effort, stale/conflict handling, and memory-curation/retrieval-efficiency. Specific benchmark implementations, samples, statistical designs, and effectiveness conclusions remain future research.
 
 ## C10. The article must not overstate unconfirmed AI proposals
 
-Terms and stronger claims such as `generation–verification asymmetry`, `semantic version control`, and a specific empirical test suite may be useful AI-generated formulations, but they remain provisional unless explicitly accepted by the human author.
+`generation–verification asymmetry` and `semantic version control` remain explanatory, provisional AI-formulated labels rather than established field-standard terms. AHICP-D030 explicitly accepts inclusion of an empirical evaluation framework in the paper, while specific benchmark implementations, metric details, and any effectiveness conclusions remain unconfirmed until actually studied.
 
 `responsibility concentration` has been explicitly rejected by the human as the current central term. Future drafts should use descriptive language such as human purpose and direction and the framework as a responsibility anchor, unless the human later adopts a new central term.
 
@@ -231,7 +231,7 @@ Current resume state is maintained through Working Memory Index, Current Focus, 
 
 ## Provenance correction
 
-A prior version treated an explicit empirical testing program (handoff tests, semantic-drift tests, framework-fidelity tests, review-effort tests, cross-model portability tests) as if it were already part of the human-originated article foundation. That was too strong. The human founder required AHICP to be practically implementable and reusable; the specific empirical test program was an AI-developed extension and remains provisional unless accepted.
+A prior version treated an explicit empirical testing program as if it were already part of the human-originated article foundation. That was too strong at the time; it was then an AI-developed extension. AHICP-D030 changes that status: the human founder has now explicitly accepted handoff/resumption, Agent/Model substitution, decision persistence, semantic drift/framework fidelity, review effort, stale/conflict handling, and memory-curation/retrieval-efficiency as a proposed evaluation framework within the same paper. This confirms that these questions should be studied; it does not create empirical results or pre-approve specific benchmark implementations, samples, statistical methods, or effectiveness conclusions.
 
 ## Status
 
