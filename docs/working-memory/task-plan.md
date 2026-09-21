@@ -51,7 +51,7 @@ Completed scope:
 Future work must preserve:
 
 - one unified methodology article;
-- Project Memory Architecture as a core theoretical contribution;
+- Project Memory Architecture remains a core contribution direction, but AHICP must not claim to originate project memory; current novelty is only the candidate synthesis of a governed, model-substitutable architecture;
 - Working Memory = persistent continuity layer, not psychological working memory / hidden state / chain-of-thought;
 - Human Decision Persistence as first-class Project memory;
 - Agent / Model substitution as a design principle and proposed stress test;
