@@ -1,6 +1,6 @@
 # 方法论文章 — Target Venue Review
 
-**状态：** `AI-RESEARCHED RECOMMENDATION — HUMAN SELECTION PENDING`  
+**状态：** `HUMAN-SELECTED — PRIMARY TARGET: ETHICS AND INFORMATION TECHNOLOGY`  
 **核验日期：** 2026-09-21  
 **当前英文稿长度：** 约 6,427 words（仓库当前 Markdown 粗略计数；最终投稿需按期刊定义重新计数）  
 **Framework 基线：** `MA-FW-001`
