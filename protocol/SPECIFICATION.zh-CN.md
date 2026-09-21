@@ -342,6 +342,8 @@ Framework 应说明：
 3. 更新 Framework Status；
 4. 把该快照作为已批准思想基线。
 
+当某个专用 PR 只实现已批准 Framework 及明确授权的直接同步/治理变更，且 latest-head CI 全绿、无 unresolved blocking review、无未授权 scope expansion、branch 与 base 同步并且 merge 不绕过 provider-side 必需保护时，Framework Approval MAY 同时构成该 PR 的 bounded auto-merge authorization。该授权不延伸到 publication/release、deployment、secret handling、Final Artifact Approval 或后来加入的无关实质变更。
+
 ---
 
 ## 10. Framework 忠实性与责任

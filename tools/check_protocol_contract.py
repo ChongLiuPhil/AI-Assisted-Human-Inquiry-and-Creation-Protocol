@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 
 PAIRS = [
     ("protocol/SPECIFICATION.zh-CN.md", "protocol/SPECIFICATION.md"),
+    ("protocol/FRAMEWORK_APPROVAL.zh-CN.md", "protocol/FRAMEWORK_APPROVAL.md"),
     ("core/PROTOCOL_CORE.zh-CN.md", "core/PROTOCOL_CORE.md"),
     ("AGENTS.zh-CN.md", "AGENTS.md"),
     ("templates/research-project/AGENTS.zh-CN.md", "templates/research-project/AGENTS.md"),
@@ -31,6 +33,7 @@ REQUIRED = {
         "### 23.5.1 首次配置时的人类授权方式选择",
         "bounded pre-authorization",
         "mixed policy",
+        "bounded auto-merge authorization",
     ],
     "protocol/SPECIFICATION.md": [
         "## 23. External Systems, Tool Discovery, Authorization, and Human Handoff",
@@ -47,6 +50,21 @@ REQUIRED = {
         "### 23.5.1 Human choice of authorization mode at initial configuration",
         "bounded pre-authorization",
         "mixed policy",
+        "bounded auto-merge authorization",
+    ],
+    "protocol/FRAMEWORK_APPROVAL.zh-CN.md": [
+        "### 3.5 Framework Approval 与 bounded auto-merge authorization",
+        "latest-head",
+        "unresolved blocking review",
+        "scope expansion",
+        "Final Artifact Approval",
+    ],
+    "protocol/FRAMEWORK_APPROVAL.md": [
+        "### 3.5 Framework Approval and bounded auto-merge authorization",
+        "latest-head",
+        "unresolved blocking review",
+        "scope expansion",
+        "Final Artifact Approval",
     ],
     "core/PROTOCOL_CORE.zh-CN.md": [
         "## P25.",
@@ -57,6 +75,7 @@ REQUIRED = {
         "non-delegable",
         "第一次配置",
         "mixed policy",
+        "bounded auto-merge authorization",
     ],
     "core/PROTOCOL_CORE.md": [
         "## P25.",
@@ -67,6 +86,7 @@ REQUIRED = {
         "non-delegable",
         "When first configuring",
         "mixed policy",
+        "bounded auto-merge authorization",
     ],
     "AGENTS.zh-CN.md": [
         "capability probe",
@@ -76,6 +96,7 @@ REQUIRED = {
         "durable write-back",
         "第一次配置",
         "mixed policy",
+        "bounded auto-merge authorization",
     ],
     "AGENTS.md": [
         "capability probe",
@@ -85,6 +106,7 @@ REQUIRED = {
         "durable write-back",
         "initial configuration",
         "mixed policy",
+        "bounded auto-merge authorization",
     ],
     "templates/research-project/AGENTS.zh-CN.md": [
         "capability probe",
@@ -93,6 +115,7 @@ REQUIRED = {
         "non-delegable",
         "第一次配置",
         "mixed policy",
+        "bounded auto-merge authorization",
     ],
     "templates/research-project/AGENTS.md": [
         "capability probe",
@@ -101,13 +124,14 @@ REQUIRED = {
         "non-delegable",
         "initial configuration",
         "mixed policy",
+        "bounded auto-merge authorization",
     ],
-    "core/DECISION_LOG.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "CI green"],
-    "core/DECISION_LOG.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "green CI"],
-    "docs/working-memory/current-focus.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "2026-09-20"],
-    "docs/working-memory/current-focus.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "2026-09-20"],
-    "docs/working-memory/task-plan.zh-CN.md": ["WM-T019", "WM-T020", "WM-T021", "COMPLETED / CI-GATED"],
-    "docs/working-memory/task-plan.md": ["WM-T019", "WM-T020", "WM-T021", "COMPLETED / CI-GATED"],
+    "core/DECISION_LOG.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "AHICP-D032", "per-action authorization", "bounded pre-authorization", "bounded auto-merge authorization", "Ethics and Information Technology", "CI green"],
+    "core/DECISION_LOG.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "AHICP-D032", "per-action authorization", "bounded pre-authorization", "bounded auto-merge authorization", "Ethics and Information Technology", "green CI"],
+    "docs/working-memory/current-focus.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "AHICP-D032", "Ethics and Information Technology", "bounded auto-merge authorization"],
+    "docs/working-memory/current-focus.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "AHICP-D032", "Ethics and Information Technology", "bounded auto-merge authorization"],
+    "docs/working-memory/task-plan.zh-CN.md": ["WM-T019", "WM-T020", "WM-T021", "WM-T027", "AHICP-D032", "COMPLETED / CI-GATED"],
+    "docs/working-memory/task-plan.md": ["WM-T019", "WM-T020", "WM-T021", "WM-T027", "AHICP-D032", "COMPLETED / CI-GATED"],
     "docs/working-memory/work-log.zh-CN.md": ["# AHICP Working Memory — Work Log", "AHICP-D029", "section-local"],
     "docs/working-memory/work-log.md": ["# AHICP Working Memory — Work Log", "AHICP-D029", "section-local"],
 }
@@ -144,6 +168,14 @@ for path, markers in REQUIRED.items():
     for marker in markers:
         if marker.casefold() not in folded:
             fail(f"{path} is missing contract marker: {marker}")
+
+for path, pattern in (
+    ("docs/working-memory/current-focus.zh-CN.md", r"\*\*最后更新：\*\*\s+\d{4}-\d{2}-\d{2}"),
+    ("docs/working-memory/current-focus.md", r"\*\*Last updated:\*\*\s+\d{4}-\d{2}-\d{2}"),
+):
+    body = (ROOT / path).read_text(encoding="utf-8")
+    if not re.search(pattern, body):
+        fail(f"{path} is missing a valid last-updated date in YYYY-MM-DD format")
 
 require_section(
     "protocol/SPECIFICATION.zh-CN.md",

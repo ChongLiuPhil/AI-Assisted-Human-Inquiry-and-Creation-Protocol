@@ -6,55 +6,69 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T015` — methodology article overall Framework Approval: `WAITING-HUMAN`
-- `WM-T013` — license decision: `WAITING-HUMAN`
-- `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
+- `WM-T013` — publication route / license decision: `DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
+- `WM-T014` — target publication venue: `COMPLETED — Ethics and Information Technology / AHICP-D032`
+- `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
+- `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI: `COMPLETED / PR #29 MERGED — a789bbd3`
+- `WM-T030` — EIT citation / publication-status audit: `COMPLETED / 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
+- `WM-T031` — EIT DOCX build + visual QA: `COMPLETED / TRACEABLE + MASKED 20-PAGE QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
+- `WM-T033` — EIT masked reviewer derivative + blinding review: `IN PROGRESS / TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- `WM-T034` — citation ↔ reference-list consistency validator: `COMPLETED / 18-of-18 + UNMAPPED-YEAR GUARD / EIT CI PASS`
+- `WM-T032` — PR #30 post-merge verification + state write-back: `COMPLETED`
+- `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
 
-## 2. COMPLETED MIGRATION TASKS
+## 2. COMPLETED METHODOLOGY ARTICLE TASKS
+
+- `WM-T015` — overall methodology Working Framework review: `COMPLETED — MA-FW-001 APPROVED`
+- `WM-T022` — AHICP-D030 project-memory structural rewrite: `COMPLETED`
+- `WM-T023` — methodology paper validation + PR #26: `COMPLETED / MERGED — af3e7927`
+- `WM-T024` — scholarly novelty / prior-art positioning audit: `COMPLETED / EVIDENCE-CONSTRAINED`
+- `WM-T025` — T1–T13 scholarly review + MA-FW-001 Framework Approval: `COMPLETED / AHICP-D031`
+- `WM-T028` — PR #26 post-merge verification + durable-state write-back: `COMPLETED`
+
+Completed scope:
+- Decision Log: AHICP-D030 / D031 / D032 / D033;
+- Content Core: C17–C22;
+- Working Argument Map: aligned with `MA-FW-001`;
+- Approved Framework: `paper/frameworks/MA-FW-001.zh-CN.md` + English mirror;
+- Review Memo: scholarly review completed;
+- Chinese / English article: derived from `MA-FW-001`;
+- Evidence / BibTeX: Agent memory + prior Project Memory + decision provenance;
+- Evaluation: proposed / no-results;
+- bilingual synchronization: completed.
+
+## 3. COMPLETED PROTOCOL / MIGRATION TASKS
 
 - `WM-T016` — AHICP v0.3 repository-wide semantic migration: `COMPLETED`
-- `WM-T017` — AHICP project templates/control-plane migration: `COMPLETED`
-- `WM-T018` — structural validation + semantic bilingual parity + post-migration audit: `COMPLETED / PASS`
-
-Validation summary:
-- manifest path candidates: 33 / missing 0;
-- Chinese Markdown pairs: 62 / missing English mirror 0;
-- Protocol Core: 24 / 24 sections;
-- Specification: 25 / 25 sections;
-- AGENTS: 17 / 17 sections;
-- Working Memory: 11 / 11 sections;
-- Repository Context Interface: 16 / 16 sections;
-- old live HARC control paths / full name / v0.2 identifiers: 0 across key normative files;
-- final post-migration audit: PASS.
-
-## 3. COMPLETED PROTOCOL GOVERNANCE TASKS
-
-- `WM-T019` — AHICP-D027 external systems / tool discovery / authorization / human handoff governance: `COMPLETED`
-- `WM-T020` — AHICP-D028 / D029 scoped authorization, initial authorization-mode human choice, and PR #3 normative consolidation: `COMPLETED`
-- `WM-T021` — PR #3 post-merge review: restore the durable authorization record, §23.3 permission grants, Working Memory synchronization, and section-local contract validation: `COMPLETED / CI-GATED`
-
-These tasks do not change the PPF publishing lifecycle and do not constitute a silent downstream adoption bump.
+- `WM-T017` — project templates/control-plane migration: `COMPLETED`
+- `WM-T018` — structural validation + bilingual parity: `COMPLETED / PASS`
+- `WM-T019` — AHICP-D027 external systems / authorization / handoff: `COMPLETED`
+- `WM-T020` — AHICP-D028 / D029 scoped authorization consolidation: `COMPLETED`
+- `WM-T021` — PR #3 governance consistency repair: `COMPLETED / CI-GATED`
 
 ## 4. NEXT ACTIONS
 
-1. await the human's overall `APPROVE / REVISE / REJECT` decision on the methodology Working Framework;
-2. decide the license before formal release;
-3. decide target venue / external form constraints before final submission/publication.
+1. obtain human/editorial confirmation of the masked reviewer route and confirm the anonymization path for reviewer-visible supplementary / repository material;
+2. obtain human Final Artifact Approval;
+3. have the human author complete truthful submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID metadata and confirm no simultaneous submission plus all required author approvals;
+4. immediately before submission, recheck the EIT live submission interface; dynamic EIT / SNAPP / ICMJE / Nature policy pages were rechecked on 2026-09-22 and still require a final at-submission recheck;
+5. execute submission / publication / release only under separate explicit authorization; if the article is accepted, the human then chooses subscription or open access and, for OA, the applicable licence.
 
-## 5. MIGRATION / GOVERNANCE INVARIANTS
+## 5. ARTICLE INVARIANTS
 
-Future AHICP v0.3 development must preserve:
-
-- **AI-Assisted Human Inquiry and Creation Protocol**
-- *A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.*
-- humans retain purpose, direction, substantive judgment, approval, and ultimate responsibility;
-- AI remains assistive;
-- `AI proposal != human authorization`;
-- `proposal != authorization != execution != verification != durable write-back`;
-- reusable authorization policies require human selection and durable recording of scope / authorization provenance / escalation conditions;
-- general pre-authorization cannot override human-reserved / non-delegable boundaries;
-- repository state outranks chat memory;
-- historical `HARC-D001`–`HARC-D025` remain historical identifiers;
-- new protocol decisions use the AHICP prefix;
-- AHICP and PPF retain their boundary;
-- Chinese canonical / English synchronized mirror.
+Future work must preserve:
+- one unified methodology article;
+- `MA-FW-001` as the current approved Framework baseline;
+- AHICP does not claim to originate project memory;
+- novelty remains the candidate synthesis of a governed, model-substitutable Project Memory Architecture;
+- Working Memory != psychological working memory / hidden state / chain-of-thought;
+- Human Decision Persistence is a governance mechanism;
+- Agent / Model substitution = design goal + proposed stress test;
+- T9 = AHICP normative governance;
+- T10 = structured human-review gate / responsibility anchor;
+- Agent memory != Project Memory;
+- repository authoritative state outranks chat/model memory for AHICP project governance;
+- proposed evaluation != completed empirical result;
+- Framework Approval != Final Artifact Approval;
+- Chinese canonical / English synchronized mirror;
+- `AHICP-D032 bounded Framework merge authorization != Final Artifact Approval != submission/publication/release authorization`.

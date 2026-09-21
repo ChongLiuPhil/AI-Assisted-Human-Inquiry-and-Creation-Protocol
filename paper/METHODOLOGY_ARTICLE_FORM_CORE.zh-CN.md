@@ -19,7 +19,7 @@
 
 *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
-英文翻译措辞随中文题目同步维护；本决定不表示完整 Working Framework 已获得 Framework Approval。
+英文翻译措辞随中文题目同步维护。`MA-FW-001` 已依据 AHICP-D031 获得整体 Framework Approval；题目继续作为该已批准 Framework 的当前派生标题。
 
 ## 语言
 
@@ -50,7 +50,7 @@ AHICP 项目现已明确要求中英双语维护：
 - 批准与问责机制；
 - 局限与经验测试议程。
 
-详细章节顺序仍由尚未批准的 Working Framework 管理。
+详细章节顺序由已批准的 `MA-FW-001` 与当前对齐的 Argument Map 管理；venue-specific submission derivative 不得实质改变该结构，除非重新进入 Framework review。
 
 ## 字体与版式
 
@@ -64,20 +64,33 @@ AHICP 项目现已明确要求中英双语维护：
 
 ## 引用 / 参考文献呈现
 
-引用样式：`UNRESOLVED`，等待目标发布渠道确定。
+引用样式：`EXTERNAL-CONSTRAINT — ETHICS AND INFORMATION TECHNOLOGY / AHICP-D033`。
 
-当前 Markdown 作者—年份写法与 `paper/methodology-references.bib` 是工作基础设施，不是最终作者形式决定。
+投稿派生稿采用 author–year citation，并在最终 submission package 中按期刊当前要求核验 reference list：仅保留正文实际引用的 published / accepted works，按第一作者姓氏字母排序，DOI 可用时使用完整 DOI link。项目内部 `paper/methodology-references.bib` 继续作为工作基础设施。
 
 ## 目标发布渠道约束
 
-`UNRESOLVED — tracked as CLR-010 in docs/working-memory/task-plan.zh-CN.md`。
+`SELECTED — ETHICS AND INFORMATION TECHNOLOGY / AHICP-D032`。
 
-可能的学科定位包括哲学技术、研究方法论、学术传播，或跨学科 AI / research-governance；仍待人类决定。
+当前 disciplinary positioning：以 **information-technology governance / human responsibility / governed project-memory architecture** 为主要外部定位，同时保持 methodology / architecture paper 属性。
 
 ## 外部约束
 
-尚未采用。
+依据 AHICP-D033，采用 `Ethics and Information Technology` 当前官方 submission constraints 作为本次投稿派生约束：
+
+- double-anonymous peer review；
+- manuscript content 约 5,000–8,000 words，title / abstract / references 不计入 content word count；
+- abstract 150–250 words；
+- 4–6 keywords；
+- blinded manuscript 与 blinded associated files 移除作者姓名、affiliation、contact information 与其他直接识别信息；
+- acknowledgments、funding、author information 等放在 submission-system fields / title-page metadata，不进入 blinded manuscript；
+- substantive LLM use 必须在 Methods 或适当替代位置透明披露；本项目的 generative drafting / restructuring 等使用不得误写为单纯 copy editing；
+- original research 需要 Data Availability Statement；本稿当前不报告 empirical dataset / completed experiment，应据实说明；
+- submission manuscript 以 Word/docx 为主要格式；仓库 Markdown submission derivative 是生成最终 docx 的上游；
+- displayed headings 不超过三级；
+- 直接 repository URL、内部 Decision IDs、Framework status / development metadata 不进入 blinded manuscript；
+- `AHICP` 名称本身可能造成 search-based deanonymization，作为 submission blocker/risk 持续跟踪，正式提交前决定 masked-material / editorial clarification 路线。
 
 ## 状态
 
-成果类型与中英双语治理规则已经确定；详细出版形式仍未解决。
+成果类型、中英双语治理、primary target venue 与当前 venue-specific 外部约束已经确定。`Final Artifact Approval`、license、最终 author/title-page metadata、anonymization-risk 处置和真实 submission authorization 仍未完成。

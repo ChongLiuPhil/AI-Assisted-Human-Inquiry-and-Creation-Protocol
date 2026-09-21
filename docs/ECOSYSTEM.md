@@ -1,21 +1,23 @@
 # AHICP in the Inquiry Publishing Stack
 
-AHICP is the human-led inquiry and creation governance component. It is intentionally independent from publishing infrastructure, metadata interfaces, and any private project control plane.
+AHICP defines how a long-running inquiry or creative project keeps questions, evidence, decisions, project memory, and AI collaboration clear. It remains independent from publishing infrastructure, public metadata interfaces, and private deployment state.
 
-## Two first entrypoints
+## Understanding the stack vs configuring a project
 
-The ecosystem deliberately has two different first entrypoints:
+The stack separates understanding the method from configuring a project:
 
-- **Human conceptual entry — AHICP:** the [Human Guide](HUMAN_GUIDE.md) and AHICP public homepage explain why the system exists, how it helps ordinary users, the habits it supports, and how the four components relate.
-- **Machine/configuration entry — Starter:** the Starter ecosystem and Agent Retrieval Contract govern project composition, reconstruction, adoption, upgrade, deployment, and cross-component agent behavior.
+- **Understand the stack through AHICP:** the [complete guide](HUMAN_GUIDE.md) and public homepage explain what the system is for, how project memory works, and how the four components relate.
+- **Configure through Starter:** the Starter ecosystem and Agent Retrieval Contract govern project composition, reconstruction, adoption, upgrades, deployment, and cross-component agent behavior.
 
-This separation keeps the human explanation simple without weakening the machine contract. AHICP remains the human-method center; Starter remains the composition/configuration center.
+This separation keeps the explanation readable while preserving a precise machine contract. AHICP owns the inquiry and collaboration method; Starter owns composition and configuration mechanics.
 
-### Delivery-provider independence
+### The public website can move without changing the role
 
-The current Human Entry is delivered through GitHub Pages. That URL is a delivery location, not the conceptual identity of the Human Entry. The canonical content remains the repository-tracked bilingual Human Guide. The public site may later move to Cloudflare or another provider without changing the human-entry role or the machine handoff contract.
+The current public introduction is still delivered through GitHub Pages. Cloudflare Pages is now the preferred delivery target, while GitHub remains the canonical source/version-control provider. The current URL remains authoritative until the Cloudflare deployment, target domain, machine handoff, and cross-project links have been verified.
 
-The current stable Machine Entry landing is:
+The URL is a delivery location, not the identity of the method. Follow the [coordinated Cloudflare public-delivery migration](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md); do not replace the Human Entry URL merely because a Cloudflare staging project exists.
+
+The current stable machine entry is:
 https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
 
 For a complete project configuration, follow the [Starter ecosystem entrypoint](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md) and read the PPF publishing layer:

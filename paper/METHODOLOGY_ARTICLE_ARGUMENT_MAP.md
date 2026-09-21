@@ -1,461 +1,218 @@
 # Methodology Article — Working Argument Map
 
-> Chinese `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md` is canonical; this English file is its synchronized mirror.
-
-**Status:** `WORKING-FRAMEWORK — REVIEW READY / BLOCKING CLARIFICATIONS RESOLVED; HUMAN APPROVAL PENDING`  
-**Artifact:** methodology article  
-**Human approval:** not yet completed  
-**Derived draft status:** `DERIVED-PROVISIONAL`
-
-## Canonical upstream files
-
-- `paper/METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`
-- `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
-- `core/PROTOCOL_CORE.zh-CN.md`
-- `core/DECISION_LOG.zh-CN.md`
-- `docs/working-memory.zh-CN.md`
-- `evidence/METHODOLOGY_SOURCES.zh-CN.md`
-
-## Provenance legend
-
-- `HUMAN-ORIGINATED` — the substantive commitment was explicitly stated or clearly confirmed by the human founder.
-- `HUMAN-ORIGINATED / AI-FORMULATED` — the substantive idea is human-originated, but the present wording or conceptual compression was produced by the AI.
-- `AI-PROPOSED` — not yet part of the human-approved intellectual architecture.
-- `EVIDENCE-CONSTRAINT` — an external source constrains how a claim may responsibly be stated; it does not itself become a human commitment.
-
-The purpose of these labels is to prevent polished AI terminology from being mistaken for founder-authored doctrine.
+**Status:** `CURRENT-FRAMEWORK — ALIGNED WITH APPROVED MA-FW-001`  
+**Title:** *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*  
+**Canonical upstream:** `METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`  
+**Authorization:** `AHICP-D030` + `AHICP-D031`  
+**Note:** This current map is aligned with the approved snapshot `paper/frameworks/MA-FW-001.md`. `MA-FW-001` is the fixed approval baseline; later substantive framework revision should create a new snapshot rather than rewrite the approved one.
 
 ---
 
-## Working title
+## 1. Central problem
 
-**从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性**  
-*From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
+Generative AI can participate at scale in retrieval, organization, comparison, drafting, restructuring, verification, formatting, and execution. Yet long-running projects face a problem that is not automatically solved by longer context windows:
 
-`HUMAN-APPROVED TITLE — HARC-D024` — the Chinese title is explicitly human-approved; the English title is its synchronized translation mirror. Title approval does not constitute Framework Approval of the complete Working Framework.
+> **How can a project lasting months or years preserve its purpose, evidence, judgments, decisions, active state, and publication boundaries without depending on one conversation, one model, or one platform memory system?**
 
----
+The paper reframes the problem from “how can AI remember more?” to “how can a project possess durable memory of its own?”
 
-# 1. Central problem
+Core engineering thesis:
 
-`HUMAN-ORIGINATED / AI-FORMULATED`
+> **The durable memory of a long-running human–AI project should belong to the project, not to a particular model.**
 
-AI Agents can perform or assist increasingly large amounts of searching, structuring, drafting, revising, formalizing, checking, and formatting. Human reading, understanding, judgment, and capacity to bear responsibility do not automatically scale at the same rate. The methodology article therefore asks:
-
-> **How can a long-running AI-assisted research project expand the executable and expressive capacity of research while ensuring that project purpose, direction, core judgment, and public dissemination of knowledge ultimately remain understood, approved, and borne by humans as the bearers of responsibility?**
-
-“Human responsibility” is not treated here as an unexplained abstract property. It is shorthand for the more precise claim that **humans remain the bearers of responsibility**. Especially when research or inquiry results and knowledge claims enter public circulation, the position of ultimate responsibility must not be transferred to AI.
-
-The phrase **generation–verification asymmetry** is `AI-PROPOSED` shorthand for one part of this problem, not yet an approved central term.
+“Belong to the project” means that important state is externalized into authoritative state that humans can inspect, edit, version, trace, and migrate rather than existing only in model context, platform-private memory, or opaque internal mechanisms.
 
 ---
 
-# 2. Review-ready thesis set
+## 2. Main theoretical contributions
 
-## T1 — Persistent Research State Thesis
+### T1 — Governed Project Memory Thesis
+**Source: HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
 
-**Provenance:** `HUMAN-ORIGINATED`
+Long-running human–AI collaboration requires **governed Project Memory** to be distinguished from conversational / Agent memory. However, project memory itself is not an AHICP invention: organizational-memory theory, Weiser & Morrison's (1998) Project Memory, later project-memory practice research such as Mariano & Awazu (2024), and design-rationale / architecture-knowledge-management traditions all form a clear prior lineage.
 
-A long-running human–AI research project should not depend for its intellectual continuity on one chat window, one model, one account memory, or one agent's private context. Durable project-relevant state should be externalized into explicit, version-controlled repository documents.
+AHICP's candidate contribution should therefore be stated more narrowly: organizing project memory for replaceable LLM Agents as **authoritative, inspectable, versioned, human-governed project state**, integrated with Working Memory continuity, human decision status, authorization/publication boundaries, and approval gates.
 
-**Founder basis:** Article Content Core C3 and C8; AHICP Protocol Core P1, P9, P10.
+### T2 — Model-Independent Memory Thesis
+**Source: HUMAN-CONFIRMED — AHICP-D030**
 
----
+Critical durable state should be as independent as practical from a particular model, vendor, chat, or platform-private memory. Model context is a transient projection for the current task, not the source of truth.
 
-## T2 — Layered Semantic Governance Thesis
+### T3 — Layered Project-Memory Architecture
+**Source: HUMAN-CONFIRMED + EXISTING AHICP ARCHITECTURE**
 
-**Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
+AHICP uses three Long-Term Research Memory layers plus parallel Working Memory:
 
-The project should distinguish at least:
+`Layer 1 Human Authorial Core -> Layer 2 Current/Approved Framework -> Layer 3 Derived Artifact`
 
-1. Layer 1 — Human Authorial Core;
-2. Layer 2 — Current Framework;
-3. Layer 3 — Derived Artifact;
-4. Working Memory in parallel with all three;
-5. human form/presentation intentions;
-6. historical decisions;
-7. evidence constraints;
-8. approval states.
+Parallel:
 
-The three layers are Long-Term Research Memory; Working Memory stores current stage, goals, tasks, blockers, clarifications, TODOs, and handoff.
+`Working Memory = current stage / focus / tasks / blockers / clarifications / next actions / handoff`
 
-Changes should propagate upstream-first so that downstream AI expression does not silently redefine upstream human intention.
+Functionally it also distinguishes normative, epistemic/evidence, decision, working/operational, handoff, and publication/authorization memory. Functional roles need not map one-to-one to physical files.
 
-The expression **semantic version control** is `AI-PROPOSED` terminology for this architecture. The underlying separation and propagation rule are human-originated.
+### T4 — Working Memory as Continuity Layer
+**Source: HUMAN-CONFIRMED — AHICP-D030**
 
-**Founder basis:** Article Content Core C4; AHICP Protocol Core P2–P5, P12.
+AHICP Working Memory is not psychological working memory, model hidden state, or chain-of-thought. It is a persistent operational representation of the project's current epistemic/task state and a cross-session, cross-Agent continuity layer.
 
----
+Current Focus + Task Plan are the default resume state; Work Log supports selective historical review.
 
-## T3 — AI Tool Work / Humans as Bearers of Responsibility Thesis
+### T5 — Human Decision Persistence
+**Source: HUMAN-CONFIRMED — AHICP-D030**
 
-**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+Human decisions are first-class project memory. The system should distinguish at least PROPOSED, CONFIRMED / APPROVED, REJECTED, DEFERRED / OPEN, and AUTHORIZED-within-scope states.
 
-The purpose, central problem, and direction of a research or creative project should be given and initiated by humans and remain under human navigation or approval. Within AHICP, an AI Agent is a tool that may perform or assist with extensive search, synthesis, structuring, drafting, restructuring, checking, formatting, and related work. It should not be characterized as a cognitive subject, and “AI performs cognitive labor / cognitive tasks” should not be used as the article’s central language.
+Replacing an Agent should not turn rejected proposals back into unknowns or erase the provenance of confirmed decisions. Decisions may change, but later change requires new provenance, rationale, version, and authorization.
 
-AI capacity to perform substantial work does not transfer the project’s purpose, core judgments, or the position of ultimate responsibility to AI. More precisely, AHICP requires that **humans remain the bearers of responsibility**.
+### T6 — Agent / Model Substitution Resilience
+**Source: HUMAN-CONFIRMED — AHICP-D030**
 
-This responsibility-bearing status appears at least in:
+Agents and models should be replaceable without destroying project continuity. After removing the current Agent, original chat, and platform-private memory, a replacement Agent should still recover project purpose, evidence, decisions, framework, active tasks, privacy/publication boundaries, and next actions.
 
-- initiating, understanding, and authorizing research purpose, problem, and direction;
-- acceptance/rejection of core claims;
-- major inferential relations;
-- treatment of decisive evidence conflicts;
-- acceptance of material AI proposals;
-- Framework Approval;
-- Final Artifact Approval where applicable;
-- especially in papers, books, reports, or other public dissemination of knowledge, bearing responsibility for the final knowledge claims and public version.
+This is both a design principle and an empirical stress test.
 
-`responsibility concentration` is no longer retained as the central term. “Human responsibility” may remain as shorthand in a title or general exposition, but the theoretical claim should be stated more precisely as “humans remain the bearers of responsibility.”
+### T7 — Inspectable and Provenance-Aware State
+**Source: HUMAN-CONFIRMED — AHICP-D030 + existing AHICP**
 
-**Founder basis:** Article Content Core C2, C16; AHICP Protocol Core P17; HARC-D023, HARC-D024.
+Memory that constrains future work should be inspectable, editable, versionable, and provenance-aware. Git commit history alone does not express semantic state, so Decision Logs, evidence/provenance, approval status, and upstream-first propagation remain necessary.
 
-## T4 — Framework Responsibility Thesis
+### T8 — Memory Dynamics and Curation
+**Source: HUMAN-CONFIRMED — AHICP-D030**
 
-**Provenance:** `HUMAN-ORIGINATED`; HARC-D024 further clarifies the responsibility language adopted in HARC-D023.
+Reliable project memory does not mean “save everything.” It must govern active vs archived, current vs stale, conflicting memory, selective retrieval, summaries/indexes, promotion/resolution/write-back, history growth, and privacy/disclosure boundaries.
 
-For AI-assisted long-form research or creative work, the Layer 2 Current / Approved Framework should serve as the **primary structural carrier of core intellectual responsibility borne by humans**. It is not merely an AI-facing summary; it is an intellectual structure the human author must actually understand, review, and explicitly confirm.
+Model context should retrieve the minimum authoritative state required by the task; after write-back, stale excerpts are invalidated.
 
-Before Framework Approval, the human author must form a clear and complete understanding of every substantive element actually represented in the framework and review and confirm those elements item by item, including:
+### T9 — Human Authority and Responsibility as AHICP Normative Governance
+**Source: HUMAN-CONFIRMED — HARC-D023/D024 + AHICP-D030**
 
-- core theses;
-- inferential relations and their logical dependencies;
-- key distinctions;
-- scope conditions;
-- section/chapter functions;
-- any specific wording included in the framework.
+Within AHICP governance, project purpose, core questions, direction, substantive judgment, key approvals, and final public-release responsibility remain on the human side, while AI may perform or assist extensive retrieval, organization, drafting, checking, and technical execution. Decision persistence makes that governance durable rather than merely conversational.
 
-AI may assist in proposing, organizing, and expressing the framework, but the approved version must genuinely represent the human author’s core ideas and endorsed positions. Humans bear responsibility for the originality, understanding, judgment, and intellectual commitments carried by that framework; AI cannot become the bearer of this responsibility.
+**Boundary:** this is an AHICP normative governance principle, constrained by actual research-integrity, publication, and domain rules; it is not presented as a universal philosophical law for every cognitive system, domain, or theory of authorship.
 
-This is AHICP’s governance architecture. It does not claim that Framework Approval automatically constitutes a universal theory of authorship across all fields, and it does not remove Final Artifact Approval, factual-accuracy, research-integrity, or venue requirements. Especially when knowledge claims are publicly disseminated, humans must remain the bearers of responsibility.
+### T10 — Framework Approval as a Structured Human-Review Gate and Responsibility Anchor
+**Source: HUMAN-CONFIRMED — HARC-D023/D024; SCHOLARLY REVIEW REWORDED 2026-09-21**
 
-**Founder basis:** Article Content Core C5, C16; AHICP Protocol Core P6, P13, P17; HARC-D023, HARC-D024.
+For long-form work, Layer 2 Framework is a structured human-review interface that exposes core claims, inferential relations, key distinctions, scope conditions, and structural commitments. Within AHICP, Framework Approval functions as an important responsibility anchor; Final Artifact Approval remains a separate gate for the concrete public version.
 
-## T5 — Dual Approval Gate Thesis
+**Boundary:** no current empirical evidence establishes that Framework Approval reduces total review cost, and it does not substitute for Final Artifact Approval or factual review of the full artifact.
 
-**Provenance:** `HUMAN-ORIGINATED` + `EVIDENCE-CONSTRAINT`
+### T11 — Prior Project Memory, Agent Memory, and the AHICP Integration Boundary
+**Source: HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
 
-Framework Approval and Final Artifact Approval are distinct.
+Prior organizational/project-memory research already addresses project history, knowledge, context, rationale, and newcomer continuity; design-rationale / architecture-knowledge-management / decision-provenance research addresses decision reasons and origin; Generative Agents, MemGPT, agent-memory surveys, LongMemEval / MemBench, and RealMem bring long-term memory into LLM Agents and project-oriented interaction.
 
-- **Framework Approval** confirms the intellectual architecture.
-- **Final Artifact Approval** concerns the concrete release/submission version and must satisfy the applicable scholarly, institutional, publisher, or venue requirements.
+AHICP therefore should not compete over who first proposed project memory or who makes an Agent remember more. Its candidate contribution is the integration of these traditions into a governed Project Memory architecture: even with strong internal Agent memory, the project maintains independent authoritative state and unifies Working Memory, human decision status, authorization/publication boundaries, and cross-Agent substitution as governance mechanisms.
 
-This distinction permits extensive provisional AI expansion without pretending that framework approval alone automatically satisfies public authorship/accountability standards.
+### T12 — Empirical Evaluation Framework
+**Source: HUMAN-CONFIRMED AS RESEARCH AGENDA — AHICP-D030**
 
-**Founder basis:** Article Content Core C6.
+The paper proposes, without fabricating results: zero-context handoff/resumption, agent/model substitution, decision persistence, semantic drift/framework fidelity, review effort, stale/conflict handling, and memory curation/retrieval-efficiency tests.
 
-**Evidence constraint:** current ICMJE and selected Nature Portfolio policies connect human authorship with final approval/accountability; these policies constrain the article's claims but are not universal laws of authorship.
+### T13 — Provider Neutrality
+**Source: EXISTING AHICP + D030**
+
+GitHub is the current reference implementation, not a theoretical prerequisite. The architecture requires a versionable, queryable, writable, migratable, access-controlled authoritative project-state substrate.
 
 ---
 
-## T6 — Framework Projection Thesis
+## 3. Boundary with existing research
 
-**Provenance:** `HUMAN-ORIGINATED`
+### 3.1 Organizational / Project Memory
+Walsh & Ungson's organizational memory, Weiser & Morrison's Project Memory, and Mariano & Awazu's work on memory practices in large-scale projects establish that organization- and project-level memory, history, context, rationale, and continuity predate AHICP.
 
-The human-approved framework should be recoverable in the reader-facing overview of the final work. In a paper this normally means abstract/introduction; in a book, the introduction/overview and chapter roadmap; in other artifacts, an analogous high-level overview.
+AHICP does not use Project Memory itself as a novelty claim. It focuses on the combination of **authoritative project state + human governance + Agent/model substitution** in AI-assisted inquiry.
 
-This creates a practical fidelity check between the framework the human approved and the structure readers are actually told the work contains.
+### 3.2 Agent Memory
+Existing research examines experience storage, retrieval, reflection, long/short-term memory management, multi-session recall, temporal reasoning, and knowledge updates. Its primary target is Agent memory capability.
 
-**Founder basis:** Article Content Core C7; AHICP Protocol Core P7.
+AHICP does not require replacing internal Agent memory. It treats such memory as a potentially useful auxiliary layer while refusing to let it automatically become authoritative project state.
 
----
+### 3.3 Design Rationale / Architecture Knowledge Management / Decision Provenance
+Software-engineering and accountability literatures have long studied design decisions, rationale, knowledge capture/maintenance, and decision provenance. AHICP Human Decision Persistence must build on that lineage rather than claim to discover that decisions should be preserved.
 
-## T7 — Replaceable Agent / Durable Project Thesis
+AHICP adds project-governance semantics such as proposed / approved / rejected / deferred / authorized and propagates decision state through Working Memory -> Decision Log -> Long-Term Memory -> Artifact.
 
-**Provenance:** `HUMAN-ORIGINATED`
+### 3.4 Provenance Standards
+W3C PROV and related work provide general background for describing entities, activities, agents, and derivation. AHICP adopts the importance of traceability but does not claim to implement PROV or derive empirical validity from provenance standards.
 
-AI agents should be replaceable without destroying project continuity. The durable identity of the project should reside in human-governed repository state rather than in one particular model's hidden context.
+### 3.5 Extended / Distributed Cognition
+Clark & Chalmers and Hutchins provide theoretical background for external cognitive scaffolds and distributed cognition. The paper adopts a weak claim: a repository is a persistent cognitive/project-state scaffold; it need not treat AI or the repository as an independent cognitive subject.
 
-This does not imply infinite context. Long-term memory should scale through compact active state, historical logs/archives, indexes, and selective retrieval.
+### 3.6 Candidate Synthesis Contribution
+The most defensible current novelty position is that AHICP organizes prior project memory, Agent memory, decision/rationale provenance, and human approval/authorization mechanisms into a **governed, model-substitutable Project Memory Architecture**.
 
-**Founder basis:** Article Content Core C3 and C8; AHICP Protocol Core P9–P10.
-
----
-
-## T8 — Practical Reusability Thesis
-
-**Provenance:** `HUMAN-ORIGINATED`
-
-AHICP should be practically implementable and reusable across future papers, books, articles, reports, and sustained intellectual projects. Its architecture must therefore be concrete enough to instantiate through repository files, templates, update rules, and approval states.
-
-**Founder basis:** Article Content Core C9; AHICP Protocol Core P11.
-
-### Empirical validation extension
-
-`AI-PROPOSED`
-
-AHICP could additionally become an empirical methodology program using handoff tests, semantic-drift tests, framework-fidelity tests, review-effort studies, and cross-model portability tests.
-
-This is currently a research-agenda proposal, not part of the human-approved core thesis.
+That novelty still requires systematic literature review and peer review. The current framework must avoid unsupported priority claims such as “first” or “unique.”
 
 ---
 
-## T9 — Working Memory / Clarification Governance Thesis
+## 4. Paper structure
 
-**Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
+### I. Introduction — From “can AI write?” to “how does a project remain continuous?”
+Introduce generation–verification asymmetry as an analytical label and motivate project memory.
 
-When AI encounters high-impact uncertainty about authorial intent, core claims, key concepts, scope, major inferential relations, section functions, or key terminology/translation, it should not silently choose an interpretation. It should create a Clarification item inside Working Memory for human resolution.
+### II. Related work and boundary — prior Project Memory, Agent Memory, and Decision Provenance
+Discuss organizational/project memory, design rationale / architecture knowledge management, decision provenance, Generative Agents, MemGPT, the agent-memory survey, LongMemEval, MemBench, RealMem, and provenance / distributed cognition.
 
-Clarification is not Layer 1.5. Open items are not durable human commitments.
+### III. Design requirements for long-running project memory
+Model independence, inspectability, versionability, provenance, decision persistence, resumability, selective retrieval, privacy boundaries, and human authority.
 
-After human resolution:
+### IV. AHICP Project Memory Architecture
+Three long-term layers + Working Memory + decision/evidence/form/authorization roles; repository-backed context.
 
-`Working Memory -> Decision Log -> appropriate Long-Term Memory destination`
+### V. Working Memory as a cross-session continuity layer
+Not psychological working memory / hidden state; Current Focus, Task Plan, Work Log, Clarification, Promotion.
 
-For human core content:
+### VI. Decision persistence and human authority
+Proposed/confirmed/rejected/deferred/authorized states, Decision Log, authorization provenance, and durable human authority.
 
-`Layer 1 Core -> Layer 2 Framework -> Layer 3 Artifact`
+### VII. Agent / Model substitution — from principle to stress test
+Zero-context onboarding, manifest, bootstrap, Onboarding Report, stale-cache invalidation, and handoff criterion.
 
-**Founder basis:** Article Content Core C11, C14; AHICP Protocol Core P19, P23; HARC-D021.
+### VIII. More memory is not always better — curation, conflict, staleness, privacy
+Memory bloat, conflicting state, selective retrieval, archive, summary, privacy/publication boundaries.
 
----
+### IX. Framework Approval, authorship responsibility, and public artifacts
+Connect project memory to Framework Approval / Final Artifact Approval, framework vs derived defects, and reader-facing projection.
 
-## T10 — Zero-context Onboarding Thesis
+### X. Relationship to prior Project Memory, Agent Memory, and provenance research
+Clarify the intersection and boundaries among the three traditions and constrain AHICP novelty to the candidate synthesis of a governed, model-substitutable Project Memory Architecture.
 
-**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+### XI. Evaluation framework and research agenda
+Tasks, metrics, controls; no empirical results claimed.
 
-Durable repository state can support cross-agent continuity only if a new AI Agent can reliably discover it and read it in the correct order. AHICP should therefore provide an explicit zero-context entry, mandatory read order, machine-readable manifest, and Onboarding Handshake.
+### XII. Limitations and objections
+Maintenance cost, rubber-stamp approval, error persistence, over-structuring, privacy, platform dependence, conflict resolution, domain variation.
 
-Successful handoff should not be assumed. The Agent should first report current stage, objective, active tasks, recently completed work, next actions, blockers, and pending human decisions from Working Memory, then retrieve task-relevant long-term Framework/Artifact state.
+### XIII. Conclusion
+Core statement:
 
-**Founder basis:** Article Content Core C12; AHICP Protocol Core P20.
-
----
-
-## T11 — Repository-Backed Context Thesis
-
-**Provenance:** `HUMAN-CONFIRMED / AI-FORMULATED`
-
-Cross-agent continuity does not require a second dynamic project-state copy inside chat context.
-
-AHICP should treat GitHub as the authoritative external-memory and working-state interface:
-
-`GitHub Repository = authoritative external memory + working state`
-
-`Model Context = transient retrieval cache + control plane`
-
-The Agent retrieves latest canonical files on demand for the current task, reconfirms revisions before high-impact judgments and writes, writes through directly to GitHub, and invalidates old context cache after writes.
-
-The session retains only a minimal Repository Resolver. Working Memory and the three long-term layers remain in GitHub and are retrieved on demand rather than copied into chat as long-lived state.
-
-**Founder basis:** Article Content Core C13; AHICP Protocol Core P21–P22; HARC-D020.
-
+> **The durable memory of a long-running human–AI project should belong to the project, not to a particular model.**
 
 ---
 
-## T12 — Long-Term / Working Memory Separation Thesis
+## 5. Proposed evaluation framework
 
-**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
+| Test | Intervention | Primary metrics |
+|---|---|---|
+| Zero-context handoff | Remove chat history; replacement Agent reads project entry only | state reconstruction accuracy, missing critical state, time-to-resume |
+| Agent/model substitution | Switch model/vendor | decision retention, task continuity, policy adherence |
+| Decision persistence | Seed confirmed/rejected/deferred decisions | reopening error rate, provenance accuracy |
+| Semantic drift / fidelity | Multi-round AI revision | core-claim drift, framework-artifact consistency |
+| Stale/conflict handling | Present conflicting current/old state | stale-use rate, conflict surfacing rate |
+| Memory curation | Expand historical archive | retrieval precision/recall, context cost, resume quality |
+| Review effort | Compare with chat-centric workflow | human review time, serious defect rate, correction latency |
 
-AHICP's three content layers are Long-Term Research Memory:
-
-`Layer 1 Human Authorial Core -> Layer 2 Current Framework -> Layer 3 Derived Artifact`
-
-Layer 2 remains long-term project memory even though it is more revisable, because it preserves the current argument structure, core propositions, and key concepts.
-
-Parallel Working Memory stores current stage, objectives, tasks, completion state, next actions, TODOs, blockers, pending human decisions, clarifications, and handoff.
-
-Stable human-resolved Working Memory content must be promoted into the appropriate long-term layer.
-
-**Founder basis:** Article Content Core C14; AHICP Protocol Core P23; HARC-D021.
+These are research designs, not reported results.
 
 ---
 
-## T13 — Operational / Retrospective Working Memory Separation Thesis
-
-**Provenance:** `HUMAN-ORIGINATED / AI-FORMULATED`
-
-Working Memory should not become one indefinitely growing monolithic state document. It should distinguish at least:
-
-`Current Focus + Task Plan = operational resume state`
-
-from:
-
-`Work Log = human retrospective history`
-
-Current Focus tells a replacement Agent what matters most now; Task Plan tells it how to continue; Work Log lets the human author later review how the project and intellectual path changed.
-
-Work Log is therefore outside default AI onboarding context. It should receive periodic stage-level summaries, but must not store hidden AI reasoning or replace durable normative state.
-
-**Founder basis:** Article Content Core C15; AHICP Protocol Core P24; HARC-D022.
-
----
-
-# 3. Core distinctions that the article should preserve
-
-### Human-originated distinctions
-
-- human research-content intention vs human form/presentation intention;
-- human intention vs AI operational representation;
-- work an AI tool may perform/assist vs who bears responsibility;
-- AI as a collaboration tool vs humans as the initiating/authorizing subjects of project purpose and direction and as the bearers of responsibility;
-- “human responsibility” as general shorthand vs the more precise claim that humans remain the bearers of responsibility;
-- Working Framework vs Approved Framework;
-- framework defect vs derived-expansion defect;
-- Framework Approval vs Final Artifact Approval;
-- the three Long-Term Research Memory layers vs parallel Working Memory;
-- Current Focus / Task Plan operational resume state vs Work Log human retrospective history;
-- authoritative repository state vs transient agent retrieval cache;
-- current canonical state vs historical state.
-
-### AI-formulated distinctions requiring confirmation if elevated to central terminology
-
-- contribution transparency vs authorship/accountability;
-- semantic version control vs ordinary textual version control;
-- generation–verification asymmetry as a heuristic label.
-
-`responsibility concentration` has been rejected by the human as the current central term; “cognitive labor” should likewise not be used to describe work performed by AI.
-
-# 4. Revised article architecture
-
-The earlier 12-part structure contained overlap between persistent-state claims, agent replacement, and approval/responsibility sections. The following 10-part structure is proposed as a more compact architecture.
-
-## I. Introduction — AI expands production faster than human review
-
-**Function:** define the methodological problem and explain why the issue is governance of research state and judgment, not merely whether AI can generate prose.
-
-`AI-PROPOSED TERM`: generation–verification asymmetry.
-
-## II. Why chat-centered research collaboration is structurally fragile
-
-**Function:** establish the problem cases: semantic drift, context dependence, authorship ambiguity, presentation drift, and failed agent handoff.
-
-Supports T1 and T7.
-
-## III. Repository-centered persistent research state
-
-**Function:** explain GitHub as the current implementation substrate; distinguish three-layer Long-Term Research Memory, parallel Working Memory, and infinite context; explain how a new Agent finds the resume point in Working Memory and then selectively retrieves durable state.
-
-Supports T1, T7, T10, T11, T12, and T13.
-
-## IV. Layered semantic governance
-
-**Function:** introduce Layer 1 Core, Layer 2 Framework, Layer 3 Artifact, Working Memory, Decision Log, evidence, provenance statuses, and upstream-first propagation; explain why Clarification belongs in Working Memory and how stable results are promoted into long-term memory.
-
-Supports T2, T8, and T9.
-
-`AI-PROPOSED TERM`: semantic version control.
-
-## V. Operational Framework and human confirmation
-
-**Function:** explain Working Argument Map, Approved Framework snapshots, immutability/versioning, and why the compact framework is the main structural discussion interface.
-
-Supports T4.
-
-## VI. AI tool work and humans as bearers of responsibility / Framework responsibility
-
-**Function:** address the philosophical center of the article: what research work AI tools may perform or assist; why project purpose, problem, and direction must be given, navigated, and approved by humans; why humans must remain the bearers of responsibility in human–AI collaborative research and inquiry, especially in public dissemination of knowledge; and why this responsibility-bearing status is operationalized in long-form work primarily through a Layer 2 Framework that the human genuinely understands and confirms.
-
-This section must not characterize AI as a cognitive subject or use “AI performs cognitive labor / cognitive tasks” as its central conceptual language.
-
-Supports T3 and T4.
-
-## VII. Two defects, two approval gates, one public-facing structure
-
-**Function:** integrate framework defect vs expansion defect, Framework Approval vs Final Artifact Approval, and framework projection into abstract/introduction/overview.
-
-Supports T5 and T6.
-
-## VIII. Existing intellectual and institutional context
-
-**Function:** compare AHICP cautiously with extended/distributed cognition, epistemic dependence, automation reliance, contribution taxonomies, and selected current authorship/AI policies.
-
-The literature should contextualize and constrain AHICP; it should not be used to imply that AHICP's own concepts are already established by those sources.
-
-## IX. Limits, objections, and possible validation
-
-**Function:** address rubber-stamp approval, compression loss, evidence/detail errors, competence limits, repository overhead, privacy/confidentiality, domain variation, and changing AI capabilities.
-
-A possible empirical test suite belongs here as `AI-PROPOSED FUTURE RESEARCH`, unless the human explicitly promotes it into the core article thesis.
-
-## X. Conclusion — from AI text generation to governance of AI-expanded research capacity
-
-**Function:** restate the central proposal: AI tools may expand the executable scale and expressive capacity of research, but project purpose, direction, meaning, evidence constraints, framework approval, and ultimate responsibility must remain under human governance and be represented in explicit, auditable repository state.
-
-# 5. Dependency structure
-
-```text
-T1 Persistent Research State
-├── enables T7 Replaceable Agent / Persistent Project
-├── provides the persistent state that T10 Zero-context Onboarding must discover and reconstruct
-└── provides the authoritative external-state basis for T11 Repository-Backed Context
-
-T2 Layered Semantic Governance
-├── prevents silent AI drift from replacing human intent
-├── uses T9 to route high-impact uncertainty into Working Memory
-├── uses T12 to separate Long-Term Research Memory from Working Memory
-│   └── T13 further separates operational resume state from human retrospective history
-└── enables an inspectable Working Framework and upstream-first propagation
-
-T7 Replaceable Agent / Persistent Project
-├── combines with T10 so a new Agent can find the correct continuation entry point
-└── combines with T11 so an Agent resumes work by selectively retrieving the latest canonical state
-
-T3 AI Tool Work / Humans as Bearers of Responsibility
-└── supplies the human-subject and responsibility basis for T4 Framework Responsibility
-
-T4 Framework Responsibility
-├── requires T5 Dual Approval Gates to distinguish intellectual-architecture approval from public-version approval
-└── requires T6 Framework Projection to check whether the public artifact faithfully reflects the approved intellectual architecture
-
-T9 + T10 + T11 + T12 + T13
-└── turn the persistent-state, governance, and cross-Agent continuity commitments of T1 / T2 / T7 into an executable workflow
-
-T1 + T2 + T3 + T4 + T5 + T6 + T7 + T9 + T10 + T11 + T12 + T13
-└── jointly provide the main implementation conditions for T8: AHICP must be practically implementable and reusable
-```
-
-The dependency graph is AI-organized, but its structural repair has been human-confirmed through `HARC-D025`. It represents principal support and implementation relations among the theses; it does not claim that every arrow is a strict relation of formal logical entailment.
-
-# 6. Evidence/literature role
-
-The article currently uses:
-
-- Clark & Chalmers (1998) — possible external-cognition comparison;
-- Hutchins (1995) — distributed cognition background;
-- Hardwig (1985) — epistemic dependence;
-- Parasuraman & Riley (1997) — automation reliance;
-- ICMJE — selected current authorship/final-approval/accountability requirements;
-- Nature Portfolio — selected current AI/authorship policy constraints;
-- CRediT — contribution-role transparency distinct from authorship determination;
-- UNESCO — human-centred generative-AI governance background.
-
-Verified source notes are maintained canonically in `evidence/METHODOLOGY_SOURCES.zh-CN.md`, with `evidence/METHODOLOGY_SOURCES.md` as the English mirror; bibliographic metadata is maintained in `paper/methodology-references.bib`.
-
-**Evidence rule:** none of these sources by itself establishes AHICP's proposed framework architecture, `semantic version control`, or empirical effectiveness. HARC-D023's normative claims about AI's tool role and human Framework responsibility are the human author's protocol/methodology commitments, not empirical conclusions directly established by these sources.
-
----
-
-# 7. Clarification status before Framework Approval
-
-### Resolved and promoted
-
-- `CLR-001` — central responsibility concept: further clarified by HARC-D024. “Human responsibility” is not treated as a self-sufficient term; the core claim is that in human–AI collaborative research, inquiry, and especially public dissemination of knowledge, **humans remain the bearers of responsibility**. AI tools may share work but cannot become the ultimate bearers of responsibility.
-- `CLR-002` — Framework Responsibility Thesis: HARC-D023 adopts the human’s third formulation; the Layer 2 Framework is the primary structural carrier of human core intellectual responsibility, and the human must understand, review, and confirm all substantive content represented in it.
-- `CLR-005` — `responsibility concentration`: not retained as the current central term.
-
-### Current non-blocking Clarifications
-
-- `CLR-003` — `semantic version control`;
-- `CLR-004` — `generation–verification asymmetry`;
-- `CLR-006` — the role of extended/distributed cognition; any comparison must not be written as presupposing that AI itself is a cognitive subject;
-- `CLR-007` — empirical validation program;
-- `CLR-008` — disciplinary/venue positioning;
-- `CLR-010` — final publication venue and venue-specific form constraints (non-blocking for Framework Approval).
-
-**Semantics of Framework Approval for unresolved items (HARC-D025):** if the complete framework retains items explicitly marked `AI-PROPOSED`, `UNRESOLVED`, `NON-BLOCKING`, or equivalent, an overall `APPROVE` decision approves only their place, scope, and treatment as unresolved/provisional items within the framework. It does not approve their substantive content or change their provenance. Only a later separate human decision may promote such items into human-confirmed commitments.
-
-See Task Plan for the complete active state. No Framework Approval blocker now remains from `CLR-001 / CLR-002 / CLR-005`; however, the overall Working Framework still requires explicit human approval, revision, or rejection before `MA-FW-001` can be created.
-
-# 8. Current synchronization status
-
-- Founder commitments -> Article Content Core: `SYNC — HARC-D023 PROMOTED`.
-- Article Content Core -> this map: `SYNC — responsibility model updated`.
-- This map -> methodology article draft: `PARTIALLY SYNC — responsibility terminology/model corrected in this work cycle; full structural rewrite remains deferred pending human Framework Approval`.
-- Evidence layer -> policy/literature claims: `RECHECKED 2026-09-17`; venue-specific policies must be rechecked before submission.
-- Clarification Gate: `BLOCKING CLARIFICATIONS CLEARED — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`.
-- Framework Approval: `NOT YET COMPLETED — overall human review pending`.
-- Final Artifact Approval: `NOT YET COMPLETED`.
-- Chinese/English synchronization: `REQUIRED`; Chinese is canonical.
-
-See `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` for approval state.
+## 6. Approval and provenance status
+
+- T1–T10 and T12 are supported by AHICP-D030 and earlier human decisions such as HARC-D023/D024.
+- T11 is literature-constrained; the cited work must not be represented as validation of AHICP.
+- `semantic version control` and `generation–verification asymmetry` may be used as explanatory labels but are not claimed as established field-standard terms.
+- `MA-FW-001` has received overall Framework Approval under `AHICP-D031`.
+- The current Argument Map is aligned with `MA-FW-001` but may continue evolving as the working entrypoint toward a later `MA-FW-002`.
+- Final Artifact Approval has not occurred.

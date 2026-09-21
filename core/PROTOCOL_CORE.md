@@ -54,6 +54,8 @@ Once a version has been explicitly read and confirmed by the human author, it sh
 
 For long works, the Approved Framework is the primary structural anchor of human intellectual responsibility. Before approval, the human author must clearly understand, review item by item, and confirm every substantive element actually represented in the framework, including central claims, inferential relations, key distinctions, scope conditions, section/chapter roles, and any specific wording included in the framework. AI may assist in organizing and expressing the framework, but the approved version must genuinely represent the intellectual structure the human understands and endorses.
 
+When a dedicated PR contains only implementation of that Approved Framework plus explicitly authorized direct synchronization/governance changes, and its latest-head CI is green, no unresolved blocking review remains, no unauthorized scope expansion exists, the branch is synchronized with its target base, and provider-side protections are not bypassed, Framework Approval may also constitute **bounded auto-merge authorization** for that PR. This is scoped authorization to move the same approved work into the main branch; it does not authorize publication/release, deployment, secret handling, or unrelated substantive changes added later.
+
 ## P7. The approved framework should be visible in the final work's overview
 
 The core human-approved intellectual structure should be faithfully projected into the final artifact's reader-facing overview.

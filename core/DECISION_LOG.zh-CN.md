@@ -493,3 +493,138 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Specification §23.5、Protocol Core P26、AGENTS、research-project template、Decision Log、Protocol Contract CI。
 
 **状态：** 人类已明确批准；授权完成当前 PR #3 的规范收束，并在 CI green 后合并。
+
+---
+
+## 2026-09-20 — AHICP-D030
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, PROTOCOL, FORM
+
+**决定：**
+
+1. AHICP 的现有 methodology article 继续作为**一篇统一论文**发展，不拆分为“协议论文”和“记忆论文”两篇。
+2. 论文应进行实质性结构升级，把以下内容提升为核心理论贡献，而不是边缘说明：
+   - **Project Memory Architecture**：长期人机项目的持久记忆应属于项目，而不是依赖某个具体模型、Agent、聊天或平台记忆；
+   - **Working Memory as a continuity layer**：Working Memory 是项目当前认识/任务状态的持久操作表示和跨会话连续性层，不应与心理学意义上的人类 working memory 或模型隐藏状态混同；
+   - **Agent / Model Substitution**：AI Agent 与模型应可替换，替换后仍能从仓库恢复项目目标、依据、决定、当前状态与下一步；这种可替换性应作为架构有效性的重要压力测试；
+   - **Human Decision Persistence**：人类已经确认、拒绝、保留或授权的决定本身是项目记忆的一等组成部分，不能在后续 Agent 接管时退化为无来源的文本或重新变成待猜测状态。
+3. 论文应把 AHICP 的记忆体系作为一个**多角色、分层且可治理的项目记忆架构**来论述。除三层 Long-Term Research Memory 与并行 Working Memory 外，还应从功能上讨论 normative memory、epistemic/evidence memory、decision memory、operational memory、handoff memory 与 publication/authorization memory；这些是功能角色，不要求机械对应为独立物理文件。
+4. 论文应明确区分 **agent memory / conversational memory** 与 **project memory**。现有 Agent-memory 研究主要关注 Agent 如何存储、检索、更新并利用过去信息；AHICP 的核心问题是长期项目如何拥有独立于 Agent 的、可检查、可版本化、可追溯、可迁移的权威状态。
+5. 论文必须讨论：
+   - inspectability / editability / versionability / provenance；
+   - evidence、inference、proposal、human-confirmed decision 的区分；
+   - stale state、conflicting memory、memory curation、选择性检索与记忆膨胀；
+   - Working Memory 的 promotion / resolution / write-back；
+   - 隐私、未公开内容与 publication authorization 作为项目状态边界；
+   - 人类责任、Framework Approval 与 Final Artifact Approval 如何与持久项目记忆连接。
+6. 人类项目发起人接受将此前讨论的评估思路纳入同一篇论文，包括 handoff/resumption test、agent/model substitution test、decision-persistence test、semantic-drift/fidelity test、review-effort test，以及 memory curation/conflict handling 的评估设计。**这些当前属于 proposed evaluation / research agenda，不得伪装成已经完成的实证结果。**
+7. 论文应与当前 Agent-memory、long-term interactive memory、provenance、distributed cognition / extended-mind、epistemic dependence、automation reliance 与作者/问责规范展开明确对话，同时避免声称这些文献已经证明 AHICP 的设计有效。
+8. 现有题目继续保留；本决定授权对 Working Framework 和 DERIVED-PROVISIONAL 正文进行大规模结构性重写，以落实上述方向。该授权**不等于对重写后完整 Framework 的整体 Framework Approval，也不等于 Final Artifact Approval**。
+9. 中文继续作为 canonical 学术稿，英文作为 synchronized mirror；本轮结构性修改必须同步维护两种语言。
+10. 本决定只改变方法论文章的内容与结构方向，不撤销或替代 `AHICP-D027`–`AHICP-D029` 已生效的 external-system、authorization、human-handoff 与 scoped-authorization 治理；这些规则继续约束本项目及后续 Agent 的机器操作。
+
+**受影响组件：** Article Content Core、Working Argument Map、Framework Status、methodology article、evidence layer、bibliography、Working Memory、Decision Log。
+
+**状态：** 人类明确确认；授权本轮结构重构与论文升级。
+
+---
+
+## 2026-09-21 — AHICP-D031
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, FORM, GOVERNANCE
+
+**决定：**
+
+1. 人类项目发起人对“完成 methodology article 的 Framework scholarly review，并把经得住当前证据与边界约束的内容进入首个 Approved Framework snapshot”的方案明确表示 **“同意，完成”**。
+2. 依据该授权以及 2026-09-21 完成的 scholarly review，当前方法论文章 framework 通过整体 **Framework Approval**，批准快照标识为：
+   - `MA-FW-001`
+   - 中文 canonical：`paper/frameworks/MA-FW-001.zh-CN.md`
+   - 英文 mirror：`paper/frameworks/MA-FW-001.md`
+3. T1–T13 按 scholarly review 中的 evidence-constrained / bounded wording 进入 `MA-FW-001`。其中：
+   - T1 / T11：不得把 AHICP 写成 project memory、organizational memory、design rationale、decision provenance 或 Agent long-term memory 的首创；
+   - T2 / T3 / T7 / T8 / T13：作为设计原则或架构规范批准，而不是已经验证的普遍效果定律；
+   - T4：Working Memory 明确不是心理学 working memory、模型 hidden state、scratchpad 或 chain-of-thought；
+   - T5：Human Decision Persistence 作为治理机制批准，并承认 decision/rationale/provenance 的既有文献前史；
+   - T6：Agent / Model Substitution 作为设计目标与 proposed stress test 批准，不构成已验证鲁棒性结果；
+   - T9：只作为 AHICP normative governance 批准，不扩张为所有领域的普遍作者身份或认知责任理论；
+   - T10：正式采用 **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**，不再使用会暗示效率已被证明的 “Compressed Responsibility Interface” 作为批准框架名称；
+   - T12：仅作为 proposed empirical research agenda 批准，没有实证结果。
+4. Framework Approval 表示人类批准当前思想架构、论证边界与研究议程；它不表示当前长篇论文逐句最终批准，也不表示 citation/style 已符合特定 venue。
+5. 当前正文应从 `DERIVED-PROVISIONAL` 更新为：
+   `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+6. `MA-FW-001` 是批准时点的固定 baseline。后续如果对核心 thesis、论证结构、scope 或 approval semantics 作实质修改，应形成新的 framework snapshot，而不是静默改写 `MA-FW-001`。
+7. 本决定**不构成 Final Artifact Approval，不选择 target venue，也不自动授权 PR merge / publication / release**。这些仍是独立治理动作。
+8. AHICP-D027–D030 的 external-system、authorization、human-handoff、scoped-authorization 与 methodology structural-direction 决定继续有效；D031 只完成当前 methodology article 的 Framework Approval。
+
+**受影响组件：** Methodology Article Framework snapshot、Working Argument Map、Framework Status、methodology article status、Working Memory、Methodology Article CI、Decision Log。
+
+**状态：** 人类明确批准；`MA-FW-001` Framework Approval 完成。
+
+---
+
+## 2026-09-21 — AHICP-D032
+
+**来源：** 人类项目发起人  
+**分类：** GOVERNANCE, FORM, PUBLICATION
+
+**决定：**
+
+1. 人类项目发起人明确同意将 **Framework Approval** 解释为对满足严格范围条件的专用 PR 的 **bounded auto-merge authorization**。
+2. 该授权只在以下条件全部满足时生效：
+   - PR 是为某个已批准 Framework 及其直接同步/治理落地而建立的专用 PR；
+   - PR 不包含超出已批准范围的未授权实质性 scope expansion；
+   - Framework Approval 后若出现新的实质性修改，这些修改必须已有明确人类授权，或仅属于验证、状态同步、引用/格式修复等非实质性 follow-up；
+   - latest-head required CI / validation 全部通过；
+   - 不存在 unresolved blocking review / review thread；
+   - branch 不落后于目标 base，或已经完成无冲突同步；
+   - merge 不绕过 provider-side 必需保护、权限或明确的人类保留门。
+3. 满足以上条件时，不需要为了“把同一批已批准内容写入 main”再次请求重复 merge approval。Framework Approval 本身携带该专用 PR 的 scoped merge authorization。
+4. 该规则**不**意味着任何 Framework Approval 可以授权同一 PR 中后来混入的无关功能、部署、外部副作用、secret handling、publication/release 或其他未批准 scope。
+5. 对当前 PR #26，本次人类确认同时明确批准：
+   - `MA-FW-001` 的 Framework scope；
+   - Framework Approval 后的直接治理同步；
+   - 当前 target-venue review 与本决定本身的记录/状态传播；
+   因而 PR #26 在 latest-head diff 不再出现新的未批准实质性 scope、CI 全绿且无 blocking review 时，可按本规则自动 merge。
+6. 人类项目发起人同时批准将 **Ethics and Information Technology** 设为当前方法论文章的**第一投稿目标（primary target venue）**。
+7. **Science and Engineering Ethics** 保留为当前第二候选。AI & Society 与 Journal of Documentation 不作为当前 primary target，除非其政策适配性后续发生变化或编辑部给出明确可接受反馈。
+8. 选择 target venue 不等于 Final Artifact Approval，也不等于 publication/submission authorization。后续仍需完成 venue-specific manuscript preparation、AI-use disclosure、citation/style 核验与最终 Artifact Approval。
+9. AHICP-D027–D031 继续有效；本决定新增 merge-authorization semantics 与 target-venue selection，不撤销既有 proposal / authorization / execution / verification / write-back 分离原则。
+
+**受影响组件：** merge governance、Working Memory、Target Venue Review、methodology PR #26、Final Artifact preparation。
+
+**状态：** 人类明确批准。
+
+---
+
+## 2026-09-21 — AHICP-D033
+
+**来源：** 人类项目发起人  
+**分类：** FORM, PUBLICATION, GOVERNANCE
+
+**决定：**
+
+1. 人类项目发起人明确同意继续执行 `Ethics and Information Technology` 的 venue-specific Final Artifact preparation。
+2. 在不修改 `MA-FW-001` 核心 thesis / scope / approval semantics 的前提下，允许建立独立的投稿派生包，并采用该刊当前官方外部约束：
+   - double-anonymous peer review；
+   - manuscript content 约 5,000–8,000 words，title / abstract / references 不计入该内容字数；
+   - abstract 150–250 words；
+   - 4–6 keywords；
+   - author-identifying information 从 blinded manuscript 与相关 blinded files 中移除；
+   - substantive LLM / generative-AI use 必须在 Methods 或合适替代位置透明披露；不得把本项目真实的 drafting / restructuring / literature organization 等使用缩减描述为 copy editing；
+   - original research submission 需要 Data Availability Statement；本稿不报告 empirical dataset / completed experiment，应据实说明；
+   - references 使用 author–year 方式并按 venue 规则进行最终一致性核验；
+   - Word/docx 是当前主要提交格式，期刊也允许有数学内容时使用 LaTeX；仓库可以先保留 Markdown canonical / submission derivative，再生成最终 docx。
+3. canonical bilingual article 继续作为项目 scholarly state；venue-specific blinded manuscript、submission checklist、title-page metadata template、AI-use disclosure 和 cover-letter draft 均属于**派生 submission artifacts**，不得静默替代 canonical article。
+4. 当前人类批准的题目继续有效；本轮不另行修改论文核心题目。
+5. 双盲匿名化不得通过虚假陈述实现。由于 `AHICP` 名称本身可能指向公开仓库，本轮必须把该问题记录为 **anonymization risk**：先移除直接 GitHub URL、作者身份、内部 Decision IDs / development-status metadata；在正式 submission 前仍需决定是否需要 masked repository、editorial clarification 或其他匿名数据/材料路线。
+6. AI-use disclosure 应真实说明 AI 工具参与 iterative drafting、restructuring、literature organization、bilingual synchronization、consistency checking 与 repository-oriented implementation support，同时说明 human author(s) 负责研究方向、核心 Framework、claim boundaries、最终判断、引用核验与最终稿责任。AI 不列为 author。
+7. 本决定授权进行 venue-specific formatting、匿名化、非实质性语言精修、引用清理、submission-package 构建与对应验证。
+8. 若审阅发现需要改变 `MA-FW-001` 的核心 thesis、主要推论关系、scope 或 contribution boundary，必须返回新的 Working Framework / 必要时创建 `MA-FW-002`；不得以“期刊适配”为理由静默修改批准 Framework。
+9. 本决定**不构成 Final Artifact Approval，也不构成 submission / publication / release authorization**。正式提交仍需独立人类批准。
+10. 本轮 venue-specific preparation 的 PR 在只包含上述已授权派生准备、状态同步与验证、latest-head CI 全绿、无 blocking review、branch 不落后 base 的条件下，视为已具有 scoped merge authorization；这属于 D029/D032 授权模型下的本次明确人类授权，而不是 publication authorization。
+
+**受影响组件：** Article Form Core、submission derivative package、Working Memory、Decision Log、venue validation。
+
+**状态：** 人类明确批准；venue-specific preparation authorized。

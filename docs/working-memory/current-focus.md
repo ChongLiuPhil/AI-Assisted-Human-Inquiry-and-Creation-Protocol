@@ -3,66 +3,118 @@
 > **Chinese canonical: `current-focus.zh-CN.md`; this file is the synchronized English mirror.**
 
 **Status:** `ACTIVE`  
-**Last updated:** 2026-09-20
+**Last updated:** 2026-09-22
 
 ## CURRENT_STAGE
 
-**The AHICP v0.3 semantic migration is complete; the later external-system authorization / human-handoff and scoped-authorization governance have also completed normative consolidation.**
+**The methodology-article Framework work is complete and PR #26 has been merged into `main`; merge commit `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`. The project is now entering Final Artifact Review / venue-specific preparation for `Ethics and Information Technology`.**
 
-Migration authority: `AHICP-D026`.  
-Later authorization-governance authority: `AHICP-D027`, `AHICP-D028`, and `AHICP-D029`.
+### Still-active protocol-governance authority
 
-Completed:
-- formal name and fixed subtitle;
-- human-led / AI-assisted / repository-grounded normative direction;
-- Protocol Core, Specification, AGENTS, and live protocol migration;
-- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` control plane;
-- zero-context onboarding migration;
-- research-project specialization template migration;
-- methodology article/evidence current protocol identity migration while preserving research-specific subject matter;
-- semantic parity of key bilingual normative files;
-- final post-migration repair audit;
-- provider-neutral machine-operable-first escalation, authorization / human handoff, and provider actual-state write-back;
-- scoped authorization lifecycle: `proposal != authorization != execution != verification != durable write-back`;
-- initial configuration of reusable authorization policies through AI proposal, human selection, and durable recording of the selected scope / provenance / escalation conditions;
-- independent post-merge consistency review and propagation repair after PR #3.
+- `AHICP-D027` — external systems / tool discovery / authorization / human handoff;
+- `AHICP-D028` — human choice when first configuring reusable authorization policy;
+- `AHICP-D029` — scoped authorization and separation of proposal / authorization / execution / verification / durable write-back;
+- `AHICP-D030` — methodology article project-memory-centered structural direction;
+- `AHICP-D031` — whole-framework approval of `MA-FW-001`;
+- `AHICP-D032` — bounded auto-merge semantics for Framework Approval + selection of `Ethics and Information Technology` as primary target;
+- `AHICP-D033` — venue-specific Final Artifact preparation, double-anonymous derivative, AI-use disclosure, Data Availability, and submission-package scope.
 
-The latest protocol repair closes:
-- weakening of the D028 durable authorization record during downstream propagation;
-- omission of `permission grants` from Specification §23.3;
-- Working Memory not reflecting D028/D029 and the PR #3 milestone;
-- Protocol Contract CI checking §23.5.1 only through file-wide markers rather than a section-local invariant.
+D033 does not supersede D027–D032 and does not constitute Final Artifact Approval or submission/publication/release authorization. It authorizes the EIT venue-specific derivative work and scoped merge of this preparation PR only when scope, green-CI, no-blocking-review, and base-sync conditions hold.
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — Methodology article overall Framework Approval
+### WM-OBJ-005 — Final Artifact preparation from MA-FW-001
 
-After protocol maintenance, the repository's principal unresolved work gates remain:
+Approved Framework:
 
-- methodology article Working Framework: `WAITING-HUMAN`
-- license: `WAITING-HUMAN`
-- target publication venue / form constraints: `WAITING-HUMAN`
+`paper/frameworks/MA-FW-001.zh-CN.md`
 
-Current Chinese Working Framework:
+English mirror:
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`paper/frameworks/MA-FW-001.md`
+
+Current article status:
+
+`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+
+Primary current objects:
+
+1. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+2. `paper/METHODOLOGY_ARTICLE.en.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md`
+
+## COMPLETED IN THIS CYCLE
+
+- completed the project-memory-centered 13-section rewrite;
+- completed Agent-memory / prior Project Memory / decision-provenance scholarly positioning;
+- completed prior-art / novelty audit;
+- completed T1–T13 scholarly review;
+- narrowed T9 to AHICP normative governance;
+- renamed T10 to `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`;
+- created bilingual approved snapshot `MA-FW-001`;
+- recorded `AHICP-D031` / `AHICP-D032` / `AHICP-D033`;
+- created the `paper/submission/ethics-information-technology/` submission-derivative package;
+- generated a blinded manuscript: 185-word abstract, approximately 5,367 content words, 6 keywords, maximum three heading levels;
+- added substantive generative-AI disclosure and Data Availability Statement;
+- added dedicated EIT submission validator / CI;
+- PR #29 merged into `main` under D033 scoped merge authorization, merge commit `a789bbd3342b29ebb07caa9c0cd22da3315e7746`;
+- completed citation / publication-status audit for the blinded derivative;
+- added a reproducible DOCX builder and connected it to EIT CI to generate a build candidate;
+- PR #30 merged into `main` under D033 scoped merge authorization, merge commit `b2e450baf5001f4879f740e67e21264aef115d5a`;
+- latest-head EIT Submission CI confirmed successful DOCX build, package-structure validation, and artifact upload;
+- CI artifact: `eit-manuscript-blinded-docx`, approximately 53 KB, 30-day retention;
+- completed artifact-level English / argument-flow review of the traceable and masked reviewer derivatives without changing the core thesis, major inferences, scope, or contribution boundary of `MA-FW-001`;
+- re-rendered both DOCX candidates after the table-caption update and completed fresh page-by-page visual QA of all 20 pages each; Table 1 / Table 2 captions stay with their tables, and automatic page numbering, footer placement, table pagination, and anonymous core metadata passed;
+- added PAGE-field, non-splitting-table-row, and anonymous-metadata gates to the reproducible DOCX builder / CI;
+- rechecked the current EIT / SNAPP / ICMJE / Nature Portfolio policy pages on 2026-09-22; no new hard requirement was found that requires changing the current manuscript, while a final live-interface / dynamic-policy recheck remains required immediately before actual submission;
+- confirmed EIT is a hybrid journal and that subscription / open-access publishing route and any OA licence are selected after acceptance, so licence choice is no longer treated as a pre-submission blocker;
+- PR #33 merged into `main` under D033 scoped merge authorization, merge commit `d9b3c31d235047595fbdf8fe4ff8a2f3fe51b4cc`;
+- PR #34 merged into `main` under D033 scoped merge authorization, merge commit `973f7a6e2a995c5cbda19c42b99e2b82c63215ba`; its latest-head three-CI gate passed and the table-caption / in-text-citation / fresh 20+20-page visual-QA state is durably recorded;
+- PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
+- promoted the article to derived-from-approved-framework status;
+- preserved the separation between proposed evaluation and empirical results.
 
 ## IMMEDIATE_NEXT_ACTION
 
-When the human is ready to continue the methodology article, make an overall Working Framework decision:
+Current Framework work and target-venue selection are complete.
 
-- `APPROVE`
-- `REVISE`
-- `REJECT`
+Primary target: `Ethics and Information Technology`.
 
-No Approved Framework snapshot is created before that decision.
+Artifact-level English / argument-flow review and page-by-page visual QA of both traceable and masked DOCX candidates are complete. Next stage:
+1. obtain human/editorial confirmation of the masked reviewer route and confirm the anonymization path for reviewer-visible supplementary / repository material;
+2. obtain human Final Artifact Approval;
+3. have the human author complete truthful submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID metadata and confirm no simultaneous submission plus all required author approvals;
+4. immediately before submission, recheck the EIT live submission interface and perform the at-submission final recheck of the dynamic policies already checked on 2026-09-22;
+5. submission / publication / release remain subject to separate explicit authorization; publication route / licence remains a post-acceptance human choice.
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: methodology article overall Framework Approval`
+Framework layer: **no blocker.**
 
-This does not block the completed AHICP protocol migration or authorization-governance maintenance.
+Final Artifact / publication layer still has:
+- publication route / licence: `DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
+- target publication venue: `SELECTED — Ethics and Information Technology / AHICP-D032`
+- venue-specific form constraints: `ADOPTED — AHICP-D033`
+- blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
+- citation audit: `COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
+- citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
+- anonymization risk (`AHICP` discoverability): `MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- Word/docx: `TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
+- Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF
 
-A replacement AI Agent should use the AHICP control plane and treat the latest repository `main` revision as the sole project-state source. D027–D029 are current authorization-governance authority; legacy HARC live identifiers must not be reintroduced into current normative files.
+A replacement AI Agent should know:
+
+- `MA-FW-001` is approved; do not restore the stale state that Framework Approval is pending;
+- `MA-FW-001` is a fixed baseline and must not be silently rewritten;
+- the current Argument Map is aligned with `MA-FW-001` and may serve as the working entry toward a future `MA-FW-002`;
+- the article is not Final Artifact Approved;
+- AHICP does not claim to originate project memory;
+- T9 is normative governance and T10 is a structured human-review gate / responsibility anchor;
+- the evaluation framework still has no empirical results;
+- `Ethics and Information Technology` is the current primary target;
+- Framework Approval carries bounded auto-merge authorization for dedicated PRs satisfying D032;
+- PR #26 completed the first actual execution of that authorization path;
+- the next governance gate is venue-specific Final Artifact Review.

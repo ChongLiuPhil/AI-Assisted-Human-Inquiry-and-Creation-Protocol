@@ -179,6 +179,8 @@ AI 生成的论点、区分、重组、术语、版式或审美选择，不会�
 
 实质性思想变化要求产生新的 framework 版本。Framework Approval 是 AHICP 的治理检查点，不得自动扩张为跨学科的一般作者身份理论，也不取消 Final Artifact Approval。
 
+对于**专门用于落实该 Approved Framework** 的 PR，如果只包含已批准 Framework 及明确授权的直接同步/治理变更，并且 latest-head CI 全绿、没有 unresolved blocking review、没有未授权 scope expansion、branch 已与 base 同步、merge 不绕过 provider-side 必需保护，则 Framework Approval 可以同时作为该 PR 的 **bounded auto-merge authorization**。若任一条件失效，必须停止自动 merge 并回到普通授权流程。该授权不包括 publication/release、deployment、secret handling 或 Final Artifact Approval。
+
 AHICP 的责任原则是：AI 可以分担工作，但在人机协作研究、探究以及尤其公开知识传播中，人类必须保持为责任主体.
 
 ## 8. 证据冲突
@@ -195,7 +197,7 @@ AHICP 的责任原则是：AI 可以分担工作，但在人机协作研究、�
 
 ## 9. 最终成果状态
 
-Framework Approval 后，AI 可以生成大量派生文本，但在最终人类审阅前仍属于 `DERIVED-PROVISIONAL`。
+Framework Approval 后，AI 可以生成大量派生文本；具体 Artifact 状态应由项目 Framework Status 显式记录，例如 `DERIVED-PROVISIONAL` 或 `DERIVED-FROM-<APPROVED-FRAMEWORK> — FINAL ARTIFACT APPROVAL PENDING`。在最终人类审阅前不得标记为 `FINAL-APPROVED`。
 
 除非相应的最终批准门已经完成，否则不得把成果描述为“可投稿”或“已经由人类批准”。
 
@@ -254,7 +256,7 @@ Framework Approval 后，AI 可以生成大量派生文本，但在最终人类�
 
 Work Log 默认不在该读取链中。
 
-在中文 framework 未被人类明确批准之前，文章 Argument Map 仍是 `WORKING-FRAMEWORK`。在相关批准门完成之前，正文仍是 `DERIVED-PROVISIONAL`。
+方法论文章的实时 Framework / Artifact 状态必须以 `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md` 为准。如果存在 Approved Framework snapshot，Agent 必须读取最新批准快照并保持其不可变基线语义；不得把已完成的 Framework Approval 恢复为 pending。Artifact 状态仍由独立 Final Artifact Approval Gate 控制。
 
 方法论文章必须遵守它所描述的 AHICP 原则。不能因为 AI 提议的术语或结构已经写进草稿，就把它当成人类批准。涉及作者身份、AI 政策、认识责任、自动化或认知的外部研究发生变化时，应先更新证据层，并区分规范性的 AHICP 提案与外部出版规则。
 

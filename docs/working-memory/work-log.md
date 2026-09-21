@@ -352,3 +352,298 @@ Chinese canonical and English mirror, root AGENTS, and the research-project temp
 - no textbook change;
 - no downstream adoption bump;
 - this work is propagation and consistency repair of already approved D028/D029 semantics, not a new Human Protocol Decision.
+
+## 2026-09-20 — Methodology article Project Memory Architecture structural upgrade
+
+**Authority:** AHICP-D030
+
+This work cycle keeps the existing methodology article as one unified paper and completes the following structural upgrade:
+
+- promotes Project Memory Architecture to the central article axis;
+- defines Working Memory as a persistent continuity layer;
+- treats Human Decision Persistence as first-class Project memory;
+- treats Agent / Model Substitution as an architectural stress test and proposed evaluation;
+- distinguishes Agent/conversational memory from Project memory;
+- adds memory curation, stale/conflict handling, selective retrieval, and privacy/publication boundaries;
+- connects Framework Approval / Final Artifact Approval to Project memory and human responsibility;
+- adds related work/evidence on Generative Agents, MemGPT, Agent-memory surveys, LongMemEval, MemBench, RealMem, and W3C PROV;
+- rewrites the Chinese canonical article and synchronized English mirror;
+- updates Content Core, Working Argument Map, Framework Status, and Working Memory;
+- retains `DERIVED-PROVISIONAL` / `WORKING-FRAMEWORK` status and does not create `MA-FW-001`;
+- explicitly reports no empirical results for the proposed evaluation framework.
+
+**Result:** structural rewrite completed; proceeding to consistency validation / PR / human review.
+
+## 2026-09-21 — Second scholarly novelty / prior-art audit of the methodology article
+
+**Object:** project-memory-centered methodology article  
+**Authority:** AHICP-D030; this review does not create overall Framework Approval.
+
+The second review focused on whether the paper mistakenly presented prior concepts as AHICP inventions. Newly added and verified lineage includes:
+
+- Walsh & Ungson (1991) — Organizational Memory;
+- Weiser & Morrison (1998) — *Project Memory: Information Management for Project Teams*;
+- Mariano & Awazu (2024) — project memory in large-scale projects;
+- Lee (1992) — design rationale management;
+- Weinreich & Groher (2016) — Software Architecture Knowledge Management;
+- Singh, Cobbe & Norval (2019) — Decision Provenance.
+
+Primary repairs:
+
+- explicitly states that AHICP **does not originate** organizational memory / project memory / design rationale / decision provenance / Agent long-term memory;
+- narrows novelty to a **candidate architectural synthesis**:
+  a governed, model-substitutable Project Memory Architecture;
+- adds an explicit design research question and novelty boundary to the abstract/introduction/related work;
+- upgrades the two-way Agent-memory comparison to a three-way comparison of prior project memory / Agent memory / AHICP governed Project Memory;
+- updates T1, T11, and the related-work boundary in the Working Argument Map;
+- expands the evidence layer and BibTeX and removes a stray Markdown separator from the BibTeX file;
+- strengthens Methodology Article CI against unsupported “first / unique / AHICP originated project memory” claims.
+
+**Status:** scholarly-positioning repair completed; latest CI pending at the time of this log entry.
+
+---
+
+## 2026-09-21 — MA-FW-001 Framework Approval completed
+
+**Authority:** AHICP-D031
+
+This work cycle completed the scholarly review of T1–T13 and created the first Approved Framework using bounded, evidence-constrained wording:
+
+- `paper/frameworks/MA-FW-001.zh-CN.md`
+- `paper/frameworks/MA-FW-001.md`
+
+Key review outcomes:
+
+- T1 / T11 preserve prior-art and novelty boundaries;
+- T9 is explicitly scoped to AHICP normative governance;
+- T10 formally becomes **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**;
+- T12 remains a proposed empirical research agenda;
+- all approved architecture principles remain distinct from empirical effectiveness claims;
+- the article status is now `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`.
+
+`MA-FW-001` is the fixed approval baseline. Later substantive framework changes should create a new snapshot rather than rewrite it.
+
+**Governance boundary:** this Framework Approval is not Final Artifact Approval and does not automatically authorize PR merge, publication, or release.
+
+**Result:** Framework work complete; the next phase is Final Artifact Review / target-venue preparation.
+
+---
+
+## 2026-09-21 — AHICP-D032: bounded Framework auto-merge + primary target venue
+
+The human project founder explicitly approved two governance/publication decisions:
+
+1. Framework Approval also constitutes **bounded auto-merge authorization** for a dedicated PR when strict scope / latest-head CI / blocking-review / base-sync / provider-protection conditions hold;
+2. `Ethics and Information Technology` is selected as the current methodology article primary target venue, with `Science and Engineering Ethics` retained as the secondary candidate.
+
+Protocol propagation completed in this work cycle:
+
+- AHICP-D032 recorded in the Decision Log;
+- bounded auto-merge principle added to Protocol Core P6;
+- Framework Approval protocol gains §3.5;
+- corresponding rule added to the Specification Framework Approval Gate;
+- repository AGENTS contract and research-project template AGENTS synchronized;
+- Working Memory marks WM-T027 complete and WM-T014 venue-selected;
+- Target Venue Review moves from AI recommendation to HUMAN-SELECTED;
+- Framework Status advances to Ethics and Information Technology preparation;
+- Methodology / Protocol CI gains D032 regression guards.
+
+**Governance boundary:** bounded merge authorization is not Final Artifact Approval and does not authorize submission / publication / release / deployment / secret handling.
+
+**PR #26:** D032 explicitly includes the current methodology PR within scoped merge authorization; actual auto-merge still depends on final latest-head condition verification.
+
+---
+
+## 2026-09-21 — PR #26 bounded auto-merge execution and verification
+
+Under `AHICP-D032`, PR #26 passed the following pre-merge checks:
+
+- dedicated methodology / Framework scope;
+- Framework work and subsequent D032 direct governance/venue synchronization were human-authorized;
+- latest-head Methodology Article CI: PASS;
+- latest-head Protocol Contract CI: PASS;
+- latest-head Ecosystem validation: PASS;
+- unresolved review threads: 0;
+- branch vs `main`: behind = 0;
+- GitHub reported `mergeable=true`;
+- merge executed through the standard GitHub merge API without bypassing provider-side protection.
+
+Execution result:
+
+- PR: #26 `Reframe AHICP methodology article around project memory architecture`
+- result: `merged=true`
+- merge commit: `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`
+- post-merge verification: `main` confirmed to contain AHICP-D032, `MA-FW-001`, and the `Ethics and Information Technology` target-venue state.
+
+**Conclusion:** the D032 bounded auto-merge authorization has completed its first actual execution; the methodology Framework work is now in `main`.
+
+---
+
+## 2026-09-21 — Ethics and Information Technology submission derivative preparation
+
+**Authority:** AHICP-D033
+
+This work cycle prepared the first venue-specific submission package:
+
+- `paper/submission/ethics-information-technology/MANUSCRIPT_BLINDED.md`;
+- bilingual submission checklist;
+- bilingual AI / LLM use disclosure;
+- title / submission metadata template;
+- cover-letter draft;
+- dedicated EIT submission validator / CI.
+
+Current machine-checked blinded-manuscript metrics:
+
+- abstract: 185 words;
+- content: approximately 5,367 words;
+- keywords: 6;
+- displayed heading levels: maximum 3;
+- internal Decision / Framework / Working-Memory IDs: none detected;
+- direct GitHub URL: none detected;
+- substantive AI-use disclosure: present;
+- Data Availability Statement: present;
+- empirical effectiveness result: not claimed.
+
+Venue-level reference cleanup:
+
+- canonical evidence infrastructure remains unchanged;
+- the submission derivative removes uncited CRediT / UNESCO / Nature Methods entries;
+- because MemGPT remains an arXiv/CoRR preprint while the EIT guideline says the reference list should contain works cited in the text that are published or accepted, the blinded derivative removes the MemGPT example/reference; the related-work argument remains supported by Generative Agents, the Agent-memory survey, LongMemEval, MemBench, RealMem, and other published work.
+
+Open blockers:
+
+- the distinctive `AHICP` name may enable search-based deanonymization through public project materials;
+- final Word/docx has not yet been generated;
+- citation / DOI / publication-status item-by-item final review remains pending;
+- Final Artifact Approval remains pending;
+- submission authorization has not occurred.
+
+**Status:** submission derivative prepared; CI / PR validation next.
+
+---
+
+## 2026-09-21 — EIT citation audit and DOCX build pipeline
+
+**Authority:** AHICP-D033
+
+After PR #29 merged, this work cycle continued venue-specific Final Artifact review:
+
+- PR #29 merged into `main`, merge commit:
+  `a789bbd3342b29ebb07caa9c0cd22da3315e7746`;
+- completed publication-status / metadata / DOI / standards audit for the blinded manuscript's current reference set;
+- added `CITATION_AUDIT.md`;
+- separated ICMJE / Nature Portfolio as dynamic policy sources requiring recheck immediately before actual submission;
+- normalized W3C PROV-DM as the 30 April 2013 W3C Recommendation;
+- normalized LongMemEval to the ICLR 2025 proceedings record;
+- added `tools/build_eit_docx.py` for reproducible blinded Markdown -> Word/docx generation;
+- EIT Submission CI now generates and uploads a `MANUSCRIPT_BLINDED.docx` build candidate and checks its ZIP/package structure;
+- a successful CI build does not make the DOCX a Final Artifact: page-by-page visual QA remains an explicit unresolved gate.
+
+Current remaining blockers:
+
+1. final bidirectional citation ↔ reference-list consistency check;
+2. search-based deanonymization risk from the distinctive `AHICP` name;
+3. page-by-page visual QA of the CI-generated Word/docx;
+4. license;
+5. Final Artifact Approval;
+6. formal submission authorization;
+7. final live-policy recheck immediately before submission.
+
+**Status:** citation audit completed; reproducible DOCX build ready; visual QA pending.
+
+---
+
+## 2026-09-21 — PR #30 EIT final-review merge and DOCX build verification
+
+Under AHICP-D033, PR #30 passed the following pre-merge checks:
+
+- branch vs `main`: behind = 0;
+- unresolved review threads: 0;
+- Ecosystem validation: PASS;
+- Methodology Article CI: PASS;
+- EIT Submission CI: PASS;
+- EIT validator: PASS;
+- DOCX build: PASS;
+- DOCX ZIP/package structural validation: PASS;
+- workflow artifact upload: PASS.
+
+Execution result:
+
+- PR #30: `Audit EIT references and add reproducible DOCX build`
+- merge result: `merged=true`
+- merge commit: `b2e450baf5001f4879f740e67e21264aef115d5a`
+- generated artifact: `eit-manuscript-blinded-docx`
+- artifact size: approximately 53 KB
+- retention: 30 days
+
+**Boundary:** generating and structurally validating a build candidate is not page-by-page visual QA and is not Final Artifact Approval. Remaining work includes bidirectional citation ↔ reference-list final consistency review, the `AHICP` search-based deanonymization risk, Word visual QA, license, Final Artifact Approval, and separate submission authorization.
+
+**Status:** PR #30 merged; DOCX build candidate structurally verified; visual QA pending.
+
+---
+
+## 2026-09-21 — EIT masked reviewer derivative and bidirectional citation-reference validation
+
+**Authority:** AHICP-D033  
+**Nature:** venue-specific Final Artifact preparation; no new Framework decision.
+
+This work cycle identified and mitigated a double-anonymous-review risk. Although the baseline blinded manuscript already removed author names, affiliations, GitHub URLs, and internal project IDs, it still contained many occurrences of `AHICP` / the full protocol name. Because the protocol has public project materials, the distinctive name may allow ordinary search-based identification of the author/repository.
+
+Execution:
+
+- retain `MANUSCRIPT_BLINDED.md` as the traceable blinded baseline;
+- add `MANUSCRIPT_BLINDED_MASKED.md` as a reviewer-facing masked derivative;
+- preserve the same title / argument structure / citations / references / AI-use disclosure / Data Availability in the masked derivative;
+- replace only the protocol proper name with neutral formulations such as `the proposed protocol`, `the protocol`, and `the proposed Project Memory Architecture`;
+- masked-manuscript machine checks:
+  - `AHICP`: 0;
+  - full protocol name: 0;
+  - direct GitHub URL: 0;
+  - internal Decision / Framework / Working-Memory IDs: 0;
+- add bilingual `BLINDING_REVIEW` records, explicitly refusing to claim perfect anonymity; human/editorial confirmation of the reviewer-manuscript route remains pending;
+- extend EIT validation to both traceable and masked manuscripts;
+- define an explicit 18-entry citation ↔ reference-list mapping so every current reference entry must have a corresponding in-text citation;
+- require the masked and unmasked reference sections to be identical;
+- extend EIT CI to build both traceable and masked DOCX candidates and independently validate/upload them.
+
+**Governance boundary:**
+
+- no change to `MA-FW-001`;
+- no change to the canonical bilingual article;
+- the masked derivative is a review-anonymization derivative, not a permanent renaming of the scholarly object;
+- Final Artifact Approval has not occurred;
+- submission authorization has not occurred;
+- visual QA remains separate from CI structural validation.
+
+**Current status:** masked mitigation prepared; latest-head CI verification pending.
+
+---
+
+## 2026-09-21 — EIT masked/citation CI verification passed
+
+On an intermediate head of PR #32, EIT Submission CI completed and passed:
+
+- traceable blinded manuscript validation: PASS;
+- masked blinded manuscript validation: PASS;
+- masked prohibition checks for `AHICP` / full protocol name / direct GitHub URL / internal IDs: PASS;
+- explicit 18-entry citation ↔ reference-list mapping: PASS;
+- masked / unmasked reference-section equality: PASS;
+- traceable DOCX build: PASS;
+- masked DOCX build: PASS;
+- both DOCX ZIP/package structural validations: PASS;
+- traceable artifact upload: PASS;
+- masked artifact upload: PASS.
+
+Generated workflow artifacts:
+
+- `eit-manuscript-blinded-docx` — 53,268 bytes;
+- `eit-manuscript-blinded-masked-docx` — 53,256 bytes.
+
+**Boundary:**
+
+- CI structural validation does not replace page-by-page visual QA;
+- the masked reviewer route still requires human/editorial confirmation;
+- residual discoverability must not be described as “perfect anonymity”;
+- Final Artifact Approval / submission authorization has not occurred.
+
+**Status:** citation consistency verified; masked mitigation technically validated; final-head revalidation pending after state write-back.

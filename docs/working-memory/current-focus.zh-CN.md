@@ -4,66 +4,118 @@
 > **中文 canonical；英文 `current-focus.md` 为同步 mirror。**
 
 **状态：** `ACTIVE`  
-**最后更新：** 2026-09-20
+**最后更新：** 2026-09-22
 
 ## CURRENT_STAGE
 
-**AHICP v0.3 语义迁移已完成；后续 external-system authorization / human-handoff 与 scoped authorization 治理也已完成规范收束。**
+**方法论文章 Framework 工作已完成并通过 PR #26 合入 `main`；merge commit 为 `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`。当前进入面向 `Ethics and Information Technology` 的 Final Artifact Review / venue-specific preparation。**
 
-迁移依据：`AHICP-D026`。  
-后续授权治理依据：`AHICP-D027`、`AHICP-D028`、`AHICP-D029`。
+### 仍然有效的协议治理依据
 
-已完成：
-- 正式名称与固定 subtitle；
-- human-led / AI-assisted / repository-grounded 规范方向；
-- Protocol Core、Specification、AGENTS 与 live protocol 文档迁移；
-- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` 控制面；
-- zero-context onboarding 控制链迁移；
-- research-project specialization template 迁移；
-- 方法论文章/evidence 的当前协议身份迁移，同时保留 research-specific 主题；
-- 关键双语规范 semantic parity；
-- final post-migration repair audit；
-- provider-neutral machine-operable-first escalation、authorization / human handoff 与 provider actual-state write-back；
-- scoped authorization lifecycle：`proposal != authorization != execution != verification != durable write-back`；
-- 首次配置 reusable authorization policy 时由 AI 提出方案、人类选择，选择及其 scope / provenance / escalation conditions 持久记录；
-- PR #3 合并后的独立 consistency review 与传播修复。
+- `AHICP-D027` — external systems / tool discovery / authorization / human handoff；
+- `AHICP-D028` — reusable authorization policy 首次配置的人类选择；
+- `AHICP-D029` — scoped authorization 与 proposal / authorization / execution / verification / durable write-back 分离；
+- `AHICP-D030` — methodology article project-memory-centered structural direction；
+- `AHICP-D031` — `MA-FW-001` whole-framework approval；
+- `AHICP-D032` — Framework Approval 的 bounded auto-merge semantics + `Ethics and Information Technology` primary target selection；
+- `AHICP-D033` — venue-specific Final Artifact preparation、double-anonymous derivative、AI-use disclosure、Data Availability、submission-package scope。
 
-最近的 protocol repair 已关闭以下问题：
-- D028 的 durable authorization record 在下游规范中被弱化；
-- Specification §23.3 漏列 `permission grants`；
-- Working Memory 未记录 D028/D029 与 PR #3 milestone；
-- Protocol Contract CI 对 §23.5.1 只做全文件 marker 检查、未校验 section-local invariant。
+D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission/publication/release authorization；它授权 EIT venue-specific 派生准备，并在限定 scope + green CI + no blocking review + base-sync 条件下为本轮 preparation PR 提供 scoped merge authorization。
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — 方法论文章整体 Framework Approval
+### WM-OBJ-005 — Final Artifact preparation from MA-FW-001
 
-protocol maintenance 完成后，仓库的主要未决工作门仍为：
+当前批准 Framework：
 
-- 方法论文章 Working Framework：`WAITING-HUMAN`
-- license：`WAITING-HUMAN`
-- target publication venue / form constraints：`WAITING-HUMAN`
+`paper/frameworks/MA-FW-001.zh-CN.md`
 
-当前中文 Working Framework：
+英文 mirror：
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`paper/frameworks/MA-FW-001.md`
+
+当前文章状态：
+
+`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+
+当前主要对象：
+
+1. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+2. `paper/METHODOLOGY_ARTICLE.en.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md`
+
+## COMPLETED IN THIS CYCLE
+
+- 完成 project-memory-centered 13 节重写；
+- 完成 Agent-memory / prior Project Memory / decision-provenance scholarly positioning；
+- 完成 prior-art / novelty audit；
+- 对 T1–T13 逐项完成 scholarly review；
+- T9 收紧为 AHICP normative governance；
+- T10 改为 `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`；
+- 创建 `MA-FW-001` 双语批准快照；
+- 记录 `AHICP-D031` / `AHICP-D032` / `AHICP-D033`；
+- 建立 `paper/submission/ethics-information-technology/` 投稿派生包；
+- 生成 blinded manuscript：摘要 185 words、正文约 5,367 words、6 keywords、最大三级标题；
+- 加入 substantive generative-AI disclosure 与 Data Availability Statement；
+- 建立 EIT submission validator / CI；
+- PR #29 已按 D033 scoped merge authorization 合入 `main`，merge commit `a789bbd3342b29ebb07caa9c0cd22da3315e7746`；
+- 完成 blinded derivative 的 citation / publication-status audit；
+- 建立可重复 DOCX builder，并接入 EIT CI 生成 build candidate；
+- PR #30 已按 D033 scoped merge authorization 合入 `main`，merge commit `b2e450baf5001f4879f740e67e21264aef115d5a`；
+- latest-head EIT Submission CI 已确认 DOCX build、package structural validation 与 artifact upload 全部成功；
+- CI 生成 artifact：`eit-manuscript-blinded-docx`，约 53 KB，30-day retention；
+- masked reviewer derivative 与 traceable derivative 已完成 artifact-level English / argument-flow review，未改变 `MA-FW-001` 的核心 thesis、主要推论、scope 或 contribution boundary；
+- table-caption 更新后，traceable / masked DOCX 已重新渲染并再次完成各 20 页逐页 visual QA；Table 1 / Table 2 caption 均与对应表格同页，自动页码、footer、表格分页与匿名 core metadata 检查通过；
+- DOCX builder / CI 已加入 PAGE field、table-row non-split 与匿名 metadata gates；
+- EIT / SNAPP / ICMJE / Nature Portfolio 当前 policy pages 已于 2026-09-22 复核；未发现要求改动当前 manuscript 的新硬性要求，正式 submission 前仍保留 live interface / dynamic-policy final recheck；
+- EIT 为 hybrid journal；subscription / open-access publishing route 与 OA licence 在文章 accepted 后选择，因此 license 不再作为 pre-submission blocker；
+- PR #33 已按 D033 scoped merge authorization 合入 `main`，merge commit `d9b3c31d235047595fbdf8fe4ff8a2f3fe51b4cc`；
+- PR #34 已按 D033 scoped merge authorization 合入 `main`，merge commit `973f7a6e2a995c5cbda19c42b99e2b82c63215ba`；其 latest-head 三套 CI 全绿，table caption / in-text citation / fresh 20+20-page visual QA 均已写回；
+- PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
+- 将正文状态提升为 derived from approved framework；
+- 保持 proposed evaluation 与 empirical results 分离。
 
 ## IMMEDIATE_NEXT_ACTION
 
-人类在准备继续方法论文章时，对当前 Working Framework 作：
+当前 Framework 工作与 target-venue selection 已完成。
 
-- `APPROVE`
-- `REVISE`
-- `REJECT`
+Primary target：`Ethics and Information Technology`。
 
-在此之前，不创建 Approved Framework snapshot。
+当前 submission derivative 的 artifact-level English / argument-flow review 与 traceable / masked DOCX visual QA 已完成。下一阶段：
+1. 人类/编辑部确认 masked reviewer route，并确认 reviewer-visible supplementary / repository material 的匿名化路径；
+2. 人类完成 Final Artifact Approval；
+3. 人类补全 submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID 等真实元数据，并确认 no simultaneous submission 与所需作者批准；
+4. 正式 submission 前再次核验 EIT live submission interface，并对 2026-09-22 已复核的动态 policy 做 at-submission final recheck；
+5. submission / publication / release 仍需独立明确授权；publication route / licence 留到 acceptance 后由人类选择。
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: methodology article overall Framework Approval`
+Framework 层：**无 blocker。**
 
-这不阻塞已经完成的 AHICP protocol migration 与 authorization-governance maintenance。
+Final Artifact / publication 层仍存在：
+- publication route / licence：`DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
+- target publication venue：`SELECTED — Ethics and Information Technology / AHICP-D032`
+- venue-specific form constraints：`ADOPTED — AHICP-D033`
+- blinded submission derivative：`PREPARED / PR #29 MERGED / CI PASS`
+- citation audit：`COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
+- citation ↔ reference-list 一致性：`VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
+- anonymization risk (`AHICP` discoverability)：`MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- Word/docx：`TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
+- Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF
 
-新的 AI Agent 应按 AHICP control plane 接管，并以 repository `main` 的最新 revision 为唯一项目状态来源。D027–D029 已是当前授权治理依据；旧 HARC live identifiers 不应重新进入当前规范文件。
+新的 AI Agent 应知道：
+
+- `MA-FW-001` 已批准，不得恢复“Framework 尚未整体批准”的旧状态；
+- `MA-FW-001` 是固定 baseline，不应静默改写；
+- 当前 Argument Map 与 `MA-FW-001` 对齐，可作为未来 `MA-FW-002` 的工作入口；
+- article 不是 Final Artifact Approved；
+- AHICP 不声称首创 project memory；
+- T9 是 normative governance，T10 是 structured human-review gate / responsibility anchor；
+- evaluation framework 仍无实证结果；
+- `Ethics and Information Technology` 是当前 primary target；
+- Framework Approval 对满足 D032 条件的专用 PR 携带 bounded auto-merge authorization；
+- PR #26 已完成该授权路径的首次实际执行；
+- 下一治理门是 venue-specific Final Artifact Review。

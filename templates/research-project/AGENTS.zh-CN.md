@@ -137,7 +137,9 @@ Framework Approval、正式翻译、大规模扩写和 Final Review 前主动执
 
 Approved Framework 是主要实质性思想基线，也是人类作为责任主体时核心思想责任的结构性锚点。Framework Approval 前，人类必须清楚理解、认真审核并明确确认拟批准 framework 中实际呈现的全部实质内容，包括核心命题、推论关系、关键区分、范围条件、章节/小节功能及被纳入 framework 的具体措辞。应区分 framework-level defect 与后续 AI 扩写才引入的局部缺陷.
 
-AI 可以帮助构造 framework，但不能成为其中思想责任的最终承担主体.
+AI 可以帮助构造 framework，但不能成为其中思想责任的最终承担主体。
+
+对于专门落实某个 Approved Framework 的 PR，如果只包含该 Framework 及已经明确授权的直接同步/治理变更，latest-head CI 全绿、无 unresolved blocking review、无未授权 scope expansion、branch 已与 base 同步且 merge 不绕过 provider-side 必需保护，则 Framework Approval 可以同时作为该 PR 的 **bounded auto-merge authorization**。任一条件失效时，必须停止自动 merge 并回到普通授权流程。该授权不包含 publication/release、deployment、secret handling 或 Final Artifact Approval。
 
 ## Evidence 规则
 

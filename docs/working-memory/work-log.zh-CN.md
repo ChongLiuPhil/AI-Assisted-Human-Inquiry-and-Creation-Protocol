@@ -353,3 +353,298 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 - 没有触碰 textbook；
 - 没有进行 downstream adoption bump；
 - 本轮是对已经批准的 D028/D029 规范进行传播与一致性修复，不创建新的 Human Protocol Decision。
+
+## 2026-09-20 — 方法论文章 Project Memory Architecture 结构升级
+
+**依据：** AHICP-D030
+
+本工作周期把现有 methodology article 保持为一篇统一论文，并完成以下结构升级：
+
+- 将 Project Memory Architecture 提升为全文主轴；
+- 将 Working Memory 明确定义为 persistent continuity layer；
+- 将 Human Decision Persistence 作为 first-class project memory；
+- 将 Agent / Model Substitution 作为架构压力测试与 proposed evaluation；
+- 明确 Agent memory / conversational memory 与 Project memory 的边界；
+- 加入 memory curation、stale/conflict handling、selective retrieval、privacy/publication boundary；
+- 把 Framework Approval / Final Artifact Approval 与项目记忆、人类责任连接；
+- 补充 Generative Agents、MemGPT、Agent-memory survey、LongMemEval、MemBench、RealMem、W3C PROV 等 related work / evidence；
+- 重写中文 canonical 论文与英文同步镜像；
+- 更新 Content Core、Working Argument Map、Framework Status 与 Working Memory；
+- 保持 `DERIVED-PROVISIONAL` / `WORKING-FRAMEWORK`，没有创建 `MA-FW-001`；
+- 明确 proposed evaluation 没有实证结果。
+
+**结果：** 结构性重写完成；进入 consistency validation / PR / human review。
+
+## 2026-09-21 — 方法论文章第二轮 scholarly novelty / prior-art audit
+
+**对象：** project-memory-centered methodology article  
+**依据：** AHICP-D030；本轮不产生新的整体 Framework Approval。
+
+第二轮审阅重点检查论文是否把既有概念误写成 AHICP 首创。新增并核验的相关前史包括：
+
+- Walsh & Ungson (1991) — Organizational Memory；
+- Weiser & Morrison (1998) — *Project Memory: Information Management for Project Teams*；
+- Mariano & Awazu (2024) — large-scale project memory；
+- Lee (1992) — design rationale management；
+- Weinreich & Groher (2016) — Software Architecture Knowledge Management；
+- Singh, Cobbe & Norval (2019) — Decision Provenance。
+
+主要修正：
+
+- 明确 AHICP **不首创** organizational memory / project memory / design rationale / decision provenance / Agent long-term memory；
+- 把论文 novelty 收紧为 **candidate architectural synthesis**：
+  governed, model-substitutable Project Memory Architecture；
+- 在摘要、引言与 related work 中增加明确 design research question 与 novelty boundary；
+- 将 Agent memory vs AHICP 两栏比较升级为 prior project memory / Agent memory / AHICP governed Project Memory 三方比较；
+- 更新 Working Argument Map 的 T1、T11 与 related-work boundary；
+- 扩展 evidence layer 与 BibTeX，并修复 BibTeX 中残留的 Markdown 分隔符；
+- 强化 Methodology Article CI，防止未来出现无依据的 “first / unique / AHICP 首创 project memory” 表述。
+
+**状态：** scholarly positioning repair completed; latest CI pending at the time of this log entry.
+
+---
+
+## 2026-09-21 — MA-FW-001 Framework Approval 完成
+
+**依据：** AHICP-D031
+
+本工作周期完成方法论文章 T1–T13 的 scholarly review，并按 bounded / evidence-constrained wording 创建首个 Approved Framework：
+
+- `paper/frameworks/MA-FW-001.zh-CN.md`
+- `paper/frameworks/MA-FW-001.md`
+
+关键审阅结果：
+
+- T1 / T11 保持 prior-art / novelty 边界；
+- T9 明确限定为 AHICP normative governance；
+- T10 正式改为 **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**；
+- T12 保持 proposed empirical research agenda；
+- 所有已批准架构原则继续与 empirical effectiveness claim 分离；
+- 当前文章状态更新为 `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`。
+
+`MA-FW-001` 是固定批准 baseline。后续实质 framework 修改应形成新 snapshot，而不是改写该文件。
+
+**治理边界：** 本次 Framework Approval 不等于 Final Artifact Approval，不自动授权 PR merge、publication 或 release。
+
+**结果：** Framework work complete；下一阶段为 Final Artifact Review / target-venue preparation。
+
+---
+
+## 2026-09-21 — AHICP-D032：Framework bounded auto-merge + primary target venue
+
+人类项目发起人明确批准两项治理/发布决定：
+
+1. Framework Approval 在严格 scope / latest-head CI / blocking-review / base-sync / provider-protection 条件下，同时构成专用 PR 的 **bounded auto-merge authorization**；
+2. `Ethics and Information Technology` 被选为当前 methodology article 的 primary target venue，`Science and Engineering Ethics` 保留为 secondary candidate。
+
+本轮已完成的协议传播：
+
+- Decision Log 记录 AHICP-D032；
+- Protocol Core P6 增加 bounded auto-merge 原则；
+- Framework Approval protocol 增加 §3.5；
+- Specification Framework Approval Gate 增加对应规范；
+- repository AGENTS contract 与 research-project template AGENTS 同步；
+- Working Memory 把 WM-T027 标记为完成，并把 WM-T014 标记为 venue selected；
+- Target Venue Review 从 AI recommendation 更新为 HUMAN-SELECTED；
+- Framework Status 更新为 Ethics and Information Technology preparation；
+- Methodology / Protocol CI 增加 D032 防回归检查。
+
+**治理边界：** bounded merge authorization 不等于 Final Artifact Approval，也不授权 submission / publication / release / deployment / secret handling。
+
+**PR #26：** D032 明确将当前 methodology PR 纳入 scoped merge authorization；最终是否自动 merge 仍以 latest-head 条件核验结果为准。
+
+---
+
+## 2026-09-21 — PR #26 bounded auto-merge 执行与验证
+
+依据 `AHICP-D032`，PR #26 在合并前完成以下条件核验：
+
+- dedicated methodology / Framework scope；
+- Framework 与后续 D032 直接治理/venue 同步均有人类授权；
+- latest-head Methodology Article CI：PASS；
+- latest-head Protocol Contract CI：PASS；
+- latest-head Ecosystem validation：PASS；
+- unresolved review threads：0；
+- branch vs `main`：behind = 0；
+- GitHub reported `mergeable=true`；
+- 标准 GitHub merge API 执行，不绕过 provider-side protection。
+
+执行结果：
+
+- PR：#26 `Reframe AHICP methodology article around project memory architecture`
+- result：`merged=true`
+- merge commit：`af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`
+- post-merge verification：`main` 已确认包含 AHICP-D032、`MA-FW-001` 与 `Ethics and Information Technology` target-venue state。
+
+**结论：** D032 bounded auto-merge authorization 已完成首次实际执行；当前 methodology Framework 工作已进入 main。
+
+---
+
+## 2026-09-21 — Ethics and Information Technology submission derivative preparation
+
+**依据：** AHICP-D033
+
+本工作周期完成第一版 venue-specific submission package：
+
+- `paper/submission/ethics-information-technology/MANUSCRIPT_BLINDED.md`
+- 双语 submission checklist；
+- 双语 AI / LLM use disclosure；
+- title / submission metadata template；
+- cover-letter draft；
+- dedicated EIT submission validator / CI。
+
+当前 blinded manuscript 机器指标：
+
+- abstract：185 words；
+- content：约 5,367 words；
+- keywords：6；
+- displayed heading levels：最多 3；
+- internal Decision / Framework / Working-Memory IDs：未发现；
+- direct GitHub URL：未发现；
+- substantive AI-use disclosure：已加入；
+- Data Availability Statement：已加入；
+- empirical effectiveness result：未声称。
+
+venue-level reference cleanup：
+
+- canonical evidence infrastructure 保持不变；
+- submission derivative 移除未在正文引用的 CRediT / UNESCO / Nature Methods 条目；
+- 因 MemGPT 当前仍是 arXiv/CoRR preprint，而 EIT guideline 要求 reference list 只包含正文引用且 published / accepted works，blinded derivative 中移除 MemGPT 例示与 reference；核心 related-work 论证继续由 Generative Agents、Agent-memory survey、LongMemEval、MemBench、RealMem 等支撑。
+
+开放 blocker：
+
+- `AHICP` 独特名称可能通过公开项目产生 search-based deanonymization；
+- final Word/docx 尚未生成；
+- citation / DOI / publication-status 逐项终审尚未完成；
+- Final Artifact Approval 尚未完成；
+- submission authorization 尚未发生。
+
+**状态：** submission derivative prepared; CI / PR validation next.
+
+---
+
+## 2026-09-21 — EIT citation audit 与 DOCX build pipeline
+
+**依据：** AHICP-D033
+
+在 PR #29 合并后，本轮继续执行 venue-specific Final Artifact review：
+
+- PR #29 已合入 `main`，merge commit：
+  `a789bbd3342b29ebb07caa9c0cd22da3315e7746`
+- 对 blinded manuscript 当前 reference set 完成 publication-status / metadata / DOI / standards audit；
+- 新增 `CITATION_AUDIT.md`；
+- 把 ICMJE / Nature Portfolio 明确区分为动态 policy sources，需要实际 submission 前再核验；
+- W3C PROV-DM 规范化为 2013-04-30 W3C Recommendation；
+- LongMemEval 规范化为 ICLR 2025 proceedings；
+- 建立 `tools/build_eit_docx.py`，把 blinded Markdown 可重复转换为 Word/docx；
+- EIT Submission CI 现在生成并上传 `MANUSCRIPT_BLINDED.docx` build candidate，并执行 ZIP/package structural check；
+- DOCX 仍不能因为 CI build success 自动视为 Final Artifact：逐页视觉 QA 仍是未完成门。
+
+当前 remaining blockers：
+
+1. citation ↔ reference-list 双向一致性终检；
+2. `AHICP` 名称的 search-based deanonymization risk；
+3. CI-generated Word/docx 的逐页视觉 QA；
+4. license；
+5. Final Artifact Approval；
+6. 正式 submission authorization；
+7. 动态 policy pages 在实际投稿前的最终复核。
+
+**状态：** citation audit completed; reproducible DOCX build ready; visual QA pending.
+
+---
+
+## 2026-09-21 — PR #30 EIT final-review merge 与 DOCX build verification
+
+依据 AHICP-D033，PR #30 在合并前完成：
+
+- branch vs `main`：behind = 0；
+- unresolved review threads：0；
+- Ecosystem validation：PASS；
+- Methodology Article CI：PASS；
+- EIT Submission CI：PASS；
+- EIT validator：PASS；
+- DOCX build：PASS；
+- DOCX ZIP/package structural validation：PASS；
+- workflow artifact upload：PASS。
+
+执行结果：
+
+- PR #30：`Audit EIT references and add reproducible DOCX build`
+- merge result：`merged=true`
+- merge commit：`b2e450baf5001f4879f740e67e21264aef115d5a`
+- generated artifact：`eit-manuscript-blinded-docx`
+- artifact size：约 53 KB
+- retention：30 days
+
+**边界：** build candidate 的生成与结构校验不等于逐页视觉 QA，也不等于 Final Artifact Approval。当前仍需处理 citation ↔ reference-list 双向终检、`AHICP` search-based deanonymization risk、Word 视觉 QA、license、Final Artifact Approval 与独立 submission authorization。
+
+**状态：** PR #30 merged; DOCX build candidate verified structurally; visual QA pending.
+
+---
+
+## 2026-09-21 — EIT masked reviewer derivative 与 citation-reference 双向验证
+
+**依据：** AHICP-D033  
+**性质：** venue-specific Final Artifact preparation；不产生新的 Framework 决定。
+
+本轮识别并处理一个 double-anonymous 风险：虽然 baseline blinded manuscript 已移除姓名、affiliation、GitHub URL 与内部 project IDs，但正文仍有大量 `AHICP` / 协议全称。由于该协议已有公开项目，独特名称可能通过普通搜索直接回溯到作者/仓库。
+
+执行：
+
+- 保留 `MANUSCRIPT_BLINDED.md` 作为 traceable blinded baseline；
+- 新增 `MANUSCRIPT_BLINDED_MASKED.md` 作为 reviewer-facing masked derivative；
+- masked derivative 保留同一 title / argument structure / citations / references / AI-use disclosure / Data Availability；
+- 仅把协议专名替换为中性表述，如 `the proposed protocol` / `the protocol` / `the proposed Project Memory Architecture`；
+- masked 稿机器检查：
+  - `AHICP`：0；
+  - 协议全称：0；
+  - direct GitHub URL：0；
+  - internal Decision / Framework / Working-Memory IDs：0；
+- 新增双语 `BLINDING_REVIEW`，明确不能声称完全匿名；仍需人类/编辑部确认 reviewer manuscript 路线；
+- EIT validator 扩展为同时检查 traceable / masked 两稿；
+- 明确建立 18 组 citation ↔ reference-list 映射，要求当前每个 reference entry 都有正文对应引用；
+- masked / unmasked reference section 必须逐字一致；
+- EIT CI 扩展为同时生成 traceable 与 masked 两个 DOCX build candidates，并分别执行 package structural validation / artifact upload。
+
+**治理边界：**
+
+- 不修改 `MA-FW-001`；
+- 不修改 canonical bilingual article；
+- masked derivative 是审稿匿名化派生物，不是对论文对象身份的永久改名；
+- Final Artifact Approval 尚未发生；
+- submission authorization 尚未发生；
+- 视觉 QA 仍独立于 CI structural validation。
+
+**当前状态：** masked mitigation prepared; latest-head CI verification pending.
+
+---
+
+## 2026-09-21 — EIT masked/citation CI 验证通过
+
+在 PR #32 的中间 head 上，EIT Submission CI 已实际完成并通过：
+
+- traceable blinded manuscript validation：PASS；
+- masked blinded manuscript validation：PASS；
+- masked 稿 `AHICP` / 协议全称 / direct GitHub URL / internal IDs 禁用检查：PASS；
+- 18 组 citation ↔ reference-list 映射：PASS；
+- masked / unmasked reference section equality：PASS；
+- traceable DOCX build：PASS；
+- masked DOCX build：PASS；
+- 两份 DOCX ZIP/package structural validation：PASS；
+- traceable artifact upload：PASS；
+- masked artifact upload：PASS。
+
+生成的 workflow artifacts：
+
+- `eit-manuscript-blinded-docx` — 53,268 bytes；
+- `eit-manuscript-blinded-masked-docx` — 53,256 bytes。
+
+**边界：**
+
+- CI 结构验证不替代逐页视觉 QA；
+- masked route 仍需人类/编辑部最终确认；
+- residual discoverability 不能被描述为“完全匿名”；
+- Final Artifact Approval / submission authorization 仍未发生。
+
+**状态：** citation consistency verified; masked mitigation technically validated; final head revalidation pending after state write-back.

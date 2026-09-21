@@ -1,6 +1,6 @@
 **Project links:** [Public homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/) · [GitHub repository](https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol)
 
-**Human first entrypoint:** [Start Here: A Human Guide to Inquiry, Creation, and AI Assistance](docs/HUMAN_GUIDE.md) · [中文 canonical](docs/HUMAN_GUIDE.zh-CN.md)
+**Start with the system overview:** [public homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/) · [complete guide](docs/HUMAN_GUIDE.md) · [中文指南](docs/HUMAN_GUIDE.zh-CN.md)
 
 **Related public projects:** [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [Vault Interface homepage](https://chongliuphil.github.io/Vault-interface/) · [Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
 
@@ -15,13 +15,13 @@
 
 **AI-Assisted Human Inquiry and Creation Protocol (AHICP)** is a GitHub-centered protocol for sustained, human-led inquiry, research, reasoning, writing, and creation with AI assistance.
 
-> **AI agents may be replaceable; human purpose and durable project state must not be.**
+> **Chats and AI tools can change; the project should still preserve its purpose, evidence, decisions, and current state.**
 
 A chat window is an interaction surface, not the durable memory of a sustained inquiry or creation project. Important human decisions, argument structures, presentation requirements, evidence constraints, and approval states should be externalized into explicit, version-controlled repository files so that a new competent AI agent can continue the work without needing the original conversation history.
 
 ## Normative orientation
 
-AHICP is **human-led and AI-assisted**. The human remains the bearer of project purpose, substantive judgment, approval, and ultimate responsibility. AI systems may provide extensive assistance—such as retrieval, comparison, structuring, proposal generation, drafting, checking, transformation, and repository maintenance—but AI proposals do not become human commitments merely because they are useful or polished.
+AHICP is designed for people working with AI over time. Project purpose, important judgments, approvals, and final responsibility remain explicit rather than being inferred from AI output. AI systems may provide extensive assistance—such as retrieval, comparison, structuring, proposal generation, drafting, checking, transformation, and repository maintenance—but AI proposals do not become human commitments merely because they are useful or polished.
 
 AHICP governs AI assistance in human inquiry and creation. It does **not** define publishing infrastructure. Projects that need a portable source-to-publication workflow may separately adopt the **Personal Publishing Framework (PPF)**.
 

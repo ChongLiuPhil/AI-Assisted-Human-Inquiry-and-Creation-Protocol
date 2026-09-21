@@ -30,6 +30,16 @@ def main() -> int:
         raise SystemExit("ecosystem.yaml is missing an agent/ecosystem entrypoint")
 
     human = manifest.get("human_entrypoint")
+    public_delivery = manifest.get("public_delivery")
+    if not isinstance(public_delivery, dict):
+        raise SystemExit("ecosystem.yaml is missing public_delivery")
+    if public_delivery.get("current_provider") != "github-pages":
+        raise SystemExit("AHICP must keep GitHub Pages current before verified cutover")
+    if public_delivery.get("preferred_provider") != "cloudflare-pages":
+        raise SystemExit("AHICP preferred public delivery must be Cloudflare Pages")
+    if public_delivery.get("cutover_rule") != "keep-current-public-urls-until-verified-cloudflare-deployment":
+        raise SystemExit("AHICP public URL cutover rule is missing or unsafe")
+
     machine = manifest.get("machine_entrypoint")
     if not isinstance(human, dict) or human.get("role") != "human-conceptual-entry":
         raise SystemExit("ecosystem.yaml is missing the human conceptual entry")
@@ -68,6 +78,9 @@ def main() -> int:
         'data-copy="newProjectPromptEn"',
         "你只需要把一段话发给 AI",
         "You only need to send one instruction to your AI",
+        'id="architecture"',
+        'id="architecture-en"',
+        "Working Memory",
         "function renderMd",
     ]
     for marker in required_page_markers:
@@ -112,10 +125,14 @@ def main() -> int:
 
     guide_zh = (ROOT / "docs/HUMAN_GUIDE.zh-CN.md").read_text(encoding="utf-8")
     guide_en = (ROOT / "docs/HUMAN_GUIDE.md").read_text(encoding="utf-8")
-    if "## 15. 现在真正开始：把一段话发给 AI" not in guide_zh:
+    if "## 15. 现在开始：把这段话发给 AI" not in guide_zh:
         raise SystemExit("Chinese Human Guide must end in the concrete AI start action")
-    if "## 15. Start for real: send one instruction to your AI" not in guide_en:
-        raise SystemExit("English Human Guide must end in the concrete AI start action")
+    if "## 15. Start now: send this instruction to your AI" not in guide_en:
+        raise SystemExit("English guide must retain the concrete AI start action")
+    if "## 为什么它能跨聊天、跨模型、隔很久以后继续" not in guide_zh:
+        raise SystemExit("Chinese guide must explain the AHICP memory architecture")
+    if "## Why the project can survive across chats, models, and long gaps" not in guide_en:
+        raise SystemExit("English guide must explain the AHICP memory architecture")
 
     print("ecosystem + human-entry validation passed")
     return 0

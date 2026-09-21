@@ -1,0 +1,95 @@
+name: EIT Submission CI
+
+on:
+  pull_request:
+    paths:
+      - "paper/submission/ethics-information-technology/**"
+      - "paper/METHODOLOGY_ARTICLE_FORM_CORE*.md"
+      - "paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS*.md"
+      - "docs/working-memory/**"
+      - "core/DECISION_LOG*.md"
+      - "tools/check_eit_submission.py"
+      - "tools/build_eit_docx.py"
+      - ".github/workflows/eit-submission-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "paper/submission/ethics-information-technology/**"
+      - "paper/METHODOLOGY_ARTICLE_FORM_CORE*.md"
+      - "paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS*.md"
+      - "docs/working-memory/**"
+      - "core/DECISION_LOG*.md"
+      - "tools/check_eit_submission.py"
+      - "tools/build_eit_docx.py"
+      - ".github/workflows/eit-submission-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-eit-submission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Install DOCX build dependency
+        run: python -m pip install python-docx
+      - name: Validate Ethics and Information Technology submission derivative
+        run: python tools/check_eit_submission.py
+      - name: Build blinded DOCX candidates
+        run: |
+          python tools/build_eit_docx.py
+          python tools/build_eit_docx.py \
+            paper/submission/ethics-information-technology/MANUSCRIPT_BLINDED_MASKED.md \
+            paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx
+      - name: Validate DOCX package structure
+        run: |
+          test -s paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED.docx
+          test -s paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx
+          unzip -t paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED.docx
+          unzip -t paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx
+      - name: Validate DOCX page numbering and anonymous metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          paths = (
+              Path("paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED.docx"),
+              Path("paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx"),
+          )
+          forbidden = ("ChongLiuPhil", "chong.liu.research@", "AI-Assisted-Human-Inquiry-and-Creation-Protocol")
+          for path in paths:
+              with ZipFile(path) as archive:
+                  footer_names = [name for name in archive.namelist() if name.startswith("word/footer") and name.endswith(".xml")]
+                  footer_xml = "\n".join(archive.read(name).decode("utf-8") for name in footer_names)
+                  if "PAGE" not in footer_xml:
+                      raise SystemExit(f"{path.name}: missing automatic PAGE field")
+                  document_xml = archive.read("word/document.xml").decode("utf-8")
+                  if "w:cantSplit" not in document_xml:
+                      raise SystemExit(f"{path.name}: table rows may split across pages")
+                  if document_xml.count("w:keepNext") < 2:
+                      raise SystemExit(f"{path.name}: table captions are not kept with following tables")
+                  core_xml = archive.read("docProps/core.xml").decode("utf-8")
+                  for marker in forbidden:
+                      if marker.lower() in core_xml.lower():
+                          raise SystemExit(f"{path.name}: identifying metadata marker present: {marker}")
+          print("DOCX page-number, table-pagination, and anonymous-metadata validation passed")
+          PY
+      - name: Upload traceable blinded DOCX build candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: eit-manuscript-blinded-docx
+          path: paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED.docx
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload masked double-anonymous DOCX build candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: eit-manuscript-blinded-masked-docx
+          path: paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx
+          if-no-files-found: error
+          retention-days: 30
