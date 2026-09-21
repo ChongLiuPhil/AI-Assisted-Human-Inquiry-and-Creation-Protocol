@@ -476,3 +476,46 @@ Execution result:
 - post-merge verification: `main` confirmed to contain AHICP-D032, `MA-FW-001`, and the `Ethics and Information Technology` target-venue state.
 
 **Conclusion:** the D032 bounded auto-merge authorization has completed its first actual execution; the methodology Framework work is now in `main`.
+
+---
+
+## 2026-09-21 — Ethics and Information Technology submission derivative preparation
+
+**Authority:** AHICP-D033
+
+This work cycle prepared the first venue-specific submission package:
+
+- `paper/submission/ethics-information-technology/MANUSCRIPT_BLINDED.md`;
+- bilingual submission checklist;
+- bilingual AI / LLM use disclosure;
+- title / submission metadata template;
+- cover-letter draft;
+- dedicated EIT submission validator / CI.
+
+Current machine-checked blinded-manuscript metrics:
+
+- abstract: 185 words;
+- content: approximately 5,367 words;
+- keywords: 6;
+- displayed heading levels: maximum 3;
+- internal Decision / Framework / Working-Memory IDs: none detected;
+- direct GitHub URL: none detected;
+- substantive AI-use disclosure: present;
+- Data Availability Statement: present;
+- empirical effectiveness result: not claimed.
+
+Venue-level reference cleanup:
+
+- canonical evidence infrastructure remains unchanged;
+- the submission derivative removes uncited CRediT / UNESCO / Nature Methods entries;
+- because MemGPT remains an arXiv/CoRR preprint while the EIT guideline says the reference list should contain works cited in the text that are published or accepted, the blinded derivative removes the MemGPT example/reference; the related-work argument remains supported by Generative Agents, the Agent-memory survey, LongMemEval, MemBench, RealMem, and other published work.
+
+Open blockers:
+
+- the distinctive `AHICP` name may enable search-based deanonymization through public project materials;
+- final Word/docx has not yet been generated;
+- citation / DOI / publication-status item-by-item final review remains pending;
+- Final Artifact Approval remains pending;
+- submission authorization has not occurred.
+
+**Status:** submission derivative prepared; CI / PR validation next.
