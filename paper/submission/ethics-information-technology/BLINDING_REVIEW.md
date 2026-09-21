@@ -28,9 +28,9 @@ However, it still contains many occurrences of `AHICP` / the protocol's full nam
 - does not alter `MA-FW-001`;
 - does not alter the canonical article;
 - replaces the protocol name / `AHICP` with neutral formulations such as:
-  - `the proposed protocol`
   - `the protocol`
   - `the proposed Project Memory Architecture`
+  - `the protocol's Project Memory`
 - retains provider-neutral / repository-neutral implementation description;
 - introduces no fabricated institution, author, or project provenance.
 
@@ -40,6 +40,13 @@ Machine checks:
 - full protocol name: 0;
 - direct GitHub URL: 0;
 - internal Decision / Framework / Working-Memory IDs: 0.
+
+Latest-head CI also requires:
+
+- the masked manuscript to differ from the traceable manuscript only through a deterministic identity-masking transform, preventing a second substantive manuscript from emerging;
+- identical reference sections across the two derivatives;
+- absence of common mechanical masking grammar defects;
+- DOCX core metadata to exclude project-owner / author identity markers.
 
 ## 3. Recommended submission route
 
@@ -65,6 +72,8 @@ Residual discoverability may remain through:
 - unusual combinations of concepts.
 
 The project must therefore not claim that anonymity is complete.
+
+Current EIT / Springer double-anonymous guidance places anonymization responsibility on authors and warns that public online material can make reverse identification easier. The masked derivative is therefore the conservative reviewer-facing route, but technical checks cannot eliminate residual discoverability created by a public project. The live guidelines / submission interface must still be rechecked immediately before actual submission.
 
 ## 5. Human gate before submission
 
