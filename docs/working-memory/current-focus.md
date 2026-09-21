@@ -75,8 +75,7 @@ Current Framework work and target-venue selection are complete.
 Primary target: `Ethics and Information Technology`.
 
 The submission derivative is prepared. Next stage:
-1. let latest-head EIT CI verify both traceable/masked manuscripts and the explicit 18-entry citation ↔ reference-list mapping;
-2. complete artifact-level English and argument review;
+1. complete artifact-level English and argument review;
 3. obtain human/editorial confirmation of the masked reviewer route and address residual deanonymization risk;
 4. visually inspect both CI-generated traceable/masked Word/docx build candidates page by page;
 6. recheck dynamic ICMJE / Nature policy pages immediately before actual submission;
@@ -93,9 +92,9 @@ Final Artifact / publication layer still has:
 - venue-specific form constraints: `ADOPTED — AHICP-D033`
 - blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
 - citation audit: `COMPLETED — LIVE POLICY RECHECK PENDING`
-- citation ↔ reference-list consistency: `CI ENFORCED / LATEST-HEAD VERIFICATION PENDING`
+- citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS / EIT CI PASS`
 - anonymization risk (`AHICP` discoverability): `MASKED DERIVATIVE PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
-- Word/docx: `TRACEABLE BUILD CANDIDATE GENERATED; MASKED DUAL-BUILD CI PENDING / VISUAL QA PENDING`
+- Word/docx: `TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`
 - Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF
