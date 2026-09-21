@@ -593,3 +593,36 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** merge governance, Working Memory, Target Venue Review, methodology PR #26, Final Artifact preparation.
 
 **Status:** explicitly human-approved.
+
+---
+
+## 2026-09-21 — AHICP-D033
+
+**Source:** human project founder  
+**Classification:** FORM, PUBLICATION, GOVERNANCE
+
+**Decision:**
+
+1. The human project founder explicitly approves continuing venue-specific Final Artifact preparation for `Ethics and Information Technology`.
+2. Without changing the core theses, scope, or approval semantics of `MA-FW-001`, the project may create a separate submission-derivative package and adopt the journal's current official external constraints:
+   - double-anonymous peer review;
+   - manuscript content approximately 5,000–8,000 words, excluding title, abstract, and references from that content count;
+   - abstract 150–250 words;
+   - 4–6 keywords;
+   - author-identifying information removed from the blinded manuscript and associated blinded files;
+   - substantive LLM / generative-AI use transparently documented in Methods or a suitable alternative location; the project's actual drafting / restructuring / literature-organization use must not be relabeled as mere copy editing;
+   - an original-research submission requires a Data Availability Statement; this manuscript reports no empirical dataset / completed experiment and should state that accurately;
+   - references use author–year presentation and receive final venue-consistency verification;
+   - Word/docx is the journal's primary manuscript format, with LaTeX also possible for mathematical content; the repository may retain Markdown canonical/submission derivatives before generating final docx.
+3. The canonical bilingual article remains the project's scholarly state. The venue-specific blinded manuscript, submission checklist, title-page metadata template, AI-use disclosure, and cover-letter draft are **derived submission artifacts** and must not silently replace the canonical article.
+4. The currently human-approved title remains active; this work cycle does not independently change the paper's core title.
+5. Double-anonymous preparation must not rely on false representation. Because the distinctive `AHICP` name may itself point to a public repository, this must remain an **anonymization risk**: remove direct GitHub URLs, author identity, internal Decision IDs, and development-status metadata now, while deciding before actual submission whether a masked repository, editorial clarification, or another anonymized-material route is needed.
+6. AI-use disclosure must accurately state that AI tools supported iterative drafting, restructuring, literature organization, bilingual synchronization, consistency checking, and repository-oriented implementation support, while human author(s) remain responsible for research direction, the core Framework, claim boundaries, final judgments, citation verification, and the final manuscript. AI is not listed as an author.
+7. This decision authorizes venue-specific formatting, anonymization, non-substantive language editing, citation cleanup, submission-package construction, and corresponding validation.
+8. If review reveals a need to change a core thesis, major inferential relation, scope, or contribution boundary in `MA-FW-001`, return to a new Working Framework / create `MA-FW-002` where necessary; venue adaptation must not silently rewrite the approved Framework.
+9. This decision **does not constitute Final Artifact Approval and does not authorize submission / publication / release**. Formal submission remains a separate human decision.
+10. A venue-preparation PR containing only the authorized derivative preparation, state synchronization, and validation may merge under scoped authorization when latest-head CI is green, no blocking review remains, and the branch is not behind its base. This is explicit human authorization within the D029/D032 model, not publication authorization.
+
+**Affected components:** Article Form Core, submission derivative package, Working Memory, Decision Log, venue validation.
+
+**Status:** explicitly human-approved; venue-specific preparation authorized.
