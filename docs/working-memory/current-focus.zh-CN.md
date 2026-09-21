@@ -59,6 +59,9 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - 生成 blinded manuscript：摘要 185 words、正文约 5,367 words、6 keywords、最大三级标题；
 - 加入 substantive generative-AI disclosure 与 Data Availability Statement；
 - 建立 EIT submission validator / CI；
+- PR #29 已按 D033 scoped merge authorization 合入 `main`，merge commit `a789bbd3342b29ebb07caa9c0cd22da3315e7746`；
+- 完成 blinded derivative 的 citation / publication-status audit；
+- 建立可重复 DOCX builder，并接入 EIT CI 生成 build candidate；
 - PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
@@ -70,13 +73,14 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 Primary target：`Ethics and Information Technology`。
 
 当前 submission derivative 已准备，下一阶段：
-1. 完成 latest-head EIT Submission CI 与 repository CI；
-2. 逐条 citation / DOI / publication-status 核验；
+1. 完成当前 final-review PR 的 latest-head CI；
+2. 完成 author–year citation ↔ reference-list 双向一致性终检；
 3. 完成 artifact-level 英文与论证终审；
 4. 处理 `AHICP` 名称可能导致 search-based deanonymization 的开放风险；
-5. 生成并视觉检查最终 Word/docx；
-6. 人类完成 Final Artifact Approval；
-7. submission / publication / release 仍需独立授权。
+5. 对 CI 生成的 Word/docx build candidate 做逐页视觉 QA；
+6. 正式 submission 前重新核验动态 ICMJE / Nature policy pages；
+7. 人类完成 Final Artifact Approval；
+8. submission / publication / release 仍需独立授权。
 
 ## PRIMARY_BLOCKER
 
@@ -86,9 +90,10 @@ Final Artifact / publication 层仍存在：
 - license：`WAITING-HUMAN`
 - target publication venue：`SELECTED — Ethics and Information Technology / AHICP-D032`
 - venue-specific form constraints：`ADOPTED — AHICP-D033`
-- blinded submission derivative：`PREPARED / CI PENDING`
+- blinded submission derivative：`PREPARED / PR #29 MERGED / CI PASS`
+- citation audit：`COMPLETED — LIVE POLICY RECHECK PENDING`
 - anonymization risk (`AHICP` discoverability)：`OPEN`
-- final Word/docx：`PENDING`
+- Word/docx：`BUILD PIPELINE READY / VISUAL QA PENDING`
 - Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF
