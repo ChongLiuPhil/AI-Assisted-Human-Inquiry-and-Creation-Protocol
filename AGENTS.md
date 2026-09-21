@@ -179,6 +179,8 @@ Once approved, create a versioned immutable snapshot such as `FW-001.md`.
 
 Material intellectual changes require a new framework version. Framework Approval is a AHICP governance checkpoint; it must not automatically be expanded into a universal cross-disciplinary theory of authorship, and it does not remove Final Artifact Approval.
 
+For a PR **dedicated to implementing that Approved Framework**, Framework Approval may also act as **bounded auto-merge authorization** when the PR contains only the approved Framework plus explicitly authorized direct synchronization/governance changes, latest-head CI is green, no unresolved blocking review remains, no unauthorized scope expansion exists, the branch is synchronized with its base, and the merge does not bypass provider-side required protections. If any condition stops holding, the Agent must stop auto-merge and return to the ordinary authorization flow. This authorization does not include publication/release, deployment, secret handling, or Final Artifact Approval.
+
 AHICP's responsibility principle is that AI may share work, but humans must remain the bearers of responsibility in human–AI collaborative research and inquiry, especially in public dissemination of knowledge.
 
 ## 8. Evidence conflicts
