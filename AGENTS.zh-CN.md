@@ -179,6 +179,8 @@ AI 生成的论点、区分、重组、术语、版式或审美选择，不会�
 
 实质性思想变化要求产生新的 framework 版本。Framework Approval 是 AHICP 的治理检查点，不得自动扩张为跨学科的一般作者身份理论，也不取消 Final Artifact Approval。
 
+对于**专门用于落实该 Approved Framework** 的 PR，如果只包含已批准 Framework 及明确授权的直接同步/治理变更，并且 latest-head CI 全绿、没有 unresolved blocking review、没有未授权 scope expansion、branch 已与 base 同步、merge 不绕过 provider-side 必需保护，则 Framework Approval 可以同时作为该 PR 的 **bounded auto-merge authorization**。若任一条件失效，必须停止自动 merge 并回到普通授权流程。该授权不包括 publication/release、deployment、secret handling 或 Final Artifact Approval。
+
 AHICP 的责任原则是：AI 可以分担工作，但在人机协作研究、探究以及尤其公开知识传播中，人类必须保持为责任主体.
 
 ## 8. 证据冲突
