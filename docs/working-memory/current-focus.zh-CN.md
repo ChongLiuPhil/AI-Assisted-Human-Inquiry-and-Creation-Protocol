@@ -56,10 +56,8 @@
 
 本轮机器工作完成后：
 
-1. 运行仓库 CI / consistency validation；
-2. 创建 PR，保留最终 merge gate；
-3. 人类审阅新的 project-memory-centered framework 与论文；
-4. 后续明确选择：
+1. 人类审阅新的 project-memory-centered framework 与论文；
+2. 后续明确选择：
    - `APPROVE`
    - `REVISE`
    - `REJECT`
