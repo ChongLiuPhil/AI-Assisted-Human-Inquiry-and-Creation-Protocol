@@ -522,6 +522,7 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 7. 论文应与当前 Agent-memory、long-term interactive memory、provenance、distributed cognition / extended-mind、epistemic dependence、automation reliance 与作者/问责规范展开明确对话，同时避免声称这些文献已经证明 AHICP 的设计有效。
 8. 现有题目继续保留；本决定授权对 Working Framework 和 DERIVED-PROVISIONAL 正文进行大规模结构性重写，以落实上述方向。该授权**不等于对重写后完整 Framework 的整体 Framework Approval，也不等于 Final Artifact Approval**。
 9. 中文继续作为 canonical 学术稿，英文作为 synchronized mirror；本轮结构性修改必须同步维护两种语言。
+10. 本决定只改变方法论文章的内容与结构方向，不撤销或替代 `AHICP-D027`–`AHICP-D029` 已生效的 external-system、authorization、human-handoff 与 scoped-authorization 治理；这些规则继续约束本项目及后续 Agent 的机器操作。
 
 **受影响组件：** Article Content Core、Working Argument Map、Framework Status、methodology article、evidence layer、bibliography、Working Memory、Decision Log。
 
