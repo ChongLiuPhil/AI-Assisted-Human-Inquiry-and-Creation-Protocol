@@ -176,8 +176,8 @@ Memory bloat, conflicting state, selective retrieval, archive, summary, privacy/
 ### IX. Framework Approval, authorship responsibility, and public artifacts
 Connect project memory to Framework Approval / Final Artifact Approval, framework vs derived defects, and reader-facing projection.
 
-### X. Relationship to Agent-memory and provenance research
-Complementarity: agent memory addresses Agent continuity; project memory addresses project continuity and governance.
+### X. Relationship to prior Project Memory, Agent Memory, and provenance research
+Clarify the intersection and boundaries among the three traditions and constrain AHICP novelty to the candidate synthesis of a governed, model-substitutable Project Memory Architecture.
 
 ### XI. Evaluation framework and research agenda
 Tasks, metrics, controls; no empirical results claimed.
