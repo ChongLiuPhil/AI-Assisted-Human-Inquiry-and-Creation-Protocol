@@ -11,6 +11,7 @@ CHECK_EN = BASE / "SUBMISSION_CHECKLIST.md"
 CHECK_ZH = BASE / "SUBMISSION_CHECKLIST.zh-CN.md"
 AI_EN = BASE / "AI_USE_DISCLOSURE.md"
 AI_ZH = BASE / "AI_USE_DISCLOSURE.zh-CN.md"
+CITATION_AUDIT = BASE / "CITATION_AUDIT.md"
 TITLE_META = BASE / "TITLE_PAGE_METADATA_TEMPLATE.md"
 COVER = BASE / "COVER_LETTER_DRAFT.md"
 
@@ -73,6 +74,7 @@ def main() -> int:
     check_zh = read(CHECK_ZH)
     ai_en = read(AI_EN)
     ai_zh = read(AI_ZH)
+    citation_audit = read(CITATION_AUDIT)
     title_meta = read(TITLE_META)
     cover = read(COVER)
     form_en = read(FORM_EN)
@@ -178,6 +180,11 @@ def main() -> int:
     require(check_zh, "Final Artifact Approval", "Chinese checklist")
     require(ai_en, "FINAL HUMAN REVIEW PENDING", "English AI disclosure")
     require(ai_zh, "FINAL HUMAN REVIEW PENDING", "Chinese AI disclosure")
+    require(citation_audit, "AUDITED — FINAL LIVE-POLICY RECHECK STILL REQUIRED", "Citation Audit")
+    require(citation_audit, "VERIFIED-PUBLISHED", "Citation Audit")
+    require(citation_audit, "CURRENT-POLICY-SOURCE", "Citation Audit")
+    require(citation_audit, "MemGPT", "Citation Audit")
+    require(citation_audit, "PROV-DM", "Citation Audit")
 
     require(title_meta, "[HUMAN TO COMPLETE]", "title-page metadata template")
     require(cover, "[CONFIRM: the manuscript is not under consideration elsewhere]", "cover-letter draft")
