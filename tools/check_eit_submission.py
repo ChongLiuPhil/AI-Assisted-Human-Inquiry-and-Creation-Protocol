@@ -70,6 +70,68 @@ def reference_sort_key(line: str) -> str:
     return raw.split(",", 1)[0].replace("*", "").strip().lower()
 
 
+def build_masked_derivative(source: str) -> str:
+    """Derive the reviewer-masked manuscript from the traceable submission derivative."""
+    replacements = (
+        ("the Project Memory Architecture of the AI-Assisted Human Inquiry and Creation Protocol (AHICP)", "the proposed Project Memory Architecture"),
+        ("AHICP's Project Memory Architecture", "The proposed Project Memory Architecture"),
+        ("The AHICP Project Memory Architecture", "The proposed Project Memory Architecture"),
+        ("AHICP Project Memory", "the protocol's Project Memory"),
+        ("AHICP governed Project Memory", "Proposed governed Project Memory"),
+        ("AHICP Working Memory", "The protocol's Working Memory"),
+        ("an AHICP workflow", "a protocol-governed workflow"),
+        ("full AHICP adoption", "full adoption of the protocol"),
+        ("an AHICP governance mechanism", "a governance mechanism of the protocol"),
+        ("demanding AHICP criterion", "demanding protocol criterion"),
+        ("Typical AHICP carriers", "Typical protocol carriers"),
+        ("AHICP asks", "The protocol asks"),
+        ("AHICP has conceptual", "The protocol has conceptual"),
+        ("AHICP is not currently", "The protocol is not currently"),
+        ("AHICP is not a single", "The protocol is not a single"),
+        ("AHICP organizes", "The protocol organizes"),
+        ("AHICP can also", "The protocol can also"),
+        ("AHICP currently", "The protocol currently"),
+        ("AHICP does not", "The protocol does not"),
+        ("AHICP needs", "The protocol needs"),
+        ("AHICP therefore", "The protocol therefore"),
+        ("AHICP uses", "The protocol uses"),
+        ("AHICP distinguishes", "The protocol distinguishes"),
+        ("AHICP is not intended", "The protocol is not intended"),
+        ("AHICP already", "The protocol already"),
+        ("AHICP proposes", "The protocol proposes"),
+        ("AHICP's", "the protocol's"),
+        ("AHICP", "the protocol"),
+    )
+    masked = source
+    for old, new in replacements:
+        masked = masked.replace(old, new)
+    post_replacements = (
+        ("recorded.** the protocol's candidate contribution", "recorded.** The protocol's candidate contribution"),
+        ("over-reliance. the protocol's response", "over-reliance. The protocol's response"),
+        ("the protocol's Project Memory asks instead:", "The protocol's Project Memory asks instead:"),
+        ("the protocol's research opportunity is therefore", "The protocol's research opportunity is therefore"),
+        ("as a new concept. the protocol's scholarly value", "as a new concept. The protocol's scholarly value"),
+        ("public release.” the protocol and companion", "public release.” The protocol and companion"),
+    )
+    for old, new in post_replacements:
+        masked = masked.replace(old, new)
+    return masked
+
+
+def require_no_unmapped_years(
+    body: str, citation_pairs: tuple[tuple[str, str], ...], source: str
+) -> None:
+    residual = body
+    for citation_marker, _reference_prefix in citation_pairs:
+        residual = residual.replace(citation_marker, "")
+    years = sorted(set(re.findall(r"(?<!\\d)(?:19|20)\\d{2}(?!\\d)", residual)))
+    if years:
+        fail(
+            f"{source} contains year-bearing text not covered by citation audit mapping: "
+            + ", ".join(years)
+        )
+
+
 def main() -> int:
     manuscript = read(MANUSCRIPT)
     masked_manuscript = read(MASKED_MANUSCRIPT)
@@ -188,6 +250,8 @@ def main() -> int:
         if not any(line.startswith(reference_prefix) for line in ref_lines):
             fail(f"reference list is missing mapped entry for citation: {citation_marker}")
 
+    require_no_unmapped_years(body_without_refs, citation_reference_pairs, "blinded manuscript body")
+
     masked_abstract = section(masked_manuscript, "## Abstract", "**Keywords:**")
     masked_abstract_words = words(masked_abstract.replace("## Abstract", "").strip())
     if not 150 <= masked_abstract_words <= 250:
@@ -221,7 +285,11 @@ def main() -> int:
     for pattern, description in (
         (r"\bAHICP\b", "protocol acronym"),
         (r"AI-Assisted Human Inquiry and Creation Protocol", "full protocol name"),
-        (r"the the proposed protocol", "masking artifact"),
+        (r"\bthe the\b", "duplicated article from masking"),
+        (r"\ban the protocol\b", "broken article from masking"),
+        (r"\bfull the protocol\b", "broken masking phrase"),
+        (r"Typical the protocol", "broken masking table label"),
+        (r"demanding the protocol", "broken masking phrase"),
     ):
         if re.search(pattern, masked_manuscript, re.IGNORECASE):
             fail(f"masked blinded manuscript contains prohibited {description}: {pattern}")
@@ -236,6 +304,17 @@ def main() -> int:
     masked_body_without_refs = masked_manuscript[:masked_manuscript.find("## References")]
     for citation_marker, _reference_prefix in citation_reference_pairs:
         require(masked_body_without_refs, citation_marker, "masked blinded manuscript body")
+
+    require_no_unmapped_years(
+        masked_body_without_refs, citation_reference_pairs, "masked blinded manuscript body"
+    )
+
+    expected_masked = build_masked_derivative(manuscript)
+    if masked_manuscript != expected_masked:
+        fail(
+            "masked manuscript diverges from deterministic identity-masking transform "
+            "of traceable manuscript"
+        )
 
     require(blinding_en, "MASKED DERIVATIVE PREPARED", "English Blinding Review")
     require(blinding_zh, "MASKED DERIVATIVE PREPARED", "Chinese Blinding Review")
