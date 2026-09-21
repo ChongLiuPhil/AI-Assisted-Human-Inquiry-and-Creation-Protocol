@@ -102,14 +102,14 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 - final theoretical positioning of extended / distributed cognition;
 - specific benchmark implementations / samples / statistical designs;
 - any AHICP effectiveness claim;
-- target venue / disciplinary positioning;
-- venue-specific form / AI / authorship requirements;
+- target venue: `SELECTED — Ethics and Information Technology / AHICP-D032`;
+- venue-specific form / double-blind / AI-use / authorship requirements: `IN PROGRESS`;
 - license;
 - Final Artifact Approval.
 
 ## Synchronization state
 
-- Human decision -> Decision Log: `SYNC — AHICP-D031 RECORDED`
+- Human decision -> Decision Log: `SYNC — AHICP-D032 RECORDED`
 - D030 direction -> Content Core: `SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries: `SYNC`
 - Approved Framework snapshot: `MA-FW-001 CREATED`
@@ -127,7 +127,7 @@ The next step is no longer Framework Approval.
 
 The next governance gate is:
 
-`FINAL ARTIFACT REVIEW / TARGET-VENUE PREPARATION`
+`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY PREPARATION`
 
 Before Final Artifact Approval, the article may continue to receive:
 - language and logic editing;
