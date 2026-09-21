@@ -13,7 +13,9 @@ AHICP 负责探究与创作中的方法、判断和协作规则。它独立于�
 
 ### 承载网站的平台可以替换
 
-当前面向读者的网站由 GitHub Pages 提供。这个网址只是当前的承载位置，不等于入口本身。权威内容仍然来自仓库中受版本控制的中英文指南。以后即使公共网站迁移到 Cloudflare 或其他平台，也不改变 AHICP 的介绍入口角色以及与 Starter 的机器交接关系。
+当前面向读者的网站仍由 GitHub Pages 提供；Cloudflare Pages 已确定为首选迁移目标，GitHub 继续作为权威源文件、版本历史和 CI 平台。在 Cloudflare 部署、目标域名、机器交接和跨项目链接全部验证完成以前，现有 URL 仍然是正式入口。
+
+这个网址只是当前承载位置，不等于入口本身。迁移应遵循 [Cloudflare 公共站点迁移说明](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.zh-CN.md)；不能因为 Cloudflare staging project 已经创建，就提前修改 Human Entry URL。
 
 当前稳定的机器入口：
 https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
