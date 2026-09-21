@@ -88,6 +88,38 @@ Framework Approval allows development to proceed without requiring human line-by
 
 Framework Approval is a AHICP governance architecture; it should not automatically be presented as a universal theory of authorship across all disciplines, institutions, or publication regimes.
 
+### 3.5 Framework Approval and bounded auto-merge authorization
+
+When a dedicated PR contains only:
+
+- implementation of an Approved Framework;
+- direct synchronization/governance changes related to that Framework and explicitly authorized by the human;
+- non-substantive validation, citation, formatting, or state repair;
+
+and all of the following are true:
+
+- latest-head required CI / validation is green;
+- no unresolved blocking review / review thread remains;
+- no unauthorized substantive scope expansion exists beyond the approved scope;
+- any substantive change added after Framework Approval has separate explicit human authorization;
+- the branch is synchronized with its target base, or has been synchronized without unresolved conflict;
+- the merge does not bypass provider-side required protections, permissions, or human-reserved gates;
+
+then Framework Approval may also constitute **bounded auto-merge authorization** for that dedicated PR.
+
+The purpose is to avoid requesting a second, duplicative merge approval merely to move the same approved work into `main`.
+
+It does not authorize:
+
+- publication / release / submission;
+- deployment or other external side effects;
+- secret handling;
+- later-added unrelated features;
+- scope-expanded changes;
+- Final Artifact Approval.
+
+If any condition ceases to hold, the auto-merge authorization expires and the Agent must return to the ordinary authorization flow.
+
 ## 4. Derived expansion
 
 After framework approval, AI agents may expand the framework into:
