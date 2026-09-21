@@ -1,0 +1,37 @@
+name: EIT Submission CI
+
+on:
+  pull_request:
+    paths:
+      - "paper/submission/ethics-information-technology/**"
+      - "paper/METHODOLOGY_ARTICLE_FORM_CORE*.md"
+      - "paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS*.md"
+      - "docs/working-memory/**"
+      - "core/DECISION_LOG*.md"
+      - "tools/check_eit_submission.py"
+      - ".github/workflows/eit-submission-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "paper/submission/ethics-information-technology/**"
+      - "paper/METHODOLOGY_ARTICLE_FORM_CORE*.md"
+      - "paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS*.md"
+      - "docs/working-memory/**"
+      - "core/DECISION_LOG*.md"
+      - "tools/check_eit_submission.py"
+      - ".github/workflows/eit-submission-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-eit-submission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Validate Ethics and Information Technology submission derivative
+        run: python tools/check_eit_submission.py
