@@ -595,3 +595,36 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** merge governance、Working Memory、Target Venue Review、methodology PR #26、Final Artifact preparation。
 
 **状态：** 人类明确批准。
+
+---
+
+## 2026-09-21 — AHICP-D033
+
+**来源：** 人类项目发起人  
+**分类：** FORM, PUBLICATION, GOVERNANCE
+
+**决定：**
+
+1. 人类项目发起人明确同意继续执行 `Ethics and Information Technology` 的 venue-specific Final Artifact preparation。
+2. 在不修改 `MA-FW-001` 核心 thesis / scope / approval semantics 的前提下，允许建立独立的投稿派生包，并采用该刊当前官方外部约束：
+   - double-anonymous peer review；
+   - manuscript content 约 5,000–8,000 words，title / abstract / references 不计入该内容字数；
+   - abstract 150–250 words；
+   - 4–6 keywords；
+   - author-identifying information 从 blinded manuscript 与相关 blinded files 中移除；
+   - substantive LLM / generative-AI use 必须在 Methods 或合适替代位置透明披露；不得把本项目真实的 drafting / restructuring / literature organization 等使用缩减描述为 copy editing；
+   - original research submission 需要 Data Availability Statement；本稿不报告 empirical dataset / completed experiment，应据实说明；
+   - references 使用 author–year 方式并按 venue 规则进行最终一致性核验；
+   - Word/docx 是当前主要提交格式，期刊也允许有数学内容时使用 LaTeX；仓库可以先保留 Markdown canonical / submission derivative，再生成最终 docx。
+3. canonical bilingual article 继续作为项目 scholarly state；venue-specific blinded manuscript、submission checklist、title-page metadata template、AI-use disclosure 和 cover-letter draft 均属于**派生 submission artifacts**，不得静默替代 canonical article。
+4. 当前人类批准的题目继续有效；本轮不另行修改论文核心题目。
+5. 双盲匿名化不得通过虚假陈述实现。由于 `AHICP` 名称本身可能指向公开仓库，本轮必须把该问题记录为 **anonymization risk**：先移除直接 GitHub URL、作者身份、内部 Decision IDs / development-status metadata；在正式 submission 前仍需决定是否需要 masked repository、editorial clarification 或其他匿名数据/材料路线。
+6. AI-use disclosure 应真实说明 AI 工具参与 iterative drafting、restructuring、literature organization、bilingual synchronization、consistency checking 与 repository-oriented implementation support，同时说明 human author(s) 负责研究方向、核心 Framework、claim boundaries、最终判断、引用核验与最终稿责任。AI 不列为 author。
+7. 本决定授权进行 venue-specific formatting、匿名化、非实质性语言精修、引用清理、submission-package 构建与对应验证。
+8. 若审阅发现需要改变 `MA-FW-001` 的核心 thesis、主要推论关系、scope 或 contribution boundary，必须返回新的 Working Framework / 必要时创建 `MA-FW-002`；不得以“期刊适配”为理由静默修改批准 Framework。
+9. 本决定**不构成 Final Artifact Approval，也不构成 submission / publication / release authorization**。正式提交仍需独立人类批准。
+10. 本轮 venue-specific preparation 的 PR 在只包含上述已授权派生准备、状态同步与验证、latest-head CI 全绿、无 blocking review、branch 不落后 base 的条件下，视为已具有 scoped merge authorization；这属于 D029/D032 授权模型下的本次明确人类授权，而不是 publication authorization。
+
+**受影响组件：** Article Form Core、submission derivative package、Working Memory、Decision Log、venue validation。
+
+**状态：** 人类明确批准；venue-specific preparation authorized。
