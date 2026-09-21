@@ -124,7 +124,7 @@ AHICP Project Memory 则关注：
 
 ### 2.4 Design rationale、architecture knowledge management 与 decision provenance
 
-软件工程长期研究“为什么做出这个决定”应怎样被保存。Design rationale 研究强调显式表示设计选择背后的理由，以支持后续理解、维护、沟通与重新设计。Software Architecture Knowledge Management 进一步把 requirements、architecture decisions、rationale、experience 等作为需要 capture、use、maintain、share 与 reuse 的知识；系统综述显示，尤其是高效 capture 与长期 maintenance 仍然是困难问题（Weinreich & Groher, 2016）。
+软件工程长期研究“为什么做出这个决定”应怎样被保存。Design rationale 研究强调显式表示设计选择背后的理由，以支持后续理解、维护、沟通与重新设计（Lee, 1992）。Software Architecture Knowledge Management 进一步把 requirements、architecture decisions、rationale、experience 等作为需要 capture、use、maintain、share 与 reuse 的知识；系统综述显示，尤其是高效 capture 与长期 maintenance 仍然是困难问题（Weinreich & Groher, 2016）。
 
 Decision provenance 则从 accountability 角度提出，不能只看最后输出，还应能够追踪 decision pipeline 中的输入、决定及其后续影响（Singh, Cobbe, & Norval, 2019）。
 
