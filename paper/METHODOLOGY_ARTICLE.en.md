@@ -65,6 +65,18 @@ AHICP's Project Memory Architecture is an attempt to turn these concerns from in
 
 “Belong to the project” does not mean treating the project as a mental subject. It means placing state that should constrain future work in external structures that the project can control, inspect, migrate, and version.
 
+Methodologically, the paper is organized around one overarching **design research question**:
+
+> **For long-running AI-assisted inquiry or creation, what state must a project externalize, and what governance relations are required, so that semantic continuity, human decision authority, and auditability survive Agent/model substitution?**
+
+This overarching question is decomposed into three design questions:
+
+1. **State question:** which information must become durable project state rather than remain only in chat or platform memory?
+2. **Governance question:** how should evidence, inference, proposal, human-confirmed decision, authorization, and publication state be distinguished, updated, superseded, and reconciled?
+3. **Evaluation question:** how can zero-context handoff, Agent/model substitution, decision persistence, and semantic-fidelity tests evaluate whether the architecture actually preserves project continuity?
+
+The article is therefore a **methodology / architecture paper**: it proposes an implementable, inspectable, and empirically testable design rather than reporting a completed effectiveness experiment.
+
 ---
 
 ## 2. Related work and problem boundary: Agent memory is not Project memory
