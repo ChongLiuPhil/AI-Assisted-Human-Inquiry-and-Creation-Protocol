@@ -628,3 +628,26 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Article Form Core、submission derivative package、Working Memory、Decision Log、venue validation。
 
 **状态：** 人类明确批准；venue-specific preparation authorized。
+
+---
+
+## 2026-09-22 — AHICP-D034
+
+**来源：** 人类项目发起人  
+**分类：** FORM, PUBLICATION, GOVERNANCE
+
+**决定：**
+
+1. 人类项目发起人在 Final Artifact review packet 后明确回复“**均确认**”，据此批准本方法论文章面向 **Ethics and Information Technology** 的当前 **Final Artifact**。
+2. 本次 Final Artifact Approval 绑定于已完成学术/投稿审阅的 EIT artifact set，其学术与 submission-content baseline 为 `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`。随后 `main` 前移到 `4b5ec5e0831aa6b77f1b1cfc72e2413664939c51` 仅因 Dependabot 更新 GitHub Actions `checkout` 版本，未修改 manuscript、submission derivative、DOCX builder、Framework、references 或其他已批准 artifact 内容，因此当前 `main` 与该批准对象在 Final Artifact 内容上等价。
+3. 人类确认采用 **masked reviewer route**：reviewer-facing 主稿使用 masked double-anonymous derivative；不主动向 reviewers 提供公开 GitHub repository。若编辑部要求 reviewer-visible repository / supplementary material，则仅通过适当的 masked / anonymized 路线提供，并继续承认公开材料可能带来的 residual search-based deanonymization risk。
+4. 人类确认当前稿件**未同时在其他期刊审理**，并确认当前 submission 所需的作者/合作者批准已经取得。
+5. 本次“均确认”没有提供作者姓名、affiliation、corresponding-author email、ORCID、Funding、Competing Interests、Author Contributions、Acknowledgements 等具体事实值，因此这些字段仍必须由人类在 submission-time 按真实情况填写；AI 不得推断、补造或代填。
+6. 本决定完成 **Final Artifact Approval**，但**不构成 submission / publication / release authorization**。正式向期刊提交仍需一条独立、明确的人类 submission authorization；实际提交前还必须完成 live submission interface 与动态 policy 的 final recheck。
+7. `MA-FW-001` 保持不变。若后续改变已批准 artifact 的核心 thesis、主要推论、scope、contribution boundary，必须回到 Framework 治理；若修改 Final Artifact 内容、引用、AI-use disclosure、匿名化路线或其他 reviewer-facing 实质内容，则应按变更性质重新执行相应 Final Artifact review / approval。
+8. 纯 CI / provider tooling 等不改变 Final Artifact 内容的仓库维护，不会自动撤销本批准，但也不得被解释为扩大本批准的 publication / submission 权限。
+
+**受影响组件：** EIT submission derivative package、Submission Checklist、Working Memory、Decision Log、Final Artifact status。
+
+**状态：** 人类明确批准；Final Artifact Approval 完成；submission authorization 仍为独立人类保留门。
+
