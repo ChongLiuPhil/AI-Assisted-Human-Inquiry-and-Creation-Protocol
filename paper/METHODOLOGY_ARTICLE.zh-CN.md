@@ -475,24 +475,31 @@ ICMJE 与 Nature Portfolio 的当前规范也提供了具体边界案例：至�
 
 ---
 
-## 十、AHICP 与 Agent-memory / provenance 研究的关系
+## 十、与既有 Project Memory、Agent Memory 与 Provenance 研究的关系
 
-AHICP 不试图替代 Agent-memory 研究。两者解决的是不同但互补的问题。
+AHICP 不试图替代既有 project-memory 或 Agent-memory 研究。更准确地说，它处在三条传统的交叉处：
 
-| 问题 | Agent memory | AHICP Project memory |
-|---|---|---|
-| 主要对象 | Agent 的历史信息与经验 | 项目的权威状态 |
-| 目标 | 改善 Agent 后续回答/行动 | 保持项目连续性、治理和可审计性 |
-| 典型操作 | store / retrieve / summarize / reflect | confirm / reject / authorize / promote / version / handoff |
-| 权威性 | 可能是系统内部机制 | 尽量显式、可检查、可编辑 |
-| 模型替换 | 可能需要迁移 memory store | 设计目标是模型可替换 |
-| 人类决定 | 常作为对话内容之一 | first-class durable state |
-| 隐私/发布状态 | 不是必然核心 | project governance 的重要组成 |
-| provenance | 可能有限 | 应显式保留来源与状态 |
+| 问题 | 既有 organizational / project memory | Agent memory | AHICP governed Project Memory |
+|---|---|---|---|
+| 主要对象 | 团队/组织/项目知识与历史 | Agent 的历史信息与经验 | 对未来工作具有约束力的项目权威状态 |
+| 典型目标 | 保存项目过程、上下文、知识、rationale，支持学习与续接 | 改善 Agent 后续回答/行动 | 保持跨 Agent/model 的连续性、治理和可审计性 |
+| 典型操作 | capture / retain / retrieve / share / reuse | store / retrieve / summarize / reflect | confirm / reject / authorize / promote / version / handoff / verify |
+| 决策与 rationale | 长期以来是重要组成 | 可作为 memory 内容之一 | 具有明确状态、provenance 与 authorization semantics |
+| 权威性 | 可由组织过程或信息系统承载 | 可能是系统内部机制 | 设计上要求显式、可检查、可编辑、可版本化 |
+| Agent/model 替换 | 原始文献通常不以 LLM 替换为中心问题 | 可能需要迁移 memory store | 替换能力本身就是设计目标与 stress test |
+| Working state | 常关注项目知识与历史，不必显式建模 session resume state | 常以内存检索支持当前 Agent | Current Focus / Task Plan 等作为持久 continuity layer |
+| 隐私/发布/授权 | 可涉及治理，但不是所有 project-memory 模型的核心 | 不是必然核心 | 作为 authoritative project state 的一部分显式治理 |
+| 人类责任 | 取决于组织与领域 | 通常不是 memory mechanism 的核心 | 与 Framework Approval / Final Artifact Approval 直接连接 |
 
-因此，AHICP 的研究机会不在于提出“另一种向量数据库”，而在于把**记忆治理、决策状态、接管、授权与作者责任**连接成一个长期项目架构。
+因此，AHICP 的研究机会不在于提出“另一种 project database”或“另一种向量记忆”，而在于研究一个更具体的**governed Project Memory Architecture**：当 AI Agent 可以被频繁替换、自动执行工具操作并参与长篇知识生产时，哪些状态必须外部化成项目权威状态，哪些状态必须保持人类确认/授权语义，以及这些状态怎样跨 evidence、decision、framework、artifact 与 publication lifecycle 传播。
 
-RealMem 等新工作开始把 project-oriented interactions 纳入长期 memory benchmark，这使两个方向之间的接口越来越重要。未来值得研究的问题是：内部 Agent memory 与外部 project memory 应如何协同？哪些状态适合自动沉淀，哪些状态必须由人确认后才能进入权威层？
+RealMem 等工作开始把 project-oriented interactions 纳入 Agent-memory benchmark，这使 Agent memory 与 Project Memory 的接口成为可直接研究的问题。相应地，未来至少有三个值得检验的接口问题：
+
+1. 哪些 Agent memory 可以自动沉淀为低风险 operational memory，哪些内容必须经过人类确认才能进入 authoritative memory？
+2. 当 Agent 内部 memory 与 repository state 冲突时，怎样可靠识别并执行 authority / stale-state rules？
+3. 既有 project-memory practices 与 AHICP 的 Agent-substitution / decision-persistence mechanisms 相比，在哪些任务中真正增加价值，在哪些场景只是增加维护成本？
+
+这些问题也提醒本文避免把“已有 project memory + AI”简单包装成新概念。AHICP 的学术价值需要通过更精确的机制定义和后续比较实验建立，而不是通过术语命名本身建立。
 
 ---
 
