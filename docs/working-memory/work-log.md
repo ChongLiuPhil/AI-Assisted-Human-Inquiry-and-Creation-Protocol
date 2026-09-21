@@ -373,3 +373,30 @@ This work cycle keeps the existing methodology article as one unified paper and 
 - explicitly reports no empirical results for the proposed evaluation framework.
 
 **Result:** structural rewrite completed; proceeding to consistency validation / PR / human review.
+
+## 2026-09-21 — Second scholarly novelty / prior-art audit of the methodology article
+
+**Object:** project-memory-centered methodology article  
+**Authority:** AHICP-D030; this review does not create overall Framework Approval.
+
+The second review focused on whether the paper mistakenly presented prior concepts as AHICP inventions. Newly added and verified lineage includes:
+
+- Walsh & Ungson (1991) — Organizational Memory;
+- Weiser & Morrison (1998) — *Project Memory: Information Management for Project Teams*;
+- Mariano & Awazu (2024) — project memory in large-scale projects;
+- Lee (1992) — design rationale management;
+- Weinreich & Groher (2016) — Software Architecture Knowledge Management;
+- Singh, Cobbe & Norval (2019) — Decision Provenance.
+
+Primary repairs:
+
+- explicitly states that AHICP **does not originate** organizational memory / project memory / design rationale / decision provenance / Agent long-term memory;
+- narrows novelty to a **candidate architectural synthesis**:
+  a governed, model-substitutable Project Memory Architecture;
+- adds an explicit design research question and novelty boundary to the abstract/introduction/related work;
+- upgrades the two-way Agent-memory comparison to a three-way comparison of prior project memory / Agent memory / AHICP governed Project Memory;
+- updates T1, T11, and the related-work boundary in the Working Argument Map;
+- expands the evidence layer and BibTeX and removes a stray Markdown separator from the BibTeX file;
+- strengthens Methodology Article CI against unsupported “first / unique / AHICP originated project memory” claims.
+
+**Status:** scholarly-positioning repair completed; latest CI pending at the time of this log entry.
