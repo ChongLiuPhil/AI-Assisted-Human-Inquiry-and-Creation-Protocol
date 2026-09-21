@@ -106,8 +106,9 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 - venue-specific form / double-blind / AI-use / authorship requirements: `ADOPTED — AHICP-D033`;
 - blinded Markdown submission derivative: `PREPARED / PR #29 MERGED / CI PASS`;
 - citation / publication-status audit: `COMPLETED — LIVE POLICY RECHECK PENDING`;
-- Word/docx build pipeline: `READY — CI BUILD CANDIDATE / VISUAL QA PENDING`;
-- search-based anonymization risk from the `AHICP` name: `OPEN`;
+- Word/docx build pipeline: `READY — TRACEABLE BUILD GENERATED / MASKED DUAL-BUILD CI PENDING / VISUAL QA PENDING`;
+- citation ↔ reference-list bidirectional consistency: `CI ENFORCED / LATEST-HEAD VERIFICATION PENDING`;
+- search-based anonymization risk from the `AHICP` name: `MITIGATION PREPARED — MASKED DERIVATIVE / HUMAN-EDITORIAL CONFIRMATION PENDING`;
 - license;
 - Final Artifact Approval.
 
@@ -115,6 +116,8 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 
 - Human decision -> Decision Log: `SYNC — AHICP-D033 RECORDED`
 - EIT preparation PR #29: `MERGED — a789bbd3342b29ebb07caa9c0cd22da3315e7746`
+- EIT final-review PR #30: `MERGED — b2e450baf5001f4879f740e67e21264aef115d5a`
+- masked reviewer derivative: `PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
 - D030 direction -> Content Core: `SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries: `SYNC`
 - Approved Framework snapshot: `MA-FW-001 CREATED`
