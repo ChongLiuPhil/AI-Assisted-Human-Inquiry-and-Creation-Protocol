@@ -64,6 +64,18 @@
 
 这里的“属于项目”不是把项目当作有心智的主体，而是要求对未来工作有约束力的状态存放在项目可以控制、检查、迁移和版本化的外部载体中。
 
+从方法论上，本文围绕一个总的 **design research question** 展开：
+
+> **对于长期 AI-assisted inquiry / creation，一个项目需要外部化哪些状态、采用什么治理关系，才能在 Agent / model 替换后仍保持语义连续性、人类决定权与可审计性？**
+
+这个总问题进一步拆成三个设计问题：
+
+1. **State question**：哪些内容必须成为 durable project state，而不能只停留在聊天或平台 memory？
+2. **Governance question**：这些状态怎样区分 evidence、inference、proposal、human-confirmed decision、authorization 与 publication state，并怎样处理冲突、过期与更新？
+3. **Evaluation question**：怎样通过 zero-context handoff、Agent/model substitution、decision persistence 与 semantic-fidelity tests 检验这种架构是否真的保持项目连续性？
+
+本文因此是一篇**方法论 / 架构论文**：它提出可实现、可审查和可经验测试的设计，而不是报告一个已经完成的效果实验。
+
 ---
 
 ## 二、相关工作与问题边界：Agent memory 不等于 Project memory
