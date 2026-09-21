@@ -29,6 +29,8 @@ Completed in this work cycle:
 - rewrote the Chinese methodology article;
 - synchronously rewrote the English mirror;
 - added evidence/references for Generative Agents, MemGPT, the Agent-memory survey, LongMemEval, MemBench, RealMem, and W3C PROV;
+- completed a second scholarly novelty audit adding organizational memory, Weiser & Morrison (1998) Project Memory, Mariano & Awazu (2024), design rationale / Software Architecture Knowledge Management, and decision provenance;
+- explicitly states that AHICP does not originate project memory; novelty is framed only as the candidate synthesis of a governed, model-substitutable Project Memory Architecture;
 - updated the evaluation program from its older AI-proposed status to an AHICP-D030-confirmed proposed evaluation framework that belongs in the paper;
 - explicitly preserved the boundary that no empirical effectiveness results are reported;
 - updated Framework Status so the repository no longer carries the obsolete instruction forbidding structural rewriting before overall approval.
