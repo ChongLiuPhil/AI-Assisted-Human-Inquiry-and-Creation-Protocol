@@ -28,9 +28,9 @@
 - 不改 `MA-FW-001`；
 - 不改 canonical article；
 - 将协议全称 / `AHICP` 替换为中性的：
-  - `the proposed protocol`
   - `the protocol`
   - `the proposed Project Memory Architecture`
+  - `the protocol's Project Memory`
 - 保持 reference implementation 的描述为 provider-neutral / repository-neutral；
 - 不加入虚构的机构、作者或项目来源信息。
 
@@ -40,6 +40,13 @@
 - 协议全称：0；
 - direct GitHub URL：0；
 - internal Decision / Framework / Working-Memory IDs：0。
+
+latest-head CI 还要求：
+
+- masked 稿与 traceable 稿之间只允许 deterministic identity-masking transform，避免出现第二套 substantive manuscript；
+- 两稿 reference section 完全一致；
+- 禁止常见机械 masking 语法错误；
+- DOCX core metadata 不含项目 owner / author identity marker。
 
 ## 3. 推荐的投稿路径
 
@@ -65,6 +72,8 @@ masked derivative 可以显著降低“搜索协议名即可找到作者”的�
 - 特殊概念组合带来的可识别性。
 
 因此不得声称“已经完全匿名”。
+
+当前 EIT / Springer double-anonymous 指引把匿名化责任放在作者一侧，并明确提醒公开在线材料可能增加反向识别可能性；因此 masked derivative 是保守 reviewer-facing 路线，但公开项目带来的残余 discoverability 不能被技术检查消除。正式 submission 前仍需按 live guidelines / interface 再确认。
 
 ## 5. 提交前人类门
 
