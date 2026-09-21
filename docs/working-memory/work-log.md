@@ -579,3 +579,40 @@ Execution result:
 **Boundary:** generating and structurally validating a build candidate is not page-by-page visual QA and is not Final Artifact Approval. Remaining work includes bidirectional citation ↔ reference-list final consistency review, the `AHICP` search-based deanonymization risk, Word visual QA, license, Final Artifact Approval, and separate submission authorization.
 
 **Status:** PR #30 merged; DOCX build candidate structurally verified; visual QA pending.
+
+---
+
+## 2026-09-21 — EIT masked reviewer derivative and bidirectional citation-reference validation
+
+**Authority:** AHICP-D033  
+**Nature:** venue-specific Final Artifact preparation; no new Framework decision.
+
+This work cycle identified and mitigated a double-anonymous-review risk. Although the baseline blinded manuscript already removed author names, affiliations, GitHub URLs, and internal project IDs, it still contained many occurrences of `AHICP` / the full protocol name. Because the protocol has public project materials, the distinctive name may allow ordinary search-based identification of the author/repository.
+
+Execution:
+
+- retain `MANUSCRIPT_BLINDED.md` as the traceable blinded baseline;
+- add `MANUSCRIPT_BLINDED_MASKED.md` as a reviewer-facing masked derivative;
+- preserve the same title / argument structure / citations / references / AI-use disclosure / Data Availability in the masked derivative;
+- replace only the protocol proper name with neutral formulations such as `the proposed protocol`, `the protocol`, and `the proposed Project Memory Architecture`;
+- masked-manuscript machine checks:
+  - `AHICP`: 0;
+  - full protocol name: 0;
+  - direct GitHub URL: 0;
+  - internal Decision / Framework / Working-Memory IDs: 0;
+- add bilingual `BLINDING_REVIEW` records, explicitly refusing to claim perfect anonymity; human/editorial confirmation of the reviewer-manuscript route remains pending;
+- extend EIT validation to both traceable and masked manuscripts;
+- define an explicit 18-entry citation ↔ reference-list mapping so every current reference entry must have a corresponding in-text citation;
+- require the masked and unmasked reference sections to be identical;
+- extend EIT CI to build both traceable and masked DOCX candidates and independently validate/upload them.
+
+**Governance boundary:**
+
+- no change to `MA-FW-001`;
+- no change to the canonical bilingual article;
+- the masked derivative is a review-anonymization derivative, not a permanent renaming of the scholarly object;
+- Final Artifact Approval has not occurred;
+- submission authorization has not occurred;
+- visual QA remains separate from CI structural validation.
+
+**Current status:** masked mitigation prepared; latest-head CI verification pending.
