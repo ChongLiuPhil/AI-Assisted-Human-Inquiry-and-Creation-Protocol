@@ -374,3 +374,30 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 - 明确 proposed evaluation 没有实证结果。
 
 **结果：** 结构性重写完成；进入 consistency validation / PR / human review。
+
+## 2026-09-21 — 方法论文章第二轮 scholarly novelty / prior-art audit
+
+**对象：** project-memory-centered methodology article  
+**依据：** AHICP-D030；本轮不产生新的整体 Framework Approval。
+
+第二轮审阅重点检查论文是否把既有概念误写成 AHICP 首创。新增并核验的相关前史包括：
+
+- Walsh & Ungson (1991) — Organizational Memory；
+- Weiser & Morrison (1998) — *Project Memory: Information Management for Project Teams*；
+- Mariano & Awazu (2024) — large-scale project memory；
+- Lee (1992) — design rationale management；
+- Weinreich & Groher (2016) — Software Architecture Knowledge Management；
+- Singh, Cobbe & Norval (2019) — Decision Provenance。
+
+主要修正：
+
+- 明确 AHICP **不首创** organizational memory / project memory / design rationale / decision provenance / Agent long-term memory；
+- 把论文 novelty 收紧为 **candidate architectural synthesis**：
+  governed, model-substitutable Project Memory Architecture；
+- 在摘要、引言与 related work 中增加明确 design research question 与 novelty boundary；
+- 将 Agent memory vs AHICP 两栏比较升级为 prior project memory / Agent memory / AHICP governed Project Memory 三方比较；
+- 更新 Working Argument Map 的 T1、T11 与 related-work boundary；
+- 扩展 evidence layer 与 BibTeX，并修复 BibTeX 中残留的 Markdown 分隔符；
+- 强化 Methodology Article CI，防止未来出现无依据的 “first / unique / AHICP 首创 project memory” 表述。
+
+**状态：** scholarly positioning repair completed; latest CI pending at the time of this log entry.
