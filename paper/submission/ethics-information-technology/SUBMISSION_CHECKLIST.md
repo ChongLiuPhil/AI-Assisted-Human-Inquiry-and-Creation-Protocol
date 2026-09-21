@@ -1,6 +1,6 @@
 # Ethics and Information Technology — Submission Checklist
 
-**Status:** `ACTIVE — FINAL ARTIFACT APPROVAL PENDING`  
+**Status:** `FINAL ARTIFACT APPROVED — SUBMISSION AUTHORIZATION PENDING`  
 **Official guideline checked:** 2026-09-22  
 **Official page:** https://link.springer.com/journal/10676/submission-guidelines
 
@@ -26,8 +26,8 @@
 - [x] Internal AHICP Decision IDs, Framework IDs, development status, and Working Memory IDs removed.
 - [x] Direct GitHub URL absent from blinded manuscript.
 - [x] Masked reviewer derivative prepared with `AHICP`, full protocol name, direct GitHub URL, and internal IDs removed.
-- [ ] Human/editorial confirmation of the masked reviewer route completed; residual search-based deanonymization risk explicitly accepted or further mitigated.
-- [ ] Any supplementary/repository material supplied to reviewers is anonymized or provided through an appropriate masked route.
+- [x] Human confirmation of the masked reviewer route completed; residual search-based deanonymization risk is explicitly accepted, and the public repository will not be proactively supplied to reviewers.
+- [x] Reviewer-visible repository / supplementary-material route confirmed: do not proactively supply the public repository; if the editorial process requires such material, provide it only through an appropriate masked / anonymized route.
 - [x] Self-citations checked for wording that could disclose identity; no self-referential prior-work phrasing was found in the reviewer manuscript.
 
 ## AI / LLM disclosure
@@ -59,11 +59,11 @@
 - [x] Claim boundaries checked against `MA-FW-001`; the approved Framework was not modified.
 - [x] No empirical-effectiveness claim introduced; evaluation remains explicitly proposed / future work.
 - [x] No venue adaptation has changed a core Framework thesis, major inference, scope, or contribution boundary.
-- [ ] Final Artifact Approval recorded.
+- [x] Final Artifact Approval recorded by the human (AHICP-D034; approved artifact baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`).
 - [ ] Submission authorization recorded separately.
 
 ## Submission integrity
 
-- [ ] Human confirms the manuscript is not simultaneously under consideration elsewhere.
-- [ ] Human confirms all author/co-author approvals required for submission.
+- [x] Human confirms the manuscript is not simultaneously under consideration elsewhere.
+- [x] Human confirms all author/co-author approvals required for submission have been obtained.
 - [ ] Human verifies the live journal interface immediately before submission and performs the at-submission final recheck of dynamic policies because submission fields and policies may change.
