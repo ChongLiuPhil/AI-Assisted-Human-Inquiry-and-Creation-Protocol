@@ -14,7 +14,7 @@
 
 生成式人工智能正在改变长期研究与创作的工作分工。AI 可以快速参与文献检索、比较、结构化、起草、重组、核验、格式处理与工具执行，但项目的持续时间往往跨越多次会话、多个模型、不同 Agent 甚至不同平台。由此出现一个比“AI 能否生成高质量文本”更基础的问题：**一个长期人机项目如何保存自己的目标、证据、判断、决定、当前工作状态与发布边界，使这些状态不依赖某个模型的内部记忆或某一次对话？**
 
-本文提出并系统化 AI-Assisted Human Inquiry and Creation Protocol（AHICP）中的 **Project Memory Architecture**。其中心主张是：**长期人机项目的持久记忆应属于项目，而不是属于某一个模型。** “属于项目”并非拟人化表述，而是工程与治理命题：对未来工作具有约束力的状态，应尽可能外部化为人类可检查、可编辑、可版本化、可追溯、可迁移的权威项目状态。AHICP 当前以 GitHub 仓库为参考实现，将模型上下文视为临时检索缓存，而不是长期真值源。
+本文在既有 **organizational/project memory**、design rationale / architecture knowledge management、decision provenance 与新兴 Agent-memory 研究的交叉处，提出并系统化 AI-Assisted Human Inquiry and Creation Protocol（AHICP）中的 **Project Memory Architecture**。本文**不主张首创“project memory”概念**；其候选贡献在于把既有“项目需要保存历史、上下文、理由和知识”的传统，进一步与 LLM Agent 可替换性、repository-backed authoritative state、Working Memory continuity、human decision persistence、authorization/publication boundaries 以及 Framework / Artifact approval 连接成一个统一的 AI-assisted project-governance architecture。其中心主张是：**长期人机项目的持久记忆应属于项目，而不是属于某一个模型。** “属于项目”并非拟人化表述，而是工程与治理命题：对未来工作具有约束力的状态，应尽可能外部化为人类可检查、可编辑、可版本化、可追溯、可迁移的权威项目状态。AHICP 当前以 GitHub 仓库为参考实现，将模型上下文视为临时检索缓存，而不是长期真值源。
 
 本文提出四项相互关联的核心贡献。第一，区分 **agent/conversational memory** 与 **project memory**：前者主要关心 Agent 怎样保存、检索、更新并利用过去信息，后者关心项目怎样维持可治理的权威状态。第二，把 **Working Memory** 定义为项目当前认识状态与任务状态的持久操作表示，即跨会话、跨 Agent 的 continuity layer，而不是心理学意义上的人类工作记忆、模型隐藏状态或 chain-of-thought。第三，把 **human decision persistence** 视为一等项目记忆，使 proposed、confirmed、rejected、deferred 与 authorized 等状态能够跨 Agent 保持来源与语义。第四，把 **Agent/Model substitution** 提出为架构压力测试：如果移除当前聊天与平台私有记忆，一个新的合格 Agent 是否仍能恢复项目目的、证据、决定、当前任务、隐私/发布边界与下一步？
 
