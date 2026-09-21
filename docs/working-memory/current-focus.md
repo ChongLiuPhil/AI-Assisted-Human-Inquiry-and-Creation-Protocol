@@ -65,7 +65,7 @@ Primary current objects:
 - latest-head EIT Submission CI confirmed successful DOCX build, package-structure validation, and artifact upload;
 - CI artifact: `eit-manuscript-blinded-docx`, approximately 53 KB, 30-day retention;
 - completed artifact-level English / argument-flow review of the traceable and masked reviewer derivatives without changing the core thesis, major inferences, scope, or contribution boundary of `MA-FW-001`;
-- completed page-by-page visual QA of both 20-page DOCX candidates; automatic page numbering, footer placement, table pagination, and anonymous core metadata passed;
+- re-rendered both DOCX candidates after the table-caption update and completed fresh page-by-page visual QA of all 20 pages each; Table 1 / Table 2 captions stay with their tables, and automatic page numbering, footer placement, table pagination, and anonymous core metadata passed;
 - added PAGE-field, non-splitting-table-row, and anonymous-metadata gates to the reproducible DOCX builder / CI;
 - rechecked the current EIT submission guidelines on 2026-09-21; final live-interface / dynamic-policy recheck remains required immediately before actual submission;
 - PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;

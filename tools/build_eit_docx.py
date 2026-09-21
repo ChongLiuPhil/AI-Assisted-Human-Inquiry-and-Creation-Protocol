@@ -254,8 +254,11 @@ def build(source: Path, output: Path):
                 break
             buf.append(nxt.strip())
             j += 1
+        plain_text = " ".join(buf)
         p = doc.add_paragraph()
-        add_formatted_text(p, " ".join(buf))
+        add_formatted_text(p, plain_text)
+        if re.match(r"^\*\*Table\s+\d+\.", plain_text):
+            p.paragraph_format.keep_with_next = True
         i = j
 
     footer = sec.footer.paragraphs[0]

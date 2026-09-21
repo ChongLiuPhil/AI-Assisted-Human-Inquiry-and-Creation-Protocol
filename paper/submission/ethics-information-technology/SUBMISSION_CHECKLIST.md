@@ -16,7 +16,7 @@
 - [x] Submission derivative reference list removes uncited internal evidence-only references.
 - [x] Reproducible Word/docx build pipeline added to CI.
 - [x] Traceable and masked Word/docx build candidates generated, structurally validated, and uploaded as workflow artifacts.
-- [x] Traceable and masked Word/docx build candidates visually checked page by page (20 pages + 20 pages).
+- [x] Traceable and masked Word/docx build candidates re-rendered and visually checked page by page after the table-caption update (20 pages + 20 pages); Table 1 and Table 2 captions stay with their tables and no clipping/overlap or abnormal pagination was found.
 - [x] Automatic page numbering, plain-font formatting, footer placement, table pagination, and anonymous core metadata checked; CI also validates the PAGE field, non-splitting table rows, and prohibited identity metadata.
 
 ## Double-anonymous review
@@ -28,7 +28,7 @@
 - [x] Masked reviewer derivative prepared with `AHICP`, full protocol name, direct GitHub URL, and internal IDs removed.
 - [ ] Human/editorial confirmation of the masked reviewer route completed; residual search-based deanonymization risk explicitly accepted or further mitigated.
 - [ ] Any supplementary/repository material supplied to reviewers is anonymized or provided through an appropriate masked route.
-- [ ] Self-citations checked for wording that could disclose identity.
+- [x] Self-citations checked for wording that could disclose identity; no self-referential prior-work phrasing was found in the reviewer manuscript.
 
 ## AI / LLM disclosure
 

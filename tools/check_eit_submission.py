@@ -185,6 +185,58 @@ def main() -> int:
     if not heading_levels or max(heading_levels) > 3:
         fail("EIT manuscript must use no more than three displayed heading levels")
 
+    lines = manuscript.splitlines()
+    caption_re = re.compile(r"^\*\*Table\s+(\d+)\..+\*\*$")
+    table_numbers = []
+    i = 0
+    while i < len(lines):
+        if (
+            lines[i].lstrip().startswith("|")
+            and i + 1 < len(lines)
+            and all(
+                re.fullmatch(r":?-{3,}:?", cell.strip())
+                for cell in lines[i + 1].strip().strip("|").split("|")
+            )
+        ):
+            previous = i - 1
+            while previous >= 0 and not lines[previous].strip():
+                previous -= 1
+            caption_match = (
+                caption_re.fullmatch(lines[previous].strip())
+                if previous >= 0
+                else None
+            )
+            if not caption_match:
+                fail("each EIT Markdown table must have its numbered caption immediately before it")
+            table_numbers.append(caption_match.group(1))
+            i += 2
+            while i < len(lines) and lines[i].lstrip().startswith("|"):
+                i += 1
+            continue
+        i += 1
+
+    if table_numbers != ["1", "2"]:
+        fail(
+            "EIT manuscript must contain exactly two sequentially captioned tables; "
+            f"found {table_numbers}"
+        )
+
+    prose_without_tables_or_captions = "\n".join(
+        line
+        for line in lines
+        if not line.lstrip().startswith("|")
+        and not caption_re.fullmatch(line.strip())
+    )
+    for table_number in (1, 2):
+        if not re.search(
+            rf"\bTable\s+{table_number}\b",
+            prose_without_tables_or_captions,
+        ):
+            fail(
+                f"EIT manuscript Table {table_number} must be cited in prose "
+                "outside its caption and table body"
+            )
+
     required_manuscript = (
         "## Methodological and AI-use disclosure",
         "iterative drafting",

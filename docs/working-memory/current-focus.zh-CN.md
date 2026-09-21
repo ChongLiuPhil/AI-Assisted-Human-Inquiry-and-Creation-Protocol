@@ -66,7 +66,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - latest-head EIT Submission CI 已确认 DOCX build、package structural validation 与 artifact upload 全部成功；
 - CI 生成 artifact：`eit-manuscript-blinded-docx`，约 53 KB，30-day retention；
 - masked reviewer derivative 与 traceable derivative 已完成 artifact-level English / argument-flow review，未改变 `MA-FW-001` 的核心 thesis、主要推论、scope 或 contribution boundary；
-- traceable / masked DOCX 均完成 20 页逐页 visual QA；自动页码、footer、表格分页与匿名 core metadata 检查通过；
+- table-caption 更新后，traceable / masked DOCX 已重新渲染并再次完成各 20 页逐页 visual QA；Table 1 / Table 2 caption 均与对应表格同页，自动页码、footer、表格分页与匿名 core metadata 检查通过；
 - DOCX builder / CI 已加入 PAGE field、table-row non-split 与匿名 metadata gates；
 - EIT 当前 submission guidelines 已于 2026-09-21 复核；正式 submission 前仍保留 live interface / dynamic-policy final recheck；
 - PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；

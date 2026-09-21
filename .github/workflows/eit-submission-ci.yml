@@ -71,11 +71,13 @@ jobs:
                   document_xml = archive.read("word/document.xml").decode("utf-8")
                   if "w:cantSplit" not in document_xml:
                       raise SystemExit(f"{path.name}: table rows may split across pages")
+                  if document_xml.count("w:keepNext") < 2:
+                      raise SystemExit(f"{path.name}: table captions are not kept with following tables")
                   core_xml = archive.read("docProps/core.xml").decode("utf-8")
                   for marker in forbidden:
                       if marker.lower() in core_xml.lower():
                           raise SystemExit(f"{path.name}: identifying metadata marker present: {marker}")
-          print("DOCX page-number and anonymous-metadata validation passed")
+          print("DOCX page-number, table-pagination, and anonymous-metadata validation passed")
           PY
       - name: Upload traceable blinded DOCX build candidate
         uses: actions/upload-artifact@v4

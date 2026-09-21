@@ -16,7 +16,7 @@
 - [x] 投稿派生 reference list 已移除未在正文引用、仅服务内部 evidence infrastructure 的条目。
 - [x] 已建立可重复的 Word/docx CI 构建流程。
 - [x] traceable / masked 两份 Word/docx build candidates 均已生成、完成结构校验并上传 workflow artifacts。
-- [x] 对 traceable / masked 两份 Word/docx build candidates 完成逐页视觉检查（20 页 + 20 页）。
+- [x] table-caption 更新后已重新渲染并逐页检查 traceable / masked 两份 Word/docx build candidates（20 页 + 20 页）；Table 1 / Table 2 caption 均与对应表格同页，未发现 clipping / overlap 或异常分页。
 - [x] DOCX 自动页码、普通字体、footer、表格跨页与匿名 core metadata 已检查；CI 同时验证 PAGE field、non-split table rows 与禁止身份 metadata。
 
 ## Double-anonymous review
@@ -28,7 +28,7 @@
 - [x] 已准备 masked reviewer derivative，并移除 `AHICP`、协议全称、direct GitHub URL 与内部 IDs。
 - [ ] 人类/编辑部确认采用 masked reviewer route；残余 search-based deanonymization risk 已明确接受或进一步处理。
 - [ ] 提供给 reviewer 的 repository / supplementary materials 使用适当匿名或 masked 路线。
-- [ ] self-citation 表述已检查，不以措辞泄露作者身份。
+- [x] self-citation 表述已检查；reviewer manuscript 未发现以 “our previous work”等自指措辞暴露作者身份的写法。
 
 ## AI / LLM disclosure
 
