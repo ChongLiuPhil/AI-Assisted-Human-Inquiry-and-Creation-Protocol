@@ -24,7 +24,8 @@
 - [x] 不含 affiliation / contact details。
 - [x] 不含 AHICP 内部 Decision IDs、Framework IDs、development status、Working Memory IDs。
 - [x] 不含直接 GitHub URL。
-- [ ] `AHICP` 独特名称导致的 search-based deanonymization 风险已获得编辑部指引或由人类明确接受。
+- [x] 已准备 masked reviewer derivative，并移除 `AHICP`、协议全称、direct GitHub URL 与内部 IDs。
+- [ ] 人类/编辑部确认采用 masked reviewer route；残余 search-based deanonymization risk 已明确接受或进一步处理。
 - [ ] 提供给 reviewer 的 repository / supplementary materials 使用适当匿名或 masked 路线。
 - [ ] self-citation 表述已检查，不以措辞泄露作者身份。
 
@@ -48,7 +49,7 @@
 
 ## 学术终审
 
-- [ ] 最终检查每个正文 author–year citation 都能解析到 reference list，且 reference list 每条都在正文实际引用。
+- [ ] latest-head CI 确认 traceable / masked 两稿的 18 组 citation ↔ reference-list 双向映射全部通过。
 - [x] reference list 的 publication/acceptance status 与核心元数据已核验；见 `CITATION_AUDIT.md`。
 - [x] 主要 DOI / proceedings / standards identifiers 已核验；动态 policy URL 仍需正式投稿前复核。
 - [ ] 完成 artifact-level 英文与论证流程审阅。
