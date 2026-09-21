@@ -16,9 +16,10 @@
 - `AHICP-D028` — reusable authorization policy 首次配置的人类选择；
 - `AHICP-D029` — scoped authorization 与 proposal / authorization / execution / verification / durable write-back 分离；
 - `AHICP-D030` — methodology article project-memory-centered structural direction；
-- `AHICP-D031` — `MA-FW-001` whole-framework approval。
+- `AHICP-D031` — `MA-FW-001` whole-framework approval；
+- `AHICP-D032` — Framework Approval 的 bounded auto-merge semantics + `Ethics and Information Technology` primary target selection。
 
-D031 不撤销 D027–D030，也不构成 Final Artifact Approval 或自动 merge 授权。
+D032 不撤销 D027–D031，也不构成 Final Artifact Approval 或 publication/release authorization；它只在满足严格 scope / CI / review / base-sync 条件时赋予专用 PR scoped merge authorization。
 
 ## CURRENT_OBJECTIVE
 
@@ -52,21 +53,23 @@ D031 不撤销 D027–D030，也不构成 Final Artifact Approval 或自动 merg
 - T9 收紧为 AHICP normative governance；
 - T10 改为 `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`；
 - 创建 `MA-FW-001` 双语批准快照；
-- 记录 `AHICP-D031`；
+- 记录 `AHICP-D031` / `AHICP-D032`；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
 
 ## IMMEDIATE_NEXT_ACTION
 
-当前 Framework 工作已完成。
+当前 Framework 工作与 target-venue selection 已完成。
 
-下一阶段可做：
-1. 选择 target venue / disciplinary positioning；
-2. 按 venue 要求检查结构、长度、引用、AI/authorship disclosure；
+Primary target：`Ethics and Information Technology`。
+
+下一阶段：
+1. 按该刊要求准备 venue-specific submission artifacts；
+2. 检查结构、长度、引用、double-blind、AI/authorship disclosure；
 3. 进行 article-level language / logic / citation review；
 4. 如需要，设计 architecture figure / evaluation figure；
 5. 人类进行 Final Artifact Approval；
-6. publication / release 仍需独立授权。
+6. submission / publication / release 仍需独立授权。
 
 ## PRIMARY_BLOCKER
 
@@ -74,7 +77,8 @@ Framework 层：**无 blocker。**
 
 Final Artifact / publication 层仍存在：
 - license：`WAITING-HUMAN`
-- target publication venue / form constraints：`WAITING-HUMAN`
+- target publication venue：`SELECTED — Ethics and Information Technology / AHICP-D032`
+- venue-specific form constraints：`IN PROGRESS`
 - Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF
@@ -88,4 +92,6 @@ Final Artifact / publication 层仍存在：
 - AHICP 不声称首创 project memory；
 - T9 是 normative governance，T10 是 structured human-review gate / responsibility anchor；
 - evaluation framework 仍无实证结果；
-- 下一治理门是 Final Artifact Review / target-venue preparation。
+- `Ethics and Information Technology` 是当前 primary target；
+- Framework Approval 对满足 D032 条件的专用 PR 携带 bounded auto-merge authorization；
+- 下一治理门是 venue-specific Final Artifact Review。
