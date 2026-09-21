@@ -75,7 +75,7 @@ The novelty of this article therefore cannot rest on “introducing project memo
 
 ### 2.2 Agent memory is already a major research topic
 
-Memory has become a rapidly developing area in research on LLM-based Agents. Generative Agents records experiences in natural language, derives higher-level reflections, and retrieves relevant memories to influence later behavior (Park et al., 2023). MemGPT frames limited context windows as an obstacle to extended interaction and proposes operating-system-inspired management across memory tiers and virtual context (Packer et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
+Memory has become a rapidly developing area in research on LLM-based Agents. Generative Agents records experiences in natural language, derives higher-level reflections, and retrieves relevant memories to influence later behavior (Park et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
 
 Evaluation research has also expanded beyond simple factual recall. LongMemEval examines multi-session information extraction, reasoning, temporal reasoning, knowledge updates, and abstention (Wu et al., 2025). MemBench evaluates memory across different memory levels, interaction scenarios, and dimensions including effectiveness, efficiency, and capacity (Tan et al., 2025). RealMem goes further by explicitly introducing long-term project-oriented interactions with evolving goals and project state as a benchmark setting (Bian et al., 2026).
 
@@ -662,9 +662,7 @@ No original empirical dataset was generated or analyzed for this conceptual and 
 - International Committee of Medical Journal Editors (ICMJE). *Defining the Role of Authors and Contributors*.
 - Lee, J. (1992). Design Rationale Management Research. *The Knowledge Engineering Review*, 7(4), 363–366. https://doi.org/10.1017/S0269888900006470
 - Mariano, S., & Awazu, Y. (2024). Managing large-scale projects: Unpacking the role of project memory. *International Journal of Project Management*, 42(2), 102573. https://doi.org/10.1016/j.ijproman.2024.102573
-- *Nature Methods*. (2026). Using AI responsibly in scientific publishing. *Nature Methods*, 23, 271. https://doi.org/10.1038/s41592-026-03020-1
 - Nature Portfolio. *Editorial Policies*, including current AI policies.
-- Packer, C., et al. (2023). *MemGPT: Towards LLMs as Operating Systems*. arXiv:2310.08560.
 - Parasuraman, R., & Riley, V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. *Human Factors*, 39(2), 230–253. https://doi.org/10.1518/001872097778543886
 - Park, J. S., et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. *UIST 2023*. https://doi.org/10.1145/3586183.3606763
 - Singh, J., Cobbe, J., & Norval, C. (2019). Decision Provenance: Harnessing Data Flow for Accountable Systems. *IEEE Access*, 7, 6562–6574. https://doi.org/10.1109/ACCESS.2018.2887201
