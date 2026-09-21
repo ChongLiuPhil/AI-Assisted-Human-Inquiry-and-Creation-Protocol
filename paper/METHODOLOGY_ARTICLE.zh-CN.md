@@ -675,4 +675,4 @@ Working Memory 在其中承担 continuity layer：把当前认识/任务状态�
 
 ## 当前文章开发状态
 
-本文是 AHICP 方法论文章的结构性升级稿，已依据 AHICP-D030 把 Project Memory Architecture、Working Memory continuity、Agent/Model Substitution 与 Human Decision Persistence 纳入核心论证。它现在是 `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`：思想架构已经通过 Framework Approval，但正文仍需最终 artifact-level 审阅、venue-specific 核验与 Final Artifact Approval。
+本文是 AHICP 方法论文章的结构性升级稿，已依据 AHICP-D030 把 Project Memory Architecture、Working Memory continuity、Agent/Model Substitution 与 Human Decision Persistence 纳入核心论证。它现在是 `FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`：Framework Approval 与 Final Artifact Approval 已分别完成，但正式 submission / publication / release 仍需独立明确授权。
