@@ -156,14 +156,14 @@ Specific model/version/date information should be filled from actual records and
 
 ## 8. Pending human decision
 
-`WAITING-HUMAN — TARGET VENUE SELECTION`
+`HUMAN-SELECTED — AHICP-D032`
 
-Current default recommendation:
+Primary target:
 
 `Ethics and Information Technology`
 
-Alternative:
+Secondary candidate:
 
 `Science and Engineering Ethics`
 
-Venue-specific transformation should begin only after venue selection; the canonical article should not be prematurely converted into one journal's submission format.
+Venue-specific manuscript preparation may now begin, while the canonical article remains traceable to `MA-FW-001`; anonymized submission manuscripts, cover letters, AI-use disclosures, and venue formatting should be maintained as derived submission artifacts rather than silently replacing canonical scholarly state.
