@@ -31,9 +31,11 @@ This directory contains venue-specific derivatives and submission-preparation ma
 - AI-use disclosure: present;
 - Data Availability Statement: present;
 - citation / publication-status audit: completed for current reference set;
-- citation ↔ reference-list bidirectional consistency: CI-enforced / latest-head verification pending;
+- citation ↔ reference-list bidirectional consistency: `VERIFIED — 18/18 MAPPINGS / EIT CI PASS`;
 - masked manuscript: prepared; `AHICP`, full protocol name, direct GitHub URL, and internal IDs removed;
-- DOCX build pipeline: present for both traceable and masked derivatives; CI-generated DOCX files are not final until visual QA.
+- traceable DOCX build candidate: generated / structural validation PASS / workflow artifact uploaded;
+- masked DOCX build candidate: generated / structural validation PASS / workflow artifact uploaded;
+- CI-generated DOCX files are not final until visual QA.
 
 ## Important anonymization risk
 
