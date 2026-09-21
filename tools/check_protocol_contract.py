@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -104,8 +105,8 @@ REQUIRED = {
     ],
     "core/DECISION_LOG.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "CI green"],
     "core/DECISION_LOG.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "per-action authorization", "bounded pre-authorization", "green CI"],
-    "docs/working-memory/current-focus.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "2026-09-20"],
-    "docs/working-memory/current-focus.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029", "2026-09-20"],
+    "docs/working-memory/current-focus.zh-CN.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029"],
+    "docs/working-memory/current-focus.md": ["AHICP-D027", "AHICP-D028", "AHICP-D029"],
     "docs/working-memory/task-plan.zh-CN.md": ["WM-T019", "WM-T020", "WM-T021", "COMPLETED / CI-GATED"],
     "docs/working-memory/task-plan.md": ["WM-T019", "WM-T020", "WM-T021", "COMPLETED / CI-GATED"],
     "docs/working-memory/work-log.zh-CN.md": ["# AHICP Working Memory — Work Log", "AHICP-D029", "section-local"],
@@ -144,6 +145,14 @@ for path, markers in REQUIRED.items():
     for marker in markers:
         if marker.casefold() not in folded:
             fail(f"{path} is missing contract marker: {marker}")
+
+for path, pattern in (
+    ("docs/working-memory/current-focus.zh-CN.md", r"\*\*最后更新：\*\*\s+\d{4}-\d{2}-\d{2}"),
+    ("docs/working-memory/current-focus.md", r"\*\*Last updated:\*\*\s+\d{4}-\d{2}-\d{2}"),
+):
+    body = (ROOT / path).read_text(encoding="utf-8")
+    if not re.search(pattern, body):
+        fail(f"{path} is missing a valid last-updated date in YYYY-MM-DD format")
 
 require_section(
     "protocol/SPECIFICATION.zh-CN.md",
