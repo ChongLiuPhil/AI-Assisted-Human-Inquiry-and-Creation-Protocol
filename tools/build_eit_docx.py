@@ -28,6 +28,13 @@ def set_repeat_table_header(row):
     tr_pr.append(tbl_header)
 
 
+def set_no_table_row_split(row):
+    tr_pr = row._tr.get_or_add_trPr()
+    cant_split = OxmlElement("w:cantSplit")
+    cant_split.set(qn("w:val"), "true")
+    tr_pr.append(cant_split)
+
+
 def add_page_number_field(paragraph):
     run = paragraph.add_run()
     field_begin = OxmlElement("w:fldChar")
@@ -171,6 +178,8 @@ def build(source: Path, output: Path):
                             run.bold = True
                     if r_idx == 0:
                         set_cell_shading(cell)
+            for table_row in table.rows:
+                set_no_table_row_split(table_row)
             if rows:
                 set_repeat_table_header(table.rows[0])
             i = nxt
