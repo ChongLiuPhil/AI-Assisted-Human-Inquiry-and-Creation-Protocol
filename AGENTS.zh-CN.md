@@ -197,7 +197,7 @@ AHICP 的责任原则是：AI 可以分担工作，但在人机协作研究、�
 
 ## 9. 最终成果状态
 
-Framework Approval 后，AI 可以生成大量派生文本，但在最终人类审阅前仍属于 `DERIVED-PROVISIONAL`。
+Framework Approval 后，AI 可以生成大量派生文本；具体 Artifact 状态应由项目 Framework Status 显式记录，例如 `DERIVED-PROVISIONAL` 或 `DERIVED-FROM-<APPROVED-FRAMEWORK> — FINAL ARTIFACT APPROVAL PENDING`。在最终人类审阅前不得标记为 `FINAL-APPROVED`。
 
 除非相应的最终批准门已经完成，否则不得把成果描述为“可投稿”或“已经由人类批准”。
 
