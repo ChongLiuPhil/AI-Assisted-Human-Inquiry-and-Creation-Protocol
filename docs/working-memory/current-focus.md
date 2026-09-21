@@ -3,7 +3,7 @@
 > **Chinese canonical: `current-focus.zh-CN.md`; this file is the synchronized English mirror.**
 
 **Status:** `ACTIVE`  
-**Last updated:** 2026-09-21
+**Last updated:** 2026-09-22
 
 ## CURRENT_STAGE
 
@@ -67,7 +67,10 @@ Primary current objects:
 - completed artifact-level English / argument-flow review of the traceable and masked reviewer derivatives without changing the core thesis, major inferences, scope, or contribution boundary of `MA-FW-001`;
 - re-rendered both DOCX candidates after the table-caption update and completed fresh page-by-page visual QA of all 20 pages each; Table 1 / Table 2 captions stay with their tables, and automatic page numbering, footer placement, table pagination, and anonymous core metadata passed;
 - added PAGE-field, non-splitting-table-row, and anonymous-metadata gates to the reproducible DOCX builder / CI;
-- rechecked the current EIT submission guidelines on 2026-09-21; final live-interface / dynamic-policy recheck remains required immediately before actual submission;
+- rechecked the current EIT / SNAPP / ICMJE / Nature Portfolio policy pages on 2026-09-22; no new hard requirement was found that requires changing the current manuscript, while a final live-interface / dynamic-policy recheck remains required immediately before actual submission;
+- confirmed EIT is a hybrid journal and that subscription / open-access publishing route and any OA licence are selected after acceptance, so licence choice is no longer treated as a pre-submission blocker;
+- PR #33 merged into `main` under D033 scoped merge authorization, merge commit `d9b3c31d235047595fbdf8fe4ff8a2f3fe51b4cc`;
+- PR #34 merged into `main` under D033 scoped merge authorization, merge commit `973f7a6e2a995c5cbda19c42b99e2b82c63215ba`; its latest-head three-CI gate passed and the table-caption / in-text-citation / fresh 20+20-page visual-QA state is durably recorded;
 - PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
@@ -80,21 +83,21 @@ Primary target: `Ethics and Information Technology`.
 
 Artifact-level English / argument-flow review and page-by-page visual QA of both traceable and masked DOCX candidates are complete. Next stage:
 1. obtain human/editorial confirmation of the masked reviewer route and confirm the anonymization path for reviewer-visible supplementary / repository material;
-2. decide the license;
-3. immediately before submission, recheck the EIT live submission interface and the dynamic ICMJE / Nature Portfolio policy pages;
-4. obtain human Final Artifact Approval;
-5. submission / publication / release remain subject to separate explicit authorization.
+2. obtain human Final Artifact Approval;
+3. have the human author complete truthful submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID metadata and confirm no simultaneous submission plus all required author approvals;
+4. immediately before submission, recheck the EIT live submission interface and perform the at-submission final recheck of the dynamic policies already checked on 2026-09-22;
+5. submission / publication / release remain subject to separate explicit authorization; publication route / licence remains a post-acceptance human choice.
 
 ## PRIMARY_BLOCKER
 
 Framework layer: **no blocker.**
 
 Final Artifact / publication layer still has:
-- license: `WAITING-HUMAN`
+- publication route / licence: `DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
 - target publication venue: `SELECTED — Ethics and Information Technology / AHICP-D032`
 - venue-specific form constraints: `ADOPTED — AHICP-D033`
 - blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
-- citation audit: `COMPLETED — 2026-09-21 INTERIM LIVE RECHECK / FINAL PRE-SUBMISSION RECHECK PENDING`
+- citation audit: `COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
 - citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
 - anonymization risk (`AHICP` discoverability): `MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
 - Word/docx: `TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
