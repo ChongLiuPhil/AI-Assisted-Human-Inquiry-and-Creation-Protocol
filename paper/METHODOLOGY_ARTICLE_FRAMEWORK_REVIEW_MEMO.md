@@ -1,309 +1,169 @@
-# Methodology Article — AI Framework Review Memo
+# Methodology Article — Framework Scholarly Review Memo
 
-> Chinese `paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md` is the canonical version of this review aid; this English file is its synchronized mirror. The memo remains AI-PROPOSED in both languages.
-
-**Status:** `AI-PROPOSED REVIEW AID`  
-**Authority:** non-canonical; this file does not modify the Article Content Core and does not constitute human approval.  
-**Purpose:** help the human author review the `WORKING-FRAMEWORK — REVIEW READY` before any `MA-FW-001` snapshot is created.
-
----
-
-## Working Memory / Clarification mapping
-
-This memo is now only an **analytical attachment**. Formal operational state for high-impact unresolved issues has moved to `docs/clarification-register.md`:
-
-- former D1 -> `CLR-001`
-- former D2 -> `CLR-002`
-- former D3 -> `CLR-003`, `CLR-004`, `CLR-005`
-- former D4 -> `CLR-006`
-- former D5 -> `CLR-007`
-- former D6 -> `CLR-008`
-
-If this memo conflicts with the Clarification Register about status, severity, or human resolution, the Clarification Register governs the current operational interface. Final human decisions must still be promoted into the Decision Log and appropriate Core.
-
-# 1. Overall assessment
-
-The current framework is coherent enough for human review, but it should not yet be approved without explicit decisions on six points. The largest conceptual risk is not internal inconsistency; it is **overclaiming**—turning a practical governance architecture developed for HARC into a universal theory of authorship or epistemic responsibility before the argument and evidence justify that move.
-
-A defensible first methodology article can make a strong contribution without making that stronger universal claim.
-
-The recommended overall posture is therefore:
-
-> **Strong about the architecture; moderate about the universal philosophical conclusions.**
-
-HARC can confidently propose a repository-centered method for persistent, auditable, human-governed research collaboration while treating broader claims about the essence of authorship, cognition, or responsibility as open philosophical questions.
+**Status:** `SCHOLARLY REVIEW COMPLETED — FRAMEWORK APPROVAL CANDIDATE`  
+**Date:** 2026-09-21  
+**Object:** `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`  
+**Authority:** HARC-D023 / HARC-D024 / HARC-D025, AHICP-D030, and the 2026-09-21 prior-art / novelty audit.  
+**Note:** This document records the final scholarly review for the current framework. It supersedes the earlier HARC-era AI review memo as the current review aid. Formal approval is represented by the Decision Log and `MA-FW-001`.
 
 ---
 
-# 2. D1 — Central responsibility terminology
+## 1. Overall conclusion
 
-## Option A — `epistemic responsibility` / 认识责任
+The current thirteen framework theses are sufficiently coherent to form the first Approved Framework for the AHICP methodology article, provided the following scholarly boundaries remain explicit:
 
-### Advantages
+1. AHICP does not claim to originate project memory, organizational memory, design rationale, decision provenance, or Agent long-term memory;
+2. architectural design principles are not represented as experimentally validated performance laws;
+3. AHICP's human-responsibility governance is not generalized into a universal theory of authorship across all domains;
+4. Framework Approval is an AHICP structured human-review gate / responsibility anchor, not a demonstrated reduction in review cost;
+5. proposed evaluation remains a research agenda until real experiments exist;
+6. Final Artifact Approval and venue-specific requirements remain separate.
 
-- directly concerns what a researcher is justified in accepting, asserting, approving, and taking responsibility for;
-- connects naturally to evidence, inference, testimony/dependence, and scholarly accountability;
-- gives the methodology article a clear philosophical center.
-
-### Risks
-
-- narrower than all forms of cognitive agency;
-- may sound as if the article already possesses a settled theory of epistemic responsibility.
-
-## Option B — `cognitive responsibility` / 认知责任
-
-### Advantages
-
-- broader and easier to connect to task allocation, cognition, memory, planning, and AI assistance.
-
-### Risks
-
-- less standard and conceptually less precise;
-- may blur performance of cognitive work with responsibility for claims.
-
-## Option C — layered distinction
-
-Use:
-
-- **cognitive labor** for search, synthesis, drafting, checking, formalization, formatting, etc.;
-- **epistemic responsibility** for understanding, accepting, rejecting, authorizing, and answering for important claims/inferences.
-
-### AI recommendation
-
-`AI-PROPOSED DEFAULT: Option C.`
-
-This gives the article the cleanest distinction:
-
-> **Cognitive labor can be extensively delegated; epistemic responsibility must remain explicitly governed.**
-
-This formulation does not imply that every factual detail must be independently re-derived by the human. It instead creates the problem HARC is designed to govern: where and how responsibility is anchored when cognitive labor is distributed.
+Under these boundaries, the framework is suitable for approval as `MA-FW-001`.
 
 ---
 
-# 3. D2 — Strength of the Framework Responsibility Thesis
+## 2. T1–T13 review
 
-## Strong version
+### T1 — Governed Project Memory Thesis
+**Decision: `APPROVE — LITERATURE-CONSTRAINED`**
 
-> Human approval of the framework is generally the center of substantive intellectual authorship in AI-assisted long-form work.
+Approve AHICP's organization of prior project/organizational-memory ideas into authoritative, inspectable, versioned, human-governed project state for replaceable LLM Agents.
 
-### Advantages
+**Do not claim:** AHICP invented project memory.
 
-- philosophically bold;
-- potentially distinctive.
+### T2 — Model-Independent Memory Thesis
+**Decision: `APPROVE AS DESIGN PRINCIPLE`**
 
-### Risks
+Critical project state should not rely exclusively on a particular model, chat, provider, or platform-private memory. This is an AHICP engineering principle, not a universal empirical law.
 
-- claims too much too early;
-- different disciplines and genres may distribute intellectual responsibility differently;
-- a high-level framework can omit decisive factual, mathematical, methodological, or interpretive errors;
-- the concept of authorship is institutionally and philosophically contested.
+### T3 — Layered Project-Memory Architecture
+**Decision: `APPROVE AS ARCHITECTURE SPECIFICATION`**
 
-## Moderate version
+Approve three Long-Term Research Memory layers plus parallel Working Memory and the functional normative / epistemic / decision / operational / handoff / publication-authorization roles.
 
-> Within HARC, an explicitly human-approved framework functions as the primary substantive intellectual responsibility anchor for long-form AI-assisted collaboration.
+Functional roles need not map one-to-one to files.
 
-### Advantages
+### T4 — Working Memory as Continuity Layer
+**Decision: `APPROVE WITH TERMINOLOGY BOUNDARY`**
 
-- directly supported by the protocol architecture;
-- preserves the founder's central insight about human responsibility for the compressed argument structure;
-- does not pretend to settle the general metaphysics or ethics of authorship.
+Approve AHICP Working Memory as persistent current-state / resume-state representation.
 
-### AI recommendation
+It is not psychological working memory, model hidden state, scratchpad, or chain-of-thought.
 
-`AI-PROPOSED DEFAULT: Moderate version.`
+### T5 — Human Decision Persistence
+**Decision: `APPROVE AS GOVERNANCE MECHANISM`**
 
-The article can later ask whether the HARC model supports a more general theory of authorship, but it should not require that stronger conclusion for the protocol to succeed.
+Approve proposed / approved / rejected / deferred / authorized decision states as first-class project state.
 
-Suggested formulation:
+Decision/rationale/provenance has clear prior literature; AHICP's candidate contribution is its integration with Agent substitution, Working Memory, and authorization lifecycle.
 
-> **HARC treats framework approval not as a complete theory of authorship, but as a primary responsibility anchor: a versioned point at which the human explicitly accepts the work's central claims, inferential architecture, distinctions, scope, and structural commitments.**
+### T6 — Agent / Model Substitution Resilience
+**Decision: `APPROVE AS DESIGN GOAL + PROPOSED STRESS TEST`**
 
----
+Approve recoverability after Agent/model replacement as a design goal and substitution testing as proposed evaluation.
 
-# 4. D3 — AI-proposed terminology
+No current empirical robustness result is claimed.
 
-## A. `semantic version control`
+### T7 — Inspectable and Provenance-Aware State
+**Decision: `APPROVE AS DESIGN REQUIREMENT`**
 
-### Assessment
+Approve inspectable, editable, versionable, provenance-aware state. Git history records change but is not treated as sufficient semantic-state representation.
 
-This term is useful because ordinary Git records textual change, while HARC additionally records whether a change is a human decision, AI proposal, evidence constraint, temporary default, or approved framework revision.
+### T8 — Memory Dynamics and Curation
+**Decision: `APPROVE AS DESIGN REQUIREMENT + RESEARCH QUESTION`**
 
-### Risk
+Approve active/archive, current/stale, conflict surfacing, selective retrieval, promotion/write-back, and privacy-boundary governance.
 
-Readers may assume it is an established technical field or formal standard.
+Optimal curation/retrieval policy remains empirical.
 
-### AI recommendation
+### T9 — Human Authority and Responsibility
+**Decision: `APPROVE AS AHICP NORMATIVE GOVERNANCE`**
 
-`ACCEPT AS HARC COINAGE / WORKING TERM`, with explicit definition and no claim that the term is established literature.
+Approve explicit human purpose, key judgment, approval, and final public-release responsibility within AHICP.
 
-Suggested wording:
+This is a protocol-governance position constrained by research/publication responsibility norms, not a universal philosophical law for every domain or theory of cognition.
 
-> HARC uses **semantic version control** as a project term for versioning not only text, but also the status and authority of meanings, decisions, proposals, and approvals.
+### T10 — Framework Approval as Structured Human-Review Gate and Responsibility Anchor
+**Decision: `APPROVE — REWORDED`**
 
----
+Replace “Compressed Responsibility Interface” with:
 
-## B. `generation–verification asymmetry`
+> **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**
 
-### Assessment
+Approve the framework as an interface that exposes central claims, inferential relations, distinctions, scope, and structural commitments for human review, while keeping Final Artifact Approval separate.
 
-Useful as an intuitive problem statement: AI-assisted generation can scale more quickly than human review.
+Do not claim that this mechanism has already been shown to reduce total review time or replace final artifact review.
 
-### Risk
+### T11 — Prior Project Memory, Agent Memory, and the AHICP Integration Boundary
+**Decision: `APPROVE — LITERATURE-CONSTRAINED`**
 
-Without empirical measurement, calling it a general “asymmetry” may sound like an established quantitative law.
+Approve the three-lineage positioning across prior project/organizational memory, decision/rationale/provenance, and Agent memory.
 
-### AI recommendation
+AHICP novelty remains a **candidate architectural synthesis**, subject to systematic review and peer review.
 
-`KEEP AS A HEURISTIC LABEL`, not as a demonstrated empirical theorem.
+### T12 — Empirical Evaluation Framework
+**Decision: `APPROVE AS RESEARCH AGENDA`**
 
-Suggested wording:
+Approve the seven-part evaluation program:
+- zero-context handoff;
+- Agent/model substitution;
+- decision persistence;
+- semantic drift / framework fidelity;
+- stale/conflict handling;
+- memory curation / retrieval efficiency;
+- human review effort.
 
-> The article calls this practical pressure the **generation–verification asymmetry**: a working label for the fact that AI can make production and transformation of candidate research content much cheaper than careful human understanding and verification.
+No empirical results are claimed.
 
----
+### T13 — Provider Neutrality
+**Decision: `APPROVE AS IMPLEMENTATION PRINCIPLE`**
 
-## C. `responsibility concentration`
-
-### Assessment
-
-Captures the founder's idea that human attention should focus on the compressed framework rather than repeatedly reviewing every intermediate expansion.
-
-### Risk
-
-“Concentration” may be misunderstood as permission to ignore downstream accuracy, and may conflict rhetorically with the separate Final Artifact Approval Gate.
-
-### AI recommendation
-
-`REPLACE OR DEMOTE.`
-
-Preferred alternatives:
-
-- **epistemic responsibility anchoring**;
-- **responsibility architecture**;
-- **high-leverage human review**.
-
-The first is especially compatible with the Approved Framework concept.
+Approve GitHub as a reference implementation rather than a theoretical prerequisite. The underlying substrate should provide versioning, query, write-back, migration, and access control.
 
 ---
 
-# 5. D4 — Extended/distributed cognition connection
+## 3. Approved compressed thesis
 
-## Option A — central theoretical grounding
+`MA-FW-001` should be organized around the following compressed thesis:
 
-HARC is presented as an application or extension of extended/distributed cognition.
-
-### Risk
-
-This unnecessarily makes HARC depend on controversial theses in philosophy of mind and cognitive science.
-
-## Option B — secondary conceptual comparison
-
-The literature helps explain why cognition can be scaffolded by external artifacts and distributed across people/tools, while HARC remains methodologically independent of stronger metaphysical conclusions.
-
-## Option C — minimal background
-
-Mention only briefly.
-
-### AI recommendation
-
-`AI-PROPOSED DEFAULT: Option B.`
-
-This provides theoretical depth without making HARC hostage to whether the extended-mind thesis is true.
-
-Recommended position:
-
-> HARC is compatible with externalist and distributed approaches to cognition, but requires only the weaker practical claim that explicit external representations can preserve and coordinate research state.
+> **Long-running AI-assisted inquiry and creation should externalize project state that constrains future work into inspectable, versioned, provenance-aware, migratable, human-governed Project Memory. Models and Agents may be replaced; project purpose, evidence, decisions, active work state, authorization, and publication boundaries should not disappear with them. AHICP connects project continuity with human responsibility through layered Long-Term Research Memory, parallel Working Memory, Human Decision Persistence, provenance-aware state, and Framework / Final Artifact approval gates. The practical effectiveness of this architecture remains an empirical research question.**
 
 ---
 
-# 6. D5 — Empirical validation program
+## 4. Stronger claims excluded from the Approved Framework
 
-## Option A — core contribution
+The following remain provisional/open:
 
-The article presents HARC together with a formal experimental research program.
-
-### Advantage
-
-Makes HARC unusually testable.
-
-### Risk
-
-The current project does not yet contain empirical results, so the article may promise more than it demonstrates.
-
-## Option B — future research agenda
-
-The main article is methodological/normative; empirical tests are proposed as falsifiable or operational follow-up work.
-
-## Option C — omit
-
-Keep the article purely conceptual.
-
-### AI recommendation
-
-`AI-PROPOSED DEFAULT: Option B.`
-
-This preserves the important claim that HARC should be testable without pretending that its effectiveness is already established.
-
-Recommended wording:
-
-> HARC's practical claims generate an empirical research agenda rather than already established performance results.
+- AHICP is the first project-memory framework;
+- governed Project Memory Architecture is academically unique;
+- AHICP has already improved accuracy, research integrity, efficiency, or review cost;
+- Framework Approval constitutes a universal theory of authorship;
+- humans must independently re-derive every AI-assisted detail;
+- repository-backed state is the only correct memory architecture for every task;
+- strong metaphysical versions of extended-mind / distributed-cognition theses;
+- specific benchmark samples, statistics, and effectiveness conclusions;
+- final target venue / disciplinary positioning.
 
 ---
 
-# 7. D6 — Disciplinary positioning
+## 5. Framework Approval versus Final Artifact Approval
 
-## Philosophy of technology / epistemology
+This review supports **Framework Approval** and creation of `MA-FW-001`.
 
-Best if the article focuses on responsibility, epistemic dependence, extended cognition, authorship, and delegation.
+It does not mean:
+- every sentence of the current article is finally approved;
+- citations and formatting satisfy a particular target venue;
+- venue-specific AI/authorship policies have been fully checked;
+- Final Artifact Approval has occurred;
+- the article can be submitted without final editing.
 
-## Research methodology
-
-Best if the article focuses on workflow architecture, validity, auditability, and reproducible research practice.
-
-## Scholarly communication / research integrity
-
-Best if the article focuses on authorship policies, provenance, contribution disclosure, accountability, and publication governance.
-
-## Interdisciplinary AI governance
-
-Broadest audience, but risks losing conceptual precision.
-
-### AI recommendation
-
-`AI-PROPOSED DEFAULT: interdisciplinary methodology with a philosophy-of-technology core.`
-
-Practical implication for the first draft:
-
-- lead with the methodological problem;
-- make epistemic responsibility the conceptual center;
-- use authorship/research-integrity rules as constraints rather than the article's sole subject;
-- retain an operational protocol section substantial enough that the paper cannot be reduced to abstract ethics.
-
-Target venue can be chosen later after the intellectual framework stabilizes.
+After Framework Approval, the article should be marked as derived from `MA-FW-001` with Final Artifact Approval pending.
 
 ---
 
-# 8. Recommended approval candidate
+## 6. Review outcome
 
-If the human author accepts the above defaults, the first approved framework could be built around the following compressed thesis:
+**Framework scholarly review: `PASS WITH BOUNDED REWORDING`**
 
-> **AI-assisted research should be organized around explicit, version-controlled research state that separates human commitments, AI representations, evidence constraints, approval states, and derived expression. Cognitive labor may be extensively delegated, but epistemic responsibility must remain human-governed through identifiable high-leverage decisions. In HARC, a human-approved intellectual framework functions as a primary responsibility anchor for long-form collaboration, while a separate final-artifact approval gate preserves public release accountability.**
-
-`AI-PROPOSED SYNTHESIS — NOT HUMAN APPROVED.`
-
-This synthesis is deliberately narrower than a general theory of authorship. It is strong enough to motivate the protocol while leaving room for later philosophical development.
-
----
-
-# 9. Approval discipline
-
-Human review may result in:
-
-- acceptance of the entire framework;
-- acceptance with revisions;
-- rejection of individual theses/terms;
-- promotion of an AI-proposed term into human-approved state;
-- demotion of a thesis to future research;
-- restructuring of the article.
-
-Only an explicit whole-framework approval should trigger creation of `MA-FW-001`. Agreement with one or more recommendations in this memo is not automatically whole-framework approval.
+The required substantive wording repair is the narrowing of T10 and explicit normative scoping of T9. T1–T13 are otherwise suitable for inclusion in `MA-FW-001` in their evidence-constrained form.
