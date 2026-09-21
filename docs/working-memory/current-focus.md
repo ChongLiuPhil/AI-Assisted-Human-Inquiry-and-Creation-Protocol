@@ -9,6 +9,17 @@
 
 **The methodology article has completed a project-memory-centered structural upgrade under AHICP-D030 and is entering human review and framework-confirmation stage.**
 
+### Still-active protocol-governance authority
+
+The current article work does not replace earlier protocol governance. The following remain active and must continue to govern execution:
+
+- `AHICP-D027` — external systems / tool discovery / authorization / human handoff;
+- `AHICP-D028` — human selection when first configuring reusable authorization policy;
+- `AHICP-D029` — scoped authorization and separation of proposal / authorization / execution / verification / durable write-back;
+- `AHICP-D030` — authorization for the current project-memory-centered methodology-article structural upgrade.
+
+The methodology article becoming the current focus therefore does not make D027–D029 obsolete.
+
 Completed in this work cycle:
 
 - recorded `AHICP-D030`: the existing methodology article remains one unified paper;
