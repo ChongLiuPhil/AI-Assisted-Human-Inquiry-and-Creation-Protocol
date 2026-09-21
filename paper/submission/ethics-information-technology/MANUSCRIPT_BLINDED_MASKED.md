@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Long-running human–AI research projects increasingly span multiple sessions, models, agents, and platforms. This creates a governance problem that is not reducible to context-window size: project purpose, evidence, decisions, active work state, authorization, and publication boundaries must remain recoverable even when the current model is replaced. This article develops the Project Memory Architecture of the the proposed protocol as a candidate synthesis of prior project-memory research, design-rationale and provenance traditions, and emerging agent-memory work. The architecture treats durable project state as external, inspectable, editable, versioned, provenance-aware, and portable. It distinguishes project memory from agent memory; defines Working Memory as a persistent cross-session continuity layer rather than psychological working memory or model hidden state; treats human decision states as first-class memory; and uses agent/model substitution as a stress test of continuity. The article further connects memory curation, conflict and staleness handling, privacy and publication boundaries, and structured human approval gates. It proposes an empirical evaluation agenda for handoff, substitution, decision persistence, semantic fidelity, review effort, conflict handling, and memory curation. No effectiveness results are reported; the evaluation program remains future work.
+Long-running human–AI research projects increasingly span multiple sessions, models, agents, and platforms. This creates a governance problem that is not reducible to context-window size: project purpose, evidence, decisions, active work state, authorization, and publication boundaries must remain recoverable even when the current model is replaced. This article develops the proposed Project Memory Architecture as a candidate synthesis of prior project-memory research, design-rationale and provenance traditions, and emerging agent-memory work. The architecture treats durable project state as external, inspectable, editable, versioned, provenance-aware, and portable. It distinguishes project memory from agent memory; defines Working Memory as a persistent cross-session continuity layer rather than psychological working memory or model hidden state; treats human decision states as first-class memory; and uses agent/model substitution as a stress test of continuity. The article further connects memory curation, conflict and staleness handling, privacy and publication boundaries, and structured human approval gates. It proposes an empirical evaluation agenda for handoff, substitution, decision persistence, semantic fidelity, review effort, conflict handling, and memory curation. No effectiveness results are reported; the evaluation program remains future work.
 
 **Keywords:** human–AI collaboration; project memory; AI governance; decision provenance; agent substitution; human responsibility
 
@@ -43,7 +43,7 @@ A durable project must preserve, among other things:
 - which version may be released;
 - how a replacement Agent can continue.
 
-the proposed Project Memory Architecture is an attempt to turn these concerns from informal chat habits into an implementable project architecture. Its central thesis is:
+The proposed Project Memory Architecture is an attempt to turn these concerns from informal chat habits into an implementable project architecture. Its central thesis is:
 
 > **The durable memory of a long-running human–AI project should belong to the project, not to a particular model.**
 
