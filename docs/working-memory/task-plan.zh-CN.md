@@ -7,7 +7,7 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T023` — project-memory-centered methodology paper validation + PR：`IN PROGRESS`
+- `WM-T023` — project-memory-centered methodology paper validation + PR：`COMPLETED / CI-GATED`
 - `WM-T015` — 重写后的 methodology Working Framework 整体审阅：`WAITING-HUMAN AFTER PR`
 - `WM-T013` — license 决定：`WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints：`WAITING-HUMAN`
@@ -40,11 +40,9 @@
 
 ## 4. NEXT ACTIONS
 
-1. 完成本轮 methodology article consistency audit；
-2. 运行最新 branch CI；
-3. 创建并收束 methodology article PR；
-4. 人类审阅新的 Working Framework 与正文；
-5. 如果后续整体 `APPROVE`，才创建 `MA-FW-001`；
+1. 人类审阅新的 Working Framework 与正文；
+2. 对当前完整 framework 作 `APPROVE / REVISE / REJECT`；
+3. 如果后续整体 `APPROVE`，才创建 `MA-FW-001`；
 6. formal release 前决定 license；
 7. final submission/publication 前决定 target venue / form constraints，并重新核验时效性政策。
 
