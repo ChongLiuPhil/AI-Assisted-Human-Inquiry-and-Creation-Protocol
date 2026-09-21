@@ -26,10 +26,12 @@ Core engineering thesis:
 
 ## 2. Main theoretical contributions
 
-### T1 — Project Memory Thesis
-**Source: HUMAN-CONFIRMED — AHICP-D030**
+### T1 — Governed Project Memory Thesis
+**Source: HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
 
-Long-running human–AI collaboration requires **project memory** to be distinguished from conversational / agent memory. Agent memory mainly asks how an Agent stores and uses past information; project memory asks how the project maintains authoritative state and continuity.
+Long-running human–AI collaboration requires **governed Project Memory** to be distinguished from conversational / Agent memory. However, project memory itself is not an AHICP invention: organizational-memory theory, Weiser & Morrison's (1998) Project Memory, later project-memory practice research such as Mariano & Awazu (2024), and design-rationale / architecture-knowledge-management traditions all form a clear prior lineage.
+
+AHICP's candidate contribution should therefore be stated more narrowly: organizing project memory for replaceable LLM Agents as **authoritative, inspectable, versioned, human-governed project state**, integrated with Working Memory continuity, human decision status, authorization/publication boundaries, and approval gates.
 
 ### T2 — Model-Independent Memory Thesis
 **Source: HUMAN-CONFIRMED — AHICP-D030**
