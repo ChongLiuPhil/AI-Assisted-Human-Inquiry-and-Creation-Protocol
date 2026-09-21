@@ -561,3 +561,37 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Methodology Article Framework snapshot、Working Argument Map、Framework Status、methodology article status、Working Memory、Methodology Article CI、Decision Log。
 
 **状态：** 人类明确批准；`MA-FW-001` Framework Approval 完成。
+
+---
+
+## 2026-09-21 — AHICP-D032
+
+**来源：** 人类项目发起人  
+**分类：** GOVERNANCE, FORM, PUBLICATION
+
+**决定：**
+
+1. 人类项目发起人明确同意将 **Framework Approval** 解释为对满足严格范围条件的专用 PR 的 **bounded auto-merge authorization**。
+2. 该授权只在以下条件全部满足时生效：
+   - PR 是为某个已批准 Framework 及其直接同步/治理落地而建立的专用 PR；
+   - PR 不包含超出已批准范围的未授权实质性 scope expansion；
+   - Framework Approval 后若出现新的实质性修改，这些修改必须已有明确人类授权，或仅属于验证、状态同步、引用/格式修复等非实质性 follow-up；
+   - latest-head required CI / validation 全部通过；
+   - 不存在 unresolved blocking review / review thread；
+   - branch 不落后于目标 base，或已经完成无冲突同步；
+   - merge 不绕过 provider-side 必需保护、权限或明确的人类保留门。
+3. 满足以上条件时，不需要为了“把同一批已批准内容写入 main”再次请求重复 merge approval。Framework Approval 本身携带该专用 PR 的 scoped merge authorization。
+4. 该规则**不**意味着任何 Framework Approval 可以授权同一 PR 中后来混入的无关功能、部署、外部副作用、secret handling、publication/release 或其他未批准 scope。
+5. 对当前 PR #26，本次人类确认同时明确批准：
+   - `MA-FW-001` 的 Framework scope；
+   - Framework Approval 后的直接治理同步；
+   - 当前 target-venue review 与本决定本身的记录/状态传播；
+   因而 PR #26 在 latest-head diff 不再出现新的未批准实质性 scope、CI 全绿且无 blocking review 时，可按本规则自动 merge。
+6. 人类项目发起人同时批准将 **Ethics and Information Technology** 设为当前方法论文章的**第一投稿目标（primary target venue）**。
+7. **Science and Engineering Ethics** 保留为当前第二候选。AI & Society 与 Journal of Documentation 不作为当前 primary target，除非其政策适配性后续发生变化或编辑部给出明确可接受反馈。
+8. 选择 target venue 不等于 Final Artifact Approval，也不等于 publication/submission authorization。后续仍需完成 venue-specific manuscript preparation、AI-use disclosure、citation/style 核验与最终 Artifact Approval。
+9. AHICP-D027–D031 继续有效；本决定新增 merge-authorization semantics 与 target-venue selection，不撤销既有 proposal / authorization / execution / verification / write-back 分离原则。
+
+**受影响组件：** merge governance、Working Memory、Target Venue Review、methodology PR #26、Final Artifact preparation。
+
+**状态：** 人类明确批准。
