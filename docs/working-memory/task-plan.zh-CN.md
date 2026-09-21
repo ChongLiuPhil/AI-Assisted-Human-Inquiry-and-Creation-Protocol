@@ -44,8 +44,8 @@
 1. 人类审阅新的 Working Framework 与正文；
 2. 对当前完整 framework 作 `APPROVE / REVISE / REJECT`；
 3. 如果后续整体 `APPROVE`，才创建 `MA-FW-001`；
-6. formal release 前决定 license；
-7. final submission/publication 前决定 target venue / form constraints，并重新核验时效性政策。
+4. formal release 前决定 license；
+5. final submission/publication 前决定 target venue / form constraints，并重新核验时效性政策。
 
 ## 5. ARTICLE INVARIANTS
 
