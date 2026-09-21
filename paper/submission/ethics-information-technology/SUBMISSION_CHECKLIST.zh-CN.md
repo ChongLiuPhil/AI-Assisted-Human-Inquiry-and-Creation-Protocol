@@ -28,7 +28,7 @@
 - [x] 已准备 masked reviewer derivative，并移除 `AHICP`、协议全称、direct GitHub URL 与内部 IDs。
 - [ ] 人类/编辑部确认采用 masked reviewer route；残余 search-based deanonymization risk 已明确接受或进一步处理。
 - [ ] 提供给 reviewer 的 repository / supplementary materials 使用适当匿名或 masked 路线。
-- [ ] self-citation 表述已检查，不以措辞泄露作者身份。
+- [x] self-citation 表述已检查；reviewer manuscript 未发现以 “our previous work”等自指措辞暴露作者身份的写法。
 
 ## AI / LLM disclosure
 
