@@ -15,7 +15,8 @@
 - [x] 采用 author–year 引用。
 - [x] 投稿派生 reference list 已移除未在正文引用、仅服务内部 evidence infrastructure 的条目。
 - [x] 已建立可重复的 Word/docx CI 构建流程。
-- [ ] 对 CI 生成的 Word/docx build candidate 逐页完成视觉检查。
+- [x] traceable / masked 两份 Word/docx build candidates 均已生成、完成结构校验并上传 workflow artifacts。
+- [ ] 对 CI 生成的两份 Word/docx build candidates 逐页完成视觉检查。
 - [ ] 在最终 docx 中检查页码与普通字体等格式。
 
 ## Double-anonymous review
@@ -49,7 +50,7 @@
 
 ## 学术终审
 
-- [ ] latest-head CI 确认 traceable / masked 两稿的 18 组 citation ↔ reference-list 双向映射全部通过。
+- [x] latest-head EIT CI 已确认 traceable / masked 两稿的 18 组 citation ↔ reference-list 映射全部通过。
 - [x] reference list 的 publication/acceptance status 与核心元数据已核验；见 `CITATION_AUDIT.md`。
 - [x] 主要 DOI / proceedings / standards identifiers 已核验；动态 policy URL 仍需正式投稿前复核。
 - [ ] 完成 artifact-level 英文与论证流程审阅。
