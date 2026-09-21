@@ -68,6 +68,9 @@ def main() -> int:
         'data-copy="newProjectPromptEn"',
         "你只需要把一段话发给 AI",
         "You only need to send one instruction to your AI",
+        'id="architecture"',
+        'id="architecture-en"',
+        "Working Memory",
         "function renderMd",
     ]
     for marker in required_page_markers:
@@ -114,8 +117,12 @@ def main() -> int:
     guide_en = (ROOT / "docs/HUMAN_GUIDE.md").read_text(encoding="utf-8")
     if "## 15. 现在开始：把这段话发给 AI" not in guide_zh:
         raise SystemExit("Chinese Human Guide must end in the concrete AI start action")
-    if "## 15. Start for real: send one instruction to your AI" not in guide_en:
-        raise SystemExit("English Human Guide must end in the concrete AI start action")
+    if "## 15. Start now: send this instruction to your AI" not in guide_en:
+        raise SystemExit("English guide must retain the concrete AI start action")
+    if "## 为什么它能跨聊天、跨模型、隔很久以后继续" not in guide_zh:
+        raise SystemExit("Chinese guide must explain the AHICP memory architecture")
+    if "## Why the project can survive across chats, models, and long gaps" not in guide_en:
+        raise SystemExit("English guide must explain the AHICP memory architecture")
 
     print("ecosystem + human-entry validation passed")
     return 0
