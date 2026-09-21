@@ -16,7 +16,7 @@
 - [x] 投稿派生 reference list 已移除未在正文引用、仅服务内部 evidence infrastructure 的条目。
 - [x] 已建立可重复的 Word/docx CI 构建流程。
 - [x] traceable / masked 两份 Word/docx build candidates 均已生成、完成结构校验并上传 workflow artifacts。
-- [x] 对 traceable / masked 两份 Word/docx build candidates 完成逐页视觉检查（20 页 + 20 页）。
+- [x] table-caption 更新后已重新渲染并逐页检查 traceable / masked 两份 Word/docx build candidates（20 页 + 20 页）；Table 1 / Table 2 caption 均与对应表格同页，未发现 clipping / overlap 或异常分页。
 - [x] DOCX 自动页码、普通字体、footer、表格跨页与匿名 core metadata 已检查；CI 同时验证 PAGE field、non-split table rows 与禁止身份 metadata。
 
 ## Double-anonymous review
