@@ -8,9 +8,9 @@
 ## 1. ACTIVE TASKS
 
 - `WM-T013` — license 决定：`WAITING-HUMAN`
-- `WM-T014` — target publication venue / form constraints：`WAITING-HUMAN`
+- `WM-T014` — target publication venue：`COMPLETED — Ethics and Information Technology / AHICP-D032`
 - `WM-T026` — methodology article Final Artifact review / venue preparation：`IN PROGRESS`
-- `WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`PROPOSED / WAITING-HUMAN CONFIRMATION`
+- `WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`COMPLETED / AHICP-D032`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
@@ -21,7 +21,7 @@
 - `WM-T025` — T1–T13 scholarly review + MA-FW-001 Framework Approval：`COMPLETED / AHICP-D031`
 
 完成范围：
-- Decision Log：AHICP-D030 / D031；
+- Decision Log：AHICP-D030 / D031 / D032；
 - Content Core：C17–C22；
 - Working Argument Map：与 `MA-FW-001` 对齐；
 - Approved Framework：`paper/frameworks/MA-FW-001.zh-CN.md` + English mirror；
@@ -42,13 +42,12 @@
 
 ## 4. NEXT ACTIONS
 
-1. 决定 target publication venue / disciplinary positioning（当前 AI-researched default：`Ethics and Information Technology`；见 `paper/TARGET_VENUE_REVIEW.zh-CN.md`）；
-2. 确认或修订 `WM-T027` 的 scoped auto-merge rule：当一个专用 PR 只实现已批准 Framework 及直接同步、无 scope expansion、最新 CI 全绿、无 unresolved blocking review、approval 后无新的实质性未批准 diff 时，Framework Approval 同时携带该 PR 的 bounded merge authorization；
-3. 决定 license；
+1. 以 `Ethics and Information Technology` 为 primary target 准备 venue-specific submission artifacts；
+2. 决定 license；
 3. 进行 Final Artifact-level academic edit 与 citation verification；
-4. 核验 venue-specific AI / authorship / disclosure rules；
+4. 核验并落实 venue-specific double-blind、AI-use / authorship / disclosure rules；
 5. 完成 Final Artifact Approval；
-6. publication / release / merge 依其独立授权执行。
+6. submission / publication / release 依独立授权执行。Framework-scope PR merge 按 AHICP-D032 执行。
 
 ## 5. ARTICLE INVARIANTS
 
@@ -67,4 +66,4 @@
 - proposed evaluation != completed empirical result；
 - Framework Approval != Final Artifact Approval；
 - Chinese canonical / English synchronized mirror；
-- `AHICP-D031 Framework Approval != Final Artifact Approval != merge/publication authorization`.
+- `AHICP-D032 bounded Framework merge authorization != Final Artifact Approval != submission/publication/release authorization`.
