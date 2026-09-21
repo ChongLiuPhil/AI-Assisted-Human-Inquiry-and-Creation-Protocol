@@ -3,12 +3,12 @@
 **英文题目：** *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
 **题目状态：** `HUMAN-APPROVED TITLE — HARC-D024`  
-**正文状态：** `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`  
+**正文状态：** `FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`  
 **Framework 状态：** `APPROVED-FRAMEWORK — MA-FW-001`  
 **协议：** AI-Assisted Human Inquiry and Creation Protocol (AHICP)  
 **中文 canonical；英文为 synchronized mirror。**
 
-> 本文依据 AHICP-D030 完成结构性重写，并依据 AHICP-D031 从已批准 Framework `MA-FW-001` 派生。Framework Approval 已完成；Final Artifact Approval 仍未发生。
+> 本文依据 AHICP-D030 完成结构性重写，并依据 AHICP-D031 从已批准 Framework `MA-FW-001` 派生。Framework Approval 已完成；Final Artifact Approval 已于 AHICP-D034 完成。该批准不构成 submission / publication / release authorization。
 
 ## 摘要
 
