@@ -71,11 +71,11 @@ The article is therefore a **methodology / architecture paper**: it proposes an 
 
 More directly, Weiser and Morrison's (1998) *Project Memory: Information Management for Project Teams* argued that project teams often fail to preserve project processes, contexts, rationales, and artifacts in a form that allows newcomers to reconstruct project history efficiently, and proposed a retrievable project-history data model. Project-management research has continued to develop the concept: Mariano and Awazu (2024) investigate project-memory practices in large-scale projects, demonstrating that project memory is already an established problem in project and organizational-memory research.
 
-The novelty of this article therefore cannot rest on “introducing project memory.” the protocol asks a narrower question: **in long-running, AI-assisted, cross-session projects with replaceable Agents and models, how can project memory become a governance architecture with authoritative state, decision semantics, authorization boundaries, and verifiable handoff?**
+The novelty of this article therefore cannot rest on “introducing project memory.” The protocol asks a narrower question: **in long-running, AI-assisted, cross-session projects with replaceable Agents and models, how can project memory become a governance architecture with authoritative state, decision semantics, authorization boundaries, and verifiable handoff?**
 
 ### 2.2 Agent memory is already a major research topic
 
-Memory has become a rapidly developing area in research on LLM-based Agents. Generative Agents records experiences in natural language, derives higher-level reflections, and retrieves relevant memories to influence later behavior (Park et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
+Memory has become a rapidly developing area in research on LLM-based Agents. In Generative Agents, experiences are recorded in natural language, higher-level reflections are derived, and relevant memories are retrieved to influence later behavior (Park et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
 
 Evaluation research has also expanded beyond simple factual recall. LongMemEval examines multi-session information extraction, reasoning, temporal reasoning, knowledge updates, and abstention (Wu et al., 2025). MemBench evaluates memory across different memory levels, interaction scenarios, and dimensions including effectiveness, efficiency, and capacity (Tan et al., 2025). RealMem goes further by explicitly introducing long-term project-oriented interactions with evolving goals and project state as a benchmark setting (Bian et al., 2026).
 
@@ -115,7 +115,7 @@ Software engineering has long studied how to preserve **why** a decision was mad
 
 Decision provenance approaches the issue from accountability: preserving only final outputs is insufficient when the inputs, decisions, and downstream effects in a decision pipeline matter for oversight, audit, compliance, and accountability (Singh, Cobbe, & Norval, 2019).
 
-These literatures mean that **Human Decision Persistence must not be presented as the protocol's discovery that decisions should be recorded.** the protocol's candidate contribution is the integration of decision/rationale/provenance with Agent substitution, durable human confirmation/rejection/authorization states, Working Memory, and long-running project-state propagation.
+These literatures mean that **Human Decision Persistence must not be presented as the protocol's discovery that decisions should be recorded.** The protocol's candidate contribution is the integration of decision/rationale/provenance with Agent substitution, durable human confirmation/rejection/authorization states, Working Memory, and long-running project-state propagation.
 
 ### 2.5 External cognition, distributed cognition, and provenance standards
 
@@ -148,7 +148,7 @@ The paper instead proposes a more specific **architectural synthesis** for long-
 
 ## 3. Design requirements for long-running Project Memory
 
-If Project memory cannot depend solely on a particular model, it must satisfy several requirements.
+If project memory cannot depend solely on a particular model, it must satisfy several requirements.
 
 ### 3.1 Model independence
 
@@ -196,7 +196,7 @@ Project memory must preserve governance as well as content. It should make it po
 
 ---
 
-## 4. The the proposed Project Memory Architecture
+## 4. The proposed Project Memory Architecture
 
 The protocol is not a single memory database. It is a set of mutually constraining durable-state roles.
 
@@ -235,7 +235,7 @@ Working Memory does not answer “what does the project ultimately claim?” It 
 
 The protocol can also be understood through functional memory roles:
 
-| Functional role | Primary question | Typical the protocol carriers |
+| Functional role | Primary question | Typical protocol carriers |
 |---|---|---|
 | Normative memory | How should the project work? | protocol / AGENTS / manifest / constraints |
 | Epistemic and evidence memory | What do we know, and on what basis? | evidence files / source notes / Core |
@@ -346,7 +346,7 @@ Project memory is therefore not merely an information store. It is also a **stat
 
 ## 7. Agent / Model substitution: from design principle to stress test
 
-A simple but demanding the protocol criterion is:
+A simple but demanding protocol criterion is:
 
 > **If the current AI is completely replaced, can the project continue?**
 
@@ -425,7 +425,7 @@ Externalized memory also creates risk. Project state may include:
 - access policies;
 - deployment state.
 
-Project memory therefore has to separate “stored in the project” from “authorized for public release.” the protocol and companion publishing workflows assume that original and unpublished source may remain private while only authorized outputs are released. Passwords, API tokens, private keys, and similar secrets should not be stored as ordinary project memory.
+Project memory therefore has to separate “stored in the project” from “authorized for public release.” The protocol and companion publishing workflows assume that original and unpublished source may remain private while only authorized outputs are released. Passwords, API tokens, private keys, and similar secrets should not be stored as ordinary project memory.
 
 ---
 
@@ -475,7 +475,7 @@ Current ICMJE and Nature Portfolio policies provide concrete boundary cases: wit
 
 The protocol is not intended to replace prior project-memory or Agent-memory research. More accurately, it sits at the intersection of three research traditions:
 
-| Question | Organizational / project memory | Agent memory | proposed governed Project Memory |
+| Question | Organizational / project memory | Agent memory | Proposed governed Project Memory |
 |---|---|---|---|
 | Primary object | team/organizational/project knowledge and history | Agent history and experience | authoritative project state that constrains future work |
 | Typical goal | preserve process, context, knowledge, and rationale for learning and continuity | improve later Agent responses/actions | preserve continuity, governance, and auditability across Agent/model substitution |
@@ -489,7 +489,7 @@ The protocol is not intended to replace prior project-memory or Agent-memory res
 
 The protocol's research opportunity is therefore not to propose another project database or vector-memory system. It is to study a more specific **governed Project Memory Architecture**: when AI Agents can be replaced frequently, execute tools, and participate in long-form knowledge production, which states must become authoritative project state, which must retain human confirmation/authorization semantics, and how should those states propagate across evidence, decisions, frameworks, artifacts, and publication lifecycles?
 
-RealMem and related work increasingly brings project-oriented interaction into Agent-memory evaluation, making the interface between Agent memory and Project Memory directly researchable. At least three interface questions follow:
+RealMem and related work increasingly bring project-oriented interaction into Agent-memory evaluation, making the interface between Agent memory and Project Memory directly researchable. At least three interface questions follow:
 
 1. Which Agent memories may be promoted automatically into low-risk operational memory, and which require human confirmation before entering authoritative memory?
 2. When internal Agent memory conflicts with repository state, how reliably can authority and stale-state rules be detected and enforced?
@@ -535,7 +535,7 @@ The protocol already has an executable protocol and repository implementation, b
 
 ### 11.4 Semantic-drift / framework-fidelity test
 
-**Intervention:** allow multiple Agents to revise the same long-form project and compare a chat-centric workflow with an the protocol workflow.
+**Intervention:** allow multiple Agents to revise the same long-form project and compare a chat-centric workflow with a protocol-governed workflow.
 
 **Measures:**
 - core-claim drift;
@@ -582,7 +582,7 @@ These studies require explicit controls, task definitions, model versions, parti
 
 ### 12.1 Structure has a maintenance cost
 
-Short tasks may not justify full the protocol adoption. Maintaining Cores, Decision Logs, Working Memory, Frameworks, and evidence layers creates overhead. Lightweight profiles and progressive adoption paths are therefore necessary.
+Short tasks may not justify full adoption of the protocol. Maintaining Cores, Decision Logs, Working Memory, Frameworks, and evidence layers creates overhead. Lightweight profiles and progressive adoption paths are therefore necessary.
 
 ### 12.2 Persistence can preserve errors
 
@@ -610,7 +610,7 @@ Which state should an Agent summarize automatically, and which state should requ
 
 ### 12.8 Disciplinary and authorship norms vary
 
-Framework Approval is an the protocol governance mechanism. It does not automatically satisfy authorship or accountability requirements imposed by a particular discipline, institution, publisher, or legal system. Final dissemination remains subject to the actual venue's rules.
+Framework Approval is a governance mechanism of the protocol. It does not automatically satisfy authorship or accountability requirements imposed by a particular discipline, institution, publisher, or legal system. Final dissemination remains subject to the actual venue's rules.
 
 ---
 
