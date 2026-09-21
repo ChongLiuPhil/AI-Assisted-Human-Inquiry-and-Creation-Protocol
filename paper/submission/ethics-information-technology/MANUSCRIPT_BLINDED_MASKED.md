@@ -94,7 +94,7 @@ Agent-memory research commonly asks:
 - how short- and long-term information should be scheduled under limited context;
 - how memory can improve later responses or actions.
 
-the protocol's Project Memory asks instead:
+The protocol's Project Memory asks instead:
 
 - which state is authoritative for the project;
 - who confirmed what;
@@ -119,9 +119,9 @@ These literatures mean that **Human Decision Persistence must not be presented a
 
 ### 2.5 External cognition, distributed cognition, and provenance standards
 
-the protocol has conceptual affinities with work on the extended mind and distributed cognition. Clark and Chalmers (1998) argue that under appropriate conditions external resources may participate in cognitive processes; Hutchins (1995) emphasizes that cognition may be distributed across people, tools, representations, and organized activity. This article adopts a weaker thesis: a versioned repository can at least function as a **persistent cognitive and project-state scaffold**. It is not necessary to characterize either the repository or an AI system as an independent cognitive subject.
+The protocol has conceptual affinities with work on the extended mind and distributed cognition. Clark and Chalmers (1998) argue that under appropriate conditions external resources may participate in cognitive processes; Hutchins (1995) emphasizes that cognition may be distributed across people, tools, representations, and organized activity. This article adopts a weaker thesis: a versioned repository can at least function as a **persistent cognitive and project-state scaffold**. It is not necessary to characterize either the repository or an AI system as an independent cognitive subject.
 
-W3C PROV provides more general standards background for provenance by modeling entities, activities, agents, and derivation or attribution relations. the protocol is not currently a formal implementation of W3C PROV, but it shares a basic principle: **when state will influence future judgment, preserving final text alone is often insufficient; origin, status, and transformation history also matter.**
+W3C PROV provides more general standards background for provenance by modeling entities, activities, agents, and derivation or attribution relations. The protocol is not currently a formal implementation of W3C PROV, but it shares a basic principle: **when state will influence future judgment, preserving final text alone is often insufficient; origin, status, and transformation history also matter.**
 
 ### 2.6 Contribution boundary
 
@@ -198,11 +198,11 @@ Project memory must preserve governance as well as content. It should make it po
 
 ## 4. The the proposed Project Memory Architecture
 
-the protocol is not a single memory database. It is a set of mutually constraining durable-state roles.
+The protocol is not a single memory database. It is a set of mutually constraining durable-state roles.
 
 ### 4.1 Three Long-Term Research Memory layers
 
-the protocol organizes durable intellectual and artifact state as:
+The protocol organizes durable intellectual and artifact state as:
 
 ~~~text
 Layer 1 — Human Authorial Core
@@ -233,7 +233,7 @@ Working Memory does not answer “what does the project ultimately claim?” It 
 
 ### 4.3 Functional memory roles
 
-the protocol can also be understood through functional memory roles:
+The protocol can also be understood through functional memory roles:
 
 | Functional role | Primary question | Typical the protocol carriers |
 |---|---|---|
@@ -248,14 +248,14 @@ These are **functional roles**, not a requirement that every kind of memory corr
 
 ### 4.4 Repository-backed context
 
-the protocol currently uses a simple authority relation:
+The protocol currently uses a simple authority relation:
 
 ~~~text
 Repository = authoritative project state
 Model context = transient retrieval cache
 ~~~
 
-A model still needs relevant information inside its context for any specific act of reasoning. the protocol does not claim otherwise. What changes is the **location and lifecycle of authority**. An Agent retrieves the relevant latest canonical revision, performs the current work, and writes back any state that should constrain future work. After a write, older excerpts in model context become stale.
+A model still needs relevant information inside its context for any specific act of reasoning. The protocol does not claim otherwise. What changes is the **location and lifecycle of authority**. An Agent retrieves the relevant latest canonical revision, performs the current work, and writes back any state that should constrain future work. After a write, older excerpts in model context become stale.
 
 This avoids maintaining a second dynamic source of truth inside the chat.
 
@@ -263,7 +263,7 @@ This avoids maintaining a second dynamic source of truth inside the chat.
 
 ## 5. Working Memory as a cross-session continuity layer
 
-The term “Working Memory” is potentially misleading because psychology and computer science already use it in other ways. the protocol's Working Memory is not a simulation of human psychological working memory, and it is not model hidden state, scratchpad, or chain-of-thought.
+The term “Working Memory” is potentially misleading because psychology and computer science already use it in other ways. The protocol's Working Memory is not a simulation of human psychological working memory, and it is not model hidden state, scratchpad, or chain-of-thought.
 
 This article defines it as:
 
@@ -322,7 +322,7 @@ Working Memory is therefore a continuity layer, not the final destination of aut
 
 Many memory systems focus on what happened previously or what a user once said. Long-running projects need to preserve another category: **what has already been decided.**
 
-the protocol needs at least the following distinctions:
+The protocol needs at least the following distinctions:
 
 - **PROPOSED** — suggested by AI or another source but not accepted;
 - **CONFIRMED / APPROVED** — explicitly confirmed by a human;
@@ -334,7 +334,7 @@ These distinctions serve at least three purposes.
 
 First, they prevent **semantic regression**. If a proposal has been rejected, a replacement Agent should not simply repackage it as if it were a new unresolved idea.
 
-Second, they protect **authorization boundaries**. Technical capability is not equivalent to human authorization. the protocol therefore keeps distinct:
+Second, they protect **authorization boundaries**. Technical capability is not equivalent to human authorization. The protocol therefore keeps distinct:
 
 proposal != authorization != execution != verification != durable write-back
 
@@ -354,7 +354,7 @@ Ideally, a replacement Agent does not require the original chat. It reconstructs
 
 ### 7.1 Zero-context onboarding
 
-the protocol uses:
+The protocol uses:
 
 - START_HERE;
 - a machine-readable manifest;
@@ -435,7 +435,7 @@ Project Memory Architecture does more than solve technical handoff. It also chan
 
 ### 9.1 Why a Framework is needed
 
-When AI can rapidly generate dozens of pages, requiring a human to reread every word after every change may not scale. the protocol therefore uses a compact Layer 2 Framework as the primary interface for discussing intellectual architecture.
+When AI can rapidly generate dozens of pages, requiring a human to reread every word after every change may not scale. The protocol therefore uses a compact Layer 2 Framework as the primary interface for discussing intellectual architecture.
 
 A Framework should at least expose:
 
@@ -450,7 +450,7 @@ AI may help organize a Working Framework, but it does not automatically become t
 
 ### 9.2 Framework Approval and Final Artifact Approval
 
-the protocol distinguishes two gates.
+The protocol distinguishes two gates.
 
 **Framework Approval** means that the human has reviewed and confirmed the substantive intellectual architecture.
 
@@ -465,15 +465,15 @@ The purpose is not to shift responsibility onto AI, but to identify the layer at
 
 ### 9.3 Humans as bearers of responsibility
 
-AI can perform or assist extensive work, but project purpose, core questions, direction, key judgments, and ultimate responsibility for public knowledge claims cannot disappear merely because work is automated. Hardwig (1985) reminds us that epistemic practices already involve dependence, while Parasuraman and Riley (1997) provide classic background on automation over-reliance. the protocol's response is not to require humans to personally perform every operation. It is to make **human understanding, confirmation, and authorization locatable in project state**.
+AI can perform or assist extensive work, but project purpose, core questions, direction, key judgments, and ultimate responsibility for public knowledge claims cannot disappear merely because work is automated. Hardwig (1985) reminds us that epistemic practices already involve dependence, while Parasuraman and Riley (1997) provide classic background on automation over-reliance. The protocol's response is not to require humans to personally perform every operation. It is to make **human understanding, confirmation, and authorization locatable in project state**.
 
-Current ICMJE and Nature Portfolio policies provide concrete boundary cases: within those publishing systems, final approval and human accountability for accuracy and integrity remain important. the protocol does not universalize those policies into a single authorship law. It treats them as evidence that as AI participation grows, projects benefit from being able to answer clearly: “who confirmed what?”
+Current ICMJE and Nature Portfolio policies provide concrete boundary cases: within those publishing systems, final approval and human accountability for accuracy and integrity remain important. The protocol does not universalize those policies into a single authorship law. It treats them as evidence that as AI participation grows, projects benefit from being able to answer clearly: “who confirmed what?”
 
 ---
 
 ## 10. Relationship to prior Project Memory, Agent Memory, and provenance research
 
-the protocol is not intended to replace prior project-memory or Agent-memory research. More accurately, it sits at the intersection of three research traditions:
+The protocol is not intended to replace prior project-memory or Agent-memory research. More accurately, it sits at the intersection of three research traditions:
 
 | Question | Organizational / project memory | Agent memory | proposed governed Project Memory |
 |---|---|---|---|
@@ -487,7 +487,7 @@ the protocol is not intended to replace prior project-memory or Agent-memory res
 | Privacy/publication/authorization | may appear in governance but is not central to every project-memory model | not necessarily central | explicitly governed as part of authoritative project state |
 | Human responsibility | domain- and organization-dependent | not usually central to the memory mechanism | directly connected to Framework Approval / Final Artifact Approval |
 
-the protocol's research opportunity is therefore not to propose another project database or vector-memory system. It is to study a more specific **governed Project Memory Architecture**: when AI Agents can be replaced frequently, execute tools, and participate in long-form knowledge production, which states must become authoritative project state, which must retain human confirmation/authorization semantics, and how should those states propagate across evidence, decisions, frameworks, artifacts, and publication lifecycles?
+The protocol's research opportunity is therefore not to propose another project database or vector-memory system. It is to study a more specific **governed Project Memory Architecture**: when AI Agents can be replaced frequently, execute tools, and participate in long-form knowledge production, which states must become authoritative project state, which must retain human confirmation/authorization semantics, and how should those states propagate across evidence, decisions, frameworks, artifacts, and publication lifecycles?
 
 RealMem and related work increasingly brings project-oriented interaction into Agent-memory evaluation, making the interface between Agent memory and Project Memory directly researchable. At least three interface questions follow:
 
@@ -495,13 +495,13 @@ RealMem and related work increasingly brings project-oriented interaction into A
 2. When internal Agent memory conflicts with repository state, how reliably can authority and stale-state rules be detected and enforced?
 3. Compared with prior project-memory practices, in which tasks do the protocol's Agent-substitution and decision-persistence mechanisms add measurable value, and in which contexts do they merely add maintenance cost?
 
-These questions also guard against simply repackaging “existing project memory plus AI” as a new concept. the protocol's scholarly value must be established through precise mechanisms and comparative evidence rather than through terminology alone.
+These questions also guard against simply repackaging “existing project memory plus AI” as a new concept. The protocol's scholarly value must be established through precise mechanisms and comparative evidence rather than through terminology alone.
 
 ---
 
 ## 11. Evaluation framework and research agenda
 
-the protocol already has an executable protocol and repository implementation, but this article does not claim systematic experimental validation. To turn its methodological claims into testable research questions, the following evaluations are proposed.
+The protocol already has an executable protocol and repository implementation, but this article does not claim systematic experimental validation. To turn its methodological claims into testable research questions, the following evaluations are proposed.
 
 ### 11.1 Zero-context handoff / resumption test
 
@@ -618,7 +618,7 @@ Framework Approval is an the protocol governance mechanism. It does not automati
 
 Generative AI is shifting long-running inquiry and creation from “one person using one tool” toward humans governing projects across multiple sessions, models, Agents, and automated components. In that environment, discussing only context windows or chat memory is insufficient.
 
-the protocol proposes a central shift:
+The protocol proposes a central shift:
 
 > **The durable memory of a long-running human–AI project should belong to the project, not to a particular model.**
 
