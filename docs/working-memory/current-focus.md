@@ -7,7 +7,7 @@
 
 ## CURRENT_STAGE
 
-**The methodology-article Framework work is complete and PR #26 has been merged into `main`; merge commit `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`. The project is now entering Final Artifact Review / venue-specific preparation for `Ethics and Information Technology`.**
+**Framework Approval and Final Artifact Approval for the `Ethics and Information Technology` submission path are complete. The project is now at the submission-readiness final check; formal submission still requires separate explicit authorization.**
 
 ### Still-active protocol-governance authority
 
@@ -17,7 +17,8 @@
 - `AHICP-D030` — methodology article project-memory-centered structural direction;
 - `AHICP-D031` — whole-framework approval of `MA-FW-001`;
 - `AHICP-D032` — bounded auto-merge semantics for Framework Approval + selection of `Ethics and Information Technology` as primary target;
-- `AHICP-D033` — venue-specific Final Artifact preparation, double-anonymous derivative, AI-use disclosure, Data Availability, and submission-package scope.
+- `AHICP-D033` — venue-specific Final Artifact preparation, double-anonymous derivative, AI-use disclosure, Data Availability, and submission-package scope;
+- `AHICP-D034` — EIT Final Artifact Approval, masked reviewer route, no-simultaneous-submission confirmation, and required author-approval confirmation; submission authorization remains separate.
 
 D033 does not supersede D027–D032 and does not constitute Final Artifact Approval or submission/publication/release authorization. It authorizes the EIT venue-specific derivative work and scoped merge of this preparation PR only when scope, green-CI, no-blocking-review, and base-sync conditions hold.
 
@@ -35,7 +36,7 @@ English mirror:
 
 Current article status:
 
-`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+`FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`
 
 Primary current objects:
 
@@ -53,7 +54,7 @@ Primary current objects:
 - narrowed T9 to AHICP normative governance;
 - renamed T10 to `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`;
 - created bilingual approved snapshot `MA-FW-001`;
-- recorded `AHICP-D031` / `AHICP-D032` / `AHICP-D033`;
+- recorded `AHICP-D031` / `AHICP-D032` / `AHICP-D033` / `AHICP-D034`;
 - created the `paper/submission/ethics-information-technology/` submission-derivative package;
 - generated a blinded manuscript: 185-word abstract, approximately 5,367 content words, 6 keywords, maximum three heading levels;
 - added substantive generative-AI disclosure and Data Availability Statement;
@@ -74,6 +75,9 @@ Primary current objects:
 - PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
+- the human confirmed the masked reviewer route: do not proactively provide the public repository to reviewers; if reviewer-visible repository / supplementary material is required, use a masked / anonymized route;
+- the human confirmed that the manuscript is not simultaneously under consideration elsewhere and that all author/co-author approvals required for the current submission have been obtained;
+- Final Artifact Approval is complete under AHICP-D034, with approved artifact baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`; the later CI-only checkout dependency bump on `main` does not change approved artifact content.
 
 ## IMMEDIATE_NEXT_ACTION
 
@@ -81,12 +85,11 @@ Current Framework work and target-venue selection are complete.
 
 Primary target: `Ethics and Information Technology`.
 
-Artifact-level English / argument-flow review and page-by-page visual QA of both traceable and masked DOCX candidates are complete. Next stage:
-1. obtain human/editorial confirmation of the masked reviewer route and confirm the anonymization path for reviewer-visible supplementary / repository material;
-2. obtain human Final Artifact Approval;
-3. have the human author complete truthful submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID metadata and confirm no simultaneous submission plus all required author approvals;
-4. immediately before submission, recheck the EIT live submission interface and perform the at-submission final recheck of the dynamic policies already checked on 2026-09-22;
-5. submission / publication / release remain subject to separate explicit authorization; publication route / licence remains a post-acceptance human choice.
+Artifact-level review, the masked reviewer route, and Final Artifact Approval are complete. Next stage:
+1. have the human complete truthful submission-time author / affiliation / corresponding-author / funding / competing-interest / contribution / acknowledgement / ORCID metadata;
+2. immediately before submission, recheck the EIT live submission interface and perform the at-submission final recheck of the dynamic policies already checked on 2026-09-22;
+3. execute formal submission only after separate explicit submission authorization;
+4. keep publication route / licence as a post-acceptance human choice.
 
 ## PRIMARY_BLOCKER
 
@@ -99,9 +102,12 @@ Final Artifact / publication layer still has:
 - blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
 - citation audit: `COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
 - citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
-- anonymization risk (`AHICP` discoverability): `MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- anonymization risk (`AHICP` discoverability): `MASKED REVIEWER ROUTE HUMAN-CONFIRMED / PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED / MASKED-ANONYMIZED MATERIALS IF REQUIRED`
 - Word/docx: `TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
-- Final Artifact Approval: `WAITING-HUMAN`
+- Final Artifact Approval: `COMPLETED — AHICP-D034 / APPROVED BASELINE 332ff0197e89c99f1b6bb70aedbb47cf425bdb21`
+- submission-time factual metadata: `WAITING-HUMAN — DO NOT INFER`
+- live submission interface / at-submission policy recheck: `PENDING`
+- submission authorization: `WAITING-HUMAN — SEPARATE EXPLICIT AUTHORIZATION REQUIRED`
 
 ## HANDOFF
 
@@ -110,11 +116,11 @@ A replacement AI Agent should know:
 - `MA-FW-001` is approved; do not restore the stale state that Framework Approval is pending;
 - `MA-FW-001` is a fixed baseline and must not be silently rewritten;
 - the current Argument Map is aligned with `MA-FW-001` and may serve as the working entry toward a future `MA-FW-002`;
-- the article is not Final Artifact Approved;
+- the article is Final Artifact Approved under AHICP-D034; do not restore the stale pending state and do not expand that approval into submission authorization;
 - AHICP does not claim to originate project memory;
 - T9 is normative governance and T10 is a structured human-review gate / responsibility anchor;
 - the evaluation framework still has no empirical results;
 - `Ethics and Information Technology` is the current primary target;
 - Framework Approval carries bounded auto-merge authorization for dedicated PRs satisfying D032;
 - PR #26 completed the first actual execution of that authorization path;
-- the next governance gate is venue-specific Final Artifact Review.
+- the next governance gate is the submission-readiness final check plus separate submission authorization.
