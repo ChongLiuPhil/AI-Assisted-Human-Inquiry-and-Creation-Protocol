@@ -10,7 +10,9 @@
 - `WM-T013` — license 决定：`WAITING-HUMAN`
 - `WM-T014` — target publication venue：`COMPLETED — Ethics and Information Technology / AHICP-D032`
 - `WM-T026` — methodology article Final Artifact review / venue preparation：`IN PROGRESS`
-- `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI：`IN PROGRESS / AHICP-D033`
+- `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI：`COMPLETED / PR #29 MERGED — a789bbd3`
+- `WM-T030` — EIT citation / publication-status audit：`COMPLETED / LIVE POLICY RECHECK PENDING`
+- `WM-T031` — EIT DOCX build + visual QA：`IN PROGRESS / BUILD PIPELINE READY`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`COMPLETED / AHICP-D032`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
@@ -44,14 +46,15 @@
 
 ## 4. NEXT ACTIONS
 
-1. 完成本轮 EIT submission package CI 并合并 preparation PR；
-2. 逐条核验 blinded manuscript 的 citation / DOI / publication status；
+1. 完成 final-review PR latest-head CI；
+2. 完成 citation ↔ reference-list 双向一致性终检；
 3. 处理 `AHICP` 名称带来的 search-based deanonymization risk；
 4. 决定 license；
 5. 完成 Final Artifact-level academic edit；
-6. 生成并视觉检查最终 Word/docx；
-7. 完成 Final Artifact Approval；
-8. submission / publication / release 依独立授权执行。
+6. 对 CI 生成的 Word/docx build candidate 做逐页视觉 QA；
+7. 正式投稿前复核动态 policy pages；
+8. 完成 Final Artifact Approval；
+9. submission / publication / release 依独立授权执行。
 
 ## 5. ARTICLE INVARIANTS
 
