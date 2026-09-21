@@ -15,7 +15,8 @@
 - [x] References use author–year presentation.
 - [x] Submission derivative reference list removes uncited internal evidence-only references.
 - [x] Reproducible Word/docx build pipeline added to CI.
-- [ ] CI-generated Word/docx build candidate visually checked page by page.
+- [x] Traceable and masked Word/docx build candidates generated, structurally validated, and uploaded as workflow artifacts.
+- [ ] CI-generated Word/docx build candidates visually checked page by page.
 - [ ] Page numbering / plain-font Word formatting checked in final docx.
 
 ## Double-anonymous review
@@ -49,7 +50,7 @@
 
 ## Scholarly final review
 
-- [ ] Latest-head CI confirms the explicit 18-entry citation ↔ reference-list bidirectional mapping for both traceable and masked manuscripts.
+- [x] Latest-head EIT CI confirms the explicit 18-entry citation ↔ reference-list mapping for both traceable and masked manuscripts.
 - [x] Reference-list entries checked for publication/acceptance status and core metadata; see `CITATION_AUDIT.md`.
 - [x] Major DOI / proceedings / standards identifiers checked; dynamic policy URLs remain subject to pre-submission recheck.
 - [ ] English language and argument flow reviewed at artifact level.
