@@ -43,8 +43,8 @@ Completed scope:
 1. human reviews the revised Working Framework and article;
 2. make an explicit `APPROVE / REVISE / REJECT` decision on the complete current framework;
 3. create `MA-FW-001` only after a later overall `APPROVE`;
-6. decide the license before formal release;
-7. decide target venue / form constraints and re-verify time-sensitive policies before final submission/publication.
+4. decide the license before formal release;
+5. decide target venue / form constraints and re-verify time-sensitive policies before final submission/publication.
 
 ## 5. ARTICLE INVARIANTS
 
