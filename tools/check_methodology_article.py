@@ -33,6 +33,12 @@ REQUIRED_REFS = (
     "tan2025membench",
     "bian2026realmem",
     "w3c2013prov",
+    "walsh1991organizationalmemory",
+    "weiser1998projectmemory",
+    "mariano2024projectmemory",
+    "weinreich2016sakm",
+    "singh2019decisionprovenance",
+    "lee1992designrationale",
 )
 
 REQUIRED_EVIDENCE = (
