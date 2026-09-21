@@ -161,6 +161,10 @@ def main() -> int:
         "AHICP 已被证明",
         "AHICP proves that",
         "实验证明 AHICP",
+        "AHICP is the first project memory",
+        "AHICP first introduced project memory",
+        "AHICP 首创 project memory",
+        "AHICP 首次提出 project memory",
     )
     for marker in effectiveness_phrases:
         if marker in zh_article or marker in en_article:
