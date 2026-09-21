@@ -72,13 +72,16 @@ Status:
 
 `DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`
 
-The article is now **structurally synchronized** with the revised Working Framework:
+The article is now **structurally synchronized** with the revised Working Framework and has completed a second scholarly-positioning audit:
 
 - the earlier 15-part structure has been replaced by a project-memory-centered 13-section structure;
 - Project Memory, Working Memory, Decision Persistence, and Agent Substitution are central in the abstract, body, and conclusion;
 - Agent-memory and provenance literature has been added to the related-work / evidence layer;
+- the related-work lineage now includes organizational memory, the 1998 Project Memory literature, 2024 project-memory practice research, design rationale / Software Architecture Knowledge Management, and decision provenance;
+- the paper explicitly states that **AHICP does not originate organizational memory, project memory, design rationale, decision provenance, or Agent long-term memory**;
+- novelty is framed only as a **candidate architectural synthesis**: a governed, model-substitutable Project Memory Architecture;
 - proposed evaluation is included while explicitly reporting no empirical results;
-- Chinese and English article versions were rewritten in the same work cycle.
+- Chinese and English article versions remain synchronized.
 
 Structural synchronization is not Framework Approval and is not Final Artifact Approval. Human review may still revise theoretical structure, terminology, literature positioning, evaluation design, or wording.
 
