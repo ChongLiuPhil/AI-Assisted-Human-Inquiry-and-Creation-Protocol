@@ -185,6 +185,30 @@ def main() -> int:
     if not heading_levels or max(heading_levels) > 3:
         fail("EIT manuscript must use no more than three displayed heading levels")
 
+    table_headers = re.findall(
+        r"^\|.+\|\n\|(?:\s*:?-+:?\s*\|)+$",
+        manuscript,
+        re.MULTILINE,
+    )
+    table_captions = re.findall(
+        r"^\*\*Table\s+(\d+)\..+\*\*$",
+        manuscript,
+        re.MULTILINE,
+    )
+    if len(table_headers) != 2:
+        fail(f"EIT manuscript must contain exactly 2 Markdown tables; found {len(table_headers)}")
+    if table_captions != ["1", "2"]:
+        fail(
+            "EIT manuscript tables must have sequential bold captions "
+            f"Table 1 and Table 2; found {table_captions}"
+        )
+    for table_number in (1, 2):
+        if len(re.findall(rf"\bTable\s+{table_number}\b", manuscript)) < 2:
+            fail(
+                f"EIT manuscript Table {table_number} must be cited in text "
+                "in addition to its caption"
+            )
+
     required_manuscript = (
         "## Methodological and AI-use disclosure",
         "iterative drafting",
