@@ -377,23 +377,29 @@ def main() -> int:
             "of traceable manuscript"
         )
 
-    require(blinding_en, "MASKED DERIVATIVE PREPARED", "English Blinding Review")
-    require(blinding_zh, "MASKED DERIVATIVE PREPARED", "Chinese Blinding Review")
+    require(blinding_en, "MASKED REVIEWER ROUTE HUMAN-CONFIRMED", "English Blinding Review")
+    require(blinding_zh, "MASKED REVIEWER ROUTE HUMAN-CONFIRMED", "Chinese Blinding Review")
     require(blinding_en, "MANUSCRIPT_BLINDED_MASKED.md", "English Blinding Review")
     require(blinding_zh, "MANUSCRIPT_BLINDED_MASKED.md", "Chinese Blinding Review")
 
     for marker in (
         "AHICP-D033",
+        "AHICP-D034",
         "Ethics and Information Technology",
         "does not constitute Final Artifact Approval",
         "does not authorize submission / publication / release",
+        "Final Artifact Approval completed",
+        "submission authorization",
     ):
         require(dec_en, marker, "English Decision Log")
     for marker in (
         "AHICP-D033",
+        "AHICP-D034",
         "Ethics and Information Technology",
         "不构成 Final Artifact Approval",
         "不构成 submission / publication / release authorization",
+        "Final Artifact Approval 完成",
+        "submission authorization",
     ):
         require(dec_zh, marker, "Chinese Decision Log")
 
@@ -406,11 +412,11 @@ def main() -> int:
         require(text, "6", language)
         require(text, "double-anonymous", language)
 
-    require(package_readme, "Final Artifact Approval", "package README")
-    require(check_en, "Final Artifact Approval", "English checklist")
-    require(check_zh, "Final Artifact Approval", "Chinese checklist")
-    require(ai_en, "FINAL HUMAN REVIEW PENDING", "English AI disclosure")
-    require(ai_zh, "FINAL HUMAN REVIEW PENDING", "Chinese AI disclosure")
+    require(package_readme, "FINAL ARTIFACT APPROVED — SUBMISSION AUTHORIZATION PENDING", "package README")
+    require(check_en, "FINAL ARTIFACT APPROVED — SUBMISSION AUTHORIZATION PENDING", "English checklist")
+    require(check_zh, "FINAL ARTIFACT APPROVED — SUBMISSION AUTHORIZATION PENDING", "Chinese checklist")
+    require(ai_en, "HUMAN-REVIEWED UNDER AHICP-D034", "English AI disclosure")
+    require(ai_zh, "AHICP-D034 HUMAN-REVIEWED", "Chinese AI disclosure")
     require(citation_audit, "AUDITED — FINAL LIVE-POLICY RECHECK STILL REQUIRED", "Citation Audit")
     require(citation_audit, "VERIFIED-PUBLISHED", "Citation Audit")
     require(citation_audit, "CURRENT-POLICY-SOURCE", "Citation Audit")
@@ -418,12 +424,18 @@ def main() -> int:
     require(citation_audit, "PROV-DM", "Citation Audit")
 
     require(title_meta, "[HUMAN TO COMPLETE]", "title-page metadata template")
-    require(cover, "[CONFIRM: the manuscript is not under consideration elsewhere]", "cover-letter draft")
+    require(cover, "the manuscript is not under consideration elsewhere", "cover-letter draft")
+    require(cover, "all author/co-author approvals required for the current submission have been obtained", "cover-letter draft")
+    require(cover, "public repository will not be proactively supplied to reviewers", "cover-letter draft")
 
     require(focus_en, "Ethics and Information Technology", "English Current Focus")
     require(focus_zh, "Ethics and Information Technology", "Chinese Current Focus")
     require(task_en, "WM-T026", "English Task Plan")
     require(task_zh, "WM-T026", "Chinese Task Plan")
+    require(focus_en, "AHICP-D034", "English Current Focus")
+    require(focus_zh, "AHICP-D034", "Chinese Current Focus")
+    require(task_en, "COMPLETED — AHICP-D034 FINAL ARTIFACT APPROVED", "English Task Plan")
+    require(task_zh, "COMPLETED — AHICP-D034 FINAL ARTIFACT APPROVED", "Chinese Task Plan")
 
     print(
         "EIT submission validation passed "

@@ -3,12 +3,12 @@
 **Chinese title:** 从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性
 
 **Title status:** HUMAN-APPROVED TITLE — HARC-D024  
-**Article status:** DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING  
+**Article status:** FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING  
 **Framework status:** APPROVED-FRAMEWORK — MA-FW-001  
 **Protocol:** AI-Assisted Human Inquiry and Creation Protocol (AHICP)  
 **Language status:** Chinese is canonical; this English document is the synchronized mirror.
 
-> This article was structurally rewritten under AHICP-D030 and is now derived from the human-approved Framework `MA-FW-001` under AHICP-D031. Framework Approval is complete; Final Artifact Approval has not occurred.
+> This article was structurally rewritten under AHICP-D030 and is derived from the human-approved Framework `MA-FW-001` under AHICP-D031. Framework Approval is complete; Final Artifact Approval was completed under AHICP-D034. That approval does not authorize submission / publication / release.
 
 ## Abstract
 
@@ -688,4 +688,4 @@ Complete source-verification notes and usage boundaries are maintained in `evide
 
 ## Current development status
 
-This is the structurally upgraded AHICP methodology article under AHICP-D030. Project Memory Architecture, Working Memory continuity, Agent/Model Substitution, and Human Decision Persistence are now central to the argument. The article is now `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`: the intellectual architecture has received Framework Approval, while artifact-level review, venue-specific verification, and Final Artifact Approval remain pending.
+This is the structurally upgraded AHICP methodology article under AHICP-D030. Project Memory Architecture, Working Memory continuity, Agent/Model Substitution, and Human Decision Persistence are now central to the argument. The article is now `FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`: Framework Approval and Final Artifact Approval have been completed separately, while formal submission / publication / release still requires separate explicit authorization.

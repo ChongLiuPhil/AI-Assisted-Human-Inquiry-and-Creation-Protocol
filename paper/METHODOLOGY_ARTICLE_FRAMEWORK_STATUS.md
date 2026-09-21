@@ -71,7 +71,7 @@ English synchronized mirror:
 
 Status:
 
-`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+`FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`
 
 The article now:
 - uses the project-memory-centered 13-section structure;
@@ -81,7 +81,7 @@ The article now:
 - separates proposed evaluation from empirical results;
 - remains synchronized across Chinese and English.
 
-Framework Approval is **not** Final Artifact Approval. Artifact-level review, target-venue verification, citation/style consolidation, and final public-version approval remain pending.
+Framework Approval is **not** Final Artifact Approval. Both have now been completed separately: Framework Approval under AHICP-D031 and Final Artifact Approval under AHICP-D034; submission / publication / release authorization remains separate.
 
 ## Canonical upstream sources
 
@@ -105,19 +105,20 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 - target venue: `SELECTED — Ethics and Information Technology / AHICP-D032`;
 - venue-specific form / double-blind / AI-use / authorship requirements: `ADOPTED — AHICP-D033`;
 - blinded Markdown submission derivative: `PREPARED / PR #29 MERGED / CI PASS`;
-- citation / publication-status audit: `COMPLETED — LIVE POLICY RECHECK PENDING`;
-- Word/docx build pipeline: `TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`;
-- citation ↔ reference-list bidirectional consistency: `VERIFIED — 18/18 MAPPINGS / EIT CI PASS`;
-- search-based anonymization risk from the `AHICP` name: `MITIGATION PREPARED — MASKED DERIVATIVE / HUMAN-EDITORIAL CONFIRMATION PENDING`;
-- license;
-- Final Artifact Approval.
+- citation / publication-status audit: `COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`;
+- Word/docx build pipeline: `TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`;
+- citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`;
+- search-based anonymization risk from the `AHICP` name: `MASKED REVIEWER ROUTE HUMAN-CONFIRMED — PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED / MASKED-ANONYMIZED MATERIALS IF REQUIRED`;
+- publication route / licence: `DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`;
+- submission-time factual metadata and live-interface final recheck;
+- separate submission authorization.
 
 ## Synchronization state
 
-- Human decision -> Decision Log: `SYNC — AHICP-D033 RECORDED`
+- Human decision -> Decision Log: `SYNC — AHICP-D034 FINAL ARTIFACT APPROVAL RECORDED`
 - EIT preparation PR #29: `MERGED — a789bbd3342b29ebb07caa9c0cd22da3315e7746`
 - EIT final-review PR #30: `MERGED — b2e450baf5001f4879f740e67e21264aef115d5a`
-- masked reviewer derivative: `PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
+- masked reviewer derivative: `PREPARED / HUMAN-CONFIRMED REVIEWER ROUTE`
 - D030 direction -> Content Core: `SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries: `SYNC`
 - Approved Framework snapshot: `MA-FW-001 CREATED`
@@ -127,22 +128,19 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 - External evidence -> related-work claims: `UPDATED 2026-09-21`
 - Proposed evaluation -> empirical results: `NO RESULTS CLAIMED`
 - Framework Approval: `COMPLETED`
-- Final Artifact Approval: `NOT COMPLETED`
+- Final Artifact Approval: `COMPLETED — AHICP-D034 / APPROVED BASELINE 332ff0197e89c99f1b6bb70aedbb47cf425bdb21`
 
 ## Next governance gate
 
-The next step is no longer Framework Approval.
+Framework Approval and Final Artifact Approval are both complete.
 
 The next governance gate is:
 
-`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY SUBMISSION PACKAGE PREPARATION`
+`SUBMISSION READINESS FINAL CHECK / SEPARATE SUBMISSION AUTHORIZATION`
 
-Before Final Artifact Approval, the article may continue to receive:
-- language and logic editing;
-- citation verification;
-- venue formatting;
-- figures / architecture diagrams;
-- limitations / methods clarification;
-- empirical-study design.
+Before formal submission:
+- the human must complete truthful author / affiliation / corresponding-author / Funding / Competing Interests / Author Contributions / Acknowledgements / ORCID submission metadata;
+- the EIT live submission interface and dynamic policies must receive a final recheck;
+- separate explicit submission authorization must be obtained.
 
-Any substantive change to the core theses or structure in `MA-FW-001` should first enter a new Working Framework and, where necessary, produce `MA-FW-002`.
+If reviewer-facing substantive content changes after Final Artifact Approval, the appropriate review / approval must be repeated. Any substantive change to a core thesis, major inference, scope, or contribution boundary in `MA-FW-001` must still return to a new Working Framework and, where necessary, produce `MA-FW-002`.

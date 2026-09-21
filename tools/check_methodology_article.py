@@ -70,6 +70,9 @@ STALE_MARKERS = (
     "WORKING-FRAMEWORK — REVISED UNDER AHICP-D030 / HUMAN REVIEW PENDING",
     "Framework Approval：`NOT COMPLETED`",
     "Framework Approval: `NOT COMPLETED`",
+    "FINAL ARTIFACT APPROVAL PENDING",
+    "Final Artifact Approval：`NOT COMPLETED`",
+    "Final Artifact Approval: `NOT COMPLETED`",
 )
 
 
@@ -120,16 +123,16 @@ def main() -> int:
     require(en_article, CORE_THESIS_EN, "English article")
     require(zh_article, "本文不报告这些测试的实证结果", "Chinese article")
     require(en_article, "No empirical results from those tests are reported here", "English article")
-    require(zh_article, "DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING", "Chinese article")
-    require(en_article, "DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING", "English article")
+    require(zh_article, "FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING", "Chinese article")
+    require(en_article, "FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING", "English article")
     require(zh_article, "不主张首创“project memory”概念", "Chinese article")
     require(en_article, "does not claim to originate the concept of project memory", "English article")
     require(zh_article, "design research question", "Chinese article")
     require(en_article, "design research question", "English article")
 
-    for marker in ("AHICP-D030", "AHICP-D031", "AHICP-D032", "一篇统一论文", "Project Memory Architecture", "MA-FW-001", "bounded auto-merge", "Ethics and Information Technology"):
+    for marker in ("AHICP-D030", "AHICP-D031", "AHICP-D032", "AHICP-D034", "一篇统一论文", "Project Memory Architecture", "MA-FW-001", "bounded auto-merge", "Ethics and Information Technology", "submission authorization"):
         require(zh_decisions, marker, "Chinese Decision Log")
-    for marker in ("AHICP-D030", "AHICP-D031", "AHICP-D032", "one unified paper", "Project Memory Architecture", "MA-FW-001", "bounded auto-merge", "Ethics and Information Technology"):
+    for marker in ("AHICP-D030", "AHICP-D031", "AHICP-D032", "AHICP-D034", "one unified paper", "Project Memory Architecture", "MA-FW-001", "bounded auto-merge", "Ethics and Information Technology", "submission authorization"):
         require(en_decisions, marker, "English Decision Log")
 
     for number in range(17, 23):
@@ -149,7 +152,8 @@ def main() -> int:
         require(status_text, "Framework Approval", f"{language} Framework Status")
         require(status_text, "COMPLETED", f"{language} Framework Status")
         require(status_text, "Final Artifact Approval", f"{language} Framework Status")
-        require(status_text, "NOT COMPLETED", f"{language} Framework Status")
+        require(status_text, "AHICP-D034", f"{language} Framework Status")
+        require(status_text, "SUBMISSION AUTHORIZATION", f"{language} Framework Status")
 
     for approved_text, language in ((zh_approved, "Chinese"), (en_approved, "English")):
         require(approved_text, "APPROVED-FRAMEWORK — MA-FW-001", f"{language} MA-FW-001 snapshot")
@@ -173,6 +177,10 @@ def main() -> int:
     require(en_focus, "WM-OBJ-005", "English Current Focus")
     require(zh_focus, "MA-FW-001", "Chinese Current Focus")
     require(en_focus, "MA-FW-001", "English Current Focus")
+    require(zh_focus, "AHICP-D034", "Chinese Current Focus")
+    require(en_focus, "AHICP-D034", "English Current Focus")
+    require(zh_focus, "submission authorization", "Chinese Current Focus")
+    require(en_focus, "submission authorization", "English Current Focus")
     for marker in ("WM-T022", "WM-T023", "WM-T024", "WM-T025", "WM-T026", "WM-T027"):
         require(zh_task, marker, "Chinese Task Plan")
         require(en_task, marker, "English Task Plan")
@@ -183,6 +191,8 @@ def main() -> int:
     require(en_venue, "AHICP-D032", "English Target Venue Review")
     require(zh_task, "WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`COMPLETED / AHICP-D032", "Chinese Task Plan")
     require(en_task, "WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032", "English Task Plan")
+    require(zh_task, "WM-T026` — methodology article Final Artifact review / venue preparation：`COMPLETED — AHICP-D034", "Chinese Task Plan")
+    require(en_task, "WM-T026` — methodology article Final Artifact review / venue preparation: `COMPLETED — AHICP-D034", "English Task Plan")
 
     combined = "\n".join((
         zh_article, en_article, zh_map, en_map, zh_status, en_status,
@@ -209,6 +219,8 @@ def main() -> int:
     require(en_decisions, "bounded auto-merge authorization", "English Decision Log")
     require(zh_decisions, "Ethics and Information Technology", "Chinese Decision Log")
     require(en_decisions, "Ethics and Information Technology", "English Decision Log")
+    require(zh_decisions, "Final Artifact Approval 完成", "Chinese Decision Log")
+    require(en_decisions, "Final Artifact Approval completed", "English Decision Log")
 
     for marker in effectiveness_phrases:
         if marker in zh_article or marker in en_article:

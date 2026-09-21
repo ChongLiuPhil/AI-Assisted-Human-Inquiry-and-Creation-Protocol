@@ -1,6 +1,6 @@
 # Ethics and Information Technology — 投稿检查清单
 
-**状态：** `ACTIVE — FINAL ARTIFACT APPROVAL PENDING`  
+**状态：** `FINAL ARTIFACT APPROVED — SUBMISSION AUTHORIZATION PENDING`  
 **官方指南核验：** 2026-09-22  
 **官方页面：** https://link.springer.com/journal/10676/submission-guidelines
 
@@ -26,8 +26,8 @@
 - [x] 不含 AHICP 内部 Decision IDs、Framework IDs、development status、Working Memory IDs。
 - [x] 不含直接 GitHub URL。
 - [x] 已准备 masked reviewer derivative，并移除 `AHICP`、协议全称、direct GitHub URL 与内部 IDs。
-- [ ] 人类/编辑部确认采用 masked reviewer route；残余 search-based deanonymization risk 已明确接受或进一步处理。
-- [ ] 提供给 reviewer 的 repository / supplementary materials 使用适当匿名或 masked 路线。
+- [x] 人类已确认采用 masked reviewer route；残余 search-based deanonymization risk 已明确接受，且不主动向 reviewers 提供公开 repository。
+- [x] reviewer-visible repository / supplementary material 路线已确认：不主动提供公开 repository；如编辑部要求提供，则仅使用适当 masked / anonymized 路线。
 - [x] self-citation 表述已检查；reviewer manuscript 未发现以 “our previous work”等自指措辞暴露作者身份的写法。
 
 ## AI / LLM disclosure
@@ -59,11 +59,11 @@
 - [x] claim boundaries 已与 `MA-FW-001` 核验；未改批准 Framework。
 - [x] 未引入实证性效果主张；evaluation 仍明确为 proposed / future work。
 - [x] venue adaptation 未改变核心 Framework thesis、主要推论、scope 或 contribution boundary。
-- [ ] 记录 Final Artifact Approval。
+- [x] Final Artifact Approval 已由人类记录（AHICP-D034；approved artifact baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`）。
 - [ ] 另行记录 submission authorization。
 
 ## Submission integrity
 
-- [ ] 人类确认稿件没有同时投给其他期刊。
-- [ ] 人类确认所有作者/合作者需要的 submission approval。
+- [x] 人类确认稿件没有同时投给其他期刊。
+- [x] 人类确认所有作者/合作者需要的 submission approval 已取得。
 - [ ] 正式提交前再次检查 live submission interface，并对动态 policy 做 at-submission final recheck；实际字段可能与静态指南不同。
