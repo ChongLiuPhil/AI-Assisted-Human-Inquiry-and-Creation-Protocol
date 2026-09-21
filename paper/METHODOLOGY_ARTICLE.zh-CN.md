@@ -3,12 +3,12 @@
 **英文题目：** *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
 **题目状态：** `HUMAN-APPROVED TITLE — HARC-D024`  
-**正文状态：** `DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`  
-**Framework 状态：** `WORKING-FRAMEWORK — HUMAN REVIEW PENDING`  
+**正文状态：** `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`  
+**Framework 状态：** `APPROVED-FRAMEWORK — MA-FW-001`  
 **协议：** AI-Assisted Human Inquiry and Creation Protocol (AHICP)  
 **中文 canonical；英文为 synchronized mirror。**
 
-> 本文已经依据 AHICP-D030 完成结构性重写。该决定授权把 project memory architecture、Working Memory、Agent/Model substitution 与 human decision persistence 提升为核心理论贡献，但不等于对重写后完整 Framework 的整体 Framework Approval，也不等于 Final Artifact Approval。
+> 本文依据 AHICP-D030 完成结构性重写，并依据 AHICP-D031 从已批准 Framework `MA-FW-001` 派生。Framework Approval 已完成；Final Artifact Approval 仍未发生。
 
 ## 摘要
 
@@ -675,4 +675,4 @@ Working Memory 在其中承担 continuity layer：把当前认识/任务状态�
 
 ## 当前文章开发状态
 
-本文是 AHICP 方法论文章的结构性升级稿，已依据 AHICP-D030 把 Project Memory Architecture、Working Memory continuity、Agent/Model Substitution 与 Human Decision Persistence 纳入核心论证。它仍是 `DERIVED-PROVISIONAL`：当前 Working Framework 尚未完成整体 Framework Approval，本文也尚未完成 Final Artifact Approval。
+本文是 AHICP 方法论文章的结构性升级稿，已依据 AHICP-D030 把 Project Memory Architecture、Working Memory continuity、Agent/Model Substitution 与 Human Decision Persistence 纳入核心论证。它现在是 `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`：思想架构已经通过 Framework Approval，但正文仍需最终 artifact-level 审阅、venue-specific 核验与 Final Artifact Approval。
