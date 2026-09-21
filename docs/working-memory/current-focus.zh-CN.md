@@ -65,6 +65,10 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - PR #30 已按 D033 scoped merge authorization 合入 `main`，merge commit `b2e450baf5001f4879f740e67e21264aef115d5a`；
 - latest-head EIT Submission CI 已确认 DOCX build、package structural validation 与 artifact upload 全部成功；
 - CI 生成 artifact：`eit-manuscript-blinded-docx`，约 53 KB，30-day retention；
+- masked reviewer derivative 与 traceable derivative 已完成 artifact-level English / argument-flow review，未改变 `MA-FW-001` 的核心 thesis、主要推论、scope 或 contribution boundary；
+- traceable / masked DOCX 均完成 20 页逐页 visual QA；自动页码、footer、表格分页与匿名 core metadata 检查通过；
+- DOCX builder / CI 已加入 PAGE field、table-row non-split 与匿名 metadata gates；
+- EIT 当前 submission guidelines 已于 2026-09-21 复核；正式 submission 前仍保留 live interface / dynamic-policy final recheck；
 - PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
@@ -75,13 +79,12 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 
 Primary target：`Ethics and Information Technology`。
 
-当前 submission derivative 已准备，下一阶段：
-1. 完成 artifact-level 英文与论证终审；
-3. 人类/编辑部确认 masked reviewer route，并处理剩余 deanonymization risk；
-4. 对 CI 生成的 traceable / masked Word/docx build candidates 做逐页视觉 QA；
-6. 正式 submission 前重新核验动态 ICMJE / Nature policy pages；
-7. 人类完成 Final Artifact Approval；
-8. submission / publication / release 仍需独立授权。
+当前 submission derivative 的 artifact-level English / argument-flow review 与 traceable / masked DOCX visual QA 已完成。下一阶段：
+1. 人类/编辑部确认 masked reviewer route，并确认 reviewer-visible supplementary / repository material 的匿名化路径；
+2. 决定 license；
+3. 正式 submission 前再次核验 EIT live submission interface、ICMJE 与 Nature Portfolio 动态 policy pages；
+4. 人类完成 Final Artifact Approval；
+5. submission / publication / release 仍需独立明确授权。
 
 ## PRIMARY_BLOCKER
 
@@ -92,10 +95,10 @@ Final Artifact / publication 层仍存在：
 - target publication venue：`SELECTED — Ethics and Information Technology / AHICP-D032`
 - venue-specific form constraints：`ADOPTED — AHICP-D033`
 - blinded submission derivative：`PREPARED / PR #29 MERGED / CI PASS`
-- citation audit：`COMPLETED — LIVE POLICY RECHECK PENDING`
-- citation ↔ reference-list 双向一致性：`VERIFIED — 18/18 MAPPINGS / EIT CI PASS`
-- anonymization risk (`AHICP` discoverability)：`MASKED DERIVATIVE PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
-- Word/docx：`TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`
+- citation audit：`COMPLETED — 2026-09-21 INTERIM LIVE RECHECK / FINAL PRE-SUBMISSION RECHECK PENDING`
+- citation ↔ reference-list 一致性：`VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
+- anonymization risk (`AHICP` discoverability)：`MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- Word/docx：`TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
 - Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF
