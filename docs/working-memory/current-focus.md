@@ -61,6 +61,9 @@ Primary current objects:
 - PR #29 merged into `main` under D033 scoped merge authorization, merge commit `a789bbd3342b29ebb07caa9c0cd22da3315e7746`;
 - completed citation / publication-status audit for the blinded derivative;
 - added a reproducible DOCX builder and connected it to EIT CI to generate a build candidate;
+- PR #30 merged into `main` under D033 scoped merge authorization, merge commit `b2e450baf5001f4879f740e67e21264aef115d5a`;
+- latest-head EIT Submission CI confirmed successful DOCX build, package-structure validation, and artifact upload;
+- CI artifact: `eit-manuscript-blinded-docx`, approximately 53 KB, 30-day retention;
 - PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
@@ -72,8 +75,7 @@ Current Framework work and target-venue selection are complete.
 Primary target: `Ethics and Information Technology`.
 
 The submission derivative is prepared. Next stage:
-1. complete latest-head CI for the current final-review PR;
-2. complete final bidirectional author–year citation ↔ reference-list consistency review;
+1. complete final bidirectional author–year citation ↔ reference-list consistency review;
 3. complete artifact-level English and argument review;
 4. resolve the open search-based deanonymization risk created by the distinctive `AHICP` name;
 5. visually inspect the CI-generated Word/docx build candidate page by page;
@@ -92,7 +94,7 @@ Final Artifact / publication layer still has:
 - blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
 - citation audit: `COMPLETED — LIVE POLICY RECHECK PENDING`
 - anonymization risk (`AHICP` discoverability): `OPEN`
-- Word/docx: `BUILD PIPELINE READY / VISUAL QA PENDING`
+- Word/docx: `BUILD CANDIDATE GENERATED / VISUAL QA PENDING`
 - Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF

@@ -11,7 +11,8 @@
 - `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
 - `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI: `COMPLETED / PR #29 MERGED — a789bbd3`
 - `WM-T030` — EIT citation / publication-status audit: `COMPLETED / LIVE POLICY RECHECK PENDING`
-- `WM-T031` — EIT DOCX build + visual QA: `IN PROGRESS / BUILD PIPELINE READY`
+- `WM-T031` — EIT DOCX build + visual QA: `IN PROGRESS / BUILD CANDIDATE GENERATED / VISUAL QA PENDING`
+- `WM-T032` — PR #30 post-merge verification + state write-back: `COMPLETED`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
@@ -45,8 +46,7 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. complete latest-head CI for the final-review PR;
-2. complete bidirectional citation ↔ reference-list consistency review;
+1. complete bidirectional citation ↔ reference-list consistency review;
 3. resolve the search-based deanonymization risk created by the `AHICP` name;
 4. decide the license;
 5. complete Final Artifact-level academic editing;

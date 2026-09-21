@@ -550,3 +550,32 @@ Current remaining blockers:
 7. final live-policy recheck immediately before submission.
 
 **Status:** citation audit completed; reproducible DOCX build ready; visual QA pending.
+
+---
+
+## 2026-09-21 — PR #30 EIT final-review merge and DOCX build verification
+
+Under AHICP-D033, PR #30 passed the following pre-merge checks:
+
+- branch vs `main`: behind = 0;
+- unresolved review threads: 0;
+- Ecosystem validation: PASS;
+- Methodology Article CI: PASS;
+- EIT Submission CI: PASS;
+- EIT validator: PASS;
+- DOCX build: PASS;
+- DOCX ZIP/package structural validation: PASS;
+- workflow artifact upload: PASS.
+
+Execution result:
+
+- PR #30: `Audit EIT references and add reproducible DOCX build`
+- merge result: `merged=true`
+- merge commit: `b2e450baf5001f4879f740e67e21264aef115d5a`
+- generated artifact: `eit-manuscript-blinded-docx`
+- artifact size: approximately 53 KB
+- retention: 30 days
+
+**Boundary:** generating and structurally validating a build candidate is not page-by-page visual QA and is not Final Artifact Approval. Remaining work includes bidirectional citation ↔ reference-list final consistency review, the `AHICP` search-based deanonymization risk, Word visual QA, license, Final Artifact Approval, and separate submission authorization.
+
+**Status:** PR #30 merged; DOCX build candidate structurally verified; visual QA pending.

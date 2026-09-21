@@ -551,3 +551,32 @@ venue-level reference cleanup：
 7. 动态 policy pages 在实际投稿前的最终复核。
 
 **状态：** citation audit completed; reproducible DOCX build ready; visual QA pending.
+
+---
+
+## 2026-09-21 — PR #30 EIT final-review merge 与 DOCX build verification
+
+依据 AHICP-D033，PR #30 在合并前完成：
+
+- branch vs `main`：behind = 0；
+- unresolved review threads：0；
+- Ecosystem validation：PASS；
+- Methodology Article CI：PASS；
+- EIT Submission CI：PASS；
+- EIT validator：PASS；
+- DOCX build：PASS；
+- DOCX ZIP/package structural validation：PASS；
+- workflow artifact upload：PASS。
+
+执行结果：
+
+- PR #30：`Audit EIT references and add reproducible DOCX build`
+- merge result：`merged=true`
+- merge commit：`b2e450baf5001f4879f740e67e21264aef115d5a`
+- generated artifact：`eit-manuscript-blinded-docx`
+- artifact size：约 53 KB
+- retention：30 days
+
+**边界：** build candidate 的生成与结构校验不等于逐页视觉 QA，也不等于 Final Artifact Approval。当前仍需处理 citation ↔ reference-list 双向终检、`AHICP` search-based deanonymization risk、Word 视觉 QA、license、Final Artifact Approval 与独立 submission authorization。
+
+**状态：** PR #30 merged; DOCX build candidate verified structurally; visual QA pending.

@@ -62,6 +62,9 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - PR #29 已按 D033 scoped merge authorization 合入 `main`，merge commit `a789bbd3342b29ebb07caa9c0cd22da3315e7746`；
 - 完成 blinded derivative 的 citation / publication-status audit；
 - 建立可重复 DOCX builder，并接入 EIT CI 生成 build candidate；
+- PR #30 已按 D033 scoped merge authorization 合入 `main`，merge commit `b2e450baf5001f4879f740e67e21264aef115d5a`；
+- latest-head EIT Submission CI 已确认 DOCX build、package structural validation 与 artifact upload 全部成功；
+- CI 生成 artifact：`eit-manuscript-blinded-docx`，约 53 KB，30-day retention；
 - PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
@@ -73,8 +76,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 Primary target：`Ethics and Information Technology`。
 
 当前 submission derivative 已准备，下一阶段：
-1. 完成当前 final-review PR 的 latest-head CI；
-2. 完成 author–year citation ↔ reference-list 双向一致性终检；
+1. 完成 author–year citation ↔ reference-list 双向一致性终检；
 3. 完成 artifact-level 英文与论证终审；
 4. 处理 `AHICP` 名称可能导致 search-based deanonymization 的开放风险；
 5. 对 CI 生成的 Word/docx build candidate 做逐页视觉 QA；
@@ -93,7 +95,7 @@ Final Artifact / publication 层仍存在：
 - blinded submission derivative：`PREPARED / PR #29 MERGED / CI PASS`
 - citation audit：`COMPLETED — LIVE POLICY RECHECK PENDING`
 - anonymization risk (`AHICP` discoverability)：`OPEN`
-- Word/docx：`BUILD PIPELINE READY / VISUAL QA PENDING`
+- Word/docx：`BUILD CANDIDATE GENERATED / VISUAL QA PENDING`
 - Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF
