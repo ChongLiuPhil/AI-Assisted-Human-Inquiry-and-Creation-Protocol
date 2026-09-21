@@ -172,8 +172,8 @@ Clark & Chalmers、Hutchins 提供外部认知脚手架和分布式认知的理�
 ### I. 引言：从“AI能不能写”转向“项目怎样保持连续”
 提出 generation–verification asymmetry 作为分析标签，并把问题导向 project memory。
 
-### II. 相关工作与问题边界：Agent memory 不等于 Project memory
-讨论 Generative Agents、MemGPT、Agent memory survey、LongMemEval、MemBench、RealMem，以及 provenance / distributed cognition 背景。
+### II. 相关工作与问题边界：既有 Project Memory、Agent Memory 与 Decision Provenance
+讨论 organizational/project memory、design rationale / architecture knowledge management、decision provenance、Generative Agents、MemGPT、Agent-memory survey、LongMemEval、MemBench、RealMem，以及 provenance / distributed cognition 背景。
 
 ### III. 设计要求：一个长期项目的记忆必须具备什么性质
 提出 model independence、inspectability、versionability、provenance、decision persistence、resumability、selective retrieval、privacy boundary 与 human authority。
