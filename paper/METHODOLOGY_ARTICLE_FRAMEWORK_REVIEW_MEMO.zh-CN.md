@@ -1,10 +1,10 @@
 # 方法论文章 — Framework Scholarly Review Memo
 
-**状态：** `SCHOLARLY REVIEW COMPLETED — FRAMEWORK APPROVAL CANDIDATE`  
+**状态：** `SCHOLARLY REVIEW COMPLETED — MA-FW-001 APPROVED`  
 **日期：** 2026-09-21  
 **对象：** `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`  
 **依据：** HARC-D023 / HARC-D024 / HARC-D025、AHICP-D030，以及 2026-09-21 prior-art / novelty audit。  
-**说明：** 本文件记录本轮最终 scholarly review。它取代旧的 HARC-era AI review memo 作为当前审阅附件。Framework 的正式批准状态由 Decision Log 与 `MA-FW-001` 决定。
+**说明：** 本文件记录形成 `MA-FW-001` 的最终 scholarly review。Framework 的正式批准已由 `AHICP-D031` 与 `paper/frameworks/MA-FW-001.zh-CN.md` 固化；本 memo 仍是审阅记录，不替代批准快照。
 
 ---
 
@@ -19,7 +19,7 @@
 5. proposed evaluation 继续属于 research agenda；没有真实实验数据就不得升级成效果结论；
 6. Final Artifact Approval 与 venue-specific requirements 继续独立存在。
 
-在这些边界下，当前框架可以批准为 `MA-FW-001`。
+在这些边界下，当前框架已依据 AHICP-D031 批准为 `MA-FW-001`。
 
 ---
 
