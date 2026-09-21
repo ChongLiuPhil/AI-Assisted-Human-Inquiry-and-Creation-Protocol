@@ -16,7 +16,7 @@
 3. **AI & Society** — 主题很契合，但当前 LLM policy 与本项目真实生成式 AI 使用存在明显张力；
 4. **Journal of Documentation** — knowledge / memory 主题相关，但 Emerald 当前禁止用生成式 AI copywriting 新材料，因此不适合作为当前稿件的投稿目标。
 
-该顺序是当前的 AI-researched recommendation，不是人类最终 venue selection。
+该排序最初来自 AI-researched review；依据 AHICP-D032，人类现已选择 **Ethics and Information Technology** 为当前 primary target，并保留 **Science and Engineering Ethics** 为 secondary candidate。
 
 ---
 
