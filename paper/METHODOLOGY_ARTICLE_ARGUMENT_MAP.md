@@ -94,12 +94,12 @@ AI may perform or assist extensive work, but project purpose, core questions, di
 
 For long-form work, Layer 2 Framework is the principal interface for high-intensity human review of intellectual architecture. Framework Approval is distinct from Final Artifact Approval.
 
-### T11 — Project Memory vs Agent Memory
+### T11 — Prior Project Memory, Agent Memory, and the AHICP Integration Boundary
 **Source: HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
 
-Generative Agents, MemGPT, agent-memory surveys, and LongMemEval / MemBench show that long-term memory is a central Agent research problem; RealMem (2026) explicitly brings long-term project-oriented interaction into benchmark design.
+Prior organizational/project-memory research already addresses project history, knowledge, context, rationale, and newcomer continuity; design-rationale / architecture-knowledge-management / decision-provenance research addresses decision reasons and origin; Generative Agents, MemGPT, agent-memory surveys, LongMemEval / MemBench, and RealMem bring long-term memory into LLM Agents and project-oriented interaction.
 
-AHICP does not compete over which system makes an Agent remember more. It proposes a governance layer: even an Agent with strong internal long-term memory does not remove the need for inspectable, migratable, authorized, auditable external project memory.
+AHICP therefore should not compete over who first proposed project memory or who makes an Agent remember more. Its candidate contribution is the integration of these traditions into a governed Project Memory architecture: even with strong internal Agent memory, the project maintains independent authoritative state and unifies Working Memory, human decision status, authorization/publication boundaries, and cross-Agent substitution as governance mechanisms.
 
 ### T12 — Empirical Evaluation Framework
 **Source: HUMAN-CONFIRMED AS RESEARCH AGENDA — AHICP-D030**
