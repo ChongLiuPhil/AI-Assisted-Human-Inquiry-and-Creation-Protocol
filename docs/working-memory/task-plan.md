@@ -14,6 +14,7 @@
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
 - `WM-T022` — AHICP-D030 methodology article project-memory structural rewrite: `COMPLETED`
+- `WM-T024` — methodology paper scholarly novelty / prior-art positioning audit: `COMPLETED / EVIDENCE-CONSTRAINED`
 
 Completed scope:
 
