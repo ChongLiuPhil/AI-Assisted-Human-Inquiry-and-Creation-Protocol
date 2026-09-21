@@ -78,19 +78,27 @@
 
 ---
 
-## 二、相关工作与问题边界：Agent memory 不等于 Project memory
+## 二、相关工作与问题边界：既有 Project Memory、Agent Memory 与 Decision Provenance
 
-### 2.1 Agent memory 已经成为重要研究主题
+### 2.1 “Project Memory” 早于生成式 AI
+
+“Project Memory” 并不是 AHICP 新创造的术语。更广义的 organizational memory 研究早已把组织层的记忆分析为 information acquisition、retention 与 retrieval 问题，并专门讨论把组织拟人化的理论风险（Walsh & Ungson, 1991）。
+
+更直接地，Weiser 与 Morrison（1998）已经以 *Project Memory: Information Management for Project Teams* 为题指出，项目团队常常不能系统保存 project processes、contexts、rationales 与 artifacts，导致新成员难以迅速重建项目历史；他们据此提出面向可检索项目历史的数据模型。项目管理研究后来继续发展这一概念。Mariano 与 Awazu（2024）在大型项目场景中研究 project memory practices，说明 project memory 已经是项目管理与组织记忆研究中的既有问题。
+
+因此，本文的 novelty 不能建立在“首次提出 project memory”之上。AHICP 的问题更窄：**在长期、AI-assisted、跨 session、可替换 Agent/model 的项目中，怎样把项目记忆转化成具有权威状态、决策语义、授权边界和可验证交接能力的治理架构。**
+
+### 2.2 Agent memory 已经成为重要研究主题
 
 近年来，LLM-based Agent memory 已经形成快速发展的研究方向。Generative Agents 使用自然语言记录经历，并通过反思与检索影响后续行为（Park et al., 2023）。MemGPT 将有限 context window 类比于操作系统内存限制，通过分层存储与 virtual context management 支持跨 session 的长期交互（Packer et al., 2023）。Zhang 等人的综述系统整理了 LLM-based Agent memory 的设计、评价与应用，表明 memory 已经成为 Agent 架构的重要组件（Zhang et al., 2025）。
 
-与此同时，评价研究也逐渐从“能否回忆一个事实”扩展到多 session 推理、时间推理、知识更新和容量/效率等问题。LongMemEval 评估 information extraction、multi-session reasoning、temporal reasoning、knowledge updates 与 abstention（Wu et al., 2025）；MemBench 则从 memory level、interaction scenario 以及 effectiveness、efficiency、capacity 等维度扩展评价（Tan et al., 2025）。RealMem 更进一步，把“long-term project-oriented interactions”明确作为 benchmark 场景，关注动态目标与长期项目状态（Bian et al., 2026）。
+与此同时，评价研究也逐渐从“能否回忆一个事实”扩展到多 session 推理、时间推理、知识更新和容量/效率等问题。LongMemEval 评估 information extraction、multi-session reasoning、temporal reasoning、knowledge updates 与 abstention（Wu et al., 2025）；MemBench 从 memory level、interaction scenario 以及 effectiveness、efficiency、capacity 等维度扩展评价（Tan et al., 2025）。RealMem 进一步把“long-term project-oriented interactions”明确作为 benchmark 场景，关注动态目标与长期项目状态（Bian et al., 2026）。
 
 这些工作说明长期记忆不是 LLM 的边缘问题，而是持续型 Agent 的核心能力之一。
 
-### 2.2 AHICP 关注的是另一层问题
+### 2.3 Agent memory 与 AHICP Project Memory 的边界
 
-尽管邻近，**Agent memory 与 project memory 不是同一个问题。**
+尽管邻近，**Agent memory 与 AHICP 所说的 Project Memory 不是同一个分析层。**
 
 Agent memory 通常关注：
 - Agent 保存哪些历史；
@@ -100,7 +108,7 @@ Agent memory 通常关注：
 - 如何在有限 context 下调度长期与短期信息；
 - 如何利用记忆改善后续回答或行动。
 
-Project memory 则关注：
+AHICP Project Memory 则关注：
 - 哪个状态对项目具有权威性；
 - 谁确认了什么；
 - 哪个结论由哪些证据支持；
@@ -112,13 +120,42 @@ Project memory 则关注：
 - 哪些外部行动已经授权；
 - 换 Agent 后怎样恢复项目而不重新叙述全部历史。
 
-因此，即使未来某个 Agent 拥有非常强的内部长期记忆，也不能自动替代 project memory。内部记忆可能不可检查、不可迁移、难以精确版本化，或者与项目正式决定之间没有清楚的 authorization provenance。
+因此，即使未来某个 Agent 拥有非常强的内部长期记忆，也不能自动替代 Project Memory。内部记忆可能不可检查、不可迁移、难以精确版本化，或者与项目正式决定之间没有清楚的 authorization provenance。
 
-### 2.3 外部认知、分布式认知与 provenance
+### 2.4 Design rationale、architecture knowledge management 与 decision provenance
+
+软件工程长期研究“为什么做出这个决定”应怎样被保存。Design rationale 研究强调显式表示设计选择背后的理由，以支持后续理解、维护、沟通与重新设计。Software Architecture Knowledge Management 进一步把 requirements、architecture decisions、rationale、experience 等作为需要 capture、use、maintain、share 与 reuse 的知识；系统综述显示，尤其是高效 capture 与长期 maintenance 仍然是困难问题（Weinreich & Groher, 2016）。
+
+Decision provenance 则从 accountability 角度提出，不能只看最后输出，还应能够追踪 decision pipeline 中的输入、决定及其后续影响（Singh, Cobbe, & Norval, 2019）。
+
+这些文献意味着：**Human Decision Persistence 也不能被写成 AHICP 首次发现“决定需要被记录”。** AHICP 的候选贡献，是把 decision/rationale/provenance 与 AI Agent 替换、human confirmation / rejection / authorization states、Working Memory 与长期项目状态传播结合。
+
+### 2.5 外部认知、分布式认知与 provenance 标准
 
 AHICP 与扩展心灵和分布式认知存在概念亲缘性。Clark 与 Chalmers（1998）讨论外部资源在适当条件下如何参与认知过程；Hutchins（1995）强调认知可以分布在人、工具、表征与组织过程之间。本文采取较弱的主张：版本化仓库至少可以成为一种**持久认知脚手架和项目状态载体**。本文不需要进一步主张仓库或 AI 是独立认知主体。
 
-Provenance 研究则提供另一种背景。W3C PROV 用实体、活动、Agent 及其派生/关联关系描述数字对象的来源和生成过程，并把 provenance 与信任、合规、理解来源和再现过程联系起来。AHICP 当前并不是 W3C PROV 的正式实现，但共享一个基本直觉：**如果状态会影响未来判断，仅保存最终文本通常不够，还需要保存它从哪里来、处于什么状态、怎样发生改变。**
+W3C PROV 提供了更一般的 provenance 标准背景，用实体、活动、Agent 及其派生/关联关系描述数字对象的来源和生成过程。AHICP 当前不是 W3C PROV 的正式实现，但共享一个基本直觉：**如果状态会影响未来判断，仅保存最终文本通常不够，还需要保存它从哪里来、处于什么状态、怎样发生改变。**
+
+### 2.6 本文的贡献边界
+
+综合以上文献，本文不把以下内容作为原创性主张：
+
+- “组织可以具有组织层记忆”；
+- “项目需要保存历史与知识”；
+- “设计决定和 rationale 值得记录”；
+- “provenance 有助于 accountability”；
+- “Agent 需要长期 memory”。
+
+本文提出的是一个更具体的**架构性综合**：把这些已经存在的思想放进长期 AI-assisted inquiry / creation 的条件下，并要求：
+
+1. 项目拥有独立于具体 Agent/model 的 authoritative state；
+2. Working Memory 提供显式 cross-session continuity；
+3. human decisions 具有 proposed / approved / rejected / deferred / authorized 等持久语义；
+4. Agent/model substitution 可以直接测试项目状态是否足够完整；
+5. evidence、decision、authorization、privacy/publication 与 artifact approval 在同一治理关系中传播；
+6. 模型上下文只是 repository state 的暂时投影，而不是平行真值源。
+
+**这套综合是否构成足够的新颖学术贡献，仍应由目标学科的系统文献审查与同行评审判断。** 本文因此避免使用未经充分证据支持的 “first”, “unique” 或同类优先权表述。
 
 ---
 
