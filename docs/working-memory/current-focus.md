@@ -16,9 +16,10 @@
 - `AHICP-D029` — scoped authorization and separation of proposal / authorization / execution / verification / durable write-back;
 - `AHICP-D030` — methodology article project-memory-centered structural direction;
 - `AHICP-D031` — whole-framework approval of `MA-FW-001`;
-- `AHICP-D032` — bounded auto-merge semantics for Framework Approval + selection of `Ethics and Information Technology` as primary target.
+- `AHICP-D032` — bounded auto-merge semantics for Framework Approval + selection of `Ethics and Information Technology` as primary target;
+- `AHICP-D033` — venue-specific Final Artifact preparation, double-anonymous derivative, AI-use disclosure, Data Availability, and submission-package scope.
 
-D032 does not supersede D027–D031 and does not constitute Final Artifact Approval or publication/release authorization; it provides scoped merge authorization only when strict scope / CI / review / base-sync conditions hold.
+D033 does not supersede D027–D032 and does not constitute Final Artifact Approval or submission/publication/release authorization. It authorizes the EIT venue-specific derivative work and scoped merge of this preparation PR only when scope, green-CI, no-blocking-review, and base-sync conditions hold.
 
 ## CURRENT_OBJECTIVE
 
@@ -52,7 +53,11 @@ Primary current objects:
 - narrowed T9 to AHICP normative governance;
 - renamed T10 to `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`;
 - created bilingual approved snapshot `MA-FW-001`;
-- recorded `AHICP-D031` / `AHICP-D032`;
+- recorded `AHICP-D031` / `AHICP-D032` / `AHICP-D033`;
+- created the `paper/submission/ethics-information-technology/` submission-derivative package;
+- generated a blinded manuscript: 185-word abstract, approximately 5,367 content words, 6 keywords, maximum three heading levels;
+- added substantive generative-AI disclosure and Data Availability Statement;
+- added dedicated EIT submission validator / CI;
 - PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
@@ -63,13 +68,14 @@ Current Framework work and target-venue selection are complete.
 
 Primary target: `Ethics and Information Technology`.
 
-Next stage:
-1. prepare venue-specific submission artifacts;
-2. check structure, length, citations, double-blind requirements, and AI/authorship disclosure;
-3. article-level language / logic / citation review;
-4. architecture/evaluation figures if useful;
-5. human Final Artifact Approval;
-6. submission / publication / release remain separately authorized.
+The submission derivative is prepared. Next stage:
+1. complete latest-head EIT Submission CI and repository CI;
+2. verify citations / DOI / publication status item by item;
+3. complete artifact-level English and argument review;
+4. resolve the open search-based deanonymization risk created by the distinctive `AHICP` name;
+5. generate and visually inspect the final Word/docx;
+6. human Final Artifact Approval;
+7. submission / publication / release remain separately authorized.
 
 ## PRIMARY_BLOCKER
 
@@ -78,7 +84,10 @@ Framework layer: **no blocker.**
 Final Artifact / publication layer still has:
 - license: `WAITING-HUMAN`
 - target publication venue: `SELECTED — Ethics and Information Technology / AHICP-D032`
-- venue-specific form constraints: `IN PROGRESS`
+- venue-specific form constraints: `ADOPTED — AHICP-D033`
+- blinded submission derivative: `PREPARED / CI PENDING`
+- anonymization risk (`AHICP` discoverability): `OPEN`
+- final Word/docx: `PENDING`
 - Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF
