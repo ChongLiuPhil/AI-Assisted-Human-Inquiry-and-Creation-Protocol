@@ -88,6 +88,38 @@ Framework Approval 使开发阶段不需要人类逐行批准每一份 provision
 
 Framework Approval 是 AHICP 的治理架构，不应自动被表述成所有学科、机构或出版制度下的一般 authorship theory.
 
+### 3.5 Framework Approval 与 bounded auto-merge authorization
+
+当一个专用 PR 仅承载：
+
+- 某个已批准 Framework 的实现；
+- 与该 Framework 直接相关、且已经得到明确人类授权的同步/治理变更；
+- 非实质性的验证、引用、格式或状态修复；
+
+并且同时满足：
+
+- latest-head required CI / validation 全部通过；
+- 没有 unresolved blocking review / review thread；
+- 没有超出已批准范围的未授权实质性 scope expansion；
+- Framework Approval 后新增的实质性变化已有单独人类授权；
+- branch 已与目标 base 同步，或已经完成无冲突同步；
+- merge 不绕过 provider-side 必需保护、权限或 human-reserved gate；
+
+则 Framework Approval 可以同时构成该专用 PR 的 **bounded auto-merge authorization**。
+
+该规则的目的，是避免对“把同一批已批准内容写入 main”重复请求第二次形式相同的 merge approval。
+
+它不授权：
+
+- publication / release / submission；
+- deployment 或其他外部副作用；
+- secret handling；
+- later-added unrelated features；
+- scope-expanded changes；
+- Final Artifact Approval。
+
+如果任何条件不再成立，auto-merge authorization 立即失效，Agent 必须回到普通授权流程。
+
 ## 4. 派生扩写
 
 Framework Approval 后，AI Agent 可以把 framework 展开成：
