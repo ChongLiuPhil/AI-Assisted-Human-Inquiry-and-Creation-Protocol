@@ -118,13 +118,19 @@ def build_masked_derivative(source: str) -> str:
     return masked
 
 
-def require_no_unmapped_years(
-    body: str, citation_pairs: tuple[tuple[str, str], ...], source: str
-) -> None:
+def find_unmapped_years(
+    body: str, citation_pairs: tuple[tuple[str, str], ...]
+) -> list[str]:
     residual = body
     for citation_marker, _reference_prefix in citation_pairs:
         residual = residual.replace(citation_marker, "")
-    years = sorted(set(re.findall(r"(?<!\\d)(?:19|20)\\d{2}(?!\\d)", residual)))
+    return sorted(set(re.findall(r"(?<!\d)(?:19|20)\d{2}(?!\d)", residual)))
+
+
+def require_no_unmapped_years(
+    body: str, citation_pairs: tuple[tuple[str, str], ...], source: str
+) -> None:
+    years = find_unmapped_years(body, citation_pairs)
     if years:
         fail(
             f"{source} contains year-bearing text not covered by citation audit mapping: "
@@ -133,6 +139,9 @@ def require_no_unmapped_years(
 
 
 def main() -> int:
+    if find_unmapped_years("Synthetic unmapped citation (2099).", ()) != ["2099"]:
+        fail("citation consistency guard self-test failed")
+
     manuscript = read(MANUSCRIPT)
     masked_manuscript = read(MASKED_MANUSCRIPT)
     blinding_en = read(BLINDING_EN)
