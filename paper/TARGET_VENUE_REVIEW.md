@@ -16,7 +16,7 @@ Based on official journal pages verified on 2026-09-21, the current recommendati
 3. **AI & Society** — strong thematic fit but a meaningful policy tension with the manuscript's actual LLM-assisted development;
 4. **Journal of Documentation** — relevant to knowledge/memory, but Emerald currently prohibits generative-AI copywriting of new submission material, making it unsuitable for the present manuscript.
 
-This ordering is an AI-researched recommendation, not the human venue-selection decision.
+This ordering originated as an AI-researched recommendation; under AHICP-D032, the human has now selected **Ethics and Information Technology** as the current primary target and retained **Science and Engineering Ethics** as the secondary candidate.
 
 ## 2. Primary candidate — Ethics and Information Technology
 
