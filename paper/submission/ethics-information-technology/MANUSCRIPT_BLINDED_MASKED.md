@@ -233,7 +233,9 @@ Working Memory does not answer “what does the project ultimately claim?” It 
 
 ### 4.3 Functional memory roles
 
-The protocol can also be understood through functional memory roles:
+Table 1 summarizes the functional memory roles used in the protocol.
+
+**Table 1. Functional memory roles used in the protocol.**
 
 | Functional role | Primary question | Typical protocol carriers |
 |---|---|---|
@@ -473,7 +475,9 @@ Current ICMJE and Nature Portfolio policies provide concrete boundary cases: wit
 
 ## 10. Relationship to prior Project Memory, Agent Memory, and provenance research
 
-The protocol is not intended to replace prior project-memory or Agent-memory research. More accurately, it sits at the intersection of three research traditions:
+The protocol is not intended to replace prior project-memory or Agent-memory research. More accurately, it sits at the intersection of three research traditions. Table 2 compares the resulting emphases across these approaches:
+
+**Table 2. Comparison of organizational/project memory, Agent memory, and Proposed governed Project Memory.**
 
 | Question | Organizational / project memory | Agent memory | Proposed governed Project Memory |
 |---|---|---|---|
