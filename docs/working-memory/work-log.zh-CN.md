@@ -617,3 +617,34 @@ venue-level reference cleanup：
 - 视觉 QA 仍独立于 CI structural validation。
 
 **当前状态：** masked mitigation prepared; latest-head CI verification pending.
+
+---
+
+## 2026-09-21 — EIT masked/citation CI 验证通过
+
+在 PR #32 的中间 head 上，EIT Submission CI 已实际完成并通过：
+
+- traceable blinded manuscript validation：PASS；
+- masked blinded manuscript validation：PASS；
+- masked 稿 `AHICP` / 协议全称 / direct GitHub URL / internal IDs 禁用检查：PASS；
+- 18 组 citation ↔ reference-list 映射：PASS；
+- masked / unmasked reference section equality：PASS；
+- traceable DOCX build：PASS；
+- masked DOCX build：PASS；
+- 两份 DOCX ZIP/package structural validation：PASS；
+- traceable artifact upload：PASS；
+- masked artifact upload：PASS。
+
+生成的 workflow artifacts：
+
+- `eit-manuscript-blinded-docx` — 53,268 bytes；
+- `eit-manuscript-blinded-masked-docx` — 53,256 bytes。
+
+**边界：**
+
+- CI 结构验证不替代逐页视觉 QA；
+- masked route 仍需人类/编辑部最终确认；
+- residual discoverability 不能被描述为“完全匿名”；
+- Final Artifact Approval / submission authorization 仍未发生。
+
+**状态：** citation consistency verified; masked mitigation technically validated; final head revalidation pending after state write-back.
