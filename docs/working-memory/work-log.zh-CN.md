@@ -452,3 +452,28 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 **治理边界：** bounded merge authorization 不等于 Final Artifact Approval，也不授权 submission / publication / release / deployment / secret handling。
 
 **PR #26：** D032 明确将当前 methodology PR 纳入 scoped merge authorization；最终是否自动 merge 仍以 latest-head 条件核验结果为准。
+
+---
+
+## 2026-09-21 — PR #26 bounded auto-merge 执行与验证
+
+依据 `AHICP-D032`，PR #26 在合并前完成以下条件核验：
+
+- dedicated methodology / Framework scope；
+- Framework 与后续 D032 直接治理/venue 同步均有人类授权；
+- latest-head Methodology Article CI：PASS；
+- latest-head Protocol Contract CI：PASS；
+- latest-head Ecosystem validation：PASS；
+- unresolved review threads：0；
+- branch vs `main`：behind = 0；
+- GitHub reported `mergeable=true`；
+- 标准 GitHub merge API 执行，不绕过 provider-side protection。
+
+执行结果：
+
+- PR：#26 `Reframe AHICP methodology article around project memory architecture`
+- result：`merged=true`
+- merge commit：`af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`
+- post-merge verification：`main` 已确认包含 AHICP-D032、`MA-FW-001` 与 `Ethics and Information Technology` target-venue state。
+
+**结论：** D032 bounded auto-merge authorization 已完成首次实际执行；当前 methodology Framework 工作已进入 main。

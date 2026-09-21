@@ -7,7 +7,7 @@
 
 ## CURRENT_STAGE
 
-**The methodology-article Framework scholarly review is complete; `MA-FW-001` has received overall Framework Approval under AHICP-D031. The project is now entering Final Artifact Review / target-venue preparation.**
+**The methodology-article Framework work is complete and PR #26 has been merged into `main`; merge commit `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`. The project is now entering Final Artifact Review / venue-specific preparation for `Ethics and Information Technology`.**
 
 ### Still-active protocol-governance authority
 
@@ -53,6 +53,7 @@ Primary current objects:
 - renamed T10 to `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`;
 - created bilingual approved snapshot `MA-FW-001`;
 - recorded `AHICP-D031` / `AHICP-D032`;
+- PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
 
@@ -93,4 +94,5 @@ A replacement AI Agent should know:
 - the evaluation framework still has no empirical results;
 - `Ethics and Information Technology` is the current primary target;
 - Framework Approval carries bounded auto-merge authorization for dedicated PRs satisfying D032;
+- PR #26 completed the first actual execution of that authorization path;
 - the next governance gate is venue-specific Final Artifact Review.

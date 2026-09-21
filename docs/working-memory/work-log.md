@@ -451,3 +451,28 @@ Protocol propagation completed in this work cycle:
 **Governance boundary:** bounded merge authorization is not Final Artifact Approval and does not authorize submission / publication / release / deployment / secret handling.
 
 **PR #26:** D032 explicitly includes the current methodology PR within scoped merge authorization; actual auto-merge still depends on final latest-head condition verification.
+
+---
+
+## 2026-09-21 — PR #26 bounded auto-merge execution and verification
+
+Under `AHICP-D032`, PR #26 passed the following pre-merge checks:
+
+- dedicated methodology / Framework scope;
+- Framework work and subsequent D032 direct governance/venue synchronization were human-authorized;
+- latest-head Methodology Article CI: PASS;
+- latest-head Protocol Contract CI: PASS;
+- latest-head Ecosystem validation: PASS;
+- unresolved review threads: 0;
+- branch vs `main`: behind = 0;
+- GitHub reported `mergeable=true`;
+- merge executed through the standard GitHub merge API without bypassing provider-side protection.
+
+Execution result:
+
+- PR: #26 `Reframe AHICP methodology article around project memory architecture`
+- result: `merged=true`
+- merge commit: `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`
+- post-merge verification: `main` confirmed to contain AHICP-D032, `MA-FW-001`, and the `Ethics and Information Technology` target-venue state.
+
+**Conclusion:** the D032 bounded auto-merge authorization has completed its first actual execution; the methodology Framework work is now in `main`.

@@ -15,9 +15,10 @@
 
 - `WM-T015` — overall methodology Working Framework review: `COMPLETED — MA-FW-001 APPROVED`
 - `WM-T022` — AHICP-D030 project-memory structural rewrite: `COMPLETED`
-- `WM-T023` — methodology paper validation + PR: `COMPLETED / CI-GATED`
+- `WM-T023` — methodology paper validation + PR #26: `COMPLETED / MERGED — af3e7927`
 - `WM-T024` — scholarly novelty / prior-art positioning audit: `COMPLETED / EVIDENCE-CONSTRAINED`
 - `WM-T025` — T1–T13 scholarly review + MA-FW-001 Framework Approval: `COMPLETED / AHICP-D031`
+- `WM-T028` — PR #26 post-merge verification + durable-state write-back: `COMPLETED`
 
 Completed scope:
 - Decision Log: AHICP-D030 / D031 / D032;

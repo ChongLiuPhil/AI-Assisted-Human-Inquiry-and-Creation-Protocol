@@ -8,7 +8,7 @@
 
 ## CURRENT_STAGE
 
-**方法论文章的 Framework scholarly review 已完成；`MA-FW-001` 已依据 AHICP-D031 获得整体 Framework Approval。当前进入 Final Artifact Review / target-venue preparation 阶段。**
+**方法论文章 Framework 工作已完成并通过 PR #26 合入 `main`；merge commit 为 `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`。当前进入面向 `Ethics and Information Technology` 的 Final Artifact Review / venue-specific preparation。**
 
 ### 仍然有效的协议治理依据
 
@@ -54,6 +54,7 @@ D032 不撤销 D027–D031，也不构成 Final Artifact Approval 或 publicatio
 - T10 改为 `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`；
 - 创建 `MA-FW-001` 双语批准快照；
 - 记录 `AHICP-D031` / `AHICP-D032`；
+- PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
 
@@ -94,4 +95,5 @@ Final Artifact / publication 层仍存在：
 - evaluation framework 仍无实证结果；
 - `Ethics and Information Technology` 是当前 primary target；
 - Framework Approval 对满足 D032 条件的专用 PR 携带 bounded auto-merge authorization；
+- PR #26 已完成该授权路径的首次实际执行；
 - 下一治理门是 venue-specific Final Artifact Review。
