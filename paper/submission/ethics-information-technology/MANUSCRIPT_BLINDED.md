@@ -75,7 +75,7 @@ The novelty of this article therefore cannot rest on “introducing project memo
 
 ### 2.2 Agent memory is already a major research topic
 
-Memory has become a rapidly developing area in research on LLM-based Agents. Generative Agents records experiences in natural language, derives higher-level reflections, and retrieves relevant memories to influence later behavior (Park et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
+Memory has become a rapidly developing area in research on LLM-based Agents. In Generative Agents, experiences are recorded in natural language, higher-level reflections are derived, and relevant memories are retrieved to influence later behavior (Park et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
 
 Evaluation research has also expanded beyond simple factual recall. LongMemEval examines multi-session information extraction, reasoning, temporal reasoning, knowledge updates, and abstention (Wu et al., 2025). MemBench evaluates memory across different memory levels, interaction scenarios, and dimensions including effectiveness, efficiency, and capacity (Tan et al., 2025). RealMem goes further by explicitly introducing long-term project-oriented interactions with evolving goals and project state as a benchmark setting (Bian et al., 2026).
 
@@ -148,7 +148,7 @@ The paper instead proposes a more specific **architectural synthesis** for long-
 
 ## 3. Design requirements for long-running Project Memory
 
-If Project memory cannot depend solely on a particular model, it must satisfy several requirements.
+If project memory cannot depend solely on a particular model, it must satisfy several requirements.
 
 ### 3.1 Model independence
 
@@ -489,7 +489,7 @@ AHICP is not intended to replace prior project-memory or Agent-memory research. 
 
 AHICP's research opportunity is therefore not to propose another project database or vector-memory system. It is to study a more specific **governed Project Memory Architecture**: when AI Agents can be replaced frequently, execute tools, and participate in long-form knowledge production, which states must become authoritative project state, which must retain human confirmation/authorization semantics, and how should those states propagate across evidence, decisions, frameworks, artifacts, and publication lifecycles?
 
-RealMem and related work increasingly brings project-oriented interaction into Agent-memory evaluation, making the interface between Agent memory and Project Memory directly researchable. At least three interface questions follow:
+RealMem and related work increasingly bring project-oriented interaction into Agent-memory evaluation, making the interface between Agent memory and Project Memory directly researchable. At least three interface questions follow:
 
 1. Which Agent memories may be promoted automatically into low-risk operational memory, and which require human confirmation before entering authoritative memory?
 2. When internal Agent memory conflicts with repository state, how reliably can authority and stale-state rules be detected and enforced?
