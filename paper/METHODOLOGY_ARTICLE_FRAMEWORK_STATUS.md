@@ -103,13 +103,16 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 - specific benchmark implementations / samples / statistical designs;
 - any AHICP effectiveness claim;
 - target venue: `SELECTED — Ethics and Information Technology / AHICP-D032`;
-- venue-specific form / double-blind / AI-use / authorship requirements: `IN PROGRESS`;
+- venue-specific form / double-blind / AI-use / authorship requirements: `ADOPTED — AHICP-D033`;
+- blinded Markdown submission derivative: `PREPARED / CI PENDING`;
+- final Word/docx: `NOT YET GENERATED`;
+- search-based anonymization risk from the `AHICP` name: `OPEN`;
 - license;
 - Final Artifact Approval.
 
 ## Synchronization state
 
-- Human decision -> Decision Log: `SYNC — AHICP-D032 RECORDED`
+- Human decision -> Decision Log: `SYNC — AHICP-D033 RECORDED`
 - D030 direction -> Content Core: `SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries: `SYNC`
 - Approved Framework snapshot: `MA-FW-001 CREATED`
@@ -127,7 +130,7 @@ The next step is no longer Framework Approval.
 
 The next governance gate is:
 
-`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY PREPARATION`
+`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY SUBMISSION PACKAGE PREPARATION`
 
 Before Final Artifact Approval, the article may continue to receive:
 - language and logic editing;
