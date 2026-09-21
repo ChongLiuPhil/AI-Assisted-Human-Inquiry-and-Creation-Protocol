@@ -1,7 +1,7 @@
 # Ethics and Information Technology — Double-Anonymous Blinding Review
 
-**Status:** `MASKED DERIVATIVE PREPARED — HUMAN / EDITORIAL CONFIRMATION PENDING`  
-**Authority:** AHICP-D033  
+**Status:** `MASKED REVIEWER ROUTE HUMAN-CONFIRMED — SUBMISSION AUTHORIZATION PENDING`  
+**Authority:** AHICP-D033 + AHICP-D034  
 **Objects:**
 - `MANUSCRIPT_BLINDED.md` — baseline blinded version with direct identity removed but protocol name retained;
 - `MANUSCRIPT_BLINDED_MASKED.md` — masked derivative for double-anonymous review.
@@ -75,27 +75,28 @@ The project must therefore not claim that anonymity is complete.
 
 Current EIT / Springer double-anonymous guidance places anonymization responsibility on authors and warns that public online material can make reverse identification easier. The masked derivative is therefore the conservative reviewer-facing route, but technical checks cannot eliminate residual discoverability created by a public project. The live guidelines / submission interface must still be rechecked immediately before actual submission.
 
-## 5. Human gate before submission
+## 5. Human route selection
 
-Before actual submission, complete one of the following:
+AHICP-D034 completes the human route-selection gate:
 
-1. the human explicitly selects the masked derivative as the reviewer manuscript; or
-2. the editorial office explicitly confirms that retaining the public protocol name is acceptable under double-anonymous review; or
-3. another masked-material / supplementary-material route is adopted following editorial guidance.
+1. use the masked derivative as the reviewer manuscript;
+2. do not proactively supply the public GitHub repository to reviewers;
+3. if the editorial process requires reviewer-visible repository / supplementary material, provide it only through an appropriate masked / anonymized route.
 
-Also verify that:
+Already verified for the current artifact:
 
-- reviewer-visible supplementary / repository material does not directly reveal identity;
-- submission-system title-page / author metadata is not exposed in the reviewer manuscript;
-- self-citation wording does not disclose identity.
+- reviewer-facing manuscript files omit direct author identity and internal project identifiers;
+- self-citation wording does not disclose identity;
+- DOCX core metadata excludes prohibited identity markers.
+
+The live submission interface must still be checked so title-page / author metadata is not accidentally exposed to reviewers.
 
 ## 6. Governance boundary
 
-Creating the masked derivative:
+The masked derivative and the route-selection decision:
 
-- is not Final Artifact Approval;
-- is not submission authorization;
-- does not modify `MA-FW-001`;
-- does not guarantee that the journal will consider the anonymization sufficient.
+- do not themselves authorize submission;
+- do not modify `MA-FW-001`;
+- do not guarantee that the journal will consider the anonymization sufficient.
 
-It is a venue-specific derivative prepared for double-anonymous review.
+Final Artifact Approval was completed separately under AHICP-D034. Formal submission remains subject to separate explicit human authorization.
