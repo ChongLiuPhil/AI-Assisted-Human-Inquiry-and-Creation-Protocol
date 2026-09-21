@@ -33,3 +33,8 @@ Public homepages:
 For cross-component project configuration, reconstruct the full ecosystem first. Default new projects use full AHICP + full PPF + Vault Interface. Original or unpublished source is private by default; restricted Continuous Web does not authorize private-state retrieval. Never request or store secrets in chat or Git.
 
 For AHICP repository-internal substantive work, continue to follow AHICP's own START_HERE and manifest onboarding order after ecosystem discovery.
+
+Public delivery migration:
+Cloudflare Pages is the preferred delivery provider for the public framework sites. GitHub remains canonical source. Current GitHub Pages URLs remain authoritative until verified Cloudflare/custom-domain cutover.
+Migration guide: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md
+Migration state: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/templates/cloudflare-public-delivery.yaml
