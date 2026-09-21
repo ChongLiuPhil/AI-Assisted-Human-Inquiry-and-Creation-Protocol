@@ -400,3 +400,29 @@ Primary repairs:
 - strengthens Methodology Article CI against unsupported “first / unique / AHICP originated project memory” claims.
 
 **Status:** scholarly-positioning repair completed; latest CI pending at the time of this log entry.
+
+---
+
+## 2026-09-21 — MA-FW-001 Framework Approval completed
+
+**Authority:** AHICP-D031
+
+This work cycle completed the scholarly review of T1–T13 and created the first Approved Framework using bounded, evidence-constrained wording:
+
+- `paper/frameworks/MA-FW-001.zh-CN.md`
+- `paper/frameworks/MA-FW-001.md`
+
+Key review outcomes:
+
+- T1 / T11 preserve prior-art and novelty boundaries;
+- T9 is explicitly scoped to AHICP normative governance;
+- T10 formally becomes **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**;
+- T12 remains a proposed empirical research agenda;
+- all approved architecture principles remain distinct from empirical effectiveness claims;
+- the article status is now `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`.
+
+`MA-FW-001` is the fixed approval baseline. Later substantive framework changes should create a new snapshot rather than rewrite it.
+
+**Governance boundary:** this Framework Approval is not Final Artifact Approval and does not automatically authorize PR merge, publication, or release.
+
+**Result:** Framework work complete; the next phase is Final Artifact Review / target-venue preparation.
