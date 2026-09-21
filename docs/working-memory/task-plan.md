@@ -6,7 +6,7 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T023` — project-memory-centered methodology paper validation + PR: `IN PROGRESS`
+- `WM-T023` — project-memory-centered methodology paper validation + PR: `COMPLETED / CI-GATED`
 - `WM-T015` — overall review of the rewritten methodology Working Framework: `WAITING-HUMAN AFTER PR`
 - `WM-T013` — license decision: `WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
@@ -39,11 +39,9 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. complete current methodology-article consistency audit;
-2. run latest branch CI;
-3. open and finalize the methodology-article PR;
-4. human reviews the revised Working Framework and article;
-5. create `MA-FW-001` only after a later overall `APPROVE`;
+1. human reviews the revised Working Framework and article;
+2. make an explicit `APPROVE / REVISE / REJECT` decision on the complete current framework;
+3. create `MA-FW-001` only after a later overall `APPROVE`;
 6. decide the license before formal release;
 7. decide target venue / form constraints and re-verify time-sensitive policies before final submission/publication.
 
