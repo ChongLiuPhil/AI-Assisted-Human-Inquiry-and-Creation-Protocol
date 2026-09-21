@@ -688,4 +688,4 @@ Complete source-verification notes and usage boundaries are maintained in `evide
 
 ## Current development status
 
-This is the structurally upgraded AHICP methodology article under AHICP-D030. Project Memory Architecture, Working Memory continuity, Agent/Model Substitution, and Human Decision Persistence are now central to the argument. The article is now `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`: the intellectual architecture has received Framework Approval, while artifact-level review, venue-specific verification, and Final Artifact Approval remain pending.
+This is the structurally upgraded AHICP methodology article under AHICP-D030. Project Memory Architecture, Working Memory continuity, Agent/Model Substitution, and Human Decision Persistence are now central to the argument. The article is now `FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`: Framework Approval and Final Artifact Approval have been completed separately, while formal submission / publication / release still requires separate explicit authorization.
