@@ -51,6 +51,29 @@ jobs:
           test -s paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx
           unzip -t paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED.docx
           unzip -t paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx
+      - name: Validate DOCX page numbering and anonymous metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          paths = (
+              Path("paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED.docx"),
+              Path("paper/submission/ethics-information-technology/_build/MANUSCRIPT_BLINDED_MASKED.docx"),
+          )
+          forbidden = ("ChongLiuPhil", "chong.liu.research@", "AI-Assisted-Human-Inquiry-and-Creation-Protocol")
+          for path in paths:
+              with ZipFile(path) as archive:
+                  footer_names = [name for name in archive.namelist() if name.startswith("word/footer") and name.endswith(".xml")]
+                  footer_xml = "\n".join(archive.read(name).decode("utf-8") for name in footer_names)
+                  if "PAGE" not in footer_xml:
+                      raise SystemExit(f"{path.name}: missing automatic PAGE field")
+                  core_xml = archive.read("docProps/core.xml").decode("utf-8")
+                  for marker in forbidden:
+                      if marker.lower() in core_xml.lower():
+                          raise SystemExit(f"{path.name}: identifying metadata marker present: {marker}")
+          print("DOCX page-number and anonymous-metadata validation passed")
+          PY
       - name: Upload traceable blinded DOCX build candidate
         uses: actions/upload-artifact@v4
         with:
