@@ -15,9 +15,10 @@
 - `AHICP-D028` — human choice when first configuring reusable authorization policy;
 - `AHICP-D029` — scoped authorization and separation of proposal / authorization / execution / verification / durable write-back;
 - `AHICP-D030` — methodology article project-memory-centered structural direction;
-- `AHICP-D031` — whole-framework approval of `MA-FW-001`.
+- `AHICP-D031` — whole-framework approval of `MA-FW-001`;
+- `AHICP-D032` — bounded auto-merge semantics for Framework Approval + selection of `Ethics and Information Technology` as primary target.
 
-D031 does not supersede D027–D030 and does not constitute Final Artifact Approval or automatic merge authorization.
+D032 does not supersede D027–D031 and does not constitute Final Artifact Approval or publication/release authorization; it provides scoped merge authorization only when strict scope / CI / review / base-sync conditions hold.
 
 ## CURRENT_OBJECTIVE
 
@@ -51,21 +52,23 @@ Primary current objects:
 - narrowed T9 to AHICP normative governance;
 - renamed T10 to `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`;
 - created bilingual approved snapshot `MA-FW-001`;
-- recorded `AHICP-D031`;
+- recorded `AHICP-D031` / `AHICP-D032`;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
 
 ## IMMEDIATE_NEXT_ACTION
 
-Current Framework work is complete.
+Current Framework work and target-venue selection are complete.
 
-The next stage may include:
-1. selecting target venue / disciplinary positioning;
-2. checking structure, length, citations, and AI/authorship disclosure against venue requirements;
+Primary target: `Ethics and Information Technology`.
+
+Next stage:
+1. prepare venue-specific submission artifacts;
+2. check structure, length, citations, double-blind requirements, and AI/authorship disclosure;
 3. article-level language / logic / citation review;
 4. architecture/evaluation figures if useful;
 5. human Final Artifact Approval;
-6. separate authorization for publication / release.
+6. submission / publication / release remain separately authorized.
 
 ## PRIMARY_BLOCKER
 
@@ -73,7 +76,8 @@ Framework layer: **no blocker.**
 
 Final Artifact / publication layer still has:
 - license: `WAITING-HUMAN`
-- target publication venue / form constraints: `WAITING-HUMAN`
+- target publication venue: `SELECTED — Ethics and Information Technology / AHICP-D032`
+- venue-specific form constraints: `IN PROGRESS`
 - Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF
@@ -87,4 +91,6 @@ A replacement AI Agent should know:
 - AHICP does not claim to originate project memory;
 - T9 is normative governance and T10 is a structured human-review gate / responsibility anchor;
 - the evaluation framework still has no empirical results;
-- the next governance gate is Final Artifact Review / target-venue preparation.
+- `Ethics and Information Technology` is the current primary target;
+- Framework Approval carries bounded auto-merge authorization for dedicated PRs satisfying D032;
+- the next governance gate is venue-specific Final Artifact Review.
