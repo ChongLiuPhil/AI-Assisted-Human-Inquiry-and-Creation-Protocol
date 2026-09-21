@@ -226,7 +226,7 @@ def main() -> int:
         if re.search(pattern, masked_manuscript, re.IGNORECASE):
             fail(f"masked blinded manuscript contains prohibited {description}: {pattern}")
 
-    require(masked_manuscript, "the proposed protocol", "masked blinded manuscript")
+    require(masked_manuscript, "proposed Project Memory Architecture", "masked blinded manuscript")
     require(masked_manuscript, "the protocol", "masked blinded manuscript")
 
     masked_refs = section(masked_manuscript, "## References")
