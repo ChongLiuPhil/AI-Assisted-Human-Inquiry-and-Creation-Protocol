@@ -107,6 +107,10 @@ def main() -> int:
     require(en_article, "No empirical results from those tests are reported here", "English article")
     require(zh_article, "DERIVED-PROVISIONAL", "Chinese article")
     require(en_article, "DERIVED-PROVISIONAL", "English article")
+    require(zh_article, "不主张首创“project memory”概念", "Chinese article")
+    require(en_article, "does not claim to originate the concept of project memory", "English article")
+    require(zh_article, "design research question", "Chinese article")
+    require(en_article, "design research question", "English article")
 
     for marker in ("AHICP-D030", "一篇统一论文", "Project Memory Architecture"):
         require(zh_decisions, marker, "Chinese Decision Log")
