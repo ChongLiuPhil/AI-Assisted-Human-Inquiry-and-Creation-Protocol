@@ -6,11 +6,11 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T013` — license decision: `WAITING-HUMAN`
+- `WM-T013` — publication route / license decision: `DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
 - `WM-T014` — target publication venue: `COMPLETED — Ethics and Information Technology / AHICP-D032`
 - `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
 - `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI: `COMPLETED / PR #29 MERGED — a789bbd3`
-- `WM-T030` — EIT citation / publication-status audit: `COMPLETED / LIVE POLICY RECHECK PENDING`
+- `WM-T030` — EIT citation / publication-status audit: `COMPLETED / 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
 - `WM-T031` — EIT DOCX build + visual QA: `COMPLETED / TRACEABLE + MASKED 20-PAGE QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
 - `WM-T033` — EIT masked reviewer derivative + blinding review: `IN PROGRESS / TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
 - `WM-T034` — citation ↔ reference-list consistency validator: `COMPLETED / 18-of-18 + UNMAPPED-YEAR GUARD / EIT CI PASS`
@@ -49,10 +49,10 @@ Completed scope:
 ## 4. NEXT ACTIONS
 
 1. obtain human/editorial confirmation of the masked reviewer route and confirm the anonymization path for reviewer-visible supplementary / repository material;
-2. decide the license;
-3. immediately before submission, recheck the EIT live submission interface and the dynamic ICMJE / Nature Portfolio policy pages;
-4. obtain human Final Artifact Approval;
-5. execute submission / publication / release only under separate explicit authorization.
+2. obtain human Final Artifact Approval;
+3. have the human author complete truthful submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID metadata and confirm no simultaneous submission plus all required author approvals;
+4. immediately before submission, recheck the EIT live submission interface; dynamic EIT / SNAPP / ICMJE / Nature policy pages were rechecked on 2026-09-22 and still require a final at-submission recheck;
+5. execute submission / publication / release only under separate explicit authorization; if the article is accepted, the human then chooses subscription or open access and, for OA, the applicable licence.
 
 ## 5. ARTICLE INVARIANTS
 

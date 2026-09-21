@@ -4,7 +4,7 @@
 > **中文 canonical；英文 `current-focus.md` 为同步 mirror。**
 
 **状态：** `ACTIVE`  
-**最后更新：** 2026-09-21
+**最后更新：** 2026-09-22
 
 ## CURRENT_STAGE
 
@@ -68,7 +68,10 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - masked reviewer derivative 与 traceable derivative 已完成 artifact-level English / argument-flow review，未改变 `MA-FW-001` 的核心 thesis、主要推论、scope 或 contribution boundary；
 - table-caption 更新后，traceable / masked DOCX 已重新渲染并再次完成各 20 页逐页 visual QA；Table 1 / Table 2 caption 均与对应表格同页，自动页码、footer、表格分页与匿名 core metadata 检查通过；
 - DOCX builder / CI 已加入 PAGE field、table-row non-split 与匿名 metadata gates；
-- EIT 当前 submission guidelines 已于 2026-09-21 复核；正式 submission 前仍保留 live interface / dynamic-policy final recheck；
+- EIT / SNAPP / ICMJE / Nature Portfolio 当前 policy pages 已于 2026-09-22 复核；未发现要求改动当前 manuscript 的新硬性要求，正式 submission 前仍保留 live interface / dynamic-policy final recheck；
+- EIT 为 hybrid journal；subscription / open-access publishing route 与 OA licence 在文章 accepted 后选择，因此 license 不再作为 pre-submission blocker；
+- PR #33 已按 D033 scoped merge authorization 合入 `main`，merge commit `d9b3c31d235047595fbdf8fe4ff8a2f3fe51b4cc`；
+- PR #34 已按 D033 scoped merge authorization 合入 `main`，merge commit `973f7a6e2a995c5cbda19c42b99e2b82c63215ba`；其 latest-head 三套 CI 全绿，table caption / in-text citation / fresh 20+20-page visual QA 均已写回；
 - PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
@@ -81,21 +84,21 @@ Primary target：`Ethics and Information Technology`。
 
 当前 submission derivative 的 artifact-level English / argument-flow review 与 traceable / masked DOCX visual QA 已完成。下一阶段：
 1. 人类/编辑部确认 masked reviewer route，并确认 reviewer-visible supplementary / repository material 的匿名化路径；
-2. 决定 license；
-3. 正式 submission 前再次核验 EIT live submission interface、ICMJE 与 Nature Portfolio 动态 policy pages；
-4. 人类完成 Final Artifact Approval；
-5. submission / publication / release 仍需独立明确授权。
+2. 人类完成 Final Artifact Approval；
+3. 人类补全 submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID 等真实元数据，并确认 no simultaneous submission 与所需作者批准；
+4. 正式 submission 前再次核验 EIT live submission interface，并对 2026-09-22 已复核的动态 policy 做 at-submission final recheck；
+5. submission / publication / release 仍需独立明确授权；publication route / licence 留到 acceptance 后由人类选择。
 
 ## PRIMARY_BLOCKER
 
 Framework 层：**无 blocker。**
 
 Final Artifact / publication 层仍存在：
-- license：`WAITING-HUMAN`
+- publication route / licence：`DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
 - target publication venue：`SELECTED — Ethics and Information Technology / AHICP-D032`
 - venue-specific form constraints：`ADOPTED — AHICP-D033`
 - blinded submission derivative：`PREPARED / PR #29 MERGED / CI PASS`
-- citation audit：`COMPLETED — 2026-09-21 INTERIM LIVE RECHECK / FINAL PRE-SUBMISSION RECHECK PENDING`
+- citation audit：`COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
 - citation ↔ reference-list 一致性：`VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
 - anonymization risk (`AHICP` discoverability)：`MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
 - Word/docx：`TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`

@@ -1,7 +1,7 @@
 # Ethics and Information Technology — Submission Checklist
 
 **Status:** `ACTIVE — FINAL ARTIFACT APPROVAL PENDING`  
-**Official guideline checked:** 2026-09-21  
+**Official guideline checked:** 2026-09-22  
 **Official page:** https://link.springer.com/journal/10676/submission-guidelines
 
 ## Manuscript form
@@ -52,7 +52,9 @@
 
 - [x] Latest-head EIT CI confirms the explicit 18-entry citation ↔ reference-list mapping for both traceable and masked manuscripts.
 - [x] Reference-list entries checked for publication/acceptance status and core metadata; see `CITATION_AUDIT.md`.
-- [x] Major DOI / proceedings / standards identifiers checked; dynamic policy URLs remain subject to pre-submission recheck.
+- [x] Major DOI / proceedings / standards identifiers checked.
+- [x] Dynamic EIT / SNAPP / ICMJE / Nature Portfolio policy pages rechecked on 2026-09-22; no new hard requirement was found that requires changing the current manuscript.
+- [x] EIT hybrid publishing lifecycle checked: subscription / OA route and any OA licence are chosen after acceptance, so they are not initial-submission blockers.
 - [x] English language and argument flow reviewed at artifact level; mechanical masking grammar defects repaired.
 - [x] Claim boundaries checked against `MA-FW-001`; the approved Framework was not modified.
 - [x] No empirical-effectiveness claim introduced; evaluation remains explicitly proposed / future work.
@@ -64,4 +66,4 @@
 
 - [ ] Human confirms the manuscript is not simultaneously under consideration elsewhere.
 - [ ] Human confirms all author/co-author approvals required for submission.
-- [ ] Human verifies the live journal interface immediately before submission because submission fields may differ from static guidelines.
+- [ ] Human verifies the live journal interface immediately before submission and performs the at-submission final recheck of dynamic policies because submission fields and policies may change.

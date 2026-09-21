@@ -1,7 +1,7 @@
 # Ethics and Information Technology — 投稿检查清单
 
 **状态：** `ACTIVE — FINAL ARTIFACT APPROVAL PENDING`  
-**官方指南核验：** 2026-09-21  
+**官方指南核验：** 2026-09-22  
 **官方页面：** https://link.springer.com/journal/10676/submission-guidelines
 
 ## 稿件形式
@@ -52,7 +52,9 @@
 
 - [x] latest-head EIT CI 已确认 traceable / masked 两稿的 18 组 citation ↔ reference-list 映射全部通过。
 - [x] reference list 的 publication/acceptance status 与核心元数据已核验；见 `CITATION_AUDIT.md`。
-- [x] 主要 DOI / proceedings / standards identifiers 已核验；动态 policy URL 仍需正式投稿前复核。
+- [x] 主要 DOI / proceedings / standards identifiers 已核验。
+- [x] EIT / SNAPP / ICMJE / Nature Portfolio 动态 policy pages 已于 2026-09-22 复核；未发现要求改动当前 manuscript 的新硬性要求。
+- [x] EIT hybrid publishing lifecycle 已核验：subscription / OA route 与 OA licence 在 acceptance 后选择，因此不是 initial-submission blocker。
 - [x] 完成 artifact-level 英文与论证流程审阅；masked 机械替换语法已修复。
 - [x] claim boundaries 已与 `MA-FW-001` 核验；未改批准 Framework。
 - [x] 未引入实证性效果主张；evaluation 仍明确为 proposed / future work。
@@ -64,4 +66,4 @@
 
 - [ ] 人类确认稿件没有同时投给其他期刊。
 - [ ] 人类确认所有作者/合作者需要的 submission approval。
-- [ ] 正式提交前再次检查 live submission interface；实际字段可能与静态指南不同。
+- [ ] 正式提交前再次检查 live submission interface，并对动态 policy 做 at-submission final recheck；实际字段可能与静态指南不同。

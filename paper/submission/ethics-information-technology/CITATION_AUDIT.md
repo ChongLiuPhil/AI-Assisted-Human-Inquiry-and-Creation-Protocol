@@ -1,7 +1,7 @@
 # Citation and Policy-Source Audit — Ethics and Information Technology Submission Derivative
 
 **Status:** `AUDITED — FINAL LIVE-POLICY RECHECK STILL REQUIRED`  
-**Audit date:** 2026-09-21  
+**Audit date:** 2026-09-22  
 **Object:** `MANUSCRIPT_BLINDED.md`  
 **Scope:** bibliographic metadata, publication status, DOI / canonical source, and distinction between scholarly references and dynamic policy sources.
 
@@ -12,7 +12,7 @@ This audit applies only to the venue-specific submission derivative. It does not
 - `VERIFIED-PUBLISHED` — publication status and core bibliographic metadata were confirmed from an authoritative publisher / society / proceedings source.
 - `VERIFIED-STANDARD` — formal standard status and date were confirmed from the standards body.
 - `VERIFIED-BIBLIOGRAPHIC` — book or legacy bibliographic metadata were confirmed from a reliable bibliographic record; final formatting may still be normalized.
-- `CURRENT-POLICY-SOURCE` — live institutional/publisher policy page checked on 2026-09-21; must be checked again immediately before submission because policy text can change.
+- `CURRENT-POLICY-SOURCE` — live institutional/publisher policy page checked on 2026-09-22; must be checked again immediately before submission because policy text can change.
 
 ## Scholarly / standards references
 
@@ -39,8 +39,8 @@ This audit applies only to the venue-specific submission derivative. It does not
 
 | Source | Audit status | Submission rule |
 |---|---|---|
-| International Committee of Medical Journal Editors (ICMJE), “Defining the Role of Authors and Contributors” | `CURRENT-POLICY-SOURCE` | Current page checked 2026-09-21. It links authorship to final approval/accountability and explicitly addresses AI-assisted technology. Recheck immediately before submission. |
-| Nature Portfolio, editorial / AI policies | `CURRENT-POLICY-SOURCE` | Current policy page checked 2026-09-21. Used only as a comparative boundary case, not as the target journal's governing policy. Recheck if retained in final manuscript. |
+| International Committee of Medical Journal Editors (ICMJE), “Defining the Role of Authors and Contributors” | `CURRENT-POLICY-SOURCE` | Current page checked 2026-09-22. It continues to link authorship to approval/accountability and explicitly addresses AI-assisted technology; current guidance also emphasizes transparent disclosure of AI use. Recheck immediately before submission. |
+| Nature Portfolio, editorial / AI policies | `CURRENT-POLICY-SOURCE` | Current policy page checked 2026-09-22. Used only as a comparative boundary case, not as the target journal's governing policy; human accountability and transparent AI-use expectations remain consistent with the manuscript's bounded claim. Recheck if retained at submission. |
 
 ## Submission-derivative cleanup decisions
 
@@ -56,8 +56,9 @@ This audit applies only to the venue-specific submission derivative. It does not
 - [x] Major DOI / proceedings identifiers checked.
 - [x] Preprint-only MemGPT removed from venue derivative.
 - [x] Dynamic policy sources separated from scholarly evidence.
-- [ ] One final automated/manual cross-check that every reference-list entry is cited in the blinded manuscript and every author-year citation resolves to the reference list.
-- [ ] Live ICMJE / Nature policy pages rechecked immediately before actual submission.
-- [ ] Final Word/docx rendering reviewed after reference formatting is applied.
+- [x] Automated/manual reference consistency completed for the submission derivative; latest-head EIT CI verifies the explicit 18-entry citation ↔ reference mapping and rejects unmapped year-bearing citation material.
+- [x] ICMJE / Nature policy pages rechecked on 2026-09-22; the manuscript's comparative policy claim remains supported.
+- [x] Final traceable / masked Word/docx candidates re-rendered and reviewed page-by-page after the latest reference/table-formatting changes (20 pages + 20 pages).
+- [ ] Live EIT submission interface plus dynamic policy pages rechecked immediately before actual submission.
 
-**Conclusion:** no known citation blocker currently requires changing `MA-FW-001`. Remaining work is artifact-level reference consistency and live-policy recheck.
+**Conclusion:** no known citation or policy-source blocker currently requires changing `MA-FW-001` or the EIT manuscript. The remaining policy task is the at-submission live-interface / dynamic-policy recheck.
