@@ -1,9 +1,10 @@
 # Ethics and Information Technology — Submission Derivative Package
 
-**Status:** `VENUE-SPECIFIC DERIVATIVE — FINAL ARTIFACT APPROVAL PENDING`  
+**Status:** `FINAL ARTIFACT APPROVED — SUBMISSION AUTHORIZATION PENDING`  
 **Primary target:** *Ethics and Information Technology*  
 **Approved Framework baseline:** `MA-FW-001`  
-**Authorization:** `AHICP-D033`
+**Final Artifact Approval:** `AHICP-D034`  
+**Preparation authorization:** `AHICP-D033`
 
 This directory contains venue-specific derivatives and submission-preparation materials. It does **not** replace the canonical bilingual article.
 
@@ -31,11 +32,11 @@ This directory contains venue-specific derivatives and submission-preparation ma
 - AI-use disclosure: present;
 - Data Availability Statement: present;
 - citation / publication-status audit: completed for current reference set;
-- citation ↔ reference-list bidirectional consistency: `VERIFIED — 18/18 MAPPINGS / EIT CI PASS`;
+- citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`;
 - masked manuscript: prepared; `AHICP`, full protocol name, direct GitHub URL, and internal IDs removed;
-- traceable DOCX build candidate: generated / structural validation PASS / workflow artifact uploaded;
-- masked DOCX build candidate: generated / structural validation PASS / workflow artifact uploaded;
-- CI-generated DOCX files are not final until visual QA.
+- traceable DOCX candidate: generated / structural validation PASS / 20-page visual QA PASS;
+- masked DOCX candidate: generated / structural validation PASS / 20-page visual QA PASS;
+- automatic PAGE field, non-splitting table rows, table-caption pagination, and anonymous metadata gates: PASS.
 
 ## Important anonymization risk
 
@@ -43,14 +44,16 @@ The distinctive protocol name `AHICP` remains scientifically necessary to identi
 
 This risk is **not resolved by deleting author names alone**.
 
-A masked reviewer derivative is now prepared. Before actual submission, the human author must still choose one of the following, ideally after checking the live submission interface or seeking editorial clarification:
+AHICP-D034 records the human route choice:
 
-1. use `MANUSCRIPT_BLINDED_MASKED.md` as the reviewer manuscript (current recommendation);
-2. retain the protocol name only if the editorial office explicitly accepts the residual discoverability risk;
-3. follow another masked supplementary/repository route requested by the editorial office.
+1. use `MANUSCRIPT_BLINDED_MASKED.md` as the reviewer manuscript;
+2. do not proactively provide the public GitHub repository to reviewers;
+3. if the editorial process requires reviewer-visible repository / supplementary material, provide it only through an appropriate masked / anonymized route.
+
+Residual discoverability risk remains acknowledged and must not be represented as eliminated.
 
 Do not fabricate anonymity by misdescribing project provenance.
 
 ## Governance boundary
 
-Creating or merging this package is not Final Artifact Approval and is not authorization to submit, publish, or release a manuscript through the journal system.
+Final Artifact Approval is complete under AHICP-D034. This package is still **not submission-authorized**: formal submission, publication, or release requires separate explicit human authorization, and submission-time factual metadata plus the live-interface / dynamic-policy final recheck remain pending.
