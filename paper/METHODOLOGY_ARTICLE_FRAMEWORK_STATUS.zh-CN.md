@@ -2,63 +2,62 @@
 
 > 本中文文件是规范性基准；英文 `METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` 是同步镜像。
 
-## 当前 Working Framework
+## 当前 Framework
 
-来源：`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+当前工作入口：
+
+`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
 状态：
 
-`WORKING-FRAMEWORK — REVISED UNDER AHICP-D030 / HUMAN REVIEW PENDING`
+`CURRENT-FRAMEWORK — ALIGNED WITH APPROVED MA-FW-001`
 
-人类整体 Framework Approval：**尚未完成。**
+人类整体 Framework Approval：**已完成。**
 
-AHICP-D030 已明确授权对方法论文章进行结构性重写，并确认以下方向必须成为同一篇论文的核心内容：
+授权与批准链：
+- HARC-D023 / D024 / D025：责任、Framework 与 approval 相关基础决定；
+- AHICP-D030：统一论文、project-memory-centered 结构重写与 proposed evaluation 方向；
+- AHICP-D031：完成 scholarly review，并批准 `MA-FW-001`。
 
-- Project Memory Architecture；
-- Working Memory as a continuity layer；
-- Agent / Model substitution；
-- Human Decision Persistence；
-- multi-role project memory；
-- memory curation / stale / conflict / selective retrieval；
-- proposed empirical evaluation framework。
-
-这项人类决定属于 **REVISE / STRUCTURAL REWRITE AUTHORIZED**，不是对重写后完整 framework 的整体 `APPROVE`。
-
-## 当前 framework 的结构状态
-
-当前 Working Framework 已从旧的责任/作者性主轴重新组织为 project-memory-centered 13 节结构，并与 AHICP-D030 对齐。
-
-当前核心命题包括：
-
-1. 长期人机项目的持久记忆应属于项目，而不是属于某一个模型；
-2. Agent/conversational memory 与 Project memory 必须区分；
-3. Working Memory 是跨 session / 跨 Agent 的 continuity layer；
-4. Human Decision Persistence 是 first-class project memory；
-5. Agent / Model Substitution 是架构压力测试；
-6. Project Memory 必须具有 inspectability、versionability、provenance、curation 与 privacy/publication boundary；
-7. Framework Approval / Final Artifact Approval 把项目记忆与人类责任连接起来；
-8. proposed evaluation 必须保持“研究议程”状态，不得写成已完成实验。
-
-## 最新经人类批准的 framework 快照
-
-**尚无。**
-
-目前没有方法论文章 framework 通过整体 Framework Approval Gate。
-
-下一 framework 标识符仍为：
+## 最新经人类批准的 Framework 快照
 
 `MA-FW-001`
 
-只有在人类明确审阅当前完整 Working Framework 并作整体 `APPROVE` 决定后，才能创建 `MA-FW-001`。
+中文 canonical：
 
-不得因为：
-- AHICP-D030 已授权重写；
-- 正文已完成结构同步；
-- evidence / references 已补充；
-- CI 通过；
-- 人类认可其中某些中心命题；
+`paper/frameworks/MA-FW-001.zh-CN.md`
 
-而推断完整 Framework 已经批准。
+英文 synchronized mirror：
+
+`paper/frameworks/MA-FW-001.md`
+
+批准日期：2026-09-21
+
+状态：
+
+`APPROVED-FRAMEWORK — MA-FW-001`
+
+`MA-FW-001` 是固定批准 baseline。后续如果核心 thesis、论证结构、scope、approval semantics 或主要 contribution boundary 发生实质修改，应创建新的 snapshot ID，例如 `MA-FW-002`，而不是静默改写 `MA-FW-001`。
+
+## Scholarly review 结论
+
+Framework scholarly review：
+
+`PASS WITH BOUNDED REWORDING`
+
+主要边界：
+
+1. AHICP 不首创 organizational memory / project memory / design rationale / decision provenance / Agent long-term memory；
+2. novelty 只表述为 governed, model-substitutable Project Memory Architecture 的 **candidate architectural synthesis**；
+3. T2 / T3 / T7 / T8 / T13 是设计原则或架构规范，不是已验证效果定律；
+4. T9 只作为 AHICP normative governance；
+5. T10 正式采用 **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**；
+6. T12 仍是 proposed empirical research agenda；
+7. Final Artifact Approval 保持独立。
+
+当前 review memo：
+
+`paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md`
 
 ## 当前派生文章
 
@@ -72,20 +71,17 @@ AHICP-D030 已明确授权对方法论文章进行结构性重写，并确认以
 
 状态：
 
-`DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`
+`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
 
-当前正文已完成与新 Working Framework 的**结构同步**，并完成第二轮 scholarly positioning audit：
+当前正文已经：
+- 完成 project-memory-centered 13 节结构；
+- 与 `MA-FW-001` 的 T1–T13 对齐；
+- 纳入 prior project-memory / Agent-memory / decision-provenance 等 related work；
+- 保持 AHICP novelty 的 evidence-constrained 边界；
+- 保持 proposed evaluation 与 empirical result 分离；
+- 保持中英文同步。
 
-- 旧 15 部分结构已替换为 project-memory-centered 13 节结构；
-- Project Memory / Working Memory / Decision Persistence / Agent Substitution 已进入摘要、正文主干与结论；
-- Agent-memory / provenance 相关工作已进入 related-work / evidence layer；
-- 新增 organizational memory、1998 Project Memory、2024 project-memory practice、design rationale / Software Architecture Knowledge Management 与 decision provenance 前史；
-- 明确 **AHICP 不首创 organizational memory / project memory / design rationale / decision provenance / Agent long-term memory**；
-- 当前 novelty 只以 **candidate architectural synthesis** 表述：governed, model-substitutable Project Memory Architecture；
-- proposed evaluation 已进入正文，但明确没有实证结果；
-- 中英文正文已同步重写。
-
-“结构同步”不等于 Framework Approval，也不等于 Final Artifact Approval。后续人类审阅仍可要求调整理论结构、术语、文献定位、评价方案或表述。
+Framework Approval **不等于** Final Artifact Approval。当前文章仍需 artifact-level 审阅、target-venue 核验、引用/格式收束与最终公开版本确认。
 
 ## 规范上游来源
 
@@ -93,58 +89,52 @@ AHICP-D030 已明确授权对方法论文章进行结构性重写，并确认以
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
+- `paper/frameworks/MA-FW-001.zh-CN.md`
 - `docs/working-memory/current-focus.zh-CN.md`
 - `docs/working-memory/task-plan.zh-CN.md`
-- `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 - `paper/methodology-references.bib`
 
-## 当前 Clarification / research-status 边界
+## 仍未完成的研究 / 发布状态
 
-### 已经由人类决定的内容
-
-- HARC-D023 / D024：人类作为责任主体、Framework responsibility、题目与责任措辞；
-- HARC-D025：framework dependency 与 unresolved-item approval semantics；
-- AHICP-D030：统一论文方向、project-memory-centered 核心贡献、评估框架应纳入正文。
-
-### 仍然需要后续审阅或研究的内容
-
-- `semantic version control`：仍是解释性 / provisional label；
-- `generation–verification asymmetry`：仍是解释性 / provisional label；
+- `semantic version control`：解释性 / provisional label；
+- `generation–verification asymmetry`：解释性 / heuristic label；
 - extended / distributed cognition 的最终理论定位；
 - specific benchmark implementation / samples / statistical design；
 - 任何 AHICP effectiveness claim；
 - target venue / disciplinary positioning；
-- venue-specific form / AI / authorship requirements。
+- venue-specific form / AI / authorship requirements；
+- license；
+- Final Artifact Approval。
 
 ## 当前同步状态
 
-- Human decision -> Decision Log：`SYNC — AHICP-D030 RECORDED`
-- Decision Log -> Article Content Core：`SYNC — C17–C22 ADDED`
-- Content Core -> Working Framework：`SYNC — PROJECT-MEMORY-CENTERED REWRITE`
-- Working Framework -> Chinese article：`STRUCTURALLY SYNCED / DERIVED-PROVISIONAL`
-- Chinese article -> English mirror：`SYNCED IN CURRENT WORK CYCLE`
-- External evidence -> related-work claims：`UPDATED 2026-09-21 — PRIOR PROJECT-MEMORY / DECISION-RATIONALE LINEAGE ADDED`
+- Human decision -> Decision Log：`SYNC — AHICP-D031 RECORDED`
+- D030 direction -> Content Core：`SYNC — C17–C22`
+- Scholarly review -> T9 / T10 / contribution boundaries：`SYNC`
+- Approved Framework snapshot：`MA-FW-001 CREATED`
+- Current Argument Map -> MA-FW-001：`ALIGNED`
+- MA-FW-001 -> Chinese article：`DERIVED / STRUCTURALLY SYNCED`
+- Chinese article -> English mirror：`SYNCED`
+- External evidence -> related-work claims：`UPDATED 2026-09-21`
 - Proposed evaluation -> empirical results：`NO RESULTS CLAIMED`
-- Framework Approval：`NOT COMPLETED`
+- Framework Approval：`COMPLETED`
 - Final Artifact Approval：`NOT COMPLETED`
 
-## Framework Approval Gate
+## 下一治理门
 
-当前没有因为旧结构而产生的 blocker。
+下一步不再是 Framework Approval。
 
-下一步不是再进行大规模 AI 自主扩写，而是由人类审阅新的：
+下一治理门是：
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`FINAL ARTIFACT REVIEW / TARGET-VENUE PREPARATION`
 
-以及重写后的：
+在 Final Artifact Approval 之前，文章可以继续做：
+- 语言与逻辑精修；
+- 引用核验；
+- venue formatting；
+- 图表/架构图；
+- limitations / methods clarity；
+- empirical study design。
 
-`paper/METHODOLOGY_ARTICLE.zh-CN.md`
-
-并决定：
-
-- `APPROVE`
-- `REVISE`
-- `REJECT`
-
-如果后续整体 `APPROVE`，才创建 `MA-FW-001`。在那之前，所有正文继续保持 `DERIVED-PROVISIONAL`。
+但任何对 `MA-FW-001` 核心 thesis 或结构的实质修改，都应先进入新的 Working Framework，并在必要时创建 `MA-FW-002`。
