@@ -194,7 +194,7 @@ def main() -> int:
     require(zh_decisions, "不构成 Final Artifact Approval", "Chinese Decision Log")
     require(en_decisions, "does not constitute Final Artifact Approval", "English Decision Log")
     require(zh_decisions, "不自动授权 PR merge", "Chinese Decision Log")
-    require(en_decisions, "does not automatically authorize PR merge", "English Decision Log")
+    require(en_decisions, "or automatically authorize PR merge", "English Decision Log")
 
     for marker in effectiveness_phrases:
         if marker in zh_article or marker in en_article:
