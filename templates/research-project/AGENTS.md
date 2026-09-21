@@ -147,6 +147,8 @@ The Approved Framework is the primary substantive intellectual baseline and the 
 
 AI may help construct the framework, but it cannot become the ultimate bearer of intellectual responsibility for it.
 
+For a PR dedicated to implementing an Approved Framework, Framework Approval may also act as **bounded auto-merge authorization** when the PR contains only that Framework plus explicitly authorized direct synchronization/governance changes, latest-head CI is green, no unresolved blocking review remains, no unauthorized scope expansion exists, the branch is synchronized with its base, and the merge does not bypass provider-side required protections. If any condition stops holding, stop auto-merge and return to the ordinary authorization flow. This authorization does not include publication/release, deployment, secret handling, or Final Artifact Approval.
+
 ## Evidence rules
 
 If evidence conflicts with a current human commitment, surface the conflict explicitly. Do not suppress counterevidence or silently rewrite the human position.
