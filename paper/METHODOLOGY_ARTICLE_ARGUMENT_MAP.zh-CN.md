@@ -26,10 +26,12 @@
 
 ## 2. 主要理论贡献
 
-### T1 — Project Memory Thesis
-**来源：HUMAN-CONFIRMED — AHICP-D030**
+### T1 — Governed Project Memory Thesis
+**来源：HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
 
-长期人机协作需要从 conversational / agent memory 区分出 **project memory**。Agent memory 主要回答“Agent 怎样记住并利用过去信息”；project memory 回答“项目怎样保持自己的权威状态与连续性”。
+长期人机协作需要从 conversational / agent memory 区分出 **governed Project Memory**。但 “project memory” 本身不是 AHICP 首创：organizational memory、Project Memory（Weiser & Morrison, 1998）、大型项目中的 project-memory practice（Mariano & Awazu, 2024）以及 design-rationale / architecture-knowledge-management 文献都构成明确前史。
+
+AHICP 的候选贡献应更窄地表达为：把 project memory 进一步组织为适用于可替换 LLM Agent 的 **authoritative, inspectable, versioned, human-governed project state**，并与 Working Memory continuity、human decision status、authorization/publication boundary 与 approval gates 统一。
 
 ### T2 — Model-Independent Memory Thesis
 **来源：HUMAN-CONFIRMED — AHICP-D030**
