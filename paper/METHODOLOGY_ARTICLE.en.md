@@ -127,7 +127,7 @@ Even an Agent with powerful internal long-term memory therefore does not automat
 
 ### 2.4 Design rationale, architecture knowledge management, and decision provenance
 
-Software engineering has long studied how to preserve **why** a decision was made. Design-rationale research emphasizes explicit representation of the reasoning behind design choices so that later participants can understand, maintain, communicate about, and redesign an artifact. Software Architecture Knowledge Management extends this concern to requirements, architecture decisions, rationale, experience, and other knowledge that must be captured, used, maintained, shared, and reused; systematic review evidence indicates that efficient capture and long-term maintenance remain difficult problems (Weinreich & Groher, 2016).
+Software engineering has long studied how to preserve **why** a decision was made. Design-rationale research emphasizes explicit representation of the reasoning behind design choices so that later participants can understand, maintain, communicate about, and redesign an artifact (Lee, 1992). Software Architecture Knowledge Management extends this concern to requirements, architecture decisions, rationale, experience, and other knowledge that must be captured, used, maintained, shared, and reused; systematic review evidence indicates that efficient capture and long-term maintenance remain difficult problems (Weinreich & Groher, 2016).
 
 Decision provenance approaches the issue from accountability: preserving only final outputs is insufficient when the inputs, decisions, and downstream effects in a decision pipeline matter for oversight, audit, compliance, and accountability (Singh, Cobbe, & Norval, 2019).
 
