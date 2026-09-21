@@ -102,14 +102,14 @@ Framework Approval **不等于** Final Artifact Approval。当前文章仍需 ar
 - extended / distributed cognition 的最终理论定位；
 - specific benchmark implementation / samples / statistical design；
 - 任何 AHICP effectiveness claim；
-- target venue / disciplinary positioning；
-- venue-specific form / AI / authorship requirements；
+- target venue：`SELECTED — Ethics and Information Technology / AHICP-D032`；
+- venue-specific form / double-blind / AI-use / authorship requirements：`IN PROGRESS`；
 - license；
 - Final Artifact Approval。
 
 ## 当前同步状态
 
-- Human decision -> Decision Log：`SYNC — AHICP-D031 RECORDED`
+- Human decision -> Decision Log：`SYNC — AHICP-D032 RECORDED`
 - D030 direction -> Content Core：`SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries：`SYNC`
 - Approved Framework snapshot：`MA-FW-001 CREATED`
@@ -127,7 +127,7 @@ Framework Approval **不等于** Final Artifact Approval。当前文章仍需 ar
 
 下一治理门是：
 
-`FINAL ARTIFACT REVIEW / TARGET-VENUE PREPARATION`
+`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY PREPARATION`
 
 在 Final Artifact Approval 之前，文章可以继续做：
 - 语言与逻辑精修；
