@@ -16,7 +16,7 @@
 - [x] Submission derivative reference list removes uncited internal evidence-only references.
 - [x] Reproducible Word/docx build pipeline added to CI.
 - [x] Traceable and masked Word/docx build candidates generated, structurally validated, and uploaded as workflow artifacts.
-- [x] Traceable and masked Word/docx build candidates visually checked page by page (20 pages + 20 pages).
+- [x] Traceable and masked Word/docx build candidates re-rendered and visually checked page by page after the table-caption update (20 pages + 20 pages); Table 1 and Table 2 captions stay with their tables and no clipping/overlap or abnormal pagination was found.
 - [x] Automatic page numbering, plain-font formatting, footer placement, table pagination, and anonymous core metadata checked; CI also validates the PAGE field, non-splitting table rows, and prohibited identity metadata.
 
 ## Double-anonymous review
