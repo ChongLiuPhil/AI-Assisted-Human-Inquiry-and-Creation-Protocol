@@ -71,7 +71,7 @@ Framework scholarly review：
 
 状态：
 
-`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+`FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`
 
 当前正文已经：
 - 完成 project-memory-centered 13 节结构；
@@ -81,7 +81,7 @@ Framework scholarly review：
 - 保持 proposed evaluation 与 empirical result 分离；
 - 保持中英文同步。
 
-Framework Approval **不等于** Final Artifact Approval。当前文章仍需 artifact-level 审阅、target-venue 核验、引用/格式收束与最终公开版本确认。
+Framework Approval **不等于** Final Artifact Approval。两者现均已分别完成：Framework Approval 由 AHICP-D031 记录，Final Artifact Approval 由 AHICP-D034 记录；submission / publication / release authorization 仍保持独立。
 
 ## 规范上游来源
 
@@ -105,19 +105,20 @@ Framework Approval **不等于** Final Artifact Approval。当前文章仍需 ar
 - target venue：`SELECTED — Ethics and Information Technology / AHICP-D032`；
 - venue-specific form / double-blind / AI-use / authorship requirements：`ADOPTED — AHICP-D033`；
 - blinded Markdown submission derivative：`PREPARED / PR #29 MERGED / CI PASS`；
-- citation / publication-status audit：`COMPLETED — LIVE POLICY RECHECK PENDING`；
-- Word/docx build pipeline：`TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`；
-- citation ↔ reference-list 双向一致性：`VERIFIED — 18/18 MAPPINGS / EIT CI PASS`；
-- search-based anonymization risk from `AHICP` name：`MITIGATION PREPARED — MASKED DERIVATIVE / HUMAN-EDITORIAL CONFIRMATION PENDING`；
-- license；
-- Final Artifact Approval。
+- citation / publication-status audit：`COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`；
+- Word/docx build pipeline：`TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`；
+- citation ↔ reference-list 一致性：`VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`；
+- search-based anonymization risk from `AHICP` name：`MASKED REVIEWER ROUTE HUMAN-CONFIRMED — PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED / MASKED-ANONYMIZED MATERIALS IF REQUIRED`；
+- publication route / licence：`DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`；
+- submission-time factual metadata 与 live-interface final recheck；
+- separate submission authorization。
 
 ## 当前同步状态
 
-- Human decision -> Decision Log：`SYNC — AHICP-D033 RECORDED`
+- Human decision -> Decision Log：`SYNC — AHICP-D034 FINAL ARTIFACT APPROVAL RECORDED`
 - EIT preparation PR #29：`MERGED — a789bbd3342b29ebb07caa9c0cd22da3315e7746`
 - EIT final-review PR #30：`MERGED — b2e450baf5001f4879f740e67e21264aef115d5a`
-- masked reviewer derivative：`PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
+- masked reviewer derivative：`PREPARED / HUMAN-CONFIRMED REVIEWER ROUTE`
 - D030 direction -> Content Core：`SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries：`SYNC`
 - Approved Framework snapshot：`MA-FW-001 CREATED`
@@ -127,22 +128,19 @@ Framework Approval **不等于** Final Artifact Approval。当前文章仍需 ar
 - External evidence -> related-work claims：`UPDATED 2026-09-21`
 - Proposed evaluation -> empirical results：`NO RESULTS CLAIMED`
 - Framework Approval：`COMPLETED`
-- Final Artifact Approval：`NOT COMPLETED`
+- Final Artifact Approval：`COMPLETED — AHICP-D034 / APPROVED BASELINE 332ff0197e89c99f1b6bb70aedbb47cf425bdb21`
 
 ## 下一治理门
 
-下一步不再是 Framework Approval。
+Framework Approval 与 Final Artifact Approval 均已完成。
 
 下一治理门是：
 
-`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY SUBMISSION PACKAGE PREPARATION`
+`SUBMISSION READINESS FINAL CHECK / SEPARATE SUBMISSION AUTHORIZATION`
 
-在 Final Artifact Approval 之前，文章可以继续做：
-- 语言与逻辑精修；
-- 引用核验；
-- venue formatting；
-- 图表/架构图；
-- limitations / methods clarity；
-- empirical study design。
+正式 submission 前仍需：
+- 由人类填写真实的 author / affiliation / corresponding-author / Funding / Competing Interests / Author Contributions / Acknowledgements / ORCID 等 submission-time metadata；
+- 检查 EIT live submission interface，并对动态 policy 做 final recheck；
+- 获得独立、明确的 submission authorization。
 
-但任何对 `MA-FW-001` 核心 thesis 或结构的实质修改，都应先进入新的 Working Framework，并在必要时创建 `MA-FW-002`。
+Final Artifact Approval 后若要修改 reviewer-facing 实质内容，应按变更性质重新执行相应 review / approval；任何对 `MA-FW-001` 核心 thesis、主要推论、scope 或 contribution boundary 的实质修改，仍必须先进入新的 Working Framework，并在必要时创建 `MA-FW-002`。
