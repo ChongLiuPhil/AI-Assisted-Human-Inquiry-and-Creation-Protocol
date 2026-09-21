@@ -79,9 +79,17 @@ The article is therefore a **methodology / architecture paper**: it proposes an 
 
 ---
 
-## 2. Related work and problem boundary: Agent memory is not Project memory
+## 2. Related work and problem boundary: prior Project Memory, Agent Memory, and Decision Provenance
 
-### 2.1 Agent memory is already a major research topic
+### 2.1 “Project Memory” predates generative AI
+
+“Project Memory” is not a term introduced by AHICP. Broader organizational-memory research had already theorized memory at the organizational level in terms of information acquisition, retention, and retrieval, while explicitly addressing the risk of anthropomorphism (Walsh & Ungson, 1991).
+
+More directly, Weiser and Morrison's (1998) *Project Memory: Information Management for Project Teams* argued that project teams often fail to preserve project processes, contexts, rationales, and artifacts in a form that allows newcomers to reconstruct project history efficiently, and proposed a retrievable project-history data model. Project-management research has continued to develop the concept: Mariano and Awazu (2024) investigate project-memory practices in large-scale projects, demonstrating that project memory is already an established problem in project and organizational-memory research.
+
+The novelty of this article therefore cannot rest on “introducing project memory.” AHICP asks a narrower question: **in long-running, AI-assisted, cross-session projects with replaceable Agents and models, how can project memory become a governance architecture with authoritative state, decision semantics, authorization boundaries, and verifiable handoff?**
+
+### 2.2 Agent memory is already a major research topic
 
 Memory has become a rapidly developing area in research on LLM-based Agents. Generative Agents records experiences in natural language, derives higher-level reflections, and retrieves relevant memories to influence later behavior (Park et al., 2023). MemGPT frames limited context windows as an obstacle to extended interaction and proposes operating-system-inspired management across memory tiers and virtual context (Packer et al., 2023). Zhang et al. survey the design, evaluation, and applications of memory mechanisms for LLM-based Agents, showing that memory is now a major architectural component of Agent systems (Zhang et al., 2025).
 
@@ -89,9 +97,9 @@ Evaluation research has also expanded beyond simple factual recall. LongMemEval 
 
 Together, these works show that long-term memory is not a peripheral issue for persistent Agent systems.
 
-### 2.2 AHICP addresses a different layer
+### 2.3 Boundary between Agent memory and AHICP Project Memory
 
-Despite the proximity, **Agent memory and Project memory are not the same problem.**
+Despite the proximity, **Agent memory and AHICP Project Memory are not the same analytical layer.**
 
 Agent-memory research commonly asks:
 
@@ -102,7 +110,7 @@ Agent-memory research commonly asks:
 - how short- and long-term information should be scheduled under limited context;
 - how memory can improve later responses or actions.
 
-Project memory asks instead:
+AHICP Project Memory asks instead:
 
 - which state is authoritative for the project;
 - who confirmed what;
@@ -115,13 +123,42 @@ Project memory asks instead:
 - which external actions have been authorized;
 - how a replacement Agent reconstructs the project without a retelling of the full history.
 
-Even an Agent with powerful internal long-term memory does not automatically eliminate the need for Project memory. Internal memory may be opaque, hard to migrate, difficult to version precisely, or insufficiently connected to formal project decisions and authorization provenance.
+Even an Agent with powerful internal long-term memory therefore does not automatically eliminate the need for Project Memory. Internal memory may be opaque, hard to migrate, difficult to version precisely, or insufficiently connected to formal project decisions and authorization provenance.
 
-### 2.3 External cognition, distributed cognition, and provenance
+### 2.4 Design rationale, architecture knowledge management, and decision provenance
+
+Software engineering has long studied how to preserve **why** a decision was made. Design-rationale research emphasizes explicit representation of the reasoning behind design choices so that later participants can understand, maintain, communicate about, and redesign an artifact. Software Architecture Knowledge Management extends this concern to requirements, architecture decisions, rationale, experience, and other knowledge that must be captured, used, maintained, shared, and reused; systematic review evidence indicates that efficient capture and long-term maintenance remain difficult problems (Weinreich & Groher, 2016).
+
+Decision provenance approaches the issue from accountability: preserving only final outputs is insufficient when the inputs, decisions, and downstream effects in a decision pipeline matter for oversight, audit, compliance, and accountability (Singh, Cobbe, & Norval, 2019).
+
+These literatures mean that **Human Decision Persistence must not be presented as AHICP's discovery that decisions should be recorded.** AHICP's candidate contribution is the integration of decision/rationale/provenance with Agent substitution, durable human confirmation/rejection/authorization states, Working Memory, and long-running project-state propagation.
+
+### 2.5 External cognition, distributed cognition, and provenance standards
 
 AHICP has conceptual affinities with work on the extended mind and distributed cognition. Clark and Chalmers (1998) argue that under appropriate conditions external resources may participate in cognitive processes; Hutchins (1995) emphasizes that cognition may be distributed across people, tools, representations, and organized activity. This article adopts a weaker thesis: a versioned repository can at least function as a **persistent cognitive and project-state scaffold**. It is not necessary to characterize either the repository or an AI system as an independent cognitive subject.
 
-Provenance research provides another relevant background. W3C PROV models entities, activities, agents, and derivation or attribution relations, connecting provenance to understanding origin, trust, compliance, and reproducibility. AHICP is not currently a formal implementation of W3C PROV, but it shares a basic principle: **when state will influence future judgment, preserving final text alone is often insufficient; origin, status, and transformation history also matter.**
+W3C PROV provides more general standards background for provenance by modeling entities, activities, agents, and derivation or attribution relations. AHICP is not currently a formal implementation of W3C PROV, but it shares a basic principle: **when state will influence future judgment, preserving final text alone is often insufficient; origin, status, and transformation history also matter.**
+
+### 2.6 Contribution boundary
+
+In light of these literatures, the paper does not claim originality for:
+
+- the idea that organizations can possess organization-level memory;
+- the idea that projects should preserve history and knowledge;
+- the value of recording design decisions and rationale;
+- the accountability value of provenance;
+- the need for long-term Agent memory.
+
+The paper instead proposes a more specific **architectural synthesis** for long-running AI-assisted inquiry and creation in which:
+
+1. the project maintains authoritative state independent of a particular Agent/model;
+2. Working Memory provides explicit cross-session continuity;
+3. human decisions retain durable proposed / approved / rejected / deferred / authorized semantics;
+4. Agent/model substitution directly tests whether project state is sufficiently complete;
+5. evidence, decisions, authorization, privacy/publication, and artifact approval propagate within one governance relation;
+6. model context is a transient projection of repository state rather than a parallel source of truth.
+
+**Whether this synthesis constitutes sufficient scholarly novelty remains a question for systematic review and peer review in the eventual target field.** The article therefore avoids unsupported priority claims such as “first” or “unique.”
 
 ---
 
