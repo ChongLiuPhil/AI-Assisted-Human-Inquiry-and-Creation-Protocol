@@ -24,7 +24,8 @@
 - [x] Affiliations and contact details absent from blinded manuscript.
 - [x] Internal AHICP Decision IDs, Framework IDs, development status, and Working Memory IDs removed.
 - [x] Direct GitHub URL absent from blinded manuscript.
-- [ ] Search-based deanonymization risk from the distinctive `AHICP` name resolved or explicitly accepted after editorial guidance.
+- [x] Masked reviewer derivative prepared with `AHICP`, full protocol name, direct GitHub URL, and internal IDs removed.
+- [ ] Human/editorial confirmation of the masked reviewer route completed; residual search-based deanonymization risk explicitly accepted or further mitigated.
 - [ ] Any supplementary/repository material supplied to reviewers is anonymized or provided through an appropriate masked route.
 - [ ] Self-citations checked for wording that could disclose identity.
 
@@ -48,7 +49,7 @@
 
 ## Scholarly final review
 
-- [ ] Final automated/manual check that every in-text author–year citation resolves to the reference list and every reference-list entry is cited.
+- [ ] Latest-head CI confirms the explicit 18-entry citation ↔ reference-list bidirectional mapping for both traceable and masked manuscripts.
 - [x] Reference-list entries checked for publication/acceptance status and core metadata; see `CITATION_AUDIT.md`.
 - [x] Major DOI / proceedings / standards identifiers checked; dynamic policy URLs remain subject to pre-submission recheck.
 - [ ] English language and argument flow reviewed at artifact level.
