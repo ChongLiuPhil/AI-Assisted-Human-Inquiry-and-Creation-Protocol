@@ -426,3 +426,28 @@ Key review outcomes:
 **Governance boundary:** this Framework Approval is not Final Artifact Approval and does not automatically authorize PR merge, publication, or release.
 
 **Result:** Framework work complete; the next phase is Final Artifact Review / target-venue preparation.
+
+---
+
+## 2026-09-21 — AHICP-D032: bounded Framework auto-merge + primary target venue
+
+The human project founder explicitly approved two governance/publication decisions:
+
+1. Framework Approval also constitutes **bounded auto-merge authorization** for a dedicated PR when strict scope / latest-head CI / blocking-review / base-sync / provider-protection conditions hold;
+2. `Ethics and Information Technology` is selected as the current methodology article primary target venue, with `Science and Engineering Ethics` retained as the secondary candidate.
+
+Protocol propagation completed in this work cycle:
+
+- AHICP-D032 recorded in the Decision Log;
+- bounded auto-merge principle added to Protocol Core P6;
+- Framework Approval protocol gains §3.5;
+- corresponding rule added to the Specification Framework Approval Gate;
+- repository AGENTS contract and research-project template AGENTS synchronized;
+- Working Memory marks WM-T027 complete and WM-T014 venue-selected;
+- Target Venue Review moves from AI recommendation to HUMAN-SELECTED;
+- Framework Status advances to Ethics and Information Technology preparation;
+- Methodology / Protocol CI gains D032 regression guards.
+
+**Governance boundary:** bounded merge authorization is not Final Artifact Approval and does not authorize submission / publication / release / deployment / secret handling.
+
+**PR #26:** D032 explicitly includes the current methodology PR within scoped merge authorization; actual auto-merge still depends on final latest-head condition verification.
