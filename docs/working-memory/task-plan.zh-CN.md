@@ -9,11 +9,11 @@
 
 - `WM-T013` — publication route / license 决定：`DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
 - `WM-T014` — target publication venue：`COMPLETED — Ethics and Information Technology / AHICP-D032`
-- `WM-T026` — methodology article Final Artifact review / venue preparation：`IN PROGRESS`
+- `WM-T026` — methodology article Final Artifact review / venue preparation：`COMPLETED — AHICP-D034 FINAL ARTIFACT APPROVED`
 - `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI：`COMPLETED / PR #29 MERGED — a789bbd3`
 - `WM-T030` — EIT citation / publication-status audit：`COMPLETED / 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
 - `WM-T031` — EIT DOCX build + visual QA：`COMPLETED / TRACEABLE + MASKED 20-PAGE QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
-- `WM-T033` — EIT masked reviewer derivative + blinding review：`IN PROGRESS / TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- `WM-T033` — EIT masked reviewer derivative + blinding review：`COMPLETED / HUMAN-CONFIRMED MASKED REVIEWER ROUTE / PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED`
 - `WM-T034` — citation ↔ reference-list 一致性 validator：`COMPLETED / 18-of-18 + UNMAPPED-YEAR GUARD / EIT CI PASS`
 - `WM-T032` — PR #30 post-merge verification + state write-back：`COMPLETED`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`COMPLETED / AHICP-D032`
@@ -28,7 +28,7 @@
 - `WM-T028` — PR #26 post-merge verification + durable-state write-back：`COMPLETED`
 
 完成范围：
-- Decision Log：AHICP-D030 / D031 / D032 / D033；
+- Decision Log：AHICP-D030 / D031 / D032 / D033 / D034；
 - Content Core：C17–C22；
 - Working Argument Map：与 `MA-FW-001` 对齐；
 - Approved Framework：`paper/frameworks/MA-FW-001.zh-CN.md` + English mirror；
@@ -49,11 +49,10 @@
 
 ## 4. NEXT ACTIONS
 
-1. 人类/编辑部确认 masked reviewer route，并确认 reviewer-visible supplementary / repository material 的匿名化路径；
-2. 人类完成 Final Artifact Approval；
-3. 人类补全 submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID 等真实元数据，并确认无 simultaneous submission、所需作者批准均已取得；
-4. 正式投稿前再次检查 EIT live submission interface；动态 EIT / SNAPP / ICMJE / Nature policy pages 已于 2026-09-22 复核，实际提交当刻仍需 final recheck；
-5. submission / publication / release 仅依独立明确授权执行；如文章被接受，再由人类选择 subscription 或 open access，并在 OA 情形选择适用 licence。
+1. 人类补全 submission-time author / affiliation / corresponding-author / funding / competing-interest / contribution / acknowledgement / ORCID 等真实元数据；
+2. 正式投稿前再次检查 EIT live submission interface；动态 EIT / SNAPP / ICMJE / Nature policy pages 已于 2026-09-22 复核，实际提交当刻仍需 final recheck；
+3. 获得独立、明确的 submission authorization 后才可执行正式投稿；
+4. submission 后续 publication / release 继续遵守独立授权；如文章被接受，再由人类选择 subscription 或 open access，并在 OA 情形选择适用 licence。
 
 ## 5. ARTICLE INVARIANTS
 
