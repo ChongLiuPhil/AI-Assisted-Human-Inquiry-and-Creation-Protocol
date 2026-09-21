@@ -2,61 +2,62 @@
 
 > Chinese `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md` is canonical; this file is the synchronized English mirror.
 
-## Current Working Framework
+## Current Framework
 
-Source: `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+Current working entry:
+
+`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`
 
 Status:
 
-`WORKING-FRAMEWORK — REVISED UNDER AHICP-D030 / HUMAN REVIEW PENDING`
+`CURRENT-FRAMEWORK — ALIGNED WITH APPROVED MA-FW-001`
 
-Overall human Framework Approval: **not completed.**
+Overall human Framework Approval: **completed.**
 
-AHICP-D030 explicitly authorizes structural revision of the methodology article and confirms that the following must become core content within the same unified paper:
+Authorization and approval chain:
+- HARC-D023 / D024 / D025: responsibility, Framework, and approval foundations;
+- AHICP-D030: unified paper, project-memory-centered structural rewrite, and proposed evaluation direction;
+- AHICP-D031: completed scholarly review and approval of `MA-FW-001`.
 
-- Project Memory Architecture;
-- Working Memory as a continuity layer;
-- Agent / Model substitution;
-- Human Decision Persistence;
-- multi-role project memory;
-- memory curation / stale / conflict / selective retrieval;
-- a proposed empirical evaluation framework.
-
-This human decision is **REVISE / STRUCTURAL REWRITE AUTHORIZED**, not overall `APPROVE` of the rewritten complete framework.
-
-## Structural state of the current framework
-
-The Working Framework has been reorganized from the older responsibility/authorship-centered structure into a project-memory-centered 13-section structure aligned with AHICP-D030.
-
-Its core theses now include:
-
-1. the durable memory of a long-running human–AI project should belong to the project, not to a particular model;
-2. Agent/conversational memory must be distinguished from Project memory;
-3. Working Memory is a cross-session / cross-Agent continuity layer;
-4. Human Decision Persistence is first-class Project memory;
-5. Agent / Model Substitution is an architectural stress test;
-6. Project Memory requires inspectability, versionability, provenance, curation, and privacy/publication boundaries;
-7. Framework Approval / Final Artifact Approval connect project memory to human responsibility;
-8. proposed evaluation must remain a research agenda and must not be represented as completed experiments.
-
-## Latest human-approved framework snapshot
-
-**None.**
-
-No methodology-article framework has yet passed overall Framework Approval.
-
-The next framework identifier remains:
+## Latest human-approved Framework snapshot
 
 `MA-FW-001`
 
-Create `MA-FW-001` only after the human reviews the current complete Working Framework and gives an overall `APPROVE` decision.
+Chinese canonical:
 
-Do not infer overall approval merely because:
-- AHICP-D030 authorized rewriting;
-- the article has been structurally synchronized;
-- evidence and references were expanded;
-- CI passes;
-- the human approved individual central directions.
+`paper/frameworks/MA-FW-001.zh-CN.md`
+
+English synchronized mirror:
+
+`paper/frameworks/MA-FW-001.md`
+
+Approval date: 2026-09-21
+
+Status:
+
+`APPROVED-FRAMEWORK — MA-FW-001`
+
+`MA-FW-001` is the fixed approval baseline. Later substantive changes to core theses, argument structure, scope, approval semantics, or major contribution boundaries should create a new snapshot ID such as `MA-FW-002` rather than silently rewriting `MA-FW-001`.
+
+## Scholarly review outcome
+
+Framework scholarly review:
+
+`PASS WITH BOUNDED REWORDING`
+
+Primary boundaries:
+
+1. AHICP does not originate organizational memory / project memory / design rationale / decision provenance / Agent long-term memory;
+2. novelty is framed only as the **candidate architectural synthesis** of a governed, model-substitutable Project Memory Architecture;
+3. T2 / T3 / T7 / T8 / T13 are design principles or architecture specifications, not validated performance laws;
+4. T9 is scoped to AHICP normative governance;
+5. T10 formally uses **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**;
+6. T12 remains a proposed empirical research agenda;
+7. Final Artifact Approval remains separate.
+
+Current review memo:
+
+`paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.md`
 
 ## Current derived article
 
@@ -70,20 +71,17 @@ English synchronized mirror:
 
 Status:
 
-`DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`
+`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
 
-The article is now **structurally synchronized** with the revised Working Framework and has completed a second scholarly-positioning audit:
+The article now:
+- uses the project-memory-centered 13-section structure;
+- aligns with T1–T13 in `MA-FW-001`;
+- includes prior project-memory / Agent-memory / decision-provenance related work;
+- preserves evidence-constrained novelty boundaries;
+- separates proposed evaluation from empirical results;
+- remains synchronized across Chinese and English.
 
-- the earlier 15-part structure has been replaced by a project-memory-centered 13-section structure;
-- Project Memory, Working Memory, Decision Persistence, and Agent Substitution are central in the abstract, body, and conclusion;
-- Agent-memory and provenance literature has been added to the related-work / evidence layer;
-- the related-work lineage now includes organizational memory, the 1998 Project Memory literature, 2024 project-memory practice research, design rationale / Software Architecture Knowledge Management, and decision provenance;
-- the paper explicitly states that **AHICP does not originate organizational memory, project memory, design rationale, decision provenance, or Agent long-term memory**;
-- novelty is framed only as a **candidate architectural synthesis**: a governed, model-substitutable Project Memory Architecture;
-- proposed evaluation is included while explicitly reporting no empirical results;
-- Chinese and English article versions remain synchronized.
-
-Structural synchronization is not Framework Approval and is not Final Artifact Approval. Human review may still revise theoretical structure, terminology, literature positioning, evaluation design, or wording.
+Framework Approval is **not** Final Artifact Approval. Artifact-level review, target-venue verification, citation/style consolidation, and final public-version approval remain pending.
 
 ## Canonical upstream sources
 
@@ -91,58 +89,52 @@ Structural synchronization is not Framework Approval and is not Final Artifact A
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
+- `paper/frameworks/MA-FW-001.zh-CN.md`
 - `docs/working-memory/current-focus.zh-CN.md`
 - `docs/working-memory/task-plan.zh-CN.md`
-- `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
 - `paper/methodology-references.bib`
 
-## Current Clarification / research-status boundaries
+## Remaining research / publication state
 
-### Human-decided
-
-- HARC-D023 / D024: humans as bearers of responsibility, Framework responsibility, title, and responsibility wording;
-- HARC-D025: framework dependency repair and unresolved-item approval semantics;
-- AHICP-D030: one-paper direction, project-memory-centered core contributions, and inclusion of the evaluation framework.
-
-### Still requiring later review or research
-
-- `semantic version control`: remains an explanatory / provisional label;
-- `generation–verification asymmetry`: remains an explanatory / provisional label;
+- `semantic version control`: explanatory / provisional label;
+- `generation–verification asymmetry`: explanatory / heuristic label;
 - final theoretical positioning of extended / distributed cognition;
 - specific benchmark implementations / samples / statistical designs;
 - any AHICP effectiveness claim;
 - target venue / disciplinary positioning;
-- venue-specific form / AI / authorship requirements.
+- venue-specific form / AI / authorship requirements;
+- license;
+- Final Artifact Approval.
 
 ## Synchronization state
 
-- Human decision -> Decision Log: `SYNC — AHICP-D030 RECORDED`
-- Decision Log -> Article Content Core: `SYNC — C17–C22 ADDED`
-- Content Core -> Working Framework: `SYNC — PROJECT-MEMORY-CENTERED REWRITE`
-- Working Framework -> Chinese article: `STRUCTURALLY SYNCED / DERIVED-PROVISIONAL`
-- Chinese article -> English mirror: `SYNCED IN CURRENT WORK CYCLE`
-- External evidence -> related-work claims: `UPDATED 2026-09-21 — PRIOR PROJECT-MEMORY / DECISION-RATIONALE LINEAGE ADDED`
+- Human decision -> Decision Log: `SYNC — AHICP-D031 RECORDED`
+- D030 direction -> Content Core: `SYNC — C17–C22`
+- Scholarly review -> T9 / T10 / contribution boundaries: `SYNC`
+- Approved Framework snapshot: `MA-FW-001 CREATED`
+- Current Argument Map -> MA-FW-001: `ALIGNED`
+- MA-FW-001 -> Chinese article: `DERIVED / STRUCTURALLY SYNCED`
+- Chinese article -> English mirror: `SYNCED`
+- External evidence -> related-work claims: `UPDATED 2026-09-21`
 - Proposed evaluation -> empirical results: `NO RESULTS CLAIMED`
-- Framework Approval: `NOT COMPLETED`
+- Framework Approval: `COMPLETED`
 - Final Artifact Approval: `NOT COMPLETED`
 
-## Framework Approval Gate
+## Next governance gate
 
-There is no longer a blocker caused by the older article structure.
+The next step is no longer Framework Approval.
 
-The next step is not another large autonomous AI expansion. It is human review of the revised:
+The next governance gate is:
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`FINAL ARTIFACT REVIEW / TARGET-VENUE PREPARATION`
 
-and the structurally rewritten:
+Before Final Artifact Approval, the article may continue to receive:
+- language and logic editing;
+- citation verification;
+- venue formatting;
+- figures / architecture diagrams;
+- limitations / methods clarification;
+- empirical-study design.
 
-`paper/METHODOLOGY_ARTICLE.zh-CN.md`
-
-followed by one of:
-
-- `APPROVE`
-- `REVISE`
-- `REJECT`
-
-Only a later overall `APPROVE` creates `MA-FW-001`. Until then, all article drafts remain `DERIVED-PROVISIONAL`.
+Any substantive change to the core theses or structure in `MA-FW-001` should first enter a new Working Framework and, where necessary, produce `MA-FW-002`.
