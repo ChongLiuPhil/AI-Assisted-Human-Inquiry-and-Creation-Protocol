@@ -520,6 +520,7 @@ Current Focus should remain the shortest and highest-salience component so a rep
 7. The article should engage current work on agent memory, long-term interactive memory, provenance, distributed cognition / extended mind, epistemic dependence, automation reliance, and authorship/accountability norms, without claiming that those literatures have already validated AHICP.
 8. The existing title remains in place. This decision authorizes major structural rewriting of the Working Framework and DERIVED-PROVISIONAL article to implement the direction above. It **does not constitute overall Framework Approval of the rewritten complete framework and does not constitute Final Artifact Approval**.
 9. Chinese remains the canonical scholarly draft and English the synchronized mirror; substantive structural changes in this work cycle must update both languages.
+10. This decision changes the methodology article's content and structural direction only. It does not supersede `AHICP-D027`–`AHICP-D029` external-system, authorization, human-handoff, or scoped-authorization governance; those rules remain active for this project and future Agent operations.
 
 **Affected components:** Article Content Core, Working Argument Map, Framework Status, methodology article, evidence layer, bibliography, Working Memory, Decision Log.
 
