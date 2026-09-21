@@ -55,10 +55,8 @@ Current article status:
 
 After current machine work:
 
-1. run repository CI / consistency validation;
-2. open a PR while preserving the final merge gate;
-3. have the human review the revised project-memory-centered framework and paper;
-4. later make an explicit:
+1. have the human review the revised project-memory-centered framework and paper;
+2. later make an explicit:
    - `APPROVE`
    - `REVISE`
    - `REJECT`
