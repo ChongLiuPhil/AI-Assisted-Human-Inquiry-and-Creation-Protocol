@@ -107,12 +107,12 @@ AI 可以执行或辅助大量工作，但项目目的、核心问题、方向�
 
 对于长篇成果，Layer 2 Framework 是人类高强度审查思想架构的主要接口。Framework Approval 与 Final Artifact Approval 分开：前者确认思想架构，后者确认具体公开版本。
 
-### T11 — Project Memory vs Agent Memory
+### T11 — Prior Project Memory, Agent Memory, and the AHICP Integration Boundary
 **来源：HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
 
-Generative Agents、MemGPT、Agent-memory surveys 与 LongMemEval / MemBench 等研究说明长期记忆已成为 Agent 系统的重要研究对象；2026 年 RealMem 进一步把长期 project-oriented interaction 明确带入 benchmark 讨论。
+既有 organizational/project-memory 文献已经讨论项目历史、知识、上下文、rationale 与新成员续接；design-rationale / architecture-knowledge-management / decision-provenance 文献已经讨论决定理由与来源；Generative Agents、MemGPT、Agent-memory surveys、LongMemEval / MemBench 与 RealMem 则把长期 memory 带入 LLM Agent 与 project-oriented interaction。
 
-AHICP 不与这些系统竞争“谁能让 Agent 记得更多”。它提出的是治理层：即使 Agent 自己有很强的内部长期记忆，项目仍需要可检查、可迁移、可授权、可审计的外部 project memory。
+因此 AHICP 不应与这些传统竞争“谁首先提出 project memory”或“谁让 Agent 记得更多”。其候选贡献是把三条传统连接成一个 governed Project Memory architecture：即使 Agent 有强内部 memory，项目仍维护独立的 authoritative state，并把 Working Memory、human decision status、authorization/publication boundary 与 cross-Agent substitution 作为一体化治理机制。
 
 ### T12 — Empirical Evaluation Framework
 **来源：HUMAN-CONFIRMED AS RESEARCH AGENDA — AHICP-D030**
