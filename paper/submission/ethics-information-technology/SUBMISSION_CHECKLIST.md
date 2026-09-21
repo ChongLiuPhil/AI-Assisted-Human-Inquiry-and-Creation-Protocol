@@ -28,7 +28,7 @@
 - [x] Masked reviewer derivative prepared with `AHICP`, full protocol name, direct GitHub URL, and internal IDs removed.
 - [ ] Human/editorial confirmation of the masked reviewer route completed; residual search-based deanonymization risk explicitly accepted or further mitigated.
 - [ ] Any supplementary/repository material supplied to reviewers is anonymized or provided through an appropriate masked route.
-- [ ] Self-citations checked for wording that could disclose identity.
+- [x] Self-citations checked for wording that could disclose identity; no self-referential prior-work phrasing was found in the reviewer manuscript.
 
 ## AI / LLM disclosure
 
