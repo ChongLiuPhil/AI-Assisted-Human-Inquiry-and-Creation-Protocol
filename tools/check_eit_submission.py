@@ -6,6 +6,9 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "paper/submission/ethics-information-technology"
 
 MANUSCRIPT = BASE / "MANUSCRIPT_BLINDED.md"
+MASKED_MANUSCRIPT = BASE / "MANUSCRIPT_BLINDED_MASKED.md"
+BLINDING_EN = BASE / "BLINDING_REVIEW.md"
+BLINDING_ZH = BASE / "BLINDING_REVIEW.zh-CN.md"
 README = BASE / "README.md"
 CHECK_EN = BASE / "SUBMISSION_CHECKLIST.md"
 CHECK_ZH = BASE / "SUBMISSION_CHECKLIST.zh-CN.md"
@@ -69,6 +72,9 @@ def reference_sort_key(line: str) -> str:
 
 def main() -> int:
     manuscript = read(MANUSCRIPT)
+    masked_manuscript = read(MASKED_MANUSCRIPT)
+    blinding_en = read(BLINDING_EN)
+    blinding_zh = read(BLINDING_ZH)
     package_readme = read(README)
     check_en = read(CHECK_EN)
     check_zh = read(CHECK_ZH)
@@ -151,6 +157,91 @@ def main() -> int:
     if keys != sorted(keys):
         fail("EIT reference list is not alphabetized by first author / institutional author")
 
+    body_without_refs = manuscript[:manuscript.find("## References")]
+    citation_reference_pairs = (
+        ("Bian et al., 2026", "- Bian, H., et al. (2026)."),
+        ("Clark and Chalmers (1998)", "- Clark, A., & Chalmers, D. (1998)."),
+        ("Hardwig (1985)", "- Hardwig, J. (1985)."),
+        ("Hutchins (1995)", "- Hutchins, E. (1995)."),
+        ("ICMJE", "- International Committee of Medical Journal Editors (ICMJE)."),
+        ("Lee, 1992", "- Lee, J. (1992)."),
+        ("Mariano and Awazu (2024)", "- Mariano, S., & Awazu, Y. (2024)."),
+        ("Nature Portfolio", "- Nature Portfolio. (n.d.)."),
+        ("Parasuraman and Riley (1997)", "- Parasuraman, R., & Riley, V. (1997)."),
+        ("Park et al., 2023", "- Park, J. S., et al. (2023)."),
+        ("Singh, Cobbe, & Norval, 2019", "- Singh, J., Cobbe, J., & Norval, C. (2019)."),
+        ("Tan et al., 2025", "- Tan, H., et al. (2025)."),
+        ("Walsh & Ungson, 1991", "- Walsh, J. P., & Ungson, G. R. (1991)."),
+        ("Weinreich & Groher, 2016", "- Weinreich, R., & Groher, I. (2016)."),
+        ("Weiser and Morrison's (1998)", "- Weiser, M., & Morrison, J. (1998)."),
+        ("W3C PROV", "- World Wide Web Consortium (W3C). (2013)."),
+        ("Wu et al., 2025", "- Wu, D., et al. (2025)."),
+        ("Zhang et al., 2025", "- Zhang, Z., et al. (2025)."),
+    )
+    if len(citation_reference_pairs) != len(ref_lines):
+        fail(
+            "citation/reference audit mapping must cover every reference-list entry "
+            f"(mapped={len(citation_reference_pairs)}, refs={len(ref_lines)})"
+        )
+    for citation_marker, reference_prefix in citation_reference_pairs:
+        require(body_without_refs, citation_marker, "blinded manuscript body")
+        if not any(line.startswith(reference_prefix) for line in ref_lines):
+            fail(f"reference list is missing mapped entry for citation: {citation_marker}")
+
+    masked_abstract = section(masked_manuscript, "## Abstract", "**Keywords:**")
+    masked_abstract_words = words(masked_abstract.replace("## Abstract", "").strip())
+    if not 150 <= masked_abstract_words <= 250:
+        fail(f"masked EIT abstract must be 150-250 words; found {masked_abstract_words}")
+
+    masked_kw = re.search(r"^\*\*Keywords:\*\*\s*(.+)$", masked_manuscript, re.MULTILINE)
+    if not masked_kw:
+        fail("masked blinded manuscript is missing Keywords")
+    masked_keyword_count = len([x for x in masked_kw.group(1).split(";") if x.strip()])
+    if not 4 <= masked_keyword_count <= 6:
+        fail(f"masked EIT keywords must contain 4-6 items; found {masked_keyword_count}")
+
+    masked_content = section(masked_manuscript, "## 1. Introduction:", "## References")
+    masked_content_words = words(masked_content)
+    if not 5000 <= masked_content_words <= 8000:
+        fail(f"masked EIT manuscript content must be 5000-8000 words; found {masked_content_words}")
+
+    masked_heading_levels = [
+        len(m.group(1)) for m in re.finditer(r"^(#+)\s", masked_manuscript, re.MULTILINE)
+    ]
+    if not masked_heading_levels or max(masked_heading_levels) > 3:
+        fail("masked EIT manuscript must use no more than three displayed heading levels")
+
+    for marker in required_manuscript:
+        require(masked_manuscript, marker, "masked blinded manuscript")
+
+    for pattern, description in forbidden_patterns.items():
+        if re.search(pattern, masked_manuscript, re.IGNORECASE):
+            fail(f"masked blinded manuscript contains prohibited {description}: {pattern}")
+
+    for pattern, description in (
+        (r"\bAHICP\b", "protocol acronym"),
+        (r"AI-Assisted Human Inquiry and Creation Protocol", "full protocol name"),
+        (r"the the proposed protocol", "masking artifact"),
+    ):
+        if re.search(pattern, masked_manuscript, re.IGNORECASE):
+            fail(f"masked blinded manuscript contains prohibited {description}: {pattern}")
+
+    require(masked_manuscript, "the proposed protocol", "masked blinded manuscript")
+    require(masked_manuscript, "the protocol", "masked blinded manuscript")
+
+    masked_refs = section(masked_manuscript, "## References")
+    if masked_refs != refs:
+        fail("masked and unmasked blinded manuscripts must have identical reference sections")
+
+    masked_body_without_refs = masked_manuscript[:masked_manuscript.find("## References")]
+    for citation_marker, _reference_prefix in citation_reference_pairs:
+        require(masked_body_without_refs, citation_marker, "masked blinded manuscript body")
+
+    require(blinding_en, "MASKED DERIVATIVE PREPARED", "English Blinding Review")
+    require(blinding_zh, "MASKED DERIVATIVE PREPARED", "Chinese Blinding Review")
+    require(blinding_en, "MANUSCRIPT_BLINDED_MASKED.md", "English Blinding Review")
+    require(blinding_zh, "MANUSCRIPT_BLINDED_MASKED.md", "Chinese Blinding Review")
+
     for marker in (
         "AHICP-D033",
         "Ethics and Information Technology",
@@ -196,7 +287,9 @@ def main() -> int:
 
     print(
         "EIT submission validation passed "
-        f"(abstract={abstract_words}, content={content_words}, keywords={keyword_count}, refs={len(ref_lines)})"
+        f"(abstract={abstract_words}, content={content_words}, keywords={keyword_count}, "
+        f"masked_abstract={masked_abstract_words}, masked_content={masked_content_words}, "
+        f"masked_keywords={masked_keyword_count}, refs={len(ref_lines)})"
     )
     return 0
 
