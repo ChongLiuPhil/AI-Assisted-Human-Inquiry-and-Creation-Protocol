@@ -520,3 +520,34 @@ venue-level reference cleanup：
 - submission authorization 尚未发生。
 
 **状态：** submission derivative prepared; CI / PR validation next.
+
+---
+
+## 2026-09-21 — EIT citation audit 与 DOCX build pipeline
+
+**依据：** AHICP-D033
+
+在 PR #29 合并后，本轮继续执行 venue-specific Final Artifact review：
+
+- PR #29 已合入 `main`，merge commit：
+  `a789bbd3342b29ebb07caa9c0cd22da3315e7746`
+- 对 blinded manuscript 当前 reference set 完成 publication-status / metadata / DOI / standards audit；
+- 新增 `CITATION_AUDIT.md`；
+- 把 ICMJE / Nature Portfolio 明确区分为动态 policy sources，需要实际 submission 前再核验；
+- W3C PROV-DM 规范化为 2013-04-30 W3C Recommendation；
+- LongMemEval 规范化为 ICLR 2025 proceedings；
+- 建立 `tools/build_eit_docx.py`，把 blinded Markdown 可重复转换为 Word/docx；
+- EIT Submission CI 现在生成并上传 `MANUSCRIPT_BLINDED.docx` build candidate，并执行 ZIP/package structural check；
+- DOCX 仍不能因为 CI build success 自动视为 Final Artifact：逐页视觉 QA 仍是未完成门。
+
+当前 remaining blockers：
+
+1. citation ↔ reference-list 双向一致性终检；
+2. `AHICP` 名称的 search-based deanonymization risk；
+3. CI-generated Word/docx 的逐页视觉 QA；
+4. license；
+5. Final Artifact Approval；
+6. 正式 submission authorization；
+7. 动态 policy pages 在实际投稿前的最终复核。
+
+**状态：** citation audit completed; reproducible DOCX build ready; visual QA pending.
