@@ -1,10 +1,10 @@
 # Methodology Article — Working Argument Map
 
-**Status:** `WORKING-FRAMEWORK — REVISED UNDER AHICP-D030 / HUMAN REVIEW PENDING`  
+**Status:** `CURRENT-FRAMEWORK — ALIGNED WITH APPROVED MA-FW-001`  
 **Title:** *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*  
 **Canonical upstream:** `METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`  
-**Authorization:** `AHICP-D030`  
-**Note:** This map is an AI-organized working framework under a human-confirmed direction. AHICP-D030 authorizes structural rewriting but is not overall Framework Approval of this complete map.
+**Authorization:** `AHICP-D030` + `AHICP-D031`  
+**Note:** This current map is aligned with the approved snapshot `paper/frameworks/MA-FW-001.md`. `MA-FW-001` is the fixed approval baseline; later substantive framework revision should create a new snapshot rather than rewrite the approved one.
 
 ---
 
@@ -213,5 +213,6 @@ These are research designs, not reported results.
 - T1–T10 and T12 are supported by AHICP-D030 and earlier human decisions such as HARC-D023/D024.
 - T11 is literature-constrained; the cited work must not be represented as validation of AHICP.
 - `semantic version control` and `generation–verification asymmetry` may be used as explanatory labels but are not claimed as established field-standard terms.
-- The complete framework remains `WORKING-FRAMEWORK`; AHICP-D030 is `REVISE / STRUCTURAL REWRITE AUTHORIZED`, not overall `APPROVE`.
+- `MA-FW-001` has received overall Framework Approval under `AHICP-D031`.
+- The current Argument Map is aligned with `MA-FW-001` but may continue evolving as the working entrypoint toward a later `MA-FW-002`.
 - Final Artifact Approval has not occurred.
