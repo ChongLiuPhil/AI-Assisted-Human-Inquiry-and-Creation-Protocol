@@ -1,7 +1,7 @@
 # Ethics and Information Technology — 双盲匿名化审查说明
 
-**状态：** `MASKED DERIVATIVE PREPARED — HUMAN / EDITORIAL CONFIRMATION PENDING`  
-**依据：** AHICP-D033  
+**状态：** `MASKED REVIEWER ROUTE HUMAN-CONFIRMED — SUBMISSION AUTHORIZATION PENDING`  
+**依据：** AHICP-D033 + AHICP-D034  
 **对象：**
 - `MANUSCRIPT_BLINDED.md` — 去除直接身份信息，但保留协议名称的基线版本；
 - `MANUSCRIPT_BLINDED_MASKED.md` — 面向 double-anonymous review 的 masked derivative。
@@ -75,27 +75,28 @@ masked derivative 可以显著降低“搜索协议名即可找到作者”的�
 
 当前 EIT / Springer double-anonymous 指引把匿名化责任放在作者一侧，并明确提醒公开在线材料可能增加反向识别可能性；因此 masked derivative 是保守 reviewer-facing 路线，但公开项目带来的残余 discoverability 不能被技术检查消除。正式 submission 前仍需按 live guidelines / interface 再确认。
 
-## 5. 提交前人类门
+## 5. 人类路线选择
 
-正式 submission 前必须完成以下之一：
+AHICP-D034 已完成人类路线选择：
 
-1. 人类明确选择 masked derivative 作为 reviewer manuscript；或
-2. 编辑部明确说明可以在 double-anonymous review 中保留公开协议名；或
-3. 根据编辑部建议采用其他 masked-material / supplementary-material route。
+1. reviewer manuscript 使用 masked derivative；
+2. 不主动向 reviewers 提供公开 GitHub repository；
+3. 如果编辑流程要求 reviewer-visible repository / supplementary material，仅通过适当的 masked / anonymized 路线提供。
 
-同时仍需确认：
+当前 artifact 已验证：
 
-- reviewer 可访问的 supplementary / repository material 不直接泄露身份；
-- submission-system 的 title-page / author metadata 不进入 reviewer manuscript；
-- self-citation 措辞不泄露身份。
+- reviewer-facing manuscript files 不含直接作者身份与内部项目标识；
+- self-citation 措辞不泄露身份；
+- DOCX core metadata 不含禁止的身份 marker。
+
+正式 submission 前仍需检查 live submission interface，避免 title-page / author metadata 意外暴露给 reviewers。
 
 ## 6. 治理边界
 
-创建 masked derivative：
+masked derivative 与路线选择决定：
 
-- 不等于 Final Artifact Approval；
-- 不等于 submission authorization；
-- 不等于修改 `MA-FW-001`；
-- 不等于承诺期刊会认为该匿名化充分。
+- 本身不授权 submission；
+- 不修改 `MA-FW-001`；
+- 不承诺期刊一定认为匿名化充分。
 
-它只是一个为了满足 double-anonymous review 而准备的 venue-specific derivative。
+Final Artifact Approval 已由 AHICP-D034 独立完成；正式 submission 仍需独立、明确的人类授权。
