@@ -12,7 +12,9 @@
 - `WM-T026` — methodology article Final Artifact review / venue preparation：`IN PROGRESS`
 - `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI：`COMPLETED / PR #29 MERGED — a789bbd3`
 - `WM-T030` — EIT citation / publication-status audit：`COMPLETED / LIVE POLICY RECHECK PENDING`
-- `WM-T031` — EIT DOCX build + visual QA：`IN PROGRESS / BUILD CANDIDATE GENERATED / VISUAL QA PENDING`
+- `WM-T031` — EIT DOCX build + visual QA：`IN PROGRESS / TRACEABLE + MASKED BUILDS GENERATED / STRUCTURAL PASS / VISUAL QA PENDING`
+- `WM-T033` — EIT masked reviewer derivative + blinding review：`IN PROGRESS / MASKED DERIVATIVE PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
+- `WM-T034` — citation ↔ reference-list 双向一致性 validator：`COMPLETED / 18-of-18 / EIT CI PASS`
 - `WM-T032` — PR #30 post-merge verification + state write-back：`COMPLETED`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`COMPLETED / AHICP-D032`
 
@@ -47,8 +49,7 @@
 
 ## 4. NEXT ACTIONS
 
-1. 完成 citation ↔ reference-list 双向一致性终检；
-3. 处理 `AHICP` 名称带来的 search-based deanonymization risk；
+1. 人类/编辑部确认 masked reviewer route 并处理残余 deanonymization risk；
 4. 决定 license；
 5. 完成 Final Artifact-level academic edit；
 6. 对 CI 生成的 Word/docx build candidate 做逐页视觉 QA；

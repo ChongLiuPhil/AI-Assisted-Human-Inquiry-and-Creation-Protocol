@@ -76,10 +76,9 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 Primary target：`Ethics and Information Technology`。
 
 当前 submission derivative 已准备，下一阶段：
-1. 完成 author–year citation ↔ reference-list 双向一致性终检；
-3. 完成 artifact-level 英文与论证终审；
-4. 处理 `AHICP` 名称可能导致 search-based deanonymization 的开放风险；
-5. 对 CI 生成的 Word/docx build candidate 做逐页视觉 QA；
+1. 完成 artifact-level 英文与论证终审；
+3. 人类/编辑部确认 masked reviewer route，并处理剩余 deanonymization risk；
+4. 对 CI 生成的 traceable / masked Word/docx build candidates 做逐页视觉 QA；
 6. 正式 submission 前重新核验动态 ICMJE / Nature policy pages；
 7. 人类完成 Final Artifact Approval；
 8. submission / publication / release 仍需独立授权。
@@ -94,8 +93,9 @@ Final Artifact / publication 层仍存在：
 - venue-specific form constraints：`ADOPTED — AHICP-D033`
 - blinded submission derivative：`PREPARED / PR #29 MERGED / CI PASS`
 - citation audit：`COMPLETED — LIVE POLICY RECHECK PENDING`
-- anonymization risk (`AHICP` discoverability)：`OPEN`
-- Word/docx：`BUILD CANDIDATE GENERATED / VISUAL QA PENDING`
+- citation ↔ reference-list 双向一致性：`VERIFIED — 18/18 MAPPINGS / EIT CI PASS`
+- anonymization risk (`AHICP` discoverability)：`MASKED DERIVATIVE PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
+- Word/docx：`TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`
 - Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF

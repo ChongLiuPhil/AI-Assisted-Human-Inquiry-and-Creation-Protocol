@@ -75,10 +75,9 @@ Current Framework work and target-venue selection are complete.
 Primary target: `Ethics and Information Technology`.
 
 The submission derivative is prepared. Next stage:
-1. complete final bidirectional author–year citation ↔ reference-list consistency review;
-3. complete artifact-level English and argument review;
-4. resolve the open search-based deanonymization risk created by the distinctive `AHICP` name;
-5. visually inspect the CI-generated Word/docx build candidate page by page;
+1. complete artifact-level English and argument review;
+3. obtain human/editorial confirmation of the masked reviewer route and address residual deanonymization risk;
+4. visually inspect both CI-generated traceable/masked Word/docx build candidates page by page;
 6. recheck dynamic ICMJE / Nature policy pages immediately before actual submission;
 7. human Final Artifact Approval;
 8. submission / publication / release remain separately authorized.
@@ -93,8 +92,9 @@ Final Artifact / publication layer still has:
 - venue-specific form constraints: `ADOPTED — AHICP-D033`
 - blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
 - citation audit: `COMPLETED — LIVE POLICY RECHECK PENDING`
-- anonymization risk (`AHICP` discoverability): `OPEN`
-- Word/docx: `BUILD CANDIDATE GENERATED / VISUAL QA PENDING`
+- citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS / EIT CI PASS`
+- anonymization risk (`AHICP` discoverability): `MASKED DERIVATIVE PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
+- Word/docx: `TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`
 - Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF
