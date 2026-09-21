@@ -52,7 +52,7 @@
 后续工作必须保持：
 
 - one unified methodology article；
-- Project Memory Architecture 是核心理论贡献；
+- Project Memory Architecture 是核心理论贡献方向，但不得声称 AHICP 首创 project memory；当前 novelty 仅表述为 governed, model-substitutable architecture 的 candidate synthesis；
 - Working Memory = persistent continuity layer，不是心理学 working memory / hidden state / chain-of-thought；
 - Human Decision Persistence 是 first-class project memory；
 - Agent / Model substitution 是设计原则与 proposed stress test；
