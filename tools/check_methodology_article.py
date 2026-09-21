@@ -136,6 +136,8 @@ def main() -> int:
 
     for marker in REQUIRED_REFS:
         require(bib, marker, "methodology-references.bib")
+    if "\n---\n" in bib:
+        raise SystemExit("methodology-references.bib contains a Markdown separator and is not clean BibTeX")
     for marker in REQUIRED_EVIDENCE:
         require(zh_evidence, marker, "Chinese evidence layer")
         require(en_evidence, marker, "English evidence layer")
