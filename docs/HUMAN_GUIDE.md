@@ -634,11 +634,11 @@ it should use the Starter machine-readable ecosystem and Agent Retrieval Contrac
 Therefore:
 
 ~~~text
-Human conceptual entry
+Understand the system
         ↓
       AHICP
 
-Machine/configuration entry
+Configure the project
         ↓
       Starter
 ~~~
