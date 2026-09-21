@@ -115,25 +115,31 @@ GitHub is the current reference implementation, not a theoretical prerequisite. 
 
 ## 3. Boundary with existing research
 
-### 3.1 Agent memory
+### 3.1 Organizational / Project Memory
+Walsh & Ungson's organizational memory, Weiser & Morrison's Project Memory, and Mariano & Awazu's work on memory practices in large-scale projects establish that organization- and project-level memory, history, context, rationale, and continuity predate AHICP.
+
+AHICP does not use Project Memory itself as a novelty claim. It focuses on the combination of **authoritative project state + human governance + Agent/model substitution** in AI-assisted inquiry.
+
+### 3.2 Agent Memory
 Existing research examines experience storage, retrieval, reflection, long/short-term memory management, multi-session recall, temporal reasoning, and knowledge updates. Its primary target is Agent memory capability.
 
-### 3.2 Project memory
-AHICP targets project-level authoritative state, especially:
-- who confirmed what;
-- which evidence supports which claims;
-- which decisions were rejected or deferred;
-- where work resumes;
-- which state is stale;
-- what remains private;
-- which actions are authorized;
-- how a replacement Agent recovers the project.
+AHICP does not require replacing internal Agent memory. It treats such memory as a potentially useful auxiliary layer while refusing to let it automatically become authoritative project state.
 
-### 3.3 Provenance
-W3C PROV and related provenance work provide a general background for describing entities, activities, agents, and derivation. AHICP adopts the importance of traceability but does not claim to implement PROV or to derive its empirical validity from provenance standards.
+### 3.3 Design Rationale / Architecture Knowledge Management / Decision Provenance
+Software-engineering and accountability literatures have long studied design decisions, rationale, knowledge capture/maintenance, and decision provenance. AHICP Human Decision Persistence must build on that lineage rather than claim to discover that decisions should be preserved.
 
-### 3.4 Extended / distributed cognition
+AHICP adds project-governance semantics such as proposed / approved / rejected / deferred / authorized and propagates decision state through Working Memory -> Decision Log -> Long-Term Memory -> Artifact.
+
+### 3.4 Provenance Standards
+W3C PROV and related work provide general background for describing entities, activities, agents, and derivation. AHICP adopts the importance of traceability but does not claim to implement PROV or derive empirical validity from provenance standards.
+
+### 3.5 Extended / Distributed Cognition
 Clark & Chalmers and Hutchins provide theoretical background for external cognitive scaffolds and distributed cognition. The paper adopts a weak claim: a repository is a persistent cognitive/project-state scaffold; it need not treat AI or the repository as an independent cognitive subject.
+
+### 3.6 Candidate Synthesis Contribution
+The most defensible current novelty position is that AHICP organizes prior project memory, Agent memory, decision/rationale provenance, and human approval/authorization mechanisms into a **governed, model-substitutable Project Memory Architecture**.
+
+That novelty still requires systematic literature review and peer review. The current framework must avoid unsupported priority claims such as “first” or “unique.”
 
 ---
 
