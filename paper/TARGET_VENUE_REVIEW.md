@@ -1,6 +1,6 @@
 # Methodology Article — Target Venue Review
 
-**Status:** `AI-RESEARCHED RECOMMENDATION — HUMAN SELECTION PENDING`  
+**Status:** `HUMAN-SELECTED — PRIMARY TARGET: ETHICS AND INFORMATION TECHNOLOGY`  
 **Verified:** 2026-09-21  
 **Current English draft length:** approximately 6,427 words by a rough repository Markdown count; final submission counting must follow venue rules  
 **Framework baseline:** `MA-FW-001`
