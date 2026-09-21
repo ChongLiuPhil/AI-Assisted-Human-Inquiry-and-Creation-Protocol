@@ -135,25 +135,31 @@ GitHub 是当前参考实现，不是理论前提。真正的架构要求是存�
 
 ## 3. 与现有研究的概念边界
 
-### 3.1 Agent memory
+### 3.1 Organizational / Project Memory
+Walsh & Ungson 的 organizational memory、Weiser & Morrison 的 Project Memory，以及 Mariano & Awazu 对大型项目记忆实践的研究都说明：组织/项目层的记忆、历史、context、rationale 与续接并非 AHICP 首创。
+
+AHICP 不把“Project Memory”本身作为 novelty claim。它关注的是 AI-assisted inquiry 中 **authoritative project state + human governance + Agent/model substitution** 的组合。
+
+### 3.2 Agent Memory
 现有研究常讨论 experience storage、retrieval、reflection、long/short-term memory management、multi-session recall、temporal reasoning、knowledge updates 等。它们主要优化 Agent 的记忆能力。
 
-### 3.2 Project memory
-AHICP 关注项目层权威状态，特别是：
-- 谁确认了什么；
-- 哪些证据支持哪些主张；
-- 哪些决定被拒绝或保留；
-- 当前工作从哪里继续；
-- 什么状态已经失效；
-- 哪些内容仍是 private；
-- 什么行动已授权；
-- 换 Agent 后如何恢复。
+AHICP 不要求替代内部 Agent memory；相反，它把内部 memory 视为可能的辅助层，但不允许其自动成为项目权威状态。
 
-### 3.3 Provenance
-W3C PROV 等 provenance 工作提供描述实体、活动、Agent 与派生关系的通用背景。AHICP 借鉴“来源应可追踪”的思想，但并不声称自身文件模型是 PROV 的实现，也不以 provenance 标准证明 AHICP 的有效性。
+### 3.3 Design Rationale / Architecture Knowledge Management / Decision Provenance
+软件工程与 accountability 文献已经长期讨论 design decisions、rationale、knowledge capture/maintenance 与 decision provenance。AHICP 的 Human Decision Persistence 必须建立在这一前史上，而不是声称首先发现“决定需要被保存”。
 
-### 3.4 Extended / distributed cognition
+AHICP 进一步要求决定携带 project-governance semantics，例如 proposed / approved / rejected / deferred / authorized，并参与 Working Memory -> Decision Log -> Long-Term Memory -> Artifact 的传播。
+
+### 3.4 Provenance Standards
+W3C PROV 等工作提供描述实体、活动、Agent 与派生关系的通用背景。AHICP 借鉴“来源应可追踪”的思想，但并不声称自身文件模型是 PROV 的实现，也不以 provenance 标准证明 AHICP 的有效性。
+
+### 3.5 Extended / Distributed Cognition
 Clark & Chalmers、Hutchins 提供外部认知脚手架和分布式认知的理论背景。论文采取弱主张：repository 是 persistent cognitive/project-state scaffold；不需要把 AI 或 repository 提升为独立认知主体。
+
+### 3.6 Candidate Synthesis Contribution
+当前最可辩护的 novelty 定位是：AHICP 把 prior project memory、Agent memory、decision/rationale provenance 与 human approval/authorization 机制组织为一个 **governed, model-substitutable Project Memory Architecture**。
+
+该 novelty 仍需系统 literature review 与同行评审检验；当前 framework 不得使用未经证据支持的 “first” / “unique” 优先权表述。
 
 ---
 
