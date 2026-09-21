@@ -68,6 +68,9 @@ jobs:
                   footer_xml = "\n".join(archive.read(name).decode("utf-8") for name in footer_names)
                   if "PAGE" not in footer_xml:
                       raise SystemExit(f"{path.name}: missing automatic PAGE field")
+                  document_xml = archive.read("word/document.xml").decode("utf-8")
+                  if "w:cantSplit" not in document_xml:
+                      raise SystemExit(f"{path.name}: table rows may split across pages")
                   core_xml = archive.read("docProps/core.xml").decode("utf-8")
                   for marker in forbidden:
                       if marker.lower() in core_xml.lower():
