@@ -196,8 +196,8 @@ Clark & Chalmers、Hutchins 提供外部认知脚手架和分布式认知的理�
 ### IX. Framework Approval、作者责任与公开成果
 把 project memory 架构与 Framework Approval / Final Artifact Approval、framework defect vs derived-expansion defect、reader-facing projection 连接起来。
 
-### X. 与现有 Agent-memory / provenance 研究的关系
-明确互补而非替代：agent memory 解决 Agent continuity，project memory 解决 project continuity/governance。
+### X. 与既有 Project Memory、Agent Memory 与 Provenance 研究的关系
+明确三条传统的交叉与边界，并把 AHICP novelty 限定为 governed, model-substitutable Project Memory Architecture 的 candidate synthesis。
 
 ### XI. 评估框架与研究议程
 列出测试任务、指标与对照设计，明确没有实证结果。
