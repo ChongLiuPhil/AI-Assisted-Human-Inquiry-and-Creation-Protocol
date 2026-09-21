@@ -91,10 +91,12 @@ Within AHICP governance, project purpose, core questions, direction, substantive
 
 **Boundary:** this is an AHICP normative governance principle, constrained by actual research-integrity, publication, and domain rules; it is not presented as a universal philosophical law for every cognitive system, domain, or theory of authorship.
 
-### T10 — Framework Approval as Compressed Responsibility Interface
-**Source: HUMAN-CONFIRMED — HARC-D023/D024**
+### T10 — Framework Approval as a Structured Human-Review Gate and Responsibility Anchor
+**Source: HUMAN-CONFIRMED — HARC-D023/D024; SCHOLARLY REVIEW REWORDED 2026-09-21**
 
-For long-form work, Layer 2 Framework is the principal interface for high-intensity human review of intellectual architecture. Framework Approval is distinct from Final Artifact Approval.
+For long-form work, Layer 2 Framework is a structured human-review interface that exposes core claims, inferential relations, key distinctions, scope conditions, and structural commitments. Within AHICP, Framework Approval functions as an important responsibility anchor; Final Artifact Approval remains a separate gate for the concrete public version.
+
+**Boundary:** no current empirical evidence establishes that Framework Approval reduces total review cost, and it does not substitute for Final Artifact Approval or factual review of the full artifact.
 
 ### T11 — Prior Project Memory, Agent Memory, and the AHICP Integration Boundary
 **Source: HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
