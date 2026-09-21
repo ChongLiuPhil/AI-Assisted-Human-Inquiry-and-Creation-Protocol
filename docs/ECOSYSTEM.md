@@ -13,7 +13,9 @@ This separation keeps the explanation readable while preserving a precise machin
 
 ### The public website can move without changing the role
 
-The current public introduction is delivered through GitHub Pages. The URL is a delivery location, not the identity of the method. The version-controlled bilingual guide remains the maintained source, so the public site can later move to Cloudflare or another provider without changing the handoff to Starter.
+The current public introduction is still delivered through GitHub Pages. Cloudflare Pages is now the preferred delivery target, while GitHub remains the canonical source/version-control provider. The current URL remains authoritative until the Cloudflare deployment, target domain, machine handoff, and cross-project links have been verified.
+
+The URL is a delivery location, not the identity of the method. Follow the [coordinated Cloudflare public-delivery migration](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md); do not replace the Human Entry URL merely because a Cloudflare staging project exists.
 
 The current stable machine entry is:
 https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
