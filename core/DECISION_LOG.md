@@ -525,3 +525,37 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Article Content Core, Working Argument Map, Framework Status, methodology article, evidence layer, bibliography, Working Memory, Decision Log.
 
 **Status:** explicitly human-confirmed; authorizes the current structural revision and article upgrade.
+
+---
+
+## 2026-09-21 — AHICP-D031
+
+**Source:** human project founder  
+**Classification:** CONTENT, FORM, GOVERNANCE
+
+**Decision:**
+
+1. The human project founder explicitly responded **“agree, complete it”** to the proposal to finish the methodology article Framework scholarly review and promote the content that survives current evidence and boundary constraints into the first Approved Framework snapshot.
+2. Under that authorization and the completed 2026-09-21 scholarly review, the current methodology-article framework receives overall **Framework Approval** with snapshot identifier:
+   - `MA-FW-001`
+   - Chinese canonical: `paper/frameworks/MA-FW-001.zh-CN.md`
+   - English mirror: `paper/frameworks/MA-FW-001.md`
+3. T1–T13 enter `MA-FW-001` in their evidence-constrained / bounded wording:
+   - T1 / T11: AHICP must not be presented as originating project memory, organizational memory, design rationale, decision provenance, or Agent long-term memory;
+   - T2 / T3 / T7 / T8 / T13: approved as design principles or architecture specifications, not validated universal performance laws;
+   - T4: Working Memory is explicitly not psychological working memory, model hidden state, scratchpad, or chain-of-thought;
+   - T5: Human Decision Persistence is approved as a governance mechanism while acknowledging prior decision/rationale/provenance literature;
+   - T6: Agent / Model Substitution is approved as a design goal and proposed stress test, not as an already validated robustness result;
+   - T9: approved only as AHICP normative governance, not as a universal theory of authorship or cognitive responsibility across all domains;
+   - T10: formally adopts **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**, replacing the approval-level use of “Compressed Responsibility Interface”;
+   - T12: approved only as a proposed empirical research agenda, with no empirical results.
+4. Framework Approval means human approval of the current intellectual architecture, argumentative boundaries, and research agenda. It does not mean every sentence of the current long-form article is finally approved or that citation/style requirements of a particular venue have been satisfied.
+5. The article status should move from `DERIVED-PROVISIONAL` to:
+   `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+6. `MA-FW-001` is the fixed approval baseline. Later substantive changes to core theses, argument structure, scope, or approval semantics should create a new framework snapshot rather than silently rewriting `MA-FW-001`.
+7. This decision **does not constitute Final Artifact Approval, select a target venue, or automatically authorize PR merge / publication / release**. Those remain separate governance actions.
+8. AHICP-D027–D030 remain active for external-system, authorization, human-handoff, scoped-authorization, and methodology structural-direction governance. D031 completes only the current methodology article Framework Approval.
+
+**Affected components:** Methodology Article Framework snapshot, Working Argument Map, Framework Status, methodology article status, Working Memory, Methodology Article CI, Decision Log.
+
+**Status:** explicitly human-approved; `MA-FW-001` Framework Approval completed.
