@@ -173,14 +173,11 @@ def main() -> int:
         require(text, "6", language)
         require(text, "double-anonymous", language)
 
-    for text, source in (
-        (package_readme, "package README"),
-        (check_en, "English checklist"),
-        (check_zh, "Chinese checklist"),
-        (ai_en, "English AI disclosure"),
-        (ai_zh, "Chinese AI disclosure"),
-    ):
-        require(text, "Final Artifact Approval" if "English" in source or source == "package README" else "Final", source)
+    require(package_readme, "Final Artifact Approval", "package README")
+    require(check_en, "Final Artifact Approval", "English checklist")
+    require(check_zh, "Final Artifact Approval", "Chinese checklist")
+    require(ai_en, "FINAL HUMAN REVIEW PENDING", "English AI disclosure")
+    require(ai_zh, "FINAL HUMAN REVIEW PENDING", "Chinese AI disclosure")
 
     require(title_meta, "[HUMAN TO COMPLETE]", "title-page metadata template")
     require(cover, "[CONFIRM: the manuscript is not under consideration elsewhere]", "cover-letter draft")
