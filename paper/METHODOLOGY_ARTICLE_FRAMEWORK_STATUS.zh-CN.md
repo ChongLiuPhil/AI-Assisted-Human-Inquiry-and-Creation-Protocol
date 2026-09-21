@@ -74,11 +74,14 @@ AHICP-D030 已明确授权对方法论文章进行结构性重写，并确认以
 
 `DERIVED-PROVISIONAL — STRUCTURALLY REWRITTEN UNDER AHICP-D030`
 
-当前正文已完成与新 Working Framework 的**结构同步**：
+当前正文已完成与新 Working Framework 的**结构同步**，并完成第二轮 scholarly positioning audit：
 
 - 旧 15 部分结构已替换为 project-memory-centered 13 节结构；
 - Project Memory / Working Memory / Decision Persistence / Agent Substitution 已进入摘要、正文主干与结论；
 - Agent-memory / provenance 相关工作已进入 related-work / evidence layer；
+- 新增 organizational memory、1998 Project Memory、2024 project-memory practice、design rationale / Software Architecture Knowledge Management 与 decision provenance 前史；
+- 明确 **AHICP 不首创 organizational memory / project memory / design rationale / decision provenance / Agent long-term memory**；
+- 当前 novelty 只以 **candidate architectural synthesis** 表述：governed, model-substitutable Project Memory Architecture；
 - proposed evaluation 已进入正文，但明确没有实证结果；
 - 中英文正文已同步重写。
 
