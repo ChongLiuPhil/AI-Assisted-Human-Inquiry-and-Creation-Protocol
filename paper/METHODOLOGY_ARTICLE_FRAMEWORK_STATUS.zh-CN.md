@@ -106,8 +106,8 @@ Framework Approval **不等于** Final Artifact Approval。当前文章仍需 ar
 - venue-specific form / double-blind / AI-use / authorship requirements：`ADOPTED — AHICP-D033`；
 - blinded Markdown submission derivative：`PREPARED / PR #29 MERGED / CI PASS`；
 - citation / publication-status audit：`COMPLETED — LIVE POLICY RECHECK PENDING`；
-- Word/docx build pipeline：`READY — TRACEABLE BUILD GENERATED / MASKED DUAL-BUILD CI PENDING / VISUAL QA PENDING`；
-- citation ↔ reference-list 双向一致性：`CI ENFORCED / LATEST-HEAD VERIFICATION PENDING`；
+- Word/docx build pipeline：`TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`；
+- citation ↔ reference-list 双向一致性：`VERIFIED — 18/18 MAPPINGS / EIT CI PASS`；
 - search-based anonymization risk from `AHICP` name：`MITIGATION PREPARED — MASKED DERIVATIVE / HUMAN-EDITORIAL CONFIRMATION PENDING`；
 - license；
 - Final Artifact Approval。
