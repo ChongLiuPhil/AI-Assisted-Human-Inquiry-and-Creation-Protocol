@@ -626,3 +626,26 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Article Form Core, submission derivative package, Working Memory, Decision Log, venue validation.
 
 **Status:** explicitly human-approved; venue-specific preparation authorized.
+
+---
+
+## 2026-09-22 — AHICP-D034
+
+**Source:** human project founder  
+**Classification:** FORM, PUBLICATION, GOVERNANCE
+
+**Decision:**
+
+1. After receiving the Final Artifact review packet, the human project founder explicitly replied **“均确认” (“confirm all”)** and thereby approves the current **Final Artifact** for submission preparation toward **Ethics and Information Technology**.
+2. This Final Artifact Approval is bound to the EIT artifact set that completed scholarly/submission review, with scholarly and submission-content baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`. `main` later advanced to `4b5ec5e0831aa6b77f1b1cfc72e2413664939c51` only because Dependabot updated GitHub Actions `checkout` versions; no manuscript, submission derivative, DOCX builder, Framework, references, or other approved artifact content changed, so current `main` is Final-Artifact-content-equivalent to the approved baseline.
+3. The human confirms the **masked reviewer route**: the reviewer-facing manuscript uses the masked double-anonymous derivative, and the public GitHub repository is not proactively supplied to reviewers. If the editorial process requires reviewer-visible repository / supplementary material, it must be provided only through an appropriate masked / anonymized route, while residual search-based deanonymization risk remains acknowledged.
+4. The human confirms that the manuscript is **not simultaneously under consideration elsewhere** and that all author/co-author approvals required for the present submission have been obtained.
+5. The confirmation does not provide factual values for author names, affiliations, corresponding-author email, ORCID, Funding, Competing Interests, Author Contributions, or Acknowledgements. Those fields remain for truthful human completion at submission time; AI must not infer, invent, or fill them.
+6. This decision completes **Final Artifact Approval** but **does not authorize submission / publication / release**. Formal journal submission still requires separate explicit human submission authorization, and the live submission interface plus dynamic policies must receive a final recheck immediately before submission.
+7. `MA-FW-001` remains unchanged. A later change to a core thesis, major inference, scope, or contribution boundary returns to Framework governance; later changes to Final Artifact content, references, AI-use disclosure, anonymization route, or other reviewer-facing substantive content require renewed review/approval as appropriate.
+8. Repository maintenance that changes only CI/provider tooling and does not change Final Artifact content does not automatically invalidate this approval, but it also does not expand publication/submission authority.
+
+**Affected components:** EIT submission-derivative package, Submission Checklist, Working Memory, Decision Log, Final Artifact status.
+
+**Status:** explicitly human-approved; Final Artifact Approval completed; submission authorization remains a separate human-reserved gate.
+
