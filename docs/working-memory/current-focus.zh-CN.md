@@ -30,6 +30,8 @@
 - 重写中文 methodology article；
 - 同步重写英文镜像；
 - 补充 Generative Agents、MemGPT、Agent-memory survey、LongMemEval、MemBench、RealMem 与 W3C PROV 相关 evidence / references；
+- 完成第二轮 scholarly novelty audit：加入 organizational memory、Weiser & Morrison (1998) Project Memory、Mariano & Awazu (2024)、design rationale / Software Architecture Knowledge Management 与 decision provenance 前史；
+- 明确 AHICP 不首创 project memory；当前 novelty 只以 governed, model-substitutable Project Memory Architecture 的 candidate synthesis 表述；
 - 把经验测试方案从旧的 AI-proposed 状态更新为 AHICP-D030 已确认应纳入论文的 proposed evaluation framework；
 - 明确没有实证结果，不得提出已验证 effectiveness claim；
 - 更新 Framework Status，使仓库不再保留“整体批准前禁止结构性重写”的旧指令。
