@@ -84,10 +84,12 @@ Reliable project memory does not mean “save everything.” It must govern acti
 
 Model context should retrieve the minimum authoritative state required by the task; after write-back, stale excerpts are invalidated.
 
-### T9 — Human Authority and Responsibility
+### T9 — Human Authority and Responsibility as AHICP Normative Governance
 **Source: HUMAN-CONFIRMED — HARC-D023/D024 + AHICP-D030**
 
-AI may perform or assist extensive work, but project purpose, core questions, direction, substantive judgment, key approvals, and responsibility for public dissemination remain human. Decision persistence makes human authority durable rather than merely conversational.
+Within AHICP governance, project purpose, core questions, direction, substantive judgment, key approvals, and final public-release responsibility remain on the human side, while AI may perform or assist extensive retrieval, organization, drafting, checking, and technical execution. Decision persistence makes that governance durable rather than merely conversational.
+
+**Boundary:** this is an AHICP normative governance principle, constrained by actual research-integrity, publication, and domain rules; it is not presented as a universal philosophical law for every cognitive system, domain, or theory of authorship.
 
 ### T10 — Framework Approval as Compressed Responsibility Interface
 **Source: HUMAN-CONFIRMED — HARC-D023/D024**
