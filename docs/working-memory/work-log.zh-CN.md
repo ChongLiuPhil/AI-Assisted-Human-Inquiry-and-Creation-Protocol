@@ -427,3 +427,28 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 **治理边界：** 本次 Framework Approval 不等于 Final Artifact Approval，不自动授权 PR merge、publication 或 release。
 
 **结果：** Framework work complete；下一阶段为 Final Artifact Review / target-venue preparation。
+
+---
+
+## 2026-09-21 — AHICP-D032：Framework bounded auto-merge + primary target venue
+
+人类项目发起人明确批准两项治理/发布决定：
+
+1. Framework Approval 在严格 scope / latest-head CI / blocking-review / base-sync / provider-protection 条件下，同时构成专用 PR 的 **bounded auto-merge authorization**；
+2. `Ethics and Information Technology` 被选为当前 methodology article 的 primary target venue，`Science and Engineering Ethics` 保留为 secondary candidate。
+
+本轮已完成的协议传播：
+
+- Decision Log 记录 AHICP-D032；
+- Protocol Core P6 增加 bounded auto-merge 原则；
+- Framework Approval protocol 增加 §3.5；
+- Specification Framework Approval Gate 增加对应规范；
+- repository AGENTS contract 与 research-project template AGENTS 同步；
+- Working Memory 把 WM-T027 标记为完成，并把 WM-T014 标记为 venue selected；
+- Target Venue Review 从 AI recommendation 更新为 HUMAN-SELECTED；
+- Framework Status 更新为 Ethics and Information Technology preparation；
+- Methodology / Protocol CI 增加 D032 防回归检查。
+
+**治理边界：** bounded merge authorization 不等于 Final Artifact Approval，也不授权 submission / publication / release / deployment / secret handling。
+
+**PR #26：** D032 明确将当前 methodology PR 纳入 scoped merge authorization；最终是否自动 merge 仍以 latest-head 条件核验结果为准。
