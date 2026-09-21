@@ -97,10 +97,12 @@ Agent 与模型应可替换而不破坏项目连续性。替换当前 Agent、�
 
 模型上下文只应读取当前任务所需的最小权威状态；写回后旧摘录立即视为 stale。
 
-### T9 — Human Authority and Responsibility
+### T9 — Human Authority and Responsibility as AHICP Normative Governance
 **来源：HUMAN-CONFIRMED — HARC-D023/D024 + AHICP-D030**
 
-AI 可以执行或辅助大量工作，但项目目的、核心问题、方向、实质判断、关键批准与公开传播责任仍需由人类承担。Decision persistence 使这种人类权威不只存在于当下对话，而成为可追踪项目状态。
+在 AHICP 的治理范围内，项目目的、核心问题、方向、实质判断、关键批准与最终公开责任位置保持在人类一侧；AI 可以执行或辅助大量检索、整理、起草、核验与技术操作。Decision persistence 使这种人类治理不只存在于当下对话，而成为可追踪项目状态。
+
+**边界：** 这是 AHICP 的规范性治理原则，并受具体研究诚信、出版与领域规则约束；它不被写成关于所有认知系统、所有领域或一般作者身份的普遍哲学定律。
 
 ### T10 — Framework Approval as Compressed Responsibility Interface
 **来源：HUMAN-CONFIRMED — HARC-D023/D024**
