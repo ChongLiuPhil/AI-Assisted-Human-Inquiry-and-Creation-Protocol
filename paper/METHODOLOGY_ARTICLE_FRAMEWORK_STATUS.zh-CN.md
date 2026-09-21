@@ -124,7 +124,7 @@ AHICP-D030 已明确授权对方法论文章进行结构性重写，并确认以
 - Content Core -> Working Framework：`SYNC — PROJECT-MEMORY-CENTERED REWRITE`
 - Working Framework -> Chinese article：`STRUCTURALLY SYNCED / DERIVED-PROVISIONAL`
 - Chinese article -> English mirror：`SYNCED IN CURRENT WORK CYCLE`
-- External evidence -> related-work claims：`UPDATED 2026-09-20`
+- External evidence -> related-work claims：`UPDATED 2026-09-21 — PRIOR PROJECT-MEMORY / DECISION-RATIONALE LINEAGE ADDED`
 - Proposed evaluation -> empirical results：`NO RESULTS CLAIMED`
 - Framework Approval：`NOT COMPLETED`
 - Final Artifact Approval：`NOT COMPLETED`
