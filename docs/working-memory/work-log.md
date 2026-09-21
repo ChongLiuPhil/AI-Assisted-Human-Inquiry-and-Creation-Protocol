@@ -616,3 +616,34 @@ Execution:
 - visual QA remains separate from CI structural validation.
 
 **Current status:** masked mitigation prepared; latest-head CI verification pending.
+
+---
+
+## 2026-09-21 — EIT masked/citation CI verification passed
+
+On an intermediate head of PR #32, EIT Submission CI completed and passed:
+
+- traceable blinded manuscript validation: PASS;
+- masked blinded manuscript validation: PASS;
+- masked prohibition checks for `AHICP` / full protocol name / direct GitHub URL / internal IDs: PASS;
+- explicit 18-entry citation ↔ reference-list mapping: PASS;
+- masked / unmasked reference-section equality: PASS;
+- traceable DOCX build: PASS;
+- masked DOCX build: PASS;
+- both DOCX ZIP/package structural validations: PASS;
+- traceable artifact upload: PASS;
+- masked artifact upload: PASS.
+
+Generated workflow artifacts:
+
+- `eit-manuscript-blinded-docx` — 53,268 bytes;
+- `eit-manuscript-blinded-masked-docx` — 53,256 bytes.
+
+**Boundary:**
+
+- CI structural validation does not replace page-by-page visual QA;
+- the masked reviewer route still requires human/editorial confirmation;
+- residual discoverability must not be described as “perfect anonymity”;
+- Final Artifact Approval / submission authorization has not occurred.
+
+**Status:** citation consistency verified; masked mitigation technically validated; final-head revalidation pending after state write-back.
