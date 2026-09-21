@@ -256,7 +256,7 @@ For the methodology article, read in this order:
 
 Work Log is outside this read chain by default.
 
-The article's Argument Map remains a `WORKING-FRAMEWORK` until explicit human approval. Its draft remains `DERIVED-PROVISIONAL` until applicable approval gates are completed.
+The methodology article's live Framework / Artifact state must be read from `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`. If an Approved Framework snapshot exists, the Agent must read the latest approved snapshot and preserve its immutable-baseline semantics; it must not restore a completed Framework Approval to pending. Artifact state remains governed by the separate Final Artifact Approval Gate.
 
 The methodology article must obey the AHICP principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When external research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative AHICP proposals distinct from external publication rules.
 
