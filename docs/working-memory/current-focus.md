@@ -58,6 +58,9 @@ Primary current objects:
 - generated a blinded manuscript: 185-word abstract, approximately 5,367 content words, 6 keywords, maximum three heading levels;
 - added substantive generative-AI disclosure and Data Availability Statement;
 - added dedicated EIT submission validator / CI;
+- PR #29 merged into `main` under D033 scoped merge authorization, merge commit `a789bbd3342b29ebb07caa9c0cd22da3315e7746`;
+- completed citation / publication-status audit for the blinded derivative;
+- added a reproducible DOCX builder and connected it to EIT CI to generate a build candidate;
 - PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
@@ -69,13 +72,14 @@ Current Framework work and target-venue selection are complete.
 Primary target: `Ethics and Information Technology`.
 
 The submission derivative is prepared. Next stage:
-1. complete latest-head EIT Submission CI and repository CI;
-2. verify citations / DOI / publication status item by item;
+1. complete latest-head CI for the current final-review PR;
+2. complete final bidirectional author–year citation ↔ reference-list consistency review;
 3. complete artifact-level English and argument review;
 4. resolve the open search-based deanonymization risk created by the distinctive `AHICP` name;
-5. generate and visually inspect the final Word/docx;
-6. human Final Artifact Approval;
-7. submission / publication / release remain separately authorized.
+5. visually inspect the CI-generated Word/docx build candidate page by page;
+6. recheck dynamic ICMJE / Nature policy pages immediately before actual submission;
+7. human Final Artifact Approval;
+8. submission / publication / release remain separately authorized.
 
 ## PRIMARY_BLOCKER
 
@@ -85,9 +89,10 @@ Final Artifact / publication layer still has:
 - license: `WAITING-HUMAN`
 - target publication venue: `SELECTED — Ethics and Information Technology / AHICP-D032`
 - venue-specific form constraints: `ADOPTED — AHICP-D033`
-- blinded submission derivative: `PREPARED / CI PENDING`
+- blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
+- citation audit: `COMPLETED — LIVE POLICY RECHECK PENDING`
 - anonymization risk (`AHICP` discoverability): `OPEN`
-- final Word/docx: `PENDING`
+- Word/docx: `BUILD PIPELINE READY / VISUAL QA PENDING`
 - Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF

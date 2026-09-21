@@ -104,8 +104,9 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 - any AHICP effectiveness claim;
 - target venue: `SELECTED — Ethics and Information Technology / AHICP-D032`;
 - venue-specific form / double-blind / AI-use / authorship requirements: `ADOPTED — AHICP-D033`;
-- blinded Markdown submission derivative: `PREPARED / CI PENDING`;
-- final Word/docx: `NOT YET GENERATED`;
+- blinded Markdown submission derivative: `PREPARED / PR #29 MERGED / CI PASS`;
+- citation / publication-status audit: `COMPLETED — LIVE POLICY RECHECK PENDING`;
+- Word/docx build pipeline: `READY — CI BUILD CANDIDATE / VISUAL QA PENDING`;
 - search-based anonymization risk from the `AHICP` name: `OPEN`;
 - license;
 - Final Artifact Approval.
@@ -113,6 +114,7 @@ Framework Approval is **not** Final Artifact Approval. Artifact-level review, ta
 ## Synchronization state
 
 - Human decision -> Decision Log: `SYNC — AHICP-D033 RECORDED`
+- EIT preparation PR #29: `MERGED — a789bbd3342b29ebb07caa9c0cd22da3315e7746`
 - D030 direction -> Content Core: `SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries: `SYNC`
 - Approved Framework snapshot: `MA-FW-001 CREATED`

@@ -519,3 +519,34 @@ Open blockers:
 - submission authorization has not occurred.
 
 **Status:** submission derivative prepared; CI / PR validation next.
+
+---
+
+## 2026-09-21 — EIT citation audit and DOCX build pipeline
+
+**Authority:** AHICP-D033
+
+After PR #29 merged, this work cycle continued venue-specific Final Artifact review:
+
+- PR #29 merged into `main`, merge commit:
+  `a789bbd3342b29ebb07caa9c0cd22da3315e7746`;
+- completed publication-status / metadata / DOI / standards audit for the blinded manuscript's current reference set;
+- added `CITATION_AUDIT.md`;
+- separated ICMJE / Nature Portfolio as dynamic policy sources requiring recheck immediately before actual submission;
+- normalized W3C PROV-DM as the 30 April 2013 W3C Recommendation;
+- normalized LongMemEval to the ICLR 2025 proceedings record;
+- added `tools/build_eit_docx.py` for reproducible blinded Markdown -> Word/docx generation;
+- EIT Submission CI now generates and uploads a `MANUSCRIPT_BLINDED.docx` build candidate and checks its ZIP/package structure;
+- a successful CI build does not make the DOCX a Final Artifact: page-by-page visual QA remains an explicit unresolved gate.
+
+Current remaining blockers:
+
+1. final bidirectional citation ↔ reference-list consistency check;
+2. search-based deanonymization risk from the distinctive `AHICP` name;
+3. page-by-page visual QA of the CI-generated Word/docx;
+4. license;
+5. Final Artifact Approval;
+6. formal submission authorization;
+7. final live-policy recheck immediately before submission.
+
+**Status:** citation audit completed; reproducible DOCX build ready; visual QA pending.

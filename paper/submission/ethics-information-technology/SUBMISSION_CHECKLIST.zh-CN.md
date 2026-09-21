@@ -14,7 +14,8 @@
 - [x] displayed heading 不超过三级。
 - [x] 采用 author–year 引用。
 - [x] 投稿派生 reference list 已移除未在正文引用、仅服务内部 evidence infrastructure 的条目。
-- [ ] 生成最终 Word/docx 并完成视觉检查。
+- [x] 已建立可重复的 Word/docx CI 构建流程。
+- [ ] 对 CI 生成的 Word/docx build candidate 逐页完成视觉检查。
 - [ ] 在最终 docx 中检查页码与普通字体等格式。
 
 ## Double-anonymous review
@@ -47,9 +48,9 @@
 
 ## 学术终审
 
-- [ ] 每个正文引用逐项回源核验。
-- [ ] reference list 的 publication/acceptance status 与元数据核验。
-- [ ] DOI links 核验。
+- [ ] 最终检查每个正文 author–year citation 都能解析到 reference list，且 reference list 每条都在正文实际引用。
+- [x] reference list 的 publication/acceptance status 与核心元数据已核验；见 `CITATION_AUDIT.md`。
+- [x] 主要 DOI / proceedings / standards identifiers 已核验；动态 policy URL 仍需正式投稿前复核。
 - [ ] 完成 artifact-level 英文与论证流程审阅。
 - [ ] claim boundaries 与 `MA-FW-001` 核验。
 - [ ] 没有引入 AHICP 已有效的实证性效果主张。

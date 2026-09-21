@@ -9,7 +9,9 @@
 - `WM-T013` — license decision: `WAITING-HUMAN`
 - `WM-T014` — target publication venue: `COMPLETED — Ethics and Information Technology / AHICP-D032`
 - `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
-- `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI: `IN PROGRESS / AHICP-D033`
+- `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI: `COMPLETED / PR #29 MERGED — a789bbd3`
+- `WM-T030` — EIT citation / publication-status audit: `COMPLETED / LIVE POLICY RECHECK PENDING`
+- `WM-T031` — EIT DOCX build + visual QA: `IN PROGRESS / BUILD PIPELINE READY`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
@@ -43,14 +45,15 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. complete EIT submission-package CI and merge the preparation PR;
-2. verify blinded-manuscript citations / DOI / publication status item by item;
+1. complete latest-head CI for the final-review PR;
+2. complete bidirectional citation ↔ reference-list consistency review;
 3. resolve the search-based deanonymization risk created by the `AHICP` name;
 4. decide the license;
 5. complete Final Artifact-level academic editing;
-6. generate and visually inspect the final Word/docx;
-7. complete Final Artifact Approval;
-8. execute submission / publication / release only under separate authorization.
+6. visually inspect the CI-generated Word/docx build candidate page by page;
+7. recheck dynamic policy pages immediately before submission;
+8. complete Final Artifact Approval;
+9. execute submission / publication / release only under separate authorization.
 
 ## 5. ARTICLE INVARIANTS
 

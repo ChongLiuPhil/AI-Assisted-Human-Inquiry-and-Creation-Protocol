@@ -14,18 +14,22 @@ This directory contains venue-specific derivatives and submission-preparation ma
 - `AI_USE_DISCLOSURE.md` / `.zh-CN.md` — disclosure wording and governance notes.
 - `TITLE_PAGE_METADATA_TEMPLATE.md` — author/title-page/submission-system metadata template; no identity is prefilled.
 - `COVER_LETTER_DRAFT.md` — non-submission-authorized cover-letter draft with required human-confirmation placeholders.
+- `CITATION_AUDIT.md` — publication-status / metadata / policy-source audit for the venue derivative.
+- `tools/build_eit_docx.py` — reproducible DOCX builder used by EIT Submission CI; generated DOCX remains a build candidate until visual QA.
 
 ## Current machine-checked manuscript metrics
 
 - abstract: 185 words;
-- content: approximately 5,392 words under the repository validator's counting method;
+- content: approximately 5,367 words under the repository validator's counting method;
 - keywords: 6;
 - maximum displayed heading level: 3;
 - internal Decision / Framework / Working-Memory IDs in blinded manuscript: none;
 - direct GitHub URL in blinded manuscript: none;
 - empirical-results claim: none;
 - AI-use disclosure: present;
-- Data Availability Statement: present.
+- Data Availability Statement: present;
+- citation / publication-status audit: completed for current reference set;
+- DOCX build pipeline: present; CI-generated DOCX is not final until visual QA.
 
 ## Important anonymization risk
 

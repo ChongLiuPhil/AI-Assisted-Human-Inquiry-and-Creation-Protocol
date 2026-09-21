@@ -14,7 +14,8 @@
 - [x] No more than three displayed heading levels.
 - [x] References use author–year presentation.
 - [x] Submission derivative reference list removes uncited internal evidence-only references.
-- [ ] Final Word/docx manuscript generated and visually checked.
+- [x] Reproducible Word/docx build pipeline added to CI.
+- [ ] CI-generated Word/docx build candidate visually checked page by page.
 - [ ] Page numbering / plain-font Word formatting checked in final docx.
 
 ## Double-anonymous review
@@ -47,9 +48,9 @@
 
 ## Scholarly final review
 
-- [ ] Every in-text citation verified against the cited source.
-- [ ] Reference-list entries checked for publication/acceptance status and metadata.
-- [ ] DOI links verified.
+- [ ] Final automated/manual check that every in-text author–year citation resolves to the reference list and every reference-list entry is cited.
+- [x] Reference-list entries checked for publication/acceptance status and core metadata; see `CITATION_AUDIT.md`.
+- [x] Major DOI / proceedings / standards identifiers checked; dynamic policy URLs remain subject to pre-submission recheck.
 - [ ] English language and argument flow reviewed at artifact level.
 - [ ] Claim boundaries checked against `MA-FW-001`.
 - [ ] No empirical-effectiveness claim introduced.

@@ -659,17 +659,17 @@ No original empirical dataset was generated or analyzed for this conceptual and 
 - Clark, A., & Chalmers, D. (1998). The Extended Mind. *Analysis*, 58(1), 7–19. https://doi.org/10.1093/analys/58.1.7
 - Hardwig, J. (1985). Epistemic Dependence. *The Journal of Philosophy*, 82(7), 335–349. https://doi.org/10.2307/2026523
 - Hutchins, E. (1995). *Cognition in the Wild*. MIT Press. https://doi.org/10.7551/mitpress/1881.001.0001
-- International Committee of Medical Journal Editors (ICMJE). *Defining the Role of Authors and Contributors*.
+- International Committee of Medical Journal Editors (ICMJE). (n.d.). *Defining the Role of Authors and Contributors*. https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html
 - Lee, J. (1992). Design Rationale Management Research. *The Knowledge Engineering Review*, 7(4), 363–366. https://doi.org/10.1017/S0269888900006470
 - Mariano, S., & Awazu, Y. (2024). Managing large-scale projects: Unpacking the role of project memory. *International Journal of Project Management*, 42(2), 102573. https://doi.org/10.1016/j.ijproman.2024.102573
-- Nature Portfolio. *Editorial Policies*, including current AI policies.
+- Nature Portfolio. (n.d.). *Editorial policies*, including artificial-intelligence policies. https://www.nature.com/nature-portfolio/editorial-policies
 - Parasuraman, R., & Riley, V. (1997). Humans and Automation: Use, Misuse, Disuse, Abuse. *Human Factors*, 39(2), 230–253. https://doi.org/10.1518/001872097778543886
 - Park, J. S., et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. *UIST 2023*. https://doi.org/10.1145/3586183.3606763
 - Singh, J., Cobbe, J., & Norval, C. (2019). Decision Provenance: Harnessing Data Flow for Accountable Systems. *IEEE Access*, 7, 6562–6574. https://doi.org/10.1109/ACCESS.2018.2887201
 - Tan, H., et al. (2025). MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents. *Findings of ACL 2025*. https://doi.org/10.18653/v1/2025.findings-acl.989
-- W3C Provenance Working Group. (2013). *PROV-DM: The PROV Data Model*.
 - Walsh, J. P., & Ungson, G. R. (1991). Organizational Memory. *Academy of Management Review*, 16(1), 57–91. https://doi.org/10.5465/amr.1991.4278992
 - Weinreich, R., & Groher, I. (2016). Software architecture knowledge management approaches and their support for knowledge management activities: A systematic literature review. *Information and Software Technology*, 80, 265–286. https://doi.org/10.1016/j.infsof.2016.09.007
 - Weiser, M., & Morrison, J. (1998). Project Memory: Information Management for Project Teams. *Journal of Management Information Systems*, 14(4), 149–166. https://doi.org/10.1080/07421222.1998.11518189
-- Wu, D., et al. (2025). *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*. ICLR 2025.
+- World Wide Web Consortium (W3C). (2013). *PROV-DM: The PROV Data Model*. W3C Recommendation, 30 April 2013. https://www.w3.org/TR/prov-dm/
+- Wu, D., et al. (2025). *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*. International Conference on Learning Representations (ICLR 2025). https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html
 - Zhang, Z., et al. (2025). A Survey on the Memory Mechanism of Large Language Model-based Agents. *ACM Transactions on Information Systems*, 43(6), Article 155. https://doi.org/10.1145/3748302
