@@ -487,24 +487,31 @@ Current ICMJE and Nature Portfolio policies provide concrete boundary cases: wit
 
 ---
 
-## 10. Relationship to Agent-memory and provenance research
+## 10. Relationship to prior Project Memory, Agent Memory, and provenance research
 
-AHICP is not intended to replace Agent-memory research. The two address different but complementary problems.
+AHICP is not intended to replace prior project-memory or Agent-memory research. More accurately, it sits at the intersection of three research traditions:
 
-| Question | Agent memory | AHICP Project memory |
-|---|---|---|
-| Primary object | Agent history and experience | authoritative project state |
-| Main goal | improve later Agent responses/actions | preserve continuity, governance, and auditability |
-| Typical operations | store / retrieve / summarize / reflect | confirm / reject / authorize / promote / version / handoff |
-| Authority | may be an internal system mechanism | intentionally explicit and human-inspectable |
-| Model replacement | may require migrating the memory store | model replaceability is an explicit design goal |
-| Human decisions | may be one kind of conversation content | first-class durable state |
-| Privacy/publication state | not necessarily central | a major project-governance concern |
-| Provenance | may be limited | origin and status should remain explicit |
+| Question | Organizational / project memory | Agent memory | AHICP governed Project Memory |
+|---|---|---|---|
+| Primary object | team/organizational/project knowledge and history | Agent history and experience | authoritative project state that constrains future work |
+| Typical goal | preserve process, context, knowledge, and rationale for learning and continuity | improve later Agent responses/actions | preserve continuity, governance, and auditability across Agent/model substitution |
+| Typical operations | capture / retain / retrieve / share / reuse | store / retrieve / summarize / reflect | confirm / reject / authorize / promote / version / handoff / verify |
+| Decisions and rationale | long-standing concern | may be one kind of memory content | explicit state, provenance, and authorization semantics |
+| Authority | carried by organizational processes or information systems | may be an internal system mechanism | intentionally explicit, human-inspectable, editable, and versionable |
+| Agent/model substitution | not generally centered on LLM substitution | may require migrating the memory store | replaceability is itself a design goal and stress test |
+| Working state | often focuses on project knowledge/history rather than explicit session-resume state | supports the current Agent through retrieval | persistent Current Focus / Task Plan provide a continuity layer |
+| Privacy/publication/authorization | may appear in governance but is not central to every project-memory model | not necessarily central | explicitly governed as part of authoritative project state |
+| Human responsibility | domain- and organization-dependent | not usually central to the memory mechanism | directly connected to Framework Approval / Final Artifact Approval |
 
-AHICP's research opportunity is therefore not to propose another vector database. It is to connect **memory governance, decision state, handoff, authorization, and authorship responsibility** into a long-running project architecture.
+AHICP's research opportunity is therefore not to propose another project database or vector-memory system. It is to study a more specific **governed Project Memory Architecture**: when AI Agents can be replaced frequently, execute tools, and participate in long-form knowledge production, which states must become authoritative project state, which must retain human confirmation/authorization semantics, and how should those states propagate across evidence, decisions, frameworks, artifacts, and publication lifecycles?
 
-RealMem and similar work increasingly brings project-oriented interactions into long-term memory evaluation, making the interface between the two research directions more important. A future research question is how internal Agent memory should interact with external Project memory: which state may be summarized automatically, and which state should enter the authoritative layer only after human confirmation?
+RealMem and related work increasingly brings project-oriented interaction into Agent-memory evaluation, making the interface between Agent memory and Project Memory directly researchable. At least three interface questions follow:
+
+1. Which Agent memories may be promoted automatically into low-risk operational memory, and which require human confirmation before entering authoritative memory?
+2. When internal Agent memory conflicts with repository state, how reliably can authority and stale-state rules be detected and enforced?
+3. Compared with prior project-memory practices, in which tasks do AHICP's Agent-substitution and decision-persistence mechanisms add measurable value, and in which contexts do they merely add maintenance cost?
+
+These questions also guard against simply repackaging “existing project memory plus AI” as a new concept. AHICP's scholarly value must be established through precise mechanisms and comparative evidence rather than through terminology alone.
 
 ---
 
