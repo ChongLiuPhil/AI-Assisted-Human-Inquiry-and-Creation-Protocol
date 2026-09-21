@@ -9,7 +9,9 @@ This directory contains venue-specific derivatives and submission-preparation ma
 
 ## Files
 
-- `MANUSCRIPT_BLINDED.md` — English double-anonymous manuscript derivative.
+- `MANUSCRIPT_BLINDED.md` — traceable blinded baseline: direct identity removed, public protocol name retained.
+- `MANUSCRIPT_BLINDED_MASKED.md` — masked double-anonymous reviewer derivative with protocol name removed.
+- `BLINDING_REVIEW.md` / `.zh-CN.md` — anonymization-risk analysis and reviewer-manuscript recommendation.
 - `SUBMISSION_CHECKLIST.md` / `.zh-CN.md` — venue-specific compliance checklist.
 - `AI_USE_DISCLOSURE.md` / `.zh-CN.md` — disclosure wording and governance notes.
 - `TITLE_PAGE_METADATA_TEMPLATE.md` — author/title-page/submission-system metadata template; no identity is prefilled.
@@ -29,7 +31,9 @@ This directory contains venue-specific derivatives and submission-preparation ma
 - AI-use disclosure: present;
 - Data Availability Statement: present;
 - citation / publication-status audit: completed for current reference set;
-- DOCX build pipeline: present; CI-generated DOCX is not final until visual QA.
+- citation ↔ reference-list bidirectional consistency: CI-enforced / latest-head verification pending;
+- masked manuscript: prepared; `AHICP`, full protocol name, direct GitHub URL, and internal IDs removed;
+- DOCX build pipeline: present for both traceable and masked derivatives; CI-generated DOCX files are not final until visual QA.
 
 ## Important anonymization risk
 
@@ -37,11 +41,11 @@ The distinctive protocol name `AHICP` remains scientifically necessary to identi
 
 This risk is **not resolved by deleting author names alone**.
 
-Before actual submission, the human author must choose one of the following, ideally after checking the live submission interface or seeking editorial clarification:
+A masked reviewer derivative is now prepared. Before actual submission, the human author must still choose one of the following, ideally after checking the live submission interface or seeking editorial clarification:
 
-1. retain the protocol name and accept the residual discoverability risk;
-2. prepare masked supplementary/repository materials if the journal/editor permits;
-3. ask the editorial office how it prefers authors of public/open projects to handle double-anonymous review.
+1. use `MANUSCRIPT_BLINDED_MASKED.md` as the reviewer manuscript (current recommendation);
+2. retain the protocol name only if the editorial office explicitly accepts the residual discoverability risk;
+3. follow another masked supplementary/repository route requested by the editorial office.
 
 Do not fabricate anonymity by misdescribing project provenance.
 
