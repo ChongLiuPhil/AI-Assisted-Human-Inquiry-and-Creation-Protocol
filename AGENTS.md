@@ -197,7 +197,7 @@ If evidence, formal reasoning, or source verification conflicts with an active h
 
 ## 9. Final artifact status
 
-AI may produce extensive derived text after Framework Approval, but it remains `DERIVED-PROVISIONAL` until final human review.
+AI may produce extensive derived text after Framework Approval. The project's Framework Status should explicitly record the artifact state, for example `DERIVED-PROVISIONAL` or `DERIVED-FROM-<APPROVED-FRAMEWORK> — FINAL ARTIFACT APPROVAL PENDING`. It must not be marked `FINAL-APPROVED` before final human review.
 
 Do not represent an artifact as submission-ready or human-approved unless the relevant final approval gate has actually been completed.
 
