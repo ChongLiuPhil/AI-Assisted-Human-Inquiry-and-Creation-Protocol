@@ -64,6 +64,10 @@ Primary current objects:
 - PR #30 merged into `main` under D033 scoped merge authorization, merge commit `b2e450baf5001f4879f740e67e21264aef115d5a`;
 - latest-head EIT Submission CI confirmed successful DOCX build, package-structure validation, and artifact upload;
 - CI artifact: `eit-manuscript-blinded-docx`, approximately 53 KB, 30-day retention;
+- completed artifact-level English / argument-flow review of the traceable and masked reviewer derivatives without changing the core thesis, major inferences, scope, or contribution boundary of `MA-FW-001`;
+- completed page-by-page visual QA of both 20-page DOCX candidates; automatic page numbering, footer placement, table pagination, and anonymous core metadata passed;
+- added PAGE-field, non-splitting-table-row, and anonymous-metadata gates to the reproducible DOCX builder / CI;
+- rechecked the current EIT submission guidelines on 2026-09-21; final live-interface / dynamic-policy recheck remains required immediately before actual submission;
 - PR #26 merged under the D032 bounded auto-merge rule, and `main` was verified to contain `MA-FW-001`, D032, and target-venue state;
 - promoted the article to derived-from-approved-framework status;
 - preserved the separation between proposed evaluation and empirical results.
@@ -74,13 +78,12 @@ Current Framework work and target-venue selection are complete.
 
 Primary target: `Ethics and Information Technology`.
 
-The submission derivative is prepared. Next stage:
-1. complete artifact-level English and argument review;
-3. obtain human/editorial confirmation of the masked reviewer route and address residual deanonymization risk;
-4. visually inspect both CI-generated traceable/masked Word/docx build candidates page by page;
-6. recheck dynamic ICMJE / Nature policy pages immediately before actual submission;
-7. human Final Artifact Approval;
-8. submission / publication / release remain separately authorized.
+Artifact-level English / argument-flow review and page-by-page visual QA of both traceable and masked DOCX candidates are complete. Next stage:
+1. obtain human/editorial confirmation of the masked reviewer route and confirm the anonymization path for reviewer-visible supplementary / repository material;
+2. decide the license;
+3. immediately before submission, recheck the EIT live submission interface and the dynamic ICMJE / Nature Portfolio policy pages;
+4. obtain human Final Artifact Approval;
+5. submission / publication / release remain subject to separate explicit authorization.
 
 ## PRIMARY_BLOCKER
 
@@ -91,10 +94,10 @@ Final Artifact / publication layer still has:
 - target publication venue: `SELECTED — Ethics and Information Technology / AHICP-D032`
 - venue-specific form constraints: `ADOPTED — AHICP-D033`
 - blinded submission derivative: `PREPARED / PR #29 MERGED / CI PASS`
-- citation audit: `COMPLETED — LIVE POLICY RECHECK PENDING`
-- citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS / EIT CI PASS`
-- anonymization risk (`AHICP` discoverability): `MASKED DERIVATIVE PREPARED / HUMAN-EDITORIAL CONFIRMATION PENDING`
-- Word/docx: `TRACEABLE + MASKED BUILD CANDIDATES GENERATED / STRUCTURAL VALIDATION PASS / VISUAL QA PENDING`
+- citation audit: `COMPLETED — 2026-09-21 INTERIM LIVE RECHECK / FINAL PRE-SUBMISSION RECHECK PENDING`
+- citation ↔ reference-list consistency: `VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
+- anonymization risk (`AHICP` discoverability): `MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- Word/docx: `TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
 - Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF

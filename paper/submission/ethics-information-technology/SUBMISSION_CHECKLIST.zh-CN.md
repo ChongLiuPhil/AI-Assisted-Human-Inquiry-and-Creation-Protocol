@@ -16,8 +16,8 @@
 - [x] 投稿派生 reference list 已移除未在正文引用、仅服务内部 evidence infrastructure 的条目。
 - [x] 已建立可重复的 Word/docx CI 构建流程。
 - [x] traceable / masked 两份 Word/docx build candidates 均已生成、完成结构校验并上传 workflow artifacts。
-- [ ] 对 CI 生成的两份 Word/docx build candidates 逐页完成视觉检查。
-- [ ] 在最终 docx 中检查页码与普通字体等格式。
+- [x] 对 traceable / masked 两份 Word/docx build candidates 完成逐页视觉检查（20 页 + 20 页）。
+- [x] DOCX 自动页码、普通字体、footer、表格跨页与匿名 core metadata 已检查；CI 同时验证 PAGE field、non-split table rows 与禁止身份 metadata。
 
 ## Double-anonymous review
 
@@ -53,10 +53,10 @@
 - [x] latest-head EIT CI 已确认 traceable / masked 两稿的 18 组 citation ↔ reference-list 映射全部通过。
 - [x] reference list 的 publication/acceptance status 与核心元数据已核验；见 `CITATION_AUDIT.md`。
 - [x] 主要 DOI / proceedings / standards identifiers 已核验；动态 policy URL 仍需正式投稿前复核。
-- [ ] 完成 artifact-level 英文与论证流程审阅。
-- [ ] claim boundaries 与 `MA-FW-001` 核验。
-- [ ] 没有引入 AHICP 已有效的实证性效果主张。
-- [ ] venue adaptation 没有改变核心 Framework thesis。
+- [x] 完成 artifact-level 英文与论证流程审阅；masked 机械替换语法已修复。
+- [x] claim boundaries 已与 `MA-FW-001` 核验；未改批准 Framework。
+- [x] 未引入实证性效果主张；evaluation 仍明确为 proposed / future work。
+- [x] venue adaptation 未改变核心 Framework thesis、主要推论、scope 或 contribution boundary。
 - [ ] 记录 Final Artifact Approval。
 - [ ] 另行记录 submission authorization。
 

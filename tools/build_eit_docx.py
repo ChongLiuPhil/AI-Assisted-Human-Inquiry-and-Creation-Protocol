@@ -28,6 +28,29 @@ def set_repeat_table_header(row):
     tr_pr.append(tbl_header)
 
 
+def set_no_table_row_split(row):
+    tr_pr = row._tr.get_or_add_trPr()
+    cant_split = OxmlElement("w:cantSplit")
+    cant_split.set(qn("w:val"), "true")
+    tr_pr.append(cant_split)
+
+
+def add_page_number_field(paragraph):
+    run = paragraph.add_run()
+    field_begin = OxmlElement("w:fldChar")
+    field_begin.set(qn("w:fldCharType"), "begin")
+    instruction = OxmlElement("w:instrText")
+    instruction.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
+    instruction.text = " PAGE "
+    field_separate = OxmlElement("w:fldChar")
+    field_separate.set(qn("w:fldCharType"), "separate")
+    cached_value = OxmlElement("w:t")
+    cached_value.text = "1"
+    field_end = OxmlElement("w:fldChar")
+    field_end.set(qn("w:fldCharType"), "end")
+    run._r.extend([field_begin, instruction, field_separate, cached_value, field_end])
+
+
 def add_formatted_text(paragraph, text):
     pattern = re.compile(r"(\*\*[^*]+\*\*|\*[^*]+\*|\`[^\`]+\`)")
     pos = 0
@@ -75,6 +98,14 @@ def build(source: Path, output: Path):
     sec.bottom_margin = Inches(1)
     sec.left_margin = Inches(1)
     sec.right_margin = Inches(1)
+
+    doc.core_properties.author = ""
+    doc.core_properties.last_modified_by = ""
+    doc.core_properties.title = ""
+    doc.core_properties.subject = ""
+    doc.core_properties.keywords = ""
+    doc.core_properties.comments = ""
+    doc.core_properties.category = ""
 
     styles = doc.styles
     styles["Normal"].font.name = "Arial"
@@ -147,6 +178,8 @@ def build(source: Path, output: Path):
                             run.bold = True
                     if r_idx == 0:
                         set_cell_shading(cell)
+            for table_row in table.rows:
+                set_no_table_row_split(table_row)
             if rows:
                 set_repeat_table_header(table.rows[0])
             i = nxt
@@ -227,7 +260,8 @@ def build(source: Path, output: Path):
 
     footer = sec.footer.paragraphs[0]
     footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    footer.add_run("Blinded manuscript — venue-specific submission derivative")
+    footer.add_run("Blinded manuscript - venue-specific submission derivative | Page ")
+    add_page_number_field(footer)
 
     output.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output)

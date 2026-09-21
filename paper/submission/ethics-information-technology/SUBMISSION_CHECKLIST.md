@@ -16,8 +16,8 @@
 - [x] Submission derivative reference list removes uncited internal evidence-only references.
 - [x] Reproducible Word/docx build pipeline added to CI.
 - [x] Traceable and masked Word/docx build candidates generated, structurally validated, and uploaded as workflow artifacts.
-- [ ] CI-generated Word/docx build candidates visually checked page by page.
-- [ ] Page numbering / plain-font Word formatting checked in final docx.
+- [x] Traceable and masked Word/docx build candidates visually checked page by page (20 pages + 20 pages).
+- [x] Automatic page numbering, plain-font formatting, footer placement, table pagination, and anonymous core metadata checked; CI also validates the PAGE field, non-splitting table rows, and prohibited identity metadata.
 
 ## Double-anonymous review
 
@@ -53,10 +53,10 @@
 - [x] Latest-head EIT CI confirms the explicit 18-entry citation ↔ reference-list mapping for both traceable and masked manuscripts.
 - [x] Reference-list entries checked for publication/acceptance status and core metadata; see `CITATION_AUDIT.md`.
 - [x] Major DOI / proceedings / standards identifiers checked; dynamic policy URLs remain subject to pre-submission recheck.
-- [ ] English language and argument flow reviewed at artifact level.
-- [ ] Claim boundaries checked against `MA-FW-001`.
-- [ ] No empirical-effectiveness claim introduced.
-- [ ] No venue adaptation has changed a core Framework thesis.
+- [x] English language and argument flow reviewed at artifact level; mechanical masking grammar defects repaired.
+- [x] Claim boundaries checked against `MA-FW-001`; the approved Framework was not modified.
+- [x] No empirical-effectiveness claim introduced; evaluation remains explicitly proposed / future work.
+- [x] No venue adaptation has changed a core Framework thesis, major inference, scope, or contribution boundary.
 - [ ] Final Artifact Approval recorded.
 - [ ] Submission authorization recorded separately.
 
