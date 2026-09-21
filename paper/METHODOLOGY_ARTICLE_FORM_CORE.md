@@ -19,7 +19,7 @@ Synchronized English translation:
 
 *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*
 
-The English wording is maintained as the translation mirror of the canonical Chinese title. This title approval does not mean that the complete Working Framework has received Framework Approval.
+The English wording is maintained as the translation mirror of the canonical Chinese title. `MA-FW-001` has received overall Framework Approval under AHICP-D031; the title remains the current derived title of that approved Framework.
 
 ## Language
 
@@ -50,7 +50,7 @@ The article should explain:
 - approval and accountability mechanisms;
 - limitations and empirical testing agenda.
 
-Detailed section order remains governed by the unapproved Working Framework.
+Detailed section order is governed by approved `MA-FW-001` and the current aligned Argument Map. A venue-specific submission derivative must not materially alter that structure without returning to Framework review.
 
 ## Typography and layout
 
@@ -64,20 +64,33 @@ Any current Markdown rendering is a `TEMPORARY-DEFAULT`.
 
 ## Citation / bibliography presentation
 
-Citation style: `UNRESOLVED` pending target venue.
+Citation style: `EXTERNAL-CONSTRAINT — ETHICS AND INFORMATION TECHNOLOGY / AHICP-D033`.
 
-The current Markdown author-date presentation and `paper/methodology-references.bib` are working infrastructure, not a final authorial style decision.
+The submission derivative uses author–year citation and final venue verification of the reference list: only published/accepted works actually cited in the text, alphabetical by first-author surname, with full DOI links where available. `paper/methodology-references.bib` remains internal working infrastructure.
 
 ## Target venue constraints
 
-`UNRESOLVED — tracked as CLR-010 in docs/working-memory/task-plan.zh-CN.md`.
+`SELECTED — ETHICS AND INFORMATION TECHNOLOGY / AHICP-D032`.
 
-Possible disciplinary positioning—philosophy of technology, research methodology, scholarly communication, or interdisciplinary AI/research-governance venue—remains a human decision.
+Current disciplinary positioning: **information-technology governance / human responsibility / governed project-memory architecture**, while retaining the methodology / architecture-paper character.
 
 ## External constraints
 
-None adopted yet.
+Under AHICP-D033, the current `Ethics and Information Technology` submission constraints are adopted for the venue-specific derivative:
+
+- double-anonymous peer review;
+- manuscript content approximately 5,000–8,000 words, excluding title / abstract / references from the content word count;
+- abstract 150–250 words;
+- 4–6 keywords;
+- remove author names, affiliations, contact details, and other direct identifying information from the blinded manuscript and blinded associated files;
+- acknowledgements, funding, and author information belong in submission-system fields / title-page metadata rather than the blinded manuscript;
+- substantive LLM use must be disclosed in Methods or a suitable alternative location; this project's generative drafting / restructuring must not be represented as mere copy editing;
+- original research requires a Data Availability Statement; this manuscript currently reports no empirical dataset / completed experiment and must state that accurately;
+- Word/docx is the primary submission format; the repository Markdown submission derivative is upstream of the final docx;
+- displayed headings should not exceed three levels;
+- direct repository URLs, internal Decision IDs, Framework status, and development metadata do not belong in the blinded manuscript;
+- the distinctive `AHICP` name may itself permit search-based deanonymization; this remains a tracked submission risk requiring a masked-material / editorial-clarification decision before actual submission.
 
 ## Status
 
-Artifact type and bilingual language governance are established. Detailed publication form remains unresolved.
+Artifact type, bilingual governance, primary target venue, and current venue-specific external constraints are established. `Final Artifact Approval`, license, final author/title-page metadata, anonymization-risk resolution, and actual submission authorization remain pending.
