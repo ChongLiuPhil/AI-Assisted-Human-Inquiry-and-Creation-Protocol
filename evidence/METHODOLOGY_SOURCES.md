@@ -340,3 +340,96 @@ The following are now **human-confirmed directions for the AHICP article** but r
 - any effect claimed by the proposed evaluation framework.
 
 The article may argue for these claims, compare them with neighboring research, and propose tests. It must not report effectiveness conclusions before experiments are actually performed.
+
+---
+
+## 16. Walsh & Ungson (1991) — Organizational Memory
+
+**Source:** Walsh, J. P., & Ungson, G. R. (1991). “Organizational Memory.” *Academy of Management Review*, 16(1), 57–91. DOI: 10.5465/amr.1991.4278992.
+
+**Verified:** Academy of Management / JSTOR, 2026-09-21.
+
+### Supported claim
+This classic work theorizes organizational memory in terms of information acquisition, retention, and retrieval and explicitly addresses risks of anthropomorphism.
+
+### Permitted AHICP use
+Use as mature theoretical background for analyzing memory at a level beyond an individual's internal memory.
+
+### Qualification
+Do not equate organizational memory directly with AHICP repository-backed Project Memory or use it as evidence for AHICP's specific layering or governance mechanisms.
+
+---
+
+## 17. Weiser & Morrison (1998) — Project Memory: Information Management for Project Teams
+
+**Source:** Weiser, M., & Morrison, J. (1998). “Project Memory: Information Management for Project Teams.” *Journal of Management Information Systems*, 14(4), 149–166. DOI: 10.1080/07421222.1998.11518189.
+
+**Verified:** Taylor & Francis / JMIS, 2026-09-21.
+
+### Supported claim
+The paper directly uses the term “Project Memory,” argues that project data management often fails to preserve processes, contexts, rationales, and artifacts sufficiently for newcomers to reconstruct project history, and proposes a retrievable project-history data model.
+
+### Permitted AHICP use
+This is an important constraint on novelty positioning: AHICP **does not originate** the term or general concept of project memory.
+
+### Distinct AHICP question
+AHICP focuses more specifically on authoritative state in long-running AI-assisted inquiry/creation, Agent/model substitution, human decision status, authorization/publication boundaries, and repository-grounded governance.
+
+---
+
+## 18. Mariano & Awazu (2024) — Project Memory in Large-Scale Projects
+
+**Source:** Mariano, S., & Awazu, Y. (2024). “Managing large-scale projects: Unpacking the role of project memory.” *International Journal of Project Management*, 42(2), 102573. DOI: 10.1016/j.ijproman.2024.102573.
+
+**Verified:** Elsevier / International Journal of Project Management, 2026-09-21.
+
+### Supported claim
+This study explicitly examines project memory in organizational-memory and project-based contexts and uses a large-scale project case to investigate project-memory practices in complex long-running projects.
+
+### Permitted AHICP use
+Use to show that project memory is an established project-management concept; AHICP's contribution must therefore be positioned more specifically as an AI-assisted project-governance architecture rather than as invention of project memory.
+
+---
+
+## 19. Weinreich & Groher (2016) — Software Architecture Knowledge Management
+
+**Source:** Weinreich, R., & Groher, I. (2016). “Software architecture knowledge management approaches and their support for knowledge management activities: A systematic literature review.” *Information and Software Technology*, 80, 265–286. DOI: 10.1016/j.infsof.2016.09.007.
+
+**Verified:** Elsevier / JKU research portal, 2026-09-21.
+
+### Supported claim
+The systematic review treats requirements, architecture decisions, decision rationale, experience, and related knowledge as architecture knowledge and identifies efficient capture and long-term maintenance as persistent challenges.
+
+### Permitted AHICP use
+Use to show that explicit decision/rationale preservation and long-term knowledge maintenance predate AHICP. AHICP differs by integrating these concerns into whole-project state for AI-assisted inquiry, cross-Agent handoff, and human authorization governance.
+
+---
+
+## 20. Singh, Cobbe & Norval (2019) — Decision Provenance
+
+**Source:** Singh, J., Cobbe, J., & Norval, C. (2019). “Decision Provenance: Harnessing Data Flow for Accountable Systems.” *IEEE Access*, 7, 6562–6574. DOI: 10.1109/ACCESS.2018.2887201.
+
+**Verified:** IEEE metadata / Cambridge repository, 2026-09-21.
+
+### Supported claim
+The work proposes decision provenance, using provenance methods to expose inputs, decisions, and downstream effects in decision pipelines to support oversight, audit, compliance, and accountability.
+
+### Permitted AHICP use
+Use as neighboring theoretical background for the claim that preserving only a final decision outcome is insufficient when origin, context, and status matter.
+
+### Qualification
+AHICP Human Decision Persistence must not be presented as the invention of decision provenance. Its candidate contribution is the integration of human confirmation/rejection/authorization states with Agent substitution, Working Memory, and long-running project governance.
+
+---
+
+## 21. Novelty-positioning correction from the second scholarly review
+
+The methodology paper must explicitly preserve these boundaries:
+
+1. **AHICP does not originate organizational memory.**
+2. **AHICP does not originate project memory.**
+3. **AHICP does not originate design rationale / architecture knowledge management / decision provenance.**
+4. **AHICP does not originate Agent long-term memory.**
+5. The paper may instead argue for a **candidate architectural synthesis contribution** that unifies long-running Project Memory with LLM-Agent replaceability, repository-backed authoritative state, Working Memory continuity, human decision persistence, evidence/provenance, authorization/publication boundaries, Framework Approval, and Final Artifact Approval in a human-led AI-assisted project-governance architecture.
+
+Whether that synthesis constitutes sufficient scholarly novelty remains a matter for peer review in the eventual target field. The paper should not self-assert “first” or “unique” without a defensible systematic novelty review.
