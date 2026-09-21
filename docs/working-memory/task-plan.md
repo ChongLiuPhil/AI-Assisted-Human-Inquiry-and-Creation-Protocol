@@ -41,8 +41,9 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. decide target publication venue / disciplinary positioning;
-2. decide license;
+1. decide target publication venue / disciplinary positioning (current AI-researched default: `Ethics and Information Technology`; see `paper/TARGET_VENUE_REVIEW.md`);
+2. confirm or revise the proposed `WM-T027` scoped auto-merge rule: when a dedicated PR contains only implementation of an approved Framework and direct synchronization, has no scope expansion, has green latest-head CI, has no unresolved blocking review, and contains no new substantive unapproved diff after approval, Framework Approval also carries bounded authorization to merge that PR;
+3. decide the license;
 3. perform Final Artifact-level academic editing and citation verification;
 4. verify venue-specific AI / authorship / disclosure rules;
 5. complete Final Artifact Approval;
