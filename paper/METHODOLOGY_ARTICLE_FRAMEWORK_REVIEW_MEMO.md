@@ -1,10 +1,10 @@
 # Methodology Article — Framework Scholarly Review Memo
 
-**Status:** `SCHOLARLY REVIEW COMPLETED — FRAMEWORK APPROVAL CANDIDATE`  
+**Status:** `SCHOLARLY REVIEW COMPLETED — MA-FW-001 APPROVED`  
 **Date:** 2026-09-21  
 **Object:** `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.md`  
 **Authority:** HARC-D023 / HARC-D024 / HARC-D025, AHICP-D030, and the 2026-09-21 prior-art / novelty audit.  
-**Note:** This document records the final scholarly review for the current framework. It supersedes the earlier HARC-era AI review memo as the current review aid. Formal approval is represented by the Decision Log and `MA-FW-001`.
+**Note:** This document records the final scholarly review that produced `MA-FW-001`. Formal approval is now fixed by `AHICP-D031` and `paper/frameworks/MA-FW-001.md`; this memo remains the review record rather than the approval snapshot.
 
 ---
 
@@ -19,7 +19,7 @@ The current thirteen framework theses are sufficiently coherent to form the firs
 5. proposed evaluation remains a research agenda until real experiments exist;
 6. Final Artifact Approval and venue-specific requirements remain separate.
 
-Under these boundaries, the framework is suitable for approval as `MA-FW-001`.
+Under these boundaries, the framework has been approved as `MA-FW-001` under AHICP-D031.
 
 ---
 
