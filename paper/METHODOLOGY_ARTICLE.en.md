@@ -665,6 +665,12 @@ This paper proposes an implementable and testable architecture rather than a com
 - Clark, A., & Chalmers, D. (1998). The Extended Mind. *Analysis*, 58(1), 7–19. https://doi.org/10.1093/analys/58.1.7
 - Hardwig, J. (1985). Epistemic Dependence. *The Journal of Philosophy*, 82(7), 335–349. https://doi.org/10.2307/2026523
 - Hutchins, E. (1995). *Cognition in the Wild*. MIT Press. https://doi.org/10.7551/mitpress/1881.001.0001
+- Lee, J. (1992). Design Rationale Management Research. *The Knowledge Engineering Review*, 7(4), 363–366. https://doi.org/10.1017/S0269888900006470
+- Mariano, S., & Awazu, Y. (2024). Managing large-scale projects: Unpacking the role of project memory. *International Journal of Project Management*, 42(2), 102573. https://doi.org/10.1016/j.ijproman.2024.102573
+- Singh, J., Cobbe, J., & Norval, C. (2019). Decision Provenance: Harnessing Data Flow for Accountable Systems. *IEEE Access*, 7, 6562–6574. https://doi.org/10.1109/ACCESS.2018.2887201
+- Walsh, J. P., & Ungson, G. R. (1991). Organizational Memory. *Academy of Management Review*, 16(1), 57–91. https://doi.org/10.5465/amr.1991.4278992
+- Weinreich, R., & Groher, I. (2016). Software architecture knowledge management approaches and their support for knowledge management activities: A systematic literature review. *Information and Software Technology*, 80, 265–286. https://doi.org/10.1016/j.infsof.2016.09.007
+- Weiser, M., & Morrison, J. (1998). Project Memory: Information Management for Project Teams. *Journal of Management Information Systems*, 14(4), 149–166. https://doi.org/10.1080/07421222.1998.11518189
 - International Committee of Medical Journal Editors (ICMJE). *Defining the Role of Authors and Contributors*.
 - Nature Portfolio. *Editorial Policies*, including current AI policies.
 - *Nature Methods*. (2026). Using AI responsibly in scientific publishing. *Nature Methods*, 23, 271. https://doi.org/10.1038/s41592-026-03020-1
