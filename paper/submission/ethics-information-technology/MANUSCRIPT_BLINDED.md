@@ -667,9 +667,9 @@ No original empirical dataset was generated or analyzed for this conceptual and 
 - Park, J. S., et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. *UIST 2023*. https://doi.org/10.1145/3586183.3606763
 - Singh, J., Cobbe, J., & Norval, C. (2019). Decision Provenance: Harnessing Data Flow for Accountable Systems. *IEEE Access*, 7, 6562–6574. https://doi.org/10.1109/ACCESS.2018.2887201
 - Tan, H., et al. (2025). MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents. *Findings of ACL 2025*. https://doi.org/10.18653/v1/2025.findings-acl.989
-- World Wide Web Consortium (W3C). (2013). *PROV-DM: The PROV Data Model*. W3C Recommendation, 30 April 2013. https://www.w3.org/TR/prov-dm/
 - Walsh, J. P., & Ungson, G. R. (1991). Organizational Memory. *Academy of Management Review*, 16(1), 57–91. https://doi.org/10.5465/amr.1991.4278992
 - Weinreich, R., & Groher, I. (2016). Software architecture knowledge management approaches and their support for knowledge management activities: A systematic literature review. *Information and Software Technology*, 80, 265–286. https://doi.org/10.1016/j.infsof.2016.09.007
 - Weiser, M., & Morrison, J. (1998). Project Memory: Information Management for Project Teams. *Journal of Management Information Systems*, 14(4), 149–166. https://doi.org/10.1080/07421222.1998.11518189
+- World Wide Web Consortium (W3C). (2013). *PROV-DM: The PROV Data Model*. W3C Recommendation, 30 April 2013. https://www.w3.org/TR/prov-dm/
 - Wu, D., et al. (2025). *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*. International Conference on Learning Representations (ICLR 2025). https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html
 - Zhang, Z., et al. (2025). A Survey on the Memory Mechanism of Large Language Model-based Agents. *ACM Transactions on Information Systems*, 43(6), Article 155. https://doi.org/10.1145/3748302
