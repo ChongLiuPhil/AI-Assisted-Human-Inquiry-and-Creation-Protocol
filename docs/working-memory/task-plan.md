@@ -8,7 +8,8 @@
 
 - `WM-T013` — license decision: `WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
-- `WM-T026` — methodology article Final Artifact review / venue preparation: `WAITING-HUMAN / NEXT PHASE`
+- `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
+- `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `PROPOSED / WAITING-HUMAN CONFIRMATION`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
