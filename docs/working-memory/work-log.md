@@ -352,3 +352,102 @@ Chinese canonical and English mirror, root AGENTS, and the research-project temp
 - no textbook change;
 - no downstream adoption bump;
 - this work is propagation and consistency repair of already approved D028/D029 semantics, not a new Human Protocol Decision.
+
+## 2026-09-20 — Methodology article Project Memory Architecture structural upgrade
+
+**Authority:** AHICP-D030
+
+This work cycle keeps the existing methodology article as one unified paper and completes the following structural upgrade:
+
+- promotes Project Memory Architecture to the central article axis;
+- defines Working Memory as a persistent continuity layer;
+- treats Human Decision Persistence as first-class Project memory;
+- treats Agent / Model Substitution as an architectural stress test and proposed evaluation;
+- distinguishes Agent/conversational memory from Project memory;
+- adds memory curation, stale/conflict handling, selective retrieval, and privacy/publication boundaries;
+- connects Framework Approval / Final Artifact Approval to Project memory and human responsibility;
+- adds related work/evidence on Generative Agents, MemGPT, Agent-memory surveys, LongMemEval, MemBench, RealMem, and W3C PROV;
+- rewrites the Chinese canonical article and synchronized English mirror;
+- updates Content Core, Working Argument Map, Framework Status, and Working Memory;
+- retains `DERIVED-PROVISIONAL` / `WORKING-FRAMEWORK` status and does not create `MA-FW-001`;
+- explicitly reports no empirical results for the proposed evaluation framework.
+
+**Result:** structural rewrite completed; proceeding to consistency validation / PR / human review.
+
+## 2026-09-21 — Second scholarly novelty / prior-art audit of the methodology article
+
+**Object:** project-memory-centered methodology article  
+**Authority:** AHICP-D030; this review does not create overall Framework Approval.
+
+The second review focused on whether the paper mistakenly presented prior concepts as AHICP inventions. Newly added and verified lineage includes:
+
+- Walsh & Ungson (1991) — Organizational Memory;
+- Weiser & Morrison (1998) — *Project Memory: Information Management for Project Teams*;
+- Mariano & Awazu (2024) — project memory in large-scale projects;
+- Lee (1992) — design rationale management;
+- Weinreich & Groher (2016) — Software Architecture Knowledge Management;
+- Singh, Cobbe & Norval (2019) — Decision Provenance.
+
+Primary repairs:
+
+- explicitly states that AHICP **does not originate** organizational memory / project memory / design rationale / decision provenance / Agent long-term memory;
+- narrows novelty to a **candidate architectural synthesis**:
+  a governed, model-substitutable Project Memory Architecture;
+- adds an explicit design research question and novelty boundary to the abstract/introduction/related work;
+- upgrades the two-way Agent-memory comparison to a three-way comparison of prior project memory / Agent memory / AHICP governed Project Memory;
+- updates T1, T11, and the related-work boundary in the Working Argument Map;
+- expands the evidence layer and BibTeX and removes a stray Markdown separator from the BibTeX file;
+- strengthens Methodology Article CI against unsupported “first / unique / AHICP originated project memory” claims.
+
+**Status:** scholarly-positioning repair completed; latest CI pending at the time of this log entry.
+
+---
+
+## 2026-09-21 — MA-FW-001 Framework Approval completed
+
+**Authority:** AHICP-D031
+
+This work cycle completed the scholarly review of T1–T13 and created the first Approved Framework using bounded, evidence-constrained wording:
+
+- `paper/frameworks/MA-FW-001.zh-CN.md`
+- `paper/frameworks/MA-FW-001.md`
+
+Key review outcomes:
+
+- T1 / T11 preserve prior-art and novelty boundaries;
+- T9 is explicitly scoped to AHICP normative governance;
+- T10 formally becomes **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**;
+- T12 remains a proposed empirical research agenda;
+- all approved architecture principles remain distinct from empirical effectiveness claims;
+- the article status is now `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`.
+
+`MA-FW-001` is the fixed approval baseline. Later substantive framework changes should create a new snapshot rather than rewrite it.
+
+**Governance boundary:** this Framework Approval is not Final Artifact Approval and does not automatically authorize PR merge, publication, or release.
+
+**Result:** Framework work complete; the next phase is Final Artifact Review / target-venue preparation.
+
+---
+
+## 2026-09-21 — AHICP-D032: bounded Framework auto-merge + primary target venue
+
+The human project founder explicitly approved two governance/publication decisions:
+
+1. Framework Approval also constitutes **bounded auto-merge authorization** for a dedicated PR when strict scope / latest-head CI / blocking-review / base-sync / provider-protection conditions hold;
+2. `Ethics and Information Technology` is selected as the current methodology article primary target venue, with `Science and Engineering Ethics` retained as the secondary candidate.
+
+Protocol propagation completed in this work cycle:
+
+- AHICP-D032 recorded in the Decision Log;
+- bounded auto-merge principle added to Protocol Core P6;
+- Framework Approval protocol gains §3.5;
+- corresponding rule added to the Specification Framework Approval Gate;
+- repository AGENTS contract and research-project template AGENTS synchronized;
+- Working Memory marks WM-T027 complete and WM-T014 venue-selected;
+- Target Venue Review moves from AI recommendation to HUMAN-SELECTED;
+- Framework Status advances to Ethics and Information Technology preparation;
+- Methodology / Protocol CI gains D032 regression guards.
+
+**Governance boundary:** bounded merge authorization is not Final Artifact Approval and does not authorize submission / publication / release / deployment / secret handling.
+
+**PR #26:** D032 explicitly includes the current methodology PR within scoped merge authorization; actual auto-merge still depends on final latest-head condition verification.

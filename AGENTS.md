@@ -179,6 +179,8 @@ Once approved, create a versioned immutable snapshot such as `FW-001.md`.
 
 Material intellectual changes require a new framework version. Framework Approval is a AHICP governance checkpoint; it must not automatically be expanded into a universal cross-disciplinary theory of authorship, and it does not remove Final Artifact Approval.
 
+For a PR **dedicated to implementing that Approved Framework**, Framework Approval may also act as **bounded auto-merge authorization** when the PR contains only the approved Framework plus explicitly authorized direct synchronization/governance changes, latest-head CI is green, no unresolved blocking review remains, no unauthorized scope expansion exists, the branch is synchronized with its base, and the merge does not bypass provider-side required protections. If any condition stops holding, the Agent must stop auto-merge and return to the ordinary authorization flow. This authorization does not include publication/release, deployment, secret handling, or Final Artifact Approval.
+
 AHICP's responsibility principle is that AI may share work, but humans must remain the bearers of responsibility in human–AI collaborative research and inquiry, especially in public dissemination of knowledge.
 
 ## 8. Evidence conflicts
@@ -195,7 +197,7 @@ If evidence, formal reasoning, or source verification conflicts with an active h
 
 ## 9. Final artifact status
 
-AI may produce extensive derived text after Framework Approval, but it remains `DERIVED-PROVISIONAL` until final human review.
+AI may produce extensive derived text after Framework Approval. The project's Framework Status should explicitly record the artifact state, for example `DERIVED-PROVISIONAL` or `DERIVED-FROM-<APPROVED-FRAMEWORK> — FINAL ARTIFACT APPROVAL PENDING`. It must not be marked `FINAL-APPROVED` before final human review.
 
 Do not represent an artifact as submission-ready or human-approved unless the relevant final approval gate has actually been completed.
 
@@ -254,7 +256,7 @@ For the methodology article, read in this order:
 
 Work Log is outside this read chain by default.
 
-The article's Argument Map remains a `WORKING-FRAMEWORK` until explicit human approval. Its draft remains `DERIVED-PROVISIONAL` until applicable approval gates are completed.
+The methodology article's live Framework / Artifact state must be read from `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`. If an Approved Framework snapshot exists, the Agent must read the latest approved snapshot and preserve its immutable-baseline semantics; it must not restore a completed Framework Approval to pending. Artifact state remains governed by the separate Final Artifact Approval Gate.
 
 The methodology article must obey the AHICP principles it describes. Do not treat AI-proposed terminology or article structure as human-approved merely because it appears in the draft. When external research on authorship, AI policy, epistemic responsibility, automation, or cognition changes factual claims in the article, update the evidence layer first and keep normative AHICP proposals distinct from external publication rules.
 

@@ -2,62 +2,86 @@
 
 > 本中文文件是规范性基准；英文 `METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.md` 是同步镜像。
 
-## 当前 Working Framework
+## 当前 Framework
 
-来源：`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+当前工作入口：
 
-状态：`WORKING-FRAMEWORK — REVIEW READY / BLOCKING CLARIFICATIONS CLEARED; HUMAN APPROVAL PENDING`
+`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 
-人类批准：**尚未完成**。
+状态：
 
-当前 map 已与 Article Content Core、HARC-D023 与 HARC-D024 对齐，并继续显式区分：人类原创承诺、AI 组织后的表述、AI 提议内容以及证据约束。
+`CURRENT-FRAMEWORK — ALIGNED WITH APPROVED MA-FW-001`
 
-**题目状态：** 当前中文题目《从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性》已通过 `HARC-D024` 获得人类认可；英文为同步翻译镜像。题目获批不构成整体 Framework Approval。
+人类整体 Framework Approval：**已完成。**
 
-### Readiness review
+授权与批准链：
+- HARC-D023 / D024 / D025：责任、Framework 与 approval 相关基础决定；
+- AHICP-D030：统一论文、project-memory-centered 结构重写与 proposed evaluation 方向；
+- AHICP-D031：完成 scholarly review，并批准 `MA-FW-001`。
 
-结果：`PASS FOR HUMAN FRAMEWORK REVIEW`
-
-说明：此前阻塞 Framework Approval 的 `CLR-001 / CLR-002 / CLR-005` 已经由人类解决并 Promotion。`HARC-D025` 已完成依赖图结构修复，并明确了含 unresolved / AI-PROPOSED 项目的整体批准语义。当前没有 active blocking clarification 或已知结构性表示缺陷阻止对整体 framework 进行人类审阅。
-
-这不是 Framework Approval 本身。
-
-## 最新经人类批准的 framework 快照
-
-**尚无。**
-
-目前还没有方法论文章 framework 通过 AHICP Framework Approval Gate。
-
-## 下一 framework 标识符
+## 最新经人类批准的 Framework 快照
 
 `MA-FW-001`
 
-只有在人类作者明确对当前完整 Working Framework 作出整体 `APPROVE` 决定后，才能创建 `MA-FW-001`。
+中文 canonical：
 
-不得因为：
+`paper/frameworks/MA-FW-001.zh-CN.md`
 
-- 人类解决了 blocking clarifications；
-- 人类接受了局部命题或措辞；
-- framework 已经 `REVIEW READY`；
-- 人类批准了依赖图修复或批准语义；
-- 讨论继续推进；
+英文 synchronized mirror：
 
-而推断整体 framework 已经获得批准。
+`paper/frameworks/MA-FW-001.md`
 
-如果后续人类明确对当前完整 framework 作整体 `APPROVE`，其中仍标记为 `AI-PROPOSED` / `UNRESOLVED` / `NON-BLOCKING` 的项目只以其“未决/提议状态”被纳入 Approved Framework；其尚未确认的实质内容不会因此 Promotion。
+批准日期：2026-09-21
+
+状态：
+
+`APPROVED-FRAMEWORK — MA-FW-001`
+
+`MA-FW-001` 是固定批准 baseline。后续如果核心 thesis、论证结构、scope、approval semantics 或主要 contribution boundary 发生实质修改，应创建新的 snapshot ID，例如 `MA-FW-002`，而不是静默改写 `MA-FW-001`。
+
+## Scholarly review 结论
+
+Framework scholarly review：
+
+`PASS WITH BOUNDED REWORDING`
+
+主要边界：
+
+1. AHICP 不首创 organizational memory / project memory / design rationale / decision provenance / Agent long-term memory；
+2. novelty 只表述为 governed, model-substitutable Project Memory Architecture 的 **candidate architectural synthesis**；
+3. T2 / T3 / T7 / T8 / T13 是设计原则或架构规范，不是已验证效果定律；
+4. T9 只作为 AHICP normative governance；
+5. T10 正式采用 **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**；
+6. T12 仍是 proposed empirical research agenda；
+7. Final Artifact Approval 保持独立。
+
+当前 review memo：
+
+`paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md`
 
 ## 当前派生文章
 
-中文规范来源：`paper/METHODOLOGY_ARTICLE.zh-CN.md`  
-英文同步镜像：`paper/METHODOLOGY_ARTICLE.en.md`
+中文 canonical：
 
-状态：`DERIVED-PROVISIONAL`
+`paper/METHODOLOGY_ARTICLE.zh-CN.md`
 
-HARC-D023 / HARC-D024 已经定向传播到摘要、责任论证和结论：旧的 “AI cognitive labor / responsibility concentration” 中心模型已被修正，并进一步精确为“人类保持为责任主体／责任承担者”，特别适用于公开知识传播。
+英文 synchronized mirror：
 
-但当前正文仍保留较早的 15 部分结构，而最新 Working Framework 是重新组织后的 10 部分结构，因此正文与 framework 仍然只是**部分同步**。
+`paper/METHODOLOGY_ARTICLE.en.md`
 
-在整体 Framework Approval 前，不进行大规模结构性重写。
+状态：
+
+`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+
+当前正文已经：
+- 完成 project-memory-centered 13 节结构；
+- 与 `MA-FW-001` 的 T1–T13 对齐；
+- 纳入 prior project-memory / Agent-memory / decision-provenance 等 related work；
+- 保持 AHICP novelty 的 evidence-constrained 边界；
+- 保持 proposed evaluation 与 empirical result 分离；
+- 保持中英文同步。
+
+Framework Approval **不等于** Final Artifact Approval。当前文章仍需 artifact-level 审阅、target-venue 核验、引用/格式收束与最终公开版本确认。
 
 ## 规范上游来源
 
@@ -65,59 +89,52 @@ HARC-D023 / HARC-D024 已经定向传播到摘要、责任论证和结论：旧�
 - `paper/METHODOLOGY_ARTICLE_FORM_CORE.zh-CN.md`
 - `core/PROTOCOL_CORE.zh-CN.md`
 - `core/DECISION_LOG.zh-CN.md`
+- `paper/frameworks/MA-FW-001.zh-CN.md`
 - `docs/working-memory/current-focus.zh-CN.md`
 - `docs/working-memory/task-plan.zh-CN.md`
-- `paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
 - `evidence/METHODOLOGY_SOURCES.zh-CN.md`
+- `paper/methodology-references.bib`
 
-## 同步状态
+## 仍未完成的研究 / 发布状态
 
-- Founder commitments -> Article Content Core：`SYNC — HARC-D023 + HARC-D024 PROMOTED`
-- Article Content Core -> Working Framework：`SYNC / REVIEW READY — HARC-D025 DEPENDENCY REPAIR APPLIED`
-- Working Framework -> 当前正文：`PARTIALLY SYNC — responsibility model synchronized; structural rewrite deferred pending human Framework Approval`
-- 证据层 -> 政策/文献主张：`RECHECKED 2026-09-17; further venue-specific verification required before submission`
-- Working Memory / Clarification Gate：`CLEARED FOR FRAMEWORK REVIEW — CLR-001 / CLR-002 / CLR-005 RESOLVED/PROMOTED`
-- Framework Approval：`NOT COMPLETED — overall human review pending`
+- `semantic version control`：解释性 / provisional label；
+- `generation–verification asymmetry`：解释性 / heuristic label；
+- extended / distributed cognition 的最终理论定位；
+- specific benchmark implementation / samples / statistical design；
+- 任何 AHICP effectiveness claim；
+- target venue：`SELECTED — Ethics and Information Technology / AHICP-D032`；
+- venue-specific form / double-blind / AI-use / authorship requirements：`IN PROGRESS`；
+- license；
+- Final Artifact Approval。
+
+## 当前同步状态
+
+- Human decision -> Decision Log：`SYNC — AHICP-D032 RECORDED`
+- D030 direction -> Content Core：`SYNC — C17–C22`
+- Scholarly review -> T9 / T10 / contribution boundaries：`SYNC`
+- Approved Framework snapshot：`MA-FW-001 CREATED`
+- Current Argument Map -> MA-FW-001：`ALIGNED`
+- MA-FW-001 -> Chinese article：`DERIVED / STRUCTURALLY SYNCED`
+- Chinese article -> English mirror：`SYNCED`
+- External evidence -> related-work claims：`UPDATED 2026-09-21`
+- Proposed evaluation -> empirical results：`NO RESULTS CLAIMED`
+- Framework Approval：`COMPLETED`
 - Final Artifact Approval：`NOT COMPLETED`
-- 中英正文：`BILINGUAL MIRROR REQUIRED`
 
-## Framework Approval Gate
+## 下一治理门
 
-### 已解决 / Promotion
+下一步不再是 Framework Approval。
 
-- `CLR-001` — 中心责任模型；
-- `CLR-002` — Framework Responsibility Thesis；
-- `CLR-005` — `responsibility concentration` 的地位。
+下一治理门是：
 
-`CLR-002 / CLR-005` 通过 `HARC-D023` 解决并传播；`CLR-001` 经 `HARC-D024` 进一步精确化为“人类是责任主体／责任承担者”。当前题目也通过 `HARC-D024` 获得人类认可。
+`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY PREPARATION`
 
-### 当前 Framework Approval blocker
+在 Final Artifact Approval 之前，文章可以继续做：
+- 语言与逻辑精修；
+- 引用核验；
+- venue formatting；
+- 图表/架构图；
+- limitations / methods clarity；
+- empirical study design。
 
-没有 active blocking clarification。
-
-当前唯一缺少的是：
-
-`WAITING-HUMAN: overall Framework Approval decision`
-
-### 当前 Non-blocking Clarifications
-
-- `CLR-003` — `semantic version control`；
-- `CLR-004` — `generation–verification asymmetry`；
-- `CLR-006` — extended/distributed cognition 的理论地位；
-- `CLR-007` — 经验验证计划；
-- `CLR-008` — 学科定位；
-- `CLR-010` — 目标发布渠道及形式约束（对 Framework Approval 非阻塞）。
-
-`CLR-009` 是 formal release 的 license blocker，不阻塞当前方法论 framework 审阅。
-
-## 当前对 AI Agent 的指令
-
-不要把当前 Working Framework 当成人类已批准框架。
-
-不要创建 `MA-FW-001`，也不要以批准已经发生为前提结构性重写全文。
-
-当前主要人机讨论界面是：
-
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
-
-下一步是人类对该完整 framework 作 `APPROVE / REVISE / REJECT` 决定。任何中文修改都必须同步更新英文镜像。
+但任何对 `MA-FW-001` 核心 thesis 或结构的实质修改，都应先进入新的 Working Framework，并在必要时创建 `MA-FW-002`。

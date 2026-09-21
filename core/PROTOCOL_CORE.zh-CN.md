@@ -56,6 +56,8 @@ AI 维护的 Working Framework 不自动等于人类认可。
 
 对于长篇作品，Approved Framework 是人类核心思想责任的主要结构性锚点。人类作者在批准前必须清楚理解、逐项审核并确认该 framework 中实际呈现的全部实质内容，包括中心主张、推论关系、关键区分、范围条件、章节/小节角色，以及被纳入 framework 的具体措辞。Framework 可以由 AI 辅助整理和表达，但获批版本必须真实体现人类作者理解并认同的思想结构。
 
+当某个专用 PR 只用于落实该 Approved Framework 及其已明确授权的直接同步/治理变更，并且 latest-head CI 全绿、没有 unresolved blocking review、没有未授权 scope expansion、branch 已与目标 base 同步且不绕过 provider-side 必需保护时，Framework Approval 可以同时构成该 PR 的 **bounded auto-merge authorization**。这只是对同一已批准工作进入主分支的 scoped authorization，不授权 publication/release、部署、secret handling 或后来混入的无关实质变更。
+
 ## P7. 已批准框架应投影到最终成果的总览
 
 经人类批准的核心思想结构应忠实投影到最终成果面向读者的总览中。

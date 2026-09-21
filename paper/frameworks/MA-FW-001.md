@@ -1,10 +1,11 @@
-# Methodology Article — Working Argument Map
+# Methodology Article — Approved Framework Snapshot MA-FW-001
 
-**Status:** `CURRENT-FRAMEWORK — ALIGNED WITH APPROVED MA-FW-001`  
+**Status:** `APPROVED-FRAMEWORK — MA-FW-001`  
 **Title:** *From Conversation to Persistent Research State: Human–AI Research Collaboration, Human Responsibility, and Auditable Authorship in the AI Era*  
 **Canonical upstream:** `METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`  
 **Authorization:** `AHICP-D030` + `AHICP-D031`  
-**Note:** This current map is aligned with the approved snapshot `paper/frameworks/MA-FW-001.md`. `MA-FW-001` is the fixed approval baseline; later substantive framework revision should create a new snapshot rather than rewrite the approved one.
+**Approval date:** 2026-09-21  
+**Note:** This file is the first human-approved Framework snapshot for the methodology article. It is an immutable approval baseline; later substantive framework revisions should receive a new snapshot ID. Final Artifact Approval has not occurred.
 
 ---
 
@@ -208,11 +209,12 @@ These are research designs, not reported results.
 
 ---
 
-## 6. Approval and provenance status
+## 6. Approval, provenance, and boundaries
 
 - T1–T10 and T12 are supported by AHICP-D030 and earlier human decisions such as HARC-D023/D024.
 - T11 is literature-constrained; the cited work must not be represented as validation of AHICP.
 - `semantic version control` and `generation–verification asymmetry` may be used as explanatory labels but are not claimed as established field-standard terms.
-- `MA-FW-001` has received overall Framework Approval under `AHICP-D031`.
-- The current Argument Map is aligned with `MA-FW-001` but may continue evolving as the working entrypoint toward a later `MA-FW-002`.
+- `MA-FW-001` has received overall Framework Approval under AHICP-D031.
+- T9 is scoped to AHICP normative governance; T10 uses the narrowed structured human-review gate / responsibility-anchor formulation.
+- T12 remains a proposed empirical research agenda and contains no effectiveness results.
 - Final Artifact Approval has not occurred.

@@ -3,66 +3,94 @@
 > **Chinese canonical: `current-focus.zh-CN.md`; this file is the synchronized English mirror.**
 
 **Status:** `ACTIVE`  
-**Last updated:** 2026-09-20
+**Last updated:** 2026-09-21
 
 ## CURRENT_STAGE
 
-**The AHICP v0.3 semantic migration is complete; the later external-system authorization / human-handoff and scoped-authorization governance have also completed normative consolidation.**
+**The methodology-article Framework scholarly review is complete; `MA-FW-001` has received overall Framework Approval under AHICP-D031. The project is now entering Final Artifact Review / target-venue preparation.**
 
-Migration authority: `AHICP-D026`.  
-Later authorization-governance authority: `AHICP-D027`, `AHICP-D028`, and `AHICP-D029`.
+### Still-active protocol-governance authority
 
-Completed:
-- formal name and fixed subtitle;
-- human-led / AI-assisted / repository-grounded normative direction;
-- Protocol Core, Specification, AGENTS, and live protocol migration;
-- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` control plane;
-- zero-context onboarding migration;
-- research-project specialization template migration;
-- methodology article/evidence current protocol identity migration while preserving research-specific subject matter;
-- semantic parity of key bilingual normative files;
-- final post-migration repair audit;
-- provider-neutral machine-operable-first escalation, authorization / human handoff, and provider actual-state write-back;
-- scoped authorization lifecycle: `proposal != authorization != execution != verification != durable write-back`;
-- initial configuration of reusable authorization policies through AI proposal, human selection, and durable recording of the selected scope / provenance / escalation conditions;
-- independent post-merge consistency review and propagation repair after PR #3.
+- `AHICP-D027` — external systems / tool discovery / authorization / human handoff;
+- `AHICP-D028` — human choice when first configuring reusable authorization policy;
+- `AHICP-D029` — scoped authorization and separation of proposal / authorization / execution / verification / durable write-back;
+- `AHICP-D030` — methodology article project-memory-centered structural direction;
+- `AHICP-D031` — whole-framework approval of `MA-FW-001`;
+- `AHICP-D032` — bounded auto-merge semantics for Framework Approval + selection of `Ethics and Information Technology` as primary target.
 
-The latest protocol repair closes:
-- weakening of the D028 durable authorization record during downstream propagation;
-- omission of `permission grants` from Specification §23.3;
-- Working Memory not reflecting D028/D029 and the PR #3 milestone;
-- Protocol Contract CI checking §23.5.1 only through file-wide markers rather than a section-local invariant.
+D032 does not supersede D027–D031 and does not constitute Final Artifact Approval or publication/release authorization; it provides scoped merge authorization only when strict scope / CI / review / base-sync conditions hold.
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — Methodology article overall Framework Approval
+### WM-OBJ-005 — Final Artifact preparation from MA-FW-001
 
-After protocol maintenance, the repository's principal unresolved work gates remain:
+Approved Framework:
 
-- methodology article Working Framework: `WAITING-HUMAN`
-- license: `WAITING-HUMAN`
-- target publication venue / form constraints: `WAITING-HUMAN`
+`paper/frameworks/MA-FW-001.zh-CN.md`
 
-Current Chinese Working Framework:
+English mirror:
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`paper/frameworks/MA-FW-001.md`
+
+Current article status:
+
+`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+
+Primary current objects:
+
+1. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+2. `paper/METHODOLOGY_ARTICLE.en.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md`
+
+## COMPLETED IN THIS CYCLE
+
+- completed the project-memory-centered 13-section rewrite;
+- completed Agent-memory / prior Project Memory / decision-provenance scholarly positioning;
+- completed prior-art / novelty audit;
+- completed T1–T13 scholarly review;
+- narrowed T9 to AHICP normative governance;
+- renamed T10 to `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`;
+- created bilingual approved snapshot `MA-FW-001`;
+- recorded `AHICP-D031` / `AHICP-D032`;
+- promoted the article to derived-from-approved-framework status;
+- preserved the separation between proposed evaluation and empirical results.
 
 ## IMMEDIATE_NEXT_ACTION
 
-When the human is ready to continue the methodology article, make an overall Working Framework decision:
+Current Framework work and target-venue selection are complete.
 
-- `APPROVE`
-- `REVISE`
-- `REJECT`
+Primary target: `Ethics and Information Technology`.
 
-No Approved Framework snapshot is created before that decision.
+Next stage:
+1. prepare venue-specific submission artifacts;
+2. check structure, length, citations, double-blind requirements, and AI/authorship disclosure;
+3. article-level language / logic / citation review;
+4. architecture/evaluation figures if useful;
+5. human Final Artifact Approval;
+6. submission / publication / release remain separately authorized.
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: methodology article overall Framework Approval`
+Framework layer: **no blocker.**
 
-This does not block the completed AHICP protocol migration or authorization-governance maintenance.
+Final Artifact / publication layer still has:
+- license: `WAITING-HUMAN`
+- target publication venue: `SELECTED — Ethics and Information Technology / AHICP-D032`
+- venue-specific form constraints: `IN PROGRESS`
+- Final Artifact Approval: `WAITING-HUMAN`
 
 ## HANDOFF
 
-A replacement AI Agent should use the AHICP control plane and treat the latest repository `main` revision as the sole project-state source. D027–D029 are current authorization-governance authority; legacy HARC live identifiers must not be reintroduced into current normative files.
+A replacement AI Agent should know:
+
+- `MA-FW-001` is approved; do not restore the stale state that Framework Approval is pending;
+- `MA-FW-001` is a fixed baseline and must not be silently rewritten;
+- the current Argument Map is aligned with `MA-FW-001` and may serve as the working entry toward a future `MA-FW-002`;
+- the article is not Final Artifact Approved;
+- AHICP does not claim to originate project memory;
+- T9 is normative governance and T10 is a structured human-review gate / responsibility anchor;
+- the evaluation framework still has no empirical results;
+- `Ethics and Information Technology` is the current primary target;
+- Framework Approval carries bounded auto-merge authorization for dedicated PRs satisfying D032;
+- the next governance gate is venue-specific Final Artifact Review.

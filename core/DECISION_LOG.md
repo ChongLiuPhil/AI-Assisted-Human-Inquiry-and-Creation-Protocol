@@ -491,3 +491,105 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Specification §23.5, Protocol Core P26, AGENTS, research-project template, Decision Log, Protocol Contract CI.
 
 **Status:** explicitly human-approved; authorized to complete PR #3 normative consolidation and merge after green CI.
+
+---
+
+## 2026-09-20 — AHICP-D030
+
+**Source:** human project founder  
+**Classification:** CONTENT, PROTOCOL, FORM
+
+**Decision:**
+
+1. The existing AHICP methodology article will continue to develop as **one unified paper** rather than being split into separate “protocol” and “memory” papers.
+2. The paper is authorized for substantial structural revision so that the following become core theoretical contributions rather than peripheral implementation details:
+   - **Project Memory Architecture:** the durable memory of a long-running human–AI project should belong to the project rather than depend on a particular model, Agent, chat, or platform memory;
+   - **Working Memory as a continuity layer:** Working Memory is a persistent operational representation of the project's current epistemic/task state and a cross-session continuity layer, not human psychological working memory and not a model's hidden state;
+   - **Agent / Model Substitution:** AI Agents and models should be replaceable while project purpose, evidence, decisions, current state, and next actions remain recoverable from the repository; substitution is an important stress test of the architecture;
+   - **Human Decision Persistence:** human-confirmed, rejected, deferred, or authorized decisions are first-class project memory and must not collapse into unattributed text or become re-opened merely because a new Agent takes over.
+3. The article should present AHICP memory as a **multi-role, layered, governable project-memory architecture**. In addition to the three Long-Term Research Memory layers and parallel Working Memory, it should discuss functional roles such as normative memory, epistemic/evidence memory, decision memory, operational memory, handoff memory, and publication/authorization memory. These are functional roles and need not map one-to-one onto physical files.
+4. The article should explicitly distinguish **agent memory / conversational memory** from **project memory**. Existing agent-memory research largely asks how an Agent stores, retrieves, updates, and uses past information; AHICP asks how a long-running project can maintain authoritative state that is Agent-independent, inspectable, versionable, provenance-aware, and portable.
+5. The paper must discuss:
+   - inspectability / editability / versionability / provenance;
+   - separation of evidence, inference, proposal, and human-confirmed decision;
+   - stale state, conflicting memory, memory curation, selective retrieval, and memory growth;
+   - Working Memory promotion / resolution / write-back;
+   - privacy, unpublished material, and publication authorization as project-state boundaries;
+   - how human responsibility, Framework Approval, and Final Artifact Approval connect to durable project memory.
+6. The human project founder accepts inclusion of the previously discussed evaluation program in the same paper, including handoff/resumption tests, agent/model-substitution tests, decision-persistence tests, semantic-drift/fidelity tests, review-effort studies, and evaluation of memory curation/conflict handling. **These are currently proposed evaluation / research agenda items and must not be represented as completed empirical results.**
+7. The article should engage current work on agent memory, long-term interactive memory, provenance, distributed cognition / extended mind, epistemic dependence, automation reliance, and authorship/accountability norms, without claiming that those literatures have already validated AHICP.
+8. The existing title remains in place. This decision authorizes major structural rewriting of the Working Framework and DERIVED-PROVISIONAL article to implement the direction above. It **does not constitute overall Framework Approval of the rewritten complete framework and does not constitute Final Artifact Approval**.
+9. Chinese remains the canonical scholarly draft and English the synchronized mirror; substantive structural changes in this work cycle must update both languages.
+10. This decision changes the methodology article's content and structural direction only. It does not supersede `AHICP-D027`–`AHICP-D029` external-system, authorization, human-handoff, or scoped-authorization governance; those rules remain active for this project and future Agent operations.
+
+**Affected components:** Article Content Core, Working Argument Map, Framework Status, methodology article, evidence layer, bibliography, Working Memory, Decision Log.
+
+**Status:** explicitly human-confirmed; authorizes the current structural revision and article upgrade.
+
+---
+
+## 2026-09-21 — AHICP-D031
+
+**Source:** human project founder  
+**Classification:** CONTENT, FORM, GOVERNANCE
+
+**Decision:**
+
+1. The human project founder explicitly responded **“agree, complete it”** to the proposal to finish the methodology article Framework scholarly review and promote the content that survives current evidence and boundary constraints into the first Approved Framework snapshot.
+2. Under that authorization and the completed 2026-09-21 scholarly review, the current methodology-article framework receives overall **Framework Approval** with snapshot identifier:
+   - `MA-FW-001`
+   - Chinese canonical: `paper/frameworks/MA-FW-001.zh-CN.md`
+   - English mirror: `paper/frameworks/MA-FW-001.md`
+3. T1–T13 enter `MA-FW-001` in their evidence-constrained / bounded wording:
+   - T1 / T11: AHICP must not be presented as originating project memory, organizational memory, design rationale, decision provenance, or Agent long-term memory;
+   - T2 / T3 / T7 / T8 / T13: approved as design principles or architecture specifications, not validated universal performance laws;
+   - T4: Working Memory is explicitly not psychological working memory, model hidden state, scratchpad, or chain-of-thought;
+   - T5: Human Decision Persistence is approved as a governance mechanism while acknowledging prior decision/rationale/provenance literature;
+   - T6: Agent / Model Substitution is approved as a design goal and proposed stress test, not as an already validated robustness result;
+   - T9: approved only as AHICP normative governance, not as a universal theory of authorship or cognitive responsibility across all domains;
+   - T10: formally adopts **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**, replacing the approval-level use of “Compressed Responsibility Interface”;
+   - T12: approved only as a proposed empirical research agenda, with no empirical results.
+4. Framework Approval means human approval of the current intellectual architecture, argumentative boundaries, and research agenda. It does not mean every sentence of the current long-form article is finally approved or that citation/style requirements of a particular venue have been satisfied.
+5. The article status should move from `DERIVED-PROVISIONAL` to:
+   `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+6. `MA-FW-001` is the fixed approval baseline. Later substantive changes to core theses, argument structure, scope, or approval semantics should create a new framework snapshot rather than silently rewriting `MA-FW-001`.
+7. This decision **does not constitute Final Artifact Approval, select a target venue, or automatically authorize PR merge / publication / release**. Those remain separate governance actions.
+8. AHICP-D027–D030 remain active for external-system, authorization, human-handoff, scoped-authorization, and methodology structural-direction governance. D031 completes only the current methodology article Framework Approval.
+
+**Affected components:** Methodology Article Framework snapshot, Working Argument Map, Framework Status, methodology article status, Working Memory, Methodology Article CI, Decision Log.
+
+**Status:** explicitly human-approved; `MA-FW-001` Framework Approval completed.
+
+---
+
+## 2026-09-21 — AHICP-D032
+
+**Source:** human project founder  
+**Classification:** GOVERNANCE, FORM, PUBLICATION
+
+**Decision:**
+
+1. The human project founder explicitly approves interpreting **Framework Approval** as **bounded auto-merge authorization** for a dedicated PR that satisfies strict scope conditions.
+2. That authorization applies only when all of the following are true:
+   - the PR is dedicated to an approved Framework and its direct synchronization/governance implementation;
+   - the PR contains no unauthorized substantive scope expansion beyond the approved scope;
+   - any substantive change added after Framework Approval has separate explicit human authorization, or the change is only non-substantive follow-up such as validation, state synchronization, citation/format repair;
+   - latest-head required CI / validation is green;
+   - no unresolved blocking review / review thread exists;
+   - the branch is not behind its base, or has been synchronized without unresolved conflict;
+   - the merge does not bypass required provider-side protections, permissions, or explicit human-reserved gates.
+3. When these conditions hold, no duplicate merge approval is required merely to write the same approved work into `main`. Framework Approval itself carries scoped merge authorization for that dedicated PR.
+4. This rule does **not** allow Framework Approval to authorize unrelated features, deployments, external side effects, secret handling, publication/release, or other later unapproved scope added to the same PR.
+5. For current PR #26, this human confirmation also explicitly approves:
+   - the `MA-FW-001` Framework scope;
+   - direct governance synchronization after Framework Approval;
+   - the current target-venue review and recording/state propagation of this decision itself;
+   therefore PR #26 may auto-merge under this rule once its latest-head diff contains no new unapproved substantive scope, CI is green, and no blocking review remains.
+6. The human project founder also approves **Ethics and Information Technology** as the methodology article's current **primary target venue**.
+7. **Science and Engineering Ethics** remains the current secondary candidate. AI & Society and Journal of Documentation are not current primary targets unless policy fit changes or the editorial office provides explicit compatible guidance.
+8. Target-venue selection is not Final Artifact Approval and is not publication/submission authorization. Venue-specific manuscript preparation, AI-use disclosure, citation/style verification, and Final Artifact Approval remain required.
+9. AHICP-D027–D031 remain active. This decision adds merge-authorization semantics and target-venue selection without superseding proposal / authorization / execution / verification / write-back separation.
+
+**Affected components:** merge governance, Working Memory, Target Venue Review, methodology PR #26, Final Artifact preparation.
+
+**Status:** explicitly human-approved.

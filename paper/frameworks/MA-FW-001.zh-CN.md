@@ -1,10 +1,11 @@
-# 方法论文章 — Working Argument Map
+# 方法论文章 — Approved Framework Snapshot MA-FW-001
 
-**状态：** `CURRENT-FRAMEWORK — ALIGNED WITH APPROVED MA-FW-001`  
+**状态：** `APPROVED-FRAMEWORK — MA-FW-001`  
 **题目：** 《从对话到持久研究状态：AI时代的人机研究协作、人类责任与可审计作者性》  
 **规范上游：** `METHODOLOGY_ARTICLE_CONTENT_CORE.zh-CN.md`  
 **授权来源：** `AHICP-D030` + `AHICP-D031`  
-**说明：** 当前 map 与已批准快照 `paper/frameworks/MA-FW-001.zh-CN.md` 对齐。`MA-FW-001` 是固定批准基线；后续实质性 framework 修订应形成新 snapshot，而不是改写已批准快照。
+**批准日期：** 2026-09-21  
+**说明：** 本文件是方法论文章第一个人类批准的 Framework 快照。它是不可回写修改的批准基线；后续实质性 framework 修订应形成新的 snapshot ID。Final Artifact Approval 仍未发生。
 
 ---
 
@@ -230,11 +231,12 @@ Clark & Chalmers、Hutchins 提供外部认知脚手架和分布式认知的理�
 
 ---
 
-## 6. 当前来源与批准状态
+## 6. 来源、批准状态与边界
 
 - T1–T10、T12 的方向由 AHICP-D030 与此前 HARC-D023/D024 等人类决定支持。
 - T11 的文献定位受外部证据约束，不应把相关研究写成对 AHICP 的验证。
 - `semantic version control` 与 `generation–verification asymmetry` 可作为解释性标签使用，但不声称是成熟领域标准术语。
-- `MA-FW-001` 已依据 `AHICP-D031` 完成整体 Framework Approval。
-- 当前 Argument Map 与 `MA-FW-001` 对齐，但可作为后续 `MA-FW-002` 的工作入口继续演化。
+- `MA-FW-001` 已依据 AHICP-D031 完成整体 Framework Approval。
+- T9 仅作为 AHICP normative governance；T10 采用 structured human-review gate / responsibility anchor 的收紧表述。
+- T12 仍是 proposed empirical research agenda，不包含效果性结果。
 - Final Artifact Approval 尚未发生。

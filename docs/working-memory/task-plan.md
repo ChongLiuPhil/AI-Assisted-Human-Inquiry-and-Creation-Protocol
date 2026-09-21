@@ -6,55 +6,63 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T015` — methodology article overall Framework Approval: `WAITING-HUMAN`
 - `WM-T013` — license decision: `WAITING-HUMAN`
-- `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
+- `WM-T014` — target publication venue: `COMPLETED — Ethics and Information Technology / AHICP-D032`
+- `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
+- `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
 
-## 2. COMPLETED MIGRATION TASKS
+## 2. COMPLETED METHODOLOGY ARTICLE TASKS
+
+- `WM-T015` — overall methodology Working Framework review: `COMPLETED — MA-FW-001 APPROVED`
+- `WM-T022` — AHICP-D030 project-memory structural rewrite: `COMPLETED`
+- `WM-T023` — methodology paper validation + PR: `COMPLETED / CI-GATED`
+- `WM-T024` — scholarly novelty / prior-art positioning audit: `COMPLETED / EVIDENCE-CONSTRAINED`
+- `WM-T025` — T1–T13 scholarly review + MA-FW-001 Framework Approval: `COMPLETED / AHICP-D031`
+
+Completed scope:
+- Decision Log: AHICP-D030 / D031 / D032;
+- Content Core: C17–C22;
+- Working Argument Map: aligned with `MA-FW-001`;
+- Approved Framework: `paper/frameworks/MA-FW-001.zh-CN.md` + English mirror;
+- Review Memo: scholarly review completed;
+- Chinese / English article: derived from `MA-FW-001`;
+- Evidence / BibTeX: Agent memory + prior Project Memory + decision provenance;
+- Evaluation: proposed / no-results;
+- bilingual synchronization: completed.
+
+## 3. COMPLETED PROTOCOL / MIGRATION TASKS
 
 - `WM-T016` — AHICP v0.3 repository-wide semantic migration: `COMPLETED`
-- `WM-T017` — AHICP project templates/control-plane migration: `COMPLETED`
-- `WM-T018` — structural validation + semantic bilingual parity + post-migration audit: `COMPLETED / PASS`
-
-Validation summary:
-- manifest path candidates: 33 / missing 0;
-- Chinese Markdown pairs: 62 / missing English mirror 0;
-- Protocol Core: 24 / 24 sections;
-- Specification: 25 / 25 sections;
-- AGENTS: 17 / 17 sections;
-- Working Memory: 11 / 11 sections;
-- Repository Context Interface: 16 / 16 sections;
-- old live HARC control paths / full name / v0.2 identifiers: 0 across key normative files;
-- final post-migration audit: PASS.
-
-## 3. COMPLETED PROTOCOL GOVERNANCE TASKS
-
-- `WM-T019` — AHICP-D027 external systems / tool discovery / authorization / human handoff governance: `COMPLETED`
-- `WM-T020` — AHICP-D028 / D029 scoped authorization, initial authorization-mode human choice, and PR #3 normative consolidation: `COMPLETED`
-- `WM-T021` — PR #3 post-merge review: restore the durable authorization record, §23.3 permission grants, Working Memory synchronization, and section-local contract validation: `COMPLETED / CI-GATED`
-
-These tasks do not change the PPF publishing lifecycle and do not constitute a silent downstream adoption bump.
+- `WM-T017` — project templates/control-plane migration: `COMPLETED`
+- `WM-T018` — structural validation + bilingual parity: `COMPLETED / PASS`
+- `WM-T019` — AHICP-D027 external systems / authorization / handoff: `COMPLETED`
+- `WM-T020` — AHICP-D028 / D029 scoped authorization consolidation: `COMPLETED`
+- `WM-T021` — PR #3 governance consistency repair: `COMPLETED / CI-GATED`
 
 ## 4. NEXT ACTIONS
 
-1. await the human's overall `APPROVE / REVISE / REJECT` decision on the methodology Working Framework;
-2. decide the license before formal release;
-3. decide target venue / external form constraints before final submission/publication.
+1. prepare venue-specific submission artifacts for `Ethics and Information Technology` as the primary target;
+2. decide the license;
+3. perform Final Artifact-level academic editing and citation verification;
+4. verify and implement venue-specific double-blind, AI-use / authorship / disclosure rules;
+5. complete Final Artifact Approval;
+6. execute submission / publication / release only under separate authorization. Framework-scope PR merge follows AHICP-D032.
 
-## 5. MIGRATION / GOVERNANCE INVARIANTS
+## 5. ARTICLE INVARIANTS
 
-Future AHICP v0.3 development must preserve:
-
-- **AI-Assisted Human Inquiry and Creation Protocol**
-- *A protocol for human-led inquiry, research, reasoning, writing, and creation with AI assistance.*
-- humans retain purpose, direction, substantive judgment, approval, and ultimate responsibility;
-- AI remains assistive;
-- `AI proposal != human authorization`;
-- `proposal != authorization != execution != verification != durable write-back`;
-- reusable authorization policies require human selection and durable recording of scope / authorization provenance / escalation conditions;
-- general pre-authorization cannot override human-reserved / non-delegable boundaries;
-- repository state outranks chat memory;
-- historical `HARC-D001`–`HARC-D025` remain historical identifiers;
-- new protocol decisions use the AHICP prefix;
-- AHICP and PPF retain their boundary;
-- Chinese canonical / English synchronized mirror.
+Future work must preserve:
+- one unified methodology article;
+- `MA-FW-001` as the current approved Framework baseline;
+- AHICP does not claim to originate project memory;
+- novelty remains the candidate synthesis of a governed, model-substitutable Project Memory Architecture;
+- Working Memory != psychological working memory / hidden state / chain-of-thought;
+- Human Decision Persistence is a governance mechanism;
+- Agent / Model substitution = design goal + proposed stress test;
+- T9 = AHICP normative governance;
+- T10 = structured human-review gate / responsibility anchor;
+- Agent memory != Project Memory;
+- repository authoritative state outranks chat/model memory for AHICP project governance;
+- proposed evaluation != completed empirical result;
+- Framework Approval != Final Artifact Approval;
+- Chinese canonical / English synchronized mirror;
+- `AHICP-D032 bounded Framework merge authorization != Final Artifact Approval != submission/publication/release authorization`.

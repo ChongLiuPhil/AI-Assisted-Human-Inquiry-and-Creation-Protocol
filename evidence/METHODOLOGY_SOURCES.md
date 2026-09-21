@@ -222,3 +222,214 @@ Before submitting the methodology article:
 - [ ] add page-specific citations where required by venue style;
 - [ ] verify that no AI-generated reference entered the bibliography without source confirmation;
 - [ ] record material policy changes in the Decision Log / evidence layer if they affect the article's argument.
+
+---
+
+## 9. Generative Agents (Park et al., 2023) — Agent memory, reflection, and retrieval
+
+**Source:** Park, J. S., et al. (2023). *Generative Agents: Interactive Simulacra of Human Behavior*. UIST 2023. DOI: 10.1145/3586183.3606763.
+
+**Verified:** ACM / Google Research, 2026-09-20.
+
+### Supported claim
+The work demonstrates an Agent-memory architecture combining an experience record, higher-level reflection, and dynamic retrieval so later behavior can depend on past experience.
+
+### Permitted AHICP use
+Use as a representative example of Agent memory focused on how an Agent remembers and uses its experiences.
+
+### Qualification
+Do not present it as evidence for project-memory governance, human decision persistence, or AHICP.
+
+---
+
+## 10. MemGPT (Packer et al., 2023) — hierarchical memory under finite context
+
+**Source:** Packer, C., et al. (2023). *MemGPT: Towards LLMs as Operating Systems*. arXiv:2310.08560.
+
+**Verified:** arXiv / UC Berkeley Sky Computing Lab, 2026-09-20.
+
+### Supported claim
+MemGPT treats finite context windows as a limitation for extended interaction and proposes OS-inspired virtual-context management across memory tiers.
+
+### Permitted AHICP use
+Use to show that Agent-memory research already studies multi-session memory, storage tiers, and management under limited model context.
+
+### Qualification
+AHICP asks a different project-memory question: even strong Agent-managed memory does not eliminate the need for external authoritative state, decision provenance, and human governance.
+
+---
+
+## 11. Zhang et al. (2025) — survey of LLM-Agent memory
+
+**Source:** Zhang, Z., et al. (2025). *A Survey on the Memory Mechanism of Large Language Model-based Agents*. ACM Transactions on Information Systems, 43(6), Article 155. DOI: 10.1145/3748302.
+
+**Verified:** ACM TOIS, 2026-09-20.
+
+### Supported claim
+The survey systematizes the necessity, design, evaluation, and applications of memory mechanisms in LLM-based Agents, demonstrating that memory is a major Agent-architecture research component.
+
+### Permitted AHICP use
+Use to delimit the neighboring field and motivate explicit engagement with Agent-memory research.
+
+### Qualification
+Its Agent-memory taxonomy must not be treated as identical to AHICP project-memory roles.
+
+---
+
+## 12. LongMemEval (Wu et al., 2025) and MemBench (Tan et al., 2025) — evaluating long-term memory
+
+**Sources:**
+- Wu, D., et al. (2025). *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*. ICLR 2025.
+- Tan, H., et al. (2025). *MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents*. Findings of ACL 2025. DOI: 10.18653/v1/2025.findings-acl.989.
+
+**Verified:** ICLR Proceedings / ACL Anthology, 2026-09-20.
+
+### Supported claim
+LongMemEval evaluates multi-session extraction, reasoning, temporal reasoning, knowledge updates, and abstention; MemBench evaluates Agent memory across memory levels, interaction scenarios, and effectiveness / efficiency / capacity dimensions.
+
+### Permitted AHICP use
+These works show that long-term memory can be decomposed into testable capabilities and provide methodological background for AHICP's proposed evaluation program.
+
+### Qualification
+Do not claim that these benchmarks already measure decision provenance, project governance, Framework Approval, or project continuity under Agent replacement.
+
+---
+
+## 13. RealMem (Bian et al., 2026) — project-oriented long-term interaction
+
+**Source:** Bian, H., et al. (2026). *RealMem: Benchmarking LLMs in Real-World Memory-Driven Interaction*. Findings of ACL 2026. DOI: 10.18653/v1/2026.findings-acl.703.
+
+**Verified:** ACL Anthology, 2026-09-20.
+
+### Supported claim
+RealMem explicitly introduces “long-term project-oriented interactions” as an evaluation setting with evolving goals and project state, and reports substantial challenges for current memory systems in such settings.
+
+### Permitted AHICP use
+Use as current evidence that Agent-memory research is moving toward realistic long-running project scenarios and that AHICP addresses a practically relevant problem.
+
+### Qualification
+RealMem remains an Agent-memory benchmark; it is not equivalent to AHICP's external project-memory governance.
+
+---
+
+## 14. W3C PROV — general provenance-model background
+
+**Source:** W3C Provenance Working Group, PROV Data Model / PROV Model Primer (2013).
+
+**Verified:** W3C, 2026-09-20.
+
+### Supported claim
+PROV provides a general model for describing entities, activities, agents, derivation, and responsibility-related provenance, and relates provenance to understanding origin, trust, compliance, and reproducibility.
+
+### Permitted AHICP use
+Use as standards background for provenance-aware project state.
+
+### Qualification
+AHICP's current file model is not a formal implementation of W3C PROV; AHICP adoption does not automatically provide PROV interoperability.
+
+---
+
+## 15. Evidence boundary added under AHICP-D030
+
+The following are now **human-confirmed directions for the AHICP article** but remain unvalidated empirical claims:
+- project memory should be independent of a particular Agent / model;
+- Working Memory can function as a long-running project continuity layer;
+- human decision persistence should be first-class project memory;
+- Agent/model substitution can be used as an AHICP architectural stress test;
+- the project-memory architecture reduces semantic drift or improves long-term project quality;
+- any effect claimed by the proposed evaluation framework.
+
+The article may argue for these claims, compare them with neighboring research, and propose tests. It must not report effectiveness conclusions before experiments are actually performed.
+
+---
+
+## 16. Walsh & Ungson (1991) — Organizational Memory
+
+**Source:** Walsh, J. P., & Ungson, G. R. (1991). “Organizational Memory.” *Academy of Management Review*, 16(1), 57–91. DOI: 10.5465/amr.1991.4278992.
+
+**Verified:** Academy of Management / JSTOR, 2026-09-21.
+
+### Supported claim
+This classic work theorizes organizational memory in terms of information acquisition, retention, and retrieval and explicitly addresses risks of anthropomorphism.
+
+### Permitted AHICP use
+Use as mature theoretical background for analyzing memory at a level beyond an individual's internal memory.
+
+### Qualification
+Do not equate organizational memory directly with AHICP repository-backed Project Memory or use it as evidence for AHICP's specific layering or governance mechanisms.
+
+---
+
+## 17. Weiser & Morrison (1998) — Project Memory: Information Management for Project Teams
+
+**Source:** Weiser, M., & Morrison, J. (1998). “Project Memory: Information Management for Project Teams.” *Journal of Management Information Systems*, 14(4), 149–166. DOI: 10.1080/07421222.1998.11518189.
+
+**Verified:** Taylor & Francis / JMIS, 2026-09-21.
+
+### Supported claim
+The paper directly uses the term “Project Memory,” argues that project data management often fails to preserve processes, contexts, rationales, and artifacts sufficiently for newcomers to reconstruct project history, and proposes a retrievable project-history data model.
+
+### Permitted AHICP use
+This is an important constraint on novelty positioning: AHICP **does not originate** the term or general concept of project memory.
+
+### Distinct AHICP question
+AHICP focuses more specifically on authoritative state in long-running AI-assisted inquiry/creation, Agent/model substitution, human decision status, authorization/publication boundaries, and repository-grounded governance.
+
+---
+
+## 18. Mariano & Awazu (2024) — Project Memory in Large-Scale Projects
+
+**Source:** Mariano, S., & Awazu, Y. (2024). “Managing large-scale projects: Unpacking the role of project memory.” *International Journal of Project Management*, 42(2), 102573. DOI: 10.1016/j.ijproman.2024.102573.
+
+**Verified:** Elsevier / International Journal of Project Management, 2026-09-21.
+
+### Supported claim
+This study explicitly examines project memory in organizational-memory and project-based contexts and uses a large-scale project case to investigate project-memory practices in complex long-running projects.
+
+### Permitted AHICP use
+Use to show that project memory is an established project-management concept; AHICP's contribution must therefore be positioned more specifically as an AI-assisted project-governance architecture rather than as invention of project memory.
+
+---
+
+## 19. Weinreich & Groher (2016) — Software Architecture Knowledge Management
+
+**Source:** Weinreich, R., & Groher, I. (2016). “Software architecture knowledge management approaches and their support for knowledge management activities: A systematic literature review.” *Information and Software Technology*, 80, 265–286. DOI: 10.1016/j.infsof.2016.09.007.
+
+**Verified:** Elsevier / JKU research portal, 2026-09-21.
+
+### Supported claim
+The systematic review treats requirements, architecture decisions, decision rationale, experience, and related knowledge as architecture knowledge and identifies efficient capture and long-term maintenance as persistent challenges.
+
+### Permitted AHICP use
+Use to show that explicit decision/rationale preservation and long-term knowledge maintenance predate AHICP. AHICP differs by integrating these concerns into whole-project state for AI-assisted inquiry, cross-Agent handoff, and human authorization governance.
+
+---
+
+## 20. Singh, Cobbe & Norval (2019) — Decision Provenance
+
+**Source:** Singh, J., Cobbe, J., & Norval, C. (2019). “Decision Provenance: Harnessing Data Flow for Accountable Systems.” *IEEE Access*, 7, 6562–6574. DOI: 10.1109/ACCESS.2018.2887201.
+
+**Verified:** IEEE metadata / Cambridge repository, 2026-09-21.
+
+### Supported claim
+The work proposes decision provenance, using provenance methods to expose inputs, decisions, and downstream effects in decision pipelines to support oversight, audit, compliance, and accountability.
+
+### Permitted AHICP use
+Use as neighboring theoretical background for the claim that preserving only a final decision outcome is insufficient when origin, context, and status matter.
+
+### Qualification
+AHICP Human Decision Persistence must not be presented as the invention of decision provenance. Its candidate contribution is the integration of human confirmation/rejection/authorization states with Agent substitution, Working Memory, and long-running project governance.
+
+---
+
+## 21. Novelty-positioning correction from the second scholarly review
+
+The methodology paper must explicitly preserve these boundaries:
+
+1. **AHICP does not originate organizational memory.**
+2. **AHICP does not originate project memory.**
+3. **AHICP does not originate design rationale / architecture knowledge management / decision provenance.**
+4. **AHICP does not originate Agent long-term memory.**
+5. The paper may instead argue for a **candidate architectural synthesis contribution** that unifies long-running Project Memory with LLM-Agent replaceability, repository-backed authoritative state, Working Memory continuity, human decision persistence, evidence/provenance, authorization/publication boundaries, Framework Approval, and Final Artifact Approval in a human-led AI-assisted project-governance architecture.
+
+Whether that synthesis constitutes sufficient scholarly novelty remains a matter for peer review in the eventual target field. The paper should not self-assert “first” or “unique” without a defensible systematic novelty review.

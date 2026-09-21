@@ -4,66 +4,94 @@
 > **中文 canonical；英文 `current-focus.md` 为同步 mirror。**
 
 **状态：** `ACTIVE`  
-**最后更新：** 2026-09-20
+**最后更新：** 2026-09-21
 
 ## CURRENT_STAGE
 
-**AHICP v0.3 语义迁移已完成；后续 external-system authorization / human-handoff 与 scoped authorization 治理也已完成规范收束。**
+**方法论文章的 Framework scholarly review 已完成；`MA-FW-001` 已依据 AHICP-D031 获得整体 Framework Approval。当前进入 Final Artifact Review / target-venue preparation 阶段。**
 
-迁移依据：`AHICP-D026`。  
-后续授权治理依据：`AHICP-D027`、`AHICP-D028`、`AHICP-D029`。
+### 仍然有效的协议治理依据
 
-已完成：
-- 正式名称与固定 subtitle；
-- human-led / AI-assisted / repository-grounded 规范方向；
-- Protocol Core、Specification、AGENTS 与 live protocol 文档迁移；
-- `AHICP_MANIFEST.yaml` / `AHICP_CONTEXT_INTERFACE.yaml` 控制面；
-- zero-context onboarding 控制链迁移；
-- research-project specialization template 迁移；
-- 方法论文章/evidence 的当前协议身份迁移，同时保留 research-specific 主题；
-- 关键双语规范 semantic parity；
-- final post-migration repair audit；
-- provider-neutral machine-operable-first escalation、authorization / human handoff 与 provider actual-state write-back；
-- scoped authorization lifecycle：`proposal != authorization != execution != verification != durable write-back`；
-- 首次配置 reusable authorization policy 时由 AI 提出方案、人类选择，选择及其 scope / provenance / escalation conditions 持久记录；
-- PR #3 合并后的独立 consistency review 与传播修复。
+- `AHICP-D027` — external systems / tool discovery / authorization / human handoff；
+- `AHICP-D028` — reusable authorization policy 首次配置的人类选择；
+- `AHICP-D029` — scoped authorization 与 proposal / authorization / execution / verification / durable write-back 分离；
+- `AHICP-D030` — methodology article project-memory-centered structural direction；
+- `AHICP-D031` — `MA-FW-001` whole-framework approval；
+- `AHICP-D032` — Framework Approval 的 bounded auto-merge semantics + `Ethics and Information Technology` primary target selection。
 
-最近的 protocol repair 已关闭以下问题：
-- D028 的 durable authorization record 在下游规范中被弱化；
-- Specification §23.3 漏列 `permission grants`；
-- Working Memory 未记录 D028/D029 与 PR #3 milestone；
-- Protocol Contract CI 对 §23.5.1 只做全文件 marker 检查、未校验 section-local invariant。
+D032 不撤销 D027–D031，也不构成 Final Artifact Approval 或 publication/release authorization；它只在满足严格 scope / CI / review / base-sync 条件时赋予专用 PR scoped merge authorization。
 
 ## CURRENT_OBJECTIVE
 
-### WM-OBJ-003 — 方法论文章整体 Framework Approval
+### WM-OBJ-005 — Final Artifact preparation from MA-FW-001
 
-protocol maintenance 完成后，仓库的主要未决工作门仍为：
+当前批准 Framework：
 
-- 方法论文章 Working Framework：`WAITING-HUMAN`
-- license：`WAITING-HUMAN`
-- target publication venue / form constraints：`WAITING-HUMAN`
+`paper/frameworks/MA-FW-001.zh-CN.md`
 
-当前中文 Working Framework：
+英文 mirror：
 
-`paper/METHODOLOGY_ARTICLE_ARGUMENT_MAP.zh-CN.md`
+`paper/frameworks/MA-FW-001.md`
+
+当前文章状态：
+
+`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+
+当前主要对象：
+
+1. `paper/METHODOLOGY_ARTICLE.zh-CN.md`
+2. `paper/METHODOLOGY_ARTICLE.en.md`
+3. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md`
+4. `paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md`
+
+## COMPLETED IN THIS CYCLE
+
+- 完成 project-memory-centered 13 节重写；
+- 完成 Agent-memory / prior Project Memory / decision-provenance scholarly positioning；
+- 完成 prior-art / novelty audit；
+- 对 T1–T13 逐项完成 scholarly review；
+- T9 收紧为 AHICP normative governance；
+- T10 改为 `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`；
+- 创建 `MA-FW-001` 双语批准快照；
+- 记录 `AHICP-D031` / `AHICP-D032`；
+- 将正文状态提升为 derived from approved framework；
+- 保持 proposed evaluation 与 empirical results 分离。
 
 ## IMMEDIATE_NEXT_ACTION
 
-人类在准备继续方法论文章时，对当前 Working Framework 作：
+当前 Framework 工作与 target-venue selection 已完成。
 
-- `APPROVE`
-- `REVISE`
-- `REJECT`
+Primary target：`Ethics and Information Technology`。
 
-在此之前，不创建 Approved Framework snapshot。
+下一阶段：
+1. 按该刊要求准备 venue-specific submission artifacts；
+2. 检查结构、长度、引用、double-blind、AI/authorship disclosure；
+3. 进行 article-level language / logic / citation review；
+4. 如需要，设计 architecture figure / evaluation figure；
+5. 人类进行 Final Artifact Approval；
+6. submission / publication / release 仍需独立授权。
 
 ## PRIMARY_BLOCKER
 
-`WAITING-HUMAN: methodology article overall Framework Approval`
+Framework 层：**无 blocker。**
 
-这不阻塞已经完成的 AHICP protocol migration 与 authorization-governance maintenance。
+Final Artifact / publication 层仍存在：
+- license：`WAITING-HUMAN`
+- target publication venue：`SELECTED — Ethics and Information Technology / AHICP-D032`
+- venue-specific form constraints：`IN PROGRESS`
+- Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF
 
-新的 AI Agent 应按 AHICP control plane 接管，并以 repository `main` 的最新 revision 为唯一项目状态来源。D027–D029 已是当前授权治理依据；旧 HARC live identifiers 不应重新进入当前规范文件。
+新的 AI Agent 应知道：
+
+- `MA-FW-001` 已批准，不得恢复“Framework 尚未整体批准”的旧状态；
+- `MA-FW-001` 是固定 baseline，不应静默改写；
+- 当前 Argument Map 与 `MA-FW-001` 对齐，可作为未来 `MA-FW-002` 的工作入口；
+- article 不是 Final Artifact Approved；
+- AHICP 不声称首创 project memory；
+- T9 是 normative governance，T10 是 structured human-review gate / responsibility anchor；
+- evaluation framework 仍无实证结果；
+- `Ethics and Information Technology` 是当前 primary target；
+- Framework Approval 对满足 D032 条件的专用 PR 携带 bounded auto-merge authorization；
+- 下一治理门是 venue-specific Final Artifact Review。

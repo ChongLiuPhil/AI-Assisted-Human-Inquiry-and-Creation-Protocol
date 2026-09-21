@@ -340,6 +340,8 @@ Upon explicit approval, the Agent MUST:
 3. update Framework Status;
 4. treat the snapshot as the approved intellectual baseline.
 
+When a dedicated PR implements only the Approved Framework plus explicitly authorized direct synchronization/governance changes, and latest-head CI is green, no unresolved blocking review remains, no unauthorized scope expansion exists, the branch is synchronized with its base, and provider-side required protections are not bypassed, Framework Approval MAY also constitute bounded auto-merge authorization for that PR. This authorization does not extend to publication/release, deployment, secret handling, Final Artifact Approval, or unrelated substantive changes added later.
+
 ---
 
 ## 10. Framework fidelity and responsibility

@@ -353,3 +353,102 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 - 没有触碰 textbook；
 - 没有进行 downstream adoption bump；
 - 本轮是对已经批准的 D028/D029 规范进行传播与一致性修复，不创建新的 Human Protocol Decision。
+
+## 2026-09-20 — 方法论文章 Project Memory Architecture 结构升级
+
+**依据：** AHICP-D030
+
+本工作周期把现有 methodology article 保持为一篇统一论文，并完成以下结构升级：
+
+- 将 Project Memory Architecture 提升为全文主轴；
+- 将 Working Memory 明确定义为 persistent continuity layer；
+- 将 Human Decision Persistence 作为 first-class project memory；
+- 将 Agent / Model Substitution 作为架构压力测试与 proposed evaluation；
+- 明确 Agent memory / conversational memory 与 Project memory 的边界；
+- 加入 memory curation、stale/conflict handling、selective retrieval、privacy/publication boundary；
+- 把 Framework Approval / Final Artifact Approval 与项目记忆、人类责任连接；
+- 补充 Generative Agents、MemGPT、Agent-memory survey、LongMemEval、MemBench、RealMem、W3C PROV 等 related work / evidence；
+- 重写中文 canonical 论文与英文同步镜像；
+- 更新 Content Core、Working Argument Map、Framework Status 与 Working Memory；
+- 保持 `DERIVED-PROVISIONAL` / `WORKING-FRAMEWORK`，没有创建 `MA-FW-001`；
+- 明确 proposed evaluation 没有实证结果。
+
+**结果：** 结构性重写完成；进入 consistency validation / PR / human review。
+
+## 2026-09-21 — 方法论文章第二轮 scholarly novelty / prior-art audit
+
+**对象：** project-memory-centered methodology article  
+**依据：** AHICP-D030；本轮不产生新的整体 Framework Approval。
+
+第二轮审阅重点检查论文是否把既有概念误写成 AHICP 首创。新增并核验的相关前史包括：
+
+- Walsh & Ungson (1991) — Organizational Memory；
+- Weiser & Morrison (1998) — *Project Memory: Information Management for Project Teams*；
+- Mariano & Awazu (2024) — large-scale project memory；
+- Lee (1992) — design rationale management；
+- Weinreich & Groher (2016) — Software Architecture Knowledge Management；
+- Singh, Cobbe & Norval (2019) — Decision Provenance。
+
+主要修正：
+
+- 明确 AHICP **不首创** organizational memory / project memory / design rationale / decision provenance / Agent long-term memory；
+- 把论文 novelty 收紧为 **candidate architectural synthesis**：
+  governed, model-substitutable Project Memory Architecture；
+- 在摘要、引言与 related work 中增加明确 design research question 与 novelty boundary；
+- 将 Agent memory vs AHICP 两栏比较升级为 prior project memory / Agent memory / AHICP governed Project Memory 三方比较；
+- 更新 Working Argument Map 的 T1、T11 与 related-work boundary；
+- 扩展 evidence layer 与 BibTeX，并修复 BibTeX 中残留的 Markdown 分隔符；
+- 强化 Methodology Article CI，防止未来出现无依据的 “first / unique / AHICP 首创 project memory” 表述。
+
+**状态：** scholarly positioning repair completed; latest CI pending at the time of this log entry.
+
+---
+
+## 2026-09-21 — MA-FW-001 Framework Approval 完成
+
+**依据：** AHICP-D031
+
+本工作周期完成方法论文章 T1–T13 的 scholarly review，并按 bounded / evidence-constrained wording 创建首个 Approved Framework：
+
+- `paper/frameworks/MA-FW-001.zh-CN.md`
+- `paper/frameworks/MA-FW-001.md`
+
+关键审阅结果：
+
+- T1 / T11 保持 prior-art / novelty 边界；
+- T9 明确限定为 AHICP normative governance；
+- T10 正式改为 **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**；
+- T12 保持 proposed empirical research agenda；
+- 所有已批准架构原则继续与 empirical effectiveness claim 分离；
+- 当前文章状态更新为 `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`。
+
+`MA-FW-001` 是固定批准 baseline。后续实质 framework 修改应形成新 snapshot，而不是改写该文件。
+
+**治理边界：** 本次 Framework Approval 不等于 Final Artifact Approval，不自动授权 PR merge、publication 或 release。
+
+**结果：** Framework work complete；下一阶段为 Final Artifact Review / target-venue preparation。
+
+---
+
+## 2026-09-21 — AHICP-D032：Framework bounded auto-merge + primary target venue
+
+人类项目发起人明确批准两项治理/发布决定：
+
+1. Framework Approval 在严格 scope / latest-head CI / blocking-review / base-sync / provider-protection 条件下，同时构成专用 PR 的 **bounded auto-merge authorization**；
+2. `Ethics and Information Technology` 被选为当前 methodology article 的 primary target venue，`Science and Engineering Ethics` 保留为 secondary candidate。
+
+本轮已完成的协议传播：
+
+- Decision Log 记录 AHICP-D032；
+- Protocol Core P6 增加 bounded auto-merge 原则；
+- Framework Approval protocol 增加 §3.5；
+- Specification Framework Approval Gate 增加对应规范；
+- repository AGENTS contract 与 research-project template AGENTS 同步；
+- Working Memory 把 WM-T027 标记为完成，并把 WM-T014 标记为 venue selected；
+- Target Venue Review 从 AI recommendation 更新为 HUMAN-SELECTED；
+- Framework Status 更新为 Ethics and Information Technology preparation；
+- Methodology / Protocol CI 增加 D032 防回归检查。
+
+**治理边界：** bounded merge authorization 不等于 Final Artifact Approval，也不授权 submission / publication / release / deployment / secret handling。
+
+**PR #26：** D032 明确将当前 methodology PR 纳入 scoped merge authorization；最终是否自动 merge 仍以 latest-head 条件核验结果为准。
