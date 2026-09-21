@@ -9,6 +9,7 @@
 - `WM-T013` — license decision: `WAITING-HUMAN`
 - `WM-T014` — target publication venue: `COMPLETED — Ethics and Information Technology / AHICP-D032`
 - `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
+- `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI: `IN PROGRESS / AHICP-D033`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
@@ -21,7 +22,7 @@
 - `WM-T028` — PR #26 post-merge verification + durable-state write-back: `COMPLETED`
 
 Completed scope:
-- Decision Log: AHICP-D030 / D031 / D032;
+- Decision Log: AHICP-D030 / D031 / D032 / D033;
 - Content Core: C17–C22;
 - Working Argument Map: aligned with `MA-FW-001`;
 - Approved Framework: `paper/frameworks/MA-FW-001.zh-CN.md` + English mirror;
@@ -42,12 +43,14 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. prepare venue-specific submission artifacts for `Ethics and Information Technology` as the primary target;
-2. decide the license;
-3. perform Final Artifact-level academic editing and citation verification;
-4. verify and implement venue-specific double-blind, AI-use / authorship / disclosure rules;
-5. complete Final Artifact Approval;
-6. execute submission / publication / release only under separate authorization. Framework-scope PR merge follows AHICP-D032.
+1. complete EIT submission-package CI and merge the preparation PR;
+2. verify blinded-manuscript citations / DOI / publication status item by item;
+3. resolve the search-based deanonymization risk created by the `AHICP` name;
+4. decide the license;
+5. complete Final Artifact-level academic editing;
+6. generate and visually inspect the final Word/docx;
+7. complete Final Artifact Approval;
+8. execute submission / publication / release only under separate authorization.
 
 ## 5. ARTICLE INVARIANTS
 
