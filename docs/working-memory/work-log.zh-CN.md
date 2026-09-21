@@ -401,3 +401,29 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 - 强化 Methodology Article CI，防止未来出现无依据的 “first / unique / AHICP 首创 project memory” 表述。
 
 **状态：** scholarly positioning repair completed; latest CI pending at the time of this log entry.
+
+---
+
+## 2026-09-21 — MA-FW-001 Framework Approval 完成
+
+**依据：** AHICP-D031
+
+本工作周期完成方法论文章 T1–T13 的 scholarly review，并按 bounded / evidence-constrained wording 创建首个 Approved Framework：
+
+- `paper/frameworks/MA-FW-001.zh-CN.md`
+- `paper/frameworks/MA-FW-001.md`
+
+关键审阅结果：
+
+- T1 / T11 保持 prior-art / novelty 边界；
+- T9 明确限定为 AHICP normative governance；
+- T10 正式改为 **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**；
+- T12 保持 proposed empirical research agenda；
+- 所有已批准架构原则继续与 empirical effectiveness claim 分离；
+- 当前文章状态更新为 `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`。
+
+`MA-FW-001` 是固定批准 baseline。后续实质 framework 修改应形成新 snapshot，而不是改写该文件。
+
+**治理边界：** 本次 Framework Approval 不等于 Final Artifact Approval，不自动授权 PR merge、publication 或 release。
+
+**结果：** Framework work complete；下一阶段为 Final Artifact Review / target-venue preparation。
