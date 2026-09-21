@@ -7,9 +7,9 @@
 ## 1. ACTIVE TASKS
 
 - `WM-T013` — license decision: `WAITING-HUMAN`
-- `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
+- `WM-T014` — target publication venue: `COMPLETED — Ethics and Information Technology / AHICP-D032`
 - `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
-- `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `PROPOSED / WAITING-HUMAN CONFIRMATION`
+- `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
@@ -20,7 +20,7 @@
 - `WM-T025` — T1–T13 scholarly review + MA-FW-001 Framework Approval: `COMPLETED / AHICP-D031`
 
 Completed scope:
-- Decision Log: AHICP-D030 / D031;
+- Decision Log: AHICP-D030 / D031 / D032;
 - Content Core: C17–C22;
 - Working Argument Map: aligned with `MA-FW-001`;
 - Approved Framework: `paper/frameworks/MA-FW-001.zh-CN.md` + English mirror;
@@ -41,13 +41,12 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. decide target publication venue / disciplinary positioning (current AI-researched default: `Ethics and Information Technology`; see `paper/TARGET_VENUE_REVIEW.md`);
-2. confirm or revise the proposed `WM-T027` scoped auto-merge rule: when a dedicated PR contains only implementation of an approved Framework and direct synchronization, has no scope expansion, has green latest-head CI, has no unresolved blocking review, and contains no new substantive unapproved diff after approval, Framework Approval also carries bounded authorization to merge that PR;
-3. decide the license;
+1. prepare venue-specific submission artifacts for `Ethics and Information Technology` as the primary target;
+2. decide the license;
 3. perform Final Artifact-level academic editing and citation verification;
-4. verify venue-specific AI / authorship / disclosure rules;
+4. verify and implement venue-specific double-blind, AI-use / authorship / disclosure rules;
 5. complete Final Artifact Approval;
-6. execute publication / release / merge only under their separate authorization.
+6. execute submission / publication / release only under separate authorization. Framework-scope PR merge follows AHICP-D032.
 
 ## 5. ARTICLE INVARIANTS
 
@@ -66,4 +65,4 @@ Future work must preserve:
 - proposed evaluation != completed empirical result;
 - Framework Approval != Final Artifact Approval;
 - Chinese canonical / English synchronized mirror;
-- `AHICP-D031 Framework Approval != Final Artifact Approval != merge/publication authorization`.
+- `AHICP-D032 bounded Framework merge authorization != Final Artifact Approval != submission/publication/release authorization`.
