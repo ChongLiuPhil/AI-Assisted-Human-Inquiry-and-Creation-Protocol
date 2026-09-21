@@ -8,7 +8,7 @@
 
 ## CURRENT_STAGE
 
-**方法论文章 Framework 工作已完成并通过 PR #26 合入 `main`；merge commit 为 `af3e7927a5bc1a275fdcd9eb5fa47b2b0902a210`。当前进入面向 `Ethics and Information Technology` 的 Final Artifact Review / venue-specific preparation。**
+**方法论文章 Framework Approval 与面向 `Ethics and Information Technology` 的 Final Artifact Approval 均已完成。当前进入 submission readiness final check；正式 submission 仍需独立明确授权。**
 
 ### 仍然有效的协议治理依据
 
@@ -18,7 +18,8 @@
 - `AHICP-D030` — methodology article project-memory-centered structural direction；
 - `AHICP-D031` — `MA-FW-001` whole-framework approval；
 - `AHICP-D032` — Framework Approval 的 bounded auto-merge semantics + `Ethics and Information Technology` primary target selection；
-- `AHICP-D033` — venue-specific Final Artifact preparation、double-anonymous derivative、AI-use disclosure、Data Availability、submission-package scope。
+- `AHICP-D033` — venue-specific Final Artifact preparation、double-anonymous derivative、AI-use disclosure、Data Availability、submission-package scope；
+- `AHICP-D034` — EIT Final Artifact Approval、masked reviewer route、no-simultaneous-submission 与 author-approval confirmations；submission authorization 仍独立。
 
 D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission/publication/release authorization；它授权 EIT venue-specific 派生准备，并在限定 scope + green CI + no blocking review + base-sync 条件下为本轮 preparation PR 提供 scoped merge authorization。
 
@@ -36,7 +37,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 
 当前文章状态：
 
-`DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+`FINAL-ARTIFACT-APPROVED — AHICP-D034 / SUBMISSION AUTHORIZATION PENDING`
 
 当前主要对象：
 
@@ -54,7 +55,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - T9 收紧为 AHICP normative governance；
 - T10 改为 `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`；
 - 创建 `MA-FW-001` 双语批准快照；
-- 记录 `AHICP-D031` / `AHICP-D032` / `AHICP-D033`；
+- 记录 `AHICP-D031` / `AHICP-D032` / `AHICP-D033` / `AHICP-D034`；
 - 建立 `paper/submission/ethics-information-technology/` 投稿派生包；
 - 生成 blinded manuscript：摘要 185 words、正文约 5,367 words、6 keywords、最大三级标题；
 - 加入 substantive generative-AI disclosure 与 Data Availability Statement；
@@ -75,6 +76,9 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
+- 人类已确认 masked reviewer route；不主动向 reviewers 提供公开 repository，如编辑部要求 reviewer-visible repository / supplementary material，则仅使用 masked / anonymized 路线；
+- 人类已确认稿件未同时在其他期刊审理，且当前 submission 所需作者/合作者批准已取得；
+- Final Artifact Approval 已完成（AHICP-D034；approved artifact baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`）；当前 `main` 后续的 CI-only checkout dependency bump 不改变批准 artifact 内容。
 
 ## IMMEDIATE_NEXT_ACTION
 
@@ -82,12 +86,11 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 
 Primary target：`Ethics and Information Technology`。
 
-当前 submission derivative 的 artifact-level English / argument-flow review 与 traceable / masked DOCX visual QA 已完成。下一阶段：
-1. 人类/编辑部确认 masked reviewer route，并确认 reviewer-visible supplementary / repository material 的匿名化路径；
-2. 人类完成 Final Artifact Approval；
-3. 人类补全 submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID 等真实元数据，并确认 no simultaneous submission 与所需作者批准；
-4. 正式 submission 前再次核验 EIT live submission interface，并对 2026-09-22 已复核的动态 policy 做 at-submission final recheck；
-5. submission / publication / release 仍需独立明确授权；publication route / licence 留到 acceptance 后由人类选择。
+当前 submission derivative 的 artifact-level review、masked reviewer route 与 Final Artifact Approval 均已完成。下一阶段：
+1. 人类补全 submission-time author / affiliation / corresponding-author / funding / competing-interest / contribution / acknowledgement / ORCID 等真实元数据；
+2. 正式 submission 前再次核验 EIT live submission interface，并对 2026-09-22 已复核的动态 policy 做 at-submission final recheck；
+3. 获得独立、明确的 submission authorization 后才可执行正式投稿；
+4. publication route / licence 留到 acceptance 后由人类选择。
 
 ## PRIMARY_BLOCKER
 
@@ -100,9 +103,12 @@ Final Artifact / publication 层仍存在：
 - blinded submission derivative：`PREPARED / PR #29 MERGED / CI PASS`
 - citation audit：`COMPLETED — 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
 - citation ↔ reference-list 一致性：`VERIFIED — 18/18 MAPPINGS + UNMAPPED-YEAR GUARD / EIT CI PASS`
-- anonymization risk (`AHICP` discoverability)：`MASKED DERIVATIVE TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- anonymization risk (`AHICP` discoverability)：`MASKED REVIEWER ROUTE HUMAN-CONFIRMED / PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED / MASKED-ANONYMIZED MATERIALS IF REQUIRED`
 - Word/docx：`TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
-- Final Artifact Approval：`WAITING-HUMAN`
+- Final Artifact Approval：`COMPLETED — AHICP-D034 / APPROVED BASELINE 332ff0197e89c99f1b6bb70aedbb47cf425bdb21`
+- submission-time factual metadata：`WAITING-HUMAN — DO NOT INFER`
+- live submission interface / at-submission policy recheck：`PENDING`
+- submission authorization：`WAITING-HUMAN — SEPARATE EXPLICIT AUTHORIZATION REQUIRED`
 
 ## HANDOFF
 
@@ -111,11 +117,11 @@ Final Artifact / publication 层仍存在：
 - `MA-FW-001` 已批准，不得恢复“Framework 尚未整体批准”的旧状态；
 - `MA-FW-001` 是固定 baseline，不应静默改写；
 - 当前 Argument Map 与 `MA-FW-001` 对齐，可作为未来 `MA-FW-002` 的工作入口；
-- article 不是 Final Artifact Approved；
+- article 已完成 Final Artifact Approval（AHICP-D034）；不得恢复旧的 pending 状态，也不得把该批准扩张为 submission authorization；
 - AHICP 不声称首创 project memory；
 - T9 是 normative governance，T10 是 structured human-review gate / responsibility anchor；
 - evaluation framework 仍无实证结果；
 - `Ethics and Information Technology` 是当前 primary target；
 - Framework Approval 对满足 D032 条件的专用 PR 携带 bounded auto-merge authorization；
 - PR #26 已完成该授权路径的首次实际执行；
-- 下一治理门是 venue-specific Final Artifact Review。
+- 下一治理门是 submission readiness final check + separate submission authorization。
