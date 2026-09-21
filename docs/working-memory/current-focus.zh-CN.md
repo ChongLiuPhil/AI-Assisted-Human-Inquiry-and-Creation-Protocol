@@ -10,6 +10,17 @@
 
 **方法论文章已依据 AHICP-D030 完成 project-memory-centered 结构性升级；当前进入人类审阅与框架确认阶段。**
 
+### 仍然有效的协议治理依据
+
+本轮论文工作不替代既有协议治理。当前仍然有效并必须继续遵守：
+
+- `AHICP-D027` — external systems / tool discovery / authorization / human handoff；
+- `AHICP-D028` — reusable authorization policy 首次配置时由 AI 提出方案、人类选择；
+- `AHICP-D029` — scoped authorization、proposal / authorization / execution / verification / durable write-back 分离；
+- `AHICP-D030` — 本轮 methodology article 的 project-memory-centered 结构升级授权。
+
+因此，论文成为当前工作焦点，不表示 D027–D029 的执行与授权规则失效。
+
 本轮已经完成：
 
 - 记录 `AHICP-D030`：现有 methodology article 保持为一篇统一论文；
