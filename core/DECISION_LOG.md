@@ -559,3 +559,37 @@ Current Focus should remain the shortest and highest-salience component so a rep
 **Affected components:** Methodology Article Framework snapshot, Working Argument Map, Framework Status, methodology article status, Working Memory, Methodology Article CI, Decision Log.
 
 **Status:** explicitly human-approved; `MA-FW-001` Framework Approval completed.
+
+---
+
+## 2026-09-21 — AHICP-D032
+
+**Source:** human project founder  
+**Classification:** GOVERNANCE, FORM, PUBLICATION
+
+**Decision:**
+
+1. The human project founder explicitly approves interpreting **Framework Approval** as **bounded auto-merge authorization** for a dedicated PR that satisfies strict scope conditions.
+2. That authorization applies only when all of the following are true:
+   - the PR is dedicated to an approved Framework and its direct synchronization/governance implementation;
+   - the PR contains no unauthorized substantive scope expansion beyond the approved scope;
+   - any substantive change added after Framework Approval has separate explicit human authorization, or the change is only non-substantive follow-up such as validation, state synchronization, citation/format repair;
+   - latest-head required CI / validation is green;
+   - no unresolved blocking review / review thread exists;
+   - the branch is not behind its base, or has been synchronized without unresolved conflict;
+   - the merge does not bypass required provider-side protections, permissions, or explicit human-reserved gates.
+3. When these conditions hold, no duplicate merge approval is required merely to write the same approved work into `main`. Framework Approval itself carries scoped merge authorization for that dedicated PR.
+4. This rule does **not** allow Framework Approval to authorize unrelated features, deployments, external side effects, secret handling, publication/release, or other later unapproved scope added to the same PR.
+5. For current PR #26, this human confirmation also explicitly approves:
+   - the `MA-FW-001` Framework scope;
+   - direct governance synchronization after Framework Approval;
+   - the current target-venue review and recording/state propagation of this decision itself;
+   therefore PR #26 may auto-merge under this rule once its latest-head diff contains no new unapproved substantive scope, CI is green, and no blocking review remains.
+6. The human project founder also approves **Ethics and Information Technology** as the methodology article's current **primary target venue**.
+7. **Science and Engineering Ethics** remains the current secondary candidate. AI & Society and Journal of Documentation are not current primary targets unless policy fit changes or the editorial office provides explicit compatible guidance.
+8. Target-venue selection is not Final Artifact Approval and is not publication/submission authorization. Venue-specific manuscript preparation, AI-use disclosure, citation/style verification, and Final Artifact Approval remain required.
+9. AHICP-D027–D031 remain active. This decision adds merge-authorization semantics and target-venue selection without superseding proposal / authorization / execution / verification / write-back separation.
+
+**Affected components:** merge governance, Working Memory, Target Venue Review, methodology PR #26, Final Artifact preparation.
+
+**Status:** explicitly human-approved.
