@@ -48,6 +48,11 @@ REQUIRED_EVIDENCE = (
     "MemBench",
     "RealMem",
     "W3C PROV",
+    "Organizational Memory",
+    "Project Memory: Information Management for Project Teams",
+    "Managing large-scale projects: Unpacking the role of project memory",
+    "Software Architecture Knowledge Management",
+    "Decision Provenance",
 )
 
 STALE_MARKERS = (
