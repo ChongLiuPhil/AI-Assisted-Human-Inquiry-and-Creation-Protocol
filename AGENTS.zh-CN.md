@@ -256,7 +256,7 @@ Framework Approval 后，AI 可以生成大量派生文本，但在最终人类�
 
 Work Log 默认不在该读取链中。
 
-在中文 framework 未被人类明确批准之前，文章 Argument Map 仍是 `WORKING-FRAMEWORK`。在相关批准门完成之前，正文仍是 `DERIVED-PROVISIONAL`。
+方法论文章的实时 Framework / Artifact 状态必须以 `paper/METHODOLOGY_ARTICLE_FRAMEWORK_STATUS.zh-CN.md` 为准。如果存在 Approved Framework snapshot，Agent 必须读取最新批准快照并保持其不可变基线语义；不得把已完成的 Framework Approval 恢复为 pending。Artifact 状态仍由独立 Final Artifact Approval Gate 控制。
 
 方法论文章必须遵守它所描述的 AHICP 原则。不能因为 AI 提议的术语或结构已经写进草稿，就把它当成人类批准。涉及作者身份、AI 政策、认识责任、自动化或认知的外部研究发生变化时，应先更新证据层，并区分规范性的 AHICP 提案与外部出版规则。
 
