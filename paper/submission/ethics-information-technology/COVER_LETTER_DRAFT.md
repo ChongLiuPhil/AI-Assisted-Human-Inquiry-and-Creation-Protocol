@@ -1,6 +1,6 @@
 # Cover Letter Draft — Ethics and Information Technology
 
-**Status:** `DRAFT — HUMAN REVIEW AND SUBMISSION AUTHORIZATION REQUIRED`
+**Status:** `DRAFT — CONFIRMED INTEGRITY / ANONYMIZATION ITEMS RECORDED — FACTUAL METADATA + SUBMISSION AUTHORIZATION REQUIRED`
 
 Dear Editors,
 
@@ -12,12 +12,18 @@ We believe the manuscript is relevant to the journal because it treats AI-assist
 
 The manuscript transparently discloses substantive generative-AI assistance during its development. No AI system is listed as an author, and the human author(s) remain responsible for the research direction, conceptual framework, claim boundaries, citations, and final manuscript.
 
-Before submission, the human author must confirm and, where appropriate, insert the following statements:
+Confirmed under AHICP-D034:
 
-- `[CONFIRM: the manuscript is not under consideration elsewhere]`
-- `[CONFIRM: all listed authors approve submission]`
-- `[COMPETING INTERESTS / FUNDING: complete in the journal interface as applicable]`
-- `[ANONYMIZATION: confirm handling of public-project discoverability / AHICP name]`
+- the manuscript is not under consideration elsewhere;
+- all author/co-author approvals required for the current submission have been obtained;
+- the masked reviewer route is selected, and the public repository will not be proactively supplied to reviewers.
+
+Still required before submission:
+
+- `[COMPETING INTERESTS / FUNDING: complete truthfully in the journal interface as applicable]`
+- `[AUTHOR / AFFILIATION / CORRESPONDING-AUTHOR / ORCID METADATA: HUMAN TO COMPLETE]`
+- final live-interface / dynamic-policy check;
+- separate explicit submission authorization.
 
 Thank you for considering the manuscript.
 
