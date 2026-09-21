@@ -191,14 +191,14 @@ https://www.emeraldgrouppublishing.com/journal/jd
 
 ## 8. 当前人类决定项
 
-`WAITING-HUMAN — TARGET VENUE SELECTION`
+`HUMAN-SELECTED — AHICP-D032`
 
-当前建议默认：
+Primary target：
 
 `Ethics and Information Technology`
 
-备选：
+Secondary candidate：
 
 `Science and Engineering Ethics`
 
-选择 venue 后，再进入 venue-specific manuscript transformation；在选择前，不应把 canonical article 过早改成某一刊的专用格式。
+下一步进入 venue-specific manuscript preparation，但 canonical article 仍应保持可回溯到 `MA-FW-001`；期刊专用匿名稿、cover letter、AI-use disclosure 和格式转换应作为派生 submission artifacts 维护，而不是静默改变 canonical scholarly state。
