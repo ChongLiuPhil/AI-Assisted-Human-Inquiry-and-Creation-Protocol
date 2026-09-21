@@ -37,7 +37,8 @@ h2{font-size:clamp(1.65rem,3.5vw,2.25rem);line-height:1.18;color:#17352d;margin:
   <div class="brand">AHICP</div>
   <div class="toplinks">
     <a id="overviewLink" href="#start">了解</a>
-    <a id="systemLink" href="#system">体系</a>
+    <a id="architectureLink" href="#architecture">原理</a>
+    <a id="systemLink" href="#system">四个项目</a>
     <a id="startLink" href="#start-now-zh">开始使用</a>
     <button id="zhBtn" type="button">中文</button>
     <button id="enBtn" type="button">English</button>
@@ -363,7 +364,7 @@ async function loadGuide(lang){
   try{const r=await fetch(file,{cache:"no-cache"});if(!r.ok)throw new Error(r.status);target.innerHTML=renderMd(await r.text());target.classList.remove("guide-loading");loadedGuides[lang]=true}
   catch(e){target.innerHTML='<p>Guide could not be loaded here. <a href="'+file+'">Open the canonical guide</a>.</p>'}
 }
-function setLang(lang){const isZh=lang==="zh";zh.classList.toggle("active",isZh);en.classList.toggle("active",!isZh);zhBtn.classList.toggle("active",isZh);enBtn.classList.toggle("active",!isZh);document.documentElement.lang=isZh?"zh-CN":"en";document.getElementById("overviewLink").href=isZh?"#start":"#start-en";document.getElementById("overviewLink").textContent=isZh?"了解":"Overview";document.getElementById("systemLink").href=isZh?"#system":"#system-en";document.getElementById("systemLink").textContent=isZh?"体系":"System";document.getElementById("startLink").href=isZh?"#start-now-zh":"#start-now-en";document.getElementById("startLink").textContent=isZh?"开始使用":"Start";try{localStorage.setItem("ahicp-lang",lang)}catch(e){}loadGuide(lang)}
+function setLang(lang){const isZh=lang==="zh";zh.classList.toggle("active",isZh);en.classList.toggle("active",!isZh);zhBtn.classList.toggle("active",isZh);enBtn.classList.toggle("active",!isZh);document.documentElement.lang=isZh?"zh-CN":"en";document.getElementById("overviewLink").href=isZh?"#start":"#start-en";document.getElementById("overviewLink").textContent=isZh?"了解":"Overview";document.getElementById("architectureLink").href=isZh?"#architecture":"#architecture-en";document.getElementById("architectureLink").textContent=isZh?"原理":"How it works";document.getElementById("systemLink").href=isZh?"#system":"#system-en";document.getElementById("systemLink").textContent=isZh?"四个项目":"Stack";document.getElementById("startLink").href=isZh?"#start-now-zh":"#start-now-en";document.getElementById("startLink").textContent=isZh?"开始使用":"Start";try{localStorage.setItem("ahicp-lang",lang)}catch(e){}loadGuide(lang)}
 document.querySelectorAll("[data-copy]").forEach(btn=>btn.addEventListener("click",async()=>{const id=btn.dataset.copy;const el=document.getElementById(id);try{await navigator.clipboard.writeText(el.value);document.getElementById(id+"Status").textContent=document.documentElement.lang.startsWith("zh")?"已复制":"Copied"}catch(e){el.select();document.execCommand("copy");document.getElementById(id+"Status").textContent=document.documentElement.lang.startsWith("zh")?"已复制":"Copied"}}));
 let saved=null;try{saved=localStorage.getItem("ahicp-lang")}catch(e){}setLang(saved||((navigator.language||"").toLowerCase().startsWith("zh")?"zh":"en"));
 zhBtn.addEventListener("click",()=>setLang("zh"));enBtn.addEventListener("click",()=>setLang("en"));
