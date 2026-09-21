@@ -527,3 +527,37 @@ Current Focus 应保持最短、显著度最高，使任何工作流被突然中
 **受影响组件：** Article Content Core、Working Argument Map、Framework Status、methodology article、evidence layer、bibliography、Working Memory、Decision Log。
 
 **状态：** 人类明确确认；授权本轮结构重构与论文升级。
+
+---
+
+## 2026-09-21 — AHICP-D031
+
+**来源：** 人类项目发起人  
+**分类：** CONTENT, FORM, GOVERNANCE
+
+**决定：**
+
+1. 人类项目发起人对“完成 methodology article 的 Framework scholarly review，并把经得住当前证据与边界约束的内容进入首个 Approved Framework snapshot”的方案明确表示 **“同意，完成”**。
+2. 依据该授权以及 2026-09-21 完成的 scholarly review，当前方法论文章 framework 通过整体 **Framework Approval**，批准快照标识为：
+   - `MA-FW-001`
+   - 中文 canonical：`paper/frameworks/MA-FW-001.zh-CN.md`
+   - 英文 mirror：`paper/frameworks/MA-FW-001.md`
+3. T1–T13 按 scholarly review 中的 evidence-constrained / bounded wording 进入 `MA-FW-001`。其中：
+   - T1 / T11：不得把 AHICP 写成 project memory、organizational memory、design rationale、decision provenance 或 Agent long-term memory 的首创；
+   - T2 / T3 / T7 / T8 / T13：作为设计原则或架构规范批准，而不是已经验证的普遍效果定律；
+   - T4：Working Memory 明确不是心理学 working memory、模型 hidden state、scratchpad 或 chain-of-thought；
+   - T5：Human Decision Persistence 作为治理机制批准，并承认 decision/rationale/provenance 的既有文献前史；
+   - T6：Agent / Model Substitution 作为设计目标与 proposed stress test 批准，不构成已验证鲁棒性结果；
+   - T9：只作为 AHICP normative governance 批准，不扩张为所有领域的普遍作者身份或认知责任理论；
+   - T10：正式采用 **Framework Approval as a Structured Human-Review Gate and Responsibility Anchor**，不再使用会暗示效率已被证明的 “Compressed Responsibility Interface” 作为批准框架名称；
+   - T12：仅作为 proposed empirical research agenda 批准，没有实证结果。
+4. Framework Approval 表示人类批准当前思想架构、论证边界与研究议程；它不表示当前长篇论文逐句最终批准，也不表示 citation/style 已符合特定 venue。
+5. 当前正文应从 `DERIVED-PROVISIONAL` 更新为：
+   `DERIVED-FROM-MA-FW-001 — FINAL ARTIFACT APPROVAL PENDING`
+6. `MA-FW-001` 是批准时点的固定 baseline。后续如果对核心 thesis、论证结构、scope 或 approval semantics 作实质修改，应形成新的 framework snapshot，而不是静默改写 `MA-FW-001`。
+7. 本决定**不构成 Final Artifact Approval，不选择 target venue，也不自动授权 PR merge / publication / release**。这些仍是独立治理动作。
+8. AHICP-D027–D030 的 external-system、authorization、human-handoff、scoped-authorization 与 methodology structural-direction 决定继续有效；D031 只完成当前 methodology article 的 Framework Approval。
+
+**受影响组件：** Methodology Article Framework snapshot、Working Argument Map、Framework Status、methodology article status、Working Memory、Methodology Article CI、Decision Log。
+
+**状态：** 人类明确批准；`MA-FW-001` Framework Approval 完成。
