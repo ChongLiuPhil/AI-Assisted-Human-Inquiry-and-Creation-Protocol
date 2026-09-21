@@ -152,8 +152,8 @@ That novelty still requires systematic literature review and peer review. The cu
 ### I. Introduction — From “can AI write?” to “how does a project remain continuous?”
 Introduce generation–verification asymmetry as an analytical label and motivate project memory.
 
-### II. Related work and boundary — Agent memory is not Project memory
-Discuss Generative Agents, MemGPT, the agent-memory survey, LongMemEval, MemBench, RealMem, and provenance / distributed cognition.
+### II. Related work and boundary — prior Project Memory, Agent Memory, and Decision Provenance
+Discuss organizational/project memory, design rationale / architecture knowledge management, decision provenance, Generative Agents, MemGPT, the agent-memory survey, LongMemEval, MemBench, RealMem, and provenance / distributed cognition.
 
 ### III. Design requirements for long-running project memory
 Model independence, inspectability, versionability, provenance, decision persistence, resumability, selective retrieval, privacy boundaries, and human authority.
