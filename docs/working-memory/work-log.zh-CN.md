@@ -580,3 +580,40 @@ venue-level reference cleanup：
 **边界：** build candidate 的生成与结构校验不等于逐页视觉 QA，也不等于 Final Artifact Approval。当前仍需处理 citation ↔ reference-list 双向终检、`AHICP` search-based deanonymization risk、Word 视觉 QA、license、Final Artifact Approval 与独立 submission authorization。
 
 **状态：** PR #30 merged; DOCX build candidate verified structurally; visual QA pending.
+
+---
+
+## 2026-09-21 — EIT masked reviewer derivative 与 citation-reference 双向验证
+
+**依据：** AHICP-D033  
+**性质：** venue-specific Final Artifact preparation；不产生新的 Framework 决定。
+
+本轮识别并处理一个 double-anonymous 风险：虽然 baseline blinded manuscript 已移除姓名、affiliation、GitHub URL 与内部 project IDs，但正文仍有大量 `AHICP` / 协议全称。由于该协议已有公开项目，独特名称可能通过普通搜索直接回溯到作者/仓库。
+
+执行：
+
+- 保留 `MANUSCRIPT_BLINDED.md` 作为 traceable blinded baseline；
+- 新增 `MANUSCRIPT_BLINDED_MASKED.md` 作为 reviewer-facing masked derivative；
+- masked derivative 保留同一 title / argument structure / citations / references / AI-use disclosure / Data Availability；
+- 仅把协议专名替换为中性表述，如 `the proposed protocol` / `the protocol` / `the proposed Project Memory Architecture`；
+- masked 稿机器检查：
+  - `AHICP`：0；
+  - 协议全称：0；
+  - direct GitHub URL：0；
+  - internal Decision / Framework / Working-Memory IDs：0；
+- 新增双语 `BLINDING_REVIEW`，明确不能声称完全匿名；仍需人类/编辑部确认 reviewer manuscript 路线；
+- EIT validator 扩展为同时检查 traceable / masked 两稿；
+- 明确建立 18 组 citation ↔ reference-list 映射，要求当前每个 reference entry 都有正文对应引用；
+- masked / unmasked reference section 必须逐字一致；
+- EIT CI 扩展为同时生成 traceable 与 masked 两个 DOCX build candidates，并分别执行 package structural validation / artifact upload。
+
+**治理边界：**
+
+- 不修改 `MA-FW-001`；
+- 不修改 canonical bilingual article；
+- masked derivative 是审稿匿名化派生物，不是对论文对象身份的永久改名；
+- Final Artifact Approval 尚未发生；
+- submission authorization 尚未发生；
+- 视觉 QA 仍独立于 CI structural validation。
+
+**当前状态：** masked mitigation prepared; latest-head CI verification pending.
