@@ -104,10 +104,12 @@ Agent 与模型应可替换而不破坏项目连续性。替换当前 Agent、�
 
 **边界：** 这是 AHICP 的规范性治理原则，并受具体研究诚信、出版与领域规则约束；它不被写成关于所有认知系统、所有领域或一般作者身份的普遍哲学定律。
 
-### T10 — Framework Approval as Compressed Responsibility Interface
-**来源：HUMAN-CONFIRMED — HARC-D023/D024**
+### T10 — Framework Approval as a Structured Human-Review Gate and Responsibility Anchor
+**来源：HUMAN-CONFIRMED — HARC-D023/D024；SCHOLARLY REVIEW REWORDED 2026-09-21**
 
-对于长篇成果，Layer 2 Framework 是人类高强度审查思想架构的主要接口。Framework Approval 与 Final Artifact Approval 分开：前者确认思想架构，后者确认具体公开版本。
+对于长篇成果，Layer 2 Framework 是显式呈现核心主张、推论关系、关键区分、范围条件与结构性承诺的 structured human-review interface。Framework Approval 在 AHICP 内部构成重要 responsibility anchor；Final Artifact Approval 继续作为独立门，确认具体公开版本。
+
+**边界：** 当前没有实证证据证明 Framework Approval 能减少总审阅成本，也不把它当作 Final Artifact Approval 或全文事实核验的替代品。
 
 ### T11 — Prior Project Memory, Agent Memory, and the AHICP Integration Boundary
 **来源：HUMAN-CONFIRMED D030 + LITERATURE-CONSTRAINED**
