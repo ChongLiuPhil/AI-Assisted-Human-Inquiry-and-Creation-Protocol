@@ -42,8 +42,9 @@
 
 ## 4. NEXT ACTIONS
 
-1. 决定 target publication venue / disciplinary positioning；
-2. 决定 license；
+1. 决定 target publication venue / disciplinary positioning（当前 AI-researched default：`Ethics and Information Technology`；见 `paper/TARGET_VENUE_REVIEW.zh-CN.md`）；
+2. 确认或修订 `WM-T027` 的 scoped auto-merge rule：当一个专用 PR 只实现已批准 Framework 及直接同步、无 scope expansion、最新 CI 全绿、无 unresolved blocking review、approval 后无新的实质性未批准 diff 时，Framework Approval 同时携带该 PR 的 bounded merge authorization；
+3. 决定 license；
 3. 进行 Final Artifact-level academic edit 与 citation verification；
 4. 核验 venue-specific AI / authorship / disclosure rules；
 5. 完成 Final Artifact Approval；
