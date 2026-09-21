@@ -8,11 +8,11 @@
 
 - `WM-T013` — publication route / license decision: `DEFERRED-HUMAN — POST-ACCEPTANCE / NOT A PRE-SUBMISSION BLOCKER`
 - `WM-T014` — target publication venue: `COMPLETED — Ethics and Information Technology / AHICP-D032`
-- `WM-T026` — methodology article Final Artifact review / venue preparation: `IN PROGRESS`
+- `WM-T026` — methodology article Final Artifact review / venue preparation: `COMPLETED — AHICP-D034 FINAL ARTIFACT APPROVED`
 - `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI: `COMPLETED / PR #29 MERGED — a789bbd3`
 - `WM-T030` — EIT citation / publication-status audit: `COMPLETED / 2026-09-22 LIVE POLICY RECHECK PASS / FINAL PRE-SUBMISSION INTERFACE RECHECK PENDING`
 - `WM-T031` — EIT DOCX build + visual QA: `COMPLETED / TRACEABLE + MASKED 20-PAGE QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
-- `WM-T033` — EIT masked reviewer derivative + blinding review: `IN PROGRESS / TECHNICAL + LANGUAGE QA PASS / HUMAN-EDITORIAL ROUTE CONFIRMATION PENDING`
+- `WM-T033` — EIT masked reviewer derivative + blinding review: `COMPLETED / HUMAN-CONFIRMED MASKED REVIEWER ROUTE / PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED`
 - `WM-T034` — citation ↔ reference-list consistency validator: `COMPLETED / 18-of-18 + UNMAPPED-YEAR GUARD / EIT CI PASS`
 - `WM-T032` — PR #30 post-merge verification + state write-back: `COMPLETED`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
@@ -27,7 +27,7 @@
 - `WM-T028` — PR #26 post-merge verification + durable-state write-back: `COMPLETED`
 
 Completed scope:
-- Decision Log: AHICP-D030 / D031 / D032 / D033;
+- Decision Log: AHICP-D030 / D031 / D032 / D033 / D034;
 - Content Core: C17–C22;
 - Working Argument Map: aligned with `MA-FW-001`;
 - Approved Framework: `paper/frameworks/MA-FW-001.zh-CN.md` + English mirror;
@@ -48,11 +48,10 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. obtain human/editorial confirmation of the masked reviewer route and confirm the anonymization path for reviewer-visible supplementary / repository material;
-2. obtain human Final Artifact Approval;
-3. have the human author complete truthful submission-time author / funding / competing-interest / contribution / acknowledgement / ORCID metadata and confirm no simultaneous submission plus all required author approvals;
-4. immediately before submission, recheck the EIT live submission interface; dynamic EIT / SNAPP / ICMJE / Nature policy pages were rechecked on 2026-09-22 and still require a final at-submission recheck;
-5. execute submission / publication / release only under separate explicit authorization; if the article is accepted, the human then chooses subscription or open access and, for OA, the applicable licence.
+1. have the human complete truthful submission-time author / affiliation / corresponding-author / funding / competing-interest / contribution / acknowledgement / ORCID metadata;
+2. immediately before submission, recheck the EIT live submission interface; dynamic EIT / SNAPP / ICMJE / Nature policy pages were rechecked on 2026-09-22 and still require a final at-submission recheck;
+3. execute formal submission only after separate explicit submission authorization;
+4. keep later publication / release under separate authorization; if the article is accepted, the human then chooses subscription or open access and, for OA, the applicable licence.
 
 ## 5. ARTICLE INVARIANTS
 
