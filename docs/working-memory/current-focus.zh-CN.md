@@ -17,9 +17,10 @@
 - `AHICP-D029` — scoped authorization 与 proposal / authorization / execution / verification / durable write-back 分离；
 - `AHICP-D030` — methodology article project-memory-centered structural direction；
 - `AHICP-D031` — `MA-FW-001` whole-framework approval；
-- `AHICP-D032` — Framework Approval 的 bounded auto-merge semantics + `Ethics and Information Technology` primary target selection。
+- `AHICP-D032` — Framework Approval 的 bounded auto-merge semantics + `Ethics and Information Technology` primary target selection；
+- `AHICP-D033` — venue-specific Final Artifact preparation、double-anonymous derivative、AI-use disclosure、Data Availability、submission-package scope。
 
-D032 不撤销 D027–D031，也不构成 Final Artifact Approval 或 publication/release authorization；它只在满足严格 scope / CI / review / base-sync 条件时赋予专用 PR scoped merge authorization。
+D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission/publication/release authorization；它授权 EIT venue-specific 派生准备，并在限定 scope + green CI + no blocking review + base-sync 条件下为本轮 preparation PR 提供 scoped merge authorization。
 
 ## CURRENT_OBJECTIVE
 
@@ -53,7 +54,11 @@ D032 不撤销 D027–D031，也不构成 Final Artifact Approval 或 publicatio
 - T9 收紧为 AHICP normative governance；
 - T10 改为 `Framework Approval as a Structured Human-Review Gate and Responsibility Anchor`；
 - 创建 `MA-FW-001` 双语批准快照；
-- 记录 `AHICP-D031` / `AHICP-D032`；
+- 记录 `AHICP-D031` / `AHICP-D032` / `AHICP-D033`；
+- 建立 `paper/submission/ethics-information-technology/` 投稿派生包；
+- 生成 blinded manuscript：摘要 185 words、正文约 5,367 words、6 keywords、最大三级标题；
+- 加入 substantive generative-AI disclosure 与 Data Availability Statement；
+- 建立 EIT submission validator / CI；
 - PR #26 按 D032 bounded auto-merge 规则完成 merge，并验证 `main` 已包含 `MA-FW-001`、D032 与 target-venue state；
 - 将正文状态提升为 derived from approved framework；
 - 保持 proposed evaluation 与 empirical results 分离。
@@ -64,13 +69,14 @@ D032 不撤销 D027–D031，也不构成 Final Artifact Approval 或 publicatio
 
 Primary target：`Ethics and Information Technology`。
 
-下一阶段：
-1. 按该刊要求准备 venue-specific submission artifacts；
-2. 检查结构、长度、引用、double-blind、AI/authorship disclosure；
-3. 进行 article-level language / logic / citation review；
-4. 如需要，设计 architecture figure / evaluation figure；
-5. 人类进行 Final Artifact Approval；
-6. submission / publication / release 仍需独立授权。
+当前 submission derivative 已准备，下一阶段：
+1. 完成 latest-head EIT Submission CI 与 repository CI；
+2. 逐条 citation / DOI / publication-status 核验；
+3. 完成 artifact-level 英文与论证终审；
+4. 处理 `AHICP` 名称可能导致 search-based deanonymization 的开放风险；
+5. 生成并视觉检查最终 Word/docx；
+6. 人类完成 Final Artifact Approval；
+7. submission / publication / release 仍需独立授权。
 
 ## PRIMARY_BLOCKER
 
@@ -79,7 +85,10 @@ Framework 层：**无 blocker。**
 Final Artifact / publication 层仍存在：
 - license：`WAITING-HUMAN`
 - target publication venue：`SELECTED — Ethics and Information Technology / AHICP-D032`
-- venue-specific form constraints：`IN PROGRESS`
+- venue-specific form constraints：`ADOPTED — AHICP-D033`
+- blinded submission derivative：`PREPARED / CI PENDING`
+- anonymization risk (`AHICP` discoverability)：`OPEN`
+- final Word/docx：`PENDING`
 - Final Artifact Approval：`WAITING-HUMAN`
 
 ## HANDOFF

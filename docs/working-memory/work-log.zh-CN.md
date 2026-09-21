@@ -477,3 +477,46 @@ PPF 方面已另行建立第一套 Quarto + GitHub Actions + Cloudflare Workers 
 - post-merge verification：`main` 已确认包含 AHICP-D032、`MA-FW-001` 与 `Ethics and Information Technology` target-venue state。
 
 **结论：** D032 bounded auto-merge authorization 已完成首次实际执行；当前 methodology Framework 工作已进入 main。
+
+---
+
+## 2026-09-21 — Ethics and Information Technology submission derivative preparation
+
+**依据：** AHICP-D033
+
+本工作周期完成第一版 venue-specific submission package：
+
+- `paper/submission/ethics-information-technology/MANUSCRIPT_BLINDED.md`
+- 双语 submission checklist；
+- 双语 AI / LLM use disclosure；
+- title / submission metadata template；
+- cover-letter draft；
+- dedicated EIT submission validator / CI。
+
+当前 blinded manuscript 机器指标：
+
+- abstract：185 words；
+- content：约 5,367 words；
+- keywords：6；
+- displayed heading levels：最多 3；
+- internal Decision / Framework / Working-Memory IDs：未发现；
+- direct GitHub URL：未发现；
+- substantive AI-use disclosure：已加入；
+- Data Availability Statement：已加入；
+- empirical effectiveness result：未声称。
+
+venue-level reference cleanup：
+
+- canonical evidence infrastructure 保持不变；
+- submission derivative 移除未在正文引用的 CRediT / UNESCO / Nature Methods 条目；
+- 因 MemGPT 当前仍是 arXiv/CoRR preprint，而 EIT guideline 要求 reference list 只包含正文引用且 published / accepted works，blinded derivative 中移除 MemGPT 例示与 reference；核心 related-work 论证继续由 Generative Agents、Agent-memory survey、LongMemEval、MemBench、RealMem 等支撑。
+
+开放 blocker：
+
+- `AHICP` 独特名称可能通过公开项目产生 search-based deanonymization；
+- final Word/docx 尚未生成；
+- citation / DOI / publication-status 逐项终审尚未完成；
+- Final Artifact Approval 尚未完成；
+- submission authorization 尚未发生。
+
+**状态：** submission derivative prepared; CI / PR validation next.

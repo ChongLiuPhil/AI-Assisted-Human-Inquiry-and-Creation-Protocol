@@ -103,13 +103,16 @@ Framework Approval **不等于** Final Artifact Approval。当前文章仍需 ar
 - specific benchmark implementation / samples / statistical design；
 - 任何 AHICP effectiveness claim；
 - target venue：`SELECTED — Ethics and Information Technology / AHICP-D032`；
-- venue-specific form / double-blind / AI-use / authorship requirements：`IN PROGRESS`；
+- venue-specific form / double-blind / AI-use / authorship requirements：`ADOPTED — AHICP-D033`；
+- blinded Markdown submission derivative：`PREPARED / CI PENDING`；
+- final Word/docx：`NOT YET GENERATED`；
+- search-based anonymization risk from `AHICP` name：`OPEN`；
 - license；
 - Final Artifact Approval。
 
 ## 当前同步状态
 
-- Human decision -> Decision Log：`SYNC — AHICP-D032 RECORDED`
+- Human decision -> Decision Log：`SYNC — AHICP-D033 RECORDED`
 - D030 direction -> Content Core：`SYNC — C17–C22`
 - Scholarly review -> T9 / T10 / contribution boundaries：`SYNC`
 - Approved Framework snapshot：`MA-FW-001 CREATED`
@@ -127,7 +130,7 @@ Framework Approval **不等于** Final Artifact Approval。当前文章仍需 ar
 
 下一治理门是：
 
-`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY PREPARATION`
+`FINAL ARTIFACT REVIEW / ETHICS AND INFORMATION TECHNOLOGY SUBMISSION PACKAGE PREPARATION`
 
 在 Final Artifact Approval 之前，文章可以继续做：
 - 语言与逻辑精修；

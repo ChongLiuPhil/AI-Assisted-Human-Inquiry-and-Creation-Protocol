@@ -10,6 +10,7 @@
 - `WM-T013` — license 决定：`WAITING-HUMAN`
 - `WM-T014` — target publication venue：`COMPLETED — Ethics and Information Technology / AHICP-D032`
 - `WM-T026` — methodology article Final Artifact review / venue preparation：`IN PROGRESS`
+- `WM-T029` — EIT blinded submission derivative + disclosure + checklist + CI：`IN PROGRESS / AHICP-D033`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`COMPLETED / AHICP-D032`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
@@ -22,7 +23,7 @@
 - `WM-T028` — PR #26 post-merge verification + durable-state write-back：`COMPLETED`
 
 完成范围：
-- Decision Log：AHICP-D030 / D031 / D032；
+- Decision Log：AHICP-D030 / D031 / D032 / D033；
 - Content Core：C17–C22；
 - Working Argument Map：与 `MA-FW-001` 对齐；
 - Approved Framework：`paper/frameworks/MA-FW-001.zh-CN.md` + English mirror；
@@ -43,12 +44,14 @@
 
 ## 4. NEXT ACTIONS
 
-1. 以 `Ethics and Information Technology` 为 primary target 准备 venue-specific submission artifacts；
-2. 决定 license；
-3. 进行 Final Artifact-level academic edit 与 citation verification；
-4. 核验并落实 venue-specific double-blind、AI-use / authorship / disclosure rules；
-5. 完成 Final Artifact Approval；
-6. submission / publication / release 依独立授权执行。Framework-scope PR merge 按 AHICP-D032 执行。
+1. 完成本轮 EIT submission package CI 并合并 preparation PR；
+2. 逐条核验 blinded manuscript 的 citation / DOI / publication status；
+3. 处理 `AHICP` 名称带来的 search-based deanonymization risk；
+4. 决定 license；
+5. 完成 Final Artifact-level academic edit；
+6. 生成并视觉检查最终 Word/docx；
+7. 完成 Final Artifact Approval；
+8. submission / publication / release 依独立授权执行。
 
 ## 5. ARTICLE INVARIANTS
 
