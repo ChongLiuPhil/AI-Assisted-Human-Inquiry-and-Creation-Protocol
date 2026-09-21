@@ -25,6 +25,8 @@ ZH_APPROVED = ROOT / "paper/frameworks/MA-FW-001.zh-CN.md"
 EN_APPROVED = ROOT / "paper/frameworks/MA-FW-001.md"
 ZH_REVIEW = ROOT / "paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.zh-CN.md"
 EN_REVIEW = ROOT / "paper/METHODOLOGY_ARTICLE_FRAMEWORK_REVIEW_MEMO.md"
+ZH_VENUE = ROOT / "paper/TARGET_VENUE_REVIEW.zh-CN.md"
+EN_VENUE = ROOT / "paper/TARGET_VENUE_REVIEW.md"
 
 CORE_THESIS_ZH = "一个长期人机项目的持久记忆，应当属于项目，而不是属于某一个模型"
 CORE_THESIS_EN = "The durable memory of a long-running human–AI project should belong to the project, not to a particular model"
@@ -104,6 +106,8 @@ def main() -> int:
     en_approved = read(EN_APPROVED)
     zh_review = read(ZH_REVIEW)
     en_review = read(EN_REVIEW)
+    zh_venue = read(ZH_VENUE)
+    en_venue = read(EN_VENUE)
 
     zh_sections = re.findall(r"^## (?:一|二|三|四|五|六|七|八|九|十|十一|十二|十三)、", zh_article, re.MULTILINE)
     en_sections = re.findall(r"^## (?:[1-9]|1[0-3])\. ", en_article, re.MULTILINE)
@@ -123,9 +127,9 @@ def main() -> int:
     require(zh_article, "design research question", "Chinese article")
     require(en_article, "design research question", "English article")
 
-    for marker in ("AHICP-D030", "AHICP-D031", "一篇统一论文", "Project Memory Architecture", "MA-FW-001"):
+    for marker in ("AHICP-D030", "AHICP-D031", "AHICP-D032", "一篇统一论文", "Project Memory Architecture", "MA-FW-001", "bounded auto-merge", "Ethics and Information Technology"):
         require(zh_decisions, marker, "Chinese Decision Log")
-    for marker in ("AHICP-D030", "AHICP-D031", "one unified paper", "Project Memory Architecture", "MA-FW-001"):
+    for marker in ("AHICP-D030", "AHICP-D031", "AHICP-D032", "one unified paper", "Project Memory Architecture", "MA-FW-001", "bounded auto-merge", "Ethics and Information Technology"):
         require(en_decisions, marker, "English Decision Log")
 
     for number in range(17, 23):
@@ -169,13 +173,21 @@ def main() -> int:
     require(en_focus, "WM-OBJ-005", "English Current Focus")
     require(zh_focus, "MA-FW-001", "Chinese Current Focus")
     require(en_focus, "MA-FW-001", "English Current Focus")
-    for marker in ("WM-T022", "WM-T023", "WM-T024", "WM-T025", "WM-T026"):
+    for marker in ("WM-T022", "WM-T023", "WM-T024", "WM-T025", "WM-T026", "WM-T027"):
         require(zh_task, marker, "Chinese Task Plan")
         require(en_task, marker, "English Task Plan")
+
+    require(zh_venue, "HUMAN-SELECTED — PRIMARY TARGET: ETHICS AND INFORMATION TECHNOLOGY", "Chinese Target Venue Review")
+    require(en_venue, "HUMAN-SELECTED — PRIMARY TARGET: ETHICS AND INFORMATION TECHNOLOGY", "English Target Venue Review")
+    require(zh_venue, "AHICP-D032", "Chinese Target Venue Review")
+    require(en_venue, "AHICP-D032", "English Target Venue Review")
+    require(zh_task, "WM-T027` — Framework Approval -> scoped PR auto-merge semantics：`COMPLETED / AHICP-D032", "Chinese Task Plan")
+    require(en_task, "WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032", "English Task Plan")
 
     combined = "\n".join((
         zh_article, en_article, zh_map, en_map, zh_status, en_status,
         zh_focus, en_focus, zh_task, en_task, zh_approved, en_approved, zh_review, en_review,
+        zh_venue, en_venue,
     ))
     for marker in STALE_MARKERS:
         if marker in combined:
@@ -193,8 +205,10 @@ def main() -> int:
     )
     require(zh_decisions, "不构成 Final Artifact Approval", "Chinese Decision Log")
     require(en_decisions, "does not constitute Final Artifact Approval", "English Decision Log")
-    require(zh_decisions, "不自动授权 PR merge", "Chinese Decision Log")
-    require(en_decisions, "or automatically authorize PR merge", "English Decision Log")
+    require(zh_decisions, "bounded auto-merge authorization", "Chinese Decision Log")
+    require(en_decisions, "bounded auto-merge authorization", "English Decision Log")
+    require(zh_decisions, "Ethics and Information Technology", "Chinese Decision Log")
+    require(en_decisions, "Ethics and Information Technology", "English Decision Log")
 
     for marker in effectiveness_phrases:
         if marker in zh_article or marker in en_article:
