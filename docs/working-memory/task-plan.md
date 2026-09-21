@@ -6,60 +6,62 @@
 
 ## 1. ACTIVE TASKS
 
-- `WM-T023` — project-memory-centered methodology paper validation + PR: `COMPLETED / CI-GATED`
-- `WM-T015` — overall review of the rewritten methodology Working Framework: `WAITING-HUMAN AFTER PR`
 - `WM-T013` — license decision: `WAITING-HUMAN`
 - `WM-T014` — target publication venue / form constraints: `WAITING-HUMAN`
+- `WM-T026` — methodology article Final Artifact review / venue preparation: `WAITING-HUMAN / NEXT PHASE`
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
-- `WM-T022` — AHICP-D030 methodology article project-memory structural rewrite: `COMPLETED`
-- `WM-T024` — methodology paper scholarly novelty / prior-art positioning audit: `COMPLETED / EVIDENCE-CONSTRAINED`
+- `WM-T015` — overall methodology Working Framework review: `COMPLETED — MA-FW-001 APPROVED`
+- `WM-T022` — AHICP-D030 project-memory structural rewrite: `COMPLETED`
+- `WM-T023` — methodology paper validation + PR: `COMPLETED / CI-GATED`
+- `WM-T024` — scholarly novelty / prior-art positioning audit: `COMPLETED / EVIDENCE-CONSTRAINED`
+- `WM-T025` — T1–T13 scholarly review + MA-FW-001 Framework Approval: `COMPLETED / AHICP-D031`
 
 Completed scope:
-
-- Decision Log: recorded AHICP-D030;
-- Content Core: added C17–C22;
-- Working Argument Map: rebuilt around Project Memory Architecture;
-- Chinese article: completed 13-section structural rewrite;
-- English article: completed synchronized mirror rewrite;
-- Evidence layer: added Agent-memory / project-oriented memory / provenance sources;
-- BibTeX: added corresponding references;
-- Framework Status: updated to post-D030 state;
-- Evaluation: included in the paper while preserving proposed / no-results boundary;
-- bilingual semantic synchronization: completed in this work cycle.
+- Decision Log: AHICP-D030 / D031;
+- Content Core: C17–C22;
+- Working Argument Map: aligned with `MA-FW-001`;
+- Approved Framework: `paper/frameworks/MA-FW-001.zh-CN.md` + English mirror;
+- Review Memo: scholarly review completed;
+- Chinese / English article: derived from `MA-FW-001`;
+- Evidence / BibTeX: Agent memory + prior Project Memory + decision provenance;
+- Evaluation: proposed / no-results;
+- bilingual synchronization: completed.
 
 ## 3. COMPLETED PROTOCOL / MIGRATION TASKS
 
 - `WM-T016` — AHICP v0.3 repository-wide semantic migration: `COMPLETED`
-- `WM-T017` — AHICP project templates/control-plane migration: `COMPLETED`
-- `WM-T018` — structural validation + semantic bilingual parity + post-migration audit: `COMPLETED / PASS`
-- `WM-T019` — AHICP-D027 external systems / tool discovery / authorization / human handoff governance: `COMPLETED`
+- `WM-T017` — project templates/control-plane migration: `COMPLETED`
+- `WM-T018` — structural validation + bilingual parity: `COMPLETED / PASS`
+- `WM-T019` — AHICP-D027 external systems / authorization / handoff: `COMPLETED`
 - `WM-T020` — AHICP-D028 / D029 scoped authorization consolidation: `COMPLETED`
-- `WM-T021` — PR #3 post-merge governance consistency repair: `COMPLETED / CI-GATED`
+- `WM-T021` — PR #3 governance consistency repair: `COMPLETED / CI-GATED`
 
 ## 4. NEXT ACTIONS
 
-1. human reviews the revised Working Framework and article;
-2. make an explicit `APPROVE / REVISE / REJECT` decision on the complete current framework;
-3. create `MA-FW-001` only after a later overall `APPROVE`;
-4. decide the license before formal release;
-5. decide target venue / form constraints and re-verify time-sensitive policies before final submission/publication.
+1. decide target publication venue / disciplinary positioning;
+2. decide license;
+3. perform Final Artifact-level academic editing and citation verification;
+4. verify venue-specific AI / authorship / disclosure rules;
+5. complete Final Artifact Approval;
+6. execute publication / release / merge only under their separate authorization.
 
 ## 5. ARTICLE INVARIANTS
 
 Future work must preserve:
-
 - one unified methodology article;
-- Project Memory Architecture remains a core contribution direction, but AHICP must not claim to originate project memory; current novelty is only the candidate synthesis of a governed, model-substitutable architecture;
-- Working Memory = persistent continuity layer, not psychological working memory / hidden state / chain-of-thought;
-- Human Decision Persistence as first-class Project memory;
-- Agent / Model substitution as a design principle and proposed stress test;
-- Agent memory != Project memory;
-- repository state outranks chat/model memory;
-- evidence / inference / proposal / human-confirmed decision remain distinguishable;
-- memory curation / stale / conflict / selective retrieval remain in the argument;
+- `MA-FW-001` as the current approved Framework baseline;
+- AHICP does not claim to originate project memory;
+- novelty remains the candidate synthesis of a governed, model-substitutable Project Memory Architecture;
+- Working Memory != psychological working memory / hidden state / chain-of-thought;
+- Human Decision Persistence is a governance mechanism;
+- Agent / Model substitution = design goal + proposed stress test;
+- T9 = AHICP normative governance;
+- T10 = structured human-review gate / responsibility anchor;
+- Agent memory != Project Memory;
+- repository authoritative state outranks chat/model memory for AHICP project governance;
 - proposed evaluation != completed empirical result;
-- human responsibility / Framework Approval / Final Artifact Approval boundaries remain;
+- Framework Approval != Final Artifact Approval;
 - Chinese canonical / English synchronized mirror;
-- `AHICP-D030 authorization != overall Framework Approval != Final Artifact Approval`.
+- `AHICP-D031 Framework Approval != Final Artifact Approval != merge/publication authorization`.
