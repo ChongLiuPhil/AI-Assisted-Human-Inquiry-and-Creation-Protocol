@@ -15,7 +15,7 @@ This directory contains venue-specific derivatives and submission-preparation ma
 - `BLINDING_REVIEW.md` / `.zh-CN.md` — anonymization-risk analysis and reviewer-manuscript recommendation.
 - `SUBMISSION_CHECKLIST.md` / `.zh-CN.md` — venue-specific compliance checklist.
 - `AI_USE_DISCLOSURE.md` / `.zh-CN.md` — disclosure wording and governance notes.
-- `TITLE_PAGE_METADATA_TEMPLATE.md` — author/title-page/submission-system metadata template; no identity is prefilled.
+- `TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` / `.md` — non-reviewer-facing metadata worksheet; partially completed from the human's reply / 非 reviewer-facing 元数据工作表，已部分填写人类提供的事实。
 - `COVER_LETTER_DRAFT.md` — non-submission-authorized cover-letter draft with required human-confirmation placeholders.
 - `CITATION_AUDIT.md` — publication-status / metadata / policy-source audit for the venue derivative.
 - `tools/build_eit_docx.py` — reproducible DOCX builder used by EIT Submission CI; generated DOCX remains a build candidate until visual QA.

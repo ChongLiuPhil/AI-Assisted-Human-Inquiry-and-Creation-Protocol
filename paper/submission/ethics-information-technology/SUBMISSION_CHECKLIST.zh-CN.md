@@ -42,11 +42,13 @@
 
 - [x] 已加入 Data Availability Statement。
 - [x] 如实说明当前不报告 original empirical dataset / completed empirical experiment。
-- [ ] 人类在当前 submission interface 完成 Competing Interests。
-- [ ] 人类完成 Funding statement。
-- [ ] 如要求，人类完成 Author Contribution。
+- [x] 人类于 2026-09-22 提供刘崇 / Chong Liu、独立研究者与 ORCID `0009-0009-8116-1255`；来源记录于双语 `TITLE_PAGE_METADATA_TEMPLATE` 工作表，不进入匿名主稿。
+- [x] 人类已明确提供“无利益冲突”声明。
+- [x] 人类已明确提供“无基金”声明。
+- [ ] 在 live submission interface 填写并核验 Funding / Competing Interests；已收到声明不等于已完成界面提交。
+- [ ] 人类完成真实 Author Contributions 声明。
 - [ ] Acknowledgements 在 blinded manuscript 之外完成。
-- [ ] 如适用，完成 ORCID / corresponding-author metadata。
+- [ ] 补全通讯作者身份、通讯邮箱和所需所在地字段，并在实际界面核验作者 / ORCID metadata；不得从已提供身份猜填。
 
 ## 学术终审
 

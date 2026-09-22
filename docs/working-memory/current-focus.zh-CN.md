@@ -79,6 +79,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - 人类已确认 masked reviewer route；不主动向 reviewers 提供公开 repository，如编辑部要求 reviewer-visible repository / supplementary material，则仅使用 masked / anonymized 路线；
 - 人类已确认稿件未同时在其他期刊审理，且当前 submission 所需作者/合作者批准已取得；
 - Final Artifact Approval 已完成（AHICP-D034；approved artifact baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`）；当前 `main` 后续的 CI-only checkout dependency bump 不改变批准 artifact 内容。
+- 人类于 2026-09-22 提供部分投稿事实：刘崇 / Chong Liu、独立研究者、ORCID `0009-0009-8116-1255`、无基金、无利益冲突；已记录于非 reviewer-facing 的 `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` 及英文 mirror。这是事实补全，不是 submission authorization，也不修改已批准主稿。
 
 ## IMMEDIATE_NEXT_ACTION
 
@@ -87,7 +88,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 Primary target：`Ethics and Information Technology`。
 
 当前 submission derivative 的 artifact-level review、masked reviewer route 与 Final Artifact Approval 均已完成。下一阶段：
-1. 人类补全 submission-time author / affiliation / corresponding-author / funding / competing-interest / contribution / acknowledgement / ORCID 等真实元数据；
+1. 人类补全尚缺的通讯作者身份、通讯邮箱、所需城市 / 州或省 / 国家、Author Contributions、Acknowledgements 与 live interface 要求的其他未提供事实；已提供的署名、独立研究者身份、ORCID、无基金与无利益冲突见双语元数据工作表，不得恢复为未提供；
 2. 正式 submission 前再次核验 EIT live submission interface，并对 2026-09-22 已复核的动态 policy 做 at-submission final recheck；
 3. 获得独立、明确的 submission authorization 后才可执行正式投稿；
 4. publication route / licence 留到 acceptance 后由人类选择。
@@ -106,7 +107,7 @@ Final Artifact / publication 层仍存在：
 - anonymization risk (`AHICP` discoverability)：`MASKED REVIEWER ROUTE HUMAN-CONFIRMED / PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED / MASKED-ANONYMIZED MATERIALS IF REQUIRED`
 - Word/docx：`TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
 - Final Artifact Approval：`COMPLETED — AHICP-D034 / APPROVED BASELINE 332ff0197e89c99f1b6bb70aedbb47cf425bdb21`
-- submission-time factual metadata：`WAITING-HUMAN — DO NOT INFER`
+- submission-time factual metadata：`PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`；见双语元数据工作表，live interface 尚未填写 / 核验。
 - live submission interface / at-submission policy recheck：`PENDING`
 - submission authorization：`WAITING-HUMAN — SEPARATE EXPLICIT AUTHORIZATION REQUIRED`
 

@@ -42,11 +42,13 @@
 
 - [x] Data Availability Statement included.
 - [x] Statement accurately says no original empirical dataset or completed empirical experiment is reported.
-- [ ] Competing Interests statement completed by the human author in the current submission interface.
-- [ ] Funding statement completed by the human author.
-- [ ] Author Contribution information completed by the human author if required.
+- [x] On 2026-09-22 the human supplied 刘崇 / Chong Liu, Independent Researcher, and ORCID `0009-0009-8116-1255`; provenance is recorded in the bilingual `TITLE_PAGE_METADATA_TEMPLATE` worksheet, outside the blinded manuscripts.
+- [x] The human explicitly supplied a no-competing-interests declaration.
+- [x] The human explicitly supplied a no-funding declaration.
+- [ ] Enter and verify Funding / Competing Interests in the live submission interface; receipt of the declarations does not mean that interface submission has been completed.
+- [ ] The human completes a truthful Author Contributions statement.
 - [ ] Acknowledgements finalized outside the blinded manuscript.
-- [ ] ORCID / corresponding-author metadata completed if applicable.
+- [ ] Supply corresponding-author designation, email, and required location fields, then verify author / ORCID metadata in the actual interface; do not infer missing values from supplied identity information.
 
 ## Scholarly final review
 
