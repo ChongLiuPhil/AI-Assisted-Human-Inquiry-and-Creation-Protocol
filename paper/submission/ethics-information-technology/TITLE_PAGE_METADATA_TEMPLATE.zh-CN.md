@@ -3,7 +3,7 @@
 > **本中文文件是 canonical；英文 `TITLE_PAGE_METADATA_TEMPLATE.md` 为同步 mirror。**
 
 **状态：** `PARTIALLY COMPLETED — HUMAN-SUPPLIED METADATA / SUBMISSION AUTHORIZATION PENDING`  
-**事实来源：** 人类项目发起人在 2026-09-22 的投稿元数据补充回复。  
+**事实来源：** 人类项目发起人在 2026-09-22 的投稿元数据补充回复及后续确认。  
 **用途：** 非 reviewer-facing 的投稿准备工作表；不是匿名主稿，也不是已经完成的投稿表单。
 
 > 期刊的新投稿系统可能直接通过界面字段收集部分作者 / 声明信息，而不是要求上传标题页。本文件用于准备；仅在 live interface 明确要求适当文件时使用，不得作为 reviewer-visible 文件上传。
@@ -14,21 +14,27 @@ From Conversation to Persistent Research State: Human–AI Research Collaboratio
 
 ## 人类已提供的事实
 
-人类本次明确提供：作者“刘崇 Chong Liu”、身份“独立研究者”、ORCID `https://orcid.org/0009-0009-8116-1255`、“无基金”、“无利益冲突”。下列值仅据此记录，不从 GitHub profile、commit metadata、ORCID 页面或聊天之外的账户信息推断其他投稿事实。
+人类此前明确提供：作者“刘崇 Chong Liu”、身份“独立研究者”、ORCID `https://orcid.org/0009-0009-8116-1255`、“无基金”、“无利益冲突”。后续同日明确确认由本人担任通讯作者，所在地为“中国温州”，并声明“无致谢”。下列值仅据这些回复记录，不从 GitHub profile、commit metadata、ORCID 页面或其他账户信息推断投稿事实。
+
+通讯邮箱仍处于候选命名比较，尚未最终选定或确认可用；AI 对邮箱命名的建议不是人类确认，也不得据此填写通讯邮箱。
 
 ## 作者信息
 
 - 中文姓名：刘崇
 - 英文署名：Chong Liu
 - Affiliation / 身份：独立研究者（Independent Researcher）
-- 城市 / 州或省 / 国家（按界面要求）：`[HUMAN TO COMPLETE]`
-- 通讯作者：`[HUMAN TO COMPLETE]`
+- 城市：温州（Wenzhou）
+- 国家：中国（China）
+- 州或省（仅在实际界面要求时）：`[HUMAN TO COMPLETE IF REQUIRED]`
+- 通讯作者：刘崇 / Chong Liu
 - 通讯作者邮箱：`[HUMAN TO COMPLETE]`
 - ORCID：https://orcid.org/0009-0009-8116-1255
 
 ## 致谢
 
-`[HUMAN TO COMPLETE OR STATE NONE]`
+无致谢。
+
+对应英文声明：`Acknowledgements: None.`
 
 ## 基金 / 资助
 
@@ -54,11 +60,12 @@ From Conversation to Persistent Research State: Human–AI Research Collaboratio
 
 ## 生成式 AI / LLM 使用
 
-使用 `AI_USE_DISCLOSURE.zh-CN.md` / `AI_USE_DISCLOSURE.md` 的已审阅措辞；仅根据 live journal interface 和真实项目记录要求适配。不得推断或补造具体模型版本和使用日期。
+使用 `AI_USE_DISCLOSURE.zh-CN.md` / `AI_USE_DISCLOSURE.md` 的已审阅措辞；仅根据 live journal interface 和真实项目记录要求适配。不得推断或补造具体模型版本和使用日期。“无致谢”不删除或缩减 substantive AI-use disclosure。
 
 ## 尚未完成与使用边界
 
-- 通讯作者身份、通讯邮箱、所需所在地字段、作者贡献、致谢，以及实际界面要求的其他未提供事实：`WAITING-HUMAN — DO NOT INFER`。
+- 最终通讯邮箱、作者贡献，以及实际界面要求的其他未提供事实（如必填州或省）：`WAITING-HUMAN — DO NOT INFER`。
+- 通讯作者身份、温州 / 中国和无致谢均已由人类确认，不得恢复为未提供。
 - 已收到上述事实不表示 live submission interface 已填写或核验。
 - 作者身份字段不得复制到 `MANUSCRIPT_BLINDED.md`、`MANUSCRIPT_BLINDED_MASKED.md`、其 reviewer-facing DOCX 或匿名文件 metadata。
 - 不修改 `MA-FW-001`、已批准 manuscript、引文、AI-use disclosure 或 masked reviewer route。
