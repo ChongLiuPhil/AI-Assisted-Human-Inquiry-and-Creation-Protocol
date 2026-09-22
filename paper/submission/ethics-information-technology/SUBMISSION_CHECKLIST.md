@@ -45,10 +45,12 @@
 - [x] On 2026-09-22 the human supplied 刘崇 / Chong Liu, Independent Researcher, and ORCID `0009-0009-8116-1255`; provenance is recorded in the bilingual `TITLE_PAGE_METADATA_TEMPLATE` worksheet, outside the blinded manuscripts.
 - [x] The human explicitly supplied a no-competing-interests declaration.
 - [x] The human explicitly supplied a no-funding declaration.
-- [ ] Enter and verify Funding / Competing Interests in the live submission interface; receipt of the declarations does not mean that interface submission has been completed.
+- [x] On the same date the human confirmed 刘崇 / Chong Liu as corresponding author and Wenzhou / China as city / country.
+- [x] The human confirmed no acknowledgements; the worksheet records `Acknowledgements: None.`, while the existing AI-use disclosure remains unchanged.
+- [ ] Enter and verify Funding / Competing Interests and other declarations in the live submission interface; receipt of the declarations does not mean that interface submission has been completed.
 - [ ] The human completes a truthful Author Contributions statement.
-- [ ] Acknowledgements finalized outside the blinded manuscript.
-- [ ] Supply corresponding-author designation, email, and required location fields, then verify author / ORCID metadata in the actual interface; do not infer missing values from supplied identity information.
+- [ ] The human makes a final choice of corresponding email and confirms its availability; candidate-name discussion or an AI recommendation is not email confirmation.
+- [ ] Supply other unsupplied mandatory fields required by the actual interface, such as state / province, and verify author / ORCID / correspondence metadata; do not infer missing values from supplied identity information.
 
 ## Scholarly final review
 

@@ -45,10 +45,12 @@
 - [x] 人类于 2026-09-22 提供刘崇 / Chong Liu、独立研究者与 ORCID `0009-0009-8116-1255`；来源记录于双语 `TITLE_PAGE_METADATA_TEMPLATE` 工作表，不进入匿名主稿。
 - [x] 人类已明确提供“无利益冲突”声明。
 - [x] 人类已明确提供“无基金”声明。
-- [ ] 在 live submission interface 填写并核验 Funding / Competing Interests；已收到声明不等于已完成界面提交。
+- [x] 人类同日确认通讯作者为刘崇 / Chong Liu，城市 / 国家为温州 / 中国。
+- [x] 人类已确认无致谢；工作表记录 `Acknowledgements: None.`，既有 AI-use disclosure 保持不变。
+- [ ] 在 live submission interface 填写并核验 Funding / Competing Interests 及其他声明；已收到声明不等于已完成界面提交。
 - [ ] 人类完成真实 Author Contributions 声明。
-- [ ] Acknowledgements 在 blinded manuscript 之外完成。
-- [ ] 补全通讯作者身份、通讯邮箱和所需所在地字段，并在实际界面核验作者 / ORCID metadata；不得从已提供身份猜填。
+- [ ] 人类最终选定并确认可用的通讯邮箱；候选命名讨论或 AI 推荐不构成邮箱确认。
+- [ ] 按实际界面补全其他未提供必填项（如州或省），并核验作者 / ORCID / 通讯 metadata；不得从已提供身份猜填。
 
 ## 学术终审
 
