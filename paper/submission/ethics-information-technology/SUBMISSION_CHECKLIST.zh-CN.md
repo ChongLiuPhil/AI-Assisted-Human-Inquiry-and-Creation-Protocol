@@ -49,7 +49,8 @@
 - [x] 人类已确认无致谢；工作表记录 `Acknowledgements: None.`，既有 AI-use disclosure 保持不变。
 - [ ] 在 live submission interface 填写并核验 Funding / Competing Interests 及其他声明；已收到声明不等于已完成界面提交。
 - [ ] 人类完成真实 Author Contributions 声明。
-- [ ] 人类最终选定并确认可用的通讯邮箱；候选命名讨论或 AI 推荐不构成邮箱确认。
+- [x] 人类回复“同意建议，请继续”，选定通讯邮箱名称 `chong.liu.phil@outlook.com`；不再处于候选命名比较。
+- [ ] 确认 / 核验该地址由作者持有且可正常收发；名称选择不构成账户可用性或账户访问权限的证明。
 - [ ] 按实际界面补全其他未提供必填项（如州或省），并核验作者 / ORCID / 通讯 metadata；不得从已提供身份猜填。
 
 ## 学术终审

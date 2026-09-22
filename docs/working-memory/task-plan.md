@@ -21,9 +21,9 @@
 
 **Status:** `PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`
 
-The human supplied 刘崇 / Chong Liu, Independent Researcher, ORCID `0009-0009-8116-1255`, no funding, and no competing interests; a subsequent reply on the same date confirmed serving as corresponding author, Wenzhou / China as city / country, and no acknowledgements. Provenance and corresponding English wording are recorded in `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` and its English mirror.
+The human supplied 刘崇 / Chong Liu, Independent Researcher, ORCID `0009-0009-8116-1255`, no funding, and no competing interests; a subsequent reply on the same date confirmed serving as corresponding author, Wenzhou / China as city / country, and no acknowledgements. The human then replied "同意建议，请继续" and selected the email name `chong.liu.phil@outlook.com`. Provenance and corresponding English wording are recorded in `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` and its English mirror.
 
-Still missing: the final corresponding email, Author Contributions, and other facts required by the actual interface but not yet supplied, such as a mandatory state / province. The email remains under candidate-name comparison, without final selection or confirmation of availability; an AI recommendation is not human confirmation. Do not infer missing facts from the name, ORCID, or connected accounts. The metadata worksheet is not reviewer-facing, and the live interface has not been completed. This factual supplement does not constitute submission / publication / release authorization. No acknowledgements does not cancel the existing substantive AI-use disclosure.
+The email name is selected, but control of the address and normal sending / receiving remain `HUMAN-SELECTED — OWNERSHIP / SEND-RECEIVE VERIFICATION PENDING`; account access was not authorized in this cycle, and no account verification, mailbox creation, or test-email sending was completed. Author Contributions and other facts required by the actual interface but not yet supplied, such as a mandatory state / province, still await human input. Do not infer missing facts from the name, ORCID, connected accounts, or naming choice. The metadata worksheet is not reviewer-facing, and the live interface has not been completed. This factual supplement does not constitute submission / publication / release authorization. No acknowledgements does not cancel the existing substantive AI-use disclosure.
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
@@ -56,7 +56,7 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. have the human supply the final corresponding email, Author Contributions, and other facts required by the actual interface but not yet supplied, such as a mandatory state / province; do not request the confirmed corresponding-author identity, Wenzhou / China, no acknowledgements, or the five previously supplied facts again, and do not infer remaining fields from identity information or an AI email-naming recommendation;
+1. confirm / verify that the author controls the selected email and can send / receive normally, and have the human supply Author Contributions and other facts required by the actual interface but not yet supplied, such as a mandatory state / province; do not request the confirmed email name, corresponding-author identity, Wenzhou / China, no acknowledgements, or the five previously supplied facts again, and do not infer account availability or author contributions from agreement with the naming recommendation;
 2. immediately before submission, recheck the EIT live submission interface; dynamic EIT / SNAPP / ICMJE / Nature policy pages were rechecked on 2026-09-22 and still require a final at-submission recheck;
 3. execute formal submission only after separate explicit submission authorization;
 4. keep later publication / release under separate authorization; if the article is accepted, the human then chooses subscription or open access and, for OA, the applicable licence.

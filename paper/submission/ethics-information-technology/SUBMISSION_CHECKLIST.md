@@ -49,7 +49,8 @@
 - [x] The human confirmed no acknowledgements; the worksheet records `Acknowledgements: None.`, while the existing AI-use disclosure remains unchanged.
 - [ ] Enter and verify Funding / Competing Interests and other declarations in the live submission interface; receipt of the declarations does not mean that interface submission has been completed.
 - [ ] The human completes a truthful Author Contributions statement.
-- [ ] The human makes a final choice of corresponding email and confirms its availability; candidate-name discussion or an AI recommendation is not email confirmation.
+- [x] The human replied "同意建议，请继续" and selected the corresponding email name `chong.liu.phil@outlook.com`; candidate-name comparison is complete.
+- [ ] Confirm / verify that the author controls the address and can send / receive normally; name selection is not proof of account availability or account-access permission.
 - [ ] Supply other unsupplied mandatory fields required by the actual interface, such as state / province, and verify author / ORCID / correspondence metadata; do not infer missing values from supplied identity information.
 
 ## Scholarly final review

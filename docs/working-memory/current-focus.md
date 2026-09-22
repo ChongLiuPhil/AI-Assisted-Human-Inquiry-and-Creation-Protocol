@@ -79,7 +79,7 @@ Primary current objects:
 - the human confirmed that the manuscript is not simultaneously under consideration elsewhere and that all author/co-author approvals required for the current submission have been obtained;
 - Final Artifact Approval is complete under AHICP-D034, with approved artifact baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`; the later CI-only checkout dependency bump on `main` does not change approved artifact content.
 - on 2026-09-22 the human supplied partial submission facts: 刘崇 / Chong Liu, Independent Researcher, ORCID `0009-0009-8116-1255`, no funding, and no competing interests. These are recorded in the non-reviewer-facing `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` and its English mirror. This is factual completion, not submission authorization, and does not modify the approved manuscripts.
-- on the same date the human further confirmed 刘崇 / Chong Liu as corresponding author, Wenzhou / China as city / country, and no acknowledgements; these are recorded in the bilingual metadata worksheet. The corresponding email remains under naming comparison without final selection or confirmation of availability; do not treat an AI recommendation as a confirmed email. Author Contributions still await human input.
+- on the same date the human further confirmed 刘崇 / Chong Liu as corresponding author, Wenzhou / China as city / country, and no acknowledgements; these are recorded in the bilingual metadata worksheet. The human subsequently replied "同意建议，请继续" and selected `chong.liu.phil@outlook.com`; the name selection is confirmed, but control of the address and normal sending / receiving remain unverified. Author Contributions still await human input.
 
 ## IMMEDIATE_NEXT_ACTION
 
@@ -88,7 +88,7 @@ Current Framework work and target-venue selection are complete.
 Primary target: `Ethics and Information Technology`.
 
 Artifact-level review, the masked reviewer route, and Final Artifact Approval are complete. Next stage:
-1. have the human supply the final corresponding email, Author Contributions, and other facts required by the live interface but not yet supplied, such as a mandatory state / province; the name, Independent Researcher status, ORCID, no funding, no competing interests, corresponding-author identity, Wenzhou / China, and no acknowledgements are recorded in the bilingual metadata worksheet and must not be reset to unsupplied;
+1. confirm / verify that the author controls the selected email and can send / receive normally, and have the human supply Author Contributions and other facts required by the live interface but not yet supplied, such as a mandatory state / province; the selected email name, author name, Independent Researcher status, ORCID, no funding, no competing interests, corresponding-author identity, Wenzhou / China, and no acknowledgements are recorded in the bilingual metadata worksheet and must not be reset to unsupplied;
 2. immediately before submission, recheck the EIT live submission interface and perform the at-submission final recheck of the dynamic policies already checked on 2026-09-22;
 3. execute formal submission only after separate explicit submission authorization;
 4. keep publication route / licence as a post-acceptance human choice.
@@ -107,7 +107,7 @@ Final Artifact / publication layer still has:
 - anonymization risk (`AHICP` discoverability): `MASKED REVIEWER ROUTE HUMAN-CONFIRMED / PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED / MASKED-ANONYMIZED MATERIALS IF REQUIRED`
 - Word/docx: `TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
 - Final Artifact Approval: `COMPLETED — AHICP-D034 / APPROVED BASELINE 332ff0197e89c99f1b6bb70aedbb47cf425bdb21`
-- submission-time factual metadata: `PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`; the main remaining items are the final corresponding email and Author Contributions, plus any unsupplied mandatory interface fields; the live interface has not been completed / verified.
+- submission-time factual metadata: `PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`; the email name is selected, while control / sending / receiving verification and Author Contributions remain pending, plus any unsupplied mandatory interface fields; the live interface has not been completed / verified.
 - live submission interface / at-submission policy recheck: `PENDING`
 - submission authorization: `WAITING-HUMAN — SEPARATE EXPLICIT AUTHORIZATION REQUIRED`
 

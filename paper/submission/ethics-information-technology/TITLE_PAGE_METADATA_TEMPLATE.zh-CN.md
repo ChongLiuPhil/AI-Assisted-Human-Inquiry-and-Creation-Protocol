@@ -16,7 +16,7 @@ From Conversation to Persistent Research State: Human–AI Research Collaboratio
 
 人类此前明确提供：作者“刘崇 Chong Liu”、身份“独立研究者”、ORCID `https://orcid.org/0009-0009-8116-1255`、“无基金”、“无利益冲突”。后续同日明确确认由本人担任通讯作者，所在地为“中国温州”，并声明“无致谢”。下列值仅据这些回复记录，不从 GitHub profile、commit metadata、ORCID 页面或其他账户信息推断投稿事实。
 
-通讯邮箱仍处于候选命名比较，尚未最终选定或确认可用；AI 对邮箱命名的建议不是人类确认，也不得据此填写通讯邮箱。
+人类随后对采用 `chong.liu.phil@outlook.com` 作为长期学术交流邮箱的建议明确回复“同意建议，请继续”。据此记录邮箱名称选择；该回复不证明地址已注册、已由作者持有或已经可以正常收发。不得将名称选择恢复为未决定，也不得将其提升为账户可用性已验证。
 
 ## 作者信息
 
@@ -27,7 +27,8 @@ From Conversation to Persistent Research State: Human–AI Research Collaboratio
 - 国家：中国（China）
 - 州或省（仅在实际界面要求时）：`[HUMAN TO COMPLETE IF REQUIRED]`
 - 通讯作者：刘崇 / Chong Liu
-- 通讯作者邮箱：`[HUMAN TO COMPLETE]`
+- 通讯作者邮箱（已选定名称）：`chong.liu.phil@outlook.com`
+- 邮箱状态：`HUMAN-SELECTED — OWNERSHIP / SEND-RECEIVE VERIFICATION PENDING`
 - ORCID：https://orcid.org/0009-0009-8116-1255
 
 ## 致谢
@@ -64,8 +65,9 @@ From Conversation to Persistent Research State: Human–AI Research Collaboratio
 
 ## 尚未完成与使用边界
 
-- 最终通讯邮箱、作者贡献，以及实际界面要求的其他未提供事实（如必填州或省）：`WAITING-HUMAN — DO NOT INFER`。
-- 通讯作者身份、温州 / 中国和无致谢均已由人类确认，不得恢复为未提供。
+- 邮箱名称已由人类选定；地址持有权与正常收发仍待确认 / 核验。本轮未取得账户访问授权，未完成账户核验、未创建邮箱或发送测试邮件；不因命名选择推断账户权限，也不得索要密码、验证码或其他 secret。
+- 作者贡献，以及实际界面要求的其他未提供事实（如必填州或省）：`WAITING-HUMAN — DO NOT INFER`。
+- 通讯作者身份、温州 / 中国、无致谢和邮箱名称选择均已由人类确认，不得恢复为未提供。
 - 已收到上述事实不表示 live submission interface 已填写或核验。
 - 作者身份字段不得复制到 `MANUSCRIPT_BLINDED.md`、`MANUSCRIPT_BLINDED_MASKED.md`、其 reviewer-facing DOCX 或匿名文件 metadata。
 - 不修改 `MA-FW-001`、已批准 manuscript、引文、AI-use disclosure 或 masked reviewer route。
