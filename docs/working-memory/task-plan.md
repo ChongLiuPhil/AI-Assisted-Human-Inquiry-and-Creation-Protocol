@@ -17,6 +17,14 @@
 - `WM-T032` — PR #30 post-merge verification + state write-back: `COMPLETED`
 - `WM-T027` — Framework Approval -> scoped PR auto-merge semantics: `COMPLETED / AHICP-D032`
 
+### Submission metadata progress — 2026-09-22
+
+**Status:** `PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`
+
+The human supplied 刘崇 / Chong Liu, Independent Researcher, ORCID `0009-0009-8116-1255`, no funding, and no competing interests. Provenance and corresponding English wording are recorded in `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` and its English mirror.
+
+Still missing: corresponding-author designation, email, required location fields, Author Contributions, Acknowledgements, and other facts required by the actual interface but not yet supplied. Do not infer these from the name, ORCID, or connected accounts. The metadata worksheet is not reviewer-facing, and the live interface has not been completed. This factual supplement does not constitute submission / publication / release authorization.
+
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
 - `WM-T015` — overall methodology Working Framework review: `COMPLETED — MA-FW-001 APPROVED`
@@ -48,7 +56,7 @@ Completed scope:
 
 ## 4. NEXT ACTIONS
 
-1. have the human complete truthful submission-time author / affiliation / corresponding-author / funding / competing-interest / contribution / acknowledgement / ORCID metadata;
+1. have the human supply the remaining corresponding-author designation, email, required city / state / country, Author Contributions, Acknowledgements, and other facts required by the actual interface but not yet supplied; do not request the five supplied facts again or infer the remaining fields from identity information;
 2. immediately before submission, recheck the EIT live submission interface; dynamic EIT / SNAPP / ICMJE / Nature policy pages were rechecked on 2026-09-22 and still require a final at-submission recheck;
 3. execute formal submission only after separate explicit submission authorization;
 4. keep later publication / release under separate authorization; if the article is accepted, the human then chooses subscription or open access and, for OA, the applicable licence.
