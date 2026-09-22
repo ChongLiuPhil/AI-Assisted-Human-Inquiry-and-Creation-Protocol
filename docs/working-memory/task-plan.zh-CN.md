@@ -29,7 +29,7 @@
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
 - `WM-T015` — methodology Working Framework 整体审阅：`COMPLETED — MA-FW-001 APPROVED`
-- `WM-T022` — methodology article project-memory structural rewrite：`COMPLETED`
+- `WM-T022` — AHICP-D030 project-memory structural rewrite：`COMPLETED`
 - `WM-T023` — methodology paper validation + PR #26：`COMPLETED / MERGED — af3e7927`
 - `WM-T024` — scholarly novelty / prior-art positioning audit：`COMPLETED / EVIDENCE-CONSTRAINED`
 - `WM-T025` — T1–T13 scholarly review + MA-FW-001 Framework Approval：`COMPLETED / AHICP-D031`
