@@ -80,7 +80,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 - 人类已确认稿件未同时在其他期刊审理，且当前 submission 所需作者/合作者批准已取得；
 - Final Artifact Approval 已完成（AHICP-D034；approved artifact baseline `332ff0197e89c99f1b6bb70aedbb47cf425bdb21`）；当前 `main` 后续的 CI-only checkout dependency bump 不改变批准 artifact 内容。
 - 人类于 2026-09-22 提供部分投稿事实：刘崇 / Chong Liu、独立研究者、ORCID `0009-0009-8116-1255`、无基金、无利益冲突；已记录于非 reviewer-facing 的 `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` 及英文 mirror。这是事实补全，不是 submission authorization，也不修改已批准主稿。
-- 人类同日进一步确认通讯作者为刘崇 / Chong Liu、城市 / 国家为温州 / 中国、无致谢；双语元数据工作表已记录。通讯邮箱仍在命名比较，未最终选定或确认可用；不得把 AI 建议当作已确认邮箱。Author Contributions 仍待人类提供。
+- 人类同日进一步确认通讯作者为刘崇 / Chong Liu、城市 / 国家为温州 / 中国、无致谢；双语元数据工作表已记录。随后人类回复“同意建议，请继续”，选定 `chong.liu.phil@outlook.com`；名称选择已确认，但地址持有权与正常收发尚未验证。Author Contributions 仍待人类提供。
 
 ## IMMEDIATE_NEXT_ACTION
 
@@ -89,7 +89,7 @@ D033 不撤销 D027–D032，也不构成 Final Artifact Approval 或 submission
 Primary target：`Ethics and Information Technology`。
 
 当前 submission derivative 的 artifact-level review、masked reviewer route 与 Final Artifact Approval 均已完成。下一阶段：
-1. 人类补全最终通讯邮箱、Author Contributions 与 live interface 要求的其他未提供事实（如必填州或省）；署名、独立研究者身份、ORCID、无基金、无利益冲突、通讯作者身份、温州 / 中国和无致谢均见双语元数据工作表，不得恢复为未提供；
+1. 确认 / 核验已选邮箱由作者持有且可正常收发，并由人类补全 Author Contributions 与 live interface 要求的其他未提供事实（如必填州或省）；邮箱名称、署名、独立研究者身份、ORCID、无基金、无利益冲突、通讯作者身份、温州 / 中国和无致谢均见双语元数据工作表，不得恢复为未提供；
 2. 正式 submission 前再次核验 EIT live submission interface，并对 2026-09-22 已复核的动态 policy 做 at-submission final recheck；
 3. 获得独立、明确的 submission authorization 后才可执行正式投稿；
 4. publication route / licence 留到 acceptance 后由人类选择。
@@ -108,7 +108,7 @@ Final Artifact / publication 层仍存在：
 - anonymization risk (`AHICP` discoverability)：`MASKED REVIEWER ROUTE HUMAN-CONFIRMED / PUBLIC REPOSITORY NOT PROACTIVELY SUPPLIED / MASKED-ANONYMIZED MATERIALS IF REQUIRED`
 - Word/docx：`TRACEABLE + MASKED 20-PAGE VISUAL QA PASS / AUTO PAGE NUMBERING + NON-SPLIT TABLE ROWS + ANONYMOUS METADATA GATES`
 - Final Artifact Approval：`COMPLETED — AHICP-D034 / APPROVED BASELINE 332ff0197e89c99f1b6bb70aedbb47cf425bdb21`
-- submission-time factual metadata：`PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`；剩余主要为最终通讯邮箱与 Author Contributions，另按实际界面补全未提供必填项；live interface 尚未填写 / 核验。
+- submission-time factual metadata：`PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`；邮箱名称已选定，持有权 / 收发核验与 Author Contributions 仍待完成，另按实际界面补全未提供必填项；live interface 尚未填写 / 核验。
 - live submission interface / at-submission policy recheck：`PENDING`
 - submission authorization：`WAITING-HUMAN — SEPARATE EXPLICIT AUTHORIZATION REQUIRED`
 

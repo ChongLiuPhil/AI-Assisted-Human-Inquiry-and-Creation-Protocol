@@ -16,7 +16,7 @@ From Conversation to Persistent Research State: Human–AI Research Collaboratio
 
 The human previously supplied the author name "刘崇 Chong Liu", the status "独立研究者" (Independent Researcher), ORCID `https://orcid.org/0009-0009-8116-1255`, "无基金" (no funding), and "无利益冲突" (no competing interests). In a subsequent reply on the same date, the human explicitly confirmed serving as corresponding author, gave the location "中国温州" (Wenzhou, China), and stated "无致谢" (no acknowledgements). The values below record only these replies. Do not infer submission facts from a GitHub profile, commit metadata, the ORCID page, or other account information.
 
-The corresponding email remains under candidate-name comparison, without final selection or confirmation of availability. An AI naming recommendation is not human confirmation and must not be entered as the corresponding email.
+The human subsequently replied "同意建议，请继续" (agreed with the recommendation; continue) to the recommendation to use `chong.liu.phil@outlook.com` for long-term academic correspondence. This records the email-name selection, not proof that the address is registered, controlled by the author, or able to send and receive mail. Do not reset the name selection to undecided or promote it to verified account availability.
 
 ## Author information
 
@@ -27,7 +27,8 @@ The corresponding email remains under candidate-name comparison, without final s
 - Country: China (中国)
 - State / province, only if required by the actual interface: `[HUMAN TO COMPLETE IF REQUIRED]`
 - Corresponding author: 刘崇 / Chong Liu
-- Corresponding-author email: `[HUMAN TO COMPLETE]`
+- Corresponding-author email (selected name): `chong.liu.phil@outlook.com`
+- Email status: `HUMAN-SELECTED — OWNERSHIP / SEND-RECEIVE VERIFICATION PENDING`
 - ORCID: https://orcid.org/0009-0009-8116-1255
 
 ## Acknowledgements
@@ -64,8 +65,9 @@ Use the reviewed wording from `AI_USE_DISCLOSURE.zh-CN.md` / `AI_USE_DISCLOSURE.
 
 ## Remaining items and use boundaries
 
-- Final corresponding email, author contributions, and other facts required by the actual interface but not yet supplied, such as a mandatory state / province: `WAITING-HUMAN — DO NOT INFER`.
-- Corresponding-author identity, Wenzhou / China, and no acknowledgements are human-confirmed and must not be reset to unsupplied.
+- The email name is human-selected; control of the address and normal sending / receiving still require confirmation / verification. Account access was not authorized in this cycle; no account verification, mailbox creation, or test-email sending was completed. Do not infer account permissions from a naming choice or request passwords, verification codes, or other secrets.
+- Author contributions and other facts required by the actual interface but not yet supplied, such as a mandatory state / province: `WAITING-HUMAN — DO NOT INFER`.
+- Corresponding-author identity, Wenzhou / China, no acknowledgements, and the email-name selection are human-confirmed and must not be reset to unsupplied.
 - Receipt of these facts does not mean that the live submission interface has been completed or verified.
 - Do not copy author-identifying fields into `MANUSCRIPT_BLINDED.md`, `MANUSCRIPT_BLINDED_MASKED.md`, their reviewer-facing DOCX files, or anonymous file metadata.
 - Do not change `MA-FW-001`, the approved manuscripts, citations, AI-use disclosure, or masked reviewer route.

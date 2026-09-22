@@ -22,9 +22,9 @@
 
 **状态：** `PARTIALLY PROVIDED — REMAINING FIELDS WAITING-HUMAN — DO NOT INFER`
 
-人类已提供：刘崇 / Chong Liu、独立研究者、ORCID `0009-0009-8116-1255`、无基金、无利益冲突；后续同日确认由本人担任通讯作者、城市 / 国家为温州 / 中国、无致谢。来源与对应英文措辞已保存在 `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` 和英文 mirror。
+人类已提供：刘崇 / Chong Liu、独立研究者、ORCID `0009-0009-8116-1255`、无基金、无利益冲突；后续同日确认由本人担任通讯作者、城市 / 国家为温州 / 中国、无致谢。人类随后回复“同意建议，请继续”，选定邮箱名称 `chong.liu.phil@outlook.com`。来源与对应英文措辞已保存在 `paper/submission/ethics-information-technology/TITLE_PAGE_METADATA_TEMPLATE.zh-CN.md` 和英文 mirror。
 
-仍缺最终通讯邮箱、Author Contributions，以及实际界面要求的其他未提供事实（如必填州或省）。通讯邮箱仍在候选命名比较，尚未最终选定或确认可用，AI 建议不是人类确认。不能从姓名、ORCID 或连接账户猜填。元数据工作表不是 reviewer-facing 文件，live interface 尚未完成；本次事实补充不构成 submission / publication / release authorization。“无致谢”不取消既有 substantive AI-use disclosure。
+邮箱名称已选定，但地址持有权与正常收发仍为 `HUMAN-SELECTED — OWNERSHIP / SEND-RECEIVE VERIFICATION PENDING`；本轮未取得账户访问授权，未完成账户核验、未创建邮箱或发送测试邮件。Author Contributions 及实际界面要求的其他未提供事实（如必填州或省）仍待人类补全。不能从姓名、ORCID、连接账户或命名选择猜填。元数据工作表不是 reviewer-facing 文件，live interface 尚未完成；本次事实补充不构成 submission / publication / release authorization。“无致谢”不取消既有 substantive AI-use disclosure。
 
 ## 2. COMPLETED METHODOLOGY ARTICLE TASKS
 
@@ -57,7 +57,7 @@
 
 ## 4. NEXT ACTIONS
 
-1. 人类补全最终通讯邮箱、Author Contributions 与实际界面要求的其他未提供事实（如必填州或省）；已提供的通讯作者身份、温州 / 中国、无致谢及此前五项事实不重复请求，也不从身份信息或 AI 邮箱命名建议推断剩余字段；
+1. 确认 / 核验作者持有已选邮箱且可正常收发，并由人类补全 Author Contributions 与实际界面要求的其他未提供事实（如必填州或省）；已确认的邮箱名称、通讯作者身份、温州 / 中国、无致谢及此前五项事实不重复请求，不从命名同意推断账户可用性或作者贡献；
 2. 正式投稿前再次检查 EIT live submission interface；动态 EIT / SNAPP / ICMJE / Nature policy pages 已于 2026-09-22 复核，实际提交当刻仍需 final recheck；
 3. 获得独立、明确的 submission authorization 后才可执行正式投稿；
 4. submission 后续 publication / release 继续遵守独立授权；如文章被接受，再由人类选择 subscription 或 open access，并在 OA 情形选择适用 licence。
