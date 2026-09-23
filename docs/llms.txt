@@ -35,6 +35,6 @@ For cross-component project configuration, reconstruct the full ecosystem first.
 For AHICP repository-internal substantive work, continue to follow AHICP's own START_HERE and manifest onboarding order after ecosystem discovery.
 
 Public delivery migration:
-The four public framework sections now use one Cloudflare Worker at https://inquirystack.philohub.workers.dev/. GitHub remains the canonical source. Former GitHub Pages URLs remain available as legacy entrypoints.
+The four public framework sections now use one Cloudflare Worker at https://inquirystack.philohub.workers.dev/. GitHub remains the canonical source. Former GitHub Pages sites have been retired.
 Migration guide: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md
 Migration state: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/templates/cloudflare-public-delivery.yaml

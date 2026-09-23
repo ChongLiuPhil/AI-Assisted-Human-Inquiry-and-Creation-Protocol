@@ -13,7 +13,7 @@ This separation keeps the explanation readable while preserving a precise machin
 
 ### The public website can move without changing the role
 
-The public human introduction now uses the verified Cloudflare Worker at https://inquirystack.philohub.workers.dev/. GitHub remains the canonical source/version-control provider; former GitHub Pages URLs remain available as legacy entrypoints.
+The public human introduction now uses the verified Cloudflare Worker at https://inquirystack.philohub.workers.dev/. GitHub remains the canonical source/version-control provider; the former GitHub Pages sites have been retired.
 
 The URL is a delivery location, not the identity of the method. The approved cutover and rollback are recorded in the [coordinated Cloudflare public-delivery migration](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md).
 
