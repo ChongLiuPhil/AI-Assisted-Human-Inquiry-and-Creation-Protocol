@@ -13,7 +13,7 @@ AHICP 负责探究与创作中的方法、判断和协作规则。它独立于�
 
 ### 承载网站的平台可以替换
 
-正式人类入口现由 https://inquirystack.philohub.workers.dev/ 的 Cloudflare Worker 提供。GitHub 继续作为权威源文件、版本历史和 CI 平台；原 GitHub Pages URL 保留为旧入口。
+正式人类入口现由 https://inquirystack.philohub.workers.dev/ 的 Cloudflare Worker 提供。GitHub 继续作为权威源文件、版本历史和 CI 平台；原 GitHub Pages 站点已停用。
 
 这个网址只是当前承载位置，不等于入口本身。已批准的切换及回滚记录见 [Cloudflare 公共站点迁移说明](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.zh-CN.md)。
 

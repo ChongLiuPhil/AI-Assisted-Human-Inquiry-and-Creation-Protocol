@@ -254,7 +254,7 @@ Working Memory 负责“现在正在做什么”。
 
 因此，AHICP 负责这套体系中与思考过程、依据、决定和交接有关的规则。
 
-[AHICP 主页](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/)
+[AHICP 主页](https://inquirystack.philohub.workers.dev/ahicp/)
 
 ### 4.2 PPF：帮助你的作品长期保存、构建和发布
 
@@ -275,7 +275,7 @@ Working Memory 负责“现在正在做什么”。
 - Continuous Web；
 - 可重建性。
 
-[PPF 主页](https://chongliuphil.github.io/Personal-Publishing-Framework/)
+[PPF 主页](https://inquirystack.philohub.workers.dev/ppf/)
 
 ### 4.3 Vault Interface：帮助你只公开应该公开的信息
 
@@ -300,7 +300,7 @@ Working Memory 负责“现在正在做什么”。
 - 密码；
 - 私有仓库的位置。
 
-[Vault Interface 主页](https://chongliuphil.github.io/Vault-interface/)
+[Vault Interface 主页](https://inquirystack.philohub.workers.dev/vault-interface/)
 
 ### 4.4 Starter：帮助你把这些东西正确组合起来
 
@@ -326,7 +326,7 @@ Starter 处理的问题是：
 + 项目自己的内容
 ~~~
 
-[Starter 主页](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
+[Starter 主页](https://inquirystack.philohub.workers.dev/starter/)
 
 ---
 
@@ -696,7 +696,7 @@ AI 配置项目
 我想使用 AHICP / Inquiry Publishing Stack 开始一个长期项目。
 
 请先打开并读取以下机器入口：
-https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
+https://inquirystack.philohub.workers.dev/agent/
 
 请自行读取其中列出的 ecosystem、Agent Retrieval Contract 和必要的上游规范，并按默认完整配置工作：完整 AHICP + 完整 PPF + Vault Interface；原创和未发布内容默认保持 private，未发布网页默认 restricted + authenticated。
 

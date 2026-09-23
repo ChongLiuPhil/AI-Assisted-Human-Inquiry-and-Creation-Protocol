@@ -252,7 +252,7 @@ It helps preserve:
 
 AHICP is the part of the stack that governs inquiry, decisions, project memory, and handoff.
 
-[AHICP homepage](https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/)
+[AHICP homepage](https://inquirystack.philohub.workers.dev/ahicp/)
 
 ### 4.2 PPF: keep work durable, buildable, and publishable
 
@@ -273,7 +273,7 @@ It focuses on:
 - Continuous Web;
 - rebuildability.
 
-[PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/)
+[PPF homepage](https://inquirystack.philohub.workers.dev/ppf/)
 
 ### 4.3 Vault Interface: expose only what should be public
 
@@ -298,7 +298,7 @@ without publishing:
 - passwords;
 - private repository locators.
 
-[Vault Interface homepage](https://chongliuphil.github.io/Vault-interface/)
+[Vault Interface homepage](https://inquirystack.philohub.workers.dev/vault-interface/)
 
 ### 4.4 Starter: compose the pieces correctly
 
@@ -324,7 +324,7 @@ full AHICP
 + project-owned content
 ~~~
 
-[Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/)
+[Starter homepage](https://inquirystack.philohub.workers.dev/starter/)
 
 ---
 
@@ -694,7 +694,7 @@ Bootstrap instruction to give the AI:
 I want to start using AHICP / the Inquiry Publishing Stack.
 
 First read and follow the machine entrypoint:
-https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
+https://inquirystack.philohub.workers.dev/agent/
 
 You must retrieve the ecosystem, Agent Retrieval Contract, and required upstream specifications linked from that entry, then work from the complete default stack: full AHICP + full PPF + Vault Interface, with original and unpublished source private by default and unpublished Web restricted/authenticated by default.
 
