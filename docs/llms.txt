@@ -4,16 +4,16 @@ Current component: AHICP
 Role: human-led AI-assisted inquiry and creation governance.
 
 Human conceptual entrypoint:
-https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/
+https://inquirystack.philohub.workers.dev/
 Human Guide (Chinese canonical):
 https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol/blob/main/docs/HUMAN_GUIDE.zh-CN.md
 Human Guide (English mirror):
 https://github.com/ChongLiuPhil/AI-Assisted-Human-Inquiry-and-Creation-Protocol/blob/main/docs/HUMAN_GUIDE.md
 
 Machine/configuration entrypoint:
-https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
+https://inquirystack.philohub.workers.dev/agent/
 Machine descriptor:
-https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/entry.json
+https://inquirystack.philohub.workers.dev/agent/entry.json
 Machine-readable ecosystem:
 https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/ecosystem.yaml
 
@@ -25,16 +25,16 @@ Agent retrieval contract:
 https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md
 
 Public homepages:
-- AHICP: https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/
-- PPF: https://chongliuphil.github.io/Personal-Publishing-Framework/
-- Vault Interface: https://chongliuphil.github.io/Vault-interface/
-- Starter: https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/
+- AHICP: https://inquirystack.philohub.workers.dev/
+- PPF: https://inquirystack.philohub.workers.dev/ppf/
+- Vault Interface: https://inquirystack.philohub.workers.dev/vault-interface/
+- Starter: https://inquirystack.philohub.workers.dev/starter/
 
 For cross-component project configuration, reconstruct the full ecosystem first. Default new projects use full AHICP + full PPF + Vault Interface. Original or unpublished source is private by default; restricted Continuous Web does not authorize private-state retrieval. Never request or store secrets in chat or Git.
 
 For AHICP repository-internal substantive work, continue to follow AHICP's own START_HERE and manifest onboarding order after ecosystem discovery.
 
 Public delivery migration:
-Cloudflare Pages is the preferred delivery provider for the public framework sites. GitHub remains canonical source. Current GitHub Pages URLs remain authoritative until verified Cloudflare/custom-domain cutover.
+The four public framework sections now use one Cloudflare Worker at https://inquirystack.philohub.workers.dev/. GitHub remains the canonical source. Former GitHub Pages URLs remain available as legacy entrypoints.
 Migration guide: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md
 Migration state: https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/templates/cloudflare-public-delivery.yaml

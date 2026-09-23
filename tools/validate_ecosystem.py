@@ -14,8 +14,8 @@ CORE_REPOSITORIES = [
     "https://github.com/ChongLiuPhil/Vault-interface",
     "https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter",
 ]
-HUMAN_ENTRY = "https://chongliuphil.github.io/AI-Assisted-Human-Inquiry-and-Creation-Protocol/"
-MACHINE_ENTRY = "https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/"
+HUMAN_ENTRY = "https://inquirystack.philohub.workers.dev/"
+MACHINE_ENTRY = "https://inquirystack.philohub.workers.dev/agent/"
 
 
 def main() -> int:
@@ -33,11 +33,11 @@ def main() -> int:
     public_delivery = manifest.get("public_delivery")
     if not isinstance(public_delivery, dict):
         raise SystemExit("ecosystem.yaml is missing public_delivery")
-    if public_delivery.get("current_provider") != "github-pages":
-        raise SystemExit("AHICP must keep GitHub Pages current before verified cutover")
-    if public_delivery.get("preferred_provider") != "cloudflare-pages":
-        raise SystemExit("AHICP preferred public delivery must be Cloudflare Pages")
-    if public_delivery.get("cutover_rule") != "keep-current-public-urls-until-verified-cloudflare-deployment":
+    if public_delivery.get("current_provider") != "cloudflare-workers":
+        raise SystemExit("AHICP must record the approved Workers cutover")
+    if public_delivery.get("preferred_provider") != "cloudflare-workers":
+        raise SystemExit("AHICP preferred public delivery must be Cloudflare Workers")
+    if public_delivery.get("cutover_rule") != "workers-dev-canonical-after-verified-human-approved-cutover":
         raise SystemExit("AHICP public URL cutover rule is missing or unsafe")
 
     machine = manifest.get("machine_entrypoint")
