@@ -13,18 +13,18 @@ This separation keeps the explanation readable while preserving a precise machin
 
 ### The public website can move without changing the role
 
-The current public introduction is still delivered through GitHub Pages. Cloudflare Pages is now the preferred delivery target, while GitHub remains the canonical source/version-control provider. The current URL remains authoritative until the Cloudflare deployment, target domain, machine handoff, and cross-project links have been verified.
+The public human introduction now uses the verified Cloudflare Worker at https://inquirystack.philohub.workers.dev/. GitHub remains the canonical source/version-control provider; former GitHub Pages URLs remain available as legacy entrypoints.
 
-The URL is a delivery location, not the identity of the method. Follow the [coordinated Cloudflare public-delivery migration](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md); do not replace the Human Entry URL merely because a Cloudflare staging project exists.
+The URL is a delivery location, not the identity of the method. The approved cutover and rollback are recorded in the [coordinated Cloudflare public-delivery migration](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.md).
 
 The current stable machine entry is:
-https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
+https://inquirystack.philohub.workers.dev/agent/
 
 For a complete project configuration, follow the [Starter ecosystem entrypoint](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md) and read the PPF publishing layer:
 
-- [PPF homepage](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [repository](https://github.com/ChongLiuPhil/Personal-Publishing-Framework)
-- [Vault Interface homepage](https://chongliuphil.github.io/Vault-interface/) · [repository](https://github.com/ChongLiuPhil/Vault-interface)
-- [Starter homepage](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/) · [repository](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter)
+- [PPF homepage](https://inquirystack.philohub.workers.dev/ppf/) · [repository](https://github.com/ChongLiuPhil/Personal-Publishing-Framework)
+- [Vault Interface homepage](https://inquirystack.philohub.workers.dev/vault-interface/) · [repository](https://github.com/ChongLiuPhil/Vault-interface)
+- [Starter homepage](https://inquirystack.philohub.workers.dev/starter/) · [repository](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter)
 
 The default new-project baseline is **full AHICP + full PPF + Vault Interface**, with Vault Interface used only for the public metadata contract. Reduced profiles require explicit human selection. A project records its actual adoption and pinned revisions instead of copying a second authoritative framework.
 

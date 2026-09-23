@@ -13,18 +13,18 @@ AHICP 负责探究与创作中的方法、判断和协作规则。它独立于�
 
 ### 承载网站的平台可以替换
 
-当前面向读者的网站仍由 GitHub Pages 提供；Cloudflare Pages 已确定为首选迁移目标，GitHub 继续作为权威源文件、版本历史和 CI 平台。在 Cloudflare 部署、目标域名、机器交接和跨项目链接全部验证完成以前，现有 URL 仍然是正式入口。
+正式人类入口现由 https://inquirystack.philohub.workers.dev/ 的 Cloudflare Worker 提供。GitHub 继续作为权威源文件、版本历史和 CI 平台；原 GitHub Pages URL 保留为旧入口。
 
-这个网址只是当前承载位置，不等于入口本身。迁移应遵循 [Cloudflare 公共站点迁移说明](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.zh-CN.md)；不能因为 Cloudflare staging project 已经创建，就提前修改 Human Entry URL。
+这个网址只是当前承载位置，不等于入口本身。已批准的切换及回滚记录见 [Cloudflare 公共站点迁移说明](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CLOUDFLARE_PUBLIC_DELIVERY_MIGRATION.zh-CN.md)。
 
 当前稳定的机器入口：
-https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/agent/
+https://inquirystack.philohub.workers.dev/agent/
 
 要完成一个项目的完整配置，请先阅读 [Starter 体系入口](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.zh-CN.md)，再阅读 PPF 发布层：
 
-- [PPF 主页](https://chongliuphil.github.io/Personal-Publishing-Framework/) · [仓库](https://github.com/ChongLiuPhil/Personal-Publishing-Framework)
-- [Vault Interface 主页](https://chongliuphil.github.io/Vault-interface/) · [仓库](https://github.com/ChongLiuPhil/Vault-interface)
-- [Starter 主页](https://chongliuphil.github.io/Inquiry-Publishing-Project-Starter/) · [仓库](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter)
+- [PPF 主页](https://inquirystack.philohub.workers.dev/ppf/) · [仓库](https://github.com/ChongLiuPhil/Personal-Publishing-Framework)
+- [Vault Interface 主页](https://inquirystack.philohub.workers.dev/vault-interface/) · [仓库](https://github.com/ChongLiuPhil/Vault-interface)
+- [Starter 主页](https://inquirystack.philohub.workers.dev/starter/) · [仓库](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter)
 
 新项目的默认基线是 **完整 AHICP + 完整 PPF + Vault Interface**，Vault Interface 只负责公共元数据契约。精简配置（profile）必须由使用者明确选择。项目应记录实际采用状态和固定版本，而不是复制出第二个权威规范。
 
