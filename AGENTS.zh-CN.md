@@ -12,11 +12,11 @@ AHICP 公共主页与 `docs/HUMAN_GUIDE.zh-CN.md` 是整个体系的人类概念
 
 ## 跨仓库生态分流
 
-当本仓库用于与 PPF、Vault Interface 或 Starter 一起配置、组合、升级、发布或操作下游项目时，先阅读 `docs/ECOSYSTEM.zh-CN.md`、`ecosystem.yaml` 与 [canonical 跨仓库 Agent 调取契约](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.zh-CN.md)，并在作出跨组件决定前恢复四个公共组件的责任关系。
+当本仓库用于与 PPF、Vault Interface 或 Starter 一起配置、组合、Provisioning、升级、发布或操作下游项目时，先阅读 `docs/ECOSYSTEM.zh-CN.md`、`ecosystem.yaml` 与 [canonical 跨仓库 Agent 调取契约](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.zh-CN.md)。面对新项目时，还必须读取 [项目自动配置契约](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/PROJECT_PROVISIONING_CONTRACT.zh-CN.md)，并在作出跨组件决定前恢复四个公共组件的责任关系。
 
 这一生态分流**不替代** AHICP 仓库内部 onboarding。完成生态恢复后，在 AHICP 仓库内部进行实质工作仍须遵循下方的 `START_HERE.zh-CN.md`、`AHICP_MANIFEST.yaml` 与 onboarding handshake。
 
-对于原创或未发布的下游项目，完整栈默认姿态是完整 AHICP + 完整 PPF + Vault Interface、private canonical source，以及在得到人类明确公开发布授权前保持 restricted/authenticated 的 Continuous Web。公共链接绝不授权私人状态访问。Cloudflare 人类交接必须遵循共享操作契约，并提供编号的操作者级步骤、秘密边界、完成证据、验证与回滚。
+对于原创或未发布的下游项目，完整栈默认姿态是完整 AHICP + 完整 PPF + Vault Interface、private canonical source，以及在得到人类明确公开发布授权前保持 restricted/authenticated 的 Continuous Web。平台 bootstrap 已 verified 后，优先采用 `agent-provisioned-external-ci`，并在批准 scope 内复用 bounded standing authorization 完成普通 private/restricted setup，不要把常规 Provider 操作反复升级给人类。公共链接绝不授权私人状态访问；project deployment token 明文必须停留在 trusted Secret Broker。只有真正的保留边界才需要 Cloudflare 人类交接，并提供编号步骤、秘密边界、完成证据、验证与回滚。
 
 ## 0. 零上下文接管：先读 START_HERE
 
