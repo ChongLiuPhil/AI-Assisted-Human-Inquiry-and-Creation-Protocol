@@ -32,7 +32,7 @@ Public homepages:
 - Vault Interface: https://inquirystack.philohub.workers.dev/vault-interface/
 - Starter: https://inquirystack.philohub.workers.dev/starter/
 
-For cross-component project configuration, reconstruct the full ecosystem first. Default new projects use full AHICP + full PPF + Vault Interface. After verified platform bootstrap, prefer agent-provisioned-external-ci and reuse standing authorization for ordinary private/restricted setup inside the approved scope. Original or unpublished source is private by default; restricted Continuous Web does not authorize private-state retrieval. Deployment-token plaintext belongs only inside the trusted Secret Broker, never chat/model context or Git. Public release and other reserved gates still require separate human authorization.
+For cross-component project configuration, reconstruct the full ecosystem first. Default new projects use full AHICP + full PPF + Vault Interface. Ordinary new projects prefer workers-builds-native under the personal ChongLiuPhil account, with one short human-assisted GitHub → Cloudflare project bootstrap followed by a required second-push automatic-deployment check. Original or unpublished source is private by default; restricted Continuous Web does not authorize private-state retrieval. Provider credential plaintext never belongs in chat/model context or Git. Agent-provisioned external CI and the Trusted Secret Broker remain optional advanced infrastructure. Public release and other reserved gates still require separate human authorization.
 
 For AHICP repository-internal substantive work, continue to follow AHICP's own START_HERE and manifest onboarding order after ecosystem discovery.
 
