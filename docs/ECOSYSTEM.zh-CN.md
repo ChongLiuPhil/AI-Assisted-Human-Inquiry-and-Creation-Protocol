@@ -7,9 +7,9 @@ AHICP 负责探究与创作中的方法、判断和协作规则。它独立于�
 整个体系设置两个入口，分别服务于“理解”和“配置”：
 
 - **面向读者的介绍入口 — AHICP：** [使用指南](HUMAN_GUIDE.zh-CN.md) 与 AHICP 公共主页负责解释为什么需要这套体系、它怎样帮助长期思考与创作，以及四个组件怎样协作。
-- **机器/配置入口 — Starter：** Starter ecosystem 与 Agent Retrieval Contract 负责项目组合、状态恢复、采用、升级、部署和跨组件 Agent 行为。
+- **机器/配置入口 — Starter：** Starter ecosystem、Agent Retrieval Contract 与 Project Provisioning Contract 负责项目组合、状态恢复、采用、低人工 Provisioning、升级、部署和跨组件 Agent 行为。
 
-这样，读者可以先从问题和使用方式理解体系，而不必先接触技术配置；同时机器契约仍保持完整。AHICP 继续负责思考、判断和协作方法，Starter 负责组合与配置。
+这样，读者可以先从问题和使用方式理解体系，而不必先接触技术配置；同时机器契约仍保持完整。AHICP 继续负责思考、判断和协作方法；Starter 负责组合与 Provisioning 编排；真正可执行的 publishing / provider infrastructure 仍由 PPF 保持权威。
 
 ### 承载网站的平台可以替换
 
@@ -26,10 +26,10 @@ https://inquirystack.philohub.workers.dev/agent/
 - [Vault Interface 主页](https://inquirystack.philohub.workers.dev/vault-interface/) · [仓库](https://github.com/ChongLiuPhil/Vault-interface)
 - [Starter 主页](https://inquirystack.philohub.workers.dev/starter/) · [仓库](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter)
 
-新项目的默认基线是 **完整 AHICP + 完整 PPF + Vault Interface**，Vault Interface 只负责公共元数据契约。精简配置（profile）必须由使用者明确选择。项目应记录实际采用状态和固定版本，而不是复制出第二个权威规范。
+新项目的默认基线是 **完整 AHICP + 完整 PPF + Vault Interface**，Vault Interface 只负责公共元数据契约。精简配置（profile）必须由使用者明确选择。平台 bootstrap 已 verified 后，首选 infrastructure profile 为 `agent-provisioned-external-ci`：private GitHub source、account-wide Access 保护的 Worker、trusted Secret Broker，以及使用 project-scoped Worker credential 的 GitHub Actions deployment。Verified standing authorization 可以覆盖已批准 scope 内普通 private/restricted 项目的创建；public release、reader 扩大、domain/DNS、Provider scope 扩大与 paid-plan change 仍由人保留。项目应记录实际采用状态和固定版本，而不是复制出第二个权威规范。
 
 原创未发布作品、工作记忆、凭据和项目特定版权资产默认保持 private。Continuous Web 仍可同时准备，但未发布或过渡阶段输出默认 restricted。Git 只保存 access-policy reference，不保存真实阅读凭据或其他秘密。
 
-Cloudflare 部署与读者访问操作应遵循 [PPF/Starter 操作指南](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CONTINUOUS_WEB_CLOUDFLARE.zh-CN.md)。AI Agent 在要求使用者执行 Cloudflare 操作前，必须说明操作范围、凭据边界、数据传输、验证方法和回滚方式。
+Cloudflare 部署与读者访问操作应遵循 [Starter 项目自动配置契约](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/PROJECT_PROVISIONING_CONTRACT.zh-CN.md) 和 [PPF/Starter 操作指南](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/CONTINUOUS_WEB_CLOUDFLARE.zh-CN.md)。如果 verified standing authorization 已覆盖普通 restricted setup，Agent 应继续可机器执行的工作，不要机械地反复交还给人类。Deployment token 明文必须留在 trusted Secret Broker，不能进入 chat/model context。
 
 跨组件工作还必须阅读 [权威 Agent 调取契约](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.zh-CN.md)。公共链接只用于恢复生态关系，不授权私人状态访问。

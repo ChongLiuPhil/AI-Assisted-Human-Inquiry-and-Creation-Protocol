@@ -4,7 +4,7 @@
 
 **Related public projects:** [PPF homepage](https://inquirystack.philohub.workers.dev/ppf/) · [Vault Interface homepage](https://inquirystack.philohub.workers.dev/vault-interface/) · [Starter homepage](https://inquirystack.philohub.workers.dev/starter/)
 
-**Ecosystem and agent entrypoint:** [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) · [`ecosystem.yaml`](ecosystem.yaml) · [`llms.txt`](docs/llms.txt) · [Starter unified guide](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md) · [Agent retrieval contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md)
+**Ecosystem and agent entrypoint:** [`docs/ECOSYSTEM.md`](docs/ECOSYSTEM.md) · [`ecosystem.yaml`](ecosystem.yaml) · [`llms.txt`](docs/llms.txt) · [Starter unified guide](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/ECOSYSTEM.md) · [Agent retrieval contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/AGENT_RETRIEVAL_CONTRACT.md) · [Project provisioning contract](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter/blob/main/docs/PROJECT_PROVISIONING_CONTRACT.md)
 
 # AI-Assisted Human Inquiry and Creation Protocol
 
@@ -316,4 +316,4 @@ For projects that need to compose AHICP with PPF and the public Vault Interface,
 
 https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter
 
-The Starter handles composition, revision locking, checks, and upgrade planning only. This repository remains authoritative for its own specification and templates.
+Starter handles composition, revision locking, project-provisioning orchestration, checks, and upgrade planning. It delegates executable publishing/provider operations to the pinned PPF implementation rather than becoming a second infrastructure authority. This repository remains authoritative for AHICP's own specification and templates.
