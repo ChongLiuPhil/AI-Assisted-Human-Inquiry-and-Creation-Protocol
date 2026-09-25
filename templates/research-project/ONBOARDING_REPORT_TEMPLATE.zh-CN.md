@@ -30,7 +30,15 @@
 - PENDING_HUMAN_DECISIONS / Clarifications：
 - SYNC_DEFECTS：
 
-### C3. Work Log
+### C3. External Operational State（存在时）
+- project-bootstrap-state.yaml：`PRESENT / ABSENT`
+- infrastructure/bootstrap status：
+- pending human provider step：
+- last verified provider state：
+- memory_writeback.last_sync：
+- repository ↔ provider sync defect：`None / ...`
+
+### C4. Work Log
 - 默认跳过：`YES`
 - 本次是否因历史回顾/审计而读取：`YES / NO`
 
