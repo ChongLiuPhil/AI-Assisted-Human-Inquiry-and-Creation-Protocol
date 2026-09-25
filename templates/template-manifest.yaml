@@ -60,6 +60,10 @@ upgrade_policy:
     - core/FORM_CORE*
     - core/DECISION_LOG*
     - docs/working-memory/**
+    - project-bootstrap-state.yaml
+    - project-provisioning.yaml
+    - project-stack.yaml
+    - project-stack.lock.yaml
     - docs/frameworks/**
     - evidence/**
     - paper/**
