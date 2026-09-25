@@ -27,6 +27,7 @@
 ## HANDOFF POINTERS
 
 - Task Plan: `docs/working-memory/task-plan.zh-CN.md`
+- Project bootstrap state (when present): `project-bootstrap-state.yaml`
 - task-relevant Long-Term Memory: `...`
 
-> Keep this extremely short. It stores only what matters most now.
+> Keep this extremely short. It stores only what matters most now. If a provider/external-system step is the current blocker, store only the blocker, pending human action, resume condition, and the `project-bootstrap-state.yaml` pointer; detailed actual state stays in Bootstrap State.
