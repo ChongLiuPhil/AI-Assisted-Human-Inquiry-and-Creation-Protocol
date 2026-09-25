@@ -14,9 +14,10 @@
 > 6. read `docs/working-memory.zh-CN.md` (Index);
 > 7. read `docs/working-memory/current-focus.zh-CN.md`;
 > 8. read `docs/working-memory/task-plan.zh-CN.md`;
-> 9. skip Work Log by default; retrieve it only for historical review, audit, change reconstruction, or current/history conflict;
-> 10. selectively retrieve project state from the three long-term layers using manifest/context-interface task routing;
-> 11. output a AHICP Onboarding Report and confirm `AHICP REPOSITORY CONTEXT — ACTIVE`.
+> 9. if `project-bootstrap-state.yaml` exists, read it to recover the latest verified external operational state;
+> 10. skip Work Log by default; retrieve it only for historical review, audit, change reconstruction, or current/history conflict;
+> 11. selectively retrieve project state from the three long-term layers using manifest/context-interface task routing;
+> 12. output a AHICP Onboarding Report and confirm `AHICP REPOSITORY CONTEXT — ACTIVE`.
 >
 > Chinese is canonical; English is the synchronized mirror.
 >
@@ -30,4 +31,4 @@
 >
 > `human decision -> Decision Log -> appropriate Core -> Argument Map -> Artifact -> bilingual parity`
 >
-> If current state cannot be reconstructed from the repository alone, stop large-scale work and report an onboarding/persistence defect.
+> If current state cannot be reconstructed from the repository alone, stop large-scale work and report an onboarding/persistence defect. Provider/UI configuration is included: chat memory must not substitute for `project-bootstrap-state.yaml` or Working Memory write-back.
