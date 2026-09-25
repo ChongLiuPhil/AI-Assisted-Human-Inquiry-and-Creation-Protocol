@@ -10,6 +10,7 @@
 - 记录已表达的高层理由，而不是 AI 隐藏推理；
 - 不作为当前任务/主张的规范真值源；
 - 在阶段转换、重要决定、任务批次完成或人类要求时定期追加；
+- 外部系统 bootstrap 的关键里程碑（repository verified private、Workers Builds connected、Access verified-private、first deployment verified、second-push auto-deploy verified）应追加高层记录；详细 Provider actual state 留在 `project-bootstrap-state.yaml`；
 - 需要历史回顾、审计或变迁重建时才由 AI 按需读取。
 
 ---
@@ -32,3 +33,4 @@
 
 - Decision ID：`...`
 - Promotion destination：`...`
+- Operational state ref（如适用）：`project-bootstrap-state.yaml`
