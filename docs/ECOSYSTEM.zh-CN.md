@@ -26,7 +26,7 @@ https://inquirystack.philohub.workers.dev/agent/
 - [Vault Interface 主页](https://inquirystack.philohub.workers.dev/vault-interface/) · [仓库](https://github.com/ChongLiuPhil/Vault-interface)
 - [Starter 主页](https://inquirystack.philohub.workers.dev/starter/) · [仓库](https://github.com/ChongLiuPhil/Inquiry-Publishing-Project-Starter)
 
-新项目的默认基线是 **完整 AHICP + 完整 PPF + Vault Interface**，Vault Interface 只负责公共元数据契约。精简配置（profile）必须由使用者明确选择。普通新项目首选 infrastructure profile 为 `workers-builds-native`：source repository 默认位于个人 `ChongLiuPhil` GitHub 账号并保持 private，允许每项目一次短人工 GitHub → Cloudflare bootstrap，给 Worker 配置 Access，并验证第二次 push 无需重新授权即可自动部署。`agent-provisioned-external-ci` 继续作为高级可选 Profile。Public release、source repository 公开、reader 扩大、domain/DNS、Provider scope 扩大与 paid-plan change 仍由人保留。项目应记录实际采用状态和固定版本，而不是复制出第二个权威规范。
+新项目的默认基线是 **完整 AHICP + 完整 PPF + Vault Interface**，Vault Interface 只负责公共元数据契约。精简配置（profile）必须由使用者明确选择。普通**私人 downstream 项目**首选 `workers-builds-native` + `private-project-quota-saver`：source repository 默认位于个人 `ChongLiuPhil` GitHub 账号并保持 private，允许每项目一次短人工 GitHub → Cloudflare bootstrap，给 Worker 配置 Access，并验证第二次 content-only push 能在无需重新授权、且不启动重复 GitHub Actions production Web build 的情况下自动部署。Content-only 改动不启动 GitHub Actions，配置 PR 只运行一个轻量 contract gate，heavy GitHub workflow 手动运行，Cloudflare Workers Builds 负责 main 的自动 Web build；公共框架仓库继续保留完整 CI。`agent-provisioned-external-ci` 继续作为高级可选 Profile。Public release、source repository 公开、reader 扩大、domain/DNS、Provider scope 扩大、paid-plan change 与开启付费 Actions 仍由人保留。项目应记录实际采用状态和固定版本，而不是复制出第二个权威规范。
 
 原创未发布作品、工作记忆、凭据和项目特定版权资产默认保持 private。Continuous Web 仍可同时准备，但未发布或过渡阶段输出默认 restricted。Git 只保存 access-policy reference，不保存真实阅读凭据或其他秘密。
 
