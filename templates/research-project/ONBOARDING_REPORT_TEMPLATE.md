@@ -30,7 +30,15 @@
 - PENDING_HUMAN_DECISIONS / Clarifications:
 - SYNC_DEFECTS:
 
-### C3. Work Log
+### C3. External Operational State (when present)
+- project-bootstrap-state.yaml: `PRESENT / ABSENT`
+- infrastructure/bootstrap status:
+- pending human provider step:
+- last verified provider state:
+- memory_writeback.last_sync:
+- repository ↔ provider sync defect: `None / ...`
+
+### C4. Work Log
 - skipped by default: `YES`
 - read for historical review/audit in this onboarding: `YES / NO`
 
