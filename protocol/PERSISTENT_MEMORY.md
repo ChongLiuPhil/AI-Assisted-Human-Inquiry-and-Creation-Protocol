@@ -29,6 +29,7 @@ If yes, persist it.
 | Highest-priority current objective | `docs/working-memory/current-focus.zh-CN.md` |
 | Dynamic tasks/plans/pending decisions | `docs/working-memory/task-plan.zh-CN.md` |
 | Human retrospective work log | `docs/working-memory/work-log.zh-CN.md` (not default AI context) |
+| Latest verified non-secret external/provider bootstrap state, when the project defines such a contract | `project-bootstrap-state.yaml` or the project-declared equivalent machine state; Current Focus / Task Plan retain the blocker, pending human action, and resume pointer |
 | Current argument structure | `docs/argument-map.md` |
 | Human-approved argument baseline | `docs/frameworks/FW-xxx.md` |
 | Approval/synchronization state | `docs/framework-status.md` |
@@ -49,6 +50,8 @@ A stable project decision MUST NOT exist only in:
 
 If it matters to future continuity, give it an explicit repository representation.
 
+This includes external-system configuration. If GitHub/Cloudflare or another provider UI fact changes what a replacement Agent should do—what was connected, what still waits for the human, or which deployment/access state was verified—it must be written to the project-declared machine state plus Working Memory pointers. Secret values still never belong in the repository.
+
 ## Context-window independence is not infinite context
 
 AHICP does not claim that a model can read an indefinitely growing repository in one prompt.
@@ -66,7 +69,8 @@ For routine takeover, keep the operational resume path concise:
 - relevant recent decision entries;
 - Working Argument Map;
 - Framework Status;
-- latest approved framework.
+- latest approved framework;
+- when external/provider work is in scope, the project-declared operational state such as `project-bootstrap-state.yaml`.
 
 Work Log is historical state primarily for human retrospective review and is skipped by default during AI onboarding.
 
@@ -110,7 +114,8 @@ This means:
 - file excerpts in active context are temporary non-authoritative cache;
 - relevant latest revisions are refetched before high-impact judgments and writes;
 - after canonical writes, older cache becomes `STALE`;
-- refetch when needed rather than synchronizing a second chat copy.
+- refetch when needed rather than synchronizing a second chat copy;
+- before human provider-UI handoff, persist pending state; after the human returns, verify actual state before writing completed / verified state.
 
 Session Context Bootstrap therefore retains only a Repository Resolver: how to find memory, not another copy of memory.
 
