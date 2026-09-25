@@ -23,6 +23,11 @@ Working Memory:
 - work log: docs/working-memory/work-log.zh-CN.md (human-retrospective; not default read)
 - operational state only; not long-term semantic authority
 
+External operational state (when present):
+- project bootstrap/provider projection: project-bootstrap-state.yaml
+- repository-backed, non-secret, last-verified state only
+- pending human provider action must also appear in Task Plan / Current Focus
+
 Policy:
 - repository-backed
 - selective retrieval
@@ -45,16 +50,17 @@ Working Memory 需要时先从 GitHub fresh-fetch，用于确定当前阶段与�
 
 1. 重读 manifest / context interface；
 2. fresh-fetch Working Memory，确认当前阶段、目标、任务、阻塞与 next actions；
-3. 解析当前任务所需的长期记忆依赖；
-4. fresh-fetch 这些 canonical 文件；
-5. 丢弃 stale cache；
-6. 继续工作。
+3. 如果存在 `project-bootstrap-state.yaml` 且当前任务涉及外部系统 / Provider，fresh-fetch 该文件并核对最近 verified state；
+4. 解析当前任务所需的长期记忆依赖；
+5. fresh-fetch 这些 canonical 文件；
+6. 丢弃 stale cache；
+7. 继续工作。
 
 不把全部项目状态重新复制进聊天。
 
 ## 写入规则
 
-canonical 文件写入后，旧上下文摘录立即视为 `STALE`。如果后续仍依赖，重新读取。
+canonical 文件或 `project-bootstrap-state.yaml` 写入后，旧上下文摘录立即视为 `STALE`。如果后续仍依赖，重新读取。人类 Provider UI handoff 前先写 pending state；人类返回后先验证 actual state，再写 completion。
 
 ## 原则
 
