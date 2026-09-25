@@ -16,6 +16,7 @@
 6. `docs/working-memory.zh-CN.md`
 7. `docs/working-memory/current-focus.zh-CN.md`
 8. `docs/working-memory/task-plan.zh-CN.md`
+9. 如果存在 `project-bootstrap-state.yaml`，读取它作为最近一次已验证的外部运行状态投影
 
 随后先用 Working Memory Index -> Current Focus -> Task Plan 确定续接点，再按 manifest / context interface 从三层长期记忆按需重建当前任务所需状态，并使用 `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` 输出 AHICP Onboarding Report；报告必须确认 `AHICP REPOSITORY CONTEXT — ACTIVE`。后续动态状态一律从 GitHub 最新 canonical revision 按需读取。
 
@@ -50,10 +51,12 @@ Clarification 是 Working Memory item，不是 Layer 1.5。人类解决后，执
 - 不得要求人类把 password、token、private key 或其他 secret 粘贴到聊天；
 - 只有身份授权、账户所有者 consent、权限授予、不可委托高影响决定，或当前工具确实无法完成的动作才 handoff；
 - handoff 必须最少步骤、一次只要求当前必要动作、假定无技术背景、明确不能发给 AI 的值，并给出可验证完成标准；
+- **handoff 之前**，如果项目存在 `project-bootstrap-state.yaml`，先把对应 human step 写成 `waiting-human`，并在 Task Plan / Current Focus 写明 pending action 与 resume condition；
 - 授权完成后由 Agent fresh-read repository、重新验证 provider actual state，并恢复后续 machine-operable work；
-- 影响未来工作的 external operation 必须验证并把 durable result 写回 repository。
+- **handoff 之后**，只有 Provider actual state 验证通过才把 Bootstrap State 写成 completed / verified，并同步 Current Focus / Task Plan；
+- 影响未来工作的 external operation 必须验证并把 durable result 写回 repository；有实质里程碑时再追加 Work Log。
 
-Provider UI、聊天状态和模型记忆都不是项目的持久权威状态。
+Provider UI 是外部 actual state；仓库保存最近一次已验证的非秘密投影。聊天状态和模型记忆都不是项目的持久权威状态。若仓库投影与 Provider actual state 不一致，先记录 sync defect 并 reconciliation，不得用聊天内容直接覆盖。
 
 ## 持久状态行动的授权作用域
 
