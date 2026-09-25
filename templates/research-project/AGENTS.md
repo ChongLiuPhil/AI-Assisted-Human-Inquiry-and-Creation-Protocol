@@ -16,6 +16,7 @@ Before substantive work, any new AI Agent must read:
 6. `docs/working-memory.zh-CN.md`
 7. `docs/working-memory/current-focus.zh-CN.md`
 8. `docs/working-memory/task-plan.zh-CN.md`
+9. if `project-bootstrap-state.yaml` exists, read it as the latest verified projection of external operational state
 
 Use Working Memory Index -> Current Focus -> Task Plan first to identify the resume point. Then reconstruct task-relevant state from the three Long-Term Memory layers according to the manifest/context interface and output a AHICP Onboarding Report using `ONBOARDING_REPORT_TEMPLATE.zh-CN.md`. The report must confirm `AHICP REPOSITORY CONTEXT — ACTIVE`. Later dynamic state is always retrieved from the latest canonical GitHub revision on demand.
 
@@ -54,10 +55,12 @@ When a task requires an external system, account, or service:
 - never ask a human to paste passwords, tokens, private keys, or other secrets into chat;
 - hand off only identity authorization, account-owner consent, permission grants, non-delegable high-impact decisions, or actions the current tools genuinely cannot perform;
 - keep handoff to the fewest steps, request only the necessary current action, assume no technical background, identify values that must not be sent to AI, and define a verifiable completion condition;
+- **before handoff**, when `project-bootstrap-state.yaml` exists, mark the matching human step `waiting-human` and mirror the pending action/resume condition in Task Plan / Current Focus;
 - after authorization, have the Agent fresh-read the repository, re-verify provider actual state, and resume later machine-operable work;
-- external operations that affect future work must be verified and their durable result written back to the repository.
+- **after handoff**, write completed / verified Bootstrap State only after provider actual-state verification, then synchronize Current Focus / Task Plan;
+- external operations that affect future work must be verified and their durable result written back to the repository; append a Work Log milestone after material progress.
 
-Provider UI, chat state, and model memory are not durable project authority.
+Provider UI is external actual state; the repository stores the latest verified non-secret projection. Chat state and model memory are not durable project authority. If repository projection conflicts with provider actual state, record a sync defect and reconcile instead of repairing from chat memory.
 
 ## Authorization scope for durable-state actions
 
