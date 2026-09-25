@@ -16,7 +16,7 @@ AHICP 公共主页与 `docs/HUMAN_GUIDE.zh-CN.md` 是整个体系的人类概念
 
 这一生态分流**不替代** AHICP 仓库内部 onboarding。完成生态恢复后，在 AHICP 仓库内部进行实质工作仍须遵循下方的 `START_HERE.zh-CN.md`、`AHICP_MANIFEST.yaml` 与 onboarding handshake。
 
-对于原创或未发布的下游项目，完整栈默认姿态是完整 AHICP + 完整 PPF + Vault Interface、private canonical source，以及在得到人类明确公开发布授权前保持 restricted/authenticated 的 Continuous Web。普通新项目优先采用个人 `ChongLiuPhil` 账号下的 `workers-builds-native`，允许每项目一次短人工 GitHub → Cloudflare bootstrap；连接验证后必须用第二次 push 证明无需重新授权即可自动部署。公共链接绝不授权私人状态访问；Provider credential 明文不得进入 chat/model context，Trusted Secret Broker 只属于高级可选 External-CI Profile。人类交接必须提供编号步骤、秘密边界、完成证据、验证与回滚。
+对于原创或未发布的下游项目，完整栈默认姿态是完整 AHICP + 完整 PPF + Vault Interface、private canonical source，以及在得到人类明确公开发布授权前保持 restricted/authenticated 的 Continuous Web。普通私人 downstream 项目优先采用个人 `ChongLiuPhil` 账号下的 `workers-builds-native` + `private-project-quota-saver`，允许每项目一次短人工 GitHub → Cloudflare bootstrap。Content-only 改动不得启动 GitHub Actions，配置 PR 只运行薄 contract gate，heavy GitHub workflow 手动运行，Cloudflare Workers Builds 负责 main 的自动 Web build；连接验证后必须用第二次 content-only push 证明无需重新授权且没有重复 Actions production build。公共框架仓库继续保留完整 CI。公共链接绝不授权私人状态访问；Provider credential 明文不得进入 chat/model context，Trusted Secret Broker 只属于高级可选 External-CI Profile。未经人类明确授权不得开启付费 Actions。人类交接必须提供编号步骤、秘密边界、完成证据、验证与回滚。
 
 ## 0. 零上下文接管：先读 START_HERE
 
