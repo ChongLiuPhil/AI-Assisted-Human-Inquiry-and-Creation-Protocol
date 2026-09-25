@@ -10,6 +10,7 @@
 - record expressed high-level reasons, not hidden AI reasoning;
 - do not treat this as normative truth for current tasks or claims;
 - append periodically after phase transitions, important decisions, completed task batches, or human request;
+- append high-level milestones for external-system bootstrap (repository verified private, Workers Builds connected, Access verified-private, first deployment verified, second-push auto-deploy verified); keep detailed provider actual state in `project-bootstrap-state.yaml`;
 - AI retrieves it on demand for historical review, audit, or change reconstruction.
 
 ---
@@ -32,3 +33,4 @@
 
 - Decision ID: `...`
 - Promotion destination: `...`
+- Operational state ref (when applicable): `project-bootstrap-state.yaml`
