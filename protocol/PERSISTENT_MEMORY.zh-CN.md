@@ -61,6 +61,7 @@ Promotion 后，Working Memory 只保留状态与指针。
 | 当前最重要目标 | `docs/working-memory/current-focus.zh-CN.md` |
 | 动态任务/计划/待确认事项 | `docs/working-memory/task-plan.zh-CN.md` |
 | 人类历史回顾日志 | `docs/working-memory/work-log.zh-CN.md`（默认不进入 AI context） |
+| 外部系统 / Provider bootstrap 最近已验证的非秘密运行状态（存在相应项目契约时） | `project-bootstrap-state.yaml` 或项目声明的等价 machine state；Current Focus / Task Plan 保留 blocker、pending human action 与 resume pointer |
 | 旧 Clarification 路径 | `docs/clarification-register.zh-CN.md`（兼容指针，不再承载 active state） |
 | 当前论证结构 | `docs/argument-map.zh-CN.md` |
 | 经人类批准的论证基线 | `docs/frameworks/FW-xxx.zh-CN.md` |
@@ -84,6 +85,8 @@ Promotion 后，Working Memory 只保留状态与指针。
 
 如果它影响未来连续性，就应给予显式仓库表示。
 
+这同样适用于外部系统配置。GitHub / Cloudflare 等 Provider UI 中“已经点过什么、连接到哪个对象、哪一步仍等待人类、哪一次部署已验证”等信息，只要会改变下一位 Agent 的行动，就必须写入项目声明的 machine state 与 Working Memory 指针，不能只停留在聊天。Secret value 仍不得进入仓库。
+
 ## 对上下文窗口独立，不等于无限上下文
 
 AHICP 并不声称模型能在一个 prompt 中读取无限增长的仓库。
@@ -99,7 +102,8 @@ AHICP 并不声称模型能在一个 prompt 中读取无限增长的仓库。
 - Layer 1：Content / Form / Protocol Core 与相关 Decision Log；
 - Layer 2：Working Argument Map、Framework Status、最新 Approved Framework；
 - Layer 3：相关 Artifact；
-- task-relevant Evidence。
+- task-relevant Evidence；
+- 当前任务涉及外部系统时，读取项目声明的 external operational state（例如 `project-bootstrap-state.yaml`）。
 
 Working Memory 本身保存当前工作状态和指针，而不是复制长期层的全部内容。
 
@@ -142,7 +146,8 @@ AHICP 现在采用：
 - 当前上下文中的文件摘录只是临时、非权威缓存；
 - 高影响判断与写入前重新读取相关最新 revision；
 - canonical 文件写入后，旧缓存立即视为 `STALE`；
-- 后续仍需要时重新读取，而不是同步维护一份聊天副本。
+- 后续仍需要时重新读取，而不是同步维护一份聊天副本；
+- 人类 Provider UI handoff 以前先把 pending step 写回仓库；人类返回后先验证 actual state，再写 completed / verified。
 
 Session Context Bootstrap 只保存 Repository Resolver，也就是“如何找到记忆”，而不是“另一份记忆”。
 
