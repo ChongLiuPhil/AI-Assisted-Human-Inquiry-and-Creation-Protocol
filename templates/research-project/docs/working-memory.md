@@ -15,14 +15,16 @@ The default template uses:
 1. read this Index;
 2. read Current Focus;
 3. read Task Plan;
-4. retrieve the three Long-Term Memory layers as required by the current task;
-5. skip Work Log by default.
+4. if `project-bootstrap-state.yaml` exists and infrastructure/provider work is relevant, read the latest verified bootstrap state;
+5. retrieve the three Long-Term Memory layers as required by the current task;
+6. skip Work Log by default.
 
 ## Roles
 
 - **Current Focus:** what matters most now;
 - **Task Plan:** how work proceeds next;
 - **Work Log:** helps the human later review how the project got here.
+- **External Operational State** (when present): `project-bootstrap-state.yaml` stores the latest verified non-secret provider/bootstrap projection; the current blocker and next action are still mirrored into Current Focus / Task Plan.
 
 Work Log is not a substantive truth source and does not record hidden AI chain-of-thought.
 
