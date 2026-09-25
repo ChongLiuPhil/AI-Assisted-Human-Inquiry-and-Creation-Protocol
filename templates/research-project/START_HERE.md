@@ -16,10 +16,11 @@ Before substantive work:
 6. read `docs/working-memory.zh-CN.md` (Index);
 7. read `docs/working-memory/current-focus.zh-CN.md`;
 8. read `docs/working-memory/task-plan.zh-CN.md`;
-9. skip Work Log by default;
-10. selectively retrieve current state from the three long-term layers using manifest/context-interface task routing;
-11. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a AHICP Onboarding Report and confirm `AHICP REPOSITORY CONTEXT — ACTIVE`;
-12. begin substantive work only after the report passes and Repository Context is active; update Current Focus / Task Plan after substantial work cycles and update Work Log at appropriate milestones.
+9. if `project-bootstrap-state.yaml` exists, read it to recover the latest verified GitHub / Cloudflare or other external operational state;
+10. skip Work Log by default;
+11. selectively retrieve current state from the three long-term layers using manifest/context-interface task routing;
+12. use `ONBOARDING_REPORT_TEMPLATE.zh-CN.md` to output a AHICP Onboarding Report and confirm `AHICP REPOSITORY CONTEXT — ACTIVE`;
+13. begin substantive work only after the report passes and Repository Context is active; update Current Focus / Task Plan after substantial work cycles and update Work Log at appropriate milestones.
 
 ## Onboarding Report must include
 
@@ -32,6 +33,7 @@ Before substantive work:
 - Working / Approved Framework state;
 - current Artifact state;
 - known synchronization defects;
+- when `project-bootstrap-state.yaml` exists: current infrastructure/bootstrap status, pending human step, latest verified provider state, and memory-writeback sync status;
 - permitted propagation path for the current request.
 
 ## Clarification-first
